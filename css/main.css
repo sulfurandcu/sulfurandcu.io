@@ -18,8 +18,8 @@
   --btn-default-hover-bg: #fff;
   --btn-default-hover-color: #222;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #303030;
-  --highlight-foreground: #ddd;
+  --highlight-background: #eee;
+  --highlight-foreground: #000;
   --highlight-gutter-background: #414141;
   --highlight-gutter-foreground: #cbcbcb;
   color-scheme: light;
@@ -2752,45 +2752,19 @@ a:hover {
   -webkit-text-emphasis-position: under;
   -moz-text-emphasis-position: under;
 }
-@font-face {
-  font-family: 'EB Garamond';
-  src: url("../fonts/EBGaramond-Regular.eot");
-  src: url("../fonts/EBGaramond-Regular.eot?#font-spider") format('embedded-opentype'), url("../fonts/EBGaramond-Regular.ttf") format('truetype'), url("../fonts/EBGaramond-Regular.woff") format('woff'), url("../fonts/EBGaramond-Regular.woff2") format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'EB Garamond';
-  src: url("../fonts/EBGaramond-Bold.eot");
-  src: url("../fonts/EBGaramond-Bold.eot?#font-spider") format('embedded-opentype'), url("../fonts/EBGaramond-Bold.ttf") format('truetype'), url("../fonts/EBGaramond-Bold.woff") format('woff'), url("../fonts/EBGaramond-Bold.woff2") format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'EB Garamond';
-  src: url("../fonts/EBGaramond-Italic.eot");
-  src: url("../fonts/EBGaramond-Italic.eot?#font-spider") format('embedded-opentype'), url("../fonts/EBGaramond-Italic.ttf") format('truetype'), url("../fonts/EBGaramond-Italic.woff") format('woff'), url("../fonts/EBGaramond-Italic.woff2") format('woff2');
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'EB Garamond';
-  src: url("../fonts/EBGaramond-BoldItalic.eot");
-  src: url("../fonts/EBGaramond-BoldItalic.eot?#font-spider") format('embedded-opentype'), url("../fonts/EBGaramond-BoldItalic.ttf") format('truetype'), url("../fonts/EBGaramond-BoldItalic.woff") format('woff'), url("../fonts/EBGaramond-BoldItalic.woff2") format('woff2');
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Source Han Serif TW';
-  src: url("../fonts/SourceHanSerifTW-Regular.eot");
-  src: url("../fonts/SourceHanSerifTW-Regular.eot?#font-spider") format('embedded-opentype'), url("../fonts/SourceHanSerifTW-Regular.ttf") format('truetype'), url("../fonts/SourceHanSerifTW-Regular.woff") format('woff'), url("../fonts/SourceHanSerifTW-Regular.woff2") format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Source Han Serif TW';
-  src: url("../fonts/SourceHanSerifTW-Bold.eot");
-  src: url("../fonts/SourceHanSerifTW-Bold.eot?#font-spider") format('embedded-opentype'), url("../fonts/SourceHanSerifTW-Bold.ttf") format('truetype'), url("../fonts/SourceHanSerifTW-Bold.woff") format('woff'), url("../fonts/SourceHanSerifTW-Bold.woff2") format('woff2');
-  font-weight: 700;
-  font-style: normal;
+.post-body h1 .header-anchor::before,
+.post-body h2 .header-anchor::before,
+.post-body h3 .header-anchor::before,
+.post-body h4 .header-anchor::before,
+.post-body h5 .header-anchor::before,
+.post-body h6 .header-anchor::before,
+.post-body h1 .headerlink::before,
+.post-body h2 .headerlink::before,
+.post-body h3 .headerlink::before,
+.post-body h4 .headerlink::before,
+.post-body h5 .headerlink::before,
+.post-body h6 .headerlink::before {
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
 }
