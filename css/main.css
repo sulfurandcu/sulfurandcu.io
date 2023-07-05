@@ -398,7 +398,7 @@ pre figcaption a:hover {
 }
 pre,
 code {
-  font-family: Iosevka Term Curly Slab, "Iosevka Term Curly Slab", "Iosevka Term Slab", "Iosevka Term Curly", "Iosevka Term", "Iosevka Fixed Curly Slab", "Iosevka Fixed Slab", "Iosevka Fixed Curly", "Iosevka Fixed", "Iosevka Curly Slab", "Iosevka Slab", "Iosevka Curly", "Iosevka", "Courier New", monospace, "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK", "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK", "Noto Serif SC", "Noto Serif TC", "Noto Sans SC", "Noto Sans TC", "PingFang SC", "PingFang TC", "Microsoft YaHei", sans-serif;
+  font-family: Iosevka Fixed Slab, "Iosevka Fixed Slab", "Iosevka Fixed", "Iosevka Term Slab", "Iosevka Term", "Iosevka Slab", "Iosevka", "Courier New", monospace, "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK", "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK", "Noto Serif SC", "Noto Serif TC", "Noto Sans SC", "Noto Sans TC", "PingFang SC", "PingFang TC", "Microsoft YaHei", sans-serif;
 }
 code {
   border-radius: 3px;

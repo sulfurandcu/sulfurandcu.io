@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/sulfurandcu.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/sulfurandcu.io/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/sulfurandcu.io/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/sulfurandcu.io/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/sulfurandcu.io/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond:300,300italic,400,400italic,700,700italic%7CIosevka+Fixed+Slab:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"sulfurandcu.github.io","root":"/sulfurandcu.io/","images":"/sulfurandcu.io/images","scheme":"Gemini","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/sulfurandcu.io/js/config.js"></script>
+
+    <meta name="description" content="http:&#x2F;&#x2F;sdoi.programming-rabbit.com&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="沒事兒也來做做題">
+<meta property="og:url" content="https://sulfurandcu.github.io/sulfurandcu.io/practice-of-c++.html">
+<meta property="og:site_name" content="ㄅㄆㄇㄈ">
+<meta property="og:description" content="http:&#x2F;&#x2F;sdoi.programming-rabbit.com&#x2F;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-06-26T04:28:33.000Z">
+<meta property="article:modified_time" content="2022-06-26T04:28:33.000Z">
+<meta property="article:author" content="硫及銅">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://sulfurandcu.github.io/sulfurandcu.io/practice-of-c++.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/practice-of-c++.html","path":"practice-of-c++.html","title":"沒事兒也來做做題"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>沒事兒也來做做題 | ㄅㄆㄇㄈ</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/sulfurandcu.io/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/sulfurandcu.io/atom.xml" title="ㄅㄆㄇㄈ" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/sulfurandcu.io/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">ㄅㄆㄇㄈ</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">bopomofo</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/sulfurandcu.io/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li>
+        <li class="menu-item menu-item-about"><a href="/sulfurandcu.io/about/" rel="section"><i class="fa fa-user fa-fw"></i>在下</a></li>
+        <li class="menu-item menu-item-tags"><a href="/sulfurandcu.io/tags/" rel="section"><i class="fa fa-th fa-fw"></i>標籤</a></li>
+        <li class="menu-item menu-item-categories"><a href="/sulfurandcu.io/categories/" rel="section"><i class="fa fa-th fa-fw"></i>類別</a></li>
+        <li class="menu-item menu-item-archives"><a href="/sulfurandcu.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          站點概覽
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E9%A1%8C"><span class="nav-text">第一題</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E8%AE%B0%E5%BD%95"><span class="nav-text">测试记录</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E9%A2%98"><span class="nav-text">第二题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-1"><span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-1"><span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E8%AE%B0%E5%BD%95-1"><span class="nav-text">测试记录</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="硫及銅"
+      src="/sulfurandcu.io/images/avatar.png">
+  <p class="site-author-name" itemprop="name">硫及銅</p>
+  <div class="site-description" itemprop="description">枸杞養生  亦能續命</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/sulfurandcu.io/archives/">
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/sulfurandcu.io/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">類別</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/sulfurandcu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;sulfurandcu" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:sulfurandcu@gmail.com" title="E-Mail → mailto:sulfurandcu@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="回到頂端">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/practice-of-c++.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="硫及銅">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="枸杞養生  亦能續命">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="沒事兒也來做做題 | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          沒事兒也來做做題
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2022-06-26 12:28:33" itemprop="dateCreated datePublished" datetime="2022-06-26T12:28:33+08:00">2022-06-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/C/" itemprop="url" rel="index"><span itemprop="name">C++</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <center><a target="_blank" rel="noopener" href="http://sdoi.programming-rabbit.com/">http://sdoi.programming-rabbit.com/</a></center>
+
+<br>
+
+<span id="more"></span>
+
+<h3 id="第一題"><a href="#第一題" class="headerlink" title="第一題"></a>第一題</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>张三和李四在玩一种游戏。</p>
+<p>首先，张三从 A 与 B 之间（包括A和B）选择一个整数，告诉李四。</p>
+<p>其次，李四从 C 与 D 之间（包括C和D）选择一个整数。</p>
+<p>两个整数之和，如果是素数，张三赢，负责李四赢。</p>
+<p>当两个人都是最佳发挥时，谁会赢？</p>
+<p><strong>输入格式：</strong><br>一行四个正整数 A B C D 以空格隔开。</p>
+<p><strong>输入格式：</strong><br>如果张三赢了，输出 X，否则输出 Y。</p>
+<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  * 文件名称 :  main.c</span><br><span class="line">  * 当前版本 :  1.0.0</span><br><span class="line">  * 建立时间 :  2022-06-26</span><br><span class="line">  * 作    者 :  sulfurandcu : mailto:sulfurandcu@gmail.com</span><br><span class="line">  * 修改记录 :</span><br><span class="line">  *             日期作者                         修改说明</span><br><span class="line">  *             ########                         ########</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  * 简要说明 :</span><br><span class="line">  *</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  */</span><br><span class="line"></span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;sys/time.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  * 函数功能 :  素数判断</span><br><span class="line">  * 输入参数 :</span><br><span class="line">  * 输出参数 :</span><br><span class="line">  * 返 回 值 :</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  * 函数说明 :</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  */</span><br><span class="line">bool IsPrimeNumber(int n)</span><br><span class="line">&#123;</span><br><span class="line">	if (n &lt; 2)</span><br><span class="line">	&#123;</span><br><span class="line">		return false;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	int SquareRoot = 1;</span><br><span class="line"></span><br><span class="line">	while (SquareRoot * SquareRoot &lt; n)</span><br><span class="line">	&#123;</span><br><span class="line">		SquareRoot++;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for (int i = 2; i &lt;= SquareRoot; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		if (n % i == 0)</span><br><span class="line">		&#123;</span><br><span class="line">			return false;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	return true;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  * 函数功能 :  主程序</span><br><span class="line">  * 输入参数 :</span><br><span class="line">  * 输出参数 :</span><br><span class="line">  * 返 回 值 :</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  * 函数说明 :</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  */</span><br><span class="line">int main(int argc, char **argv)</span><br><span class="line">&#123;</span><br><span class="line">	int a = 0;</span><br><span class="line">	int b = 0;</span><br><span class="line">	int c = 0;</span><br><span class="line">	int d = 0;</span><br><span class="line">	int i = 0;</span><br><span class="line">	int j = 0;</span><br><span class="line">	int sum = 0;</span><br><span class="line">	int x_win = 0;</span><br><span class="line">	int y_win = 0;</span><br><span class="line">	bool PrimeExist = false;</span><br><span class="line"></span><br><span class="line">	int usec_bgn;</span><br><span class="line">	int usec_end;</span><br><span class="line">	int usec_sub;</span><br><span class="line">	struct timeval tv;</span><br><span class="line"></span><br><span class="line">	/* 等待输入 */</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b&gt;&gt;c&gt;&gt;d;</span><br><span class="line">	// a = 1; b = 100; c = 2; d = 3;</span><br><span class="line"></span><br><span class="line">	/* 参数判断 */</span><br><span class="line">	if (a &lt;= 0 || a &gt; 100 || b &lt;= 0 || b &gt; 100 || c &lt;= 0 || c &gt; 100 || d &lt;= 0 || d &gt; 100)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! a, b, c, d should be greater than zero and less than or equal to 100! \r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 参数判断 */</span><br><span class="line">	if (a &gt; b || c &gt; d)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! b is bigger than a!\r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 参数判断 */</span><br><span class="line">	if (c &gt; d)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! d is bigger than c!\r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// printf(&quot;%d,%d,%d,%d\r\n&quot;, a, b, c, d);</span><br><span class="line"></span><br><span class="line">	/* 起始时间 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_bgn = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;bgn time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 胜负推演 */</span><br><span class="line">	for (i = a; i &lt;= b; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		PrimeExist = false;</span><br><span class="line"></span><br><span class="line">		for (j = c; j &lt;= d; ++j)</span><br><span class="line">		&#123;</span><br><span class="line">			sum = i + j;</span><br><span class="line"></span><br><span class="line">			if (IsPrimeNumber(sum))</span><br><span class="line">			&#123;</span><br><span class="line">				PrimeExist = true;</span><br><span class="line">				break;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		if (PrimeExist)</span><br><span class="line">		&#123;</span><br><span class="line">			y_win++;</span><br><span class="line"></span><br><span class="line">			#if 1 /* 如果不想显示中间过程，可以屏蔽下行（将 #if 1 改为 #if 0） */</span><br><span class="line">			printf(&quot;X = %d\tY = %d\tSUM  = %d \tY WIN !\r\n&quot;, i, j, sum);</span><br><span class="line">			#endif</span><br><span class="line">		&#125;</span><br><span class="line">		else</span><br><span class="line">		&#123;</span><br><span class="line">			x_win++;</span><br><span class="line"></span><br><span class="line">			#if 1 /* 如果不想显示中间过程，可以屏蔽下行（将 #if 1 改为 #if 0） */</span><br><span class="line">			printf(&quot;X = %d\tY =  \tSUM != Prime \tX WIN !\r\n&quot;, i);</span><br><span class="line">			#endif</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 比较小X和小Y总的胜负次数 */</span><br><span class="line">	if (x_win &gt; y_win)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, SO X WINS FINALLY !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	if (x_win &lt; y_win)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, SO Y WINS FINALLY !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, DRAWN GAME !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 结束时间 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_end = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;end time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 计算耗时 */</span><br><span class="line">	if (usec_end &gt;= usec_bgn)</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = usec_end - usec_bgn;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = 1000000 - (usec_bgn - usec_end);</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;time cost :%d us\r\n&quot;, usec_sub);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* ---------------------- COPYRIGHT © 2022 SULFURANDCU ---------------------- */</span><br></pre></td></tr></table></figure>
+
+<h4 id="测试记录"><a href="#测试记录" class="headerlink" title="测试记录"></a>测试记录</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">编译环境 windows subsystem for linux (wsl) &amp; gcc/g++ v9.3.0</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$ g++ main.cpp -o main.cppout</span><br><span class="line">user@localhost:/mnt/e/gcc$ ./main.cppout</span><br><span class="line">1 100 2 3</span><br><span class="line"></span><br><span class="line">bgn time (second, micro-second): 1656168565s, 669332us</span><br><span class="line"></span><br><span class="line">X = 1   Y = 2   SUM  = 3        Y WIN !</span><br><span class="line">X = 2   Y = 3   SUM  = 5        Y WIN !</span><br><span class="line">X = 3   Y = 2   SUM  = 5        Y WIN !</span><br><span class="line">X = 4   Y = 3   SUM  = 7        Y WIN !</span><br><span class="line">X = 5   Y = 2   SUM  = 7        Y WIN !</span><br><span class="line">X = 6   Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 7   Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 8   Y = 3   SUM  = 11       Y WIN !</span><br><span class="line">X = 9   Y = 2   SUM  = 11       Y WIN !</span><br><span class="line">X = 10  Y = 3   SUM  = 13       Y WIN !</span><br><span class="line">X = 11  Y = 2   SUM  = 13       Y WIN !</span><br><span class="line">X = 12  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 13  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 14  Y = 3   SUM  = 17       Y WIN !</span><br><span class="line">X = 15  Y = 2   SUM  = 17       Y WIN !</span><br><span class="line">X = 16  Y = 3   SUM  = 19       Y WIN !</span><br><span class="line">X = 17  Y = 2   SUM  = 19       Y WIN !</span><br><span class="line">X = 18  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 19  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 20  Y = 3   SUM  = 23       Y WIN !</span><br><span class="line">X = 21  Y = 2   SUM  = 23       Y WIN !</span><br><span class="line">X = 22  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 23  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 24  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 25  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 26  Y = 3   SUM  = 29       Y WIN !</span><br><span class="line">X = 27  Y = 2   SUM  = 29       Y WIN !</span><br><span class="line">X = 28  Y = 3   SUM  = 31       Y WIN !</span><br><span class="line">X = 29  Y = 2   SUM  = 31       Y WIN !</span><br><span class="line">X = 30  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 31  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 32  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 33  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 34  Y = 3   SUM  = 37       Y WIN !</span><br><span class="line">X = 35  Y = 2   SUM  = 37       Y WIN !</span><br><span class="line">X = 36  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 37  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 38  Y = 3   SUM  = 41       Y WIN !</span><br><span class="line">X = 39  Y = 2   SUM  = 41       Y WIN !</span><br><span class="line">X = 40  Y = 3   SUM  = 43       Y WIN !</span><br><span class="line">X = 41  Y = 2   SUM  = 43       Y WIN !</span><br><span class="line">X = 42  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 43  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 44  Y = 3   SUM  = 47       Y WIN !</span><br><span class="line">X = 45  Y = 2   SUM  = 47       Y WIN !</span><br><span class="line">X = 46  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 47  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 48  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 49  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 50  Y = 3   SUM  = 53       Y WIN !</span><br><span class="line">X = 51  Y = 2   SUM  = 53       Y WIN !</span><br><span class="line">X = 52  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 53  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 54  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 55  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 56  Y = 3   SUM  = 59       Y WIN !</span><br><span class="line">X = 57  Y = 2   SUM  = 59       Y WIN !</span><br><span class="line">X = 58  Y = 3   SUM  = 61       Y WIN !</span><br><span class="line">X = 59  Y = 2   SUM  = 61       Y WIN !</span><br><span class="line">X = 60  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 61  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 62  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 63  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 64  Y = 3   SUM  = 67       Y WIN !</span><br><span class="line">X = 65  Y = 2   SUM  = 67       Y WIN !</span><br><span class="line">X = 66  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 67  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 68  Y = 3   SUM  = 71       Y WIN !</span><br><span class="line">X = 69  Y = 2   SUM  = 71       Y WIN !</span><br><span class="line">X = 70  Y = 3   SUM  = 73       Y WIN !</span><br><span class="line">X = 71  Y = 2   SUM  = 73       Y WIN !</span><br><span class="line">X = 72  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 73  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 74  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 75  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 76  Y = 3   SUM  = 79       Y WIN !</span><br><span class="line">X = 77  Y = 2   SUM  = 79       Y WIN !</span><br><span class="line">X = 78  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 79  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 80  Y = 3   SUM  = 83       Y WIN !</span><br><span class="line">X = 81  Y = 2   SUM  = 83       Y WIN !</span><br><span class="line">X = 82  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 83  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 84  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 85  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 86  Y = 3   SUM  = 89       Y WIN !</span><br><span class="line">X = 87  Y = 2   SUM  = 89       Y WIN !</span><br><span class="line">X = 88  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 89  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 90  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 91  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 92  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 93  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 94  Y = 3   SUM  = 97       Y WIN !</span><br><span class="line">X = 95  Y = 2   SUM  = 97       Y WIN !</span><br><span class="line">X = 96  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 97  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 98  Y = 3   SUM  = 101      Y WIN !</span><br><span class="line">X = 99  Y = 2   SUM  = 101      Y WIN !</span><br><span class="line">X = 100 Y = 3   SUM  = 103      Y WIN !</span><br><span class="line"></span><br><span class="line">X WIN TIMES = 50, Y WIN TIMES = 50, DRAWN GAME !</span><br><span class="line"></span><br><span class="line">end time (second, micro-second): 1656168565s, 670078us</span><br><span class="line"></span><br><span class="line">time cost :746 us</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h3><h4 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h4><p>张三成为了一家餐厅的采购员。作为一个采购员要有良好的职业素养。必须保证每次采购的物资不超过自己车辆的容量，然后在此条件下使得餐厅赚取的收益最大。</p>
+<p>商场中共有 n 种物资，编号为 1 到 n 。每种物资都有两个参数 v 和 w，分别表示这种物资的体积和采购这种物资可以给餐厅带来的收益。注意每种物资每天至多只能采购一件。</p>
+<p>张三有一辆容量为 V 的采购车，每天张三只去采购一次，采购的物资体积之和不能超过车辆的容量。</p>
+<p>对于每天采购的物资，餐厅老板还有特殊的要求，第 i 天老板要求张三不能采购编号大于等于 Li 并且小于等于 Ri 的物资（即不能采购编号在 [Li,Ri] 之间的物资）。特别的，当 Li&gt;Ri 时表示这天没有不可采购的物资。</p>
+<p>对于接下来的 m 天，你需要告诉张三他每天分别最多可以给餐厅赚取多少的收益。</p>
+<p><strong>输入格式：</strong><br>输入第一行两个个整数 n, V 表示共有 n 种物资，张三的车子容量是 V。<br>接下来 n 行，每行两个整数。<br>第 i+1 行输入vi, wi 表示第 i 种物资的体积和收益。<br>接下来一行输入一个整数 m ，表示需要采购的天数。<br>接下来 m 行，每行输入两个整数 Li, Ri 表示第 i 天不能采购编号位于 Li 到 Ri 之间的物资。</p>
+<p><strong>输出格式：</strong><br>输出共 m 行，每行一个整数表示张三第 i 天可以给餐厅带来的收益。</p>
+<p><strong>输入样例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">6   290     物资种类，容量</span><br><span class="line">85  97      1号体积，收益</span><br><span class="line">80  81      2号体积，收益</span><br><span class="line">83  1       3号体积，收益</span><br><span class="line">79  81      4号体积，收益</span><br><span class="line">89  1       5号体积，收益</span><br><span class="line">92  97      6号体积，收益</span><br><span class="line">5           天数</span><br><span class="line">3   5       Li-Ri</span><br><span class="line">1   1</span><br><span class="line">1   3</span><br><span class="line">5   2</span><br><span class="line">3   1</span><br></pre></td></tr></table></figure>
+
+<p><strong>输出样例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">275</span><br><span class="line">259</span><br><span class="line">179</span><br><span class="line">275</span><br><span class="line">275</span><br></pre></td></tr></table></figure>
+
+<p><strong>补充说明：</strong><br>前 20% 的数据满足: 1&lt;&#x3D;n&lt;&#x3D;10,1&lt;&#x3D;m&lt;&#x3D;1000.<br>前 50% 的数据满足: 1&lt;&#x3D;n, m, V&lt;&#x3D;300.<br>对于 100% 的数据满足: 1&lt;&#x3D;n, m, V&lt;&#x3D;3000; 1&lt;&#x3D;vi&lt;&#x3D;3000; 1&lt;&#x3D;Li, Ri&lt;&#x3D;n; 1&lt;&#x3D;wi&lt;&#x3D;10^6.</p>
+<p><strong>时间限制：</strong>1s</p>
+<p><strong>空间限制：</strong>512M</p>
+<h4 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  * 文件名称 :  main.c</span><br><span class="line">  * 当前版本 :  1.0.0</span><br><span class="line">  * 建立时间 :  2022-06-26</span><br><span class="line">  * 作    者 :  sulfurandcu : mailto:sulfurandcu@gmail.com</span><br><span class="line">  * 修改记录 :</span><br><span class="line">  *             日期作者                         修改说明</span><br><span class="line">  *             ########                         ########</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  * 简要说明 :</span><br><span class="line">  *</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  */</span><br><span class="line"></span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;sys/time.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  * 函数功能 :  主程序</span><br><span class="line">  * 输入参数 :</span><br><span class="line">  * 输出参数 :</span><br><span class="line">  * 返 回 值 :</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  * 函数说明 :</span><br><span class="line">  ******************************************************************************</span><br><span class="line">  */</span><br><span class="line">int main(int argc, char **argv)</span><br><span class="line">&#123;</span><br><span class="line">	int daytotal;                       // 天数</span><br><span class="line">	int category;                       // 种类</span><br><span class="line">	int capacity;                       // 容量</span><br><span class="line">	int capacity_left;                  // 容量（剩余）</span><br><span class="line">	int edge[3001][2];                  // 边界条件</span><br><span class="line">	int menu[3001][2];                  // 货单</span><br><span class="line">	int menu_sort[3001][3];             // 货单（根据每件货物的收益率排序）</span><br><span class="line">	int idx = 0;</span><br><span class="line">	int sum = 0;                        // 收益</span><br><span class="line">	double rate_max = 0;                // 收益率</span><br><span class="line">	double rate_tmp = 0;                // 收益率</span><br><span class="line"></span><br><span class="line">	int usec_bgn;</span><br><span class="line">	int usec_end;</span><br><span class="line">	int usec_sub;</span><br><span class="line">	struct timeval tv;</span><br><span class="line"></span><br><span class="line">	#if 0</span><br><span class="line">	cin&gt;&gt;category&gt;&gt;capacity;</span><br><span class="line"></span><br><span class="line">	for (int i = 0; i &lt; category; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;menu[i][0]&gt;&gt;menu[i][1];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	cin&gt;&gt;daytotal;</span><br><span class="line"></span><br><span class="line">	for (int i = 0; i &lt; daytotal; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;edge[i][0]&gt;&gt;edge[i][1];</span><br><span class="line">	&#125;</span><br><span class="line">	#else</span><br><span class="line">	category = 10;</span><br><span class="line">	capacity = 300;</span><br><span class="line">	menu[0][0] = 85; menu[0][1] = 97;</span><br><span class="line">	menu[1][0] = 80; menu[1][1] = 81;</span><br><span class="line">	menu[2][0] = 83; menu[2][1] = 1;</span><br><span class="line">	menu[3][0] = 79; menu[3][1] = 81;</span><br><span class="line">	menu[4][0] = 89; menu[4][1] = 1;</span><br><span class="line">	menu[5][0] = 92; menu[5][1] = 97;</span><br><span class="line">	daytotal = 10;</span><br><span class="line">	edge[0][0] = 3; edge[0][1] = 5;</span><br><span class="line">	edge[1][0] = 1; edge[1][1] = 1;</span><br><span class="line">	edge[2][0] = 1; edge[2][1] = 3;</span><br><span class="line">	edge[3][0] = 5; edge[3][1] = 2;</span><br><span class="line">	edge[4][0] = 3; edge[4][1] = 1;</span><br><span class="line">	#endif</span><br><span class="line"></span><br><span class="line">	/* 起始时间 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_bgn = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;bgn time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	for (int j = 0; j &lt; category; ++j)</span><br><span class="line">	&#123;</span><br><span class="line">		idx = 0;</span><br><span class="line">		rate_max = 0;</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; category; ++i)</span><br><span class="line">		&#123;</span><br><span class="line">			if (menu[i][0] == 0)</span><br><span class="line">			&#123;</span><br><span class="line">				continue;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			rate_tmp = (double)menu[i][1] / (double)menu[i][0];</span><br><span class="line"></span><br><span class="line">			if (rate_tmp &gt; rate_max)</span><br><span class="line">			&#123;</span><br><span class="line">				rate_max = rate_tmp;</span><br><span class="line">				idx = i;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		menu_sort[j][0] = menu[idx][0];</span><br><span class="line">		menu_sort[j][1] = menu[idx][1];</span><br><span class="line">		menu_sort[j][2] = idx;</span><br><span class="line">		menu[idx][0] = 0;</span><br><span class="line">		menu[idx][1] = 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for (int day_idx = 0; day_idx &lt; daytotal; ++day_idx) /* 第n天 */</span><br><span class="line">	&#123;</span><br><span class="line">		sum = 0;</span><br><span class="line">		capacity_left = capacity;</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; category; ++i)</span><br><span class="line">		&#123;</span><br><span class="line">			if ((menu_sort[i][2]+1) &gt;= edge[day_idx][0] &amp;&amp; (menu_sort[i][2]+1) &lt;= edge[day_idx][1])</span><br><span class="line">			&#123;</span><br><span class="line">				continue;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			if (capacity_left &gt;= menu_sort[i][0])</span><br><span class="line">			&#123;</span><br><span class="line">				capacity_left -= menu_sort[i][0];</span><br><span class="line">				sum += menu_sort[i][1];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		printf(&quot;%d\r\n&quot;, sum);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 结束时间 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_end = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;end time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 计算耗时 */</span><br><span class="line">	if (usec_end &gt;= usec_bgn)</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = usec_end - usec_bgn;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = 1000000 - (usec_bgn - usec_end);</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;time cost :%d us\r\n&quot;, usec_sub);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* ---------------------- COPYRIGHT © 2022 SULFURANDCU ---------------------- */</span><br></pre></td></tr></table></figure>
+
+<h4 id="测试记录-1"><a href="#测试记录-1" class="headerlink" title="测试记录"></a>测试记录</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">user@localhost:/mnt/e/gcc$ g++ main.cpp -o main.cppout</span><br><span class="line">user@localhost:/mnt/e/gcc$ ./main.cppout</span><br><span class="line"></span><br><span class="line">bgn time (second, micro-second): 1656593986s, 560594us</span><br><span class="line"></span><br><span class="line">275</span><br><span class="line">259</span><br><span class="line">179</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line"></span><br><span class="line">end time (second, micro-second): 1656593986s, 560641us</span><br><span class="line"></span><br><span class="line">time cost :47 us</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>文章作者： </strong>硫及銅
+  </li>
+  <li class="post-copyright-link">
+      <strong>文章鏈接：</strong>
+      <a href="https://sulfurandcu.github.io/sulfurandcu.io/practice-of-c++.html" title="沒事兒也來做做題">https://sulfurandcu.github.io/sulfurandcu.io/practice-of-c++.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版權聲明： </strong>文章採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-SA</a> 許可協議　轉載請註明出處
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/sulfurandcu.io/real-prize.html" rel="prev" title="real prize vs. unreal prize">
+                  <i class="fa fa-chevron-left"></i> real prize vs. unreal prize
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/sulfurandcu.io/ma.html" rel="next" title="爲何男人不想結婚">
+                  爲何男人不想結婚 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-fingerprint"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">sulfurandcu</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/sulfurandcu.io/js/comments.js"></script><script src="/sulfurandcu.io/js/utils.js"></script><script src="/sulfurandcu.io/js/motion.js"></script><script src="/sulfurandcu.io/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
