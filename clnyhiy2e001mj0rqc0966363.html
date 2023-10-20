@@ -21,14 +21,14 @@
 
 
 
-<link rel="canonical" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyh4alo002x80rq15gq8l9x.html">
+<link rel="canonical" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhiy2e001mj0rqc0966363.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clnyh4alo002x80rq15gq8l9x.html","path":"clnyh4alo002x80rq15gq8l9x.html","title":"編寫一個根據 svn 提交記錄自動生成日報的腳本"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clnyhiy2e001mj0rqc0966363.html","path":"clnyhiy2e001mj0rqc0966363.html","title":"二〇二一拼音漫遊"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>編寫一個根據 svn 提交記錄自動生成日報的腳本 | ㄅㄆㄇㄈ</title>
+<title>二〇二一拼音漫遊 | ㄅㄆㄇㄈ</title>
   
 
 
@@ -196,7 +196,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyh4alo002x80rq15gq8l9x.html">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhiy2e001mj0rqc0966363.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
@@ -209,12 +209,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="編寫一個根據 svn 提交記錄自動生成日報的腳本 | ㄅㄆㄇㄈ">
+      <meta itemprop="name" content="二〇二一拼音漫遊 | ㄅㄆㄇㄈ">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          編寫一個根據 svn 提交記錄自動生成日報的腳本
+          二〇二一拼音漫遊
         </h1>
 
         <div class="post-meta-container">
@@ -225,7 +225,7 @@
       </span>
       <span class="post-meta-item-text">發表於</span>
 
-      <time title="創建時間：2022-12-14 22:57:51" itemprop="dateCreated datePublished" datetime="2022-12-14T22:57:51+08:00">2022-12-14</time>
+      <time title="創建時間：2021-12-12 11:55:01" itemprop="dateCreated datePublished" datetime="2021-12-12T11:55:01+08:00">2021-12-12</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -233,7 +233,7 @@
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87/" itemprop="url" rel="index"><span itemprop="name">效率提升</span></a>
+          <a href="/sulfurandcu.io/categories/%E8%AA%9E%E8%A8%80%E6%96%87%E5%AD%97/" itemprop="url" rel="index"><span itemprop="name">語言文字</span></a>
         </span>
     </span>
 
@@ -246,13 +246,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><center>beep...領導要求每天寫日報，但是我不太想寫，於是就有了本段代碼。</center><br>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任務名稱</span><br><span class="line">taskname = &quot;編碼工作&quot;</span><br><span class="line"># 基準日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 過去幾天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查詢深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用戶名稱</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用戶路徑</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（計劃&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
+    <div class="post-body" itemprop="articleBody"><p><img src="/sulfurandcu.io/clnyhiy2e001mj0rqc0966363/2021.A.bopomofo.Odyssey.png" alt="圖片加載失敗"></p>
 
     </div>
 
@@ -270,7 +264,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>鏈接：</strong>
-      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clnyh4alo002x80rq15gq8l9x.html" title="編寫一個根據 svn 提交記錄自動生成日報的腳本">https://sulfurandcu.github.io/sulfurandcu.io/clnyh4alo002x80rq15gq8l9x.html</a>
+      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhiy2e001mj0rqc0966363.html" title="二〇二一拼音漫遊">https://sulfurandcu.github.io/sulfurandcu.io/clnyhiy2e001mj0rqc0966363.html</a>
   </li>
   <li class="post-copyright-license">
       <strong>聲明： </strong>請遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議｜姓名標示｜相同方式分享
@@ -279,21 +273,21 @@
 </div>
 
           <div class="post-tags">
-              <a href="/sulfurandcu.io/tags/python/" rel="tag"># python</a>
-              <a href="/sulfurandcu.io/tags/svn/" rel="tag"># svn</a>
+              <a href="/sulfurandcu.io/tags/%E6%BC%A2%E8%AA%9E%E6%8B%BC%E9%9F%B3/" rel="tag"># 漢語拼音</a>
+              <a href="/sulfurandcu.io/tags/%E6%B3%A8%E9%9F%B3%E7%AC%A6%E8%99%9F/" rel="tag"># 注音符號</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clnyh4aln002p80rqfksihou8.html" rel="prev" title="拓撲分析算法">
-                  <i class="fa fa-angle-left"></i> 拓撲分析算法
+                <a href="/sulfurandcu.io/clnyhiy2s0038j0rqa5t36xat.html" rel="prev" title="囗－囗">
+                  <i class="fa fa-angle-left"></i> 囗－囗
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clnyh4alp003080rqchl76zhz.html" rel="next" title="crc-libc">
-                  crc-libc <i class="fa fa-angle-right"></i>
+                <a href="/sulfurandcu.io/clnyhiy2e001oj0rq8oz81go3.html" rel="next" title="黃金時代隨風而逝">
+                  黃金時代隨風而逝 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
