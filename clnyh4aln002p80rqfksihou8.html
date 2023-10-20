@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/sulfurandcu.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/sulfurandcu.io/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/sulfurandcu.io/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/sulfurandcu.io/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/sulfurandcu.io/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond:300,300italic,400,400italic,700,700italic%7CIosevka+Fixed+Slab:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"sulfurandcu.github.io","root":"/sulfurandcu.io/","images":"/sulfurandcu.io/images","scheme":"Gemini","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/sulfurandcu.io/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/sulfurandcu.io/js/config.js"></script>
+
+
+
+<link rel="canonical" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyh4aln002p80rqfksihou8.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clnyh4aln002p80rqfksihou8.html","path":"clnyh4aln002p80rqfksihou8.html","title":"拓撲分析算法"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>拓撲分析算法 | ㄅㄆㄇㄈ</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/sulfurandcu.io/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/sulfurandcu.io/atom.xml" title="ㄅㄆㄇㄈ" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/sulfurandcu.io/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">ㄅㄆㄇㄈ</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">bopomofo</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/sulfurandcu.io/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/sulfurandcu.io/about/" rel="section"><i class="fa fa-user fa-fw"></i>在下</a></li><li class="menu-item menu-item-archives"><a href="/sulfurandcu.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章</a></li><li class="menu-item menu-item-categories"><a href="/sulfurandcu.io/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-tags"><a href="/sulfurandcu.io/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索" spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          站點概覽
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%93%E6%92%B2%E8%AD%98%E5%88%A5"><span class="nav-text">拓撲識別</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%93%E6%92%B2%E6%B5%81%E7%A8%8B"><span class="nav-text">拓撲流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0"><span class="nav-text">算法概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E8%A9%B3%E8%A7%A3"><span class="nav-text">算法詳解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%8D%E6%AD%B7%E4%B9%8B%E5%89%8D%E7%9A%84%E6%8B%93%E6%92%B2%E7%B5%90%E6%A7%8B%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%89"><span class="nav-text">遍歷之前的拓撲結構（示例）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%8D%E6%AD%B7%E4%B9%8B%E5%89%8D%E7%9A%84%E6%95%B8%E6%93%9A%E7%B5%90%E6%A7%8B%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%89"><span class="nav-text">遍歷之前的數據結構（示例）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%8B%93%E6%92%B2%E7%B5%90%E6%A7%8B"><span class="nav-text">第一次遍歷後的拓撲結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%95%B8%E6%93%9A%E7%B5%90%E6%A7%8B"><span class="nav-text">第一次遍歷後的數據結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%8B%93%E6%92%B2%E7%B5%90%E6%A7%8B"><span class="nav-text">第二次遍歷後的拓撲結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%95%B8%E6%93%9A%E7%B5%90%E6%A7%8B"><span class="nav-text">第二次遍歷後的數據結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%8B%93%E6%92%B2%E7%B5%90%E6%A7%8B"><span class="nav-text">第三次遍歷後的拓撲結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%95%B8%E6%93%9A%E7%B5%90%E6%A7%8B"><span class="nav-text">第三次遍歷後的數據結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%8D%E6%AD%B7%E5%AE%8C%E6%88%90%E4%B9%8B%E5%BE%8C%E5%BE%97%E5%88%B0%E7%9A%84%E6%95%B8%E6%93%9A"><span class="nav-text">遍歷完成之後得到的數據</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A2%BC"><span class="nav-text">核心代碼</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%9E%E6%AD%B8%E6%89%93%E5%8D%B0"><span class="nav-text">遞歸打印</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="刘汲桐"
+      src="/sulfurandcu.io/images/avatar.png">
+  <p class="site-author-name" itemprop="name">刘汲桐</p>
+  <div class="site-description" itemprop="description">丟掉幻想  準備鬥爭</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/sulfurandcu.io/archives/">
+          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/sulfurandcu.io/categories/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/sulfurandcu.io/tags/">
+        <span class="site-state-item-count">35</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/sulfurandcu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;sulfurandcu" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:sulfurandcu@gmail.com" title="E-Mail → mailto:sulfurandcu@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="回到頂端">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyh4aln002p80rqfksihou8.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="拓撲分析算法 | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          拓撲分析算法
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2022-09-01 23:19:02" itemprop="dateCreated datePublished" datetime="2022-09-01T23:19:02+08:00">2022-09-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">開發筆記</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>2022年09月01日於武漢</p>
+<pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+R0[智能融合終端&lt;br&gt;SCU]
+R0---&gt;N1[斷路器&lt;br&gt;9]
+R0---&gt;N2[斷路器&lt;br&gt;16]
+N1---&gt;N1.1[斷路器&lt;br&gt;7]
+N1---&gt;N1.2[斷路器&lt;br&gt;6]
+N1---&gt;N1.3[斷路器&lt;br&gt;10]
+N1---&gt;N1.4[斷路器&lt;br&gt;12]
+N2---&gt;N2.1[斷路器&lt;br&gt;18]
+N2---&gt;N2.2[斷路器&lt;br&gt;19]
+N2---&gt;N2.3[斷路器&lt;br&gt;14]
+N1.1---&gt;N1.1.1[斷路器&lt;br&gt;3]
+N1.1---&gt;N1.1.2[斷路器&lt;br&gt;4]
+N1.1---&gt;N1.1.3[斷路器&lt;br&gt;5]
+N1.2---&gt;N1.2.1[斷路器&lt;br&gt;8]
+N1.2---&gt;N1.2.2[斷路器&lt;br&gt;11]
+N1.3---&gt;N1.3.1[斷路器&lt;br&gt;2]
+N2.2---&gt;N2.2.1[斷路器&lt;br&gt;13]
+N2.2---&gt;N2.2.2[斷路器&lt;br&gt;17]
+N1.1.1---&gt;N1.1.1.1[斷路器&lt;br&gt;0]
+N1.2.2---&gt;N1.2.2.1[斷路器&lt;br&gt;1]
+N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
+</pre>
+
+<span id="more"></span>
+
+<h2 id="拓撲識別"><a href="#拓撲識別" class="headerlink" title="拓撲識別"></a>拓撲識別</h2><p><img src="/sulfurandcu.io/clnyh4aln002p80rqfksihou8/topology.standard.1.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyh4aln002p80rqfksihou8/topology.standard.2.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyh4aln002p80rqfksihou8/topology.standard.3.png" alt="圖片加載失敗"></p>
+<div class="note danger no-icon"><p>本文所述的拓撲分析算法針對的是有時間戳的拓撲識別</p>
+</div>
+
+<h2 id="拓撲流程"><a href="#拓撲流程" class="headerlink" title="拓撲流程"></a>拓撲流程</h2><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+R0[智能融合終端&lt;br&gt;SCU]--&gt;A2[&quot; &quot;]
+R0--&gt;A1[斷路器&lt;br&gt;1]
+A1--&gt;B2[&quot; &quot;]
+A1--&gt;B1[斷路器&lt;br&gt;2]
+B1--&gt;C2[&quot; &quot;]
+B1--&gt;C1[斷路器&lt;br&gt;3]
+</pre>
+
+<p>以上面這個簡單的拓撲結構爲例：</p>
+<p>當 SCU 給一號斷路器發送拓撲信號發生指令後一號斷路器會存儲一條發生記錄。</p>
+<p>當 SCU 給二號斷路器發送拓撲信號發生指令後二號斷路器會存儲一條發生記錄，此時一號斷路器會識別到拓撲信號並存儲一條識別記錄，並且這兩條記錄中的時間基本一致。</p>
+<p>當 SCU 給三號斷路器發送拓撲信號發生指令後三號斷路器會存儲一條發生記錄，此時一號斷路器和二號斷路器均會識別到拓撲信號並存儲一條識別記錄，並且這三條記錄中的時間基本一致。</p>
+<p>最終：</p>
+<ul>
+<li>一號斷路器總計存儲 3 條拓撲記錄；</li>
+<li>二號斷路器總計存儲 2 條拓撲記錄；</li>
+<li>三號斷路器總計存儲 1 條拓撲記錄；</li>
+</ul>
+<p>拓撲信號發生流程結束後，智能融合終端會讀取每臺斷路器中的拓撲記錄，並將數據整理爲以下格式：</p>
+<p><img src="/sulfurandcu.io/clnyh4aln002p80rqfksihou8/topology.record.png" alt="圖片加載失敗"></p>
+<p>然後智能融合終端便可通過本算法以及上述數據計算出所有斷路器之間的拓撲關係。</p>
+<div class="note info no-icon"><p>記錄數量：每臺斷路器中拓撲記錄的數量<br>記錄內容：每條拓撲記錄產生時的時間戳</p>
+</div>
+
+<h2 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h2><p><strong>核心思想：從末端節點開始，依次尋找每個節點的父節點，最終找到根節點。最後遞歸打印出拓撲關係。</strong></p>
+<p>1. 遍歷只有一條記錄的節點（末端節點）遍歷完之後將末端節點的記錄數量置爲零。</p>
+<p>2. 遍歷其他大於一條記錄的節點</p>
+<p>3. 判斷該節點是否存在與末端節點時間相同的記錄｜如果存在則表示該節點爲末端節點的潛在父節點（並將該節點的記錄數量減一）</p>
+<p>4. 拓撲記錄數量最少的那個節點即爲當前末端節點的父節點</p>
+<p>5. 更新拓撲網絡（記錄父節點）</p>
+<p>6. 更新修改過的記錄數量｜然後開始下一循環｜直至所有記錄數量爲零爲止</p>
+<p>7. 最後可以得到每個節點的父節點是誰（父節點爲自身的即爲根節點，可以存在多個根節點）</p>
+<p>8. 將上述數據遞歸打印即可得到期望結果</p>
+<h2 id="算法詳解"><a href="#算法詳解" class="headerlink" title="算法詳解"></a>算法詳解</h2><p>這裏通過一個示例來描述該算法的邏輯。</p>
+<h3 id="遍歷之前的拓撲結構（示例）"><a href="#遍歷之前的拓撲結構（示例）" class="headerlink" title="遍歷之前的拓撲結構（示例）"></a>遍歷之前的拓撲結構（示例）</h3><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+R0[智能融合終端&lt;br&gt;SCU]
+R0---&gt;N1[斷路器&lt;br&gt;9]
+R0---&gt;N2[斷路器&lt;br&gt;16]
+N1---&gt;N1.1[斷路器&lt;br&gt;7]
+N1---&gt;N1.2[斷路器&lt;br&gt;6]
+N1---&gt;N1.3[斷路器&lt;br&gt;10]
+N1---&gt;N1.4[斷路器&lt;br&gt;12]
+N2---&gt;N2.1[斷路器&lt;br&gt;18]
+N2---&gt;N2.2[斷路器&lt;br&gt;19]
+N2---&gt;N2.3[斷路器&lt;br&gt;14]
+N1.1---&gt;N1.1.1[斷路器&lt;br&gt;3]
+N1.1---&gt;N1.1.2[斷路器&lt;br&gt;4]
+N1.1---&gt;N1.1.3[斷路器&lt;br&gt;5]
+N1.2---&gt;N1.2.1[斷路器&lt;br&gt;8]
+N1.2---&gt;N1.2.2[斷路器&lt;br&gt;11]
+N1.3---&gt;N1.3.1[斷路器&lt;br&gt;2]
+N2.2---&gt;N2.2.1[斷路器&lt;br&gt;13]
+N2.2---&gt;N2.2.2[斷路器&lt;br&gt;17]
+N1.1.1---&gt;N1.1.1.1[斷路器&lt;br&gt;0]
+N1.2.2---&gt;N1.2.2.1[斷路器&lt;br&gt;1]
+N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
+</pre>
+
+<h3 id="遍歷之前的數據結構（示例）"><a href="#遍歷之前的數據結構（示例）" class="headerlink" title="遍歷之前的數據結構（示例）"></a>遍歷之前的數據結構（示例）</h3><p><img src="/sulfurandcu.io/clnyh4aln002p80rqfksihou8/topology.result.0.svg" alt="圖片加載失敗"></p>
+<h3 id="第一次遍歷後的拓撲結構"><a href="#第一次遍歷後的拓撲結構" class="headerlink" title="第一次遍歷後的拓撲結構"></a>第一次遍歷後的拓撲結構</h3><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+R0[智能融合終端&lt;br&gt;SCU]
+R0---&gt;N1[斷路器&lt;br&gt;9]
+R0---&gt;N2[斷路器&lt;br&gt;16]
+N1---&gt;N1.1[斷路器&lt;br&gt;7]
+N1---&gt;N1.2[斷路器&lt;br&gt;6]
+N1---&gt;N1.3[斷路器&lt;br&gt;10]
+N1---&gt;N1.4[&quot; &quot;]
+N2---&gt;N2.1[&quot; &quot;]
+N2---&gt;N2.2[斷路器&lt;br&gt;19]
+N2---&gt;N2.3[&quot; &quot;]
+N1.1---&gt;N1.1.1[斷路器&lt;br&gt;3]
+N1.1---&gt;N1.1.2[&quot; &quot;]
+N1.1---&gt;N1.1.3[&quot; &quot;]
+N1.2---&gt;N1.2.1[&quot; &quot;]
+N1.2---&gt;N1.2.2[斷路器&lt;br&gt;11]
+N1.3---&gt;N1.3.1[&quot; &quot;]
+N2.2---&gt;N2.2.1[&quot; &quot;]
+N2.2---&gt;N2.2.2[斷路器&lt;br&gt;17]
+N1.1.1---&gt;N1.1.1.1[&quot; &quot;]
+N1.2.2---&gt;N1.2.2.1[&quot; &quot;]
+N2.2.2---&gt;N2.2.2.1[&quot; &quot;]
+</pre>
+
+<h3 id="第一次遍歷後的數據結構"><a href="#第一次遍歷後的數據結構" class="headerlink" title="第一次遍歷後的數據結構"></a>第一次遍歷後的數據結構</h3><p><img src="/sulfurandcu.io/clnyh4aln002p80rqfksihou8/topology.result.1.svg" alt="圖片加載失敗"></p>
+<h3 id="第二次遍歷後的拓撲結構"><a href="#第二次遍歷後的拓撲結構" class="headerlink" title="第二次遍歷後的拓撲結構"></a>第二次遍歷後的拓撲結構</h3><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+R0[智能融合終端&lt;br&gt;SCU]
+R0---&gt;N1[斷路器&lt;br&gt;9]
+R0---&gt;N2[斷路器&lt;br&gt;16]
+N1---&gt;N1.1[斷路器&lt;br&gt;7]
+N1---&gt;N1.2[斷路器&lt;br&gt;6]
+N1---&gt;N1.3[&quot; &quot;]
+N1---&gt;N1.4[&quot; &quot;]
+N2---&gt;N2.1[&quot; &quot;]
+N2---&gt;N2.2[斷路器&lt;br&gt;19]
+N2---&gt;N2.3[&quot; &quot;]
+N1.1---&gt;N1.1.1[&quot; &quot;]
+N1.1---&gt;N1.1.2[&quot; &quot;]
+N1.1---&gt;N1.1.3[&quot; &quot;]
+N1.2---&gt;N1.2.1[&quot; &quot;]
+N1.2---&gt;N1.2.2[&quot; &quot;]
+N2.2---&gt;N2.2.1[&quot; &quot;]
+N2.2---&gt;N2.2.2[&quot; &quot;]
+</pre>
+
+<h3 id="第二次遍歷後的數據結構"><a href="#第二次遍歷後的數據結構" class="headerlink" title="第二次遍歷後的數據結構"></a>第二次遍歷後的數據結構</h3><p><img src="/sulfurandcu.io/clnyh4aln002p80rqfksihou8/topology.result.2.svg" alt="圖片加載失敗"></p>
+<h3 id="第三次遍歷後的拓撲結構"><a href="#第三次遍歷後的拓撲結構" class="headerlink" title="第三次遍歷後的拓撲結構"></a>第三次遍歷後的拓撲結構</h3><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+R0[智能融合終端&lt;br&gt;SCU]
+R0---&gt;N1[斷路器&lt;br&gt;9]
+R0---&gt;N2[斷路器&lt;br&gt;16]
+N1---&gt;N1.1[&quot; &quot;]
+N1---&gt;N1.2[&quot; &quot;]
+N1---&gt;N1.3[&quot; &quot;]
+N1---&gt;N1.4[&quot; &quot;]
+N2---&gt;N2.1[&quot; &quot;]
+N2---&gt;N2.2[&quot; &quot;]
+N2---&gt;N2.3[&quot; &quot;]
+</pre>
+
+<h3 id="第三次遍歷後的數據結構"><a href="#第三次遍歷後的數據結構" class="headerlink" title="第三次遍歷後的數據結構"></a>第三次遍歷後的數據結構</h3><p><img src="/sulfurandcu.io/clnyh4aln002p80rqfksihou8/topology.result.3.svg" alt="圖片加載失敗"></p>
+<h3 id="遍歷完成之後得到的數據"><a href="#遍歷完成之後得到的數據" class="headerlink" title="遍歷完成之後得到的數據"></a>遍歷完成之後得到的數據</h3><p><img src="/sulfurandcu.io/clnyh4aln002p80rqfksihou8/topology.result.x.png" alt="圖片加載失敗"></p>
+<h2 id="核心代碼"><a href="#核心代碼" class="headerlink" title="核心代碼"></a>核心代碼</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 計算拓撲關係</span><br><span class="line">while (HaveData &amp;&amp; HaveDataOneRecord)</span><br><span class="line">&#123;</span><br><span class="line">    HaveData = false;</span><br><span class="line">    HaveDataOneRecord = false;</span><br><span class="line"></span><br><span class="line">    for (int idx = 0; idx &lt; TOPO_NODE_NUM; ++idx)</span><br><span class="line">    &#123;</span><br><span class="line">        unsigned int MinNum = 0xFFFFFFFF;</span><br><span class="line">        unsigned int MinIdx = idx;</span><br><span class="line"></span><br><span class="line">        if (TopoNum[idx] &gt; 0)</span><br><span class="line">        &#123;</span><br><span class="line">            HaveData = true;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (TopoNum[idx] == 1) // 遍歷只有一條記錄的節點（末端節點）</span><br><span class="line">        &#123;</span><br><span class="line">            HaveDataOneRecord = true;</span><br><span class="line"></span><br><span class="line">            TopoNumMod[idx]--;</span><br><span class="line"></span><br><span class="line">            for (int i = 0; i &lt; TOPO_NODE_NUM; ++i)</span><br><span class="line">            &#123;</span><br><span class="line">                if (TopoNum[i] &lt;= 1) // 遍歷其他大於一條記錄的節點</span><br><span class="line">                &#123;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                for (int n = 1; n &lt;= TopoSrc[i][0]; ++n) // 判斷該節點是否存在與末端節點時間相同的記錄</span><br><span class="line">                &#123;</span><br><span class="line">                    if (TimeCompare(TopoSrc[idx][1], TopoSrc[i][n], TOPO_TIME_BIAS)) // 4example bias==3 (±3s)</span><br><span class="line">                    &#123;</span><br><span class="line">                        // 如果存在則表示該節點爲末端節點的潛在父節點（並將該節點的記錄數量減一）</span><br><span class="line">                        TopoNumMod[i]--;</span><br><span class="line">                        if (TopoSrc[i][0] &lt; MinNum)</span><br><span class="line">                        &#123;</span><br><span class="line">                            MinNum = TopoSrc[i][0];</span><br><span class="line">                            MinIdx = i; // 查找拓撲記錄數量最少的節點</span><br><span class="line">                            break;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            TopoNet[idx] = MinIdx; // 拓撲記錄數量最少的那個節點即爲當前末端節點的父節點</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 經過上述步驟，拓撲記錄數量爲一的節點的記錄數量被清零，同時又重新生成了一批新的拓撲記錄數量爲一的節點。</span><br><span class="line">    // 這裏更新中間變量，然後繼續上述步驟：遍歷新的只有一條記錄的節點（新的末端節點），直至遍歷完畢。</span><br><span class="line">    memcpy(TopoNum, TopoNumMod, sizeof(TopoNum));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="遞歸打印"><a href="#遞歸打印" class="headerlink" title="遞歸打印"></a>遞歸打印</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">void TopoPrint(unsigned int root, unsigned int *node, int node_num) // *node : 節點關係（所有節點的父節點信息）</span><br><span class="line">&#123;</span><br><span class="line">    static int depth = 1;</span><br><span class="line"></span><br><span class="line">    FILE * fp;</span><br><span class="line"></span><br><span class="line">    for (int i = 0; i &lt; node_num; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        if (node[i] == root)</span><br><span class="line">        &#123;</span><br><span class="line">            fp = fopen(TOPO_FILE_PATH, &quot;a+&quot;);</span><br><span class="line"></span><br><span class="line">            // 根節點禁止遞歸</span><br><span class="line">            if (i == root)</span><br><span class="line">            &#123;</span><br><span class="line">                fclose(fp);</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            printf(&quot;|---&quot;);</span><br><span class="line"></span><br><span class="line">            for (int d = 0; d &lt; depth; ++d)</span><br><span class="line">            &#123;</span><br><span class="line">                #if (ENABLE_PRINT)</span><br><span class="line">                printf(&quot;|---&quot;);</span><br><span class="line">                #endif</span><br><span class="line">                #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">                fprintf(fp, &quot;|---&quot;);</span><br><span class="line">                #endif</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            // 打印序號</span><br><span class="line">            #if (ENABLE_PRINT)</span><br><span class="line">            printf(&quot;%-8d&quot;, i);</span><br><span class="line">            printf(TOPO_ALIGN_STR);</span><br><span class="line">            #endif</span><br><span class="line">            #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">            fprintf(fp, &quot;%-8d&quot;, i);</span><br><span class="line">            fprintf(fp, TOPO_ALIGN_STR);</span><br><span class="line">            #endif</span><br><span class="line"></span><br><span class="line">            // 打印地址</span><br><span class="line">            for (int len = 0; len &lt; 6; ++len)</span><br><span class="line">            &#123;</span><br><span class="line">                #if (ENABLE_PRINT)</span><br><span class="line">                printf(&quot;%02X&quot;, TopoDev[i][len]);</span><br><span class="line">                #endif</span><br><span class="line">                #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">                fprintf(fp, &quot;%02X&quot;, TopoDev[i][len]);</span><br><span class="line">                #endif</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            // 打印換行</span><br><span class="line">            #if (ENABLE_PRINT)</span><br><span class="line">            printf(&quot;\r\n&quot;);</span><br><span class="line">            #endif</span><br><span class="line">            #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">            fprintf(fp, &quot;\n&quot;);</span><br><span class="line">            #endif</span><br><span class="line"></span><br><span class="line">            fclose(fp);</span><br><span class="line"></span><br><span class="line">            // 遞歸調用</span><br><span class="line">            depth++;</span><br><span class="line">            TopoPrint(i, node, node_num);</span><br><span class="line">            depth--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>作者： </strong>刘汲桐
+  </li>
+  <li class="post-copyright-link">
+      <strong>鏈接：</strong>
+      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clnyh4aln002p80rqfksihou8.html" title="拓撲分析算法">https://sulfurandcu.github.io/sulfurandcu.io/clnyh4aln002p80rqfksihou8.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>聲明： </strong>請遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議｜姓名標示｜相同方式分享
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/sulfurandcu.io/tags/%E6%8B%93%E6%92%B2%E8%AD%98%E5%88%A5/" rel="tag"># 拓撲識別</a>
+              <a href="/sulfurandcu.io/tags/%E6%8B%93%E6%92%B2%E5%88%86%E6%9E%90/" rel="tag"># 拓撲分析</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/sulfurandcu.io/clnygatr1002p2wrqgl9825k9.html" rel="prev" title="格西調試精靈">
+                  <i class="fa fa-angle-left"></i> 格西調試精靈
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/sulfurandcu.io/clnyh4alo002x80rq15gq8l9x.html" rel="next" title="編寫一個根據 svn 提交記錄自動生成日報的腳本">
+                  編寫一個根據 svn 提交記錄自動生成日報的腳本 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2018 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-fingerprint"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">sulfurandcu</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/sulfurandcu.io/js/comments.js"></script><script src="/sulfurandcu.io/js/utils.js"></script><script src="/sulfurandcu.io/js/motion.js"></script><script src="/sulfurandcu.io/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/sulfurandcu.io/js/third-party/search/local-search.js"></script>
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.12/pdfobject.min.js","integrity":"sha256-g2xji1rlE3KsGVClvuxTbcR0Kn2+wtQADSff2Tbb4zA="},"url":"/sulfurandcu.io/lib/pdf/web/viewer.html"}</script>
+  <script src="/sulfurandcu.io/js/third-party/tags/pdf.js"></script>
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"neutral","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.0/mermaid.min.js","integrity":"sha256-K7oJiQlDulzl24ZUFOywuYme1JqBBvQzK6m8qHjt9Gk="}}</script>
+  <script src="/sulfurandcu.io/js/third-party/tags/mermaid.js"></script>
+
+  <script class="next-config" data-name="wavedrom" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.3.0/wavedrom.min.js","integrity":"sha256-IRMDzTC+wK5stMucZ/XSXkeS5VNtxZ+/Bm8Mcqfoxdo="}}</script>
+  <script class="next-config" data-name="wavedrom_skin" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.3.0/skins/default.js","integrity":"sha256-fduc/Zszk5ezWws2uInY/ALWVmIrmV6VTgXbsYSReFI="}}</script>
+  <script src="/sulfurandcu.io/js/third-party/tags/wavedrom.js"></script>
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
