@@ -85,7 +85,7 @@
 <div class="note info"><p><code>#web</code> <a href="http://127.0.0.1:3000/">http://127.0.0.1:3000</a></p>
 </div>
 
-<div class="note info"><p><code>#ssh</code> <a href="mailto:&#x6c;&#111;&#99;&#x61;&#108;&#x68;&#x6f;&#115;&#x74;&#x40;&#49;&#x32;&#55;&#x2e;&#48;&#46;&#x30;&#46;&#49;">&#x6c;&#111;&#99;&#x61;&#108;&#x68;&#x6f;&#115;&#x74;&#x40;&#49;&#x32;&#55;&#x2e;&#48;&#46;&#x30;&#46;&#49;</a> 📢 Password:password</p>
+<div class="note info"><p><code>#ssh</code> <a href="mailto:&#108;&#x6f;&#x63;&#97;&#108;&#x68;&#x6f;&#x73;&#116;&#64;&#49;&#50;&#x37;&#x2e;&#48;&#46;&#48;&#46;&#x31;">&#108;&#x6f;&#x63;&#97;&#108;&#x68;&#x6f;&#x73;&#116;&#64;&#49;&#50;&#x37;&#x2e;&#48;&#46;&#48;&#46;&#x31;</a> 📢 Password:password</p>
 </div>
 
 <div class="note info"><p><code>#svn</code> <a href="http://svn.sulfurandcu.com/doc">http://svn.sulfurandcu.com/doc</a></p>
@@ -288,20 +288,6 @@ docsify s
       </tags>
   </entry>
   <entry>
-    <title>DLT645</title>
-    <url>/sulfurandcu.io/clnyhr2ml002810rq6pxn7cmn.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>DLT645</tag>
-        <tag>多功能電能表通信協議</tag>
-        <tag>電力</tag>
-        <tag>行業標準</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>網頁字體使用指南</title>
     <url>/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html</url>
     <content><![CDATA[<p>在被 fontmin 和 font-spider 這倆貨虐得體無完膚之後，我決定試試<a href="https://hsingko.github.io/post/compress_webfont/">這篇文章</a>中提到的另一個字體壓縮工具</p>
@@ -333,6 +319,63 @@ docsify s
       </categories>
       <tags>
         <tag>網頁字體</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>dƷvorak</title>
+    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
+    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
+<br>
+
+<p style="font-family:courier new">
+　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
+　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
+　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
+　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
+</p>
+
+<span id="more"></span>
+
+<br>
+]]></content>
+      <categories>
+        <category>輸入方案</category>
+      </categories>
+      <tags>
+        <tag>鍵位佈局</tag>
+        <tag>qwerty</tag>
+        <tag>dvorak</tag>
+        <tag>dƷvorak</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DLT645</title>
+    <url>/sulfurandcu.io/clnyhr2ml002810rq6pxn7cmn.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>DLT645</tag>
+        <tag>多功能電能表通信協議</tag>
+        <tag>電力</tag>
+        <tag>行業標準</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>極樂迪斯科歐序篇</title>
+    <url>/sulfurandcu.io/clnyhr2ml002c10rq648736uf.html</url>
+    <content><![CDATA[<p>- There’s this giant ball there. And evil apes. And the evil apes are dukin’ it out on the ball. You’re one of them. It’s basically all just evil apes dukin’ it out on a giant ball.</p>
+<p>- How big is the ball?<br>- You can’t even make out it’s a ball, when you’re dukin’it out. It’s that large.</p>
+<p>- How small are the apes?<br>- Infinitesimally small.</p>
+<p>- And this “dukin’ it out” I keep hearing about - what’s that?<br>- Vying for resources? It’s just a stupid expression you picked up somewhere. The part of the presentation you want to take home with you is this: you have to beat the other evil apes in the face or you lose.</p>
+<p>- That sounds like something I would like to do.</p>
+]]></content>
+      <categories>
+        <category>遊戲筆記</category>
+      </categories>
+      <tags>
+        <tag>極樂迪斯科</tag>
       </tags>
   </entry>
   <entry>
@@ -420,30 +463,48 @@ docsify s
       </categories>
   </entry>
   <entry>
-    <title>dƷvorak</title>
-    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
-    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
-<br>
-
-<p style="font-family:courier new">
-　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
-　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
-　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
-　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
-</p>
+    <title>沒事兒也來做做題</title>
+    <url>/sulfurandcu.io/clnyhr2mo002m10rq48l66wah.html</url>
+    <content><![CDATA[<center><a href="http://sdoi.programming-rabbit.com/">http://sdoi.programming-rabbit.com/</a></center>
 
 <span id="more"></span>
 
-<br>
+<h3 id="第一題"><a href="#第一題" class="headerlink" title="第一題"></a>第一題</h3><h4 id="題目描述"><a href="#題目描述" class="headerlink" title="題目描述"></a>題目描述</h4><p>張三和李四在玩一種遊戲。</p>
+<p>首先，張三從 A 與 B 之間（包括A和B）選擇一個整數，告訴李四。</p>
+<p>其次，李四從 C 與 D 之間（包括C和D）選擇一個整數。</p>
+<p>兩個整數之和，如果是素數，張三贏，負責李四贏。</p>
+<p>當兩個人都是最佳發揮時，誰會贏？</p>
+<p><strong>輸入格式：</strong><br>一行四個正整數 A B C D 以空格隔開。</p>
+<p><strong>輸入格式：</strong><br>如果張三贏了，輸出 X，否則輸出 Y。</p>
+<h4 id="代碼實現"><a href="#代碼實現" class="headerlink" title="代碼實現"></a>代碼實現</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;sys/time.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">bool IsPrimeNumber(int n)</span><br><span class="line">&#123;</span><br><span class="line">	if (n &lt; 2)</span><br><span class="line">	&#123;</span><br><span class="line">		return false;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	int SquareRoot = 1;</span><br><span class="line"></span><br><span class="line">	while (SquareRoot * SquareRoot &lt; n)</span><br><span class="line">	&#123;</span><br><span class="line">		SquareRoot++;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for (int i = 2; i &lt;= SquareRoot; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		if (n % i == 0)</span><br><span class="line">		&#123;</span><br><span class="line">			return false;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	return true;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char **argv)</span><br><span class="line">&#123;</span><br><span class="line">	int a = 0;</span><br><span class="line">	int b = 0;</span><br><span class="line">	int c = 0;</span><br><span class="line">	int d = 0;</span><br><span class="line">	int i = 0;</span><br><span class="line">	int j = 0;</span><br><span class="line">	int sum = 0;</span><br><span class="line">	int x_win = 0;</span><br><span class="line">	int y_win = 0;</span><br><span class="line">	bool PrimeExist = false;</span><br><span class="line"></span><br><span class="line">	int usec_bgn;</span><br><span class="line">	int usec_end;</span><br><span class="line">	int usec_sub;</span><br><span class="line">	struct timeval tv;</span><br><span class="line"></span><br><span class="line">	/* 等待輸入 */</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b&gt;&gt;c&gt;&gt;d;</span><br><span class="line">	// a = 1; b = 100; c = 2; d = 3;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (a &lt;= 0 || a &gt; 100 || b &lt;= 0 || b &gt; 100 || c &lt;= 0 || c &gt; 100 || d &lt;= 0 || d &gt; 100)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! a, b, c, d should be greater than zero and less than or equal to 100! \r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (a &gt; b || c &gt; d)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! b is bigger than a!\r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (c &gt; d)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! d is bigger than c!\r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// printf(&quot;%d,%d,%d,%d\r\n&quot;, a, b, c, d);</span><br><span class="line"></span><br><span class="line">	/* 起始時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_bgn = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;bgn time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 勝負推演 */</span><br><span class="line">	for (i = a; i &lt;= b; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		PrimeExist = false;</span><br><span class="line"></span><br><span class="line">		for (j = c; j &lt;= d; ++j)</span><br><span class="line">		&#123;</span><br><span class="line">			sum = i + j;</span><br><span class="line"></span><br><span class="line">			if (IsPrimeNumber(sum))</span><br><span class="line">			&#123;</span><br><span class="line">				PrimeExist = true;</span><br><span class="line">				break;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		if (PrimeExist)</span><br><span class="line">		&#123;</span><br><span class="line">			y_win++;</span><br><span class="line"></span><br><span class="line">			#if 1 /* 如果不想顯示中間過程，可以屏蔽下行（將 #if 1 改爲 #if 0） */</span><br><span class="line">			printf(&quot;X = %d\tY = %d\tSUM  = %d \tY WIN !\r\n&quot;, i, j, sum);</span><br><span class="line">			#endif</span><br><span class="line">		&#125;</span><br><span class="line">		else</span><br><span class="line">		&#123;</span><br><span class="line">			x_win++;</span><br><span class="line"></span><br><span class="line">			#if 1 /* 如果不想顯示中間過程，可以屏蔽下行（將 #if 1 改爲 #if 0） */</span><br><span class="line">			printf(&quot;X = %d\tY =  \tSUM != Prime \tX WIN !\r\n&quot;, i);</span><br><span class="line">			#endif</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 比較小X和小Y總的勝負次數 */</span><br><span class="line">	if (x_win &gt; y_win)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, SO X WINS FINALLY !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	if (x_win &lt; y_win)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, SO Y WINS FINALLY !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, DRAWN GAME !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 結束時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_end = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;end time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 計算耗時 */</span><br><span class="line">	if (usec_end &gt;= usec_bgn)</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = usec_end - usec_bgn;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = 1000000 - (usec_bgn - usec_end);</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;time cost :%d us\r\n&quot;, usec_sub);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="測試記錄"><a href="#測試記錄" class="headerlink" title="測試記錄"></a>測試記錄</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">編譯環境 windows subsystem for linux (wsl) &amp; gcc/g++ v9.3.0</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$ g++ main.cpp -o main.cppout</span><br><span class="line">user@localhost:/mnt/e/gcc$ ./main.cppout</span><br><span class="line">1 100 2 3</span><br><span class="line"></span><br><span class="line">bgn time (second, micro-second): 1656168565s, 669332us</span><br><span class="line"></span><br><span class="line">X = 1   Y = 2   SUM  = 3        Y WIN !</span><br><span class="line">X = 2   Y = 3   SUM  = 5        Y WIN !</span><br><span class="line">X = 3   Y = 2   SUM  = 5        Y WIN !</span><br><span class="line">X = 4   Y = 3   SUM  = 7        Y WIN !</span><br><span class="line">X = 5   Y = 2   SUM  = 7        Y WIN !</span><br><span class="line">X = 6   Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 7   Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 8   Y = 3   SUM  = 11       Y WIN !</span><br><span class="line">X = 9   Y = 2   SUM  = 11       Y WIN !</span><br><span class="line">X = 10  Y = 3   SUM  = 13       Y WIN !</span><br><span class="line">X = 11  Y = 2   SUM  = 13       Y WIN !</span><br><span class="line">X = 12  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 13  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 14  Y = 3   SUM  = 17       Y WIN !</span><br><span class="line">X = 15  Y = 2   SUM  = 17       Y WIN !</span><br><span class="line">X = 16  Y = 3   SUM  = 19       Y WIN !</span><br><span class="line">X = 17  Y = 2   SUM  = 19       Y WIN !</span><br><span class="line">X = 18  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 19  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 20  Y = 3   SUM  = 23       Y WIN !</span><br><span class="line">X = 21  Y = 2   SUM  = 23       Y WIN !</span><br><span class="line">X = 22  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 23  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 24  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 25  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 26  Y = 3   SUM  = 29       Y WIN !</span><br><span class="line">X = 27  Y = 2   SUM  = 29       Y WIN !</span><br><span class="line">X = 28  Y = 3   SUM  = 31       Y WIN !</span><br><span class="line">X = 29  Y = 2   SUM  = 31       Y WIN !</span><br><span class="line">X = 30  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 31  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 32  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 33  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 34  Y = 3   SUM  = 37       Y WIN !</span><br><span class="line">X = 35  Y = 2   SUM  = 37       Y WIN !</span><br><span class="line">X = 36  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 37  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 38  Y = 3   SUM  = 41       Y WIN !</span><br><span class="line">X = 39  Y = 2   SUM  = 41       Y WIN !</span><br><span class="line">X = 40  Y = 3   SUM  = 43       Y WIN !</span><br><span class="line">X = 41  Y = 2   SUM  = 43       Y WIN !</span><br><span class="line">X = 42  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 43  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 44  Y = 3   SUM  = 47       Y WIN !</span><br><span class="line">X = 45  Y = 2   SUM  = 47       Y WIN !</span><br><span class="line">X = 46  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 47  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 48  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 49  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 50  Y = 3   SUM  = 53       Y WIN !</span><br><span class="line">X = 51  Y = 2   SUM  = 53       Y WIN !</span><br><span class="line">X = 52  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 53  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 54  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 55  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 56  Y = 3   SUM  = 59       Y WIN !</span><br><span class="line">X = 57  Y = 2   SUM  = 59       Y WIN !</span><br><span class="line">X = 58  Y = 3   SUM  = 61       Y WIN !</span><br><span class="line">X = 59  Y = 2   SUM  = 61       Y WIN !</span><br><span class="line">X = 60  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 61  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 62  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 63  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 64  Y = 3   SUM  = 67       Y WIN !</span><br><span class="line">X = 65  Y = 2   SUM  = 67       Y WIN !</span><br><span class="line">X = 66  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 67  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 68  Y = 3   SUM  = 71       Y WIN !</span><br><span class="line">X = 69  Y = 2   SUM  = 71       Y WIN !</span><br><span class="line">X = 70  Y = 3   SUM  = 73       Y WIN !</span><br><span class="line">X = 71  Y = 2   SUM  = 73       Y WIN !</span><br><span class="line">X = 72  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 73  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 74  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 75  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 76  Y = 3   SUM  = 79       Y WIN !</span><br><span class="line">X = 77  Y = 2   SUM  = 79       Y WIN !</span><br><span class="line">X = 78  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 79  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 80  Y = 3   SUM  = 83       Y WIN !</span><br><span class="line">X = 81  Y = 2   SUM  = 83       Y WIN !</span><br><span class="line">X = 82  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 83  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 84  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 85  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 86  Y = 3   SUM  = 89       Y WIN !</span><br><span class="line">X = 87  Y = 2   SUM  = 89       Y WIN !</span><br><span class="line">X = 88  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 89  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 90  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 91  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 92  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 93  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 94  Y = 3   SUM  = 97       Y WIN !</span><br><span class="line">X = 95  Y = 2   SUM  = 97       Y WIN !</span><br><span class="line">X = 96  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 97  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 98  Y = 3   SUM  = 101      Y WIN !</span><br><span class="line">X = 99  Y = 2   SUM  = 101      Y WIN !</span><br><span class="line">X = 100 Y = 3   SUM  = 103      Y WIN !</span><br><span class="line"></span><br><span class="line">X WIN TIMES = 50, Y WIN TIMES = 50, DRAWN GAME !</span><br><span class="line"></span><br><span class="line">end time (second, micro-second): 1656168565s, 670078us</span><br><span class="line"></span><br><span class="line">time cost :746 us</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$</span><br></pre></td></tr></table></figure>
+
+<h3 id="第二題"><a href="#第二題" class="headerlink" title="第二題"></a>第二題</h3><h4 id="題目描述-1"><a href="#題目描述-1" class="headerlink" title="題目描述"></a>題目描述</h4><p>張三成爲了一家餐廳的採購員。作爲一個採購員要有良好的職業素養。必須保證每次採購的物資不超過自己車輛的容量，然後在此條件下使得餐廳賺取的收益最大。</p>
+<p>商場中共有 n 種物資，編號爲 1 到 n 。每種物資都有兩個參數 v 和 w，分別表示這種物資的體積和採購這種物資可以給餐廳帶來的收益。注意每種物資每天至多隻能採購一件。</p>
+<p>張三有一輛容量爲 V 的採購車，每天張三隻去採購一次，採購的物資體積之和不能超過車輛的容量。</p>
+<p>對於每天採購的物資，餐廳老闆還有特殊的要求，第 i 天老闆要求張三不能採購編號大於等於 Li 並且小於等於 Ri 的物資（即不能採購編號在 [Li,Ri] 之間的物資）。特別的，當 Li&gt;Ri 時表示這天沒有不可採購的物資。</p>
+<p>對於接下來的 m 天，你需要告訴張三他每天分別最多可以給餐廳賺取多少的收益。</p>
+<p><strong>輸入格式：</strong><br>輸入第一行兩個個整數 n, V 表示共有 n 種物資，張三的車子容量是 V。<br>接下來 n 行，每行兩個整數。<br>第 i+1 行輸入vi, wi 表示第 i 種物資的體積和收益。<br>接下來一行輸入一個整數 m ，表示需要採購的天數。<br>接下來 m 行，每行輸入兩個整數 Li, Ri 表示第 i 天不能採購編號位於 Li 到 Ri 之間的物資。</p>
+<p><strong>輸出格式：</strong><br>輸出共 m 行，每行一個整數表示張三第 i 天可以給餐廳帶來的收益。</p>
+<p><strong>輸入樣例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">6   290     物資種類，容量</span><br><span class="line">85  97      1號體積，收益</span><br><span class="line">80  81      2號體積，收益</span><br><span class="line">83  1       3號體積，收益</span><br><span class="line">79  81      4號體積，收益</span><br><span class="line">89  1       5號體積，收益</span><br><span class="line">92  97      6號體積，收益</span><br><span class="line">5           天數</span><br><span class="line">3   5       Li-Ri</span><br><span class="line">1   1</span><br><span class="line">1   3</span><br><span class="line">5   2</span><br><span class="line">3   1</span><br></pre></td></tr></table></figure>
+
+<p><strong>輸出樣例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">275</span><br><span class="line">259</span><br><span class="line">179</span><br><span class="line">275</span><br><span class="line">275</span><br></pre></td></tr></table></figure>
+
+<p><strong>補充說明：</strong><br>前 20% 的數據滿足: 1&lt;&#x3D;n&lt;&#x3D;10,1&lt;&#x3D;m&lt;&#x3D;1000.<br>前 50% 的數據滿足: 1&lt;&#x3D;n, m, V&lt;&#x3D;300.<br>對於 100% 的數據滿足: 1&lt;&#x3D;n, m, V&lt;&#x3D;3000; 1&lt;&#x3D;vi&lt;&#x3D;3000; 1&lt;&#x3D;Li, Ri&lt;&#x3D;n; 1&lt;&#x3D;wi&lt;&#x3D;10^6.</p>
+<p><strong>時間限制：</strong>1s</p>
+<p><strong>空間限制：</strong>512M</p>
+<h4 id="代碼實現-1"><a href="#代碼實現-1" class="headerlink" title="代碼實現"></a>代碼實現</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;sys/time.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main(int argc, char **argv)</span><br><span class="line">&#123;</span><br><span class="line">	int daytotal;                       // 天數</span><br><span class="line">	int category;                       // 種類</span><br><span class="line">	int capacity;                       // 容量</span><br><span class="line">	int capacity_left;                  // 容量（剩餘）</span><br><span class="line">	int edge[3001][2];                  // 邊界條件</span><br><span class="line">	int menu[3001][2];                  // 貨單</span><br><span class="line">	int menu_sort[3001][3];             // 貨單（根據每件貨物的收益率排序）</span><br><span class="line">	int idx = 0;</span><br><span class="line">	int sum = 0;                        // 收益</span><br><span class="line">	double rate_max = 0;                // 收益率</span><br><span class="line">	double rate_tmp = 0;                // 收益率</span><br><span class="line"></span><br><span class="line">	int usec_bgn;</span><br><span class="line">	int usec_end;</span><br><span class="line">	int usec_sub;</span><br><span class="line">	struct timeval tv;</span><br><span class="line"></span><br><span class="line">	#if 0</span><br><span class="line">	cin&gt;&gt;category&gt;&gt;capacity;</span><br><span class="line"></span><br><span class="line">	for (int i = 0; i &lt; category; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;menu[i][0]&gt;&gt;menu[i][1];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	cin&gt;&gt;daytotal;</span><br><span class="line"></span><br><span class="line">	for (int i = 0; i &lt; daytotal; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;edge[i][0]&gt;&gt;edge[i][1];</span><br><span class="line">	&#125;</span><br><span class="line">	#else</span><br><span class="line">	category = 10;</span><br><span class="line">	capacity = 300;</span><br><span class="line">	menu[0][0] = 85; menu[0][1] = 97;</span><br><span class="line">	menu[1][0] = 80; menu[1][1] = 81;</span><br><span class="line">	menu[2][0] = 83; menu[2][1] = 1;</span><br><span class="line">	menu[3][0] = 79; menu[3][1] = 81;</span><br><span class="line">	menu[4][0] = 89; menu[4][1] = 1;</span><br><span class="line">	menu[5][0] = 92; menu[5][1] = 97;</span><br><span class="line">	daytotal = 10;</span><br><span class="line">	edge[0][0] = 3; edge[0][1] = 5;</span><br><span class="line">	edge[1][0] = 1; edge[1][1] = 1;</span><br><span class="line">	edge[2][0] = 1; edge[2][1] = 3;</span><br><span class="line">	edge[3][0] = 5; edge[3][1] = 2;</span><br><span class="line">	edge[4][0] = 3; edge[4][1] = 1;</span><br><span class="line">	#endif</span><br><span class="line"></span><br><span class="line">	/* 起始時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_bgn = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;bgn time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	for (int j = 0; j &lt; category; ++j)</span><br><span class="line">	&#123;</span><br><span class="line">		idx = 0;</span><br><span class="line">		rate_max = 0;</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; category; ++i)</span><br><span class="line">		&#123;</span><br><span class="line">			if (menu[i][0] == 0)</span><br><span class="line">			&#123;</span><br><span class="line">				continue;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			rate_tmp = (double)menu[i][1] / (double)menu[i][0];</span><br><span class="line"></span><br><span class="line">			if (rate_tmp &gt; rate_max)</span><br><span class="line">			&#123;</span><br><span class="line">				rate_max = rate_tmp;</span><br><span class="line">				idx = i;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		menu_sort[j][0] = menu[idx][0];</span><br><span class="line">		menu_sort[j][1] = menu[idx][1];</span><br><span class="line">		menu_sort[j][2] = idx;</span><br><span class="line">		menu[idx][0] = 0;</span><br><span class="line">		menu[idx][1] = 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for (int day_idx = 0; day_idx &lt; daytotal; ++day_idx) /* 第n天 */</span><br><span class="line">	&#123;</span><br><span class="line">		sum = 0;</span><br><span class="line">		capacity_left = capacity;</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; category; ++i)</span><br><span class="line">		&#123;</span><br><span class="line">			if ((menu_sort[i][2]+1) &gt;= edge[day_idx][0] &amp;&amp; (menu_sort[i][2]+1) &lt;= edge[day_idx][1])</span><br><span class="line">			&#123;</span><br><span class="line">				continue;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			if (capacity_left &gt;= menu_sort[i][0])</span><br><span class="line">			&#123;</span><br><span class="line">				capacity_left -= menu_sort[i][0];</span><br><span class="line">				sum += menu_sort[i][1];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		printf(&quot;%d\r\n&quot;, sum);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 結束時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_end = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;end time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 計算耗時 */</span><br><span class="line">	if (usec_end &gt;= usec_bgn)</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = usec_end - usec_bgn;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = 1000000 - (usec_bgn - usec_end);</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;time cost :%d us\r\n&quot;, usec_sub);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="測試記錄-1"><a href="#測試記錄-1" class="headerlink" title="測試記錄"></a>測試記錄</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">user@localhost:/mnt/e/gcc$ g++ main.cpp -o main.cppout</span><br><span class="line">user@localhost:/mnt/e/gcc$ ./main.cppout</span><br><span class="line"></span><br><span class="line">bgn time (second, micro-second): 1656593986s, 560594us</span><br><span class="line"></span><br><span class="line">275</span><br><span class="line">259</span><br><span class="line">179</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line"></span><br><span class="line">end time (second, micro-second): 1656593986s, 560641us</span><br><span class="line"></span><br><span class="line">time cost :47 us</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>輸入方案</category>
+        <category>開發筆記</category>
       </categories>
       <tags>
-        <tag>鍵位佈局</tag>
-        <tag>qwerty</tag>
-        <tag>dvorak</tag>
-        <tag>dƷvorak</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -628,6 +689,25 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
+    <title>編寫一個根據 svn 提交記錄自動生成日報的腳本</title>
+    <url>/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</url>
+    <content><![CDATA[<center>beep...領導要求每天寫日報，但是我不太想寫，於是就有了本段代碼。</center><br>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任務名稱</span><br><span class="line">taskname = &quot;編碼工作&quot;</span><br><span class="line"># 基準日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 過去幾天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查詢深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用戶名稱</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用戶路徑</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（計劃&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>效率提升</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>svn</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>crc-libc</title>
     <url>/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html</url>
     <content><![CDATA[<center><a href="https://github.com/sulfurandcu/crc-lib">https://github.com/sulfurandcu/crc-lib</a></center><br>
@@ -736,70 +816,6 @@ N2---&gt;N2.3[&quot; &quot;]
         <tag>五線譜</tag>
         <tag>簡譜</tag>
         <tag>lilypond</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>沒事兒也來做做題</title>
-    <url>/sulfurandcu.io/clnyhr2mo002m10rq48l66wah.html</url>
-    <content><![CDATA[<center><a href="http://sdoi.programming-rabbit.com/">http://sdoi.programming-rabbit.com/</a></center>
-
-<span id="more"></span>
-
-<h3 id="第一題"><a href="#第一題" class="headerlink" title="第一題"></a>第一題</h3><h4 id="題目描述"><a href="#題目描述" class="headerlink" title="題目描述"></a>題目描述</h4><p>張三和李四在玩一種遊戲。</p>
-<p>首先，張三從 A 與 B 之間（包括A和B）選擇一個整數，告訴李四。</p>
-<p>其次，李四從 C 與 D 之間（包括C和D）選擇一個整數。</p>
-<p>兩個整數之和，如果是素數，張三贏，負責李四贏。</p>
-<p>當兩個人都是最佳發揮時，誰會贏？</p>
-<p><strong>輸入格式：</strong><br>一行四個正整數 A B C D 以空格隔開。</p>
-<p><strong>輸入格式：</strong><br>如果張三贏了，輸出 X，否則輸出 Y。</p>
-<h4 id="代碼實現"><a href="#代碼實現" class="headerlink" title="代碼實現"></a>代碼實現</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;sys/time.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">bool IsPrimeNumber(int n)</span><br><span class="line">&#123;</span><br><span class="line">	if (n &lt; 2)</span><br><span class="line">	&#123;</span><br><span class="line">		return false;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	int SquareRoot = 1;</span><br><span class="line"></span><br><span class="line">	while (SquareRoot * SquareRoot &lt; n)</span><br><span class="line">	&#123;</span><br><span class="line">		SquareRoot++;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for (int i = 2; i &lt;= SquareRoot; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		if (n % i == 0)</span><br><span class="line">		&#123;</span><br><span class="line">			return false;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	return true;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char **argv)</span><br><span class="line">&#123;</span><br><span class="line">	int a = 0;</span><br><span class="line">	int b = 0;</span><br><span class="line">	int c = 0;</span><br><span class="line">	int d = 0;</span><br><span class="line">	int i = 0;</span><br><span class="line">	int j = 0;</span><br><span class="line">	int sum = 0;</span><br><span class="line">	int x_win = 0;</span><br><span class="line">	int y_win = 0;</span><br><span class="line">	bool PrimeExist = false;</span><br><span class="line"></span><br><span class="line">	int usec_bgn;</span><br><span class="line">	int usec_end;</span><br><span class="line">	int usec_sub;</span><br><span class="line">	struct timeval tv;</span><br><span class="line"></span><br><span class="line">	/* 等待輸入 */</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b&gt;&gt;c&gt;&gt;d;</span><br><span class="line">	// a = 1; b = 100; c = 2; d = 3;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (a &lt;= 0 || a &gt; 100 || b &lt;= 0 || b &gt; 100 || c &lt;= 0 || c &gt; 100 || d &lt;= 0 || d &gt; 100)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! a, b, c, d should be greater than zero and less than or equal to 100! \r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (a &gt; b || c &gt; d)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! b is bigger than a!\r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (c &gt; d)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! d is bigger than c!\r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// printf(&quot;%d,%d,%d,%d\r\n&quot;, a, b, c, d);</span><br><span class="line"></span><br><span class="line">	/* 起始時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_bgn = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;bgn time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 勝負推演 */</span><br><span class="line">	for (i = a; i &lt;= b; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		PrimeExist = false;</span><br><span class="line"></span><br><span class="line">		for (j = c; j &lt;= d; ++j)</span><br><span class="line">		&#123;</span><br><span class="line">			sum = i + j;</span><br><span class="line"></span><br><span class="line">			if (IsPrimeNumber(sum))</span><br><span class="line">			&#123;</span><br><span class="line">				PrimeExist = true;</span><br><span class="line">				break;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		if (PrimeExist)</span><br><span class="line">		&#123;</span><br><span class="line">			y_win++;</span><br><span class="line"></span><br><span class="line">			#if 1 /* 如果不想顯示中間過程，可以屏蔽下行（將 #if 1 改爲 #if 0） */</span><br><span class="line">			printf(&quot;X = %d\tY = %d\tSUM  = %d \tY WIN !\r\n&quot;, i, j, sum);</span><br><span class="line">			#endif</span><br><span class="line">		&#125;</span><br><span class="line">		else</span><br><span class="line">		&#123;</span><br><span class="line">			x_win++;</span><br><span class="line"></span><br><span class="line">			#if 1 /* 如果不想顯示中間過程，可以屏蔽下行（將 #if 1 改爲 #if 0） */</span><br><span class="line">			printf(&quot;X = %d\tY =  \tSUM != Prime \tX WIN !\r\n&quot;, i);</span><br><span class="line">			#endif</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 比較小X和小Y總的勝負次數 */</span><br><span class="line">	if (x_win &gt; y_win)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, SO X WINS FINALLY !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	if (x_win &lt; y_win)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, SO Y WINS FINALLY !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, DRAWN GAME !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 結束時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_end = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;end time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 計算耗時 */</span><br><span class="line">	if (usec_end &gt;= usec_bgn)</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = usec_end - usec_bgn;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = 1000000 - (usec_bgn - usec_end);</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;time cost :%d us\r\n&quot;, usec_sub);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="測試記錄"><a href="#測試記錄" class="headerlink" title="測試記錄"></a>測試記錄</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">編譯環境 windows subsystem for linux (wsl) &amp; gcc/g++ v9.3.0</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$ g++ main.cpp -o main.cppout</span><br><span class="line">user@localhost:/mnt/e/gcc$ ./main.cppout</span><br><span class="line">1 100 2 3</span><br><span class="line"></span><br><span class="line">bgn time (second, micro-second): 1656168565s, 669332us</span><br><span class="line"></span><br><span class="line">X = 1   Y = 2   SUM  = 3        Y WIN !</span><br><span class="line">X = 2   Y = 3   SUM  = 5        Y WIN !</span><br><span class="line">X = 3   Y = 2   SUM  = 5        Y WIN !</span><br><span class="line">X = 4   Y = 3   SUM  = 7        Y WIN !</span><br><span class="line">X = 5   Y = 2   SUM  = 7        Y WIN !</span><br><span class="line">X = 6   Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 7   Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 8   Y = 3   SUM  = 11       Y WIN !</span><br><span class="line">X = 9   Y = 2   SUM  = 11       Y WIN !</span><br><span class="line">X = 10  Y = 3   SUM  = 13       Y WIN !</span><br><span class="line">X = 11  Y = 2   SUM  = 13       Y WIN !</span><br><span class="line">X = 12  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 13  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 14  Y = 3   SUM  = 17       Y WIN !</span><br><span class="line">X = 15  Y = 2   SUM  = 17       Y WIN !</span><br><span class="line">X = 16  Y = 3   SUM  = 19       Y WIN !</span><br><span class="line">X = 17  Y = 2   SUM  = 19       Y WIN !</span><br><span class="line">X = 18  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 19  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 20  Y = 3   SUM  = 23       Y WIN !</span><br><span class="line">X = 21  Y = 2   SUM  = 23       Y WIN !</span><br><span class="line">X = 22  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 23  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 24  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 25  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 26  Y = 3   SUM  = 29       Y WIN !</span><br><span class="line">X = 27  Y = 2   SUM  = 29       Y WIN !</span><br><span class="line">X = 28  Y = 3   SUM  = 31       Y WIN !</span><br><span class="line">X = 29  Y = 2   SUM  = 31       Y WIN !</span><br><span class="line">X = 30  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 31  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 32  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 33  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 34  Y = 3   SUM  = 37       Y WIN !</span><br><span class="line">X = 35  Y = 2   SUM  = 37       Y WIN !</span><br><span class="line">X = 36  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 37  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 38  Y = 3   SUM  = 41       Y WIN !</span><br><span class="line">X = 39  Y = 2   SUM  = 41       Y WIN !</span><br><span class="line">X = 40  Y = 3   SUM  = 43       Y WIN !</span><br><span class="line">X = 41  Y = 2   SUM  = 43       Y WIN !</span><br><span class="line">X = 42  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 43  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 44  Y = 3   SUM  = 47       Y WIN !</span><br><span class="line">X = 45  Y = 2   SUM  = 47       Y WIN !</span><br><span class="line">X = 46  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 47  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 48  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 49  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 50  Y = 3   SUM  = 53       Y WIN !</span><br><span class="line">X = 51  Y = 2   SUM  = 53       Y WIN !</span><br><span class="line">X = 52  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 53  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 54  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 55  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 56  Y = 3   SUM  = 59       Y WIN !</span><br><span class="line">X = 57  Y = 2   SUM  = 59       Y WIN !</span><br><span class="line">X = 58  Y = 3   SUM  = 61       Y WIN !</span><br><span class="line">X = 59  Y = 2   SUM  = 61       Y WIN !</span><br><span class="line">X = 60  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 61  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 62  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 63  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 64  Y = 3   SUM  = 67       Y WIN !</span><br><span class="line">X = 65  Y = 2   SUM  = 67       Y WIN !</span><br><span class="line">X = 66  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 67  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 68  Y = 3   SUM  = 71       Y WIN !</span><br><span class="line">X = 69  Y = 2   SUM  = 71       Y WIN !</span><br><span class="line">X = 70  Y = 3   SUM  = 73       Y WIN !</span><br><span class="line">X = 71  Y = 2   SUM  = 73       Y WIN !</span><br><span class="line">X = 72  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 73  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 74  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 75  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 76  Y = 3   SUM  = 79       Y WIN !</span><br><span class="line">X = 77  Y = 2   SUM  = 79       Y WIN !</span><br><span class="line">X = 78  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 79  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 80  Y = 3   SUM  = 83       Y WIN !</span><br><span class="line">X = 81  Y = 2   SUM  = 83       Y WIN !</span><br><span class="line">X = 82  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 83  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 84  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 85  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 86  Y = 3   SUM  = 89       Y WIN !</span><br><span class="line">X = 87  Y = 2   SUM  = 89       Y WIN !</span><br><span class="line">X = 88  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 89  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 90  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 91  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 92  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 93  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 94  Y = 3   SUM  = 97       Y WIN !</span><br><span class="line">X = 95  Y = 2   SUM  = 97       Y WIN !</span><br><span class="line">X = 96  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 97  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 98  Y = 3   SUM  = 101      Y WIN !</span><br><span class="line">X = 99  Y = 2   SUM  = 101      Y WIN !</span><br><span class="line">X = 100 Y = 3   SUM  = 103      Y WIN !</span><br><span class="line"></span><br><span class="line">X WIN TIMES = 50, Y WIN TIMES = 50, DRAWN GAME !</span><br><span class="line"></span><br><span class="line">end time (second, micro-second): 1656168565s, 670078us</span><br><span class="line"></span><br><span class="line">time cost :746 us</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$</span><br></pre></td></tr></table></figure>
-
-<h3 id="第二題"><a href="#第二題" class="headerlink" title="第二題"></a>第二題</h3><h4 id="題目描述-1"><a href="#題目描述-1" class="headerlink" title="題目描述"></a>題目描述</h4><p>張三成爲了一家餐廳的採購員。作爲一個採購員要有良好的職業素養。必須保證每次採購的物資不超過自己車輛的容量，然後在此條件下使得餐廳賺取的收益最大。</p>
-<p>商場中共有 n 種物資，編號爲 1 到 n 。每種物資都有兩個參數 v 和 w，分別表示這種物資的體積和採購這種物資可以給餐廳帶來的收益。注意每種物資每天至多隻能採購一件。</p>
-<p>張三有一輛容量爲 V 的採購車，每天張三隻去採購一次，採購的物資體積之和不能超過車輛的容量。</p>
-<p>對於每天採購的物資，餐廳老闆還有特殊的要求，第 i 天老闆要求張三不能採購編號大於等於 Li 並且小於等於 Ri 的物資（即不能採購編號在 [Li,Ri] 之間的物資）。特別的，當 Li&gt;Ri 時表示這天沒有不可採購的物資。</p>
-<p>對於接下來的 m 天，你需要告訴張三他每天分別最多可以給餐廳賺取多少的收益。</p>
-<p><strong>輸入格式：</strong><br>輸入第一行兩個個整數 n, V 表示共有 n 種物資，張三的車子容量是 V。<br>接下來 n 行，每行兩個整數。<br>第 i+1 行輸入vi, wi 表示第 i 種物資的體積和收益。<br>接下來一行輸入一個整數 m ，表示需要採購的天數。<br>接下來 m 行，每行輸入兩個整數 Li, Ri 表示第 i 天不能採購編號位於 Li 到 Ri 之間的物資。</p>
-<p><strong>輸出格式：</strong><br>輸出共 m 行，每行一個整數表示張三第 i 天可以給餐廳帶來的收益。</p>
-<p><strong>輸入樣例：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">6   290     物資種類，容量</span><br><span class="line">85  97      1號體積，收益</span><br><span class="line">80  81      2號體積，收益</span><br><span class="line">83  1       3號體積，收益</span><br><span class="line">79  81      4號體積，收益</span><br><span class="line">89  1       5號體積，收益</span><br><span class="line">92  97      6號體積，收益</span><br><span class="line">5           天數</span><br><span class="line">3   5       Li-Ri</span><br><span class="line">1   1</span><br><span class="line">1   3</span><br><span class="line">5   2</span><br><span class="line">3   1</span><br></pre></td></tr></table></figure>
-
-<p><strong>輸出樣例：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">275</span><br><span class="line">259</span><br><span class="line">179</span><br><span class="line">275</span><br><span class="line">275</span><br></pre></td></tr></table></figure>
-
-<p><strong>補充說明：</strong><br>前 20% 的數據滿足: 1&lt;&#x3D;n&lt;&#x3D;10,1&lt;&#x3D;m&lt;&#x3D;1000.<br>前 50% 的數據滿足: 1&lt;&#x3D;n, m, V&lt;&#x3D;300.<br>對於 100% 的數據滿足: 1&lt;&#x3D;n, m, V&lt;&#x3D;3000; 1&lt;&#x3D;vi&lt;&#x3D;3000; 1&lt;&#x3D;Li, Ri&lt;&#x3D;n; 1&lt;&#x3D;wi&lt;&#x3D;10^6.</p>
-<p><strong>時間限制：</strong>1s</p>
-<p><strong>空間限制：</strong>512M</p>
-<h4 id="代碼實現-1"><a href="#代碼實現-1" class="headerlink" title="代碼實現"></a>代碼實現</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;sys/time.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main(int argc, char **argv)</span><br><span class="line">&#123;</span><br><span class="line">	int daytotal;                       // 天數</span><br><span class="line">	int category;                       // 種類</span><br><span class="line">	int capacity;                       // 容量</span><br><span class="line">	int capacity_left;                  // 容量（剩餘）</span><br><span class="line">	int edge[3001][2];                  // 邊界條件</span><br><span class="line">	int menu[3001][2];                  // 貨單</span><br><span class="line">	int menu_sort[3001][3];             // 貨單（根據每件貨物的收益率排序）</span><br><span class="line">	int idx = 0;</span><br><span class="line">	int sum = 0;                        // 收益</span><br><span class="line">	double rate_max = 0;                // 收益率</span><br><span class="line">	double rate_tmp = 0;                // 收益率</span><br><span class="line"></span><br><span class="line">	int usec_bgn;</span><br><span class="line">	int usec_end;</span><br><span class="line">	int usec_sub;</span><br><span class="line">	struct timeval tv;</span><br><span class="line"></span><br><span class="line">	#if 0</span><br><span class="line">	cin&gt;&gt;category&gt;&gt;capacity;</span><br><span class="line"></span><br><span class="line">	for (int i = 0; i &lt; category; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;menu[i][0]&gt;&gt;menu[i][1];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	cin&gt;&gt;daytotal;</span><br><span class="line"></span><br><span class="line">	for (int i = 0; i &lt; daytotal; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;edge[i][0]&gt;&gt;edge[i][1];</span><br><span class="line">	&#125;</span><br><span class="line">	#else</span><br><span class="line">	category = 10;</span><br><span class="line">	capacity = 300;</span><br><span class="line">	menu[0][0] = 85; menu[0][1] = 97;</span><br><span class="line">	menu[1][0] = 80; menu[1][1] = 81;</span><br><span class="line">	menu[2][0] = 83; menu[2][1] = 1;</span><br><span class="line">	menu[3][0] = 79; menu[3][1] = 81;</span><br><span class="line">	menu[4][0] = 89; menu[4][1] = 1;</span><br><span class="line">	menu[5][0] = 92; menu[5][1] = 97;</span><br><span class="line">	daytotal = 10;</span><br><span class="line">	edge[0][0] = 3; edge[0][1] = 5;</span><br><span class="line">	edge[1][0] = 1; edge[1][1] = 1;</span><br><span class="line">	edge[2][0] = 1; edge[2][1] = 3;</span><br><span class="line">	edge[3][0] = 5; edge[3][1] = 2;</span><br><span class="line">	edge[4][0] = 3; edge[4][1] = 1;</span><br><span class="line">	#endif</span><br><span class="line"></span><br><span class="line">	/* 起始時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_bgn = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;bgn time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	for (int j = 0; j &lt; category; ++j)</span><br><span class="line">	&#123;</span><br><span class="line">		idx = 0;</span><br><span class="line">		rate_max = 0;</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; category; ++i)</span><br><span class="line">		&#123;</span><br><span class="line">			if (menu[i][0] == 0)</span><br><span class="line">			&#123;</span><br><span class="line">				continue;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			rate_tmp = (double)menu[i][1] / (double)menu[i][0];</span><br><span class="line"></span><br><span class="line">			if (rate_tmp &gt; rate_max)</span><br><span class="line">			&#123;</span><br><span class="line">				rate_max = rate_tmp;</span><br><span class="line">				idx = i;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		menu_sort[j][0] = menu[idx][0];</span><br><span class="line">		menu_sort[j][1] = menu[idx][1];</span><br><span class="line">		menu_sort[j][2] = idx;</span><br><span class="line">		menu[idx][0] = 0;</span><br><span class="line">		menu[idx][1] = 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for (int day_idx = 0; day_idx &lt; daytotal; ++day_idx) /* 第n天 */</span><br><span class="line">	&#123;</span><br><span class="line">		sum = 0;</span><br><span class="line">		capacity_left = capacity;</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; category; ++i)</span><br><span class="line">		&#123;</span><br><span class="line">			if ((menu_sort[i][2]+1) &gt;= edge[day_idx][0] &amp;&amp; (menu_sort[i][2]+1) &lt;= edge[day_idx][1])</span><br><span class="line">			&#123;</span><br><span class="line">				continue;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			if (capacity_left &gt;= menu_sort[i][0])</span><br><span class="line">			&#123;</span><br><span class="line">				capacity_left -= menu_sort[i][0];</span><br><span class="line">				sum += menu_sort[i][1];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		printf(&quot;%d\r\n&quot;, sum);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 結束時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_end = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;end time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 計算耗時 */</span><br><span class="line">	if (usec_end &gt;= usec_bgn)</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = usec_end - usec_bgn;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = 1000000 - (usec_bgn - usec_end);</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;time cost :%d us\r\n&quot;, usec_sub);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="測試記錄-1"><a href="#測試記錄-1" class="headerlink" title="測試記錄"></a>測試記錄</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">user@localhost:/mnt/e/gcc$ g++ main.cpp -o main.cppout</span><br><span class="line">user@localhost:/mnt/e/gcc$ ./main.cppout</span><br><span class="line"></span><br><span class="line">bgn time (second, micro-second): 1656593986s, 560594us</span><br><span class="line"></span><br><span class="line">275</span><br><span class="line">259</span><br><span class="line">179</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line"></span><br><span class="line">end time (second, micro-second): 1656593986s, 560641us</span><br><span class="line"></span><br><span class="line">time cost :47 us</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>編寫一個根據 svn 提交記錄自動生成日報的腳本</title>
-    <url>/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</url>
-    <content><![CDATA[<center>beep...領導要求每天寫日報，但是我不太想寫，於是就有了本段代碼。</center><br>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任務名稱</span><br><span class="line">taskname = &quot;編碼工作&quot;</span><br><span class="line"># 基準日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 過去幾天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查詢深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用戶名稱</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用戶路徑</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（計劃&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>效率提升</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>svn</tag>
       </tags>
   </entry>
   <entry>
@@ -1021,22 +1037,6 @@ N2---&gt;N2.3[&quot; &quot;]
 
 <br>
 ]]></content>
-  </entry>
-  <entry>
-    <title>極樂迪斯科歐序篇</title>
-    <url>/sulfurandcu.io/clnyhr2ml002c10rq648736uf.html</url>
-    <content><![CDATA[<p>- There’s this giant ball there. And evil apes. And the evil apes are dukin’ it out on the ball. You’re one of them. It’s basically all just evil apes dukin’ it out on a giant ball.</p>
-<p>- How big is the ball?<br>- You can’t even make out it’s a ball, when you’re dukin’it out. It’s that large.</p>
-<p>- How small are the apes?<br>- Infinitesimally small.</p>
-<p>- And this “dukin’ it out” I keep hearing about - what’s that?<br>- Vying for resources? It’s just a stupid expression you picked up somewhere. The part of the presentation you want to take home with you is this: you have to beat the other evil apes in the face or you lose.</p>
-<p>- That sounds like something I would like to do.</p>
-]]></content>
-      <categories>
-        <category>遊戲筆記</category>
-      </categories>
-      <tags>
-        <tag>極樂迪斯科</tag>
-      </tags>
   </entry>
   <entry>
     <title>集成開發環境－合集</title>
@@ -1617,6 +1617,153 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
+    <title>嵌入式 IAP 升級功能（#01）基礎概念</title>
+    <url>/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html</url>
+    <content><![CDATA[<center>傳統編程方式</center>
+
+<pre class="mermaid">
+flowchart LR
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+A(先取下芯片)---&gt;B(再燒錄程序)---&gt;C(後裝回板卡)
+</pre>
+
+<center>現代編程方式</center>
+
+<pre class="mermaid">
+flowchart LR
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+A(&quot;在電路編程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系統編程&lt;br&gt;(ＩＳＰ)&quot;)---&gt;C(&quot;在應用編程&lt;br&gt;(ＩＡＰ)&quot;)
+</pre>
+
+<span id="more"></span>
+
+<h2 id="傳統編程方式"><a href="#傳統編程方式" class="headerlink" title="傳統編程方式"></a>傳統編程方式</h2><p>傳統編程方式是先將程序燒錄至主控芯片中再焊接到電路板上。</p>
+<p><strong>開發階段</strong></p>
+<ul>
+<li>➀ 從電路板上取下芯片</li>
+<li>➁ 使用燒錄器燒寫程序</li>
+<li>➂ 將芯片裝回至電路板</li>
+</ul>
+<p><strong>量產階段</strong></p>
+<ul>
+<li>➀ 從 tray 盤取出芯片</li>
+<li>➁ 使用燒錄器燒寫程序</li>
+<li>➂ 將芯片放回 tray 盤</li>
+</ul>
+<p><strong>維護階段</strong></p>
+<ul>
+<li>➀ 從電路板上拆下芯片</li>
+<li>➁ 使用燒錄器燒寫程序</li>
+<li>➂ 將芯片焊回至電路板</li>
+</ul>
+<h2 id="現代編程方式"><a href="#現代編程方式" class="headerlink" title="現代編程方式"></a>現代編程方式</h2><p>現代編程方式可以直接進行板上燒錄，不用再取下芯片放到專用的燒錄器上燒錄，極大地提高了開發、生產以及維護效率。</p>
+<p>現代編程方式又可分爲：</p>
+<ul>
+<li>在電路編程 ICP (Circuit)</li>
+<li>在系統編程 ISP (System)</li>
+<li>在應用編程 IAP (Application)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">編程方式</th>
+<th align="center">在電路編程</th>
+<th align="center">在系統編程</th>
+<th align="center">在應用編程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">核心思想</td>
+<td align="center">藉助外部燒錄器<br>通過JTAG&#x2F;SWD接口<br>實現在電路編程</td>
+<td align="center">藉助芯片內部<br>固化的引導程序和BOOT引腳<br>以及片上接口<br>實現在系統編程</td>
+<td align="center">藉助用戶自己<br>編寫的引導程序、應用程序<br>以及片上接口、板上接口<br>實現在應用編程</td>
+</tr>
+<tr>
+<td align="center">引導程序</td>
+<td align="center">不需要</td>
+<td align="center">需要芯片廠家編寫<br>並固化到某一地址空間</td>
+<td align="center">需要用戶自己編寫<br>並燒錄至內部flash存儲器</td>
+</tr>
+<tr>
+<td align="center">進入方式</td>
+<td align="center">隨時待命</td>
+<td align="center">需要更改BOOT引腳的電平<br>然後硬件復位<br>進入內部固化的引導程序</td>
+<td align="center">隨時待命</td>
+</tr>
+<tr>
+<td align="center">配套軟件</td>
+<td align="center">燒錄軟件</td>
+<td align="center">芯片廠家提供的<br>上位機ISP編程軟件</td>
+<td align="center">用戶自己開發的數據傳輸軟件</td>
+</tr>
+<tr>
+<td align="center">通信接口</td>
+<td align="center">JTAG&#x2F;SWD</td>
+<td align="center">取決於芯片中固化的引導程序<br>URT&#x2F;SPI&#x2F;IIC&#x2F;CAN&#x2F;USB</td>
+<td align="center">理論上可以支持任意接口<br>URT&#x2F;SPI&#x2F;IIC<br>485&#x2F;CAN&#x2F;USB<br>WiFi&#x2F;BLE&#x2F;IrDA<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
+</tr>
+<tr>
+<td align="center">程序升級<br>是否需要<br>拆裝芯片</td>
+<td align="center">不需要<br>拆裝芯片</td>
+<td align="center">不需要<br>拆裝芯片</td>
+<td align="center">不需要<br>拆裝芯片</td>
+</tr>
+<tr>
+<td align="center">程序升級<br>是否需要<br>拆裝外殼</td>
+<td align="center">需要<br>拆開設備外殼</td>
+<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB</td>
+<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB&#x2F;WiFi&#x2F;BLE&#x2F;IrDA</td>
+</tr>
+<tr>
+<td align="center">程序升級<br>是否需要<br>前往現場</td>
+<td align="center">需要<br>前往設備安裝現場</td>
+<td align="center">需要<br>前往設備安裝現場</td>
+<td align="center">遠程通信功能完備的情況下<br>不需要<br>前往設備安裝現場<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
+</tr>
+</tbody></table>
+<div class="note info no-icon"><p>ICP 主要是在開發階段使用，其燒錄速度是 ISP 和 IAP 所無法比擬的。</p>
+</div>
+
+<div class="note info no-icon"><p>IAP 與 ISP 類似，都有 bootloader 引導程序，因此無需使用燒錄器。二者的區別在於，ISP 的引導程序由芯片廠家編寫，比較簡單，無法實現用戶的定製化需求；而 IAP 的引導程序是由用戶自己實現，可以根據需求自行修改。另外 ISP 進入 boot 程序的方式是通過更改 BOOT 引腳的電平；而 IAP 則是從用戶程序中通過軟件復位或者跳轉的方式直接進入 bootloader 程序，因此相較於 ISP 來說會更加靈活。</p>
+</div>
+
+<div class="note info no-icon"><p>通過 WiFi&#x2F;BLE&#x2F;4G&#x2F;5G&#x2F;NBIoT 等無線通信技術實現 IAP 功能的方案也被稱作 OTA 空中下載技術。</p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="center">BOOT1</th>
+<th align="center">BOOT0</th>
+<th align="center">BOOT MODE</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">X</td>
+<td align="center">0</td>
+<td align="center">boot from 0x08000000 : main memory</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">boot from 0x1FFF0000 : boot memory</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">boot from 0x20000000 : sram memory</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>在線升級</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>嵌入式 IAP 升級功能（#02）升級方案</title>
     <url>/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html</url>
     <content><![CDATA[<center>which one is better?</center>
@@ -2008,166 +2155,6 @@ A(在引導程序中集成通信協議棧與解壓還原算法)~~~B(在應用程
       </tags>
   </entry>
   <entry>
-    <title>嵌入式 IAP 升級功能（#04）技術細節</title>
-    <url>/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html</url>
-    <content><![CDATA[<p>分散加載、中斷向量表重定向</p>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>在線升級</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>嵌入式 IAP 升級功能（#01）基礎概念</title>
-    <url>/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html</url>
-    <content><![CDATA[<center>傳統編程方式</center>
-
-<pre class="mermaid">
-flowchart LR
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-A(先取下芯片)---&gt;B(再燒錄程序)---&gt;C(後裝回板卡)
-</pre>
-
-<center>現代編程方式</center>
-
-<pre class="mermaid">
-flowchart LR
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-A(&quot;在電路編程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系統編程&lt;br&gt;(ＩＳＰ)&quot;)---&gt;C(&quot;在應用編程&lt;br&gt;(ＩＡＰ)&quot;)
-</pre>
-
-<span id="more"></span>
-
-<h2 id="傳統編程方式"><a href="#傳統編程方式" class="headerlink" title="傳統編程方式"></a>傳統編程方式</h2><p>傳統編程方式是先將程序燒錄至主控芯片中再焊接到電路板上。</p>
-<p><strong>開發階段</strong></p>
-<ul>
-<li>➀ 從電路板上取下芯片</li>
-<li>➁ 使用燒錄器燒寫程序</li>
-<li>➂ 將芯片裝回至電路板</li>
-</ul>
-<p><strong>量產階段</strong></p>
-<ul>
-<li>➀ 從 tray 盤取出芯片</li>
-<li>➁ 使用燒錄器燒寫程序</li>
-<li>➂ 將芯片放回 tray 盤</li>
-</ul>
-<p><strong>維護階段</strong></p>
-<ul>
-<li>➀ 從電路板上拆下芯片</li>
-<li>➁ 使用燒錄器燒寫程序</li>
-<li>➂ 將芯片焊回至電路板</li>
-</ul>
-<h2 id="現代編程方式"><a href="#現代編程方式" class="headerlink" title="現代編程方式"></a>現代編程方式</h2><p>現代編程方式可以直接進行板上燒錄，不用再取下芯片放到專用的燒錄器上燒錄，極大地提高了開發、生產以及維護效率。</p>
-<p>現代編程方式又可分爲：</p>
-<ul>
-<li>在電路編程 ICP (Circuit)</li>
-<li>在系統編程 ISP (System)</li>
-<li>在應用編程 IAP (Application)</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">編程方式</th>
-<th align="center">在電路編程</th>
-<th align="center">在系統編程</th>
-<th align="center">在應用編程</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">核心思想</td>
-<td align="center">藉助外部燒錄器<br>通過JTAG&#x2F;SWD接口<br>實現在電路編程</td>
-<td align="center">藉助芯片內部<br>固化的引導程序和BOOT引腳<br>以及片上接口<br>實現在系統編程</td>
-<td align="center">藉助用戶自己<br>編寫的引導程序、應用程序<br>以及片上接口、板上接口<br>實現在應用編程</td>
-</tr>
-<tr>
-<td align="center">引導程序</td>
-<td align="center">不需要</td>
-<td align="center">需要芯片廠家編寫<br>並固化到某一地址空間</td>
-<td align="center">需要用戶自己編寫<br>並燒錄至內部flash存儲器</td>
-</tr>
-<tr>
-<td align="center">進入方式</td>
-<td align="center">隨時待命</td>
-<td align="center">需要更改BOOT引腳的電平<br>然後硬件復位<br>進入內部固化的引導程序</td>
-<td align="center">隨時待命</td>
-</tr>
-<tr>
-<td align="center">配套軟件</td>
-<td align="center">燒錄軟件</td>
-<td align="center">芯片廠家提供的<br>上位機ISP編程軟件</td>
-<td align="center">用戶自己開發的數據傳輸軟件</td>
-</tr>
-<tr>
-<td align="center">通信接口</td>
-<td align="center">JTAG&#x2F;SWD</td>
-<td align="center">取決於芯片中固化的引導程序<br>URT&#x2F;SPI&#x2F;IIC&#x2F;CAN&#x2F;USB</td>
-<td align="center">理論上可以支持任意接口<br>URT&#x2F;SPI&#x2F;IIC<br>485&#x2F;CAN&#x2F;USB<br>WiFi&#x2F;BLE&#x2F;IrDA<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
-</tr>
-<tr>
-<td align="center">程序升級<br>是否需要<br>拆裝芯片</td>
-<td align="center">不需要<br>拆裝芯片</td>
-<td align="center">不需要<br>拆裝芯片</td>
-<td align="center">不需要<br>拆裝芯片</td>
-</tr>
-<tr>
-<td align="center">程序升級<br>是否需要<br>拆裝外殼</td>
-<td align="center">需要<br>拆開設備外殼</td>
-<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB</td>
-<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB&#x2F;WiFi&#x2F;BLE&#x2F;IrDA</td>
-</tr>
-<tr>
-<td align="center">程序升級<br>是否需要<br>前往現場</td>
-<td align="center">需要<br>前往設備安裝現場</td>
-<td align="center">需要<br>前往設備安裝現場</td>
-<td align="center">遠程通信功能完備的情況下<br>不需要<br>前往設備安裝現場<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
-</tr>
-</tbody></table>
-<div class="note info no-icon"><p>ICP 主要是在開發階段使用，其燒錄速度是 ISP 和 IAP 所無法比擬的。</p>
-</div>
-
-<div class="note info no-icon"><p>IAP 與 ISP 類似，都有 bootloader 引導程序，因此無需使用燒錄器。二者的區別在於，ISP 的引導程序由芯片廠家編寫，比較簡單，無法實現用戶的定製化需求；而 IAP 的引導程序是由用戶自己實現，可以根據需求自行修改。另外 ISP 進入 boot 程序的方式是通過更改 BOOT 引腳的電平；而 IAP 則是從用戶程序中通過軟件復位或者跳轉的方式直接進入 bootloader 程序，因此相較於 ISP 來說會更加靈活。</p>
-</div>
-
-<div class="note info no-icon"><p>通過 WiFi&#x2F;BLE&#x2F;4G&#x2F;5G&#x2F;NBIoT 等無線通信技術實現 IAP 功能的方案也被稱作 OTA 空中下載技術。</p>
-</div>
-
-<table>
-<thead>
-<tr>
-<th align="center">BOOT1</th>
-<th align="center">BOOT0</th>
-<th align="center">BOOT MODE</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">X</td>
-<td align="center">0</td>
-<td align="center">boot from 0x08000000 : main memory</td>
-</tr>
-<tr>
-<td align="center">0</td>
-<td align="center">1</td>
-<td align="center">boot from 0x1FFF0000 : boot memory</td>
-</tr>
-<tr>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">boot from 0x20000000 : sram memory</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>在線升級</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>嵌入式 IAP 升級功能（#03）流程設計</title>
     <url>/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html</url>
     <content><![CDATA[<pre class="mermaid">
@@ -2226,6 +2213,19 @@ AppStart(應用程序開始)--&gt;AppRemap[重定向中斷向量表]--&gt;AppIni
 AppIsRecvDone--否--&gt;AppTask
 AppIsRecvDone--是--&gt;AppSetAppInvalid[修改應用程序有效標識：無效]--&gt;AppBeforeJump[關閉外設和中斷]--&gt;AppJumpToIap[重啓進入引導程序｜跳轉進入引導程序]--&gt;AppOver(應用程序結束)
 </pre>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>在線升級</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>嵌入式 IAP 升級功能（#04）技術細節</title>
+    <url>/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html</url>
+    <content><![CDATA[<p>分散加載、中斷向量表重定向</p>
 ]]></content>
       <categories>
         <category>開發筆記</category>
