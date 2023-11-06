@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.css" integrity="sha256-vQkngPS8jiHHH0I6ABTZroZk8NPZ7b+MUReOFE9UsXQ=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"sulfurandcu.github.io","root":"/sulfurandcu.io/","images":"/sulfurandcu.io/images","scheme":"Gemini","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/sulfurandcu.io/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/sulfurandcu.io/js/config.js"></script>
 
@@ -144,7 +145,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-count">35</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -155,7 +156,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">35</span>
+        <span class="site-state-item-count">39</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -247,11 +248,15 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><center>引導程序主導｜應用程序主導</center>
-<center>which one is better?</center>
+    <div class="post-body" itemprop="articleBody"><center>which one is better?</center>
 <br>
 
-<p><img src="/sulfurandcu.io/images/cover.png" alt="圖片加載失敗"></p>
+<pre class="mermaid">
+flowchart LR
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+A(在引導程序中集成通信協議棧與解壓還原算法)~~~B(在應用程序中集成通信協議棧與解壓還原算法)
+</pre>
+
 <span id="more"></span>
 
 <h2 id="思路（-1）：引導程序主導"><a href="#思路（-1）：引導程序主導" class="headerlink" title="思路（#1）：引導程序主導"></a>思路（#1）：引導程序主導</h2><table>
@@ -376,7 +381,6 @@
 </tr>
 </thead>
 <tbody>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">引導程序存儲區<br>bootloader</td>
     <td align="center">中斷向量表</td>
@@ -384,7 +388,6 @@
 <tr>
     <td align="center">引導程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">應用程序存儲區</td>
     <td align="center">重定向的中斷向量表</td>
@@ -392,7 +395,6 @@
 <tr>
     <td align="center">應用程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center">參數數據存儲區</td>
     <td align="center">掉電不丟失的系統參數</td>
@@ -409,7 +411,6 @@
 </tr>
 </thead>
 <tbody>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">引導程序存儲區<br>bootloader</td>
     <td align="center">中斷向量表</td>
@@ -417,7 +418,6 @@
 <tr>
     <td align="center">引導程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">應用程序存儲區</td>
     <td align="center">重定向的中斷向量表</td>
@@ -425,7 +425,6 @@
 <tr>
     <td align="center">應用程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">升級數據存儲區</td>
     <td align="center">解壓後的新版程序</td>
@@ -433,7 +432,6 @@
 <tr>
     <td align="center">接收到的壓縮文件</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center">參數數據存儲區</td>
     <td align="center">掉電不丟失的系統參數</td>
@@ -450,7 +448,6 @@
 </tr>
 </thead>
 <tbody>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">引導程序存儲區<br>bootloader</td>
     <td align="center">中斷向量表</td>
@@ -458,7 +455,6 @@
 <tr>
     <td align="center">引導程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">應用程序存儲區</td>
     <td align="center">重定向的中斷向量表</td>
@@ -466,7 +462,6 @@
 <tr>
     <td align="center">應用程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center">參數數據存儲區</td>
     <td align="center">掉電不丟失的系統參數</td>
@@ -479,7 +474,6 @@
 </tr>
 </thead>
 <tbody>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">升級數據存儲區</td>
     <td align="center">解壓後的新版程序</td>
@@ -502,7 +496,6 @@
 </tr>
 </thead>
 <tbody>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">引導程序存儲區<br>bootloader</td>
     <td align="center">中斷向量表</td>
@@ -510,7 +503,6 @@
 <tr>
     <td align="center">引導程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">應用程序存儲區<br>（1）</td>
     <td align="center">重定向的中斷向量表</td>
@@ -518,7 +510,6 @@
 <tr>
     <td align="center">應用程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">應用程序存儲區<br>（2）</td>
     <td align="center">重定向的中斷向量表</td>
@@ -526,7 +517,6 @@
 <tr>
     <td align="center">應用程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center">參數數據存儲區</td>
     <td align="center">掉電不丟失的系統參數</td>
@@ -546,7 +536,6 @@
 </tr>
 </thead>
 <tbody>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">引導程序存儲區<br>bootloader</td>
     <td align="center">中斷向量表</td>
@@ -554,7 +543,6 @@
 <tr>
     <td align="center">引導程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">應用程序存儲區<br>（1）</td>
     <td align="center">重定向的中斷向量表</td>
@@ -562,7 +550,6 @@
 <tr>
     <td align="center">應用程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">應用程序存儲區<br>（2）</td>
     <td align="center">重定向的中斷向量表</td>
@@ -570,7 +557,6 @@
 <tr>
     <td align="center">應用程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">升級數據存儲區</td>
     <td align="center">解壓後的新版程序</td>
@@ -578,7 +564,6 @@
 <tr>
     <td align="center">接收到的壓縮文件</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center">參數數據存儲區</td>
     <td align="center">掉電不丟失的系統參數</td>
@@ -595,7 +580,6 @@
 </tr>
 </thead>
 <tbody>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">引導程序存儲區<br>bootloader</td>
     <td align="center">中斷向量表</td>
@@ -603,7 +587,6 @@
 <tr>
     <td align="center">引導程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">應用程序存儲區<br>（1）</td>
     <td align="center">重定向的中斷向量表</td>
@@ -611,7 +594,6 @@
 <tr>
     <td align="center">應用程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">應用程序存儲區<br>（2）</td>
     <td align="center">重定向的中斷向量表</td>
@@ -619,7 +601,6 @@
 <tr>
     <td align="center">應用程序</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center">參數數據存儲區</td>
     <td align="center">掉電不丟失的系統參數</td>
@@ -632,7 +613,6 @@
 </tr>
 </thead>
 <tbody>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">升級數據存儲區</td>
     <td align="center">解壓後的新版程序</td>
@@ -729,6 +709,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.umd.js" integrity="sha256-oyhjPiYRWGXaAt+ny/mTMWOnN1GBoZDUQnzzgC7FRI4=" crossorigin="anonymous"></script>
 <script src="/sulfurandcu.io/js/comments.js"></script><script src="/sulfurandcu.io/js/utils.js"></script><script src="/sulfurandcu.io/js/motion.js"></script><script src="/sulfurandcu.io/js/next-boot.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
@@ -744,6 +725,7 @@
   <script class="next-config" data-name="wavedrom_skin" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.3.0/skins/default.js","integrity":"sha256-fduc/Zszk5ezWws2uInY/ALWVmIrmV6VTgXbsYSReFI="}}</script>
   <script src="/sulfurandcu.io/js/third-party/tags/wavedrom.js"></script>
 
+  <script src="/sulfurandcu.io/js/third-party/fancybox.js"></script>
 
 
 

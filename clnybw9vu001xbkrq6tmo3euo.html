@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.css" integrity="sha256-vQkngPS8jiHHH0I6ABTZroZk8NPZ7b+MUReOFE9UsXQ=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"sulfurandcu.github.io","root":"/sulfurandcu.io/","images":"/sulfurandcu.io/images","scheme":"Gemini","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/sulfurandcu.io/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/sulfurandcu.io/js/config.js"></script>
 
@@ -144,7 +145,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-count">35</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -155,7 +156,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">35</span>
+        <span class="site-state-item-count">39</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -247,7 +248,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/architecture.png" alt="圖片加載失敗"></p>
+    <div class="post-body" itemprop="articleBody"><p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/architecture.png"></p>
 <center>・文檔系統架構圖・</center>
 
 <span id="more"></span>
@@ -257,7 +258,7 @@
 <div class="note info"><p><code>#web</code> <a target="_blank" rel="noopener" href="http://127.0.0.1:3000/">http://127.0.0.1:3000</a></p>
 </div>
 
-<div class="note info"><p><code>#ssh</code> <a href="mailto:&#108;&#111;&#99;&#x61;&#x6c;&#104;&#111;&#x73;&#x74;&#x40;&#49;&#x32;&#x37;&#46;&#x30;&#x2e;&#48;&#46;&#49;">&#108;&#111;&#99;&#x61;&#x6c;&#104;&#111;&#x73;&#x74;&#x40;&#49;&#x32;&#x37;&#46;&#x30;&#x2e;&#48;&#46;&#49;</a> 📢 Password:password</p>
+<div class="note info"><p><code>#ssh</code> <a href="mailto:&#108;&#x6f;&#x63;&#97;&#108;&#104;&#111;&#x73;&#116;&#64;&#x31;&#50;&#55;&#46;&#48;&#x2e;&#48;&#x2e;&#49;">&#108;&#x6f;&#x63;&#97;&#108;&#104;&#111;&#x73;&#116;&#64;&#x31;&#50;&#55;&#46;&#48;&#x2e;&#48;&#x2e;&#49;</a> 📢 Password:password</p>
 </div>
 
 <div class="note info"><p><code>#svn</code> <a target="_blank" rel="noopener" href="http://svn.sulfurandcu.com/doc">http://svn.sulfurandcu.com/doc</a></p>
@@ -269,20 +270,20 @@
 <h3 id="開發者"><a href="#開發者" class="headerlink" title="開發者"></a>開發者</h3><p>開發者可以將 SVN 中的文檔系統源碼 checkout 至本地進行編輯、預覽。修改完畢後再提交回去。</p>
 <h3 id="服務器"><a href="#服務器" class="headerlink" title="服務器"></a>服務器</h3><p>服務器中也有一份從 SVN 中 checkout 出來的文檔系統源碼，這些內容被一個叫做文檔網站生成器的軟件動態轉換成網頁在 3000 端口以 HTTP 的形式對外提供訪問。這樣我們就可以通過瀏覽器以輸入 IP 地址加端口的形式訪問該文檔系統。另外該服務器上還運行着一個週期任務，這個任務每隔 15 分鐘（準確地說是在00分、15分、30分、45分的時候）<strong>從 SVN 服務器中</strong>更新一次文檔系統源碼。這樣就實現了文檔系統的自動更新。</p>
 <h2 id="使用說明"><a href="#使用說明" class="headerlink" title="使用說明"></a>使用說明</h2><h3 id="第一步：搭建環境"><a href="#第一步：搭建環境" class="headerlink" title="第一步：搭建環境"></a>第一步：搭建環境</h3><p>➀ 安裝「node.js」（一個基於 Chrome V8 引擎 的 JavaScript 運行時環境）</p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.png"></p>
 <center>
 <a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a>
 </center><br>
 
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.1.png" alt="圖片加載失敗"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.2.png" alt="圖片加載失敗"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.3.png" alt="圖片加載失敗"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.4.png" alt="圖片加載失敗"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.5.png" alt="圖片加載失敗"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.6.png" alt="圖片加載失敗"></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.1.png"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.2.png"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.3.png"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.4.png"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.5.png"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.6.png"></div></div></div>
 
 <p>➁ 安裝「docsify」（一個使用 JavaScript 編寫的文檔網站生成器）</p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/docsify.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/docsify.png"></p>
 <center>
 <a href="https://docsify.js.org/" target="_blank">https://docsify.js.org/</a>
 </center><br>
 
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/docsify.install.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/docsify.install.png"></p>
 <center>
 npm i -g docsify-cli
 </center>
@@ -291,12 +292,12 @@ npm i -g docsify-cli
 </div>
 
 <h3 id="第二步：建立文檔"><a href="#第二步：建立文檔" class="headerlink" title="第二步：建立文檔"></a>第二步：建立文檔</h3><p>本文檔系統的框架已經建好並且已經提交至 SVN 服務器中：</p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.cloud.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.cloud.png"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://svn.sulfurandcu.com/doc</span><br></pre></td></tr></table></figure>
 
 <h3 id="第三步：預覽效果"><a href="#第三步：預覽效果" class="headerlink" title="第三步：預覽效果"></a>第三步：預覽效果</h3><p>將上述文檔框架下載到本地，在其根目錄下執行 docsify serve 命令啓動一個本地服務器，就可以在本地預覽效果。</p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.local.png" alt="圖片加載失敗"></p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.serve.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.local.png"></p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.serve.png"></p>
 <center>
 docsify s
 </center>
@@ -305,7 +306,7 @@ docsify s
 </div>
 
 <h3 id="第四步：進入正軌（編輯文檔、本地預覽、提交變更）"><a href="#第四步：進入正軌（編輯文檔、本地預覽、提交變更）" class="headerlink" title="第四步：進入正軌（編輯文檔、本地預覽、提交變更）"></a>第四步：進入正軌（編輯文檔、本地預覽、提交變更）</h3><p>搭建好開發環境、將〈＃項目文檔〉下載到本地且知道怎麼預覽以後，就可以開始編輯、預覽、提交了，跟代碼的編輯、調試、提交沒什麼兩樣！</p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.write.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.write.png"></p>
 <p>文章使用輕量級標記語言 <a target="_blank" rel="noopener" href="https://www.markdownguide.org/basic-syntax/">markdown</a> 編寫；圖例使用 <a target="_blank" rel="noopener" href="https://www.diagrams.net/">draw.io</a> 繪製。</p>
 <h2 id="技術細節"><a href="#技術細節" class="headerlink" title="技術細節"></a>技術細節</h2><p>這部分內容是文檔系統搭建的一些具體細節，在這裏記錄一下以供後續維護人員參考。需要說明的一點是，當前所使用的服務器運行的是 Windows 操作系統，因此以下操作均基於該操作系統。</p>
 <h3 id="自動更新"><a href="#自動更新" class="headerlink" title="自動更新"></a>自動更新</h3><p>在 Windows 系統中，使用系統自帶的任務計劃程序實現：在〈計算機管理・任務計劃程序〉中創建一個週期任務，每隔一段時間執行一次以下腳本。</p>
@@ -404,6 +405,7 @@ docsify s
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.umd.js" integrity="sha256-oyhjPiYRWGXaAt+ny/mTMWOnN1GBoZDUQnzzgC7FRI4=" crossorigin="anonymous"></script>
 <script src="/sulfurandcu.io/js/comments.js"></script><script src="/sulfurandcu.io/js/utils.js"></script><script src="/sulfurandcu.io/js/motion.js"></script><script src="/sulfurandcu.io/js/next-boot.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
@@ -419,6 +421,7 @@ docsify s
   <script class="next-config" data-name="wavedrom_skin" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.3.0/skins/default.js","integrity":"sha256-fduc/Zszk5ezWws2uInY/ALWVmIrmV6VTgXbsYSReFI="}}</script>
   <script src="/sulfurandcu.io/js/third-party/tags/wavedrom.js"></script>
 
+  <script src="/sulfurandcu.io/js/third-party/fancybox.js"></script>
 
 
 

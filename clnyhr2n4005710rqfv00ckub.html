@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.css" integrity="sha256-vQkngPS8jiHHH0I6ABTZroZk8NPZ7b+MUReOFE9UsXQ=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"sulfurandcu.github.io","root":"/sulfurandcu.io/","images":"/sulfurandcu.io/images","scheme":"Gemini","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/sulfurandcu.io/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/sulfurandcu.io/js/config.js"></script>
 
@@ -129,7 +130,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A8%E9%87%8F%E5%8D%87%E7%B4%9A-amp-%E5%A2%9E%E9%87%8F%E5%8D%87%E7%B4%9A"><span class="nav-text">全量升級 &amp; 增量升級</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%B4%9A%E5%8C%85%E9%A0%AD"><span class="nav-text">升級包頭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%B4%9A%E6%96%87%E4%BB%B6"><span class="nav-text">升級文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AA%E7%B6%93%E5%A3%93%E7%B8%AE%E7%9A%84%E5%85%A8%E9%87%8F%E5%8D%87%E7%B4%9A%E6%96%87%E4%BB%B6%E7%B5%90%E6%A7%8B"><span class="nav-text">未經壓縮的全量升級文件結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B6%93%E9%81%8E%E5%A3%93%E7%B8%AE%E7%9A%84%E5%85%A8%E9%87%8F%E5%8D%87%E7%B4%9A%E6%96%87%E4%BB%B6%E7%B5%90%E6%A7%8B"><span class="nav-text">經過壓縮的全量升級文件結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B6%93%E9%81%8E%E5%A3%93%E7%B8%AE%E7%9A%84%E5%A2%9E%E9%87%8F%E5%8D%87%E7%B4%9A%E6%96%87%E4%BB%B6%E7%B5%90%E6%A7%8B"><span class="nav-text">經過壓縮的增量升級文件結構</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%B4%9A%E6%96%B9%E6%A1%88"><span class="nav-text">升級方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AA%E7%B6%93%E5%A3%93%E7%B8%AE%E7%9A%84%E5%85%A8%E9%87%8F%E5%8D%87%E7%B4%9A-%E7%B6%93%E9%81%8E%E5%A3%93%E7%B8%AE%E7%9A%84%E5%A2%9E%E9%87%8F%E5%8D%87%E7%B4%9A"><span class="nav-text">未經壓縮的全量升級 + 經過壓縮的增量升級</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B6%93%E9%81%8E%E5%A3%93%E7%B8%AE%E7%9A%84%E5%85%A8%E9%87%8F%E5%8D%87%E7%B4%9A-%E7%B6%93%E9%81%8E%E5%A3%93%E7%B8%AE%E7%9A%84%E5%A2%9E%E9%87%8F%E5%8D%87%E7%B4%9A"><span class="nav-text">經過壓縮的全量升級 + 經過壓縮的增量升級</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%B4%9A%E6%B5%81%E7%A8%8B"><span class="nav-text">升級流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E6%94%B6%E5%8D%87%E7%B4%9A%E6%95%B8%E6%93%9A"><span class="nav-text">接收升級數據</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%B7%E8%A1%8C%E5%8D%87%E7%B4%9A%E4%BB%BB%E5%8B%99"><span class="nav-text">執行升級任務</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A8%E9%87%8F%E5%8D%87%E7%B4%9A-amp-%E5%A2%9E%E9%87%8F%E5%8D%87%E7%B4%9A"><span class="nav-text">全量升級 &amp; 增量升級</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%B4%9A%E5%8C%85%E9%A0%AD"><span class="nav-text">升級包頭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%B4%9A%E6%96%87%E4%BB%B6"><span class="nav-text">升級文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%B4%9A%E6%96%B9%E6%A1%88"><span class="nav-text">升級方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AA%E7%B6%93%E5%A3%93%E7%B8%AE%E7%9A%84%E5%85%A8%E9%87%8F%E5%8D%87%E7%B4%9A-%E7%B6%93%E9%81%8E%E5%A3%93%E7%B8%AE%E7%9A%84%E5%A2%9E%E9%87%8F%E5%8D%87%E7%B4%9A"><span class="nav-text">未經壓縮的全量升級 + 經過壓縮的增量升級</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B6%93%E9%81%8E%E5%A3%93%E7%B8%AE%E7%9A%84%E5%85%A8%E9%87%8F%E5%8D%87%E7%B4%9A-%E7%B6%93%E9%81%8E%E5%A3%93%E7%B8%AE%E7%9A%84%E5%A2%9E%E9%87%8F%E5%8D%87%E7%B4%9A"><span class="nav-text">經過壓縮的全量升級 + 經過壓縮的增量升級</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%B4%9A%E6%B5%81%E7%A8%8B"><span class="nav-text">升級流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E6%94%B6%E5%8D%87%E7%B4%9A%E6%95%B8%E6%93%9A"><span class="nav-text">接收升級數據</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%B7%E8%A1%8C%E5%8D%87%E7%B4%9A%E4%BB%BB%E5%8B%99"><span class="nav-text">執行升級任務</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -144,7 +145,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-count">35</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -155,7 +156,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">35</span>
+        <span class="site-state-item-count">39</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -253,16 +254,13 @@
 <li>bsdiff&#x2F;bspatch + quicklz</li>
 <li>hdifflite&#x2F;hpatchlite + tinyuz</li>
 </ul>
-<div class="note info no-icon"><p>不過 bsdiff + quicklz 方案的內存開銷太大，現已不建議使用。</p>
+<div class="note info no-icon"><p>不過 bsdiff + quicklz 方案的內存開銷太大，因此不建議使用。</p>
 </div>
-
-<span id="more"></span>
 
 <h2 id="全量升級-amp-增量升級"><a href="#全量升級-amp-增量升級" class="headerlink" title="全量升級 &amp; 增量升級"></a>全量升級 &amp; 增量升級</h2><p>增量升級確實降低了傳輸過程中的數據量，但也帶來了版本管理複雜的問題，所以說不能因爲有了增量升級，全量升級就不用了。</p>
 <p>以往我們做全量升級的時候沒有引入壓縮技術，在移植 hdiff&#x2F;hpatchlite 的時候我發現，hdiff 生成的差異文件不比原文件小多少，但是其可壓縮性非常高，這樣就得把解壓算法也移植進來。既然解壓算法都已經有了，不把增量升級也壓縮一下，那豈不是很浪費？</p>
 <table>
 <tbody>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">全量升級</td>
     <td align="center">未經壓縮的新版程序</td>
@@ -272,7 +270,6 @@
     <td align="center">經過壓縮的新版程序</td>
     <td align="center">（✔）</td>
 </tr>
-<!--  -->
 <tr>
     <td align="center" rowspan="2">增量升級</td>
     <td align="center">未經壓縮的差異文件</td>
@@ -285,19 +282,99 @@
 </tbody>
 </table>
 
+<span id="more"></span>
+
 <h2 id="升級包頭"><a href="#升級包頭" class="headerlink" title="升級包頭"></a>升級包頭</h2><p>在線升級無非就是把新程序或者更新補丁發送給設備，設備收到後進行升級的過程。</p>
 <p>爲了保證升級能夠順利進行，除了新程序或者更新補丁外，我們還要向設備發送一些附加信息，這些附加信息通常被添加至升級文件的頭部。</p>
-<p><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.head.png" alt="圖片加載失敗"></p>
+<table>
+<tbody>
+<tr>
+    <td align="center">魔術數字</td>
+    <td align="center">04B</td>
+    <td align="center">全量升級 ('Q','L','S','J')<br>增量升級 ('Z','L','S','J')</td>
+</tr>
+<tr>
+    <td align="center">包頭長度</td>
+    <td align="center">04B</td>
+    <td align="center">支持變長包頭 *</td>
+</tr>
+<tr>
+    <td align="center">文件摘要</td>
+    <td align="center">04B</td>
+    <td align="center">從「文件長度」之後開始計算</td>
+</tr>
+<tr>
+    <td align="center">文件長度</td>
+    <td align="center">04B</td>
+    <td align="center">從「文件長度」之後開始計算</td>
+</tr>
+<tr>
+    <td align="center">　</td>
+    <td align="center"></td>
+    <td align="center"></td>
+</tr>
+<tr>
+    <td align="center">產品型號</td>
+    <td align="center">08B</td>
+    <td align="center">產品一型 ('P','N','-','A','0','0','0','1')<br>產品二型 ('P','N','-','A','0','0','0','2')</td>
+</tr>
+<tr>
+    <td align="center">設備地址</td>
+    <td align="center">08B</td>
+    <td align="center">通配地址 (0xFFFFFFFFFFFFFFFF)<br>單點地址 (0x1111111111111111)</td>
+</tr>
+<tr>
+    <td align="center">　</td>
+    <td align="center"></td>
+    <td align="center"></td>
+</tr>
+<tr>
+    <td align="center">新程序 LEN 值</td>
+    <td align="center">04B</td>
+    <td align="center" rowspan="6">對舊程序進行摘要值校驗<br>或者<br>對舊程序進行差分還原時<br><br>某些可變字段必須以默認值進行處理</td>
+</tr>
+<tr>
+    <td align="center">舊程序 LEN 值</td>
+    <td align="center">04B</td>
+</tr>
+<tr>
+    <td align="center">新程序 CRC 值</td>
+    <td align="center">04B</td>
+</tr>
+<tr>
+    <td align="center">舊程序 CRC 值</td>
+    <td align="center">04B</td>
+</tr>
+<tr>
+    <td align="center">新程序 MD5 值</td>
+    <td align="center">16B</td>
+</tr>
+<tr>
+    <td align="center">舊程序 MD5 值</td>
+    <td align="center">16B</td>
+</tr>
+<tr>
+    <td align="center">......</td>
+    <td align="center"></td>
+    <td align="center"></td>
+</tr>
+<tr>
+    <td align="center">可以按需增加</td>
+    <td align="center"></td>
+    <td align="center"></td>
+</tr>
+</tbody>
+</table>
+
 <p><strong>變長包頭的優勢</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.head.scalable.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.head.scalable.png"></p>
 <div class="note info no-icon"><p>升級包頭我建議做成變長的，萬一哪天包頭長度不夠用了，擴展後也能兼容現場的老設備。</p>
 </div>
 
-<h2 id="升級文件"><a href="#升級文件" class="headerlink" title="升級文件"></a>升級文件</h2><h3 id="未經壓縮的全量升級文件結構"><a href="#未經壓縮的全量升級文件結構" class="headerlink" title="未經壓縮的全量升級文件結構"></a>未經壓縮的全量升級文件結構</h3><p><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.file.1.raw.full.png" alt="圖片加載失敗"></p>
-<h3 id="經過壓縮的全量升級文件結構"><a href="#經過壓縮的全量升級文件結構" class="headerlink" title="經過壓縮的全量升級文件結構"></a>經過壓縮的全量升級文件結構</h3><p><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.file.2.zip.full.png" alt="圖片加載失敗"></p>
-<h3 id="經過壓縮的增量升級文件結構"><a href="#經過壓縮的增量升級文件結構" class="headerlink" title="經過壓縮的增量升級文件結構"></a>經過壓縮的增量升級文件結構</h3><p><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.file.4.zip.diff.png" alt="圖片加載失敗"></p>
-<h2 id="升級方案"><a href="#升級方案" class="headerlink" title="升級方案"></a>升級方案</h2><h3 id="未經壓縮的全量升級-經過壓縮的增量升級"><a href="#未經壓縮的全量升級-經過壓縮的增量升級" class="headerlink" title="未經壓縮的全量升級 + 經過壓縮的增量升級"></a>未經壓縮的全量升級 + 經過壓縮的增量升級</h3><p><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.plan.1.raw.full+zip.diff.png" alt="圖片加載失敗"></p>
-<h3 id="經過壓縮的全量升級-經過壓縮的增量升級"><a href="#經過壓縮的全量升級-經過壓縮的增量升級" class="headerlink" title="經過壓縮的全量升級 + 經過壓縮的增量升級"></a>經過壓縮的全量升級 + 經過壓縮的增量升級</h3><p><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.plan.2.zip.full+zip.diff.png" alt="圖片加載失敗"></p>
+<h2 id="升級文件"><a href="#升級文件" class="headerlink" title="升級文件"></a>升級文件</h2><div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.file.1.raw.full.png" alt="未經壓縮的全量升級文件結構"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.file.2.zip.full.png" alt="經過壓縮的全量升級文件結構"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.file.4.zip.diff.png" alt="經過壓縮的增量升級文件結構"></div></div></div>
+
+<h2 id="升級方案"><a href="#升級方案" class="headerlink" title="升級方案"></a>升級方案</h2><h3 id="未經壓縮的全量升級-經過壓縮的增量升級"><a href="#未經壓縮的全量升級-經過壓縮的增量升級" class="headerlink" title="未經壓縮的全量升級 + 經過壓縮的增量升級"></a>未經壓縮的全量升級 + 經過壓縮的增量升級</h3><p><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.plan.1.raw.full+zip.diff.png"></p>
+<h3 id="經過壓縮的全量升級-經過壓縮的增量升級"><a href="#經過壓縮的全量升級-經過壓縮的增量升級" class="headerlink" title="經過壓縮的全量升級 + 經過壓縮的增量升級"></a>經過壓縮的全量升級 + 經過壓縮的增量升級</h3><p><img src="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub/update.plan.2.zip.full+zip.diff.png"></p>
 <h2 id="升級流程"><a href="#升級流程" class="headerlink" title="升級流程"></a>升級流程</h2><h3 id="接收升級數據"><a href="#接收升級數據" class="headerlink" title="接收升級數據"></a>接收升級數據</h3><pre class="mermaid">
 flowchart TB
 %%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
@@ -327,7 +404,7 @@ IsCRCOK--是&#x2F;繼續接收--&gt;DoRecv
 <h3 id="執行升級任務"><a href="#執行升級任務" class="headerlink" title="執行升級任務"></a>執行升級任務</h3><pre class="mermaid">
 flowchart TB
 %%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-Start(執行升級任務&lt;br&gt;開始)--&gt;IsUpdateFlag{文件頭接收完畢}
+Start(執行升級任務&lt;br&gt;開始)--&gt;IsUpdateFlag{升級文件接收完畢}
 IsUpdateFlag--否--&gt;IsUpdateFlag
 IsUpdateFlag--是--&gt;DoReadHead[從外存的第一個扇區中讀取升級信息]--&gt;IsReadSucc{讀取成功}
 IsReadSucc--否--&gt;Over1(結束)
@@ -385,8 +462,8 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[將內部flash中的0xAAB
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html" rel="next" title="嵌入式 IAP 升級功能（#06）引導程序 bootloader 升級">
-                  嵌入式 IAP 升級功能（#06）引導程序 bootloader 升級 <i class="fa fa-angle-right"></i>
+                <a href="/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html" rel="next" title="嵌入式 IAP 升級功能（#06）差分還原 haptchlite 移植">
+                  嵌入式 IAP 升級功能（#06）差分還原 haptchlite 移植 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -428,6 +505,7 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[將內部flash中的0xAAB
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.umd.js" integrity="sha256-oyhjPiYRWGXaAt+ny/mTMWOnN1GBoZDUQnzzgC7FRI4=" crossorigin="anonymous"></script>
 <script src="/sulfurandcu.io/js/comments.js"></script><script src="/sulfurandcu.io/js/utils.js"></script><script src="/sulfurandcu.io/js/motion.js"></script><script src="/sulfurandcu.io/js/next-boot.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
@@ -443,6 +521,7 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[將內部flash中的0xAAB
   <script class="next-config" data-name="wavedrom_skin" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.3.0/skins/default.js","integrity":"sha256-fduc/Zszk5ezWws2uInY/ALWVmIrmV6VTgXbsYSReFI="}}</script>
   <script src="/sulfurandcu.io/js/third-party/tags/wavedrom.js"></script>
 
+  <script src="/sulfurandcu.io/js/third-party/fancybox.js"></script>
 
 
 

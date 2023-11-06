@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.css" integrity="sha256-vQkngPS8jiHHH0I6ABTZroZk8NPZ7b+MUReOFE9UsXQ=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"sulfurandcu.github.io","root":"/sulfurandcu.io/","images":"/sulfurandcu.io/images","scheme":"Gemini","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/sulfurandcu.io/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/sulfurandcu.io/js/config.js"></script>
 
@@ -144,7 +145,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-count">35</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -155,7 +156,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">35</span>
+        <span class="site-state-item-count">39</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -261,7 +262,7 @@
 </div>
 
 <p>不過 LilyPond 主要用於生成五線譜，若想生成簡譜我們還需要藉助另外一個工具：</p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly.png"></p>
 <p>與上面不同，我們不再按照 LilyPond 的規則編寫「LilyPond 樂譜源碼」而是按照 jianpuly 開發者制定的規則編寫「Jianpuly 簡譜源碼」。</p>
 <p><strong>荷花池（簡譜）的運作流程如下：</strong></p>
 <ol>
@@ -275,30 +276,30 @@
 <span id="more"></span>
 
 <h2 id="軟件下載"><a href="#軟件下載" class="headerlink" title="軟件下載"></a>軟件下載</h2><p><strong>1. 下載 lilypond 壓縮包</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-download.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-download.png"></p>
 <center><a target="_blank" rel="noopener" href="https://lilypond.org/download.html">下載鏈接</a></center><br>
 
 <p><strong>2. 下載 jianpu-ly.py 腳本文件</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly-download.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly-download.png"></p>
 <center><a target="_blank" rel="noopener" href="http://ssb22.user.srcf.net/mwrhome/jianpu-ly.html">下載鏈接</a></center><br>
 
 <h2 id="軟件安裝"><a href="#軟件安裝" class="headerlink" title="軟件安裝"></a>軟件安裝</h2><p><strong>1. 將下載好的 lilypond 壓縮包解壓至任意位置</strong></p>
 <p><strong>2. 將下載好的 jianpu-ly.py 剪切至 lilypond 解壓目錄下的 bin 文件夾中</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-unpack.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-unpack.png"></p>
 <p><strong>3. 將 lilypond 安裝目錄下的 bin 文件夾添加至系統環境變量 PATH 中</strong></p>
 <p><strong>第一步：搜索「環境變量」然後點擊「編輯系統環境變量」</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath1.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath1.png"></p>
 <p><strong>第二步：點擊「環境變量」按鈕</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath2.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath2.png"></p>
 <p><strong>第三步：選中系統變量中的「PATH」然後點擊下方的「編輯」按鈕</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath3.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath3.png"></p>
 <p><strong>第四步：點擊「新建」按鈕然後輸入之前解壓的 lilypond 的完整路徑</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath4.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath4.png"></p>
 <p><strong>4. 驗證 lilypond 是否正常安裝</strong></p>
 <p><strong>第一步：按下「Win+R」鍵打開運行對話框然後輸入 cmd 並運行</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-verify-cmd.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-verify-cmd.png"></p>
 <p><strong>第二步：輸入「lilypond –help」然後按下回車鍵</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-help.png" alt="圖片加載失敗"></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-help.png"></p>
 <p>如果你能看到上圖中的信息，那麼恭喜，安裝完成！下面可以嘗試製作一個簡單的樂譜了！</p>
 <br>
 
@@ -365,8 +366,8 @@
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clnyhr2n2004t10rq7rdi2ftx.html" rel="next" title="嵌入式 IAP 升級功能（#00）目錄索引">
-                  嵌入式 IAP 升級功能（#00）目錄索引 <i class="fa fa-angle-right"></i>
+                <a href="/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html" rel="next" title="集成開發環境－GCC.ARM（#00）目錄索引">
+                  集成開發環境－GCC.ARM（#00）目錄索引 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -408,6 +409,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.umd.js" integrity="sha256-oyhjPiYRWGXaAt+ny/mTMWOnN1GBoZDUQnzzgC7FRI4=" crossorigin="anonymous"></script>
 <script src="/sulfurandcu.io/js/comments.js"></script><script src="/sulfurandcu.io/js/utils.js"></script><script src="/sulfurandcu.io/js/motion.js"></script><script src="/sulfurandcu.io/js/next-boot.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
@@ -423,6 +425,7 @@
   <script class="next-config" data-name="wavedrom_skin" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.3.0/skins/default.js","integrity":"sha256-fduc/Zszk5ezWws2uInY/ALWVmIrmV6VTgXbsYSReFI="}}</script>
   <script src="/sulfurandcu.io/js/third-party/tags/wavedrom.js"></script>
 
+  <script src="/sulfurandcu.io/js/third-party/fancybox.js"></script>
 
 
 
