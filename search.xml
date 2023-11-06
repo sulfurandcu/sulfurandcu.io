@@ -85,7 +85,7 @@
 <div class="note info"><p><code>#web</code> <a href="http://127.0.0.1:3000/">http://127.0.0.1:3000</a></p>
 </div>
 
-<div class="note info"><p><code>#ssh</code> <a href="mailto:&#108;&#x6f;&#x63;&#97;&#108;&#104;&#111;&#x73;&#116;&#64;&#x31;&#50;&#55;&#46;&#48;&#x2e;&#48;&#x2e;&#49;">&#108;&#x6f;&#x63;&#97;&#108;&#104;&#111;&#x73;&#116;&#64;&#x31;&#50;&#55;&#46;&#48;&#x2e;&#48;&#x2e;&#49;</a> 📢 Password:password</p>
+<div class="note info"><p><code>#ssh</code> <a href="mailto:&#x6c;&#111;&#99;&#x61;&#x6c;&#104;&#x6f;&#x73;&#x74;&#64;&#x31;&#50;&#x37;&#46;&#x30;&#x2e;&#48;&#46;&#x31;">&#x6c;&#111;&#99;&#x61;&#x6c;&#104;&#x6f;&#x73;&#x74;&#64;&#x31;&#50;&#x37;&#46;&#x30;&#x2e;&#48;&#46;&#x31;</a> 📢 Password:password</p>
 </div>
 
 <div class="note info"><p><code>#svn</code> <a href="http://svn.sulfurandcu.com/doc">http://svn.sulfurandcu.com/doc</a></p>
@@ -508,136 +508,6 @@ docsify s
       </tags>
   </entry>
   <entry>
-    <title>編寫一個根據 svn 提交記錄自動生成日報的腳本</title>
-    <url>/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</url>
-    <content><![CDATA[<center>beep...領導要求每天寫日報，但是我不太想寫，於是就有了本段代碼。</center><br>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任務名稱</span><br><span class="line">taskname = &quot;編碼工作&quot;</span><br><span class="line"># 基準日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 過去幾天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查詢深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用戶名稱</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用戶路徑</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（計劃&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>效率提升</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>svn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>crc-libc</title>
-    <url>/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html</url>
-    <content><![CDATA[<center><a href="https://github.com/sulfurandcu/crc-lib">https://github.com/sulfurandcu/crc-lib</a></center><br>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line"> * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0xbb3d residue=0x0000</span><br><span class="line"> * class: attested</span><br><span class="line"> * alias: CRC-16, CRC-16/ARC, CRC-16/IBM, CRC-16/LHA</span><br><span class="line"> */</span><br><span class="line">CRC_16_8005_0000_1_1_0000, // check=0xbb3d</span><br><span class="line">CRC_16_ARC,</span><br><span class="line">CRC_16_IBM,</span><br><span class="line">CRC_16_LHA,</span><br><span class="line">/**</span><br><span class="line"> * brief: width=16 poly=0x8005 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xfee8 residue=0x0000</span><br><span class="line"> * class: attested</span><br><span class="line"> * alias: CRC-16/UMTS, CRC-16/BUYPASS, CRC-16/VERIFONE</span><br><span class="line"> */</span><br><span class="line">CRC_16_8005_0000_0_0_0000, // check=0xfee8</span><br><span class="line">CRC_16_UMTS,</span><br><span class="line">CRC_16_BUYPASS,</span><br><span class="line">CRC_16_VERIFONE,</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<p><strong>目前支持的 crc 種類有：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">typedef enum crc_16_type_t</span><br><span class="line">&#123;</span><br><span class="line">    #if crc_16_poly_8005_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0xbb3d residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16, CRC-16/ARC, CRC-16/IBM, CRC-16/LHA</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_0000, // check=0xbb3d</span><br><span class="line">    CRC_16_ARC,</span><br><span class="line">    CRC_16_IBM,</span><br><span class="line">    CRC_16_LHA,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xfee8 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/UMTS, CRC-16/BUYPASS, CRC-16/VERIFONE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_0_0_0000, // check=0xfee8</span><br><span class="line">    CRC_16_UMTS,</span><br><span class="line">    CRC_16_BUYPASS,</span><br><span class="line">    CRC_16_VERIFONE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0x44c2 residue=0xb001</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MAXIM, CRC-16/MAXIM-DOW</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_FFFF, // check=0x44c2</span><br><span class="line">    CRC_16_MAXIM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x4b37 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MODBUS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_0000, // check=0x4b37</span><br><span class="line">    CRC_16_MODBUS,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x800D refin=0 refout=0 xorout=0x0000 check=0x9ecf residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DDS-110</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_800D_0_0_0000, // check=0x9ecf</span><br><span class="line">    CRC_16_DDS110,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0xb4c8 residue=0xb001</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/USB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_FFFF, // check=0xb4c8</span><br><span class="line">    CRC_16_USB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0xaee7 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/CMS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_0_0_0000, // check=0xaee7</span><br><span class="line">    CRC_16_CMS,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_1021_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0xFFFF check=0xd64e residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GENIBUS, CRC-16/DARC, CRC-16/EPC, CRC-16/EPC-C1G2, CRC-16/I-CODE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_FFFF, // check=0xd64e</span><br><span class="line">    CRC_16_GENIBUS,</span><br><span class="line">    CRC_16_DARC,</span><br><span class="line">    CRC_16_EPC,</span><br><span class="line">    CRC_16_EPC_C1G2,</span><br><span class="line">    CRC_16_ICODE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xce3c residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GSM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_FFFF, // check=0xce3c</span><br><span class="line">    CRC_16_GSM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x29b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT-FALSE, CRC-16/IBM-3740, CRC-16/AUTOSAR</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_0000, // check=0x29b1</span><br><span class="line">    CRC_16_CCITT_FALSE,</span><br><span class="line">    CRC_16_IBM_3740,</span><br><span class="line">    CRC_16_AUTOSAR,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0x906e residue=0xf0b8</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/X-25, CRC-16/IBM-SDLC, CRC-16/ISO-HDLC, CRC-16/ISO-IEC-14443-3-B, CRC-B</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_FFFF, // check=0x906e</span><br><span class="line">    CRC_16_X25,</span><br><span class="line">    CRC_16_IBM_SDLC,</span><br><span class="line">    CRC_16_ISO_HDLC,</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_B,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xC6C6 refin=1 refout=1 xorout=0x0000 check=0xbf05 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/ISO-IEC-14443-3-A, CRC-A</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_C6C6_1_1_0000, // check=0xbf05</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_A,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0x2189 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT, CRC-16/CCITT-TRUE, CRC-16/KERMIT, CRC-16/BLUETOOTH, CRC-16/V-41-LSB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_1_1_0000, // check=0x2189</span><br><span class="line">    CRC_16_CCITT,</span><br><span class="line">    CRC_16_CCITT_TRUE,</span><br><span class="line">    CRC_16_KERMIT,</span><br><span class="line">    CRC_16_BLUETOOTH,</span><br><span class="line">    CRC_16_V_41_LSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x6f91 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MCRF4XX</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_0000, // check=0x6f91</span><br><span class="line">    CRC_16_MCRF4XX,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xB2AA refin=1 refout=1 xorout=0x0000 check=0x63d0 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/RIELLO</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_B2AA_1_1_0000, // check=0x63d0</span><br><span class="line">    CRC_16_RIELLO,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x1D0F refin=0 refout=0 xorout=0x0000 check=0xe5cc residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/AUG-CCITT, CRC-16/SPI-FUJITSU</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_1D0F_0_0_0000, // check=0xe5cc</span><br><span class="line">    CRC_16_AUG_CCITT,</span><br><span class="line">    CRC_16_SPI_FUJITSU,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x31c3 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/XMODEM, CRC-16/ACORN, CRC-16/LTE, CRC-16/V-41-MSB, XMODEM, YMODEM, ZMODEM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_0000, // check=0x31c3</span><br><span class="line">    CRC_16_XMODEM,</span><br><span class="line">    CRC_16_YMODEM,</span><br><span class="line">    CRC_16_ZMODEM,</span><br><span class="line">    CRC_16_ACORN,</span><br><span class="line">    CRC_16_LTE,</span><br><span class="line">    CRC_16_V_41_MSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x89EC refin=1 refout=1 xorout=0x0000 check=0x26b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/TMS37157</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_89EC_1_1_0000, // check=0x26b1</span><br><span class="line">    CRC_16_TMS37157,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_xxxx_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0001 check=0x007e residue=0x0589</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-R, R-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0001, // check=0x007e</span><br><span class="line">    CRC_16_DECT_R,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x007f residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-X, X-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0000, // check=0x007f</span><br><span class="line">    CRC_16_DECT_X,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8bb7 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xd0db residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/T10-DIF</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8BB7_0000_0_0_0000, // check=0xd0db</span><br><span class="line">    CRC_16_T10_DIF,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3D65 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0xea82 residue=0x66c5</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/DNP</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_1_1_FFFF, // check=0xea82</span><br><span class="line">    CRC_16_DNP,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3d65 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xc2b7 residue=0xa366</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/EN-13757</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_0_0_FFFF, // check=0xc2b7</span><br><span class="line">    CRC_16_EN_13757,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xa097 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x0fb3 residue=0x0000</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/TELEDISK</span><br><span class="line">     */</span><br><span class="line">    CRC_16_A097_0000_0_0_0000, // check=0x0fb3</span><br><span class="line">    CRC_16_TELEDISK,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xc867 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x4c06 residue=0x0000</span><br><span class="line">     * class: academic</span><br><span class="line">     * alias: CRC-16/CDMA2000</span><br><span class="line">     */</span><br><span class="line">    CRC_16_C867_FFFF_0_0_0000, // check=0x4c06</span><br><span class="line">    CRC_16_CDMA2000,</span><br><span class="line">    #endif</span><br><span class="line">&#125; crc_16_type_t;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>crc</tag>
-        <tag>循環冗餘校驗算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LilyPond</title>
-    <url>/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj.html</url>
-    <content><![CDATA[<p>LilyPond 是什麼？(<strong><a href="https://lilypond.org/">https://lilypond.org/</a></strong>)</p>
-<blockquote>
-<p>LilyPond (荷花池) 是一個音樂雕版軟件，致力產生最高質量的樂譜。它把傳統音樂雕版印刷的美學，呈現在計算機打印的樂譜上。LilyPond 是自由軟件，也是 GNU Project 的一部分。</p>
-</blockquote>
-<p>計算機軟件的內核是將接收到的數據進行計算並輸出，LilyPond 也不例外。我們需要按照 LilyPond 開發者制定的規則編寫樂譜源碼，然後使用 LilyPond 程序將源代碼轉換爲 PNG、PDF、SVG、MIDI 等格式的文件。</p>
-<p><strong>荷花池（線譜）的運作流程如下：</strong></p>
-<ol>
-<li>按照 lilypond 開發者制定的規則編寫「LilyPond 樂譜源碼」。</li>
-<li>使用 lilypond 程序將「LilyPond 樂譜源碼」轉換爲我們期望的「樂譜」文件。</li>
-</ol>
-<div class="note info no-icon"><p>這裏的 lilypond.exe 程序與我們日常使用的軟件有所不同，需要通過命令行的方式來調用執行。</p>
-</div>
-
-<p>不過 LilyPond 主要用於生成五線譜，若想生成簡譜我們還需要藉助另外一個工具：</p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly.png"></p>
-<p>與上面不同，我們不再按照 LilyPond 的規則編寫「LilyPond 樂譜源碼」而是按照 jianpuly 開發者制定的規則編寫「Jianpuly 簡譜源碼」。</p>
-<p><strong>荷花池（簡譜）的運作流程如下：</strong></p>
-<ol>
-<li>按照 jianpuly 開發者制定的規則編寫「Jianpuly 簡譜源碼」。</li>
-<li>使用 jianpuly 腳本將「Jianpuly 簡譜源碼」轉換爲「LilyPond 樂譜源碼」。</li>
-<li>使用 lilypond 程序將「LilyPond 樂譜源碼」轉換爲我們期望的「樂譜」文件。</li>
-</ol>
-<div class="note info no-icon"><p>與 lilypond 類似，jianpu-ly.py 需要通過命令行的方式經 python 調用執行。</p>
-</div>
-
-<span id="more"></span>
-
-<h2 id="軟件下載"><a href="#軟件下載" class="headerlink" title="軟件下載"></a>軟件下載</h2><p><strong>1. 下載 lilypond 壓縮包</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-download.png"></p>
-<center><a href="https://lilypond.org/download.html">下載鏈接</a></center><br>
-
-<p><strong>2. 下載 jianpu-ly.py 腳本文件</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly-download.png"></p>
-<center><a href="http://ssb22.user.srcf.net/mwrhome/jianpu-ly.html">下載鏈接</a></center><br>
-
-<h2 id="軟件安裝"><a href="#軟件安裝" class="headerlink" title="軟件安裝"></a>軟件安裝</h2><p><strong>1. 將下載好的 lilypond 壓縮包解壓至任意位置</strong></p>
-<p><strong>2. 將下載好的 jianpu-ly.py 剪切至 lilypond 解壓目錄下的 bin 文件夾中</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-unpack.png"></p>
-<p><strong>3. 將 lilypond 安裝目錄下的 bin 文件夾添加至系統環境變量 PATH 中</strong></p>
-<p><strong>第一步：搜索「環境變量」然後點擊「編輯系統環境變量」</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath1.png"></p>
-<p><strong>第二步：點擊「環境變量」按鈕</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath2.png"></p>
-<p><strong>第三步：選中系統變量中的「PATH」然後點擊下方的「編輯」按鈕</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath3.png"></p>
-<p><strong>第四步：點擊「新建」按鈕然後輸入之前解壓的 lilypond 的完整路徑</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath4.png"></p>
-<p><strong>4. 驗證 lilypond 是否正常安裝</strong></p>
-<p><strong>第一步：按下「Win+R」鍵打開運行對話框然後輸入 cmd 並運行</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-verify-cmd.png"></p>
-<p><strong>第二步：輸入「lilypond –help」然後按下回車鍵</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-help.png"></p>
-<p>如果你能看到上圖中的信息，那麼恭喜，安裝完成！下面可以嘗試製作一個簡單的樂譜了！</p>
-<br>
-
-<h2 id="線譜製作"><a href="#線譜製作" class="headerlink" title="線譜製作"></a>線譜製作</h2><p>寫到這裏時發現了一篇非常不錯的 lilypond 中文入門教程，既然如此，那我索性就偷個懶，各位看官請移步這裏：</p>
-<center><a href="https://www.yuque.com/qqbunny/lilypond">《LilyPond 入門教程》 by 兔子不咬人</a></center><br>
-
-<h2 id="簡譜製作"><a href="#簡譜製作" class="headerlink" title="簡譜製作"></a>簡譜製作</h2><p><strong>1. 新建一個文件夾作爲工作空間</strong></p>
-<p><strong>2. 將 jianpu-ly.py 腳本文件拷貝至工作空間</strong></p>
-<p><strong>3. 在工作空間中創建一個文本文檔（例如：簡譜代碼.txt）然後寫入以下內容</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%% tempo: 4=60</span><br><span class="line">title=標題</span><br><span class="line">1=C</span><br><span class="line">2/4</span><br><span class="line"></span><br><span class="line">1 2 3 4 5 6 7 1&#x27;</span><br></pre></td></tr></table></figure>
-
-<p><strong>4. 在工作空間中單擊右鍵選擇「在終端中打開」然後會彈出一個黑框框</strong></p>
-<p><strong>5. 輸入以下命令並然後按回車鍵執行</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python jianpu-ly.py 簡譜代碼.txt &gt; 樂譜代碼.ly</span><br></pre></td></tr></table></figure>
-
-<p><strong>6. 輸入以下命令並然後按回車鍵執行</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lilypond -o 樂譜文件 --format=pdf,png 樂譜代碼.ly</span><br></pre></td></tr></table></figure>
-
-<p><strong>7. 嫌麻煩的話也可以在工作空間中新建一個「自動腳本.bat」批處理文件並填入以下內容</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chcp 65001</span><br><span class="line"></span><br><span class="line">set jianpuly=&quot;D:\develop.r.1\lilypond-2.24.1\bin\jianpu-ly.py&quot;</span><br><span class="line"></span><br><span class="line">set source=&quot;簡譜&quot;</span><br><span class="line">set output=&quot;曲譜&quot;</span><br><span class="line"></span><br><span class="line">set middle=&quot;荷花&quot;</span><br><span class="line"></span><br><span class="line">python %jianpuly% %source%.txt &gt; %middle%.ly</span><br><span class="line">lilypond -o %output% --format=pdf,png %middle%.ly</span><br><span class="line">lilypond -o %output% --format=svg %middle%.ly</span><br><span class="line"></span><br><span class="line">md %source%</span><br><span class="line"></span><br><span class="line">move .\%output%.* .\%source%</span><br><span class="line">move .\%middle%.* .\%source%</span><br></pre></td></tr></table></figure>
-
-<p><strong>8. 以後只要雙擊該腳本即可自動生成</strong></p>
-<div class="note info no-icon"><p>使用這種方式時，文件名就不能隨便起了，必須與「source」字段保持一致。</p>
-</div>
-
-<h2 id="簡譜規則"><a href="#簡譜規則" class="headerlink" title="簡譜規則"></a>簡譜規則</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Scale going up                                              1 2 3 4 5 6 7 1&#x27;</span><br><span class="line">Accidentals                                                 1 #1 2 b2 1</span><br><span class="line">Octaves                                                     1,, 1, 1 1&#x27; 1&#x27;&#x27;</span><br><span class="line">Shortcuts for 1’ and 2’                                     8 9</span><br><span class="line">Semiquaver, quaver, crotchet (16/8/4th notes)               s1 q1 1</span><br><span class="line">Dotted versions of the above (50% longer)                   s1. q1. 1.</span><br><span class="line">Demisemiquaver, hemidemisemiquaver (32/64th notes)          d1 h1</span><br><span class="line">Minims (half notes) use dashes                              1 -</span><br><span class="line">Dotted minim                                                1 - -</span><br><span class="line">Semibreve (whole note)                                      1 - - -</span><br><span class="line">Time signature                                              4/4</span><br><span class="line">Time signature with quaver anacrusis (8th-note pickup)      4/4,8</span><br><span class="line">Key signature (major)                                       1=Bb</span><br><span class="line">Key signature (minor)                                       6=F#</span><br><span class="line">Tempo                                                       4=85</span><br><span class="line">Lyrics                                                      L: here are the syl- la- bles (all on one line)</span><br><span class="line">Lyrics (verse 1)                                            L: 1. Here is verse one</span><br><span class="line">Lyrics (verse 2)                                            L: 2. Here is verse two</span><br><span class="line">Hanzi lyrics (auto space)                                   H: hanzi (with or without spaces)</span><br><span class="line">Lilypond headers                                            title=the title (on a line of its own)</span><br><span class="line">Multiple parts                                              NextPart</span><br><span class="line">Instrument of current part                                  instrument=Flute (on a line of its own)</span><br><span class="line">Multiple movements                                          NextScore</span><br><span class="line">Prohibit page breaks until end of this movement             OnePage</span><br><span class="line">Suppress bar numbers                                        NoBarNums</span><br><span class="line">Old-style time signature                                    SeparateTimesig 1=C 4/4</span><br><span class="line">Indonesian ‘not angka’ style                                angka</span><br><span class="line">Add a Western staff doubling the tune                       WithStaff</span><br><span class="line">Tuplets                                                     3[ q1 q1 q1 ]</span><br><span class="line">Grace notes before                                          g[#45] 1</span><br><span class="line">Grace notes after                                           1 [&#x27;1]g</span><br><span class="line">Simple chords                                               135 1 13 1</span><br><span class="line">Da capo                                                     1 1 Fine 1 1 1 1 1 1 DC</span><br><span class="line">Repeat (with alternate endings)                             R&#123; 1 1 1 &#125; A&#123; 2 | 3 &#125;</span><br><span class="line">Short repeats (percent)                                     R4&#123; 1 2 &#125;</span><br><span class="line">Ties (like Lilypond’s, if you don’t want dashes)            1 ~ 1</span><br><span class="line">Slurs (like Lilypond’s)                                     1 ( 2 )</span><br><span class="line">Erhu fingering (applies to previous note)                   Fr=0 Fr=4</span><br><span class="line">Erhu symbol (applies to previous note)                      souyin harmonic up down bend tilde</span><br><span class="line">Tremolo                                                     1/// - 1///5 -</span><br><span class="line">Rehearsal letters                                           letterA letterB</span><br><span class="line">Multibar rest                                               R*8</span><br><span class="line">Dynamics (applies to previous note)                         \p \mp \f</span><br><span class="line">Other 1-word Lilypond \ commands                            \fermata \&gt; \! \( \) etc</span><br><span class="line">Text                                                        ^&quot;above note&quot; _&quot;below note&quot;</span><br><span class="line">Other Lilypond code                                         LP: (block of code) :LP (each delimeter at start of its line)</span><br><span class="line">Ignored                                                     % a comment</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>學點音樂</category>
-      </categories>
-      <tags>
-        <tag>五線譜</tag>
-        <tag>簡譜</tag>
-        <tag>lilypond</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>拓撲分析算法</title>
     <url>/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html</url>
     <content><![CDATA[<p>2022年09月01日於武漢</p>
@@ -816,6 +686,117 @@ N2---&gt;N2.3[&quot; &quot;]
       <tags>
         <tag>拓撲識別</tag>
         <tag>拓撲分析</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>crc-libc</title>
+    <url>/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html</url>
+    <content><![CDATA[<center><a href="https://github.com/sulfurandcu/crc-lib">https://github.com/sulfurandcu/crc-lib</a></center><br>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line"> * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0xbb3d residue=0x0000</span><br><span class="line"> * class: attested</span><br><span class="line"> * alias: CRC-16, CRC-16/ARC, CRC-16/IBM, CRC-16/LHA</span><br><span class="line"> */</span><br><span class="line">CRC_16_8005_0000_1_1_0000, // check=0xbb3d</span><br><span class="line">CRC_16_ARC,</span><br><span class="line">CRC_16_IBM,</span><br><span class="line">CRC_16_LHA,</span><br><span class="line">/**</span><br><span class="line"> * brief: width=16 poly=0x8005 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xfee8 residue=0x0000</span><br><span class="line"> * class: attested</span><br><span class="line"> * alias: CRC-16/UMTS, CRC-16/BUYPASS, CRC-16/VERIFONE</span><br><span class="line"> */</span><br><span class="line">CRC_16_8005_0000_0_0_0000, // check=0xfee8</span><br><span class="line">CRC_16_UMTS,</span><br><span class="line">CRC_16_BUYPASS,</span><br><span class="line">CRC_16_VERIFONE,</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p><strong>目前支持的 crc 種類有：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">typedef enum crc_16_type_t</span><br><span class="line">&#123;</span><br><span class="line">    #if crc_16_poly_8005_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0xbb3d residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16, CRC-16/ARC, CRC-16/IBM, CRC-16/LHA</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_0000, // check=0xbb3d</span><br><span class="line">    CRC_16_ARC,</span><br><span class="line">    CRC_16_IBM,</span><br><span class="line">    CRC_16_LHA,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xfee8 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/UMTS, CRC-16/BUYPASS, CRC-16/VERIFONE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_0_0_0000, // check=0xfee8</span><br><span class="line">    CRC_16_UMTS,</span><br><span class="line">    CRC_16_BUYPASS,</span><br><span class="line">    CRC_16_VERIFONE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0x44c2 residue=0xb001</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MAXIM, CRC-16/MAXIM-DOW</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_FFFF, // check=0x44c2</span><br><span class="line">    CRC_16_MAXIM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x4b37 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MODBUS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_0000, // check=0x4b37</span><br><span class="line">    CRC_16_MODBUS,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x800D refin=0 refout=0 xorout=0x0000 check=0x9ecf residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DDS-110</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_800D_0_0_0000, // check=0x9ecf</span><br><span class="line">    CRC_16_DDS110,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0xb4c8 residue=0xb001</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/USB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_FFFF, // check=0xb4c8</span><br><span class="line">    CRC_16_USB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0xaee7 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/CMS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_0_0_0000, // check=0xaee7</span><br><span class="line">    CRC_16_CMS,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_1021_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0xFFFF check=0xd64e residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GENIBUS, CRC-16/DARC, CRC-16/EPC, CRC-16/EPC-C1G2, CRC-16/I-CODE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_FFFF, // check=0xd64e</span><br><span class="line">    CRC_16_GENIBUS,</span><br><span class="line">    CRC_16_DARC,</span><br><span class="line">    CRC_16_EPC,</span><br><span class="line">    CRC_16_EPC_C1G2,</span><br><span class="line">    CRC_16_ICODE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xce3c residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GSM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_FFFF, // check=0xce3c</span><br><span class="line">    CRC_16_GSM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x29b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT-FALSE, CRC-16/IBM-3740, CRC-16/AUTOSAR</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_0000, // check=0x29b1</span><br><span class="line">    CRC_16_CCITT_FALSE,</span><br><span class="line">    CRC_16_IBM_3740,</span><br><span class="line">    CRC_16_AUTOSAR,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0x906e residue=0xf0b8</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/X-25, CRC-16/IBM-SDLC, CRC-16/ISO-HDLC, CRC-16/ISO-IEC-14443-3-B, CRC-B</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_FFFF, // check=0x906e</span><br><span class="line">    CRC_16_X25,</span><br><span class="line">    CRC_16_IBM_SDLC,</span><br><span class="line">    CRC_16_ISO_HDLC,</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_B,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xC6C6 refin=1 refout=1 xorout=0x0000 check=0xbf05 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/ISO-IEC-14443-3-A, CRC-A</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_C6C6_1_1_0000, // check=0xbf05</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_A,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0x2189 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT, CRC-16/CCITT-TRUE, CRC-16/KERMIT, CRC-16/BLUETOOTH, CRC-16/V-41-LSB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_1_1_0000, // check=0x2189</span><br><span class="line">    CRC_16_CCITT,</span><br><span class="line">    CRC_16_CCITT_TRUE,</span><br><span class="line">    CRC_16_KERMIT,</span><br><span class="line">    CRC_16_BLUETOOTH,</span><br><span class="line">    CRC_16_V_41_LSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x6f91 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MCRF4XX</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_0000, // check=0x6f91</span><br><span class="line">    CRC_16_MCRF4XX,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xB2AA refin=1 refout=1 xorout=0x0000 check=0x63d0 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/RIELLO</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_B2AA_1_1_0000, // check=0x63d0</span><br><span class="line">    CRC_16_RIELLO,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x1D0F refin=0 refout=0 xorout=0x0000 check=0xe5cc residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/AUG-CCITT, CRC-16/SPI-FUJITSU</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_1D0F_0_0_0000, // check=0xe5cc</span><br><span class="line">    CRC_16_AUG_CCITT,</span><br><span class="line">    CRC_16_SPI_FUJITSU,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x31c3 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/XMODEM, CRC-16/ACORN, CRC-16/LTE, CRC-16/V-41-MSB, XMODEM, YMODEM, ZMODEM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_0000, // check=0x31c3</span><br><span class="line">    CRC_16_XMODEM,</span><br><span class="line">    CRC_16_YMODEM,</span><br><span class="line">    CRC_16_ZMODEM,</span><br><span class="line">    CRC_16_ACORN,</span><br><span class="line">    CRC_16_LTE,</span><br><span class="line">    CRC_16_V_41_MSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x89EC refin=1 refout=1 xorout=0x0000 check=0x26b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/TMS37157</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_89EC_1_1_0000, // check=0x26b1</span><br><span class="line">    CRC_16_TMS37157,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_xxxx_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0001 check=0x007e residue=0x0589</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-R, R-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0001, // check=0x007e</span><br><span class="line">    CRC_16_DECT_R,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x007f residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-X, X-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0000, // check=0x007f</span><br><span class="line">    CRC_16_DECT_X,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8bb7 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xd0db residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/T10-DIF</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8BB7_0000_0_0_0000, // check=0xd0db</span><br><span class="line">    CRC_16_T10_DIF,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3D65 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0xea82 residue=0x66c5</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/DNP</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_1_1_FFFF, // check=0xea82</span><br><span class="line">    CRC_16_DNP,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3d65 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xc2b7 residue=0xa366</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/EN-13757</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_0_0_FFFF, // check=0xc2b7</span><br><span class="line">    CRC_16_EN_13757,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xa097 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x0fb3 residue=0x0000</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/TELEDISK</span><br><span class="line">     */</span><br><span class="line">    CRC_16_A097_0000_0_0_0000, // check=0x0fb3</span><br><span class="line">    CRC_16_TELEDISK,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xc867 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x4c06 residue=0x0000</span><br><span class="line">     * class: academic</span><br><span class="line">     * alias: CRC-16/CDMA2000</span><br><span class="line">     */</span><br><span class="line">    CRC_16_C867_FFFF_0_0_0000, // check=0x4c06</span><br><span class="line">    CRC_16_CDMA2000,</span><br><span class="line">    #endif</span><br><span class="line">&#125; crc_16_type_t;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>crc</tag>
+        <tag>循環冗餘校驗算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LilyPond</title>
+    <url>/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj.html</url>
+    <content><![CDATA[<p>LilyPond 是什麼？(<strong><a href="https://lilypond.org/">https://lilypond.org/</a></strong>)</p>
+<blockquote>
+<p>LilyPond (荷花池) 是一個音樂雕版軟件，致力產生最高質量的樂譜。它把傳統音樂雕版印刷的美學，呈現在計算機打印的樂譜上。LilyPond 是自由軟件，也是 GNU Project 的一部分。</p>
+</blockquote>
+<p>計算機軟件的內核是將接收到的數據進行計算並輸出，LilyPond 也不例外。我們需要按照 LilyPond 開發者制定的規則編寫樂譜源碼，然後使用 LilyPond 程序將源代碼轉換爲 PNG、PDF、SVG、MIDI 等格式的文件。</p>
+<p><strong>荷花池（線譜）的運作流程如下：</strong></p>
+<ol>
+<li>按照 lilypond 開發者制定的規則編寫「LilyPond 樂譜源碼」。</li>
+<li>使用 lilypond 程序將「LilyPond 樂譜源碼」轉換爲我們期望的「樂譜」文件。</li>
+</ol>
+<div class="note info no-icon"><p>這裏的 lilypond.exe 程序與我們日常使用的軟件有所不同，需要通過命令行的方式來調用執行。</p>
+</div>
+
+<p>不過 LilyPond 主要用於生成五線譜，若想生成簡譜我們還需要藉助另外一個工具：</p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly.png"></p>
+<p>與上面不同，我們不再按照 LilyPond 的規則編寫「LilyPond 樂譜源碼」而是按照 jianpuly 開發者制定的規則編寫「Jianpuly 簡譜源碼」。</p>
+<p><strong>荷花池（簡譜）的運作流程如下：</strong></p>
+<ol>
+<li>按照 jianpuly 開發者制定的規則編寫「Jianpuly 簡譜源碼」。</li>
+<li>使用 jianpuly 腳本將「Jianpuly 簡譜源碼」轉換爲「LilyPond 樂譜源碼」。</li>
+<li>使用 lilypond 程序將「LilyPond 樂譜源碼」轉換爲我們期望的「樂譜」文件。</li>
+</ol>
+<div class="note info no-icon"><p>與 lilypond 類似，jianpu-ly.py 需要通過命令行的方式經 python 調用執行。</p>
+</div>
+
+<span id="more"></span>
+
+<h2 id="軟件下載"><a href="#軟件下載" class="headerlink" title="軟件下載"></a>軟件下載</h2><p><strong>1. 下載 lilypond 壓縮包</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-download.png"></p>
+<center><a href="https://lilypond.org/download.html">下載鏈接</a></center><br>
+
+<p><strong>2. 下載 jianpu-ly.py 腳本文件</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly-download.png"></p>
+<center><a href="http://ssb22.user.srcf.net/mwrhome/jianpu-ly.html">下載鏈接</a></center><br>
+
+<h2 id="軟件安裝"><a href="#軟件安裝" class="headerlink" title="軟件安裝"></a>軟件安裝</h2><p><strong>1. 將下載好的 lilypond 壓縮包解壓至任意位置</strong></p>
+<p><strong>2. 將下載好的 jianpu-ly.py 剪切至 lilypond 解壓目錄下的 bin 文件夾中</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-unpack.png"></p>
+<p><strong>3. 將 lilypond 安裝目錄下的 bin 文件夾添加至系統環境變量 PATH 中</strong></p>
+<p><strong>第一步：搜索「環境變量」然後點擊「編輯系統環境變量」</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath1.png"></p>
+<p><strong>第二步：點擊「環境變量」按鈕</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath2.png"></p>
+<p><strong>第三步：選中系統變量中的「PATH」然後點擊下方的「編輯」按鈕</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath3.png"></p>
+<p><strong>第四步：點擊「新建」按鈕然後輸入之前解壓的 lilypond 的完整路徑</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath4.png"></p>
+<p><strong>4. 驗證 lilypond 是否正常安裝</strong></p>
+<p><strong>第一步：按下「Win+R」鍵打開運行對話框然後輸入 cmd 並運行</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-verify-cmd.png"></p>
+<p><strong>第二步：輸入「lilypond –help」然後按下回車鍵</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-help.png"></p>
+<p>如果你能看到上圖中的信息，那麼恭喜，安裝完成！下面可以嘗試製作一個簡單的樂譜了！</p>
+<br>
+
+<h2 id="線譜製作"><a href="#線譜製作" class="headerlink" title="線譜製作"></a>線譜製作</h2><p>寫到這裏時發現了一篇非常不錯的 lilypond 中文入門教程，既然如此，那我索性就偷個懶，各位看官請移步這裏：</p>
+<center><a href="https://www.yuque.com/qqbunny/lilypond">《LilyPond 入門教程》 by 兔子不咬人</a></center><br>
+
+<h2 id="簡譜製作"><a href="#簡譜製作" class="headerlink" title="簡譜製作"></a>簡譜製作</h2><p><strong>1. 新建一個文件夾作爲工作空間</strong></p>
+<p><strong>2. 將 jianpu-ly.py 腳本文件拷貝至工作空間</strong></p>
+<p><strong>3. 在工作空間中創建一個文本文檔（例如：簡譜代碼.txt）然後寫入以下內容</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%% tempo: 4=60</span><br><span class="line">title=標題</span><br><span class="line">1=C</span><br><span class="line">2/4</span><br><span class="line"></span><br><span class="line">1 2 3 4 5 6 7 1&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><strong>4. 在工作空間中單擊右鍵選擇「在終端中打開」然後會彈出一個黑框框</strong></p>
+<p><strong>5. 輸入以下命令並然後按回車鍵執行</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python jianpu-ly.py 簡譜代碼.txt &gt; 樂譜代碼.ly</span><br></pre></td></tr></table></figure>
+
+<p><strong>6. 輸入以下命令並然後按回車鍵執行</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lilypond -o 樂譜文件 --format=pdf,png 樂譜代碼.ly</span><br></pre></td></tr></table></figure>
+
+<p><strong>7. 嫌麻煩的話也可以在工作空間中新建一個「自動腳本.bat」批處理文件並填入以下內容</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chcp 65001</span><br><span class="line"></span><br><span class="line">set jianpuly=&quot;D:\develop.r.1\lilypond-2.24.1\bin\jianpu-ly.py&quot;</span><br><span class="line"></span><br><span class="line">set source=&quot;簡譜&quot;</span><br><span class="line">set output=&quot;曲譜&quot;</span><br><span class="line"></span><br><span class="line">set middle=&quot;荷花&quot;</span><br><span class="line"></span><br><span class="line">python %jianpuly% %source%.txt &gt; %middle%.ly</span><br><span class="line">lilypond -o %output% --format=pdf,png %middle%.ly</span><br><span class="line">lilypond -o %output% --format=svg %middle%.ly</span><br><span class="line"></span><br><span class="line">md %source%</span><br><span class="line"></span><br><span class="line">move .\%output%.* .\%source%</span><br><span class="line">move .\%middle%.* .\%source%</span><br></pre></td></tr></table></figure>
+
+<p><strong>8. 以後只要雙擊該腳本即可自動生成</strong></p>
+<div class="note info no-icon"><p>使用這種方式時，文件名就不能隨便起了，必須與「source」字段保持一致。</p>
+</div>
+
+<h2 id="簡譜規則"><a href="#簡譜規則" class="headerlink" title="簡譜規則"></a>簡譜規則</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Scale going up                                              1 2 3 4 5 6 7 1&#x27;</span><br><span class="line">Accidentals                                                 1 #1 2 b2 1</span><br><span class="line">Octaves                                                     1,, 1, 1 1&#x27; 1&#x27;&#x27;</span><br><span class="line">Shortcuts for 1’ and 2’                                     8 9</span><br><span class="line">Semiquaver, quaver, crotchet (16/8/4th notes)               s1 q1 1</span><br><span class="line">Dotted versions of the above (50% longer)                   s1. q1. 1.</span><br><span class="line">Demisemiquaver, hemidemisemiquaver (32/64th notes)          d1 h1</span><br><span class="line">Minims (half notes) use dashes                              1 -</span><br><span class="line">Dotted minim                                                1 - -</span><br><span class="line">Semibreve (whole note)                                      1 - - -</span><br><span class="line">Time signature                                              4/4</span><br><span class="line">Time signature with quaver anacrusis (8th-note pickup)      4/4,8</span><br><span class="line">Key signature (major)                                       1=Bb</span><br><span class="line">Key signature (minor)                                       6=F#</span><br><span class="line">Tempo                                                       4=85</span><br><span class="line">Lyrics                                                      L: here are the syl- la- bles (all on one line)</span><br><span class="line">Lyrics (verse 1)                                            L: 1. Here is verse one</span><br><span class="line">Lyrics (verse 2)                                            L: 2. Here is verse two</span><br><span class="line">Hanzi lyrics (auto space)                                   H: hanzi (with or without spaces)</span><br><span class="line">Lilypond headers                                            title=the title (on a line of its own)</span><br><span class="line">Multiple parts                                              NextPart</span><br><span class="line">Instrument of current part                                  instrument=Flute (on a line of its own)</span><br><span class="line">Multiple movements                                          NextScore</span><br><span class="line">Prohibit page breaks until end of this movement             OnePage</span><br><span class="line">Suppress bar numbers                                        NoBarNums</span><br><span class="line">Old-style time signature                                    SeparateTimesig 1=C 4/4</span><br><span class="line">Indonesian ‘not angka’ style                                angka</span><br><span class="line">Add a Western staff doubling the tune                       WithStaff</span><br><span class="line">Tuplets                                                     3[ q1 q1 q1 ]</span><br><span class="line">Grace notes before                                          g[#45] 1</span><br><span class="line">Grace notes after                                           1 [&#x27;1]g</span><br><span class="line">Simple chords                                               135 1 13 1</span><br><span class="line">Da capo                                                     1 1 Fine 1 1 1 1 1 1 DC</span><br><span class="line">Repeat (with alternate endings)                             R&#123; 1 1 1 &#125; A&#123; 2 | 3 &#125;</span><br><span class="line">Short repeats (percent)                                     R4&#123; 1 2 &#125;</span><br><span class="line">Ties (like Lilypond’s, if you don’t want dashes)            1 ~ 1</span><br><span class="line">Slurs (like Lilypond’s)                                     1 ( 2 )</span><br><span class="line">Erhu fingering (applies to previous note)                   Fr=0 Fr=4</span><br><span class="line">Erhu symbol (applies to previous note)                      souyin harmonic up down bend tilde</span><br><span class="line">Tremolo                                                     1/// - 1///5 -</span><br><span class="line">Rehearsal letters                                           letterA letterB</span><br><span class="line">Multibar rest                                               R*8</span><br><span class="line">Dynamics (applies to previous note)                         \p \mp \f</span><br><span class="line">Other 1-word Lilypond \ commands                            \fermata \&gt; \! \( \) etc</span><br><span class="line">Text                                                        ^&quot;above note&quot; _&quot;below note&quot;</span><br><span class="line">Other Lilypond code                                         LP: (block of code) :LP (each delimeter at start of its line)</span><br><span class="line">Ignored                                                     % a comment</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>學點音樂</category>
+      </categories>
+      <tags>
+        <tag>五線譜</tag>
+        <tag>簡譜</tag>
+        <tag>lilypond</tag>
       </tags>
   </entry>
   <entry>
@@ -1019,6 +1000,25 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
+    <title>編寫一個根據 svn 提交記錄自動生成日報的腳本</title>
+    <url>/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</url>
+    <content><![CDATA[<center>beep...領導要求每天寫日報，但是我不太想寫，於是就有了本段代碼。</center><br>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任務名稱</span><br><span class="line">taskname = &quot;編碼工作&quot;</span><br><span class="line"># 基準日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 過去幾天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查詢深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用戶名稱</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用戶路徑</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（計劃&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>效率提升</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>svn</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>囗－囗</title>
     <url>/sulfurandcu.io/clnyhr2mt003b10rq5snfeg6t.html</url>
     <content><![CDATA[<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
@@ -1037,6 +1037,77 @@ N2---&gt;N2.3[&quot; &quot;]
 
 <br>
 ]]></content>
+  </entry>
+  <entry>
+    <title>集成開發環境－GCC.ARM（#00）目錄索引</title>
+    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
+    <content><![CDATA[<hr>
+<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成開發環境－GCC.ARM（#01）環境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成開發環境－GCC.ARM（#02）代碼編譯</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成開發環境－GCC.ARM（#03）程序燒錄</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成開發環境－GCC.ARM（#04）快捷任務</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成開發環境－GCC.ARM（#05）程序調試</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成開發環境－DBG</a></p>
+<hr>
+<p>傳統的集成開發環境（MDK、IAR）通常會提供包括編輯、編譯、燒錄、調試在內的一整套工具，開發者無需配置，簡單易用，但是 license 不是一般的貴。</p>
+<p>替代方案：</p>
+<ul>
+<li><strong>VSC</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
+<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
+<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
+<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
+</ul>
+</li>
+<li><strong>VS</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
+<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
+</ul>
+</li>
+<li><strong>Eclipse</strong></li>
+<li><strong>Eclipse Based</strong><ul>
+<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
+<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
+<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>倘若宿主機使用 Windows 操作系統並且購買了 JLinkDebugger 仿真器，則推薦使用 JLink 方案！</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>一個基本的開發環境包含以下四個部分：</p>
+<ol>
+<li>編輯功能（vscode）</li>
+<li>編譯功能（arm-none-eabi-xxx）</li>
+<li>燒錄功能（OpenOCD&#x2F;JLink）</li>
+<li>調試功能（OpenOCD&#x2F;JLinkGDBServerCL + Cortex-Debug + arm-none-eabi-gdb）</li>
+</ol>
+<ul>
+<li><p><strong>vscode</strong><br>文本編輯器，其實是一個僞裝成文本編輯器的開發框架。</p>
+</li>
+<li><p><strong>arm-none-eabi-xxx</strong><br>交叉編譯器，可以編譯出在 Cortex-R&amp;M 平臺上運行的可執行程序。</p>
+</li>
+<li><p><strong>OpenOCD&#x2F;JLink</strong><br>程序燒錄器，負責將編譯好的程序燒錄到目標芯片中。</p>
+</li>
+<li><p><strong>arm-none-eabi-gdb</strong><br>命令調試器，支持通過命令行的方式進行調試。</p>
+</li>
+<li><p><strong>Cortex-Debug</strong><br>圖形調試器，提供一套圖形調試界面，需要與命令調試器搭配使用。</p>
+</li>
+<li><p><strong>OpenOCD&#x2F;JLinkGDBServerCL</strong><br>調試服務器，負責協助調試器識別並管理各種仿真設備和目標芯片。</p>
+</li>
+<li><p><strong>makefile &amp; task.json</strong><br>自動化工具，用來實現編譯和燒錄的自動化。</p>
+</li>
+</ul>
+<h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方設備支持:HT32F52352 Cortex-M0+</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code開發STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code開發STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code開發STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code開發STM32（四）</a></p>
+<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作總結記錄</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 開發環境—— 詳細版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 開發stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32開發調試環境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 開發環境（詳細）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32開發調試環境（轉）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32開發環境（極簡自我搭建&amp;懶人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 調試器使用介紹</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>集成開發環境</tag>
+        <tag>IDE</tag>
+      </tags>
   </entry>
   <entry>
     <title>集成開發環境－合集</title>
@@ -1124,228 +1195,6 @@ N2---&gt;N2.3[&quot; &quot;]
 </li>
 </ul>
 <h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://elmagnifico.tech/2022/03/14/Embeded-IDE/">https://elmagnifico.tech/2022/03/14/Embeded-IDE/</a><br><a href="https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/">https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/</a></p>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>集成開發環境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成開發環境－DBG</title>
-    <url>/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html</url>
-    <content><![CDATA[<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
-<span id="more"></span>
-
-<h2 id="專用的調試模塊"><a href="#專用的調試模塊" class="headerlink" title="專用的調試模塊"></a>專用的調試模塊</h2><p>常見的 IDE 內部都集成了一個專用的 GUI 調試器，且不能拎出來單獨使用。</p>
-<ul>
-<li>ADS</li>
-<li>IAR</li>
-<li>MDK</li>
-<li>Visual Studio</li>
-</ul>
-<h2 id="獨立的調試工具"><a href="#獨立的調試工具" class="headerlink" title="獨立的調試工具"></a>獨立的調試工具</h2><p>當然也有一些可以獨立使用的調試器，例如：</p>
-<ul>
-<li>CLI: GDB, LLDB</li>
-<li>GUI: x64dbg, WinDBG, OllyDBG</li>
-</ul>
-<h2 id="通用的調試協議（DebugAdapterProtocol）"><a href="#通用的調試協議（DebugAdapterProtocol）" class="headerlink" title="通用的調試協議（DebugAdapterProtocol）"></a>通用的調試協議（DebugAdapterProtocol）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapterProtocol.png"></p>
-<p>不論是專用的調試模塊還是獨立的調試工具，如果想支持調試多種語言，就必須要爲每一種語言開發一套對應的調試程序，並且每個工具廠商都要獨自去完成這些工作。爲了減少不必要的重複勞動，微軟制定了一套通用的調試協議，藉助該協議各工具廠商只需要開發一套調試程序，向下再借助各種調試適配工具即可具備調試所有語言的能力。</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
-<center><a href="https://microsoft.github.io/debug-adapter-protocol/">Debug Adapter Protocol (DAP)</a></center><br>
-
-<p>目前實現該調試協議的開發工具有（常用的）：</p>
-<ul>
-<li>VSC</li>
-<li>VS</li>
-<li>vim</li>
-<li>emacs</li>
-<li>EclipseIDE</li>
-</ul>
-<p>btw, 微軟還制定了一套通用的語言服務器協議 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/LanguageServerProtocol(LSP).png"></p>
-<center><a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></center>
-
-<h2 id="調試器適配工具（DebugAdapter）"><a href="#調試器適配工具（DebugAdapter）" class="headerlink" title="調試器適配工具（DebugAdapter）"></a>調試器適配工具（DebugAdapter）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapter.png"></p>
-<p>調試適配器是對各類調試器的封裝，遵循 DAP 協議對上提供統一的接口，以簡化上層開發工具。常用的調試適配器有：</p>
-<ul>
-<li><a href="https://github.com/Microsoft/vscode-cpptools">cpptools (C&#x2F;C++ Debug Adapter)</a></li>
-<li><a href="https://github.com/Marus/cortex-debug">cortex-debug (Embedded C&#x2F;C++ Debug Adapter)</a></li>
-</ul>
-<h2 id="調試器軟件本體（Debugger）"><a href="#調試器軟件本體（Debugger）" class="headerlink" title="調試器軟件本體（Debugger）"></a>調試器軟件本體（Debugger）</h2><ul>
-<li><a href="https://sourceware.org/gdb/">GDB: The GNU Project Debugger</a><ul>
-<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/Remote-Protocol.html">↑ GDB&#x2F;MI</a></li>
-<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/GDB_002fMI.html">↓ GDB Remote Serial Protocol</a></li>
-</ul>
-</li>
-<li><a href="https://developer.arm.com/downloads/-/gnu-rm">arm-none-eabi-gdb: GNU Arm Embedded GDB</a></li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Debugger.png"></p>
-<h2 id="調試器服務程序（DebugServer）"><a href="#調試器服務程序（DebugServer）" class="headerlink" title="調試器服務程序（DebugServer）"></a>調試器服務程序（DebugServer）</h2><ul>
-<li>OpenOCD</li>
-<li>PyOCD</li>
-<li>JLinkGDBServer</li>
-<li>……</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugServer.png"></p>
-<h2 id="仿真器驅動程序（DongleDriver）"><a href="#仿真器驅動程序（DongleDriver）" class="headerlink" title="仿真器驅動程序（DongleDriver）"></a>仿真器驅動程序（DongleDriver）</h2><ul>
-<li>SEGGER JLink USB Driver</li>
-<li>SEGGER WinUSB USB Device Driver</li>
-</ul>
-<h2 id="仿真器設備本體（Dongle）"><a href="#仿真器設備本體（Dongle）" class="headerlink" title="仿真器設備本體（Dongle）"></a>仿真器設備本體（Dongle）</h2><ul>
-<li>CMSIS-DAP</li>
-<li>SEGGER JLink</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Dongle.png"></p>
-<h2 id="仿真器傳輸協議（DongleTransportProtocol）"><a href="#仿真器傳輸協議（DongleTransportProtocol）" class="headerlink" title="仿真器傳輸協議（DongleTransportProtocol）"></a>仿真器傳輸協議（DongleTransportProtocol）</h2><ul>
-<li>JTAG <a href="https://www.corelis.com/education/tutorials/jtag-tutorial/">https://www.corelis.com/education/tutorials/jtag-tutorial/</a></li>
-<li>SWD</li>
-</ul>
-<h2 id="目標板目標芯片（TargetBoard）"><a href="#目標板目標芯片（TargetBoard）" class="headerlink" title="目標板目標芯片（TargetBoard）"></a>目標板目標芯片（TargetBoard）</h2><ul>
-<li>STM32F103CB</li>
-<li>STM32F407VE</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Target.png"></p>
-<h2 id="本地與遠程調試"><a href="#本地與遠程調試" class="headerlink" title="本地與遠程調試"></a>本地與遠程調試</h2><p>遠程調試方案也有很多，這裏只對以下幾種方式作一簡要介紹：</p>
-<ul>
-<li>OpenOCD</li>
-<li>VSCode + JLinkGDBServer</li>
-<li>JLink + JLinkRemoteServer</li>
-<li>KeilMDK + JLinkRemoteServer</li>
-</ul>
-<h3 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h3><p>略.</p>
-<h3 id="VSCode-JLinkGDBServer"><a href="#VSCode-JLinkGDBServer" class="headerlink" title="VSCode + JLinkGDBServer"></a>VSCode + JLinkGDBServer</h3><p>1. 在服務主機上配置開啓 JLink 調試服務器（該服務器會監聽 2331 端口）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.0.png"></p>
-<div class="note danger no-icon"><p>不要勾選 Localhost Only 選項！</p>
-</div>
-
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.1.png"></p>
-<p>3. 在本地主機上配置 launch.json 文件並啓動調試</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">    &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">    &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">    &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;&quot;,</span><br><span class="line">    &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://github.com/Marus/cortex-debug/issues/244">cortex-debug-issues#244 : remote debugging</a><br><a href="https://github.com/Marus/cortex-debug/wiki/External-gdb-server-configuration">cortex-debug-wiki : external gdb server configuration</a></p>
-<div class="note info no-icon"><p>點擊啓動調試後 cortex-debug 便會幫助我們通過本地 xGDB 客戶端連接遠程 GDB 服務器。</p>
-</div>
-
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 vscode 中調試的圖片</span><br></pre></td></tr></table></figure>
-
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.3.png"></p>
-<h3 id="JLink-JLinkRemoteServer"><a href="#JLink-JLinkRemoteServer" class="headerlink" title="JLink + JLinkRemoteServer"></a>JLink + JLinkRemoteServer</h3><h4 id="內網連接"><a href="#內網連接" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
-<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.png"></p>
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.1.png"></p>
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
-<h4 id="隧道連接"><a href="#隧道連接" class="headerlink" title="隧道連接"></a>隧道連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器（隧道方式）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.0.png"></p>
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.1.png"></p>
-<p>3. 在本地主機上配置連接 JLink 遠程服務器（隧道方式）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.0.png"></p>
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.1.png"></p>
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.3.png"></p>
-<h3 id="KeilMDK-JLinkRemoteServer"><a href="#KeilMDK-JLinkRemoteServer" class="headerlink" title="KeilMDK + JLinkRemoteServer"></a>KeilMDK + JLinkRemoteServer</h3><h4 id="內網連接-1"><a href="#內網連接-1" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
-<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.Keil.MDK.png"></p>
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 Keil MDK 中調試的圖片</span><br></pre></td></tr></table></figure>
-
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>集成開發環境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成開發環境－GCC.ARM（#00）目錄索引</title>
-    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
-    <content><![CDATA[<hr>
-<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成開發環境－GCC.ARM（#01）環境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成開發環境－GCC.ARM（#02）代碼編譯</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成開發環境－GCC.ARM（#03）程序燒錄</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成開發環境－GCC.ARM（#04）快捷任務</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成開發環境－GCC.ARM（#05）程序調試</a><br><a href="/sulfurandcu.io/clo2c1l6500c81wrqbkskaevk.html">集成開發環境－GCC.ARM（#06）遠程調試</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成開發環境－DBG</a></p>
-<hr>
-<p>傳統的集成開發環境（MDK、IAR）通常會提供包括編輯、編譯、燒錄、調試在內的一整套工具，開發者無需配置，簡單易用，但是 license 不是一般的貴。</p>
-<p>替代方案：</p>
-<ul>
-<li><strong>VSC</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
-<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
-<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
-<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
-<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
-</ul>
-</li>
-<li><strong>VS</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
-<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
-</ul>
-</li>
-<li><strong>Eclipse</strong></li>
-<li><strong>Eclipse Based</strong><ul>
-<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
-<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
-<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>倘若宿主機使用 Windows 操作系統並且購買了 JLinkDebugger 仿真器，則推薦使用 JLink 方案！</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>一個基本的開發環境包含以下四個部分：</p>
-<ol>
-<li>編輯功能（vscode）</li>
-<li>編譯功能（arm-none-eabi-xxx）</li>
-<li>燒錄功能（OpenOCD&#x2F;JLink）</li>
-<li>調試功能（OpenOCD&#x2F;JLinkGDBServerCL + Cortex-Debug + arm-none-eabi-gdb）</li>
-</ol>
-<ul>
-<li><p><strong>vscode</strong><br>文本編輯器，其實是一個僞裝成文本編輯器的開發框架。</p>
-</li>
-<li><p><strong>arm-none-eabi-xxx</strong><br>交叉編譯器，可以編譯出在 Cortex-R&amp;M 平臺上運行的可執行程序。</p>
-</li>
-<li><p><strong>OpenOCD&#x2F;JLink</strong><br>程序燒錄器，負責將編譯好的程序燒錄到目標芯片中。</p>
-</li>
-<li><p><strong>arm-none-eabi-gdb</strong><br>命令調試器，支持通過命令行的方式進行調試。</p>
-</li>
-<li><p><strong>Cortex-Debug</strong><br>圖形調試器，提供一套圖形調試界面，需要與命令調試器搭配使用。</p>
-</li>
-<li><p><strong>OpenOCD&#x2F;JLinkGDBServerCL</strong><br>調試服務器，負責協助調試器識別並管理各種仿真設備和目標芯片。</p>
-</li>
-<li><p><strong>makefile &amp; task.json</strong><br>自動化工具，用來實現編譯和燒錄的自動化。</p>
-</li>
-</ul>
-<h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方設備支持:HT32F52352 Cortex-M0+</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code開發STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code開發STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code開發STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code開發STM32（四）</a></p>
-<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作總結記錄</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 開發環境—— 詳細版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 開發stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32開發調試環境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 開發環境（詳細）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32開發調試環境（轉）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32開發環境（極簡自我搭建&amp;懶人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 調試器使用介紹</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
 ]]></content>
       <categories>
         <category>開發筆記</category>
@@ -1531,36 +1380,6 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
-    <title>集成開發環境－GCC.ARM（#05）程序調試</title>
-    <url>/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html</url>
-    <content><![CDATA[<hr>
-<ul>
-<li>laugch.json</li>
-</ul>
-<hr>
-<span id="more"></span>
-
-<p>1. 在工程目錄下的 .vscode 目錄中新建 laugch.json 文件並填入以下內容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@JLinkGDBServerCL.exe&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;jlink&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;: &quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;device&quot;: &quot;STM32F103CB&quot;,</span><br><span class="line">            &quot;interface&quot;: &quot;swd&quot;,</span><br><span class="line">            &quot;serverArgs&quot;: [</span><br><span class="line">                // &quot;-gui&quot;,</span><br><span class="line">            ],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@OpenOCD.exe&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;openocd&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;showDevDebugOutput&quot;: &quot;none&quot;,</span><br><span class="line">            &quot;configFiles&quot;: [</span><br><span class="line">                &quot;openocd/jlink-swd.cfg&quot;,</span><br><span class="line">                &quot;openocd/stm32f1x.cfg&quot;,</span><br><span class="line">            ],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;gdbPath&quot;: &quot;D:/develop.r.0/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gdb.exe&quot;,</span><br><span class="line">            &quot;armToolchainPath&quot;: &quot;D:/develop.r.0/gcc-arm-none-eabi-10.3-2021.10/bin&quot;,</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>2. 進入側邊欄中的 RunAndDebug 然後選擇</p>
-<ul>
-<li>Debug@JLinkGDBServerCL.exe</li>
-<li>Debug@OpenOCD.exe</li>
-<li>Debug@RemoteServer(GDBServer&#x2F;JLinkGDBServer)</li>
-</ul>
-<p><img src="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey/launch.json.png"></p>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>集成開發環境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>集成開發環境－GCC.ARM（#04）快捷任務</title>
     <url>/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html</url>
     <content><![CDATA[<hr>
@@ -1596,24 +1415,33 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
-    <title>嵌入式 IAP 升級功能（#00）目錄索引</title>
-    <url>/sulfurandcu.io/clnyhr2n2004t10rq7rdi2ftx.html</url>
+    <title>集成開發環境－GCC.ARM（#05）程序調試</title>
+    <url>/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html</url>
     <content><![CDATA[<hr>
-<p><a href="/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html">嵌入式 IAP 升級功能（#01）基礎概念</a><br><a href="/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html">嵌入式 IAP 升級功能（#02）升級方案</a><br><a href="/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html">嵌入式 IAP 升級功能（#03）流程設計</a><br><a href="/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html">嵌入式 IAP 升級功能（#04）技術細節</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升級功能（#05）增量升級</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升級功能（#06）差分還原 haptchlite 移植</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升級功能（#07）壓縮解壓 tinyuztool 移植</a><br><a href="/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html">嵌入式 IAP 升級功能（#08）引導程序 bootloader 升級</a></p>
+<ul>
+<li>laugch.json</li>
+</ul>
 <hr>
 <span id="more"></span>
 
-<h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://itexp.blog.csdn.net/article/details/83793309">https://itexp.blog.csdn.net/article/details/83793309</a></p>
-<p><a href="https://blog.csdn.net/qq_24130227/article/details/123752964">https://blog.csdn.net/qq_24130227/article/details/123752964</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/108379324">https://blog.csdn.net/qq_24130227/article/details/108379324</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/113003329">https://blog.csdn.net/qq_24130227/article/details/113003329</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/120061873">https://blog.csdn.net/qq_24130227/article/details/120061873</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/108427842">https://blog.csdn.net/qq_24130227/article/details/108427842</a></p>
+<p>1. 在工程目錄下的 .vscode 目錄中新建 laugch.json 文件並填入以下內容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@JLinkGDBServerCL.exe&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;jlink&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;: &quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;device&quot;: &quot;STM32F103CB&quot;,</span><br><span class="line">            &quot;interface&quot;: &quot;swd&quot;,</span><br><span class="line">            &quot;serverArgs&quot;: [</span><br><span class="line">                // &quot;-gui&quot;,</span><br><span class="line">            ],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@OpenOCD.exe&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;openocd&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;showDevDebugOutput&quot;: &quot;none&quot;,</span><br><span class="line">            &quot;configFiles&quot;: [</span><br><span class="line">                &quot;openocd/jlink-swd.cfg&quot;,</span><br><span class="line">                &quot;openocd/stm32f1x.cfg&quot;,</span><br><span class="line">            ],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;gdbPath&quot;: &quot;D:/develop.r.0/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gdb.exe&quot;,</span><br><span class="line">            &quot;armToolchainPath&quot;: &quot;D:/develop.r.0/gcc-arm-none-eabi-10.3-2021.10/bin&quot;,</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2. 進入側邊欄中的 RunAndDebug 然後選擇</p>
+<ul>
+<li>Debug@JLinkGDBServerCL.exe</li>
+<li>Debug@OpenOCD.exe</li>
+<li>Debug@RemoteServer(GDBServer&#x2F;JLinkGDBServer)</li>
+</ul>
+<p><img src="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey/launch.json.png"></p>
 ]]></content>
       <categories>
         <category>開發筆記</category>
       </categories>
       <tags>
         <tag>嵌入式軟件開發</tag>
-        <tag>單片機</tag>
-        <tag>iap</tag>
-        <tag>bootloader</tag>
+        <tag>集成開發環境</tag>
+        <tag>IDE</tag>
       </tags>
   </entry>
   <entry>
@@ -1761,6 +1589,27 @@ A(&quot;在電路編程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系統編�
       <tags>
         <tag>嵌入式軟件開發</tag>
         <tag>在線升級</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>嵌入式 IAP 升級功能（#00）目錄索引</title>
+    <url>/sulfurandcu.io/clnyhr2n2004t10rq7rdi2ftx.html</url>
+    <content><![CDATA[<hr>
+<p><a href="/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html">嵌入式 IAP 升級功能（#01）基礎概念</a><br><a href="/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html">嵌入式 IAP 升級功能（#02）升級方案</a><br><a href="/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html">嵌入式 IAP 升級功能（#03）流程設計</a><br><a href="/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html">嵌入式 IAP 升級功能（#04）技術細節</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升級功能（#05）增量升級</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升級功能（#06）差分還原 haptchlite 移植</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升級功能（#07）壓縮解壓 tinyuztool 移植</a><br><a href="/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html">嵌入式 IAP 升級功能（#08）引導程序 bootloader 升級</a></p>
+<hr>
+<span id="more"></span>
+
+<h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://itexp.blog.csdn.net/article/details/83793309">https://itexp.blog.csdn.net/article/details/83793309</a></p>
+<p><a href="https://blog.csdn.net/qq_24130227/article/details/123752964">https://blog.csdn.net/qq_24130227/article/details/123752964</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/108379324">https://blog.csdn.net/qq_24130227/article/details/108379324</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/113003329">https://blog.csdn.net/qq_24130227/article/details/113003329</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/120061873">https://blog.csdn.net/qq_24130227/article/details/120061873</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/108427842">https://blog.csdn.net/qq_24130227/article/details/108427842</a></p>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>單片機</tag>
+        <tag>iap</tag>
+        <tag>bootloader</tag>
       </tags>
   </entry>
   <entry>
@@ -2423,6 +2272,37 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[將內部flash中的0xAAB
       </tags>
   </entry>
   <entry>
+    <title>嵌入式 IAP 升級功能（#08）引導程序 bootloader 升級</title>
+    <url>/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>在線升級</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>嵌入式 IAP 升級功能（#07）壓縮解壓 tinyuz 移植</title>
+    <url>/sulfurandcu.io/cloidh8k000ijv0rq8b5hbdpe.html</url>
+    <content><![CDATA[<p>與上文類似，對 tinyuz 也進行二次封裝以便上層調用：</p>
+<figure class="highlight c"><figcaption><span>tinyuz_port.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> __tinyuz_port_h__</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __tinyuz_port_h__</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stddef.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;malloc.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TUZ_DECOMPRESS_SPACE_SIZE       512*1024            <span class="comment">// 外部存儲中〈差分文件區〉的空間大小</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tuz_malloc(x)                   mymalloc(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tuz_free(x)                     myfree(x)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">enum</span> <span class="title">TTinyuzResult</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    TINYUZ_SUCCESS=<span class="number">0</span>,</span><br><span class="line">    TINYUZ_OPTIONS_ERROR,</span><br><span class="line">    TINYUZ_OPENREAD_ERROR,</span><br><span class="line">    TINYUZ_OPENWRITE_ERROR,</span><br><span class="line">    TINYUZ_FILEREAD_ERROR,</span><br><span class="line">    TINYUZ_FILEWRITE_ERROR,</span><br><span class="line">    TINYUZ_FILECLOSE_ERROR,</span><br><span class="line">    TINYUZ_MEM_ERROR,</span><br><span class="line">    TINYUZ_COMPRESS_ERROR,</span><br><span class="line">    TINYUZ_DECOMPRESS_ERROR,</span><br><span class="line">&#125; TTinyuzResult;</span><br><span class="line"></span><br><span class="line"><span class="type">size_t</span> <span class="title function_">tuz_decompress</span><span class="params">(<span class="type">size_t</span> compressed_file_size, <span class="type">size_t</span> cache_size)</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span> <span class="comment">/* __tinyuz_port_h__ */</span></span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<figure class="highlight c"><figcaption><span>tinyuz_port.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;tinyuz_port.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;fal.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;tuz_dec.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;patch_types.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">TTuzListener</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">const</span> hpatch_TStreamInput*  input_file_stream_handle;</span><br><span class="line">    hpatch_StreamPos_t          readPos;</span><br><span class="line">    tuz_TInputStream_read       _do_read_encompress_file;</span><br><span class="line">&#125;TTuzListener;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 從外部flash中以數據流的形式讀取壓縮數據</span></span><br><span class="line">hpatch_BOOL _do_read_encompress_file(<span class="type">const</span> hpatch_TStreamInput* stream, hpatch_StreamPos_t readFromPos, <span class="type">unsigned</span> <span class="type">char</span>* out_data, <span class="type">unsigned</span> <span class="type">char</span>* out_data_end)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">size_t</span> readLen = (<span class="type">size_t</span>)(out_data_end - out_data);</span><br><span class="line">    <span class="keyword">if</span> (readLen == <span class="number">0</span>) <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> compressed_stream_size = stream-&gt;streamSize;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ((readLen &gt; compressed_stream_size) || (readFromPos &gt; compressed_stream_size - readLen)) <span class="keyword">return</span> hpatch_FALSE;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// TODO 由用戶實現</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_ziped&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_read(partition, readFromPos, out_data, readLen);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 將解壓數據以數據流的形式寫入外部flash中</span></span><br><span class="line">hpatch_BOOL _do_write_decompress_file(<span class="type">const</span> hpatch_TStreamOutput* stream, hpatch_StreamPos_t writeToPos, <span class="type">const</span> <span class="type">unsigned</span> <span class="type">char</span>* data, <span class="type">const</span> <span class="type">unsigned</span> <span class="type">char</span>* data_end)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">unsigned</span> <span class="type">int</span> offset = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> writeLen = (<span class="type">size_t</span>)(data_end - data);</span><br><span class="line">    <span class="keyword">if</span> (writeLen == <span class="number">0</span>) <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> write_max_space = stream-&gt;streamSize;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ((writeLen &gt; write_max_space)||(writeToPos &gt; write_max_space - writeLen)) <span class="keyword">return</span> hpatch_FALSE;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// TODO 由用戶實現</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_newer&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_write(partition, offset+writeToPos, data, writeLen);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">static</span> tuz_BOOL <span class="title function_">input_file_stream_read_function</span><span class="params">(<span class="type">void</span> *listener, tuz_byte *decompressed_file_stream, <span class="type">tuz_size_t</span> *code_size)</span></span><br><span class="line">&#123;</span><br><span class="line">    TTuzListener *self = (TTuzListener*)listener;</span><br><span class="line">    <span class="type">tuz_size_t</span> r_len = *code_size;</span><br><span class="line">    hpatch_StreamPos_t curReadPos = self-&gt;readPos;</span><br><span class="line">    hpatch_StreamPos_t s_size = self-&gt;input_file_stream_handle-&gt;streamSize - curReadPos;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (r_len &gt; s_size)&#123;</span><br><span class="line">        r_len = (<span class="type">tuz_size_t</span>)s_size;</span><br><span class="line">        *code_size = r_len;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    self-&gt;readPos += r_len;</span><br><span class="line">    <span class="keyword">return</span> self-&gt;input_file_stream_handle-&gt;read(self-&gt;input_file_stream_handle, curReadPos, decompressed_file_stream, decompressed_file_stream + r_len);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">size_t</span> <span class="title function_">tuz_decompress</span><span class="params">(<span class="type">size_t</span> compressed_file_size, <span class="type">size_t</span> cache_size)</span></span><br><span class="line">&#123;</span><br><span class="line">    hpatch_TStreamOutput decompressed_file_stream_handle = &#123;</span><br><span class="line">        .streamImport = &amp;decompressed_file_stream_handle,</span><br><span class="line">        .streamSize = TUZ_DECOMPRESS_SPACE_SIZE, <span class="comment">// 外部存儲中〈差分文件區〉的空間大小</span></span><br><span class="line">        .write = _do_write_decompress_file, <span class="comment">// stream write</span></span><br><span class="line">        .read_writed = <span class="literal">NULL</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    hpatch_TStreamInput input_file_stream_handle = &#123;</span><br><span class="line">        .streamImport = &amp;input_file_stream_handle,</span><br><span class="line">        .streamSize = compressed_file_size, <span class="comment">// 壓縮文件的實際大小</span></span><br><span class="line">        .read = _do_read_encompress_file, <span class="comment">// stream read</span></span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    TTuzListener listener = &#123;&amp;input_file_stream_handle, <span class="number">0</span>, input_file_stream_read_function&#125;;</span><br><span class="line">    tuz_TStream tuz;</span><br><span class="line">    tuz_TResult result = tuz_OK;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 壓縮的時候會以指定的字典大小進行壓縮｜因此解壓的時候要從壓縮包頭中讀取字典大小</span></span><br><span class="line">    <span class="type">tuz_size_t</span> dictSize = tuz_TStream_read_dict_size(&amp;listener, listener._do_read_encompress_file);</span><br><span class="line"></span><br><span class="line">    tuz_byte* decompress_buf = <span class="number">0</span>;</span><br><span class="line">    cache_size &gt;&gt;= <span class="number">1</span>; <span class="comment">// 除二操作</span></span><br><span class="line">    decompress_buf = (tuz_byte*)tuz_malloc(dictSize + cache_size*<span class="number">2</span>); <span class="comment">// 解壓過程中要用到的臨時空間大小 = 字典大小 + 解壓緩衝區大小</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (decompress_buf == <span class="number">0</span>) <span class="keyword">return</span> TINYUZ_MEM_ERROR;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// tuz_TStream_open 僅僅是用來初始化 tuz 這個勾柄的（tuz後面的參數都是給tuz賦值用的）</span></span><br><span class="line">    result = tuz_TStream_open(&amp;tuz, &amp;listener, listener._do_read_encompress_file, decompress_buf + cache_size, (<span class="type">tuz_size_t</span>)dictSize, (<span class="type">tuz_size_t</span>)cache_size);</span><br><span class="line"></span><br><span class="line">    hpatch_StreamPos_t stream_index = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (result == tuz_OK)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">tuz_size_t</span> decompress_len = (<span class="type">tuz_size_t</span>)cache_size; <span class="comment">// 給decompress_len賦一個初始值</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 解壓一包數據到 decompress_buf 中｜並得到該包長度 decompress_len</span></span><br><span class="line">        result = tuz_TStream_decompress_partial(&amp;tuz, decompress_buf, &amp;decompress_len);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (result &lt;= tuz_STREAM_END)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">// 將當前解壓的 decompress_buf 中的數據寫到 decompressed_file_stream_handle 數據流中</span></span><br><span class="line">            <span class="keyword">if</span> (decompressed_file_stream_handle.write(&amp;decompressed_file_stream_handle, stream_index, decompress_buf, decompress_buf + decompress_len))</span><br><span class="line">            &#123;</span><br><span class="line">                stream_index += decompress_len;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                tuz_free(decompress_buf);</span><br><span class="line">                <span class="keyword">return</span> TINYUZ_OPENWRITE_ERROR;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    tuz_free(decompress_buf);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> stream_index;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>壓縮解壓算法</tag>
+        <tag>在線升級</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>嵌入式 IAP 升級功能（#06）差分還原 haptchlite 移植</title>
     <url>/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html</url>
     <content><![CDATA[<p>最近發現了一個優秀的差分還原算法：hdiff &amp; hpatch，它通過數據流的思想把 O(n) 的空間複雜度轉嫁給了硬盤，使得內存的開銷極低，非常適合應用於嵌入式領域。</p>
@@ -2492,34 +2372,154 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[將內部flash中的0xAAB
       </tags>
   </entry>
   <entry>
-    <title>嵌入式 IAP 升級功能（#07）壓縮解壓 tinyuz 移植</title>
-    <url>/sulfurandcu.io/cloidh8k000ijv0rq8b5hbdpe.html</url>
-    <content><![CDATA[<p>與上文類似，對 tinyuz 也進行二次封裝以便上層調用：</p>
-<figure class="highlight c"><figcaption><span>tinyuz_port.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> __tinyuz_port_h__</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __tinyuz_port_h__</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stddef.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;malloc.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TUZ_DECOMPRESS_SPACE_SIZE       512*1024            <span class="comment">// 外部存儲中〈差分文件區〉的空間大小</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tuz_malloc(x)                   mymalloc(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tuz_free(x)                     myfree(x)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">enum</span> <span class="title">TTinyuzResult</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    TINYUZ_SUCCESS=<span class="number">0</span>,</span><br><span class="line">    TINYUZ_OPTIONS_ERROR,</span><br><span class="line">    TINYUZ_OPENREAD_ERROR,</span><br><span class="line">    TINYUZ_OPENWRITE_ERROR,</span><br><span class="line">    TINYUZ_FILEREAD_ERROR,</span><br><span class="line">    TINYUZ_FILEWRITE_ERROR,</span><br><span class="line">    TINYUZ_FILECLOSE_ERROR,</span><br><span class="line">    TINYUZ_MEM_ERROR,</span><br><span class="line">    TINYUZ_COMPRESS_ERROR,</span><br><span class="line">    TINYUZ_DECOMPRESS_ERROR,</span><br><span class="line">&#125; TTinyuzResult;</span><br><span class="line"></span><br><span class="line"><span class="type">size_t</span> <span class="title function_">tuz_decompress</span><span class="params">(<span class="type">size_t</span> compressed_file_size, <span class="type">size_t</span> cache_size)</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span> <span class="comment">/* __tinyuz_port_h__ */</span></span></span><br></pre></td></tr></table></figure>
-
+    <title>集成開發環境－DBG</title>
+    <url>/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html</url>
+    <content><![CDATA[<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
 <span id="more"></span>
 
-<figure class="highlight c"><figcaption><span>tinyuz_port.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;tinyuz_port.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;fal.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;tuz_dec.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;patch_types.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">TTuzListener</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">const</span> hpatch_TStreamInput*  input_file_stream_handle;</span><br><span class="line">    hpatch_StreamPos_t          readPos;</span><br><span class="line">    tuz_TInputStream_read       _do_read_encompress_file;</span><br><span class="line">&#125;TTuzListener;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 從外部flash中以數據流的形式讀取壓縮數據</span></span><br><span class="line">hpatch_BOOL _do_read_encompress_file(<span class="type">const</span> hpatch_TStreamInput* stream, hpatch_StreamPos_t readFromPos, <span class="type">unsigned</span> <span class="type">char</span>* out_data, <span class="type">unsigned</span> <span class="type">char</span>* out_data_end)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">size_t</span> readLen = (<span class="type">size_t</span>)(out_data_end - out_data);</span><br><span class="line">    <span class="keyword">if</span> (readLen == <span class="number">0</span>) <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> compressed_stream_size = stream-&gt;streamSize;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ((readLen &gt; compressed_stream_size) || (readFromPos &gt; compressed_stream_size - readLen)) <span class="keyword">return</span> hpatch_FALSE;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// TODO 由用戶實現</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_ziped&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_read(partition, readFromPos, out_data, readLen);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 將解壓數據以數據流的形式寫入外部flash中</span></span><br><span class="line">hpatch_BOOL _do_write_decompress_file(<span class="type">const</span> hpatch_TStreamOutput* stream, hpatch_StreamPos_t writeToPos, <span class="type">const</span> <span class="type">unsigned</span> <span class="type">char</span>* data, <span class="type">const</span> <span class="type">unsigned</span> <span class="type">char</span>* data_end)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">unsigned</span> <span class="type">int</span> offset = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> writeLen = (<span class="type">size_t</span>)(data_end - data);</span><br><span class="line">    <span class="keyword">if</span> (writeLen == <span class="number">0</span>) <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> write_max_space = stream-&gt;streamSize;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ((writeLen &gt; write_max_space)||(writeToPos &gt; write_max_space - writeLen)) <span class="keyword">return</span> hpatch_FALSE;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// TODO 由用戶實現</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_newer&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_write(partition, offset+writeToPos, data, writeLen);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">static</span> tuz_BOOL <span class="title function_">input_file_stream_read_function</span><span class="params">(<span class="type">void</span> *listener, tuz_byte *decompressed_file_stream, <span class="type">tuz_size_t</span> *code_size)</span></span><br><span class="line">&#123;</span><br><span class="line">    TTuzListener *self = (TTuzListener*)listener;</span><br><span class="line">    <span class="type">tuz_size_t</span> r_len = *code_size;</span><br><span class="line">    hpatch_StreamPos_t curReadPos = self-&gt;readPos;</span><br><span class="line">    hpatch_StreamPos_t s_size = self-&gt;input_file_stream_handle-&gt;streamSize - curReadPos;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (r_len &gt; s_size)&#123;</span><br><span class="line">        r_len = (<span class="type">tuz_size_t</span>)s_size;</span><br><span class="line">        *code_size = r_len;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    self-&gt;readPos += r_len;</span><br><span class="line">    <span class="keyword">return</span> self-&gt;input_file_stream_handle-&gt;read(self-&gt;input_file_stream_handle, curReadPos, decompressed_file_stream, decompressed_file_stream + r_len);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">size_t</span> <span class="title function_">tuz_decompress</span><span class="params">(<span class="type">size_t</span> compressed_file_size, <span class="type">size_t</span> cache_size)</span></span><br><span class="line">&#123;</span><br><span class="line">    hpatch_TStreamOutput decompressed_file_stream_handle = &#123;</span><br><span class="line">        .streamImport = &amp;decompressed_file_stream_handle,</span><br><span class="line">        .streamSize = TUZ_DECOMPRESS_SPACE_SIZE, <span class="comment">// 外部存儲中〈差分文件區〉的空間大小</span></span><br><span class="line">        .write = _do_write_decompress_file, <span class="comment">// stream write</span></span><br><span class="line">        .read_writed = <span class="literal">NULL</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    hpatch_TStreamInput input_file_stream_handle = &#123;</span><br><span class="line">        .streamImport = &amp;input_file_stream_handle,</span><br><span class="line">        .streamSize = compressed_file_size, <span class="comment">// 壓縮文件的實際大小</span></span><br><span class="line">        .read = _do_read_encompress_file, <span class="comment">// stream read</span></span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    TTuzListener listener = &#123;&amp;input_file_stream_handle, <span class="number">0</span>, input_file_stream_read_function&#125;;</span><br><span class="line">    tuz_TStream tuz;</span><br><span class="line">    tuz_TResult result = tuz_OK;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 壓縮的時候會以指定的字典大小進行壓縮｜因此解壓的時候要從壓縮包頭中讀取字典大小</span></span><br><span class="line">    <span class="type">tuz_size_t</span> dictSize = tuz_TStream_read_dict_size(&amp;listener, listener._do_read_encompress_file);</span><br><span class="line"></span><br><span class="line">    tuz_byte* decompress_buf = <span class="number">0</span>;</span><br><span class="line">    cache_size &gt;&gt;= <span class="number">1</span>; <span class="comment">// 除二操作</span></span><br><span class="line">    decompress_buf = (tuz_byte*)tuz_malloc(dictSize + cache_size*<span class="number">2</span>); <span class="comment">// 解壓過程中要用到的臨時空間大小 = 字典大小 + 解壓緩衝區大小</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (decompress_buf == <span class="number">0</span>) <span class="keyword">return</span> TINYUZ_MEM_ERROR;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// tuz_TStream_open 僅僅是用來初始化 tuz 這個勾柄的（tuz後面的參數都是給tuz賦值用的）</span></span><br><span class="line">    result = tuz_TStream_open(&amp;tuz, &amp;listener, listener._do_read_encompress_file, decompress_buf + cache_size, (<span class="type">tuz_size_t</span>)dictSize, (<span class="type">tuz_size_t</span>)cache_size);</span><br><span class="line"></span><br><span class="line">    hpatch_StreamPos_t stream_index = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (result == tuz_OK)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">tuz_size_t</span> decompress_len = (<span class="type">tuz_size_t</span>)cache_size; <span class="comment">// 給decompress_len賦一個初始值</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 解壓一包數據到 decompress_buf 中｜並得到該包長度 decompress_len</span></span><br><span class="line">        result = tuz_TStream_decompress_partial(&amp;tuz, decompress_buf, &amp;decompress_len);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (result &lt;= tuz_STREAM_END)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">// 將當前解壓的 decompress_buf 中的數據寫到 decompressed_file_stream_handle 數據流中</span></span><br><span class="line">            <span class="keyword">if</span> (decompressed_file_stream_handle.write(&amp;decompressed_file_stream_handle, stream_index, decompress_buf, decompress_buf + decompress_len))</span><br><span class="line">            &#123;</span><br><span class="line">                stream_index += decompress_len;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                tuz_free(decompress_buf);</span><br><span class="line">                <span class="keyword">return</span> TINYUZ_OPENWRITE_ERROR;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    tuz_free(decompress_buf);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> stream_index;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="專用的調試模塊"><a href="#專用的調試模塊" class="headerlink" title="專用的調試模塊"></a>專用的調試模塊</h2><p>常見的 IDE 內部都集成了一個專用的 GUI 調試器，且不能拎出來單獨使用。</p>
+<ul>
+<li>ADS</li>
+<li>IAR</li>
+<li>MDK</li>
+<li>Visual Studio</li>
+</ul>
+<h2 id="獨立的調試工具"><a href="#獨立的調試工具" class="headerlink" title="獨立的調試工具"></a>獨立的調試工具</h2><p>當然也有一些可以獨立使用的調試器，例如：</p>
+<ul>
+<li>CLI: GDB, LLDB</li>
+<li>GUI: x64dbg, WinDBG, OllyDBG</li>
+</ul>
+<h2 id="通用的調試協議（DebugAdapterProtocol）"><a href="#通用的調試協議（DebugAdapterProtocol）" class="headerlink" title="通用的調試協議（DebugAdapterProtocol）"></a>通用的調試協議（DebugAdapterProtocol）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapterProtocol.png"></p>
+<p>不論是專用的調試模塊還是獨立的調試工具，如果想支持調試多種語言，就必須要爲每一種語言開發一套對應的調試程序，並且每個工具廠商都要獨自去完成這些工作。爲了減少不必要的重複勞動，微軟制定了一套通用的調試協議，藉助該協議各工具廠商只需要開發一套調試程序，向下再借助各種調試適配工具即可具備調試所有語言的能力。</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
+<center><a href="https://microsoft.github.io/debug-adapter-protocol/">Debug Adapter Protocol (DAP)</a></center><br>
+
+<p>目前實現該調試協議的開發工具有（常用的）：</p>
+<ul>
+<li>VSC</li>
+<li>VS</li>
+<li>vim</li>
+<li>emacs</li>
+<li>EclipseIDE</li>
+</ul>
+<p>btw, 微軟還制定了一套通用的語言服務器協議 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/LanguageServerProtocol(LSP).png"></p>
+<center><a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></center>
+
+<h2 id="調試器適配工具（DebugAdapter）"><a href="#調試器適配工具（DebugAdapter）" class="headerlink" title="調試器適配工具（DebugAdapter）"></a>調試器適配工具（DebugAdapter）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapter.png"></p>
+<p>調試適配器是對各類調試器的封裝，遵循 DAP 協議對上提供統一的接口，以簡化上層開發工具。常用的調試適配器有：</p>
+<ul>
+<li><a href="https://github.com/Microsoft/vscode-cpptools">cpptools (C&#x2F;C++ Debug Adapter)</a></li>
+<li><a href="https://github.com/Marus/cortex-debug">cortex-debug (Embedded C&#x2F;C++ Debug Adapter)</a></li>
+</ul>
+<h2 id="調試器軟件本體（Debugger）"><a href="#調試器軟件本體（Debugger）" class="headerlink" title="調試器軟件本體（Debugger）"></a>調試器軟件本體（Debugger）</h2><ul>
+<li><a href="https://sourceware.org/gdb/">GDB: The GNU Project Debugger</a><ul>
+<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/Remote-Protocol.html">↑ GDB&#x2F;MI</a></li>
+<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/GDB_002fMI.html">↓ GDB Remote Serial Protocol</a></li>
+</ul>
+</li>
+<li><a href="https://developer.arm.com/downloads/-/gnu-rm">arm-none-eabi-gdb: GNU Arm Embedded GDB</a></li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Debugger.png"></p>
+<h2 id="調試器服務程序（DebugServer）"><a href="#調試器服務程序（DebugServer）" class="headerlink" title="調試器服務程序（DebugServer）"></a>調試器服務程序（DebugServer）</h2><ul>
+<li>OpenOCD</li>
+<li>PyOCD</li>
+<li>JLinkGDBServer</li>
+<li>……</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugServer.png"></p>
+<h2 id="仿真器驅動程序（DongleDriver）"><a href="#仿真器驅動程序（DongleDriver）" class="headerlink" title="仿真器驅動程序（DongleDriver）"></a>仿真器驅動程序（DongleDriver）</h2><ul>
+<li>SEGGER JLink USB Driver</li>
+<li>SEGGER WinUSB USB Device Driver</li>
+</ul>
+<h2 id="仿真器設備本體（Dongle）"><a href="#仿真器設備本體（Dongle）" class="headerlink" title="仿真器設備本體（Dongle）"></a>仿真器設備本體（Dongle）</h2><ul>
+<li>CMSIS-DAP</li>
+<li>SEGGER JLink</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Dongle.png"></p>
+<h2 id="仿真器傳輸協議（DongleTransportProtocol）"><a href="#仿真器傳輸協議（DongleTransportProtocol）" class="headerlink" title="仿真器傳輸協議（DongleTransportProtocol）"></a>仿真器傳輸協議（DongleTransportProtocol）</h2><ul>
+<li>JTAG <a href="https://www.corelis.com/education/tutorials/jtag-tutorial/">https://www.corelis.com/education/tutorials/jtag-tutorial/</a></li>
+<li>SWD</li>
+</ul>
+<h2 id="目標板目標芯片（TargetBoard）"><a href="#目標板目標芯片（TargetBoard）" class="headerlink" title="目標板目標芯片（TargetBoard）"></a>目標板目標芯片（TargetBoard）</h2><ul>
+<li>STM32F103CB</li>
+<li>STM32F407VE</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Target.png"></p>
+<h2 id="本地與遠程調試"><a href="#本地與遠程調試" class="headerlink" title="本地與遠程調試"></a>本地與遠程調試</h2><p>遠程調試方案也有很多，這裏只對以下幾種方式作一簡要介紹：</p>
+<ul>
+<li>OpenOCD</li>
+<li>VSCode + JLinkGDBServer</li>
+<li>JLink + JLinkRemoteServer</li>
+<li>KeilMDK + JLinkRemoteServer</li>
+</ul>
+<h3 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h3><p>略.</p>
+<h3 id="VSCode-JLinkGDBServer"><a href="#VSCode-JLinkGDBServer" class="headerlink" title="VSCode + JLinkGDBServer"></a>VSCode + JLinkGDBServer</h3><p>1. 在服務主機上配置開啓 JLink 調試服務器（該服務器會監聽 2331 端口）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.0.png"></p>
+<div class="note danger no-icon"><p>不要勾選 Localhost Only 選項！</p>
+</div>
+
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.1.png"></p>
+<p>3. 在本地主機上配置 launch.json 文件並啓動調試</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">    &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">    &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">    &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;&quot;,</span><br><span class="line">    &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://github.com/Marus/cortex-debug/issues/244">cortex-debug-issues#244 : remote debugging</a><br><a href="https://github.com/Marus/cortex-debug/wiki/External-gdb-server-configuration">cortex-debug-wiki : external gdb server configuration</a></p>
+<div class="note info no-icon"><p>點擊啓動調試後 cortex-debug 便會幫助我們通過本地 xGDB 客戶端連接遠程 GDB 服務器。</p>
+</div>
+
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 vscode 中調試的圖片</span><br></pre></td></tr></table></figure>
+
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.3.png"></p>
+<h3 id="JLink-JLinkRemoteServer"><a href="#JLink-JLinkRemoteServer" class="headerlink" title="JLink + JLinkRemoteServer"></a>JLink + JLinkRemoteServer</h3><h4 id="內網連接"><a href="#內網連接" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
+<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.png"></p>
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.1.png"></p>
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
+<h4 id="隧道連接"><a href="#隧道連接" class="headerlink" title="隧道連接"></a>隧道連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器（隧道方式）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.0.png"></p>
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.1.png"></p>
+<p>3. 在本地主機上配置連接 JLink 遠程服務器（隧道方式）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.0.png"></p>
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.1.png"></p>
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.3.png"></p>
+<h3 id="KeilMDK-JLinkRemoteServer"><a href="#KeilMDK-JLinkRemoteServer" class="headerlink" title="KeilMDK + JLinkRemoteServer"></a>KeilMDK + JLinkRemoteServer</h3><h4 id="內網連接-1"><a href="#內網連接-1" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
+<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.Keil.MDK.png"></p>
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 Keil MDK 中調試的圖片</span><br></pre></td></tr></table></figure>
+
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
 ]]></content>
       <categories>
         <category>開發筆記</category>
       </categories>
       <tags>
         <tag>嵌入式軟件開發</tag>
-        <tag>壓縮解壓算法</tag>
-        <tag>在線升級</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>嵌入式 IAP 升級功能（#08）引導程序 bootloader 升級</title>
-    <url>/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>在線升級</tag>
+        <tag>集成開發環境</tag>
+        <tag>IDE</tag>
       </tags>
   </entry>
 </search>
