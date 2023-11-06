@@ -85,7 +85,7 @@
 <div class="note info"><p><code>#web</code> <a href="http://127.0.0.1:3000/">http://127.0.0.1:3000</a></p>
 </div>
 
-<div class="note info"><p><code>#ssh</code> <a href="mailto:&#x6c;&#111;&#99;&#x61;&#x6c;&#104;&#x6f;&#x73;&#x74;&#64;&#x31;&#50;&#x37;&#46;&#x30;&#x2e;&#48;&#46;&#x31;">&#x6c;&#111;&#99;&#x61;&#x6c;&#104;&#x6f;&#x73;&#x74;&#64;&#x31;&#50;&#x37;&#46;&#x30;&#x2e;&#48;&#46;&#x31;</a> 📢 Password:password</p>
+<div class="note info"><p><code>#ssh</code> <a href="mailto:&#x6c;&#111;&#99;&#x61;&#108;&#x68;&#x6f;&#115;&#x74;&#x40;&#49;&#x32;&#55;&#x2e;&#48;&#46;&#x30;&#46;&#49;">&#x6c;&#111;&#99;&#x61;&#108;&#x68;&#x6f;&#115;&#x74;&#x40;&#49;&#x32;&#55;&#x2e;&#48;&#46;&#x30;&#46;&#49;</a> 📢 Password:password</p>
 </div>
 
 <div class="note info"><p><code>#svn</code> <a href="http://svn.sulfurandcu.com/doc">http://svn.sulfurandcu.com/doc</a></p>
@@ -288,6 +288,20 @@ docsify s
       </tags>
   </entry>
   <entry>
+    <title>DLT645</title>
+    <url>/sulfurandcu.io/clnyhr2ml002810rq6pxn7cmn.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>DLT645</tag>
+        <tag>多功能電能表通信協議</tag>
+        <tag>電力</tag>
+        <tag>行業標準</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>網頁字體使用指南</title>
     <url>/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html</url>
     <content><![CDATA[<p>在被 fontmin 和 font-spider 這倆貨虐得體無完膚之後，我決定試試<a href="https://hsingko.github.io/post/compress_webfont/">這篇文章</a>中提到的另一個字體壓縮工具</p>
@@ -319,63 +333,6 @@ docsify s
       </categories>
       <tags>
         <tag>網頁字體</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>dƷvorak</title>
-    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
-    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
-<br>
-
-<p style="font-family:courier new">
-　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
-　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
-　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
-　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
-</p>
-
-<span id="more"></span>
-
-<br>
-]]></content>
-      <categories>
-        <category>輸入方案</category>
-      </categories>
-      <tags>
-        <tag>鍵位佈局</tag>
-        <tag>qwerty</tag>
-        <tag>dvorak</tag>
-        <tag>dƷvorak</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DLT645</title>
-    <url>/sulfurandcu.io/clnyhr2ml002810rq6pxn7cmn.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>DLT645</tag>
-        <tag>多功能電能表通信協議</tag>
-        <tag>電力</tag>
-        <tag>行業標準</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>極樂迪斯科歐序篇</title>
-    <url>/sulfurandcu.io/clnyhr2ml002c10rq648736uf.html</url>
-    <content><![CDATA[<p>- There’s this giant ball there. And evil apes. And the evil apes are dukin’ it out on the ball. You’re one of them. It’s basically all just evil apes dukin’ it out on a giant ball.</p>
-<p>- How big is the ball?<br>- You can’t even make out it’s a ball, when you’re dukin’it out. It’s that large.</p>
-<p>- How small are the apes?<br>- Infinitesimally small.</p>
-<p>- And this “dukin’ it out” I keep hearing about - what’s that?<br>- Vying for resources? It’s just a stupid expression you picked up somewhere. The part of the presentation you want to take home with you is this: you have to beat the other evil apes in the face or you lose.</p>
-<p>- That sounds like something I would like to do.</p>
-]]></content>
-      <categories>
-        <category>遊戲筆記</category>
-      </categories>
-      <tags>
-        <tag>極樂迪斯科</tag>
       </tags>
   </entry>
   <entry>
@@ -463,48 +420,30 @@ docsify s
       </categories>
   </entry>
   <entry>
-    <title>沒事兒也來做做題</title>
-    <url>/sulfurandcu.io/clnyhr2mo002m10rq48l66wah.html</url>
-    <content><![CDATA[<center><a href="http://sdoi.programming-rabbit.com/">http://sdoi.programming-rabbit.com/</a></center>
+    <title>dƷvorak</title>
+    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
+    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
+<br>
+
+<p style="font-family:courier new">
+　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
+　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
+　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
+　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
+</p>
 
 <span id="more"></span>
 
-<h3 id="第一題"><a href="#第一題" class="headerlink" title="第一題"></a>第一題</h3><h4 id="題目描述"><a href="#題目描述" class="headerlink" title="題目描述"></a>題目描述</h4><p>張三和李四在玩一種遊戲。</p>
-<p>首先，張三從 A 與 B 之間（包括A和B）選擇一個整數，告訴李四。</p>
-<p>其次，李四從 C 與 D 之間（包括C和D）選擇一個整數。</p>
-<p>兩個整數之和，如果是素數，張三贏，負責李四贏。</p>
-<p>當兩個人都是最佳發揮時，誰會贏？</p>
-<p><strong>輸入格式：</strong><br>一行四個正整數 A B C D 以空格隔開。</p>
-<p><strong>輸入格式：</strong><br>如果張三贏了，輸出 X，否則輸出 Y。</p>
-<h4 id="代碼實現"><a href="#代碼實現" class="headerlink" title="代碼實現"></a>代碼實現</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;sys/time.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">bool IsPrimeNumber(int n)</span><br><span class="line">&#123;</span><br><span class="line">	if (n &lt; 2)</span><br><span class="line">	&#123;</span><br><span class="line">		return false;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	int SquareRoot = 1;</span><br><span class="line"></span><br><span class="line">	while (SquareRoot * SquareRoot &lt; n)</span><br><span class="line">	&#123;</span><br><span class="line">		SquareRoot++;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for (int i = 2; i &lt;= SquareRoot; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		if (n % i == 0)</span><br><span class="line">		&#123;</span><br><span class="line">			return false;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	return true;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char **argv)</span><br><span class="line">&#123;</span><br><span class="line">	int a = 0;</span><br><span class="line">	int b = 0;</span><br><span class="line">	int c = 0;</span><br><span class="line">	int d = 0;</span><br><span class="line">	int i = 0;</span><br><span class="line">	int j = 0;</span><br><span class="line">	int sum = 0;</span><br><span class="line">	int x_win = 0;</span><br><span class="line">	int y_win = 0;</span><br><span class="line">	bool PrimeExist = false;</span><br><span class="line"></span><br><span class="line">	int usec_bgn;</span><br><span class="line">	int usec_end;</span><br><span class="line">	int usec_sub;</span><br><span class="line">	struct timeval tv;</span><br><span class="line"></span><br><span class="line">	/* 等待輸入 */</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b&gt;&gt;c&gt;&gt;d;</span><br><span class="line">	// a = 1; b = 100; c = 2; d = 3;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (a &lt;= 0 || a &gt; 100 || b &lt;= 0 || b &gt; 100 || c &lt;= 0 || c &gt; 100 || d &lt;= 0 || d &gt; 100)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! a, b, c, d should be greater than zero and less than or equal to 100! \r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (a &gt; b || c &gt; d)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! b is bigger than a!\r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (c &gt; d)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! d is bigger than c!\r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// printf(&quot;%d,%d,%d,%d\r\n&quot;, a, b, c, d);</span><br><span class="line"></span><br><span class="line">	/* 起始時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_bgn = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;bgn time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 勝負推演 */</span><br><span class="line">	for (i = a; i &lt;= b; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		PrimeExist = false;</span><br><span class="line"></span><br><span class="line">		for (j = c; j &lt;= d; ++j)</span><br><span class="line">		&#123;</span><br><span class="line">			sum = i + j;</span><br><span class="line"></span><br><span class="line">			if (IsPrimeNumber(sum))</span><br><span class="line">			&#123;</span><br><span class="line">				PrimeExist = true;</span><br><span class="line">				break;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		if (PrimeExist)</span><br><span class="line">		&#123;</span><br><span class="line">			y_win++;</span><br><span class="line"></span><br><span class="line">			#if 1 /* 如果不想顯示中間過程，可以屏蔽下行（將 #if 1 改爲 #if 0） */</span><br><span class="line">			printf(&quot;X = %d\tY = %d\tSUM  = %d \tY WIN !\r\n&quot;, i, j, sum);</span><br><span class="line">			#endif</span><br><span class="line">		&#125;</span><br><span class="line">		else</span><br><span class="line">		&#123;</span><br><span class="line">			x_win++;</span><br><span class="line"></span><br><span class="line">			#if 1 /* 如果不想顯示中間過程，可以屏蔽下行（將 #if 1 改爲 #if 0） */</span><br><span class="line">			printf(&quot;X = %d\tY =  \tSUM != Prime \tX WIN !\r\n&quot;, i);</span><br><span class="line">			#endif</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 比較小X和小Y總的勝負次數 */</span><br><span class="line">	if (x_win &gt; y_win)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, SO X WINS FINALLY !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	if (x_win &lt; y_win)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, SO Y WINS FINALLY !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, DRAWN GAME !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 結束時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_end = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;end time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 計算耗時 */</span><br><span class="line">	if (usec_end &gt;= usec_bgn)</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = usec_end - usec_bgn;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = 1000000 - (usec_bgn - usec_end);</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;time cost :%d us\r\n&quot;, usec_sub);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="測試記錄"><a href="#測試記錄" class="headerlink" title="測試記錄"></a>測試記錄</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">編譯環境 windows subsystem for linux (wsl) &amp; gcc/g++ v9.3.0</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$ g++ main.cpp -o main.cppout</span><br><span class="line">user@localhost:/mnt/e/gcc$ ./main.cppout</span><br><span class="line">1 100 2 3</span><br><span class="line"></span><br><span class="line">bgn time (second, micro-second): 1656168565s, 669332us</span><br><span class="line"></span><br><span class="line">X = 1   Y = 2   SUM  = 3        Y WIN !</span><br><span class="line">X = 2   Y = 3   SUM  = 5        Y WIN !</span><br><span class="line">X = 3   Y = 2   SUM  = 5        Y WIN !</span><br><span class="line">X = 4   Y = 3   SUM  = 7        Y WIN !</span><br><span class="line">X = 5   Y = 2   SUM  = 7        Y WIN !</span><br><span class="line">X = 6   Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 7   Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 8   Y = 3   SUM  = 11       Y WIN !</span><br><span class="line">X = 9   Y = 2   SUM  = 11       Y WIN !</span><br><span class="line">X = 10  Y = 3   SUM  = 13       Y WIN !</span><br><span class="line">X = 11  Y = 2   SUM  = 13       Y WIN !</span><br><span class="line">X = 12  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 13  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 14  Y = 3   SUM  = 17       Y WIN !</span><br><span class="line">X = 15  Y = 2   SUM  = 17       Y WIN !</span><br><span class="line">X = 16  Y = 3   SUM  = 19       Y WIN !</span><br><span class="line">X = 17  Y = 2   SUM  = 19       Y WIN !</span><br><span class="line">X = 18  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 19  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 20  Y = 3   SUM  = 23       Y WIN !</span><br><span class="line">X = 21  Y = 2   SUM  = 23       Y WIN !</span><br><span class="line">X = 22  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 23  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 24  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 25  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 26  Y = 3   SUM  = 29       Y WIN !</span><br><span class="line">X = 27  Y = 2   SUM  = 29       Y WIN !</span><br><span class="line">X = 28  Y = 3   SUM  = 31       Y WIN !</span><br><span class="line">X = 29  Y = 2   SUM  = 31       Y WIN !</span><br><span class="line">X = 30  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 31  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 32  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 33  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 34  Y = 3   SUM  = 37       Y WIN !</span><br><span class="line">X = 35  Y = 2   SUM  = 37       Y WIN !</span><br><span class="line">X = 36  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 37  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 38  Y = 3   SUM  = 41       Y WIN !</span><br><span class="line">X = 39  Y = 2   SUM  = 41       Y WIN !</span><br><span class="line">X = 40  Y = 3   SUM  = 43       Y WIN !</span><br><span class="line">X = 41  Y = 2   SUM  = 43       Y WIN !</span><br><span class="line">X = 42  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 43  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 44  Y = 3   SUM  = 47       Y WIN !</span><br><span class="line">X = 45  Y = 2   SUM  = 47       Y WIN !</span><br><span class="line">X = 46  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 47  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 48  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 49  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 50  Y = 3   SUM  = 53       Y WIN !</span><br><span class="line">X = 51  Y = 2   SUM  = 53       Y WIN !</span><br><span class="line">X = 52  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 53  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 54  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 55  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 56  Y = 3   SUM  = 59       Y WIN !</span><br><span class="line">X = 57  Y = 2   SUM  = 59       Y WIN !</span><br><span class="line">X = 58  Y = 3   SUM  = 61       Y WIN !</span><br><span class="line">X = 59  Y = 2   SUM  = 61       Y WIN !</span><br><span class="line">X = 60  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 61  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 62  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 63  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 64  Y = 3   SUM  = 67       Y WIN !</span><br><span class="line">X = 65  Y = 2   SUM  = 67       Y WIN !</span><br><span class="line">X = 66  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 67  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 68  Y = 3   SUM  = 71       Y WIN !</span><br><span class="line">X = 69  Y = 2   SUM  = 71       Y WIN !</span><br><span class="line">X = 70  Y = 3   SUM  = 73       Y WIN !</span><br><span class="line">X = 71  Y = 2   SUM  = 73       Y WIN !</span><br><span class="line">X = 72  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 73  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 74  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 75  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 76  Y = 3   SUM  = 79       Y WIN !</span><br><span class="line">X = 77  Y = 2   SUM  = 79       Y WIN !</span><br><span class="line">X = 78  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 79  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 80  Y = 3   SUM  = 83       Y WIN !</span><br><span class="line">X = 81  Y = 2   SUM  = 83       Y WIN !</span><br><span class="line">X = 82  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 83  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 84  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 85  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 86  Y = 3   SUM  = 89       Y WIN !</span><br><span class="line">X = 87  Y = 2   SUM  = 89       Y WIN !</span><br><span class="line">X = 88  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 89  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 90  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 91  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 92  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 93  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 94  Y = 3   SUM  = 97       Y WIN !</span><br><span class="line">X = 95  Y = 2   SUM  = 97       Y WIN !</span><br><span class="line">X = 96  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 97  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 98  Y = 3   SUM  = 101      Y WIN !</span><br><span class="line">X = 99  Y = 2   SUM  = 101      Y WIN !</span><br><span class="line">X = 100 Y = 3   SUM  = 103      Y WIN !</span><br><span class="line"></span><br><span class="line">X WIN TIMES = 50, Y WIN TIMES = 50, DRAWN GAME !</span><br><span class="line"></span><br><span class="line">end time (second, micro-second): 1656168565s, 670078us</span><br><span class="line"></span><br><span class="line">time cost :746 us</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$</span><br></pre></td></tr></table></figure>
-
-<h3 id="第二題"><a href="#第二題" class="headerlink" title="第二題"></a>第二題</h3><h4 id="題目描述-1"><a href="#題目描述-1" class="headerlink" title="題目描述"></a>題目描述</h4><p>張三成爲了一家餐廳的採購員。作爲一個採購員要有良好的職業素養。必須保證每次採購的物資不超過自己車輛的容量，然後在此條件下使得餐廳賺取的收益最大。</p>
-<p>商場中共有 n 種物資，編號爲 1 到 n 。每種物資都有兩個參數 v 和 w，分別表示這種物資的體積和採購這種物資可以給餐廳帶來的收益。注意每種物資每天至多隻能採購一件。</p>
-<p>張三有一輛容量爲 V 的採購車，每天張三隻去採購一次，採購的物資體積之和不能超過車輛的容量。</p>
-<p>對於每天採購的物資，餐廳老闆還有特殊的要求，第 i 天老闆要求張三不能採購編號大於等於 Li 並且小於等於 Ri 的物資（即不能採購編號在 [Li,Ri] 之間的物資）。特別的，當 Li&gt;Ri 時表示這天沒有不可採購的物資。</p>
-<p>對於接下來的 m 天，你需要告訴張三他每天分別最多可以給餐廳賺取多少的收益。</p>
-<p><strong>輸入格式：</strong><br>輸入第一行兩個個整數 n, V 表示共有 n 種物資，張三的車子容量是 V。<br>接下來 n 行，每行兩個整數。<br>第 i+1 行輸入vi, wi 表示第 i 種物資的體積和收益。<br>接下來一行輸入一個整數 m ，表示需要採購的天數。<br>接下來 m 行，每行輸入兩個整數 Li, Ri 表示第 i 天不能採購編號位於 Li 到 Ri 之間的物資。</p>
-<p><strong>輸出格式：</strong><br>輸出共 m 行，每行一個整數表示張三第 i 天可以給餐廳帶來的收益。</p>
-<p><strong>輸入樣例：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">6   290     物資種類，容量</span><br><span class="line">85  97      1號體積，收益</span><br><span class="line">80  81      2號體積，收益</span><br><span class="line">83  1       3號體積，收益</span><br><span class="line">79  81      4號體積，收益</span><br><span class="line">89  1       5號體積，收益</span><br><span class="line">92  97      6號體積，收益</span><br><span class="line">5           天數</span><br><span class="line">3   5       Li-Ri</span><br><span class="line">1   1</span><br><span class="line">1   3</span><br><span class="line">5   2</span><br><span class="line">3   1</span><br></pre></td></tr></table></figure>
-
-<p><strong>輸出樣例：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">275</span><br><span class="line">259</span><br><span class="line">179</span><br><span class="line">275</span><br><span class="line">275</span><br></pre></td></tr></table></figure>
-
-<p><strong>補充說明：</strong><br>前 20% 的數據滿足: 1&lt;&#x3D;n&lt;&#x3D;10,1&lt;&#x3D;m&lt;&#x3D;1000.<br>前 50% 的數據滿足: 1&lt;&#x3D;n, m, V&lt;&#x3D;300.<br>對於 100% 的數據滿足: 1&lt;&#x3D;n, m, V&lt;&#x3D;3000; 1&lt;&#x3D;vi&lt;&#x3D;3000; 1&lt;&#x3D;Li, Ri&lt;&#x3D;n; 1&lt;&#x3D;wi&lt;&#x3D;10^6.</p>
-<p><strong>時間限制：</strong>1s</p>
-<p><strong>空間限制：</strong>512M</p>
-<h4 id="代碼實現-1"><a href="#代碼實現-1" class="headerlink" title="代碼實現"></a>代碼實現</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;sys/time.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main(int argc, char **argv)</span><br><span class="line">&#123;</span><br><span class="line">	int daytotal;                       // 天數</span><br><span class="line">	int category;                       // 種類</span><br><span class="line">	int capacity;                       // 容量</span><br><span class="line">	int capacity_left;                  // 容量（剩餘）</span><br><span class="line">	int edge[3001][2];                  // 邊界條件</span><br><span class="line">	int menu[3001][2];                  // 貨單</span><br><span class="line">	int menu_sort[3001][3];             // 貨單（根據每件貨物的收益率排序）</span><br><span class="line">	int idx = 0;</span><br><span class="line">	int sum = 0;                        // 收益</span><br><span class="line">	double rate_max = 0;                // 收益率</span><br><span class="line">	double rate_tmp = 0;                // 收益率</span><br><span class="line"></span><br><span class="line">	int usec_bgn;</span><br><span class="line">	int usec_end;</span><br><span class="line">	int usec_sub;</span><br><span class="line">	struct timeval tv;</span><br><span class="line"></span><br><span class="line">	#if 0</span><br><span class="line">	cin&gt;&gt;category&gt;&gt;capacity;</span><br><span class="line"></span><br><span class="line">	for (int i = 0; i &lt; category; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;menu[i][0]&gt;&gt;menu[i][1];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	cin&gt;&gt;daytotal;</span><br><span class="line"></span><br><span class="line">	for (int i = 0; i &lt; daytotal; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;edge[i][0]&gt;&gt;edge[i][1];</span><br><span class="line">	&#125;</span><br><span class="line">	#else</span><br><span class="line">	category = 10;</span><br><span class="line">	capacity = 300;</span><br><span class="line">	menu[0][0] = 85; menu[0][1] = 97;</span><br><span class="line">	menu[1][0] = 80; menu[1][1] = 81;</span><br><span class="line">	menu[2][0] = 83; menu[2][1] = 1;</span><br><span class="line">	menu[3][0] = 79; menu[3][1] = 81;</span><br><span class="line">	menu[4][0] = 89; menu[4][1] = 1;</span><br><span class="line">	menu[5][0] = 92; menu[5][1] = 97;</span><br><span class="line">	daytotal = 10;</span><br><span class="line">	edge[0][0] = 3; edge[0][1] = 5;</span><br><span class="line">	edge[1][0] = 1; edge[1][1] = 1;</span><br><span class="line">	edge[2][0] = 1; edge[2][1] = 3;</span><br><span class="line">	edge[3][0] = 5; edge[3][1] = 2;</span><br><span class="line">	edge[4][0] = 3; edge[4][1] = 1;</span><br><span class="line">	#endif</span><br><span class="line"></span><br><span class="line">	/* 起始時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_bgn = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;bgn time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	for (int j = 0; j &lt; category; ++j)</span><br><span class="line">	&#123;</span><br><span class="line">		idx = 0;</span><br><span class="line">		rate_max = 0;</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; category; ++i)</span><br><span class="line">		&#123;</span><br><span class="line">			if (menu[i][0] == 0)</span><br><span class="line">			&#123;</span><br><span class="line">				continue;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			rate_tmp = (double)menu[i][1] / (double)menu[i][0];</span><br><span class="line"></span><br><span class="line">			if (rate_tmp &gt; rate_max)</span><br><span class="line">			&#123;</span><br><span class="line">				rate_max = rate_tmp;</span><br><span class="line">				idx = i;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		menu_sort[j][0] = menu[idx][0];</span><br><span class="line">		menu_sort[j][1] = menu[idx][1];</span><br><span class="line">		menu_sort[j][2] = idx;</span><br><span class="line">		menu[idx][0] = 0;</span><br><span class="line">		menu[idx][1] = 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for (int day_idx = 0; day_idx &lt; daytotal; ++day_idx) /* 第n天 */</span><br><span class="line">	&#123;</span><br><span class="line">		sum = 0;</span><br><span class="line">		capacity_left = capacity;</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; category; ++i)</span><br><span class="line">		&#123;</span><br><span class="line">			if ((menu_sort[i][2]+1) &gt;= edge[day_idx][0] &amp;&amp; (menu_sort[i][2]+1) &lt;= edge[day_idx][1])</span><br><span class="line">			&#123;</span><br><span class="line">				continue;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			if (capacity_left &gt;= menu_sort[i][0])</span><br><span class="line">			&#123;</span><br><span class="line">				capacity_left -= menu_sort[i][0];</span><br><span class="line">				sum += menu_sort[i][1];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		printf(&quot;%d\r\n&quot;, sum);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 結束時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_end = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;end time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 計算耗時 */</span><br><span class="line">	if (usec_end &gt;= usec_bgn)</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = usec_end - usec_bgn;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = 1000000 - (usec_bgn - usec_end);</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;time cost :%d us\r\n&quot;, usec_sub);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="測試記錄-1"><a href="#測試記錄-1" class="headerlink" title="測試記錄"></a>測試記錄</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">user@localhost:/mnt/e/gcc$ g++ main.cpp -o main.cppout</span><br><span class="line">user@localhost:/mnt/e/gcc$ ./main.cppout</span><br><span class="line"></span><br><span class="line">bgn time (second, micro-second): 1656593986s, 560594us</span><br><span class="line"></span><br><span class="line">275</span><br><span class="line">259</span><br><span class="line">179</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line"></span><br><span class="line">end time (second, micro-second): 1656593986s, 560641us</span><br><span class="line"></span><br><span class="line">time cost :47 us</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$</span><br></pre></td></tr></table></figure>
+<br>
 ]]></content>
       <categories>
-        <category>開發筆記</category>
+        <category>輸入方案</category>
       </categories>
       <tags>
-        <tag>C++</tag>
+        <tag>鍵位佈局</tag>
+        <tag>qwerty</tag>
+        <tag>dvorak</tag>
+        <tag>dƷvorak</tag>
       </tags>
   </entry>
   <entry>
@@ -800,6 +739,70 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
+    <title>沒事兒也來做做題</title>
+    <url>/sulfurandcu.io/clnyhr2mo002m10rq48l66wah.html</url>
+    <content><![CDATA[<center><a href="http://sdoi.programming-rabbit.com/">http://sdoi.programming-rabbit.com/</a></center>
+
+<span id="more"></span>
+
+<h3 id="第一題"><a href="#第一題" class="headerlink" title="第一題"></a>第一題</h3><h4 id="題目描述"><a href="#題目描述" class="headerlink" title="題目描述"></a>題目描述</h4><p>張三和李四在玩一種遊戲。</p>
+<p>首先，張三從 A 與 B 之間（包括A和B）選擇一個整數，告訴李四。</p>
+<p>其次，李四從 C 與 D 之間（包括C和D）選擇一個整數。</p>
+<p>兩個整數之和，如果是素數，張三贏，負責李四贏。</p>
+<p>當兩個人都是最佳發揮時，誰會贏？</p>
+<p><strong>輸入格式：</strong><br>一行四個正整數 A B C D 以空格隔開。</p>
+<p><strong>輸入格式：</strong><br>如果張三贏了，輸出 X，否則輸出 Y。</p>
+<h4 id="代碼實現"><a href="#代碼實現" class="headerlink" title="代碼實現"></a>代碼實現</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;sys/time.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">bool IsPrimeNumber(int n)</span><br><span class="line">&#123;</span><br><span class="line">	if (n &lt; 2)</span><br><span class="line">	&#123;</span><br><span class="line">		return false;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	int SquareRoot = 1;</span><br><span class="line"></span><br><span class="line">	while (SquareRoot * SquareRoot &lt; n)</span><br><span class="line">	&#123;</span><br><span class="line">		SquareRoot++;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for (int i = 2; i &lt;= SquareRoot; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		if (n % i == 0)</span><br><span class="line">		&#123;</span><br><span class="line">			return false;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	return true;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char **argv)</span><br><span class="line">&#123;</span><br><span class="line">	int a = 0;</span><br><span class="line">	int b = 0;</span><br><span class="line">	int c = 0;</span><br><span class="line">	int d = 0;</span><br><span class="line">	int i = 0;</span><br><span class="line">	int j = 0;</span><br><span class="line">	int sum = 0;</span><br><span class="line">	int x_win = 0;</span><br><span class="line">	int y_win = 0;</span><br><span class="line">	bool PrimeExist = false;</span><br><span class="line"></span><br><span class="line">	int usec_bgn;</span><br><span class="line">	int usec_end;</span><br><span class="line">	int usec_sub;</span><br><span class="line">	struct timeval tv;</span><br><span class="line"></span><br><span class="line">	/* 等待輸入 */</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b&gt;&gt;c&gt;&gt;d;</span><br><span class="line">	// a = 1; b = 100; c = 2; d = 3;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (a &lt;= 0 || a &gt; 100 || b &lt;= 0 || b &gt; 100 || c &lt;= 0 || c &gt; 100 || d &lt;= 0 || d &gt; 100)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! a, b, c, d should be greater than zero and less than or equal to 100! \r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (a &gt; b || c &gt; d)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! b is bigger than a!\r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 參數判斷 */</span><br><span class="line">	if (c &gt; d)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;error input! d is bigger than c!\r\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	// printf(&quot;%d,%d,%d,%d\r\n&quot;, a, b, c, d);</span><br><span class="line"></span><br><span class="line">	/* 起始時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_bgn = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;bgn time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 勝負推演 */</span><br><span class="line">	for (i = a; i &lt;= b; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		PrimeExist = false;</span><br><span class="line"></span><br><span class="line">		for (j = c; j &lt;= d; ++j)</span><br><span class="line">		&#123;</span><br><span class="line">			sum = i + j;</span><br><span class="line"></span><br><span class="line">			if (IsPrimeNumber(sum))</span><br><span class="line">			&#123;</span><br><span class="line">				PrimeExist = true;</span><br><span class="line">				break;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		if (PrimeExist)</span><br><span class="line">		&#123;</span><br><span class="line">			y_win++;</span><br><span class="line"></span><br><span class="line">			#if 1 /* 如果不想顯示中間過程，可以屏蔽下行（將 #if 1 改爲 #if 0） */</span><br><span class="line">			printf(&quot;X = %d\tY = %d\tSUM  = %d \tY WIN !\r\n&quot;, i, j, sum);</span><br><span class="line">			#endif</span><br><span class="line">		&#125;</span><br><span class="line">		else</span><br><span class="line">		&#123;</span><br><span class="line">			x_win++;</span><br><span class="line"></span><br><span class="line">			#if 1 /* 如果不想顯示中間過程，可以屏蔽下行（將 #if 1 改爲 #if 0） */</span><br><span class="line">			printf(&quot;X = %d\tY =  \tSUM != Prime \tX WIN !\r\n&quot;, i);</span><br><span class="line">			#endif</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 比較小X和小Y總的勝負次數 */</span><br><span class="line">	if (x_win &gt; y_win)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, SO X WINS FINALLY !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	if (x_win &lt; y_win)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, SO Y WINS FINALLY !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;X WIN TIMES = %d, Y WIN TIMES = %d, DRAWN GAME !\r\n&quot;, x_win, y_win);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 結束時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_end = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;end time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 計算耗時 */</span><br><span class="line">	if (usec_end &gt;= usec_bgn)</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = usec_end - usec_bgn;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = 1000000 - (usec_bgn - usec_end);</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;time cost :%d us\r\n&quot;, usec_sub);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="測試記錄"><a href="#測試記錄" class="headerlink" title="測試記錄"></a>測試記錄</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">編譯環境 windows subsystem for linux (wsl) &amp; gcc/g++ v9.3.0</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$ g++ main.cpp -o main.cppout</span><br><span class="line">user@localhost:/mnt/e/gcc$ ./main.cppout</span><br><span class="line">1 100 2 3</span><br><span class="line"></span><br><span class="line">bgn time (second, micro-second): 1656168565s, 669332us</span><br><span class="line"></span><br><span class="line">X = 1   Y = 2   SUM  = 3        Y WIN !</span><br><span class="line">X = 2   Y = 3   SUM  = 5        Y WIN !</span><br><span class="line">X = 3   Y = 2   SUM  = 5        Y WIN !</span><br><span class="line">X = 4   Y = 3   SUM  = 7        Y WIN !</span><br><span class="line">X = 5   Y = 2   SUM  = 7        Y WIN !</span><br><span class="line">X = 6   Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 7   Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 8   Y = 3   SUM  = 11       Y WIN !</span><br><span class="line">X = 9   Y = 2   SUM  = 11       Y WIN !</span><br><span class="line">X = 10  Y = 3   SUM  = 13       Y WIN !</span><br><span class="line">X = 11  Y = 2   SUM  = 13       Y WIN !</span><br><span class="line">X = 12  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 13  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 14  Y = 3   SUM  = 17       Y WIN !</span><br><span class="line">X = 15  Y = 2   SUM  = 17       Y WIN !</span><br><span class="line">X = 16  Y = 3   SUM  = 19       Y WIN !</span><br><span class="line">X = 17  Y = 2   SUM  = 19       Y WIN !</span><br><span class="line">X = 18  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 19  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 20  Y = 3   SUM  = 23       Y WIN !</span><br><span class="line">X = 21  Y = 2   SUM  = 23       Y WIN !</span><br><span class="line">X = 22  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 23  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 24  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 25  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 26  Y = 3   SUM  = 29       Y WIN !</span><br><span class="line">X = 27  Y = 2   SUM  = 29       Y WIN !</span><br><span class="line">X = 28  Y = 3   SUM  = 31       Y WIN !</span><br><span class="line">X = 29  Y = 2   SUM  = 31       Y WIN !</span><br><span class="line">X = 30  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 31  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 32  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 33  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 34  Y = 3   SUM  = 37       Y WIN !</span><br><span class="line">X = 35  Y = 2   SUM  = 37       Y WIN !</span><br><span class="line">X = 36  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 37  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 38  Y = 3   SUM  = 41       Y WIN !</span><br><span class="line">X = 39  Y = 2   SUM  = 41       Y WIN !</span><br><span class="line">X = 40  Y = 3   SUM  = 43       Y WIN !</span><br><span class="line">X = 41  Y = 2   SUM  = 43       Y WIN !</span><br><span class="line">X = 42  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 43  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 44  Y = 3   SUM  = 47       Y WIN !</span><br><span class="line">X = 45  Y = 2   SUM  = 47       Y WIN !</span><br><span class="line">X = 46  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 47  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 48  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 49  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 50  Y = 3   SUM  = 53       Y WIN !</span><br><span class="line">X = 51  Y = 2   SUM  = 53       Y WIN !</span><br><span class="line">X = 52  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 53  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 54  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 55  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 56  Y = 3   SUM  = 59       Y WIN !</span><br><span class="line">X = 57  Y = 2   SUM  = 59       Y WIN !</span><br><span class="line">X = 58  Y = 3   SUM  = 61       Y WIN !</span><br><span class="line">X = 59  Y = 2   SUM  = 61       Y WIN !</span><br><span class="line">X = 60  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 61  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 62  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 63  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 64  Y = 3   SUM  = 67       Y WIN !</span><br><span class="line">X = 65  Y = 2   SUM  = 67       Y WIN !</span><br><span class="line">X = 66  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 67  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 68  Y = 3   SUM  = 71       Y WIN !</span><br><span class="line">X = 69  Y = 2   SUM  = 71       Y WIN !</span><br><span class="line">X = 70  Y = 3   SUM  = 73       Y WIN !</span><br><span class="line">X = 71  Y = 2   SUM  = 73       Y WIN !</span><br><span class="line">X = 72  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 73  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 74  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 75  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 76  Y = 3   SUM  = 79       Y WIN !</span><br><span class="line">X = 77  Y = 2   SUM  = 79       Y WIN !</span><br><span class="line">X = 78  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 79  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 80  Y = 3   SUM  = 83       Y WIN !</span><br><span class="line">X = 81  Y = 2   SUM  = 83       Y WIN !</span><br><span class="line">X = 82  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 83  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 84  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 85  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 86  Y = 3   SUM  = 89       Y WIN !</span><br><span class="line">X = 87  Y = 2   SUM  = 89       Y WIN !</span><br><span class="line">X = 88  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 89  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 90  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 91  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 92  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 93  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 94  Y = 3   SUM  = 97       Y WIN !</span><br><span class="line">X = 95  Y = 2   SUM  = 97       Y WIN !</span><br><span class="line">X = 96  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 97  Y =     SUM != Prime    X WIN !</span><br><span class="line">X = 98  Y = 3   SUM  = 101      Y WIN !</span><br><span class="line">X = 99  Y = 2   SUM  = 101      Y WIN !</span><br><span class="line">X = 100 Y = 3   SUM  = 103      Y WIN !</span><br><span class="line"></span><br><span class="line">X WIN TIMES = 50, Y WIN TIMES = 50, DRAWN GAME !</span><br><span class="line"></span><br><span class="line">end time (second, micro-second): 1656168565s, 670078us</span><br><span class="line"></span><br><span class="line">time cost :746 us</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$</span><br></pre></td></tr></table></figure>
+
+<h3 id="第二題"><a href="#第二題" class="headerlink" title="第二題"></a>第二題</h3><h4 id="題目描述-1"><a href="#題目描述-1" class="headerlink" title="題目描述"></a>題目描述</h4><p>張三成爲了一家餐廳的採購員。作爲一個採購員要有良好的職業素養。必須保證每次採購的物資不超過自己車輛的容量，然後在此條件下使得餐廳賺取的收益最大。</p>
+<p>商場中共有 n 種物資，編號爲 1 到 n 。每種物資都有兩個參數 v 和 w，分別表示這種物資的體積和採購這種物資可以給餐廳帶來的收益。注意每種物資每天至多隻能採購一件。</p>
+<p>張三有一輛容量爲 V 的採購車，每天張三隻去採購一次，採購的物資體積之和不能超過車輛的容量。</p>
+<p>對於每天採購的物資，餐廳老闆還有特殊的要求，第 i 天老闆要求張三不能採購編號大於等於 Li 並且小於等於 Ri 的物資（即不能採購編號在 [Li,Ri] 之間的物資）。特別的，當 Li&gt;Ri 時表示這天沒有不可採購的物資。</p>
+<p>對於接下來的 m 天，你需要告訴張三他每天分別最多可以給餐廳賺取多少的收益。</p>
+<p><strong>輸入格式：</strong><br>輸入第一行兩個個整數 n, V 表示共有 n 種物資，張三的車子容量是 V。<br>接下來 n 行，每行兩個整數。<br>第 i+1 行輸入vi, wi 表示第 i 種物資的體積和收益。<br>接下來一行輸入一個整數 m ，表示需要採購的天數。<br>接下來 m 行，每行輸入兩個整數 Li, Ri 表示第 i 天不能採購編號位於 Li 到 Ri 之間的物資。</p>
+<p><strong>輸出格式：</strong><br>輸出共 m 行，每行一個整數表示張三第 i 天可以給餐廳帶來的收益。</p>
+<p><strong>輸入樣例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">6   290     物資種類，容量</span><br><span class="line">85  97      1號體積，收益</span><br><span class="line">80  81      2號體積，收益</span><br><span class="line">83  1       3號體積，收益</span><br><span class="line">79  81      4號體積，收益</span><br><span class="line">89  1       5號體積，收益</span><br><span class="line">92  97      6號體積，收益</span><br><span class="line">5           天數</span><br><span class="line">3   5       Li-Ri</span><br><span class="line">1   1</span><br><span class="line">1   3</span><br><span class="line">5   2</span><br><span class="line">3   1</span><br></pre></td></tr></table></figure>
+
+<p><strong>輸出樣例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">275</span><br><span class="line">259</span><br><span class="line">179</span><br><span class="line">275</span><br><span class="line">275</span><br></pre></td></tr></table></figure>
+
+<p><strong>補充說明：</strong><br>前 20% 的數據滿足: 1&lt;&#x3D;n&lt;&#x3D;10,1&lt;&#x3D;m&lt;&#x3D;1000.<br>前 50% 的數據滿足: 1&lt;&#x3D;n, m, V&lt;&#x3D;300.<br>對於 100% 的數據滿足: 1&lt;&#x3D;n, m, V&lt;&#x3D;3000; 1&lt;&#x3D;vi&lt;&#x3D;3000; 1&lt;&#x3D;Li, Ri&lt;&#x3D;n; 1&lt;&#x3D;wi&lt;&#x3D;10^6.</p>
+<p><strong>時間限制：</strong>1s</p>
+<p><strong>空間限制：</strong>512M</p>
+<h4 id="代碼實現-1"><a href="#代碼實現-1" class="headerlink" title="代碼實現"></a>代碼實現</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;sys/time.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main(int argc, char **argv)</span><br><span class="line">&#123;</span><br><span class="line">	int daytotal;                       // 天數</span><br><span class="line">	int category;                       // 種類</span><br><span class="line">	int capacity;                       // 容量</span><br><span class="line">	int capacity_left;                  // 容量（剩餘）</span><br><span class="line">	int edge[3001][2];                  // 邊界條件</span><br><span class="line">	int menu[3001][2];                  // 貨單</span><br><span class="line">	int menu_sort[3001][3];             // 貨單（根據每件貨物的收益率排序）</span><br><span class="line">	int idx = 0;</span><br><span class="line">	int sum = 0;                        // 收益</span><br><span class="line">	double rate_max = 0;                // 收益率</span><br><span class="line">	double rate_tmp = 0;                // 收益率</span><br><span class="line"></span><br><span class="line">	int usec_bgn;</span><br><span class="line">	int usec_end;</span><br><span class="line">	int usec_sub;</span><br><span class="line">	struct timeval tv;</span><br><span class="line"></span><br><span class="line">	#if 0</span><br><span class="line">	cin&gt;&gt;category&gt;&gt;capacity;</span><br><span class="line"></span><br><span class="line">	for (int i = 0; i &lt; category; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;menu[i][0]&gt;&gt;menu[i][1];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	cin&gt;&gt;daytotal;</span><br><span class="line"></span><br><span class="line">	for (int i = 0; i &lt; daytotal; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;edge[i][0]&gt;&gt;edge[i][1];</span><br><span class="line">	&#125;</span><br><span class="line">	#else</span><br><span class="line">	category = 10;</span><br><span class="line">	capacity = 300;</span><br><span class="line">	menu[0][0] = 85; menu[0][1] = 97;</span><br><span class="line">	menu[1][0] = 80; menu[1][1] = 81;</span><br><span class="line">	menu[2][0] = 83; menu[2][1] = 1;</span><br><span class="line">	menu[3][0] = 79; menu[3][1] = 81;</span><br><span class="line">	menu[4][0] = 89; menu[4][1] = 1;</span><br><span class="line">	menu[5][0] = 92; menu[5][1] = 97;</span><br><span class="line">	daytotal = 10;</span><br><span class="line">	edge[0][0] = 3; edge[0][1] = 5;</span><br><span class="line">	edge[1][0] = 1; edge[1][1] = 1;</span><br><span class="line">	edge[2][0] = 1; edge[2][1] = 3;</span><br><span class="line">	edge[3][0] = 5; edge[3][1] = 2;</span><br><span class="line">	edge[4][0] = 3; edge[4][1] = 1;</span><br><span class="line">	#endif</span><br><span class="line"></span><br><span class="line">	/* 起始時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_bgn = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;bgn time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	for (int j = 0; j &lt; category; ++j)</span><br><span class="line">	&#123;</span><br><span class="line">		idx = 0;</span><br><span class="line">		rate_max = 0;</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; category; ++i)</span><br><span class="line">		&#123;</span><br><span class="line">			if (menu[i][0] == 0)</span><br><span class="line">			&#123;</span><br><span class="line">				continue;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			rate_tmp = (double)menu[i][1] / (double)menu[i][0];</span><br><span class="line"></span><br><span class="line">			if (rate_tmp &gt; rate_max)</span><br><span class="line">			&#123;</span><br><span class="line">				rate_max = rate_tmp;</span><br><span class="line">				idx = i;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		menu_sort[j][0] = menu[idx][0];</span><br><span class="line">		menu_sort[j][1] = menu[idx][1];</span><br><span class="line">		menu_sort[j][2] = idx;</span><br><span class="line">		menu[idx][0] = 0;</span><br><span class="line">		menu[idx][1] = 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for (int day_idx = 0; day_idx &lt; daytotal; ++day_idx) /* 第n天 */</span><br><span class="line">	&#123;</span><br><span class="line">		sum = 0;</span><br><span class="line">		capacity_left = capacity;</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; category; ++i)</span><br><span class="line">		&#123;</span><br><span class="line">			if ((menu_sort[i][2]+1) &gt;= edge[day_idx][0] &amp;&amp; (menu_sort[i][2]+1) &lt;= edge[day_idx][1])</span><br><span class="line">			&#123;</span><br><span class="line">				continue;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			if (capacity_left &gt;= menu_sort[i][0])</span><br><span class="line">			&#123;</span><br><span class="line">				capacity_left -= menu_sort[i][0];</span><br><span class="line">				sum += menu_sort[i][1];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		printf(&quot;%d\r\n&quot;, sum);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/* 結束時間 */</span><br><span class="line">	gettimeofday(&amp;tv, NULL);</span><br><span class="line">	usec_end = (int)tv.tv_usec;</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line">	printf(&quot;end time (second, micro-second): %ds, %dus\r\n&quot;, (int)tv.tv_sec, (int)tv.tv_usec);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	/* 計算耗時 */</span><br><span class="line">	if (usec_end &gt;= usec_bgn)</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = usec_end - usec_bgn;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		usec_sub = 1000000 - (usec_bgn - usec_end);</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;time cost :%d us\r\n&quot;, usec_sub);</span><br><span class="line">	printf(&quot;\r\n&quot;);</span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="測試記錄-1"><a href="#測試記錄-1" class="headerlink" title="測試記錄"></a>測試記錄</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">user@localhost:/mnt/e/gcc$ g++ main.cpp -o main.cppout</span><br><span class="line">user@localhost:/mnt/e/gcc$ ./main.cppout</span><br><span class="line"></span><br><span class="line">bgn time (second, micro-second): 1656593986s, 560594us</span><br><span class="line"></span><br><span class="line">275</span><br><span class="line">259</span><br><span class="line">179</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line">275</span><br><span class="line"></span><br><span class="line">end time (second, micro-second): 1656593986s, 560641us</span><br><span class="line"></span><br><span class="line">time cost :47 us</span><br><span class="line"></span><br><span class="line">user@localhost:/mnt/e/gcc$</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>編寫一個根據 svn 提交記錄自動生成日報的腳本</title>
+    <url>/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</url>
+    <content><![CDATA[<center>beep...領導要求每天寫日報，但是我不太想寫，於是就有了本段代碼。</center><br>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任務名稱</span><br><span class="line">taskname = &quot;編碼工作&quot;</span><br><span class="line"># 基準日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 過去幾天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查詢深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用戶名稱</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用戶路徑</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（計劃&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>效率提升</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>svn</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的生產力工具</title>
     <url>/sulfurandcu.io/clnyhr2mr003710rqgjtuhj11.html</url>
     <content><![CDATA[<center>一些提高工作效率的工具</center>
@@ -1000,25 +1003,6 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
-    <title>編寫一個根據 svn 提交記錄自動生成日報的腳本</title>
-    <url>/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</url>
-    <content><![CDATA[<center>beep...領導要求每天寫日報，但是我不太想寫，於是就有了本段代碼。</center><br>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任務名稱</span><br><span class="line">taskname = &quot;編碼工作&quot;</span><br><span class="line"># 基準日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 過去幾天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查詢深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用戶名稱</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用戶路徑</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（計劃&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>效率提升</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>svn</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>囗－囗</title>
     <url>/sulfurandcu.io/clnyhr2mt003b10rq5snfeg6t.html</url>
     <content><![CDATA[<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
@@ -1039,74 +1023,19 @@ N2---&gt;N2.3[&quot; &quot;]
 ]]></content>
   </entry>
   <entry>
-    <title>集成開發環境－GCC.ARM（#00）目錄索引</title>
-    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
-    <content><![CDATA[<hr>
-<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成開發環境－GCC.ARM（#01）環境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成開發環境－GCC.ARM（#02）代碼編譯</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成開發環境－GCC.ARM（#03）程序燒錄</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成開發環境－GCC.ARM（#04）快捷任務</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成開發環境－GCC.ARM（#05）程序調試</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成開發環境－DBG</a></p>
-<hr>
-<p>傳統的集成開發環境（MDK、IAR）通常會提供包括編輯、編譯、燒錄、調試在內的一整套工具，開發者無需配置，簡單易用，但是 license 不是一般的貴。</p>
-<p>替代方案：</p>
-<ul>
-<li><strong>VSC</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
-<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
-<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
-<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
-<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
-</ul>
-</li>
-<li><strong>VS</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
-<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
-</ul>
-</li>
-<li><strong>Eclipse</strong></li>
-<li><strong>Eclipse Based</strong><ul>
-<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
-<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
-<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>倘若宿主機使用 Windows 操作系統並且購買了 JLinkDebugger 仿真器，則推薦使用 JLink 方案！</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>一個基本的開發環境包含以下四個部分：</p>
-<ol>
-<li>編輯功能（vscode）</li>
-<li>編譯功能（arm-none-eabi-xxx）</li>
-<li>燒錄功能（OpenOCD&#x2F;JLink）</li>
-<li>調試功能（OpenOCD&#x2F;JLinkGDBServerCL + Cortex-Debug + arm-none-eabi-gdb）</li>
-</ol>
-<ul>
-<li><p><strong>vscode</strong><br>文本編輯器，其實是一個僞裝成文本編輯器的開發框架。</p>
-</li>
-<li><p><strong>arm-none-eabi-xxx</strong><br>交叉編譯器，可以編譯出在 Cortex-R&amp;M 平臺上運行的可執行程序。</p>
-</li>
-<li><p><strong>OpenOCD&#x2F;JLink</strong><br>程序燒錄器，負責將編譯好的程序燒錄到目標芯片中。</p>
-</li>
-<li><p><strong>arm-none-eabi-gdb</strong><br>命令調試器，支持通過命令行的方式進行調試。</p>
-</li>
-<li><p><strong>Cortex-Debug</strong><br>圖形調試器，提供一套圖形調試界面，需要與命令調試器搭配使用。</p>
-</li>
-<li><p><strong>OpenOCD&#x2F;JLinkGDBServerCL</strong><br>調試服務器，負責協助調試器識別並管理各種仿真設備和目標芯片。</p>
-</li>
-<li><p><strong>makefile &amp; task.json</strong><br>自動化工具，用來實現編譯和燒錄的自動化。</p>
-</li>
-</ul>
-<h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方設備支持:HT32F52352 Cortex-M0+</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code開發STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code開發STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code開發STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code開發STM32（四）</a></p>
-<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作總結記錄</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 開發環境—— 詳細版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 開發stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32開發調試環境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 開發環境（詳細）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32開發調試環境（轉）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32開發環境（極簡自我搭建&amp;懶人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 調試器使用介紹</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
+    <title>極樂迪斯科歐序篇</title>
+    <url>/sulfurandcu.io/clnyhr2ml002c10rq648736uf.html</url>
+    <content><![CDATA[<p>- There’s this giant ball there. And evil apes. And the evil apes are dukin’ it out on the ball. You’re one of them. It’s basically all just evil apes dukin’ it out on a giant ball.</p>
+<p>- How big is the ball?<br>- You can’t even make out it’s a ball, when you’re dukin’it out. It’s that large.</p>
+<p>- How small are the apes?<br>- Infinitesimally small.</p>
+<p>- And this “dukin’ it out” I keep hearing about - what’s that?<br>- Vying for resources? It’s just a stupid expression you picked up somewhere. The part of the presentation you want to take home with you is this: you have to beat the other evil apes in the face or you lose.</p>
+<p>- That sounds like something I would like to do.</p>
 ]]></content>
       <categories>
-        <category>開發筆記</category>
+        <category>遊戲筆記</category>
       </categories>
       <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>集成開發環境</tag>
-        <tag>IDE</tag>
+        <tag>極樂迪斯科</tag>
       </tags>
   </entry>
   <entry>
@@ -1195,6 +1124,228 @@ N2---&gt;N2.3[&quot; &quot;]
 </li>
 </ul>
 <h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://elmagnifico.tech/2022/03/14/Embeded-IDE/">https://elmagnifico.tech/2022/03/14/Embeded-IDE/</a><br><a href="https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/">https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/</a></p>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>集成開發環境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成開發環境－DBG</title>
+    <url>/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html</url>
+    <content><![CDATA[<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
+<span id="more"></span>
+
+<h2 id="專用的調試模塊"><a href="#專用的調試模塊" class="headerlink" title="專用的調試模塊"></a>專用的調試模塊</h2><p>常見的 IDE 內部都集成了一個專用的 GUI 調試器，且不能拎出來單獨使用。</p>
+<ul>
+<li>ADS</li>
+<li>IAR</li>
+<li>MDK</li>
+<li>Visual Studio</li>
+</ul>
+<h2 id="獨立的調試工具"><a href="#獨立的調試工具" class="headerlink" title="獨立的調試工具"></a>獨立的調試工具</h2><p>當然也有一些可以獨立使用的調試器，例如：</p>
+<ul>
+<li>CLI: GDB, LLDB</li>
+<li>GUI: x64dbg, WinDBG, OllyDBG</li>
+</ul>
+<h2 id="通用的調試協議（DebugAdapterProtocol）"><a href="#通用的調試協議（DebugAdapterProtocol）" class="headerlink" title="通用的調試協議（DebugAdapterProtocol）"></a>通用的調試協議（DebugAdapterProtocol）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapterProtocol.png"></p>
+<p>不論是專用的調試模塊還是獨立的調試工具，如果想支持調試多種語言，就必須要爲每一種語言開發一套對應的調試程序，並且每個工具廠商都要獨自去完成這些工作。爲了減少不必要的重複勞動，微軟制定了一套通用的調試協議，藉助該協議各工具廠商只需要開發一套調試程序，向下再借助各種調試適配工具即可具備調試所有語言的能力。</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
+<center><a href="https://microsoft.github.io/debug-adapter-protocol/">Debug Adapter Protocol (DAP)</a></center><br>
+
+<p>目前實現該調試協議的開發工具有（常用的）：</p>
+<ul>
+<li>VSC</li>
+<li>VS</li>
+<li>vim</li>
+<li>emacs</li>
+<li>EclipseIDE</li>
+</ul>
+<p>btw, 微軟還制定了一套通用的語言服務器協議 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/LanguageServerProtocol(LSP).png"></p>
+<center><a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></center>
+
+<h2 id="調試器適配工具（DebugAdapter）"><a href="#調試器適配工具（DebugAdapter）" class="headerlink" title="調試器適配工具（DebugAdapter）"></a>調試器適配工具（DebugAdapter）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapter.png"></p>
+<p>調試適配器是對各類調試器的封裝，遵循 DAP 協議對上提供統一的接口，以簡化上層開發工具。常用的調試適配器有：</p>
+<ul>
+<li><a href="https://github.com/Microsoft/vscode-cpptools">cpptools (C&#x2F;C++ Debug Adapter)</a></li>
+<li><a href="https://github.com/Marus/cortex-debug">cortex-debug (Embedded C&#x2F;C++ Debug Adapter)</a></li>
+</ul>
+<h2 id="調試器軟件本體（Debugger）"><a href="#調試器軟件本體（Debugger）" class="headerlink" title="調試器軟件本體（Debugger）"></a>調試器軟件本體（Debugger）</h2><ul>
+<li><a href="https://sourceware.org/gdb/">GDB: The GNU Project Debugger</a><ul>
+<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/Remote-Protocol.html">↑ GDB&#x2F;MI</a></li>
+<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/GDB_002fMI.html">↓ GDB Remote Serial Protocol</a></li>
+</ul>
+</li>
+<li><a href="https://developer.arm.com/downloads/-/gnu-rm">arm-none-eabi-gdb: GNU Arm Embedded GDB</a></li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Debugger.png"></p>
+<h2 id="調試器服務程序（DebugServer）"><a href="#調試器服務程序（DebugServer）" class="headerlink" title="調試器服務程序（DebugServer）"></a>調試器服務程序（DebugServer）</h2><ul>
+<li>OpenOCD</li>
+<li>PyOCD</li>
+<li>JLinkGDBServer</li>
+<li>……</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugServer.png"></p>
+<h2 id="仿真器驅動程序（DongleDriver）"><a href="#仿真器驅動程序（DongleDriver）" class="headerlink" title="仿真器驅動程序（DongleDriver）"></a>仿真器驅動程序（DongleDriver）</h2><ul>
+<li>SEGGER JLink USB Driver</li>
+<li>SEGGER WinUSB USB Device Driver</li>
+</ul>
+<h2 id="仿真器設備本體（Dongle）"><a href="#仿真器設備本體（Dongle）" class="headerlink" title="仿真器設備本體（Dongle）"></a>仿真器設備本體（Dongle）</h2><ul>
+<li>CMSIS-DAP</li>
+<li>SEGGER JLink</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Dongle.png"></p>
+<h2 id="仿真器傳輸協議（DongleTransportProtocol）"><a href="#仿真器傳輸協議（DongleTransportProtocol）" class="headerlink" title="仿真器傳輸協議（DongleTransportProtocol）"></a>仿真器傳輸協議（DongleTransportProtocol）</h2><ul>
+<li>JTAG <a href="https://www.corelis.com/education/tutorials/jtag-tutorial/">https://www.corelis.com/education/tutorials/jtag-tutorial/</a></li>
+<li>SWD</li>
+</ul>
+<h2 id="目標板目標芯片（TargetBoard）"><a href="#目標板目標芯片（TargetBoard）" class="headerlink" title="目標板目標芯片（TargetBoard）"></a>目標板目標芯片（TargetBoard）</h2><ul>
+<li>STM32F103CB</li>
+<li>STM32F407VE</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Target.png"></p>
+<h2 id="本地與遠程調試"><a href="#本地與遠程調試" class="headerlink" title="本地與遠程調試"></a>本地與遠程調試</h2><p>遠程調試方案也有很多，這裏只對以下幾種方式作一簡要介紹：</p>
+<ul>
+<li>OpenOCD</li>
+<li>VSCode + JLinkGDBServer</li>
+<li>JLink + JLinkRemoteServer</li>
+<li>KeilMDK + JLinkRemoteServer</li>
+</ul>
+<h3 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h3><p>略.</p>
+<h3 id="VSCode-JLinkGDBServer"><a href="#VSCode-JLinkGDBServer" class="headerlink" title="VSCode + JLinkGDBServer"></a>VSCode + JLinkGDBServer</h3><p>1. 在服務主機上配置開啓 JLink 調試服務器（該服務器會監聽 2331 端口）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.0.png"></p>
+<div class="note danger no-icon"><p>不要勾選 Localhost Only 選項！</p>
+</div>
+
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.1.png"></p>
+<p>3. 在本地主機上配置 launch.json 文件並啓動調試</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">    &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">    &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">    &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;&quot;,</span><br><span class="line">    &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://github.com/Marus/cortex-debug/issues/244">cortex-debug-issues#244 : remote debugging</a><br><a href="https://github.com/Marus/cortex-debug/wiki/External-gdb-server-configuration">cortex-debug-wiki : external gdb server configuration</a></p>
+<div class="note info no-icon"><p>點擊啓動調試後 cortex-debug 便會幫助我們通過本地 xGDB 客戶端連接遠程 GDB 服務器。</p>
+</div>
+
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 vscode 中調試的圖片</span><br></pre></td></tr></table></figure>
+
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.3.png"></p>
+<h3 id="JLink-JLinkRemoteServer"><a href="#JLink-JLinkRemoteServer" class="headerlink" title="JLink + JLinkRemoteServer"></a>JLink + JLinkRemoteServer</h3><h4 id="內網連接"><a href="#內網連接" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
+<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.png"></p>
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.1.png"></p>
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
+<h4 id="隧道連接"><a href="#隧道連接" class="headerlink" title="隧道連接"></a>隧道連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器（隧道方式）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.0.png"></p>
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.1.png"></p>
+<p>3. 在本地主機上配置連接 JLink 遠程服務器（隧道方式）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.0.png"></p>
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.1.png"></p>
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.3.png"></p>
+<h3 id="KeilMDK-JLinkRemoteServer"><a href="#KeilMDK-JLinkRemoteServer" class="headerlink" title="KeilMDK + JLinkRemoteServer"></a>KeilMDK + JLinkRemoteServer</h3><h4 id="內網連接-1"><a href="#內網連接-1" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
+<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.Keil.MDK.png"></p>
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 Keil MDK 中調試的圖片</span><br></pre></td></tr></table></figure>
+
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>集成開發環境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成開發環境－GCC.ARM（#00）目錄索引</title>
+    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
+    <content><![CDATA[<hr>
+<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成開發環境－GCC.ARM（#01）環境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成開發環境－GCC.ARM（#02）代碼編譯</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成開發環境－GCC.ARM（#03）程序燒錄</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成開發環境－GCC.ARM（#04）快捷任務</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成開發環境－GCC.ARM（#05）程序調試</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成開發環境－DBG</a></p>
+<hr>
+<p>傳統的集成開發環境（MDK、IAR）通常會提供包括編輯、編譯、燒錄、調試在內的一整套工具，開發者無需配置，簡單易用，但是 license 不是一般的貴。</p>
+<p>替代方案：</p>
+<ul>
+<li><strong>VSC</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
+<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
+<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
+<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
+</ul>
+</li>
+<li><strong>VS</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
+<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
+</ul>
+</li>
+<li><strong>Eclipse</strong></li>
+<li><strong>Eclipse Based</strong><ul>
+<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
+<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
+<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>倘若宿主機使用 Windows 操作系統並且購買了 JLinkDebugger 仿真器，則推薦使用 JLink 方案！</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>一個基本的開發環境包含以下四個部分：</p>
+<ol>
+<li>編輯功能（vscode）</li>
+<li>編譯功能（arm-none-eabi-xxx）</li>
+<li>燒錄功能（OpenOCD&#x2F;JLink）</li>
+<li>調試功能（OpenOCD&#x2F;JLinkGDBServerCL + Cortex-Debug + arm-none-eabi-gdb）</li>
+</ol>
+<ul>
+<li><p><strong>vscode</strong><br>文本編輯器，其實是一個僞裝成文本編輯器的開發框架。</p>
+</li>
+<li><p><strong>arm-none-eabi-xxx</strong><br>交叉編譯器，可以編譯出在 Cortex-R&amp;M 平臺上運行的可執行程序。</p>
+</li>
+<li><p><strong>OpenOCD&#x2F;JLink</strong><br>程序燒錄器，負責將編譯好的程序燒錄到目標芯片中。</p>
+</li>
+<li><p><strong>arm-none-eabi-gdb</strong><br>命令調試器，支持通過命令行的方式進行調試。</p>
+</li>
+<li><p><strong>Cortex-Debug</strong><br>圖形調試器，提供一套圖形調試界面，需要與命令調試器搭配使用。</p>
+</li>
+<li><p><strong>OpenOCD&#x2F;JLinkGDBServerCL</strong><br>調試服務器，負責協助調試器識別並管理各種仿真設備和目標芯片。</p>
+</li>
+<li><p><strong>makefile &amp; task.json</strong><br>自動化工具，用來實現編譯和燒錄的自動化。</p>
+</li>
+</ul>
+<h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方設備支持:HT32F52352 Cortex-M0+</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code開發STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code開發STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code開發STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code開發STM32（四）</a></p>
+<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作總結記錄</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 開發環境—— 詳細版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 開發stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32開發調試環境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 開發環境（詳細）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32開發調試環境（轉）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32開發環境（極簡自我搭建&amp;懶人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 調試器使用介紹</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
 ]]></content>
       <categories>
         <category>開發筆記</category>
@@ -1442,153 +1593,6 @@ N2---&gt;N2.3[&quot; &quot;]
         <tag>嵌入式軟件開發</tag>
         <tag>集成開發環境</tag>
         <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>嵌入式 IAP 升級功能（#01）基礎概念</title>
-    <url>/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html</url>
-    <content><![CDATA[<center>傳統編程方式</center>
-
-<pre class="mermaid">
-flowchart LR
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-A(先取下芯片)---&gt;B(再燒錄程序)---&gt;C(後裝回板卡)
-</pre>
-
-<center>現代編程方式</center>
-
-<pre class="mermaid">
-flowchart LR
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-A(&quot;在電路編程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系統編程&lt;br&gt;(ＩＳＰ)&quot;)---&gt;C(&quot;在應用編程&lt;br&gt;(ＩＡＰ)&quot;)
-</pre>
-
-<span id="more"></span>
-
-<h2 id="傳統編程方式"><a href="#傳統編程方式" class="headerlink" title="傳統編程方式"></a>傳統編程方式</h2><p>傳統編程方式是先將程序燒錄至主控芯片中再焊接到電路板上。</p>
-<p><strong>開發階段</strong></p>
-<ul>
-<li>➀ 從電路板上取下芯片</li>
-<li>➁ 使用燒錄器燒寫程序</li>
-<li>➂ 將芯片裝回至電路板</li>
-</ul>
-<p><strong>量產階段</strong></p>
-<ul>
-<li>➀ 從 tray 盤取出芯片</li>
-<li>➁ 使用燒錄器燒寫程序</li>
-<li>➂ 將芯片放回 tray 盤</li>
-</ul>
-<p><strong>維護階段</strong></p>
-<ul>
-<li>➀ 從電路板上拆下芯片</li>
-<li>➁ 使用燒錄器燒寫程序</li>
-<li>➂ 將芯片焊回至電路板</li>
-</ul>
-<h2 id="現代編程方式"><a href="#現代編程方式" class="headerlink" title="現代編程方式"></a>現代編程方式</h2><p>現代編程方式可以直接進行板上燒錄，不用再取下芯片放到專用的燒錄器上燒錄，極大地提高了開發、生產以及維護效率。</p>
-<p>現代編程方式又可分爲：</p>
-<ul>
-<li>在電路編程 ICP (Circuit)</li>
-<li>在系統編程 ISP (System)</li>
-<li>在應用編程 IAP (Application)</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">編程方式</th>
-<th align="center">在電路編程</th>
-<th align="center">在系統編程</th>
-<th align="center">在應用編程</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">核心思想</td>
-<td align="center">藉助外部燒錄器<br>通過JTAG&#x2F;SWD接口<br>實現在電路編程</td>
-<td align="center">藉助芯片內部<br>固化的引導程序和BOOT引腳<br>以及片上接口<br>實現在系統編程</td>
-<td align="center">藉助用戶自己<br>編寫的引導程序、應用程序<br>以及片上接口、板上接口<br>實現在應用編程</td>
-</tr>
-<tr>
-<td align="center">引導程序</td>
-<td align="center">不需要</td>
-<td align="center">需要芯片廠家編寫<br>並固化到某一地址空間</td>
-<td align="center">需要用戶自己編寫<br>並燒錄至內部flash存儲器</td>
-</tr>
-<tr>
-<td align="center">進入方式</td>
-<td align="center">隨時待命</td>
-<td align="center">需要更改BOOT引腳的電平<br>然後硬件復位<br>進入內部固化的引導程序</td>
-<td align="center">隨時待命</td>
-</tr>
-<tr>
-<td align="center">配套軟件</td>
-<td align="center">燒錄軟件</td>
-<td align="center">芯片廠家提供的<br>上位機ISP編程軟件</td>
-<td align="center">用戶自己開發的數據傳輸軟件</td>
-</tr>
-<tr>
-<td align="center">通信接口</td>
-<td align="center">JTAG&#x2F;SWD</td>
-<td align="center">取決於芯片中固化的引導程序<br>URT&#x2F;SPI&#x2F;IIC&#x2F;CAN&#x2F;USB</td>
-<td align="center">理論上可以支持任意接口<br>URT&#x2F;SPI&#x2F;IIC<br>485&#x2F;CAN&#x2F;USB<br>WiFi&#x2F;BLE&#x2F;IrDA<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
-</tr>
-<tr>
-<td align="center">程序升級<br>是否需要<br>拆裝芯片</td>
-<td align="center">不需要<br>拆裝芯片</td>
-<td align="center">不需要<br>拆裝芯片</td>
-<td align="center">不需要<br>拆裝芯片</td>
-</tr>
-<tr>
-<td align="center">程序升級<br>是否需要<br>拆裝外殼</td>
-<td align="center">需要<br>拆開設備外殼</td>
-<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB</td>
-<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB&#x2F;WiFi&#x2F;BLE&#x2F;IrDA</td>
-</tr>
-<tr>
-<td align="center">程序升級<br>是否需要<br>前往現場</td>
-<td align="center">需要<br>前往設備安裝現場</td>
-<td align="center">需要<br>前往設備安裝現場</td>
-<td align="center">遠程通信功能完備的情況下<br>不需要<br>前往設備安裝現場<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
-</tr>
-</tbody></table>
-<div class="note info no-icon"><p>ICP 主要是在開發階段使用，其燒錄速度是 ISP 和 IAP 所無法比擬的。</p>
-</div>
-
-<div class="note info no-icon"><p>IAP 與 ISP 類似，都有 bootloader 引導程序，因此無需使用燒錄器。二者的區別在於，ISP 的引導程序由芯片廠家編寫，比較簡單，無法實現用戶的定製化需求；而 IAP 的引導程序是由用戶自己實現，可以根據需求自行修改。另外 ISP 進入 boot 程序的方式是通過更改 BOOT 引腳的電平；而 IAP 則是從用戶程序中通過軟件復位或者跳轉的方式直接進入 bootloader 程序，因此相較於 ISP 來說會更加靈活。</p>
-</div>
-
-<div class="note info no-icon"><p>通過 WiFi&#x2F;BLE&#x2F;4G&#x2F;5G&#x2F;NBIoT 等無線通信技術實現 IAP 功能的方案也被稱作 OTA 空中下載技術。</p>
-</div>
-
-<table>
-<thead>
-<tr>
-<th align="center">BOOT1</th>
-<th align="center">BOOT0</th>
-<th align="center">BOOT MODE</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">X</td>
-<td align="center">0</td>
-<td align="center">boot from 0x08000000 : main memory</td>
-</tr>
-<tr>
-<td align="center">0</td>
-<td align="center">1</td>
-<td align="center">boot from 0x1FFF0000 : boot memory</td>
-</tr>
-<tr>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">boot from 0x20000000 : sram memory</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>在線升級</tag>
       </tags>
   </entry>
   <entry>
@@ -2004,6 +2008,166 @@ A(在引導程序中集成通信協議棧與解壓還原算法)~~~B(在應用程
       </tags>
   </entry>
   <entry>
+    <title>嵌入式 IAP 升級功能（#04）技術細節</title>
+    <url>/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html</url>
+    <content><![CDATA[<p>分散加載、中斷向量表重定向</p>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>在線升級</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>嵌入式 IAP 升級功能（#01）基礎概念</title>
+    <url>/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html</url>
+    <content><![CDATA[<center>傳統編程方式</center>
+
+<pre class="mermaid">
+flowchart LR
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+A(先取下芯片)---&gt;B(再燒錄程序)---&gt;C(後裝回板卡)
+</pre>
+
+<center>現代編程方式</center>
+
+<pre class="mermaid">
+flowchart LR
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+A(&quot;在電路編程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系統編程&lt;br&gt;(ＩＳＰ)&quot;)---&gt;C(&quot;在應用編程&lt;br&gt;(ＩＡＰ)&quot;)
+</pre>
+
+<span id="more"></span>
+
+<h2 id="傳統編程方式"><a href="#傳統編程方式" class="headerlink" title="傳統編程方式"></a>傳統編程方式</h2><p>傳統編程方式是先將程序燒錄至主控芯片中再焊接到電路板上。</p>
+<p><strong>開發階段</strong></p>
+<ul>
+<li>➀ 從電路板上取下芯片</li>
+<li>➁ 使用燒錄器燒寫程序</li>
+<li>➂ 將芯片裝回至電路板</li>
+</ul>
+<p><strong>量產階段</strong></p>
+<ul>
+<li>➀ 從 tray 盤取出芯片</li>
+<li>➁ 使用燒錄器燒寫程序</li>
+<li>➂ 將芯片放回 tray 盤</li>
+</ul>
+<p><strong>維護階段</strong></p>
+<ul>
+<li>➀ 從電路板上拆下芯片</li>
+<li>➁ 使用燒錄器燒寫程序</li>
+<li>➂ 將芯片焊回至電路板</li>
+</ul>
+<h2 id="現代編程方式"><a href="#現代編程方式" class="headerlink" title="現代編程方式"></a>現代編程方式</h2><p>現代編程方式可以直接進行板上燒錄，不用再取下芯片放到專用的燒錄器上燒錄，極大地提高了開發、生產以及維護效率。</p>
+<p>現代編程方式又可分爲：</p>
+<ul>
+<li>在電路編程 ICP (Circuit)</li>
+<li>在系統編程 ISP (System)</li>
+<li>在應用編程 IAP (Application)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">編程方式</th>
+<th align="center">在電路編程</th>
+<th align="center">在系統編程</th>
+<th align="center">在應用編程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">核心思想</td>
+<td align="center">藉助外部燒錄器<br>通過JTAG&#x2F;SWD接口<br>實現在電路編程</td>
+<td align="center">藉助芯片內部<br>固化的引導程序和BOOT引腳<br>以及片上接口<br>實現在系統編程</td>
+<td align="center">藉助用戶自己<br>編寫的引導程序、應用程序<br>以及片上接口、板上接口<br>實現在應用編程</td>
+</tr>
+<tr>
+<td align="center">引導程序</td>
+<td align="center">不需要</td>
+<td align="center">需要芯片廠家編寫<br>並固化到某一地址空間</td>
+<td align="center">需要用戶自己編寫<br>並燒錄至內部flash存儲器</td>
+</tr>
+<tr>
+<td align="center">進入方式</td>
+<td align="center">隨時待命</td>
+<td align="center">需要更改BOOT引腳的電平<br>然後硬件復位<br>進入內部固化的引導程序</td>
+<td align="center">隨時待命</td>
+</tr>
+<tr>
+<td align="center">配套軟件</td>
+<td align="center">燒錄軟件</td>
+<td align="center">芯片廠家提供的<br>上位機ISP編程軟件</td>
+<td align="center">用戶自己開發的數據傳輸軟件</td>
+</tr>
+<tr>
+<td align="center">通信接口</td>
+<td align="center">JTAG&#x2F;SWD</td>
+<td align="center">取決於芯片中固化的引導程序<br>URT&#x2F;SPI&#x2F;IIC&#x2F;CAN&#x2F;USB</td>
+<td align="center">理論上可以支持任意接口<br>URT&#x2F;SPI&#x2F;IIC<br>485&#x2F;CAN&#x2F;USB<br>WiFi&#x2F;BLE&#x2F;IrDA<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
+</tr>
+<tr>
+<td align="center">程序升級<br>是否需要<br>拆裝芯片</td>
+<td align="center">不需要<br>拆裝芯片</td>
+<td align="center">不需要<br>拆裝芯片</td>
+<td align="center">不需要<br>拆裝芯片</td>
+</tr>
+<tr>
+<td align="center">程序升級<br>是否需要<br>拆裝外殼</td>
+<td align="center">需要<br>拆開設備外殼</td>
+<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB</td>
+<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB&#x2F;WiFi&#x2F;BLE&#x2F;IrDA</td>
+</tr>
+<tr>
+<td align="center">程序升級<br>是否需要<br>前往現場</td>
+<td align="center">需要<br>前往設備安裝現場</td>
+<td align="center">需要<br>前往設備安裝現場</td>
+<td align="center">遠程通信功能完備的情況下<br>不需要<br>前往設備安裝現場<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
+</tr>
+</tbody></table>
+<div class="note info no-icon"><p>ICP 主要是在開發階段使用，其燒錄速度是 ISP 和 IAP 所無法比擬的。</p>
+</div>
+
+<div class="note info no-icon"><p>IAP 與 ISP 類似，都有 bootloader 引導程序，因此無需使用燒錄器。二者的區別在於，ISP 的引導程序由芯片廠家編寫，比較簡單，無法實現用戶的定製化需求；而 IAP 的引導程序是由用戶自己實現，可以根據需求自行修改。另外 ISP 進入 boot 程序的方式是通過更改 BOOT 引腳的電平；而 IAP 則是從用戶程序中通過軟件復位或者跳轉的方式直接進入 bootloader 程序，因此相較於 ISP 來說會更加靈活。</p>
+</div>
+
+<div class="note info no-icon"><p>通過 WiFi&#x2F;BLE&#x2F;4G&#x2F;5G&#x2F;NBIoT 等無線通信技術實現 IAP 功能的方案也被稱作 OTA 空中下載技術。</p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="center">BOOT1</th>
+<th align="center">BOOT0</th>
+<th align="center">BOOT MODE</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">X</td>
+<td align="center">0</td>
+<td align="center">boot from 0x08000000 : main memory</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">boot from 0x1FFF0000 : boot memory</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">boot from 0x20000000 : sram memory</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>在線升級</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>嵌入式 IAP 升級功能（#03）流程設計</title>
     <url>/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html</url>
     <content><![CDATA[<pre class="mermaid">
@@ -2062,19 +2226,6 @@ AppStart(應用程序開始)--&gt;AppRemap[重定向中斷向量表]--&gt;AppIni
 AppIsRecvDone--否--&gt;AppTask
 AppIsRecvDone--是--&gt;AppSetAppInvalid[修改應用程序有效標識：無效]--&gt;AppBeforeJump[關閉外設和中斷]--&gt;AppJumpToIap[重啓進入引導程序｜跳轉進入引導程序]--&gt;AppOver(應用程序結束)
 </pre>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>在線升級</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>嵌入式 IAP 升級功能（#04）技術細節</title>
-    <url>/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html</url>
-    <content><![CDATA[<p>分散加載、中斷向量表重定向</p>
 ]]></content>
       <categories>
         <category>開發筆記</category>
@@ -2272,37 +2423,6 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[將內部flash中的0xAAB
       </tags>
   </entry>
   <entry>
-    <title>嵌入式 IAP 升級功能（#08）引導程序 bootloader 升級</title>
-    <url>/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>在線升級</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>嵌入式 IAP 升級功能（#07）壓縮解壓 tinyuz 移植</title>
-    <url>/sulfurandcu.io/cloidh8k000ijv0rq8b5hbdpe.html</url>
-    <content><![CDATA[<p>與上文類似，對 tinyuz 也進行二次封裝以便上層調用：</p>
-<figure class="highlight c"><figcaption><span>tinyuz_port.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> __tinyuz_port_h__</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __tinyuz_port_h__</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stddef.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;malloc.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TUZ_DECOMPRESS_SPACE_SIZE       512*1024            <span class="comment">// 外部存儲中〈差分文件區〉的空間大小</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tuz_malloc(x)                   mymalloc(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tuz_free(x)                     myfree(x)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">enum</span> <span class="title">TTinyuzResult</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    TINYUZ_SUCCESS=<span class="number">0</span>,</span><br><span class="line">    TINYUZ_OPTIONS_ERROR,</span><br><span class="line">    TINYUZ_OPENREAD_ERROR,</span><br><span class="line">    TINYUZ_OPENWRITE_ERROR,</span><br><span class="line">    TINYUZ_FILEREAD_ERROR,</span><br><span class="line">    TINYUZ_FILEWRITE_ERROR,</span><br><span class="line">    TINYUZ_FILECLOSE_ERROR,</span><br><span class="line">    TINYUZ_MEM_ERROR,</span><br><span class="line">    TINYUZ_COMPRESS_ERROR,</span><br><span class="line">    TINYUZ_DECOMPRESS_ERROR,</span><br><span class="line">&#125; TTinyuzResult;</span><br><span class="line"></span><br><span class="line"><span class="type">size_t</span> <span class="title function_">tuz_decompress</span><span class="params">(<span class="type">size_t</span> compressed_file_size, <span class="type">size_t</span> cache_size)</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span> <span class="comment">/* __tinyuz_port_h__ */</span></span></span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<figure class="highlight c"><figcaption><span>tinyuz_port.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;tinyuz_port.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;fal.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;tuz_dec.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;patch_types.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">TTuzListener</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">const</span> hpatch_TStreamInput*  input_file_stream_handle;</span><br><span class="line">    hpatch_StreamPos_t          readPos;</span><br><span class="line">    tuz_TInputStream_read       _do_read_encompress_file;</span><br><span class="line">&#125;TTuzListener;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 從外部flash中以數據流的形式讀取壓縮數據</span></span><br><span class="line">hpatch_BOOL _do_read_encompress_file(<span class="type">const</span> hpatch_TStreamInput* stream, hpatch_StreamPos_t readFromPos, <span class="type">unsigned</span> <span class="type">char</span>* out_data, <span class="type">unsigned</span> <span class="type">char</span>* out_data_end)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">size_t</span> readLen = (<span class="type">size_t</span>)(out_data_end - out_data);</span><br><span class="line">    <span class="keyword">if</span> (readLen == <span class="number">0</span>) <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> compressed_stream_size = stream-&gt;streamSize;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ((readLen &gt; compressed_stream_size) || (readFromPos &gt; compressed_stream_size - readLen)) <span class="keyword">return</span> hpatch_FALSE;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// TODO 由用戶實現</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_ziped&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_read(partition, readFromPos, out_data, readLen);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 將解壓數據以數據流的形式寫入外部flash中</span></span><br><span class="line">hpatch_BOOL _do_write_decompress_file(<span class="type">const</span> hpatch_TStreamOutput* stream, hpatch_StreamPos_t writeToPos, <span class="type">const</span> <span class="type">unsigned</span> <span class="type">char</span>* data, <span class="type">const</span> <span class="type">unsigned</span> <span class="type">char</span>* data_end)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">unsigned</span> <span class="type">int</span> offset = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> writeLen = (<span class="type">size_t</span>)(data_end - data);</span><br><span class="line">    <span class="keyword">if</span> (writeLen == <span class="number">0</span>) <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> write_max_space = stream-&gt;streamSize;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ((writeLen &gt; write_max_space)||(writeToPos &gt; write_max_space - writeLen)) <span class="keyword">return</span> hpatch_FALSE;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// TODO 由用戶實現</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_newer&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_write(partition, offset+writeToPos, data, writeLen);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">static</span> tuz_BOOL <span class="title function_">input_file_stream_read_function</span><span class="params">(<span class="type">void</span> *listener, tuz_byte *decompressed_file_stream, <span class="type">tuz_size_t</span> *code_size)</span></span><br><span class="line">&#123;</span><br><span class="line">    TTuzListener *self = (TTuzListener*)listener;</span><br><span class="line">    <span class="type">tuz_size_t</span> r_len = *code_size;</span><br><span class="line">    hpatch_StreamPos_t curReadPos = self-&gt;readPos;</span><br><span class="line">    hpatch_StreamPos_t s_size = self-&gt;input_file_stream_handle-&gt;streamSize - curReadPos;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (r_len &gt; s_size)&#123;</span><br><span class="line">        r_len = (<span class="type">tuz_size_t</span>)s_size;</span><br><span class="line">        *code_size = r_len;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    self-&gt;readPos += r_len;</span><br><span class="line">    <span class="keyword">return</span> self-&gt;input_file_stream_handle-&gt;read(self-&gt;input_file_stream_handle, curReadPos, decompressed_file_stream, decompressed_file_stream + r_len);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">size_t</span> <span class="title function_">tuz_decompress</span><span class="params">(<span class="type">size_t</span> compressed_file_size, <span class="type">size_t</span> cache_size)</span></span><br><span class="line">&#123;</span><br><span class="line">    hpatch_TStreamOutput decompressed_file_stream_handle = &#123;</span><br><span class="line">        .streamImport = &amp;decompressed_file_stream_handle,</span><br><span class="line">        .streamSize = TUZ_DECOMPRESS_SPACE_SIZE, <span class="comment">// 外部存儲中〈差分文件區〉的空間大小</span></span><br><span class="line">        .write = _do_write_decompress_file, <span class="comment">// stream write</span></span><br><span class="line">        .read_writed = <span class="literal">NULL</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    hpatch_TStreamInput input_file_stream_handle = &#123;</span><br><span class="line">        .streamImport = &amp;input_file_stream_handle,</span><br><span class="line">        .streamSize = compressed_file_size, <span class="comment">// 壓縮文件的實際大小</span></span><br><span class="line">        .read = _do_read_encompress_file, <span class="comment">// stream read</span></span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    TTuzListener listener = &#123;&amp;input_file_stream_handle, <span class="number">0</span>, input_file_stream_read_function&#125;;</span><br><span class="line">    tuz_TStream tuz;</span><br><span class="line">    tuz_TResult result = tuz_OK;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 壓縮的時候會以指定的字典大小進行壓縮｜因此解壓的時候要從壓縮包頭中讀取字典大小</span></span><br><span class="line">    <span class="type">tuz_size_t</span> dictSize = tuz_TStream_read_dict_size(&amp;listener, listener._do_read_encompress_file);</span><br><span class="line"></span><br><span class="line">    tuz_byte* decompress_buf = <span class="number">0</span>;</span><br><span class="line">    cache_size &gt;&gt;= <span class="number">1</span>; <span class="comment">// 除二操作</span></span><br><span class="line">    decompress_buf = (tuz_byte*)tuz_malloc(dictSize + cache_size*<span class="number">2</span>); <span class="comment">// 解壓過程中要用到的臨時空間大小 = 字典大小 + 解壓緩衝區大小</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (decompress_buf == <span class="number">0</span>) <span class="keyword">return</span> TINYUZ_MEM_ERROR;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// tuz_TStream_open 僅僅是用來初始化 tuz 這個勾柄的（tuz後面的參數都是給tuz賦值用的）</span></span><br><span class="line">    result = tuz_TStream_open(&amp;tuz, &amp;listener, listener._do_read_encompress_file, decompress_buf + cache_size, (<span class="type">tuz_size_t</span>)dictSize, (<span class="type">tuz_size_t</span>)cache_size);</span><br><span class="line"></span><br><span class="line">    hpatch_StreamPos_t stream_index = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (result == tuz_OK)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">tuz_size_t</span> decompress_len = (<span class="type">tuz_size_t</span>)cache_size; <span class="comment">// 給decompress_len賦一個初始值</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 解壓一包數據到 decompress_buf 中｜並得到該包長度 decompress_len</span></span><br><span class="line">        result = tuz_TStream_decompress_partial(&amp;tuz, decompress_buf, &amp;decompress_len);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (result &lt;= tuz_STREAM_END)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">// 將當前解壓的 decompress_buf 中的數據寫到 decompressed_file_stream_handle 數據流中</span></span><br><span class="line">            <span class="keyword">if</span> (decompressed_file_stream_handle.write(&amp;decompressed_file_stream_handle, stream_index, decompress_buf, decompress_buf + decompress_len))</span><br><span class="line">            &#123;</span><br><span class="line">                stream_index += decompress_len;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                tuz_free(decompress_buf);</span><br><span class="line">                <span class="keyword">return</span> TINYUZ_OPENWRITE_ERROR;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    tuz_free(decompress_buf);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> stream_index;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>壓縮解壓算法</tag>
-        <tag>在線升級</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>嵌入式 IAP 升級功能（#06）差分還原 haptchlite 移植</title>
     <url>/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html</url>
     <content><![CDATA[<p>最近發現了一個優秀的差分還原算法：hdiff &amp; hpatch，它通過數據流的思想把 O(n) 的空間複雜度轉嫁給了硬盤，使得內存的開銷極低，非常適合應用於嵌入式領域。</p>
@@ -2372,154 +2492,34 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[將內部flash中的0xAAB
       </tags>
   </entry>
   <entry>
-    <title>集成開發環境－DBG</title>
-    <url>/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html</url>
-    <content><![CDATA[<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
+    <title>嵌入式 IAP 升級功能（#07）壓縮解壓 tinyuz 移植</title>
+    <url>/sulfurandcu.io/cloidh8k000ijv0rq8b5hbdpe.html</url>
+    <content><![CDATA[<p>與上文類似，對 tinyuz 也進行二次封裝以便上層調用：</p>
+<figure class="highlight c"><figcaption><span>tinyuz_port.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> __tinyuz_port_h__</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __tinyuz_port_h__</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stddef.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;malloc.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TUZ_DECOMPRESS_SPACE_SIZE       512*1024            <span class="comment">// 外部存儲中〈差分文件區〉的空間大小</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tuz_malloc(x)                   mymalloc(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tuz_free(x)                     myfree(x)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">enum</span> <span class="title">TTinyuzResult</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    TINYUZ_SUCCESS=<span class="number">0</span>,</span><br><span class="line">    TINYUZ_OPTIONS_ERROR,</span><br><span class="line">    TINYUZ_OPENREAD_ERROR,</span><br><span class="line">    TINYUZ_OPENWRITE_ERROR,</span><br><span class="line">    TINYUZ_FILEREAD_ERROR,</span><br><span class="line">    TINYUZ_FILEWRITE_ERROR,</span><br><span class="line">    TINYUZ_FILECLOSE_ERROR,</span><br><span class="line">    TINYUZ_MEM_ERROR,</span><br><span class="line">    TINYUZ_COMPRESS_ERROR,</span><br><span class="line">    TINYUZ_DECOMPRESS_ERROR,</span><br><span class="line">&#125; TTinyuzResult;</span><br><span class="line"></span><br><span class="line"><span class="type">size_t</span> <span class="title function_">tuz_decompress</span><span class="params">(<span class="type">size_t</span> compressed_file_size, <span class="type">size_t</span> cache_size)</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span> <span class="comment">/* __tinyuz_port_h__ */</span></span></span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
 
-<h2 id="專用的調試模塊"><a href="#專用的調試模塊" class="headerlink" title="專用的調試模塊"></a>專用的調試模塊</h2><p>常見的 IDE 內部都集成了一個專用的 GUI 調試器，且不能拎出來單獨使用。</p>
-<ul>
-<li>ADS</li>
-<li>IAR</li>
-<li>MDK</li>
-<li>Visual Studio</li>
-</ul>
-<h2 id="獨立的調試工具"><a href="#獨立的調試工具" class="headerlink" title="獨立的調試工具"></a>獨立的調試工具</h2><p>當然也有一些可以獨立使用的調試器，例如：</p>
-<ul>
-<li>CLI: GDB, LLDB</li>
-<li>GUI: x64dbg, WinDBG, OllyDBG</li>
-</ul>
-<h2 id="通用的調試協議（DebugAdapterProtocol）"><a href="#通用的調試協議（DebugAdapterProtocol）" class="headerlink" title="通用的調試協議（DebugAdapterProtocol）"></a>通用的調試協議（DebugAdapterProtocol）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapterProtocol.png"></p>
-<p>不論是專用的調試模塊還是獨立的調試工具，如果想支持調試多種語言，就必須要爲每一種語言開發一套對應的調試程序，並且每個工具廠商都要獨自去完成這些工作。爲了減少不必要的重複勞動，微軟制定了一套通用的調試協議，藉助該協議各工具廠商只需要開發一套調試程序，向下再借助各種調試適配工具即可具備調試所有語言的能力。</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
-<center><a href="https://microsoft.github.io/debug-adapter-protocol/">Debug Adapter Protocol (DAP)</a></center><br>
-
-<p>目前實現該調試協議的開發工具有（常用的）：</p>
-<ul>
-<li>VSC</li>
-<li>VS</li>
-<li>vim</li>
-<li>emacs</li>
-<li>EclipseIDE</li>
-</ul>
-<p>btw, 微軟還制定了一套通用的語言服務器協議 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/LanguageServerProtocol(LSP).png"></p>
-<center><a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></center>
-
-<h2 id="調試器適配工具（DebugAdapter）"><a href="#調試器適配工具（DebugAdapter）" class="headerlink" title="調試器適配工具（DebugAdapter）"></a>調試器適配工具（DebugAdapter）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapter.png"></p>
-<p>調試適配器是對各類調試器的封裝，遵循 DAP 協議對上提供統一的接口，以簡化上層開發工具。常用的調試適配器有：</p>
-<ul>
-<li><a href="https://github.com/Microsoft/vscode-cpptools">cpptools (C&#x2F;C++ Debug Adapter)</a></li>
-<li><a href="https://github.com/Marus/cortex-debug">cortex-debug (Embedded C&#x2F;C++ Debug Adapter)</a></li>
-</ul>
-<h2 id="調試器軟件本體（Debugger）"><a href="#調試器軟件本體（Debugger）" class="headerlink" title="調試器軟件本體（Debugger）"></a>調試器軟件本體（Debugger）</h2><ul>
-<li><a href="https://sourceware.org/gdb/">GDB: The GNU Project Debugger</a><ul>
-<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/Remote-Protocol.html">↑ GDB&#x2F;MI</a></li>
-<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/GDB_002fMI.html">↓ GDB Remote Serial Protocol</a></li>
-</ul>
-</li>
-<li><a href="https://developer.arm.com/downloads/-/gnu-rm">arm-none-eabi-gdb: GNU Arm Embedded GDB</a></li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Debugger.png"></p>
-<h2 id="調試器服務程序（DebugServer）"><a href="#調試器服務程序（DebugServer）" class="headerlink" title="調試器服務程序（DebugServer）"></a>調試器服務程序（DebugServer）</h2><ul>
-<li>OpenOCD</li>
-<li>PyOCD</li>
-<li>JLinkGDBServer</li>
-<li>……</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugServer.png"></p>
-<h2 id="仿真器驅動程序（DongleDriver）"><a href="#仿真器驅動程序（DongleDriver）" class="headerlink" title="仿真器驅動程序（DongleDriver）"></a>仿真器驅動程序（DongleDriver）</h2><ul>
-<li>SEGGER JLink USB Driver</li>
-<li>SEGGER WinUSB USB Device Driver</li>
-</ul>
-<h2 id="仿真器設備本體（Dongle）"><a href="#仿真器設備本體（Dongle）" class="headerlink" title="仿真器設備本體（Dongle）"></a>仿真器設備本體（Dongle）</h2><ul>
-<li>CMSIS-DAP</li>
-<li>SEGGER JLink</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Dongle.png"></p>
-<h2 id="仿真器傳輸協議（DongleTransportProtocol）"><a href="#仿真器傳輸協議（DongleTransportProtocol）" class="headerlink" title="仿真器傳輸協議（DongleTransportProtocol）"></a>仿真器傳輸協議（DongleTransportProtocol）</h2><ul>
-<li>JTAG <a href="https://www.corelis.com/education/tutorials/jtag-tutorial/">https://www.corelis.com/education/tutorials/jtag-tutorial/</a></li>
-<li>SWD</li>
-</ul>
-<h2 id="目標板目標芯片（TargetBoard）"><a href="#目標板目標芯片（TargetBoard）" class="headerlink" title="目標板目標芯片（TargetBoard）"></a>目標板目標芯片（TargetBoard）</h2><ul>
-<li>STM32F103CB</li>
-<li>STM32F407VE</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Target.png"></p>
-<h2 id="本地與遠程調試"><a href="#本地與遠程調試" class="headerlink" title="本地與遠程調試"></a>本地與遠程調試</h2><p>遠程調試方案也有很多，這裏只對以下幾種方式作一簡要介紹：</p>
-<ul>
-<li>OpenOCD</li>
-<li>VSCode + JLinkGDBServer</li>
-<li>JLink + JLinkRemoteServer</li>
-<li>KeilMDK + JLinkRemoteServer</li>
-</ul>
-<h3 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h3><p>略.</p>
-<h3 id="VSCode-JLinkGDBServer"><a href="#VSCode-JLinkGDBServer" class="headerlink" title="VSCode + JLinkGDBServer"></a>VSCode + JLinkGDBServer</h3><p>1. 在服務主機上配置開啓 JLink 調試服務器（該服務器會監聽 2331 端口）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.0.png"></p>
-<div class="note danger no-icon"><p>不要勾選 Localhost Only 選項！</p>
-</div>
-
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.1.png"></p>
-<p>3. 在本地主機上配置 launch.json 文件並啓動調試</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">    &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">    &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">    &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;&quot;,</span><br><span class="line">    &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://github.com/Marus/cortex-debug/issues/244">cortex-debug-issues#244 : remote debugging</a><br><a href="https://github.com/Marus/cortex-debug/wiki/External-gdb-server-configuration">cortex-debug-wiki : external gdb server configuration</a></p>
-<div class="note info no-icon"><p>點擊啓動調試後 cortex-debug 便會幫助我們通過本地 xGDB 客戶端連接遠程 GDB 服務器。</p>
-</div>
-
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 vscode 中調試的圖片</span><br></pre></td></tr></table></figure>
-
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.3.png"></p>
-<h3 id="JLink-JLinkRemoteServer"><a href="#JLink-JLinkRemoteServer" class="headerlink" title="JLink + JLinkRemoteServer"></a>JLink + JLinkRemoteServer</h3><h4 id="內網連接"><a href="#內網連接" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
-<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.png"></p>
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.1.png"></p>
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
-<h4 id="隧道連接"><a href="#隧道連接" class="headerlink" title="隧道連接"></a>隧道連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器（隧道方式）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.0.png"></p>
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.1.png"></p>
-<p>3. 在本地主機上配置連接 JLink 遠程服務器（隧道方式）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.0.png"></p>
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.1.png"></p>
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.3.png"></p>
-<h3 id="KeilMDK-JLinkRemoteServer"><a href="#KeilMDK-JLinkRemoteServer" class="headerlink" title="KeilMDK + JLinkRemoteServer"></a>KeilMDK + JLinkRemoteServer</h3><h4 id="內網連接-1"><a href="#內網連接-1" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
-<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.Keil.MDK.png"></p>
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 Keil MDK 中調試的圖片</span><br></pre></td></tr></table></figure>
-
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
+<figure class="highlight c"><figcaption><span>tinyuz_port.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;tinyuz_port.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;fal.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;tuz_dec.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;patch_types.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">TTuzListener</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">const</span> hpatch_TStreamInput*  input_file_stream_handle;</span><br><span class="line">    hpatch_StreamPos_t          readPos;</span><br><span class="line">    tuz_TInputStream_read       _do_read_encompress_file;</span><br><span class="line">&#125;TTuzListener;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 從外部flash中以數據流的形式讀取壓縮數據</span></span><br><span class="line">hpatch_BOOL _do_read_encompress_file(<span class="type">const</span> hpatch_TStreamInput* stream, hpatch_StreamPos_t readFromPos, <span class="type">unsigned</span> <span class="type">char</span>* out_data, <span class="type">unsigned</span> <span class="type">char</span>* out_data_end)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">size_t</span> readLen = (<span class="type">size_t</span>)(out_data_end - out_data);</span><br><span class="line">    <span class="keyword">if</span> (readLen == <span class="number">0</span>) <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> compressed_stream_size = stream-&gt;streamSize;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ((readLen &gt; compressed_stream_size) || (readFromPos &gt; compressed_stream_size - readLen)) <span class="keyword">return</span> hpatch_FALSE;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// TODO 由用戶實現</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_ziped&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_read(partition, readFromPos, out_data, readLen);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 將解壓數據以數據流的形式寫入外部flash中</span></span><br><span class="line">hpatch_BOOL _do_write_decompress_file(<span class="type">const</span> hpatch_TStreamOutput* stream, hpatch_StreamPos_t writeToPos, <span class="type">const</span> <span class="type">unsigned</span> <span class="type">char</span>* data, <span class="type">const</span> <span class="type">unsigned</span> <span class="type">char</span>* data_end)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">unsigned</span> <span class="type">int</span> offset = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> writeLen = (<span class="type">size_t</span>)(data_end - data);</span><br><span class="line">    <span class="keyword">if</span> (writeLen == <span class="number">0</span>) <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line"></span><br><span class="line">    <span class="type">size_t</span> write_max_space = stream-&gt;streamSize;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ((writeLen &gt; write_max_space)||(writeToPos &gt; write_max_space - writeLen)) <span class="keyword">return</span> hpatch_FALSE;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// TODO 由用戶實現</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_newer&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_write(partition, offset+writeToPos, data, writeLen);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> hpatch_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">static</span> tuz_BOOL <span class="title function_">input_file_stream_read_function</span><span class="params">(<span class="type">void</span> *listener, tuz_byte *decompressed_file_stream, <span class="type">tuz_size_t</span> *code_size)</span></span><br><span class="line">&#123;</span><br><span class="line">    TTuzListener *self = (TTuzListener*)listener;</span><br><span class="line">    <span class="type">tuz_size_t</span> r_len = *code_size;</span><br><span class="line">    hpatch_StreamPos_t curReadPos = self-&gt;readPos;</span><br><span class="line">    hpatch_StreamPos_t s_size = self-&gt;input_file_stream_handle-&gt;streamSize - curReadPos;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (r_len &gt; s_size)&#123;</span><br><span class="line">        r_len = (<span class="type">tuz_size_t</span>)s_size;</span><br><span class="line">        *code_size = r_len;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    self-&gt;readPos += r_len;</span><br><span class="line">    <span class="keyword">return</span> self-&gt;input_file_stream_handle-&gt;read(self-&gt;input_file_stream_handle, curReadPos, decompressed_file_stream, decompressed_file_stream + r_len);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">size_t</span> <span class="title function_">tuz_decompress</span><span class="params">(<span class="type">size_t</span> compressed_file_size, <span class="type">size_t</span> cache_size)</span></span><br><span class="line">&#123;</span><br><span class="line">    hpatch_TStreamOutput decompressed_file_stream_handle = &#123;</span><br><span class="line">        .streamImport = &amp;decompressed_file_stream_handle,</span><br><span class="line">        .streamSize = TUZ_DECOMPRESS_SPACE_SIZE, <span class="comment">// 外部存儲中〈差分文件區〉的空間大小</span></span><br><span class="line">        .write = _do_write_decompress_file, <span class="comment">// stream write</span></span><br><span class="line">        .read_writed = <span class="literal">NULL</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    hpatch_TStreamInput input_file_stream_handle = &#123;</span><br><span class="line">        .streamImport = &amp;input_file_stream_handle,</span><br><span class="line">        .streamSize = compressed_file_size, <span class="comment">// 壓縮文件的實際大小</span></span><br><span class="line">        .read = _do_read_encompress_file, <span class="comment">// stream read</span></span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    TTuzListener listener = &#123;&amp;input_file_stream_handle, <span class="number">0</span>, input_file_stream_read_function&#125;;</span><br><span class="line">    tuz_TStream tuz;</span><br><span class="line">    tuz_TResult result = tuz_OK;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 壓縮的時候會以指定的字典大小進行壓縮｜因此解壓的時候要從壓縮包頭中讀取字典大小</span></span><br><span class="line">    <span class="type">tuz_size_t</span> dictSize = tuz_TStream_read_dict_size(&amp;listener, listener._do_read_encompress_file);</span><br><span class="line"></span><br><span class="line">    tuz_byte* decompress_buf = <span class="number">0</span>;</span><br><span class="line">    cache_size &gt;&gt;= <span class="number">1</span>; <span class="comment">// 除二操作</span></span><br><span class="line">    decompress_buf = (tuz_byte*)tuz_malloc(dictSize + cache_size*<span class="number">2</span>); <span class="comment">// 解壓過程中要用到的臨時空間大小 = 字典大小 + 解壓緩衝區大小</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (decompress_buf == <span class="number">0</span>) <span class="keyword">return</span> TINYUZ_MEM_ERROR;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// tuz_TStream_open 僅僅是用來初始化 tuz 這個勾柄的（tuz後面的參數都是給tuz賦值用的）</span></span><br><span class="line">    result = tuz_TStream_open(&amp;tuz, &amp;listener, listener._do_read_encompress_file, decompress_buf + cache_size, (<span class="type">tuz_size_t</span>)dictSize, (<span class="type">tuz_size_t</span>)cache_size);</span><br><span class="line"></span><br><span class="line">    hpatch_StreamPos_t stream_index = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (result == tuz_OK)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">tuz_size_t</span> decompress_len = (<span class="type">tuz_size_t</span>)cache_size; <span class="comment">// 給decompress_len賦一個初始值</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 解壓一包數據到 decompress_buf 中｜並得到該包長度 decompress_len</span></span><br><span class="line">        result = tuz_TStream_decompress_partial(&amp;tuz, decompress_buf, &amp;decompress_len);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (result &lt;= tuz_STREAM_END)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">// 將當前解壓的 decompress_buf 中的數據寫到 decompressed_file_stream_handle 數據流中</span></span><br><span class="line">            <span class="keyword">if</span> (decompressed_file_stream_handle.write(&amp;decompressed_file_stream_handle, stream_index, decompress_buf, decompress_buf + decompress_len))</span><br><span class="line">            &#123;</span><br><span class="line">                stream_index += decompress_len;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                tuz_free(decompress_buf);</span><br><span class="line">                <span class="keyword">return</span> TINYUZ_OPENWRITE_ERROR;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    tuz_free(decompress_buf);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> stream_index;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>開發筆記</category>
       </categories>
       <tags>
         <tag>嵌入式軟件開發</tag>
-        <tag>集成開發環境</tag>
-        <tag>IDE</tag>
+        <tag>壓縮解壓算法</tag>
+        <tag>在線升級</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>嵌入式 IAP 升級功能（#08）引導程序 bootloader 升級</title>
+    <url>/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>在線升級</tag>
       </tags>
   </entry>
 </search>
