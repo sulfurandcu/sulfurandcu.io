@@ -73,78 +73,90 @@
       </categories>
   </entry>
   <entry>
-    <title>dƷvorak</title>
-    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
-    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
-<br>
-
-<p style="font-family:courier new">
-　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
-　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
-　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
-　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
-</p>
+    <title>搭建一個基於 docsify 的文檔系統</title>
+    <url>/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo.html</url>
+    <content><![CDATA[<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/architecture.png"></p>
+<center>・文檔系統架構圖・</center>
 
 <span id="more"></span>
 
 <br>
+
+<div class="note info"><p><code>#web</code> <a href="http://127.0.0.1:3000/">http://127.0.0.1:3000</a></p>
+</div>
+
+<div class="note info"><p><code>#ssh</code> <a href="mailto:&#108;&#x6f;&#99;&#97;&#x6c;&#x68;&#x6f;&#x73;&#x74;&#x40;&#x31;&#x32;&#55;&#x2e;&#x30;&#46;&#48;&#x2e;&#49;">&#108;&#x6f;&#99;&#97;&#x6c;&#x68;&#x6f;&#x73;&#x74;&#x40;&#x31;&#x32;&#55;&#x2e;&#x30;&#46;&#48;&#x2e;&#49;</a> 📢 Password:password</p>
+</div>
+
+<div class="note info"><p><code>#svn</code> <a href="http://svn.sulfurandcu.com/doc">http://svn.sulfurandcu.com/doc</a></p>
+</div>
+
+
+<h2 id="系統架構"><a href="#系統架構" class="headerlink" title="系統架構"></a>系統架構</h2><p>該系統由「一個代碼庫」「若干開發者」和「一臺服務器」組成。</p>
+<h3 id="代碼庫"><a href="#代碼庫" class="headerlink" title="代碼庫"></a>代碼庫</h3><p>代碼庫（SVN）中有一份文檔系統的源碼，裏面放着文檔系統的配置文件和各個項目的文檔文件。</p>
+<h3 id="開發者"><a href="#開發者" class="headerlink" title="開發者"></a>開發者</h3><p>開發者可以將 SVN 中的文檔系統源碼 checkout 至本地進行編輯、預覽。修改完畢後再提交回去。</p>
+<h3 id="服務器"><a href="#服務器" class="headerlink" title="服務器"></a>服務器</h3><p>服務器中也有一份從 SVN 中 checkout 出來的文檔系統源碼，這些內容被一個叫做文檔網站生成器的軟件動態轉換成網頁在 3000 端口以 HTTP 的形式對外提供訪問。這樣我們就可以通過瀏覽器以輸入 IP 地址加端口的形式訪問該文檔系統。另外該服務器上還運行着一個週期任務，這個任務每隔 15 分鐘（準確地說是在00分、15分、30分、45分的時候）<strong>從 SVN 服務器中</strong>更新一次文檔系統源碼。這樣就實現了文檔系統的自動更新。</p>
+<h2 id="使用說明"><a href="#使用說明" class="headerlink" title="使用說明"></a>使用說明</h2><h3 id="第一步：搭建環境"><a href="#第一步：搭建環境" class="headerlink" title="第一步：搭建環境"></a>第一步：搭建環境</h3><p>➀ 安裝「node.js」（一個基於 Chrome V8 引擎 的 JavaScript 運行時環境）</p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.png"></p>
+<center>
+<a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a>
+</center><br>
+
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.1.png"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.2.png"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.3.png"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.4.png"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.5.png"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.6.png"></div></div></div>
+
+<p>➁ 安裝「docsify」（一個使用 JavaScript 編寫的文檔網站生成器）</p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/docsify.png"></p>
+<center>
+<a href="https://docsify.js.org/" target="_blank">https://docsify.js.org/</a>
+</center><br>
+
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/docsify.install.png"></p>
+<center>
+npm i -g docsify-cli
+</center>
+
+<div class="note warning"><p>安裝完 node.js 之後就可以使用 npm 指令安裝 docsify-cli 了</p>
+</div>
+
+<h3 id="第二步：建立文檔"><a href="#第二步：建立文檔" class="headerlink" title="第二步：建立文檔"></a>第二步：建立文檔</h3><p>本文檔系統的框架已經建好並且已經提交至 SVN 服務器中：</p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.cloud.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://svn.sulfurandcu.com/doc</span><br></pre></td></tr></table></figure>
+
+<h3 id="第三步：預覽效果"><a href="#第三步：預覽效果" class="headerlink" title="第三步：預覽效果"></a>第三步：預覽效果</h3><p>將上述文檔框架下載到本地，在其根目錄下執行 docsify serve 命令啓動一個本地服務器，就可以在本地預覽效果。</p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.local.png"></p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.serve.png"></p>
+<center>
+docsify s
+</center>
+
+<div class="note warning"><p>點擊 <a href="http://localhost:3000/">http://localhost:3000</a> 即可預覽</p>
+</div>
+
+<h3 id="第四步：進入正軌（編輯文檔、本地預覽、提交變更）"><a href="#第四步：進入正軌（編輯文檔、本地預覽、提交變更）" class="headerlink" title="第四步：進入正軌（編輯文檔、本地預覽、提交變更）"></a>第四步：進入正軌（編輯文檔、本地預覽、提交變更）</h3><p>搭建好開發環境、將〈＃項目文檔〉下載到本地且知道怎麼預覽以後，就可以開始編輯、預覽、提交了，跟代碼的編輯、調試、提交沒什麼兩樣！</p>
+<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.write.png"></p>
+<p>文章使用輕量級標記語言 <a href="https://www.markdownguide.org/basic-syntax/">markdown</a> 編寫；圖例使用 <a href="https://www.diagrams.net/">draw.io</a> 繪製。</p>
+<h2 id="技術細節"><a href="#技術細節" class="headerlink" title="技術細節"></a>技術細節</h2><p>這部分內容是文檔系統搭建的一些具體細節，在這裏記錄一下以供後續維護人員參考。需要說明的一點是，當前所使用的服務器運行的是 Windows 操作系統，因此以下操作均基於該操作系統。</p>
+<h3 id="自動更新"><a href="#自動更新" class="headerlink" title="自動更新"></a>自動更新</h3><p>在 Windows 系統中，使用系統自帶的任務計劃程序實現：在〈計算機管理・任務計劃程序〉中創建一個週期任務，每隔一段時間執行一次以下腳本。</p>
+<figure class="highlight py"><figcaption><span>doc.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">cmd = <span class="string">&quot;svn up \&quot;e:/＃文檔系統\&quot; --non-interactive&quot;</span></span><br><span class="line">os.system(cmd)</span><br></pre></td></tr></table></figure>
+
+<div class="note info"><p>任務計劃程序配置好之後重啓電腦不影響其運行</p>
+</div>
+
+<h3 id="手動更新"><a href="#手動更新" class="headerlink" title="手動更新"></a>手動更新</h3><p>改動提交之後想立即更新至文檔服務器應該怎麼做呢？</p>
+<p>遠程連接到服務器，手動執行一下 doc.py 即可。</p>
+<h3 id="手動啓動-docsify-服務"><a href="#手動啓動-docsify-服務" class="headerlink" title="手動啓動 docsify 服務"></a>手動啓動 docsify 服務</h3><p>電腦關機後 docsify 服務也會隨之停止，因此每次開機後都要手動啓動 docsify 服務。我嘗試過啓動後自動運行，但是經常會執行失敗。</p>
+<h2 id="常見問題"><a href="#常見問題" class="headerlink" title="常見問題"></a>常見問題</h2><h3 id="服務器重啓後網頁無法訪問！"><a href="#服務器重啓後網頁無法訪問！" class="headerlink" title="服務器重啓後網頁無法訪問！"></a>服務器重啓後網頁無法訪問！</h3><p>檢查 docsify 服務是否已經啓動。</p>
+<h3 id="修改提交之後內容沒有更新！"><a href="#修改提交之後內容沒有更新！" class="headerlink" title="修改提交之後內容沒有更新！"></a>修改提交之後內容沒有更新！</h3><p>首先看週期更新任務是否正常執行。</p>
+<p>如果週期更新任務沒有問題，那麼有可能是管理員同志的公司帳號密碼修改過，而文檔服務器中 svn 的訪問密碼沒有同步修改導致的。</p>
+<div class="note warning"><p>系統會強制讓職工每隔兩個月修改一次密碼</p>
+</div>
 ]]></content>
       <categories>
-        <category>輸入方案</category>
+        <category>效率提升</category>
       </categories>
       <tags>
-        <tag>鍵位佈局</tag>
-        <tag>qwerty</tag>
-        <tag>dvorak</tag>
-        <tag>dƷvorak</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>網頁字體使用指南</title>
-    <url>/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html</url>
-    <content><![CDATA[<p>在被 fontmin 和 font-spider 這倆貨虐得體無完膚之後，我決定試試<a href="https://hsingko.github.io/post/compress_webfont/">這篇文章</a>中提到的另一個字體壓縮工具</p>
-<p><strong><center>“<a href="https://github.com/fonttools/fonttools">fonttools</a>”</center></strong></p>
-<span id="more"></span>
-
-<h3 id="網頁使用中文字體的方案？"><a href="#網頁使用中文字體的方案？" class="headerlink" title="網頁使用中文字體的方案？"></a>網頁使用中文字體的方案？</h3><ol start="0">
-<li>使用安全字體</li>
-<li>使用壓縮字體</li>
-<li>谷歌字體接口（google fonts api）</li>
-</ol>
-<p>大多數網站的中文字體使用的都是安全字體，也就是機器中原生攜帶的字體，這樣的好處是無需通過網絡傳輸字體文件，也就不存在加載過慢的問題。安全字體好用是好用，但是架不住它醜啊，否則我也不會捯飭字體壓縮了不是！</p>
-<p>使用谷歌的服務就意味着要拒絕來自不懂得科學上網的讀者的訪問，這是我所不能接受的。</p>
-<p>所以，唯一的選擇就是“字體壓縮”！</p>
-<h3 id="爲什麼要對字體進行壓縮？"><a href="#爲什麼要對字體進行壓縮？" class="headerlink" title="爲什麼要對字體進行壓縮？"></a>爲什麼要對字體進行壓縮？</h3><p>這裏的字體指的是漢字（泛中日韓）字體，拉丁字符或者西里爾字符這種字符數量較少的字體的體積通常比較小，沒有壓縮的必要。漢字字體通常收錄幾千上萬個字符，大小能達到幾十兆字節，而常用的漢字不過兩三千，聚焦至單篇文章中可能連一千都不到。倘若每次加載網頁時都要將完整的字體文件下載下來，其加載時間是往往是難以忍受的，這樣我們就要想法子縮減字體文件的體積。巧的是，字體壓縮就是幹這個的。</p>
-<p>字體壓縮這麼“中藥”，社區應該非常活躍纔是啊，爲啥像 fontmin 和 font-spider 之類的工具基本都不怎麼維護了呢？</p>
-<p>這裏的重要是有前提的，在無利可圖的情況下，沒有人或資本會給自己找不痛快，像我這種閒得蛋疼的除外。所以，知道前提是啥了不？😏</p>
-<h3 id="使用-fonttools-進行靜態壓縮！"><a href="#使用-fonttools-進行靜態壓縮！" class="headerlink" title="使用 fonttools 進行靜態壓縮！"></a>使用 fonttools 進行靜態壓縮！</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pyftsubset font.ttf --text=$(cat hanzi.txt) --no-hinting</span><br></pre></td></tr></table></figure>
-
-<p>靜態壓縮的問題在於，無法保證文章中不會用到常用字表以外的字。</p>
-<h3 id="使用-fonttools-進行動態壓縮！"><a href="#使用-fonttools-進行動態壓縮！" class="headerlink" title="使用 fonttools 進行動態壓縮！"></a>使用 fonttools 進行動態壓縮！</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pyftsubset ../font/SourceHanSerifSC-Regular.otf --text=$(rg -e &#x27;[\u&#123;0100&#125;-\u&#123;10ffff&#125;]&#x27; -oN --no-filename|sort|uniq|tr -d &#x27;\n&#x27;) --no-hinting</span><br></pre></td></tr></table></figure>
-
-<p>動態壓縮的問題在於，每次更新文章後都要執行一次字體壓縮流程。</p>
-<p>因此流程自動化迫在眉睫！</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">由於本人太忙（懶），自動化腳本隨緣更新！</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>語言文字</category>
-      </categories>
-      <tags>
-        <tag>網頁字體</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DLT645</title>
-    <url>/sulfurandcu.io/clnyhr2ml002810rq6pxn7cmn.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>DLT645</tag>
-        <tag>多功能電能表通信協議</tag>
-        <tag>電力</tag>
-        <tag>行業標準</tag>
+        <tag>docsify</tag>
+        <tag>文檔系統</tag>
       </tags>
   </entry>
   <entry>
@@ -276,6 +288,54 @@
       </tags>
   </entry>
   <entry>
+    <title>網頁字體使用指南</title>
+    <url>/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html</url>
+    <content><![CDATA[<p>在被 fontmin 和 font-spider 這倆貨虐得體無完膚之後，我決定試試<a href="https://hsingko.github.io/post/compress_webfont/">這篇文章</a>中提到的另一個字體壓縮工具</p>
+<p><strong><center>“<a href="https://github.com/fonttools/fonttools">fonttools</a>”</center></strong></p>
+<span id="more"></span>
+
+<h3 id="網頁使用中文字體的方案？"><a href="#網頁使用中文字體的方案？" class="headerlink" title="網頁使用中文字體的方案？"></a>網頁使用中文字體的方案？</h3><ol start="0">
+<li>使用安全字體</li>
+<li>使用壓縮字體</li>
+<li>谷歌字體接口（google fonts api）</li>
+</ol>
+<p>大多數網站的中文字體使用的都是安全字體，也就是機器中原生攜帶的字體，這樣的好處是無需通過網絡傳輸字體文件，也就不存在加載過慢的問題。安全字體好用是好用，但是架不住它醜啊，否則我也不會捯飭字體壓縮了不是！</p>
+<p>使用谷歌的服務就意味着要拒絕來自不懂得科學上網的讀者的訪問，這是我所不能接受的。</p>
+<p>所以，唯一的選擇就是“字體壓縮”！</p>
+<h3 id="爲什麼要對字體進行壓縮？"><a href="#爲什麼要對字體進行壓縮？" class="headerlink" title="爲什麼要對字體進行壓縮？"></a>爲什麼要對字體進行壓縮？</h3><p>這裏的字體指的是漢字（泛中日韓）字體，拉丁字符或者西里爾字符這種字符數量較少的字體的體積通常比較小，沒有壓縮的必要。漢字字體通常收錄幾千上萬個字符，大小能達到幾十兆字節，而常用的漢字不過兩三千，聚焦至單篇文章中可能連一千都不到。倘若每次加載網頁時都要將完整的字體文件下載下來，其加載時間是往往是難以忍受的，這樣我們就要想法子縮減字體文件的體積。巧的是，字體壓縮就是幹這個的。</p>
+<p>字體壓縮這麼“中藥”，社區應該非常活躍纔是啊，爲啥像 fontmin 和 font-spider 之類的工具基本都不怎麼維護了呢？</p>
+<p>這裏的重要是有前提的，在無利可圖的情況下，沒有人或資本會給自己找不痛快，像我這種閒得蛋疼的除外。所以，知道前提是啥了不？😏</p>
+<h3 id="使用-fonttools-進行靜態壓縮！"><a href="#使用-fonttools-進行靜態壓縮！" class="headerlink" title="使用 fonttools 進行靜態壓縮！"></a>使用 fonttools 進行靜態壓縮！</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pyftsubset font.ttf --text=$(cat hanzi.txt) --no-hinting</span><br></pre></td></tr></table></figure>
+
+<p>靜態壓縮的問題在於，無法保證文章中不會用到常用字表以外的字。</p>
+<h3 id="使用-fonttools-進行動態壓縮！"><a href="#使用-fonttools-進行動態壓縮！" class="headerlink" title="使用 fonttools 進行動態壓縮！"></a>使用 fonttools 進行動態壓縮！</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pyftsubset ../font/SourceHanSerifSC-Regular.otf --text=$(rg -e &#x27;[\u&#123;0100&#125;-\u&#123;10ffff&#125;]&#x27; -oN --no-filename|sort|uniq|tr -d &#x27;\n&#x27;) --no-hinting</span><br></pre></td></tr></table></figure>
+
+<p>動態壓縮的問題在於，每次更新文章後都要執行一次字體壓縮流程。</p>
+<p>因此流程自動化迫在眉睫！</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">由於本人太忙（懶），自動化腳本隨緣更新！</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>語言文字</category>
+      </categories>
+      <tags>
+        <tag>網頁字體</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DLT645</title>
+    <url>/sulfurandcu.io/clnyhr2ml002810rq6pxn7cmn.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>DLT645</tag>
+        <tag>多功能電能表通信協議</tag>
+        <tag>電力</tag>
+        <tag>行業標準</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>極樂迪斯科歐序篇</title>
     <url>/sulfurandcu.io/clnyhr2ml002c10rq648736uf.html</url>
     <content><![CDATA[<p>- There’s this giant ball there. And evil apes. And the evil apes are dukin’ it out on the ball. You’re one of them. It’s basically all just evil apes dukin’ it out on a giant ball.</p>
@@ -289,6 +349,33 @@
       </categories>
       <tags>
         <tag>極樂迪斯科</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>dƷvorak</title>
+    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
+    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
+<br>
+
+<p style="font-family:courier new">
+　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
+　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
+　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
+　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
+</p>
+
+<span id="more"></span>
+
+<br>
+]]></content>
+      <categories>
+        <category>輸入方案</category>
+      </categories>
+      <tags>
+        <tag>鍵位佈局</tag>
+        <tag>qwerty</tag>
+        <tag>dvorak</tag>
+        <tag>dƷvorak</tag>
       </tags>
   </entry>
   <entry>
@@ -363,6 +450,17 @@
         <tag>v2ray</tag>
         <tag>shadowsocks</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>別鬧了！費曼先生</title>
+    <url>/sulfurandcu.io/clnyhr2mn002j10rqbhpkhcgy.html</url>
+    <content><![CDATA[<center>Knowing the name of something is not the same as knowing something.</center>
+
+<br>
+]]></content>
+      <categories>
+        <category>費曼先生</category>
+      </categories>
   </entry>
   <entry>
     <title>沒事兒也來做做題</title>
@@ -589,17 +687,6 @@ N2---&gt;N2.3[&quot; &quot;]
         <tag>拓撲識別</tag>
         <tag>拓撲分析</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>別鬧了！費曼先生</title>
-    <url>/sulfurandcu.io/clnyhr2mn002j10rqbhpkhcgy.html</url>
-    <content><![CDATA[<center>Knowing the name of something is not the same as knowing something.</center>
-
-<br>
-]]></content>
-      <categories>
-        <category>費曼先生</category>
-      </categories>
   </entry>
   <entry>
     <title>編寫一個根據 svn 提交記錄自動生成日報的腳本</title>
@@ -932,93 +1019,6 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
-    <title>搭建一個基於 docsify 的文檔系統</title>
-    <url>/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo.html</url>
-    <content><![CDATA[<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/architecture.png"></p>
-<center>・文檔系統架構圖・</center>
-
-<span id="more"></span>
-
-<br>
-
-<div class="note info"><p><code>#web</code> <a href="http://127.0.0.1:3000/">http://127.0.0.1:3000</a></p>
-</div>
-
-<div class="note info"><p><code>#ssh</code> <a href="mailto:&#x6c;&#x6f;&#99;&#97;&#x6c;&#x68;&#x6f;&#115;&#116;&#64;&#49;&#x32;&#55;&#x2e;&#x30;&#x2e;&#x30;&#x2e;&#49;">&#x6c;&#x6f;&#99;&#97;&#x6c;&#x68;&#x6f;&#115;&#116;&#64;&#49;&#x32;&#55;&#x2e;&#x30;&#x2e;&#x30;&#x2e;&#49;</a> 📢 Password:password</p>
-</div>
-
-<div class="note info"><p><code>#svn</code> <a href="http://svn.sulfurandcu.com/doc">http://svn.sulfurandcu.com/doc</a></p>
-</div>
-
-
-<h2 id="系統架構"><a href="#系統架構" class="headerlink" title="系統架構"></a>系統架構</h2><p>該系統由「一個代碼庫」「若干開發者」和「一臺服務器」組成。</p>
-<h3 id="代碼庫"><a href="#代碼庫" class="headerlink" title="代碼庫"></a>代碼庫</h3><p>代碼庫（SVN）中有一份文檔系統的源碼，裏面放着文檔系統的配置文件和各個項目的文檔文件。</p>
-<h3 id="開發者"><a href="#開發者" class="headerlink" title="開發者"></a>開發者</h3><p>開發者可以將 SVN 中的文檔系統源碼 checkout 至本地進行編輯、預覽。修改完畢後再提交回去。</p>
-<h3 id="服務器"><a href="#服務器" class="headerlink" title="服務器"></a>服務器</h3><p>服務器中也有一份從 SVN 中 checkout 出來的文檔系統源碼，這些內容被一個叫做文檔網站生成器的軟件動態轉換成網頁在 3000 端口以 HTTP 的形式對外提供訪問。這樣我們就可以通過瀏覽器以輸入 IP 地址加端口的形式訪問該文檔系統。另外該服務器上還運行着一個週期任務，這個任務每隔 15 分鐘（準確地說是在00分、15分、30分、45分的時候）<strong>從 SVN 服務器中</strong>更新一次文檔系統源碼。這樣就實現了文檔系統的自動更新。</p>
-<h2 id="使用說明"><a href="#使用說明" class="headerlink" title="使用說明"></a>使用說明</h2><h3 id="第一步：搭建環境"><a href="#第一步：搭建環境" class="headerlink" title="第一步：搭建環境"></a>第一步：搭建環境</h3><p>➀ 安裝「node.js」（一個基於 Chrome V8 引擎 的 JavaScript 運行時環境）</p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.png"></p>
-<center>
-<a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a>
-</center><br>
-
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.1.png"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.2.png"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.3.png"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.4.png"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.5.png"></div><div class="group-picture-column"><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/nodejs.install.6.png"></div></div></div>
-
-<p>➁ 安裝「docsify」（一個使用 JavaScript 編寫的文檔網站生成器）</p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/docsify.png"></p>
-<center>
-<a href="https://docsify.js.org/" target="_blank">https://docsify.js.org/</a>
-</center><br>
-
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/docsify.install.png"></p>
-<center>
-npm i -g docsify-cli
-</center>
-
-<div class="note warning"><p>安裝完 node.js 之後就可以使用 npm 指令安裝 docsify-cli 了</p>
-</div>
-
-<h3 id="第二步：建立文檔"><a href="#第二步：建立文檔" class="headerlink" title="第二步：建立文檔"></a>第二步：建立文檔</h3><p>本文檔系統的框架已經建好並且已經提交至 SVN 服務器中：</p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.cloud.png"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://svn.sulfurandcu.com/doc</span><br></pre></td></tr></table></figure>
-
-<h3 id="第三步：預覽效果"><a href="#第三步：預覽效果" class="headerlink" title="第三步：預覽效果"></a>第三步：預覽效果</h3><p>將上述文檔框架下載到本地，在其根目錄下執行 docsify serve 命令啓動一個本地服務器，就可以在本地預覽效果。</p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.local.png"></p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.serve.png"></p>
-<center>
-docsify s
-</center>
-
-<div class="note warning"><p>點擊 <a href="http://localhost:3000/">http://localhost:3000</a> 即可預覽</p>
-</div>
-
-<h3 id="第四步：進入正軌（編輯文檔、本地預覽、提交變更）"><a href="#第四步：進入正軌（編輯文檔、本地預覽、提交變更）" class="headerlink" title="第四步：進入正軌（編輯文檔、本地預覽、提交變更）"></a>第四步：進入正軌（編輯文檔、本地預覽、提交變更）</h3><p>搭建好開發環境、將〈＃項目文檔〉下載到本地且知道怎麼預覽以後，就可以開始編輯、預覽、提交了，跟代碼的編輯、調試、提交沒什麼兩樣！</p>
-<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/document.write.png"></p>
-<p>文章使用輕量級標記語言 <a href="https://www.markdownguide.org/basic-syntax/">markdown</a> 編寫；圖例使用 <a href="https://www.diagrams.net/">draw.io</a> 繪製。</p>
-<h2 id="技術細節"><a href="#技術細節" class="headerlink" title="技術細節"></a>技術細節</h2><p>這部分內容是文檔系統搭建的一些具體細節，在這裏記錄一下以供後續維護人員參考。需要說明的一點是，當前所使用的服務器運行的是 Windows 操作系統，因此以下操作均基於該操作系統。</p>
-<h3 id="自動更新"><a href="#自動更新" class="headerlink" title="自動更新"></a>自動更新</h3><p>在 Windows 系統中，使用系統自帶的任務計劃程序實現：在〈計算機管理・任務計劃程序〉中創建一個週期任務，每隔一段時間執行一次以下腳本。</p>
-<figure class="highlight py"><figcaption><span>doc.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">cmd = <span class="string">&quot;svn up \&quot;e:/＃文檔系統\&quot; --non-interactive&quot;</span></span><br><span class="line">os.system(cmd)</span><br></pre></td></tr></table></figure>
-
-<div class="note info"><p>任務計劃程序配置好之後重啓電腦不影響其運行</p>
-</div>
-
-<h3 id="手動更新"><a href="#手動更新" class="headerlink" title="手動更新"></a>手動更新</h3><p>改動提交之後想立即更新至文檔服務器應該怎麼做呢？</p>
-<p>遠程連接到服務器，手動執行一下 doc.py 即可。</p>
-<h3 id="手動啓動-docsify-服務"><a href="#手動啓動-docsify-服務" class="headerlink" title="手動啓動 docsify 服務"></a>手動啓動 docsify 服務</h3><p>電腦關機後 docsify 服務也會隨之停止，因此每次開機後都要手動啓動 docsify 服務。我嘗試過啓動後自動運行，但是經常會執行失敗。</p>
-<h2 id="常見問題"><a href="#常見問題" class="headerlink" title="常見問題"></a>常見問題</h2><h3 id="服務器重啓後網頁無法訪問！"><a href="#服務器重啓後網頁無法訪問！" class="headerlink" title="服務器重啓後網頁無法訪問！"></a>服務器重啓後網頁無法訪問！</h3><p>檢查 docsify 服務是否已經啓動。</p>
-<h3 id="修改提交之後內容沒有更新！"><a href="#修改提交之後內容沒有更新！" class="headerlink" title="修改提交之後內容沒有更新！"></a>修改提交之後內容沒有更新！</h3><p>首先看週期更新任務是否正常執行。</p>
-<p>如果週期更新任務沒有問題，那麼有可能是管理員同志的公司帳號密碼修改過，而文檔服務器中 svn 的訪問密碼沒有同步修改導致的。</p>
-<div class="note warning"><p>系統會強制讓職工每隔兩個月修改一次密碼</p>
-</div>
-]]></content>
-      <categories>
-        <category>效率提升</category>
-      </categories>
-      <tags>
-        <tag>docsify</tag>
-        <tag>文檔系統</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>囗－囗</title>
     <url>/sulfurandcu.io/clnyhr2mt003b10rq5snfeg6t.html</url>
     <content><![CDATA[<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
@@ -1124,6 +1124,77 @@ docsify s
 </li>
 </ul>
 <h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://elmagnifico.tech/2022/03/14/Embeded-IDE/">https://elmagnifico.tech/2022/03/14/Embeded-IDE/</a><br><a href="https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/">https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/</a></p>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>集成開發環境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成開發環境－GCC.ARM（#00）目錄索引</title>
+    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
+    <content><![CDATA[<hr>
+<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成開發環境－GCC.ARM（#01）環境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成開發環境－GCC.ARM（#02）代碼編譯</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成開發環境－GCC.ARM（#03）程序燒錄</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成開發環境－GCC.ARM（#04）快捷任務</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成開發環境－GCC.ARM（#05）程序調試</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成開發環境－DBG</a></p>
+<hr>
+<p>傳統的集成開發環境（MDK、IAR）通常會提供包括編輯、編譯、燒錄、調試在內的一整套工具，開發者無需配置，簡單易用，但是 license 不是一般的貴。</p>
+<p>替代方案：</p>
+<ul>
+<li><strong>VSC</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
+<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
+<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
+<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
+</ul>
+</li>
+<li><strong>VS</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
+<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
+</ul>
+</li>
+<li><strong>Eclipse</strong></li>
+<li><strong>Eclipse Based</strong><ul>
+<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
+<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
+<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>倘若宿主機使用 Windows 操作系統並且購買了 JLinkDebugger 仿真器，則推薦使用 JLink 方案！</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>一個基本的開發環境包含以下四個部分：</p>
+<ol>
+<li>編輯功能（vscode）</li>
+<li>編譯功能（arm-none-eabi-xxx）</li>
+<li>燒錄功能（OpenOCD&#x2F;JLink）</li>
+<li>調試功能（OpenOCD&#x2F;JLinkGDBServerCL + Cortex-Debug + arm-none-eabi-gdb）</li>
+</ol>
+<ul>
+<li><p><strong>vscode</strong><br>文本編輯器，其實是一個僞裝成文本編輯器的開發框架。</p>
+</li>
+<li><p><strong>arm-none-eabi-xxx</strong><br>交叉編譯器，可以編譯出在 Cortex-R&amp;M 平臺上運行的可執行程序。</p>
+</li>
+<li><p><strong>OpenOCD&#x2F;JLink</strong><br>程序燒錄器，負責將編譯好的程序燒錄到目標芯片中。</p>
+</li>
+<li><p><strong>arm-none-eabi-gdb</strong><br>命令調試器，支持通過命令行的方式進行調試。</p>
+</li>
+<li><p><strong>Cortex-Debug</strong><br>圖形調試器，提供一套圖形調試界面，需要與命令調試器搭配使用。</p>
+</li>
+<li><p><strong>OpenOCD&#x2F;JLinkGDBServerCL</strong><br>調試服務器，負責協助調試器識別並管理各種仿真設備和目標芯片。</p>
+</li>
+<li><p><strong>makefile &amp; task.json</strong><br>自動化工具，用來實現編譯和燒錄的自動化。</p>
+</li>
+</ul>
+<h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方設備支持:HT32F52352 Cortex-M0+</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code開發STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code開發STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code開發STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code開發STM32（四）</a></p>
+<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作總結記錄</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 開發環境—— 詳細版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 開發stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32開發調試環境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 開發環境（詳細）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32開發調試環境（轉）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32開發環境（極簡自我搭建&amp;懶人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 調試器使用介紹</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
 ]]></content>
       <categories>
         <category>開發筆記</category>
@@ -1275,77 +1346,6 @@ docsify s
 
 <p>6. 斷開連接</p>
 <p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>集成開發環境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成開發環境－GCC.ARM（#00）目錄索引</title>
-    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
-    <content><![CDATA[<hr>
-<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成開發環境－GCC.ARM（#01）環境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成開發環境－GCC.ARM（#02）代碼編譯</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成開發環境－GCC.ARM（#03）程序燒錄</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成開發環境－GCC.ARM（#04）快捷任務</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成開發環境－GCC.ARM（#05）程序調試</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成開發環境－DBG</a></p>
-<hr>
-<p>傳統的集成開發環境（MDK、IAR）通常會提供包括編輯、編譯、燒錄、調試在內的一整套工具，開發者無需配置，簡單易用，但是 license 不是一般的貴。</p>
-<p>替代方案：</p>
-<ul>
-<li><strong>VSC</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
-<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
-<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
-<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
-<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
-</ul>
-</li>
-<li><strong>VS</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
-<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
-</ul>
-</li>
-<li><strong>Eclipse</strong></li>
-<li><strong>Eclipse Based</strong><ul>
-<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
-<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
-<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>倘若宿主機使用 Windows 操作系統並且購買了 JLinkDebugger 仿真器，則推薦使用 JLink 方案！</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>一個基本的開發環境包含以下四個部分：</p>
-<ol>
-<li>編輯功能（vscode）</li>
-<li>編譯功能（arm-none-eabi-xxx）</li>
-<li>燒錄功能（OpenOCD&#x2F;JLink）</li>
-<li>調試功能（OpenOCD&#x2F;JLinkGDBServerCL + Cortex-Debug + arm-none-eabi-gdb）</li>
-</ol>
-<ul>
-<li><p><strong>vscode</strong><br>文本編輯器，其實是一個僞裝成文本編輯器的開發框架。</p>
-</li>
-<li><p><strong>arm-none-eabi-xxx</strong><br>交叉編譯器，可以編譯出在 Cortex-R&amp;M 平臺上運行的可執行程序。</p>
-</li>
-<li><p><strong>OpenOCD&#x2F;JLink</strong><br>程序燒錄器，負責將編譯好的程序燒錄到目標芯片中。</p>
-</li>
-<li><p><strong>arm-none-eabi-gdb</strong><br>命令調試器，支持通過命令行的方式進行調試。</p>
-</li>
-<li><p><strong>Cortex-Debug</strong><br>圖形調試器，提供一套圖形調試界面，需要與命令調試器搭配使用。</p>
-</li>
-<li><p><strong>OpenOCD&#x2F;JLinkGDBServerCL</strong><br>調試服務器，負責協助調試器識別並管理各種仿真設備和目標芯片。</p>
-</li>
-<li><p><strong>makefile &amp; task.json</strong><br>自動化工具，用來實現編譯和燒錄的自動化。</p>
-</li>
-</ul>
-<h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方設備支持:HT32F52352 Cortex-M0+</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code開發STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code開發STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code開發STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code開發STM32（四）</a></p>
-<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作總結記錄</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 開發環境—— 詳細版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 開發stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32開發調試環境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 開發環境（詳細）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32開發調試環境（轉）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32開發環境（極簡自我搭建&amp;懶人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 調試器使用介紹</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
 ]]></content>
       <categories>
         <category>開發筆記</category>
@@ -1614,153 +1614,6 @@ docsify s
         <tag>單片機</tag>
         <tag>iap</tag>
         <tag>bootloader</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>嵌入式 IAP 升級功能（#01）基礎概念</title>
-    <url>/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html</url>
-    <content><![CDATA[<center>傳統編程方式</center>
-
-<pre class="mermaid">
-flowchart LR
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-A(先取下芯片)---&gt;B(再燒錄程序)---&gt;C(後裝回板卡)
-</pre>
-
-<center>現代編程方式</center>
-
-<pre class="mermaid">
-flowchart LR
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-A(&quot;在電路編程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系統編程&lt;br&gt;(ＩＳＰ)&quot;)---&gt;C(&quot;在應用編程&lt;br&gt;(ＩＡＰ)&quot;)
-</pre>
-
-<span id="more"></span>
-
-<h2 id="傳統編程方式"><a href="#傳統編程方式" class="headerlink" title="傳統編程方式"></a>傳統編程方式</h2><p>傳統編程方式是先將程序燒錄至主控芯片中再焊接到電路板上。</p>
-<p><strong>開發階段</strong></p>
-<ul>
-<li>➀ 從電路板上取下芯片</li>
-<li>➁ 使用燒錄器燒寫程序</li>
-<li>➂ 將芯片裝回至電路板</li>
-</ul>
-<p><strong>量產階段</strong></p>
-<ul>
-<li>➀ 從 tray 盤取出芯片</li>
-<li>➁ 使用燒錄器燒寫程序</li>
-<li>➂ 將芯片放回 tray 盤</li>
-</ul>
-<p><strong>維護階段</strong></p>
-<ul>
-<li>➀ 從電路板上拆下芯片</li>
-<li>➁ 使用燒錄器燒寫程序</li>
-<li>➂ 將芯片焊回至電路板</li>
-</ul>
-<h2 id="現代編程方式"><a href="#現代編程方式" class="headerlink" title="現代編程方式"></a>現代編程方式</h2><p>現代編程方式可以直接進行板上燒錄，不用再取下芯片放到專用的燒錄器上燒錄，極大地提高了開發、生產以及維護效率。</p>
-<p>現代編程方式又可分爲：</p>
-<ul>
-<li>在電路編程 ICP (Circuit)</li>
-<li>在系統編程 ISP (System)</li>
-<li>在應用編程 IAP (Application)</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">編程方式</th>
-<th align="center">在電路編程</th>
-<th align="center">在系統編程</th>
-<th align="center">在應用編程</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">核心思想</td>
-<td align="center">藉助外部燒錄器<br>通過JTAG&#x2F;SWD接口<br>實現在電路編程</td>
-<td align="center">藉助芯片內部<br>固化的引導程序和BOOT引腳<br>以及片上接口<br>實現在系統編程</td>
-<td align="center">藉助用戶自己<br>編寫的引導程序、應用程序<br>以及片上接口、板上接口<br>實現在應用編程</td>
-</tr>
-<tr>
-<td align="center">引導程序</td>
-<td align="center">不需要</td>
-<td align="center">需要芯片廠家編寫<br>並固化到某一地址空間</td>
-<td align="center">需要用戶自己編寫<br>並燒錄至內部flash存儲器</td>
-</tr>
-<tr>
-<td align="center">進入方式</td>
-<td align="center">隨時待命</td>
-<td align="center">需要更改BOOT引腳的電平<br>然後硬件復位<br>進入內部固化的引導程序</td>
-<td align="center">隨時待命</td>
-</tr>
-<tr>
-<td align="center">配套軟件</td>
-<td align="center">燒錄軟件</td>
-<td align="center">芯片廠家提供的<br>上位機ISP編程軟件</td>
-<td align="center">用戶自己開發的數據傳輸軟件</td>
-</tr>
-<tr>
-<td align="center">通信接口</td>
-<td align="center">JTAG&#x2F;SWD</td>
-<td align="center">取決於芯片中固化的引導程序<br>URT&#x2F;SPI&#x2F;IIC&#x2F;CAN&#x2F;USB</td>
-<td align="center">理論上可以支持任意接口<br>URT&#x2F;SPI&#x2F;IIC<br>485&#x2F;CAN&#x2F;USB<br>WiFi&#x2F;BLE&#x2F;IrDA<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
-</tr>
-<tr>
-<td align="center">程序升級<br>是否需要<br>拆裝芯片</td>
-<td align="center">不需要<br>拆裝芯片</td>
-<td align="center">不需要<br>拆裝芯片</td>
-<td align="center">不需要<br>拆裝芯片</td>
-</tr>
-<tr>
-<td align="center">程序升級<br>是否需要<br>拆裝外殼</td>
-<td align="center">需要<br>拆開設備外殼</td>
-<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB</td>
-<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB&#x2F;WiFi&#x2F;BLE&#x2F;IrDA</td>
-</tr>
-<tr>
-<td align="center">程序升級<br>是否需要<br>前往現場</td>
-<td align="center">需要<br>前往設備安裝現場</td>
-<td align="center">需要<br>前往設備安裝現場</td>
-<td align="center">遠程通信功能完備的情況下<br>不需要<br>前往設備安裝現場<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
-</tr>
-</tbody></table>
-<div class="note info no-icon"><p>ICP 主要是在開發階段使用，其燒錄速度是 ISP 和 IAP 所無法比擬的。</p>
-</div>
-
-<div class="note info no-icon"><p>IAP 與 ISP 類似，都有 bootloader 引導程序，因此無需使用燒錄器。二者的區別在於，ISP 的引導程序由芯片廠家編寫，比較簡單，無法實現用戶的定製化需求；而 IAP 的引導程序是由用戶自己實現，可以根據需求自行修改。另外 ISP 進入 boot 程序的方式是通過更改 BOOT 引腳的電平；而 IAP 則是從用戶程序中通過軟件復位或者跳轉的方式直接進入 bootloader 程序，因此相較於 ISP 來說會更加靈活。</p>
-</div>
-
-<div class="note info no-icon"><p>通過 WiFi&#x2F;BLE&#x2F;4G&#x2F;5G&#x2F;NBIoT 等無線通信技術實現 IAP 功能的方案也被稱作 OTA 空中下載技術。</p>
-</div>
-
-<table>
-<thead>
-<tr>
-<th align="center">BOOT1</th>
-<th align="center">BOOT0</th>
-<th align="center">BOOT MODE</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">X</td>
-<td align="center">0</td>
-<td align="center">boot from 0x08000000 : main memory</td>
-</tr>
-<tr>
-<td align="center">0</td>
-<td align="center">1</td>
-<td align="center">boot from 0x1FFF0000 : boot memory</td>
-</tr>
-<tr>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">boot from 0x20000000 : sram memory</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>在線升級</tag>
       </tags>
   </entry>
   <entry>
@@ -2155,64 +2008,143 @@ A(在引導程序中集成通信協議棧與解壓還原算法)~~~B(在應用程
       </tags>
   </entry>
   <entry>
-    <title>嵌入式 IAP 升級功能（#03）流程設計</title>
-    <url>/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html</url>
-    <content><![CDATA[<pre class="mermaid">
-flowchart TB
+    <title>嵌入式 IAP 升級功能（#01）基礎概念</title>
+    <url>/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html</url>
+    <content><![CDATA[<center>傳統編程方式</center>
+
+<pre class="mermaid">
+flowchart LR
 %%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-A1(引導程序之流程)--&gt;B1(......)--&gt;C1(跳轉至應用程序)
-A2(應用程序之流程)--&gt;B2(......)--&gt;C2(跳轉至引導程序)
+A(先取下芯片)---&gt;B(再燒錄程序)---&gt;C(後裝回板卡)
+</pre>
+
+<center>現代編程方式</center>
+
+<pre class="mermaid">
+flowchart LR
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+A(&quot;在電路編程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系統編程&lt;br&gt;(ＩＳＰ)&quot;)---&gt;C(&quot;在應用編程&lt;br&gt;(ＩＡＰ)&quot;)
 </pre>
 
 <span id="more"></span>
 
-<h2 id="引導程序流程"><a href="#引導程序流程" class="headerlink" title="引導程序流程"></a>引導程序流程</h2><p>引導程序的設計方案我知道有兩種：</p>
+<h2 id="傳統編程方式"><a href="#傳統編程方式" class="headerlink" title="傳統編程方式"></a>傳統編程方式</h2><p>傳統編程方式是先將程序燒錄至主控芯片中再焊接到電路板上。</p>
+<p><strong>開發階段</strong></p>
 <ul>
-<li>立即跳轉方案</li>
-<li>延時跳轉方案</li>
+<li>➀ 從電路板上取下芯片</li>
+<li>➁ 使用燒錄器燒寫程序</li>
+<li>➂ 將芯片裝回至電路板</li>
 </ul>
-<p>立即跳轉方案在判斷出應用程序有效之後會立即執行跳轉操作，該方案適用於對啓動時間要求比較高的產品。延時跳轉方案則是先在引導程序中等待一段時間，在這段時間內如果沒有任何請求則時間到了之後會自動跳轉至應用程序，否則將停留在引導程序中。</p>
-<h3 id="立即跳轉方案"><a href="#立即跳轉方案" class="headerlink" title="立即跳轉方案"></a>立即跳轉方案</h3><pre class="mermaid">
-flowchart TB
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-PowerReset(設備上電覆位)--&gt;IapStart(引導程序開始)--&gt;IapCheckApp[檢查應用程序有效標識]--&gt;IapIsAppValid{是否有效}
-IapIsAppValid--是--&gt;IapJumpToApp[跳轉進入應用程序]--&gt;IapOver(引導程序結束)
-IapIsAppValid--否--&gt;IapRemap[重定向中斷向量表]--&gt;IapInit[配置相關外設]--&gt;IapIsHaveUpdateData{是否存在&lt;br&gt;升級數據}
-IapIsHaveUpdateData--否--&gt;IapBeforeJump
-IapIsHaveUpdateData--是--&gt;IapDoUpdate[執行升級操作]---&gt;IapEraseUpdateData[擦除升級數據]--&gt;IapIsUpdateSucc{升級成功}
-IapIsUpdateSucc--是---&gt;IapSetAppValid[修改應用程序有效標識：有效]--&gt;IapBeforeJump[關閉外設和中斷]--&gt;IapJumpToApp
-IapIsUpdateSucc--否--&gt;IapIsAppErased{應用程序已損毀}
-IapIsAppErased--否--&gt;IapBeforeJump
-IapIsAppErased--是&lt;br&gt;留在引導程序中--&gt;IapComm[執行通信任務]--&gt;IapIsRecvDone{收到升級數據}
-IapIsRecvDone--否--&gt;IapComm
-IapIsRecvDone--是--&gt;IapDoUpdate
-</pre>
+<p><strong>量產階段</strong></p>
+<ul>
+<li>➀ 從 tray 盤取出芯片</li>
+<li>➁ 使用燒錄器燒寫程序</li>
+<li>➂ 將芯片放回 tray 盤</li>
+</ul>
+<p><strong>維護階段</strong></p>
+<ul>
+<li>➀ 從電路板上拆下芯片</li>
+<li>➁ 使用燒錄器燒寫程序</li>
+<li>➂ 將芯片焊回至電路板</li>
+</ul>
+<h2 id="現代編程方式"><a href="#現代編程方式" class="headerlink" title="現代編程方式"></a>現代編程方式</h2><p>現代編程方式可以直接進行板上燒錄，不用再取下芯片放到專用的燒錄器上燒錄，極大地提高了開發、生產以及維護效率。</p>
+<p>現代編程方式又可分爲：</p>
+<ul>
+<li>在電路編程 ICP (Circuit)</li>
+<li>在系統編程 ISP (System)</li>
+<li>在應用編程 IAP (Application)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">編程方式</th>
+<th align="center">在電路編程</th>
+<th align="center">在系統編程</th>
+<th align="center">在應用編程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">核心思想</td>
+<td align="center">藉助外部燒錄器<br>通過JTAG&#x2F;SWD接口<br>實現在電路編程</td>
+<td align="center">藉助芯片內部<br>固化的引導程序和BOOT引腳<br>以及片上接口<br>實現在系統編程</td>
+<td align="center">藉助用戶自己<br>編寫的引導程序、應用程序<br>以及片上接口、板上接口<br>實現在應用編程</td>
+</tr>
+<tr>
+<td align="center">引導程序</td>
+<td align="center">不需要</td>
+<td align="center">需要芯片廠家編寫<br>並固化到某一地址空間</td>
+<td align="center">需要用戶自己編寫<br>並燒錄至內部flash存儲器</td>
+</tr>
+<tr>
+<td align="center">進入方式</td>
+<td align="center">隨時待命</td>
+<td align="center">需要更改BOOT引腳的電平<br>然後硬件復位<br>進入內部固化的引導程序</td>
+<td align="center">隨時待命</td>
+</tr>
+<tr>
+<td align="center">配套軟件</td>
+<td align="center">燒錄軟件</td>
+<td align="center">芯片廠家提供的<br>上位機ISP編程軟件</td>
+<td align="center">用戶自己開發的數據傳輸軟件</td>
+</tr>
+<tr>
+<td align="center">通信接口</td>
+<td align="center">JTAG&#x2F;SWD</td>
+<td align="center">取決於芯片中固化的引導程序<br>URT&#x2F;SPI&#x2F;IIC&#x2F;CAN&#x2F;USB</td>
+<td align="center">理論上可以支持任意接口<br>URT&#x2F;SPI&#x2F;IIC<br>485&#x2F;CAN&#x2F;USB<br>WiFi&#x2F;BLE&#x2F;IrDA<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
+</tr>
+<tr>
+<td align="center">程序升級<br>是否需要<br>拆裝芯片</td>
+<td align="center">不需要<br>拆裝芯片</td>
+<td align="center">不需要<br>拆裝芯片</td>
+<td align="center">不需要<br>拆裝芯片</td>
+</tr>
+<tr>
+<td align="center">程序升級<br>是否需要<br>拆裝外殼</td>
+<td align="center">需要<br>拆開設備外殼</td>
+<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB</td>
+<td align="center">通信接口完備的情況下<br>不需要<br>拆開設備外殼<br>485&#x2F;CAN&#x2F;USB&#x2F;WiFi&#x2F;BLE&#x2F;IrDA</td>
+</tr>
+<tr>
+<td align="center">程序升級<br>是否需要<br>前往現場</td>
+<td align="center">需要<br>前往設備安裝現場</td>
+<td align="center">需要<br>前往設備安裝現場</td>
+<td align="center">遠程通信功能完備的情況下<br>不需要<br>前往設備安裝現場<br>PLC&#x2F;ETH&#x2F;4G&#x2F;5G&#x2F;NBIoT</td>
+</tr>
+</tbody></table>
+<div class="note info no-icon"><p>ICP 主要是在開發階段使用，其燒錄速度是 ISP 和 IAP 所無法比擬的。</p>
+</div>
 
-<h3 id="延時跳轉方案"><a href="#延時跳轉方案" class="headerlink" title="延時跳轉方案"></a>延時跳轉方案</h3><pre class="mermaid">
-flowchart TB
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-PowerReset(設備上電覆位)--&gt;IapStart(引導程序開始)--&gt;IapCheckApp[檢查應用程序有效標識]--&gt;IapIsAppValid{是否有效}
-IapIsAppValid--是--&gt;IapWait{計數超時&lt;br&gt;（延時跳轉）}
-IapWait--否--&gt;IapWait
-IapWait--是----------&gt;IapJumpToApp[跳轉進入應用程序]--&gt;IapOver(引導程序結束)
-IapIsAppValid--否--&gt;IapRemap[重定向中斷向量表]--&gt;IapInit[配置相關外設]--&gt;IapIsHaveUpdateData{是否存在&lt;br&gt;升級數據}
-IapIsHaveUpdateData--否--&gt;IapBeforeJump
-IapIsHaveUpdateData--是--&gt;IapDoUpdate[執行升級操作]---&gt;IapEraseUpdateData[擦除升級數據]--&gt;IapIsUpdateSucc{升級成功}
-IapIsUpdateSucc--是---&gt;IapSetAppValid[修改應用程序有效標識：有效]--&gt;IapBeforeJump[關閉外設和中斷]--&gt;IapJumpToApp
-IapIsUpdateSucc--否--&gt;IapIsAppErased{應用程序已損毀}
-IapIsAppErased--否--&gt;IapBeforeJump
-IapIsAppErased--是&lt;br&gt;留在引導程序中--&gt;IapComm[執行通信任務]--&gt;IapIsRecvDone{收到升級數據}
-IapIsRecvDone--否--&gt;IapComm
-IapIsRecvDone--是--&gt;IapDoUpdate
-</pre>
+<div class="note info no-icon"><p>IAP 與 ISP 類似，都有 bootloader 引導程序，因此無需使用燒錄器。二者的區別在於，ISP 的引導程序由芯片廠家編寫，比較簡單，無法實現用戶的定製化需求；而 IAP 的引導程序是由用戶自己實現，可以根據需求自行修改。另外 ISP 進入 boot 程序的方式是通過更改 BOOT 引腳的電平；而 IAP 則是從用戶程序中通過軟件復位或者跳轉的方式直接進入 bootloader 程序，因此相較於 ISP 來說會更加靈活。</p>
+</div>
 
-<h2 id="應用程序流程"><a href="#應用程序流程" class="headerlink" title="應用程序流程"></a>應用程序流程</h2><pre class="mermaid">
-flowchart TB
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-AppStart(應用程序開始)--&gt;AppRemap[重定向中斷向量表]--&gt;AppInit[配置相關外設]--&gt;AppTask[執行應用功能]--&gt;AppComm[執行通信任務]--&gt;AppIsRecvDone{收到升級數據}
-AppIsRecvDone--否--&gt;AppTask
-AppIsRecvDone--是--&gt;AppSetAppInvalid[修改應用程序有效標識：無效]--&gt;AppBeforeJump[關閉外設和中斷]--&gt;AppJumpToIap[重啓進入引導程序｜跳轉進入引導程序]--&gt;AppOver(應用程序結束)
-</pre>
+<div class="note info no-icon"><p>通過 WiFi&#x2F;BLE&#x2F;4G&#x2F;5G&#x2F;NBIoT 等無線通信技術實現 IAP 功能的方案也被稱作 OTA 空中下載技術。</p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="center">BOOT1</th>
+<th align="center">BOOT0</th>
+<th align="center">BOOT MODE</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">X</td>
+<td align="center">0</td>
+<td align="center">boot from 0x08000000 : main memory</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">boot from 0x1FFF0000 : boot memory</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">boot from 0x20000000 : sram memory</td>
+</tr>
+</tbody></table>
 ]]></content>
       <categories>
         <category>開發筆記</category>
@@ -2412,6 +2344,74 @@ IsCRCCheckOK--否--&gt;Over4(結束)
 IsCRCCheckOK--是--&gt;DoChangeUpdateFlag[將外存中的升級標識從0xAABBFFFF改爲0xAABBCCDD]--&gt;IsChangeSucc{修改是否成功}
 IsChangeSucc--否--&gt;Over5(結束)
 IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[將內部flash中的0xAABBCCDD改成0x0000CCDD]--&gt;DoReset[一秒後重啓進入引導程序]--&gt;OverX(結束)
+</pre>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>在線升級</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>嵌入式 IAP 升級功能（#03）流程設計</title>
+    <url>/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html</url>
+    <content><![CDATA[<pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+A1(引導程序之流程)--&gt;B1(......)--&gt;C1(跳轉至應用程序)
+A2(應用程序之流程)--&gt;B2(......)--&gt;C2(跳轉至引導程序)
+</pre>
+
+<span id="more"></span>
+
+<h2 id="引導程序流程"><a href="#引導程序流程" class="headerlink" title="引導程序流程"></a>引導程序流程</h2><p>引導程序的設計方案我知道有兩種：</p>
+<ul>
+<li>立即跳轉方案</li>
+<li>延時跳轉方案</li>
+</ul>
+<p>立即跳轉方案在判斷出應用程序有效之後會立即執行跳轉操作，該方案適用於對啓動時間要求比較高的產品。延時跳轉方案則是先在引導程序中等待一段時間，在這段時間內如果沒有任何請求則時間到了之後會自動跳轉至應用程序，否則將停留在引導程序中。</p>
+<h3 id="立即跳轉方案"><a href="#立即跳轉方案" class="headerlink" title="立即跳轉方案"></a>立即跳轉方案</h3><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+PowerReset(設備上電覆位)--&gt;IapStart(引導程序開始)--&gt;IapCheckApp[檢查應用程序有效標識]--&gt;IapIsAppValid{是否有效}
+IapIsAppValid--是--&gt;IapJumpToApp[跳轉進入應用程序]--&gt;IapOver(引導程序結束)
+IapIsAppValid--否--&gt;IapRemap[重定向中斷向量表]--&gt;IapInit[配置相關外設]--&gt;IapIsHaveUpdateData{是否存在&lt;br&gt;升級數據}
+IapIsHaveUpdateData--否--&gt;IapBeforeJump
+IapIsHaveUpdateData--是--&gt;IapDoUpdate[執行升級操作]---&gt;IapEraseUpdateData[擦除升級數據]--&gt;IapIsUpdateSucc{升級成功}
+IapIsUpdateSucc--是---&gt;IapSetAppValid[修改應用程序有效標識：有效]--&gt;IapBeforeJump[關閉外設和中斷]--&gt;IapJumpToApp
+IapIsUpdateSucc--否--&gt;IapIsAppErased{應用程序已損毀}
+IapIsAppErased--否--&gt;IapBeforeJump
+IapIsAppErased--是&lt;br&gt;留在引導程序中--&gt;IapComm[執行通信任務]--&gt;IapIsRecvDone{收到升級數據}
+IapIsRecvDone--否--&gt;IapComm
+IapIsRecvDone--是--&gt;IapDoUpdate
+</pre>
+
+<h3 id="延時跳轉方案"><a href="#延時跳轉方案" class="headerlink" title="延時跳轉方案"></a>延時跳轉方案</h3><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+PowerReset(設備上電覆位)--&gt;IapStart(引導程序開始)--&gt;IapCheckApp[檢查應用程序有效標識]--&gt;IapIsAppValid{是否有效}
+IapIsAppValid--是--&gt;IapWait{計數超時&lt;br&gt;（延時跳轉）}
+IapWait--否--&gt;IapWait
+IapWait--是----------&gt;IapJumpToApp[跳轉進入應用程序]--&gt;IapOver(引導程序結束)
+IapIsAppValid--否--&gt;IapRemap[重定向中斷向量表]--&gt;IapInit[配置相關外設]--&gt;IapIsHaveUpdateData{是否存在&lt;br&gt;升級數據}
+IapIsHaveUpdateData--否--&gt;IapBeforeJump
+IapIsHaveUpdateData--是--&gt;IapDoUpdate[執行升級操作]---&gt;IapEraseUpdateData[擦除升級數據]--&gt;IapIsUpdateSucc{升級成功}
+IapIsUpdateSucc--是---&gt;IapSetAppValid[修改應用程序有效標識：有效]--&gt;IapBeforeJump[關閉外設和中斷]--&gt;IapJumpToApp
+IapIsUpdateSucc--否--&gt;IapIsAppErased{應用程序已損毀}
+IapIsAppErased--否--&gt;IapBeforeJump
+IapIsAppErased--是&lt;br&gt;留在引導程序中--&gt;IapComm[執行通信任務]--&gt;IapIsRecvDone{收到升級數據}
+IapIsRecvDone--否--&gt;IapComm
+IapIsRecvDone--是--&gt;IapDoUpdate
+</pre>
+
+<h2 id="應用程序流程"><a href="#應用程序流程" class="headerlink" title="應用程序流程"></a>應用程序流程</h2><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+AppStart(應用程序開始)--&gt;AppRemap[重定向中斷向量表]--&gt;AppInit[配置相關外設]--&gt;AppTask[執行應用功能]--&gt;AppComm[執行通信任務]--&gt;AppIsRecvDone{收到升級數據}
+AppIsRecvDone--否--&gt;AppTask
+AppIsRecvDone--是--&gt;AppSetAppInvalid[修改應用程序有效標識：無效]--&gt;AppBeforeJump[關閉外設和中斷]--&gt;AppJumpToIap[重啓進入引導程序｜跳轉進入引導程序]--&gt;AppOver(應用程序結束)
 </pre>
 ]]></content>
       <categories>
