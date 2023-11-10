@@ -85,7 +85,7 @@
 <div class="note info"><p><code>#web</code> <a href="http://127.0.0.1:3000/">http://127.0.0.1:3000</a></p>
 </div>
 
-<div class="note info"><p><code>#ssh</code> <a href="mailto:&#108;&#x6f;&#99;&#97;&#x6c;&#x68;&#x6f;&#x73;&#x74;&#x40;&#x31;&#x32;&#55;&#x2e;&#x30;&#46;&#48;&#x2e;&#49;">&#108;&#x6f;&#99;&#97;&#x6c;&#x68;&#x6f;&#x73;&#x74;&#x40;&#x31;&#x32;&#55;&#x2e;&#x30;&#46;&#48;&#x2e;&#49;</a> 📢 Password:password</p>
+<div class="note info"><p><code>#ssh</code> <a href="mailto:&#x6c;&#x6f;&#x63;&#x61;&#108;&#x68;&#x6f;&#x73;&#116;&#64;&#x31;&#50;&#x37;&#x2e;&#48;&#46;&#x30;&#46;&#49;">&#x6c;&#x6f;&#x63;&#x61;&#108;&#x68;&#x6f;&#x73;&#116;&#64;&#x31;&#50;&#x37;&#x2e;&#48;&#46;&#x30;&#46;&#49;</a> 📢 Password:password</p>
 </div>
 
 <div class="note info"><p><code>#svn</code> <a href="http://svn.sulfurandcu.com/doc">http://svn.sulfurandcu.com/doc</a></p>
@@ -322,6 +322,33 @@ docsify s
       </tags>
   </entry>
   <entry>
+    <title>dƷvorak</title>
+    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
+    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
+<br>
+
+<p style="font-family:courier new">
+　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
+　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
+　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
+　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
+</p>
+
+<span id="more"></span>
+
+<br>
+]]></content>
+      <categories>
+        <category>輸入方案</category>
+      </categories>
+      <tags>
+        <tag>鍵位佈局</tag>
+        <tag>qwerty</tag>
+        <tag>dvorak</tag>
+        <tag>dƷvorak</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DLT645</title>
     <url>/sulfurandcu.io/clnyhr2ml002810rq6pxn7cmn.html</url>
     <content><![CDATA[]]></content>
@@ -349,33 +376,6 @@ docsify s
       </categories>
       <tags>
         <tag>極樂迪斯科</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>dƷvorak</title>
-    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
-    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
-<br>
-
-<p style="font-family:courier new">
-　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
-　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
-　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
-　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
-</p>
-
-<span id="more"></span>
-
-<br>
-]]></content>
-      <categories>
-        <category>輸入方案</category>
-      </categories>
-      <tags>
-        <tag>鍵位佈局</tag>
-        <tag>qwerty</tag>
-        <tag>dvorak</tag>
-        <tag>dƷvorak</tag>
       </tags>
   </entry>
   <entry>
@@ -1039,6 +1039,157 @@ N2---&gt;N2.3[&quot; &quot;]
 ]]></content>
   </entry>
   <entry>
+    <title>集成開發環境－DBG</title>
+    <url>/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html</url>
+    <content><![CDATA[<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
+<span id="more"></span>
+
+<h2 id="專用的調試模塊"><a href="#專用的調試模塊" class="headerlink" title="專用的調試模塊"></a>專用的調試模塊</h2><p>常見的 IDE 內部都集成了一個專用的 GUI 調試器，且不能拎出來單獨使用。</p>
+<ul>
+<li>ADS</li>
+<li>IAR</li>
+<li>MDK</li>
+<li>Visual Studio</li>
+</ul>
+<h2 id="獨立的調試工具"><a href="#獨立的調試工具" class="headerlink" title="獨立的調試工具"></a>獨立的調試工具</h2><p>當然也有一些可以獨立使用的調試器，例如：</p>
+<ul>
+<li>CLI: GDB, LLDB</li>
+<li>GUI: x64dbg, WinDBG, OllyDBG</li>
+</ul>
+<h2 id="通用的調試協議（DebugAdapterProtocol）"><a href="#通用的調試協議（DebugAdapterProtocol）" class="headerlink" title="通用的調試協議（DebugAdapterProtocol）"></a>通用的調試協議（DebugAdapterProtocol）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapterProtocol.png"></p>
+<p>不論是專用的調試模塊還是獨立的調試工具，如果想支持調試多種語言，就必須要爲每一種語言開發一套對應的調試程序，並且每個工具廠商都要獨自去完成這些工作。爲了減少不必要的重複勞動，微軟制定了一套通用的調試協議，藉助該協議各工具廠商只需要開發一套調試程序，向下再借助各種調試適配工具即可具備調試所有語言的能力。</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
+<center><a href="https://microsoft.github.io/debug-adapter-protocol/">Debug Adapter Protocol (DAP)</a></center><br>
+
+<p>目前實現該調試協議的開發工具有（常用的）：</p>
+<ul>
+<li>VSC</li>
+<li>VS</li>
+<li>vim</li>
+<li>emacs</li>
+<li>EclipseIDE</li>
+</ul>
+<p>btw, 微軟還制定了一套通用的語言服務器協議 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/LanguageServerProtocol(LSP).png"></p>
+<center><a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></center>
+
+<h2 id="調試器適配工具（DebugAdapter）"><a href="#調試器適配工具（DebugAdapter）" class="headerlink" title="調試器適配工具（DebugAdapter）"></a>調試器適配工具（DebugAdapter）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapter.png"></p>
+<p>調試適配器是對各類調試器的封裝，遵循 DAP 協議對上提供統一的接口，以簡化上層開發工具。常用的調試適配器有：</p>
+<ul>
+<li><a href="https://github.com/Microsoft/vscode-cpptools">cpptools (C&#x2F;C++ Debug Adapter)</a></li>
+<li><a href="https://github.com/Marus/cortex-debug">cortex-debug (Embedded C&#x2F;C++ Debug Adapter)</a></li>
+</ul>
+<h2 id="調試器軟件本體（Debugger）"><a href="#調試器軟件本體（Debugger）" class="headerlink" title="調試器軟件本體（Debugger）"></a>調試器軟件本體（Debugger）</h2><ul>
+<li><a href="https://sourceware.org/gdb/">GDB: The GNU Project Debugger</a><ul>
+<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/Remote-Protocol.html">↑ GDB&#x2F;MI</a></li>
+<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/GDB_002fMI.html">↓ GDB Remote Serial Protocol</a></li>
+</ul>
+</li>
+<li><a href="https://developer.arm.com/downloads/-/gnu-rm">arm-none-eabi-gdb: GNU Arm Embedded GDB</a></li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Debugger.png"></p>
+<h2 id="調試器服務程序（DebugServer）"><a href="#調試器服務程序（DebugServer）" class="headerlink" title="調試器服務程序（DebugServer）"></a>調試器服務程序（DebugServer）</h2><ul>
+<li>OpenOCD</li>
+<li>PyOCD</li>
+<li>JLinkGDBServer</li>
+<li>……</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugServer.png"></p>
+<h2 id="仿真器驅動程序（DongleDriver）"><a href="#仿真器驅動程序（DongleDriver）" class="headerlink" title="仿真器驅動程序（DongleDriver）"></a>仿真器驅動程序（DongleDriver）</h2><ul>
+<li>SEGGER JLink USB Driver</li>
+<li>SEGGER WinUSB USB Device Driver</li>
+</ul>
+<h2 id="仿真器設備本體（Dongle）"><a href="#仿真器設備本體（Dongle）" class="headerlink" title="仿真器設備本體（Dongle）"></a>仿真器設備本體（Dongle）</h2><ul>
+<li>CMSIS-DAP</li>
+<li>SEGGER JLink</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Dongle.png"></p>
+<h2 id="仿真器傳輸協議（DongleTransportProtocol）"><a href="#仿真器傳輸協議（DongleTransportProtocol）" class="headerlink" title="仿真器傳輸協議（DongleTransportProtocol）"></a>仿真器傳輸協議（DongleTransportProtocol）</h2><ul>
+<li>JTAG <a href="https://www.corelis.com/education/tutorials/jtag-tutorial/">https://www.corelis.com/education/tutorials/jtag-tutorial/</a></li>
+<li>SWD</li>
+</ul>
+<h2 id="目標板目標芯片（TargetBoard）"><a href="#目標板目標芯片（TargetBoard）" class="headerlink" title="目標板目標芯片（TargetBoard）"></a>目標板目標芯片（TargetBoard）</h2><ul>
+<li>STM32F103CB</li>
+<li>STM32F407VE</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Target.png"></p>
+<h2 id="本地與遠程調試"><a href="#本地與遠程調試" class="headerlink" title="本地與遠程調試"></a>本地與遠程調試</h2><p>遠程調試方案也有很多，這裏只對以下幾種方式作一簡要介紹：</p>
+<ul>
+<li>OpenOCD</li>
+<li>VSCode + JLinkGDBServer</li>
+<li>JLink + JLinkRemoteServer</li>
+<li>KeilMDK + JLinkRemoteServer</li>
+</ul>
+<h3 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h3><p>略.</p>
+<h3 id="VSCode-JLinkGDBServer"><a href="#VSCode-JLinkGDBServer" class="headerlink" title="VSCode + JLinkGDBServer"></a>VSCode + JLinkGDBServer</h3><p>1. 在服務主機上配置開啓 JLink 調試服務器（該服務器會監聽 2331 端口）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.0.png"></p>
+<div class="note danger no-icon"><p>不要勾選 Localhost Only 選項！</p>
+</div>
+
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.1.png"></p>
+<p>3. 在本地主機上配置 launch.json 文件並啓動調試</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">    &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">    &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">    &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;&quot;,</span><br><span class="line">    &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://github.com/Marus/cortex-debug/issues/244">cortex-debug-issues#244 : remote debugging</a><br><a href="https://github.com/Marus/cortex-debug/wiki/External-gdb-server-configuration">cortex-debug-wiki : external gdb server configuration</a></p>
+<div class="note info no-icon"><p>點擊啓動調試後 cortex-debug 便會幫助我們通過本地 xGDB 客戶端連接遠程 GDB 服務器。</p>
+</div>
+
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 vscode 中調試的圖片</span><br></pre></td></tr></table></figure>
+
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.3.png"></p>
+<h3 id="JLink-JLinkRemoteServer"><a href="#JLink-JLinkRemoteServer" class="headerlink" title="JLink + JLinkRemoteServer"></a>JLink + JLinkRemoteServer</h3><h4 id="內網連接"><a href="#內網連接" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
+<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.png"></p>
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.1.png"></p>
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
+<h4 id="隧道連接"><a href="#隧道連接" class="headerlink" title="隧道連接"></a>隧道連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器（隧道方式）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.0.png"></p>
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.1.png"></p>
+<p>3. 在本地主機上配置連接 JLink 遠程服務器（隧道方式）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.0.png"></p>
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.1.png"></p>
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.3.png"></p>
+<h3 id="KeilMDK-JLinkRemoteServer"><a href="#KeilMDK-JLinkRemoteServer" class="headerlink" title="KeilMDK + JLinkRemoteServer"></a>KeilMDK + JLinkRemoteServer</h3><h4 id="內網連接-1"><a href="#內網連接-1" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
+<p>2. 等待連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
+<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.Keil.MDK.png"></p>
+<p>4. 建立連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
+<p>5. 遠程調試</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 Keil MDK 中調試的圖片</span><br></pre></td></tr></table></figure>
+
+<p>6. 斷開連接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>集成開發環境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>集成開發環境－合集</title>
     <url>/sulfurandcu.io/clo3okqut006mi0rq9ecvb34e.html</url>
     <content><![CDATA[<hr>
@@ -1195,157 +1346,6 @@ N2---&gt;N2.3[&quot; &quot;]
 <h2 id="參考鏈接"><a href="#參考鏈接" class="headerlink" title="參考鏈接"></a>參考鏈接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方設備支持:HT32F52352 Cortex-M0+</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code開發STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code開發STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code開發STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code開發STM32（四）</a></p>
 <p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作總結記錄</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 開發環境—— 詳細版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 開發stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32開發調試環境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 開發環境（詳細）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32開發調試環境（轉）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32開發環境（極簡自我搭建&amp;懶人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 調試器使用介紹</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>集成開發環境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成開發環境－DBG</title>
-    <url>/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html</url>
-    <content><![CDATA[<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
-<span id="more"></span>
-
-<h2 id="專用的調試模塊"><a href="#專用的調試模塊" class="headerlink" title="專用的調試模塊"></a>專用的調試模塊</h2><p>常見的 IDE 內部都集成了一個專用的 GUI 調試器，且不能拎出來單獨使用。</p>
-<ul>
-<li>ADS</li>
-<li>IAR</li>
-<li>MDK</li>
-<li>Visual Studio</li>
-</ul>
-<h2 id="獨立的調試工具"><a href="#獨立的調試工具" class="headerlink" title="獨立的調試工具"></a>獨立的調試工具</h2><p>當然也有一些可以獨立使用的調試器，例如：</p>
-<ul>
-<li>CLI: GDB, LLDB</li>
-<li>GUI: x64dbg, WinDBG, OllyDBG</li>
-</ul>
-<h2 id="通用的調試協議（DebugAdapterProtocol）"><a href="#通用的調試協議（DebugAdapterProtocol）" class="headerlink" title="通用的調試協議（DebugAdapterProtocol）"></a>通用的調試協議（DebugAdapterProtocol）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapterProtocol.png"></p>
-<p>不論是專用的調試模塊還是獨立的調試工具，如果想支持調試多種語言，就必須要爲每一種語言開發一套對應的調試程序，並且每個工具廠商都要獨自去完成這些工作。爲了減少不必要的重複勞動，微軟制定了一套通用的調試協議，藉助該協議各工具廠商只需要開發一套調試程序，向下再借助各種調試適配工具即可具備調試所有語言的能力。</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
-<center><a href="https://microsoft.github.io/debug-adapter-protocol/">Debug Adapter Protocol (DAP)</a></center><br>
-
-<p>目前實現該調試協議的開發工具有（常用的）：</p>
-<ul>
-<li>VSC</li>
-<li>VS</li>
-<li>vim</li>
-<li>emacs</li>
-<li>EclipseIDE</li>
-</ul>
-<p>btw, 微軟還制定了一套通用的語言服務器協議 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/LanguageServerProtocol(LSP).png"></p>
-<center><a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></center>
-
-<h2 id="調試器適配工具（DebugAdapter）"><a href="#調試器適配工具（DebugAdapter）" class="headerlink" title="調試器適配工具（DebugAdapter）"></a>調試器適配工具（DebugAdapter）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapter.png"></p>
-<p>調試適配器是對各類調試器的封裝，遵循 DAP 協議對上提供統一的接口，以簡化上層開發工具。常用的調試適配器有：</p>
-<ul>
-<li><a href="https://github.com/Microsoft/vscode-cpptools">cpptools (C&#x2F;C++ Debug Adapter)</a></li>
-<li><a href="https://github.com/Marus/cortex-debug">cortex-debug (Embedded C&#x2F;C++ Debug Adapter)</a></li>
-</ul>
-<h2 id="調試器軟件本體（Debugger）"><a href="#調試器軟件本體（Debugger）" class="headerlink" title="調試器軟件本體（Debugger）"></a>調試器軟件本體（Debugger）</h2><ul>
-<li><a href="https://sourceware.org/gdb/">GDB: The GNU Project Debugger</a><ul>
-<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/Remote-Protocol.html">↑ GDB&#x2F;MI</a></li>
-<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/GDB_002fMI.html">↓ GDB Remote Serial Protocol</a></li>
-</ul>
-</li>
-<li><a href="https://developer.arm.com/downloads/-/gnu-rm">arm-none-eabi-gdb: GNU Arm Embedded GDB</a></li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Debugger.png"></p>
-<h2 id="調試器服務程序（DebugServer）"><a href="#調試器服務程序（DebugServer）" class="headerlink" title="調試器服務程序（DebugServer）"></a>調試器服務程序（DebugServer）</h2><ul>
-<li>OpenOCD</li>
-<li>PyOCD</li>
-<li>JLinkGDBServer</li>
-<li>……</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugServer.png"></p>
-<h2 id="仿真器驅動程序（DongleDriver）"><a href="#仿真器驅動程序（DongleDriver）" class="headerlink" title="仿真器驅動程序（DongleDriver）"></a>仿真器驅動程序（DongleDriver）</h2><ul>
-<li>SEGGER JLink USB Driver</li>
-<li>SEGGER WinUSB USB Device Driver</li>
-</ul>
-<h2 id="仿真器設備本體（Dongle）"><a href="#仿真器設備本體（Dongle）" class="headerlink" title="仿真器設備本體（Dongle）"></a>仿真器設備本體（Dongle）</h2><ul>
-<li>CMSIS-DAP</li>
-<li>SEGGER JLink</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Dongle.png"></p>
-<h2 id="仿真器傳輸協議（DongleTransportProtocol）"><a href="#仿真器傳輸協議（DongleTransportProtocol）" class="headerlink" title="仿真器傳輸協議（DongleTransportProtocol）"></a>仿真器傳輸協議（DongleTransportProtocol）</h2><ul>
-<li>JTAG <a href="https://www.corelis.com/education/tutorials/jtag-tutorial/">https://www.corelis.com/education/tutorials/jtag-tutorial/</a></li>
-<li>SWD</li>
-</ul>
-<h2 id="目標板目標芯片（TargetBoard）"><a href="#目標板目標芯片（TargetBoard）" class="headerlink" title="目標板目標芯片（TargetBoard）"></a>目標板目標芯片（TargetBoard）</h2><ul>
-<li>STM32F103CB</li>
-<li>STM32F407VE</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Target.png"></p>
-<h2 id="本地與遠程調試"><a href="#本地與遠程調試" class="headerlink" title="本地與遠程調試"></a>本地與遠程調試</h2><p>遠程調試方案也有很多，這裏只對以下幾種方式作一簡要介紹：</p>
-<ul>
-<li>OpenOCD</li>
-<li>VSCode + JLinkGDBServer</li>
-<li>JLink + JLinkRemoteServer</li>
-<li>KeilMDK + JLinkRemoteServer</li>
-</ul>
-<h3 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h3><p>略.</p>
-<h3 id="VSCode-JLinkGDBServer"><a href="#VSCode-JLinkGDBServer" class="headerlink" title="VSCode + JLinkGDBServer"></a>VSCode + JLinkGDBServer</h3><p>1. 在服務主機上配置開啓 JLink 調試服務器（該服務器會監聽 2331 端口）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.0.png"></p>
-<div class="note danger no-icon"><p>不要勾選 Localhost Only 選項！</p>
-</div>
-
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.1.png"></p>
-<p>3. 在本地主機上配置 launch.json 文件並啓動調試</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">    &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">    &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">    &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;&quot;,</span><br><span class="line">    &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://github.com/Marus/cortex-debug/issues/244">cortex-debug-issues#244 : remote debugging</a><br><a href="https://github.com/Marus/cortex-debug/wiki/External-gdb-server-configuration">cortex-debug-wiki : external gdb server configuration</a></p>
-<div class="note info no-icon"><p>點擊啓動調試後 cortex-debug 便會幫助我們通過本地 xGDB 客戶端連接遠程 GDB 服務器。</p>
-</div>
-
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 vscode 中調試的圖片</span><br></pre></td></tr></table></figure>
-
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.3.png"></p>
-<h3 id="JLink-JLinkRemoteServer"><a href="#JLink-JLinkRemoteServer" class="headerlink" title="JLink + JLinkRemoteServer"></a>JLink + JLinkRemoteServer</h3><h4 id="內網連接"><a href="#內網連接" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
-<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.png"></p>
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.1.png"></p>
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
-<h4 id="隧道連接"><a href="#隧道連接" class="headerlink" title="隧道連接"></a>隧道連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器（隧道方式）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.0.png"></p>
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.1.png"></p>
-<p>3. 在本地主機上配置連接 JLink 遠程服務器（隧道方式）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.0.png"></p>
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.1.png"></p>
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.3.png"></p>
-<h3 id="KeilMDK-JLinkRemoteServer"><a href="#KeilMDK-JLinkRemoteServer" class="headerlink" title="KeilMDK + JLinkRemoteServer"></a>KeilMDK + JLinkRemoteServer</h3><h4 id="內網連接-1"><a href="#內網連接-1" class="headerlink" title="內網連接"></a>內網連接</h4><p>1. 在服務主機上配置開啓 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
-<p>2. 等待連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
-<p>3. 在本地主機上配置連接 JLink 遠程服務器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.Keil.MDK.png"></p>
-<p>4. 建立連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
-<p>5. 遠程調試</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此處省略一張在 Keil MDK 中調試的圖片</span><br></pre></td></tr></table></figure>
-
-<p>6. 斷開連接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
 ]]></content>
       <categories>
         <category>開發筆記</category>
@@ -2008,6 +2008,74 @@ A(在引導程序中集成通信協議棧與解壓還原算法)~~~B(在應用程
       </tags>
   </entry>
   <entry>
+    <title>嵌入式 IAP 升級功能（#03）流程設計</title>
+    <url>/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html</url>
+    <content><![CDATA[<pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+A1(引導程序之流程)--&gt;B1(......)--&gt;C1(跳轉至應用程序)
+A2(應用程序之流程)--&gt;B2(......)--&gt;C2(跳轉至引導程序)
+</pre>
+
+<span id="more"></span>
+
+<h2 id="引導程序流程"><a href="#引導程序流程" class="headerlink" title="引導程序流程"></a>引導程序流程</h2><p>引導程序的設計方案我知道有兩種：</p>
+<ul>
+<li>立即跳轉方案</li>
+<li>延時跳轉方案</li>
+</ul>
+<p>立即跳轉方案在判斷出應用程序有效之後會立即執行跳轉操作，該方案適用於對啓動時間要求比較高的產品。延時跳轉方案則是先在引導程序中等待一段時間，在這段時間內如果沒有任何請求則時間到了之後會自動跳轉至應用程序，否則將停留在引導程序中。</p>
+<h3 id="立即跳轉方案"><a href="#立即跳轉方案" class="headerlink" title="立即跳轉方案"></a>立即跳轉方案</h3><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+PowerReset(設備上電覆位)--&gt;IapStart(引導程序開始)--&gt;IapCheckApp[檢查應用程序有效標識]--&gt;IapIsAppValid{是否有效}
+IapIsAppValid--是--&gt;IapJumpToApp[跳轉進入應用程序]--&gt;IapOver(引導程序結束)
+IapIsAppValid--否--&gt;IapRemap[重定向中斷向量表]--&gt;IapInit[配置相關外設]--&gt;IapIsHaveUpdateData{是否存在&lt;br&gt;升級數據}
+IapIsHaveUpdateData--否--&gt;IapBeforeJump
+IapIsHaveUpdateData--是--&gt;IapDoUpdate[執行升級操作]---&gt;IapEraseUpdateData[擦除升級數據]--&gt;IapIsUpdateSucc{升級成功}
+IapIsUpdateSucc--是---&gt;IapSetAppValid[修改應用程序有效標識：有效]--&gt;IapBeforeJump[關閉外設和中斷]--&gt;IapJumpToApp
+IapIsUpdateSucc--否--&gt;IapIsAppErased{應用程序已損毀}
+IapIsAppErased--否--&gt;IapBeforeJump
+IapIsAppErased--是&lt;br&gt;留在引導程序中--&gt;IapComm[執行通信任務]--&gt;IapIsRecvDone{收到升級數據}
+IapIsRecvDone--否--&gt;IapComm
+IapIsRecvDone--是--&gt;IapDoUpdate
+</pre>
+
+<h3 id="延時跳轉方案"><a href="#延時跳轉方案" class="headerlink" title="延時跳轉方案"></a>延時跳轉方案</h3><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+PowerReset(設備上電覆位)--&gt;IapStart(引導程序開始)--&gt;IapCheckApp[檢查應用程序有效標識]--&gt;IapIsAppValid{是否有效}
+IapIsAppValid--是--&gt;IapWait{計數超時&lt;br&gt;（延時跳轉）}
+IapWait--否--&gt;IapWait
+IapWait--是----------&gt;IapJumpToApp[跳轉進入應用程序]--&gt;IapOver(引導程序結束)
+IapIsAppValid--否--&gt;IapRemap[重定向中斷向量表]--&gt;IapInit[配置相關外設]--&gt;IapIsHaveUpdateData{是否存在&lt;br&gt;升級數據}
+IapIsHaveUpdateData--否--&gt;IapBeforeJump
+IapIsHaveUpdateData--是--&gt;IapDoUpdate[執行升級操作]---&gt;IapEraseUpdateData[擦除升級數據]--&gt;IapIsUpdateSucc{升級成功}
+IapIsUpdateSucc--是---&gt;IapSetAppValid[修改應用程序有效標識：有效]--&gt;IapBeforeJump[關閉外設和中斷]--&gt;IapJumpToApp
+IapIsUpdateSucc--否--&gt;IapIsAppErased{應用程序已損毀}
+IapIsAppErased--否--&gt;IapBeforeJump
+IapIsAppErased--是&lt;br&gt;留在引導程序中--&gt;IapComm[執行通信任務]--&gt;IapIsRecvDone{收到升級數據}
+IapIsRecvDone--否--&gt;IapComm
+IapIsRecvDone--是--&gt;IapDoUpdate
+</pre>
+
+<h2 id="應用程序流程"><a href="#應用程序流程" class="headerlink" title="應用程序流程"></a>應用程序流程</h2><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+AppStart(應用程序開始)--&gt;AppRemap[重定向中斷向量表]--&gt;AppInit[配置相關外設]--&gt;AppTask[執行應用功能]--&gt;AppComm[執行通信任務]--&gt;AppIsRecvDone{收到升級數據}
+AppIsRecvDone--否--&gt;AppTask
+AppIsRecvDone--是--&gt;AppSetAppInvalid[修改應用程序有效標識：無效]--&gt;AppBeforeJump[關閉外設和中斷]--&gt;AppJumpToIap[重啓進入引導程序｜跳轉進入引導程序]--&gt;AppOver(應用程序結束)
+</pre>
+]]></content>
+      <categories>
+        <category>開發筆記</category>
+      </categories>
+      <tags>
+        <tag>嵌入式軟件開發</tag>
+        <tag>在線升級</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>嵌入式 IAP 升級功能（#01）基礎概念</title>
     <url>/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html</url>
     <content><![CDATA[<center>傳統編程方式</center>
@@ -2355,74 +2423,6 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[將內部flash中的0xAAB
       </tags>
   </entry>
   <entry>
-    <title>嵌入式 IAP 升級功能（#03）流程設計</title>
-    <url>/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html</url>
-    <content><![CDATA[<pre class="mermaid">
-flowchart TB
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-A1(引導程序之流程)--&gt;B1(......)--&gt;C1(跳轉至應用程序)
-A2(應用程序之流程)--&gt;B2(......)--&gt;C2(跳轉至引導程序)
-</pre>
-
-<span id="more"></span>
-
-<h2 id="引導程序流程"><a href="#引導程序流程" class="headerlink" title="引導程序流程"></a>引導程序流程</h2><p>引導程序的設計方案我知道有兩種：</p>
-<ul>
-<li>立即跳轉方案</li>
-<li>延時跳轉方案</li>
-</ul>
-<p>立即跳轉方案在判斷出應用程序有效之後會立即執行跳轉操作，該方案適用於對啓動時間要求比較高的產品。延時跳轉方案則是先在引導程序中等待一段時間，在這段時間內如果沒有任何請求則時間到了之後會自動跳轉至應用程序，否則將停留在引導程序中。</p>
-<h3 id="立即跳轉方案"><a href="#立即跳轉方案" class="headerlink" title="立即跳轉方案"></a>立即跳轉方案</h3><pre class="mermaid">
-flowchart TB
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-PowerReset(設備上電覆位)--&gt;IapStart(引導程序開始)--&gt;IapCheckApp[檢查應用程序有效標識]--&gt;IapIsAppValid{是否有效}
-IapIsAppValid--是--&gt;IapJumpToApp[跳轉進入應用程序]--&gt;IapOver(引導程序結束)
-IapIsAppValid--否--&gt;IapRemap[重定向中斷向量表]--&gt;IapInit[配置相關外設]--&gt;IapIsHaveUpdateData{是否存在&lt;br&gt;升級數據}
-IapIsHaveUpdateData--否--&gt;IapBeforeJump
-IapIsHaveUpdateData--是--&gt;IapDoUpdate[執行升級操作]---&gt;IapEraseUpdateData[擦除升級數據]--&gt;IapIsUpdateSucc{升級成功}
-IapIsUpdateSucc--是---&gt;IapSetAppValid[修改應用程序有效標識：有效]--&gt;IapBeforeJump[關閉外設和中斷]--&gt;IapJumpToApp
-IapIsUpdateSucc--否--&gt;IapIsAppErased{應用程序已損毀}
-IapIsAppErased--否--&gt;IapBeforeJump
-IapIsAppErased--是&lt;br&gt;留在引導程序中--&gt;IapComm[執行通信任務]--&gt;IapIsRecvDone{收到升級數據}
-IapIsRecvDone--否--&gt;IapComm
-IapIsRecvDone--是--&gt;IapDoUpdate
-</pre>
-
-<h3 id="延時跳轉方案"><a href="#延時跳轉方案" class="headerlink" title="延時跳轉方案"></a>延時跳轉方案</h3><pre class="mermaid">
-flowchart TB
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-PowerReset(設備上電覆位)--&gt;IapStart(引導程序開始)--&gt;IapCheckApp[檢查應用程序有效標識]--&gt;IapIsAppValid{是否有效}
-IapIsAppValid--是--&gt;IapWait{計數超時&lt;br&gt;（延時跳轉）}
-IapWait--否--&gt;IapWait
-IapWait--是----------&gt;IapJumpToApp[跳轉進入應用程序]--&gt;IapOver(引導程序結束)
-IapIsAppValid--否--&gt;IapRemap[重定向中斷向量表]--&gt;IapInit[配置相關外設]--&gt;IapIsHaveUpdateData{是否存在&lt;br&gt;升級數據}
-IapIsHaveUpdateData--否--&gt;IapBeforeJump
-IapIsHaveUpdateData--是--&gt;IapDoUpdate[執行升級操作]---&gt;IapEraseUpdateData[擦除升級數據]--&gt;IapIsUpdateSucc{升級成功}
-IapIsUpdateSucc--是---&gt;IapSetAppValid[修改應用程序有效標識：有效]--&gt;IapBeforeJump[關閉外設和中斷]--&gt;IapJumpToApp
-IapIsUpdateSucc--否--&gt;IapIsAppErased{應用程序已損毀}
-IapIsAppErased--否--&gt;IapBeforeJump
-IapIsAppErased--是&lt;br&gt;留在引導程序中--&gt;IapComm[執行通信任務]--&gt;IapIsRecvDone{收到升級數據}
-IapIsRecvDone--否--&gt;IapComm
-IapIsRecvDone--是--&gt;IapDoUpdate
-</pre>
-
-<h2 id="應用程序流程"><a href="#應用程序流程" class="headerlink" title="應用程序流程"></a>應用程序流程</h2><pre class="mermaid">
-flowchart TB
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-AppStart(應用程序開始)--&gt;AppRemap[重定向中斷向量表]--&gt;AppInit[配置相關外設]--&gt;AppTask[執行應用功能]--&gt;AppComm[執行通信任務]--&gt;AppIsRecvDone{收到升級數據}
-AppIsRecvDone--否--&gt;AppTask
-AppIsRecvDone--是--&gt;AppSetAppInvalid[修改應用程序有效標識：無效]--&gt;AppBeforeJump[關閉外設和中斷]--&gt;AppJumpToIap[重啓進入引導程序｜跳轉進入引導程序]--&gt;AppOver(應用程序結束)
-</pre>
-]]></content>
-      <categories>
-        <category>開發筆記</category>
-      </categories>
-      <tags>
-        <tag>嵌入式軟件開發</tag>
-        <tag>在線升級</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>嵌入式 IAP 升級功能（#06）差分還原 haptchlite 移植</title>
     <url>/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html</url>
     <content><![CDATA[<p>最近發現了一個優秀的差分還原算法：hdiff &amp; hpatch，它通過數據流的思想把 O(n) 的空間複雜度轉嫁給了硬盤，使得內存的開銷極低，非常適合應用於嵌入式領域。</p>
@@ -2523,6 +2523,294 @@ AppIsRecvDone--是--&gt;AppSetAppInvalid[修改應用程序有效標識：無效
       </tags>
   </entry>
   <entry>
+    <title>問題記錄：華大 HC32F460 避坑指南之 ICG 寄存器</title>
+    <url>/sulfurandcu.io/cloqzaza3003fmgrqdpkl8c5j.html</url>
+    <content><![CDATA[<p>在《參考手冊》第六章〈初始化配置〉中，八個初始化配置寄存器的復位值是不定的，華大對此的處理方式很巧妙（但是也給移植埋下了一個大坑）：</p>
+<figure class="highlight c"><figcaption><span>hc32f460_icg.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">/*!&lt; ICG0 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG0_REGISTER_CONSTANT                  (((uint32_t)ICG0_WDT_REG_CONFIG &lt;&lt; 16)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG0_SWDT_REG_CONFIG)       | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0xE000E000ul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG1 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG1_REGISTER_CONSTANT                  (((uint32_t)ICG1_NMI_REG_CONFIG &lt;&lt; 24)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_VDU0_REG_CONFIG &lt;&lt; 16) | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_HRC_REG_CONFIG)        | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0x03F8FEFEul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG2~7 register reserved value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG2_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG3_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG4_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG5_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG6_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG7_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><figcaption><span>hc32f460_icg.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">if</span> defined ( __GNUC__ ) &amp;&amp; !defined (__CC_ARM) <span class="comment">/* GNU Compiler */</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((section(<span class="string">&quot;.icg_sec&quot;</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__CC_ARM)</span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((at(<span class="number">0x400</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__ICCARM__)</span></span><br><span class="line">__root <span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] @ <span class="number">0x400</span> =</span><br><span class="line"><span class="meta">#<span class="keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">error</span> <span class="string">&quot;unsupported compiler!!&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">/* ICG 0~ 3 */</span></span><br><span class="line">    ICG0_REGISTER_CONSTANT,</span><br><span class="line">    ICG1_REGISTER_CONSTANT,</span><br><span class="line">    ICG2_REGISTER_CONSTANT,</span><br><span class="line">    ICG3_REGISTER_CONSTANT,</span><br><span class="line">    <span class="comment">/* ICG 4~ 7 */</span></span><br><span class="line">    ICG4_REGISTER_CONSTANT,</span><br><span class="line">    ICG5_REGISTER_CONSTANT,</span><br><span class="line">    ICG6_REGISTER_CONSTANT,</span><br><span class="line">    ICG7_REGISTER_CONSTANT,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>通過定義常量的方式，在程序加載階段，將數據 load 至指定的寄存器。</p>
+<h2 id="避坑指北"><a href="#避坑指北" class="headerlink" title="避坑指北"></a>避坑指北</h2><p>如果項目由 bootloader 和 app 兩部分組成，那麼只能在 bootloader 中添加上述源文件，在 app 中不能添加該文件，否則會出現異常。</p>
+]]></content>
+      <categories>
+        <category>問題記錄</category>
+      </categories>
+      <tags>
+        <tag>華大半導體</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>問題記錄：華大 HC32L19x 時鐘初始化函數存在缺陷</title>
+    <url>/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html</url>
+    <content><![CDATA[<p>hc32l19x_reference_manaul</p>
+<p><img src="/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp/clock-tree.png"></p>
+<span id="more"></span>
+
+<p>hc32l19x_ddl_rev1.0.3</p>
+<figure class="highlight c"><figcaption><span>sysctrl.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="type">en_result_t</span> <span class="title function_">Sysctrl_SysClkSwitch</span><span class="params">(<span class="type">en_sysctrl_clk_source_t</span> enSource)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">en_result_t</span> enRet = Ok;</span><br><span class="line"></span><br><span class="line">    <span class="type">en_sysctrl_clk_source_t</span> ClkNew = enSource;</span><br><span class="line"></span><br><span class="line">    _SysctrlUnlock();</span><br><span class="line">    M0P_SYSCTRL-&gt;SYSCTRL0_f.CLKSW = ClkNew;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//更新Core時鐘（HCLK）</span></span><br><span class="line">    SystemCoreClockUpdate();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> enRet;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">en_result_t</span> <span class="title function_">Sysctrl_ClkInit</span><span class="params">(<span class="type">stc_sysctrl_clk_cfg_t</span> *pstcCfg)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">en_result_t</span> enRet = Ok;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//系統時鐘參數配置</span></span><br><span class="line">    <span class="keyword">switch</span>(pstcCfg-&gt;enClkSrc)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkRCH:</span><br><span class="line"></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkXTH:</span><br><span class="line">            Sysctrl_XTHDriverCfg(SysctrlXtalDriver3);</span><br><span class="line">            Sysctrl_SetXTHStableTime(SysctrlXthStableCycle16384);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkRCL:</span><br><span class="line">            Sysctrl_SetRCLStableTime(SysctrlRclStableCycle256);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkXTL:</span><br><span class="line">            Sysctrl_XTLDriverCfg(SysctrlXtlAmp3, SysctrlXtalDriver3);</span><br><span class="line">            Sysctrl_SetXTLStableTime(SysctrlXtlStableCycle16384);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkPLL:</span><br><span class="line">            Sysctrl_SetPLLStableTime(SysctrlPllStableCycle16384);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            enRet = ErrorInvalidParameter;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//時鐘源使能</span></span><br><span class="line">    Sysctrl_ClkSourceEnable(pstcCfg-&gt;enClkSrc, TRUE);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//時鐘源切換</span></span><br><span class="line">    Sysctrl_SysClkSwitch(pstcCfg-&gt;enClkSrc);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//時鐘分頻設置</span></span><br><span class="line">    Sysctrl_SetHCLKDiv(pstcCfg-&gt;enHClkDiv);</span><br><span class="line">    Sysctrl_SetPCLKDiv(pstcCfg-&gt;enPClkDiv);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> enRet;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Sysctrl_SysClkSwitch() 調用了 SystemCoreClockUpdate() 來更新 SystemCoreClock。這沒問題，問題是在這之後又去設置了 HCLK 的值，這就會導致 SystemCoreClock 與實際的 HCLK 不一致。</p>
+<p>通過修改驅動庫，將「時鐘源切換」和「時鐘分頻設置」的執行順序對調即可解決該問題，若不想直接修改驅動庫，可以在調用 Sysctrl_ClkInit() 之後再調用一遍 SystemCoreClockUpdate()。</p>
+]]></content>
+      <categories>
+        <category>問題記錄</category>
+      </categories>
+      <tags>
+        <tag>華大半導體</tag>
+        <tag>HC32L19X</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>開發指南：華大 HC32F460 圖解復用引腳</title>
+    <url>/sulfurandcu.io/cloqsamml003og4rq88xkh2ls.html</url>
+    <content><![CDATA[<h2 id="HC32F460-LQFP64"><a href="#HC32F460-LQFP64" class="headerlink" title="HC32F460-LQFP64"></a>HC32F460-LQFP64</h2><br>
+
+<p><img src="/sulfurandcu.io/cloqsamml003og4rq88xkh2ls/HC32F460.png"></p>
+<center>
+功能分組
+</center><br><br>
+
+<span id="more"></span>
+
+<p><img src="/sulfurandcu.io/cloqsamml003og4rq88xkh2ls/HC32F460-ADC.png"></p>
+<center>
+模數轉換
+</center><br><br>
+
+<p><img src="/sulfurandcu.io/cloqsamml003og4rq88xkh2ls/HC32F460-CMP.png"></p>
+<center>
+電壓比較
+</center><br><br>
+
+<p><img src="/sulfurandcu.io/cloqsamml003og4rq88xkh2ls/HC32F460-PWM.png"></p>
+<center>
+脈寬調製
+</center><br><br>
+]]></content>
+      <categories>
+        <category>開發指南</category>
+      </categories>
+      <tags>
+        <tag>華大半導體</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>問題記錄：華大 HC32F460 程序燒錄異常</title>
+    <url>/sulfurandcu.io/cloqyh9rx0027mgrq1e9f3vv2.html</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">JLink info:</span><br><span class="line">------------</span><br><span class="line">DLL: V7.50 , compiled Jul  1 2021 17:37:28</span><br><span class="line">Firmware: J-Link V9 compiled May  7 2021 16:26:12</span><br><span class="line">Hardware: V9.60</span><br><span class="line">S/N : 69667985</span><br><span class="line">Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash</span><br><span class="line"></span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots</span><br><span class="line">* JLink Info: CoreSight components:</span><br><span class="line">* JLink Info: ROMTbl[0] @ E00FF000</span><br><span class="line">* JLink Info: ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7</span><br><span class="line">* JLink Info: ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT</span><br><span class="line">* JLink Info: ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB</span><br><span class="line">* JLink Info: ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM</span><br><span class="line">* JLink Info: ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BB9A1 TPIU</span><br><span class="line">ROMTableAddr = 0xE00FF000</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via AIRCR.SYSRESETREQ.</span><br><span class="line">* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</span><br><span class="line">* JLink Info: Reset: Using fallback: Reset pin.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Core did not halt after reset, trying to disable WDT.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Failed. Toggling reset pin and trying reset strategy again.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via AIRCR.SYSRESETREQ.</span><br><span class="line">* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</span><br><span class="line">* JLink Info: Reset: Using fallback: Reset pin.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Core did not halt after reset, trying to disable WDT.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">***JLink Error: Failed to halt CPU.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">Error: Flash Download failed  -  Target DLL has been cancelled</span><br><span class="line">Flash Load finished at 09:01:53</span><br></pre></td></tr></table></figure>
+
+<p>* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</p>
+<p>很可能是外部復位電路失效，導致復位引腳被拉低，進而導致內核一直處於復位狀態。</p>
+]]></content>
+      <categories>
+        <category>問題記錄</category>
+      </categories>
+      <tags>
+        <tag>華大半導體</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>問題記錄：華大 HC32F460 超頻過猛導致 MCU 宕機</title>
+    <url>/sulfurandcu.io/cloqxdq0v001nmgrq2um386nw.html</url>
+    <content><![CDATA[<p>最近又把 MCU 給幹廢了，現象如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Load &quot;main.axf&quot;</span><br><span class="line">* JLink Info: Device &quot;CORTEX-M4&quot; selected.</span><br><span class="line">Set JLink Project File to &quot;JLinkSettings.ini&quot;</span><br><span class="line">* JLink Info: Device &quot;CORTEX-M4&quot; selected.</span><br><span class="line"></span><br><span class="line">JLink info:</span><br><span class="line">------------</span><br><span class="line">DLL: V7.22b, compiled Jun 17 2021 17:22:49</span><br><span class="line">Firmware: J-Link V9 compiled May  7 2021 16:26:12</span><br><span class="line">Hardware: V9.60</span><br><span class="line">S/N : 69667602</span><br><span class="line">Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash</span><br><span class="line"></span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Skipped. Invalid implementer code read from CPUIDVal[31:24] = 0x00</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Skipped. Invalid implementer code read from CPUIDVal[31:24] = 0x00</span><br><span class="line"></span><br><span class="line">***JLink Error: Could not find core in Coresight setup</span><br><span class="line"></span><br><span class="line">Error: Flash Download failed  -  Target DLL has been cancelled</span><br><span class="line">Flash Load finished at 10:35:22</span><br></pre></td></tr></table></figure>
+
+<p>事情經過是這樣的，某款產品第一版硬件的時鐘源選用的是 6MHz 的外部晶振，內部倍頻至 128MHz 作爲系統主頻，而第二版則改成了 24MHz 的外部晶振，第二版硬件出來後，將第一版程序直接燒錄進第二版硬件後 MCU 無法正常啓動且無法被識別。</p>
+<p>初步推測，應該是外部晶振頻率提高，但是程序沒有進行適當地分頻，導致系統主頻遠遠超過數據手冊中規定的頻率上限（200MHz）。</p>
+<!--
+公式使用工具 https://latexlive.com/ 生成
+\begin{align}
+& 128MHz × (24MHz / 6MHz) = 512MHz \ \ \ > \ \ \ MAX(200MHz) \\
+\end{align}
+-->
+</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable displaystyle="true" columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt"><mtr><mtd></mtd><mtd><mn>128</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo>×</mo><mo stretchy="false">(</mo><mn>24</mn><mi>M</mi><mi>H</mi><mi>z</mi><mrow><mo>/</mo></mrow><mn>6</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><mn>512</mn><mi>M</mi><mi>H</mi><mi>z</mi><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mo>&gt;</mo><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mi>M</mi><mi>A</mi><mi>X</mi><mo stretchy="false">(</mo><mn>200</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo stretchy="false">)</mo></mtd></mtr></mtable></math>
+<br>
+
+<p>後面通過調試，證實程序的確是在 <code>M4_SYSREG-&gt;CMU_CKSWR_f.CKSW = enTargetSysSrc;</code> 處出現異常。</p>
+<p>上述操作其實就是「超頻」，只是超得有點猛，導致芯片直接宕機。這種情況藉助華大的離線下載器重新燒錄程序即可恢復正常。</p>
+]]></content>
+      <categories>
+        <category>問題記錄</category>
+      </categories>
+      <tags>
+        <tag>華大半導體</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>問題記錄：華大 HC32F460 程序燒錄異常</title>
+    <url>/sulfurandcu.io/cloqsamml003qg4rqax6x02nz.html</url>
+    <content><![CDATA[<p>最近給 HC32F460 燒程序時，出現了燒錄失敗的現象。</p>
+<p>操作流程：</p>
+<ul>
+<li>在引導程序的 icg.h 文件中配置開啓 SWDT 看門狗</li>
+<li>燒錄引導程序</li>
+<li>燒錄應用程序</li>
+<li>讀取整個芯片的鏡像</li>
+<li>把讀取出來的鏡像再燒回去</li>
+</ul>
+<p>詭異的是，最後一步總是失敗。</p>
+<p>後面又進行了詳細的測試：</p>
+<table>
+<thead>
+<tr>
+<th align="center">測試記錄</th>
+<th align="center">編程算法</th>
+<th align="center">SWDT</th>
+<th align="center">燒錄結果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">舊版</td>
+<td align="center">關閉<br>或者延長狗叫時間</td>
+<td align="center">燒錄成功</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">舊版</td>
+<td align="center">開啓</td>
+<td align="center">在燒錄回去之前，做一次整片擦除，但是不斷電：燒錄失敗<br>在燒錄回去之前，做一次整片擦除，斷電再上電：燒錄成功</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">新版</td>
+<td align="center">X</td>
+<td align="center">均可燒錄成功</td>
+</tr>
+</tbody></table>
+<p>猜測應該是編程算法在燒錄過程中沒有屏蔽 SWDT 所致，更換新版編程算法即可解決。</p>
+]]></content>
+      <categories>
+        <category>問題記錄</category>
+      </categories>
+      <tags>
+        <tag>華大半導體</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>開發指南：華大 HC32F460 時鐘控制單元</title>
+    <url>/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup.html</url>
+    <content><![CDATA[<h2 id="clock"><a href="#clock" class="headerlink" title="clock"></a>clock</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-tree-sketch.png"></p>
+<span id="more"></span>
+
+<p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-tree-manual.png"></p>
+<p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-work.png"></p>
+<p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-work-manual.png"></p>
+<p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-work-note.png"></p>
+<h2 id="pll"><a href="#pll" class="headerlink" title="pll"></a>pll</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/pll.png"></p>
+<h2 id="systick"><a href="#systick" class="headerlink" title="systick"></a>systick</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/systick.png"></p>
+<p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/systick-manual.jpg"></p>
+<center>《ARM ® CortexM4 Devices Generic User Guide》</center><br>
+
+<p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/systick-register.png"></p>
+<center>hc32f460's systick control and status register</center><br>
+
+<div class="note danger no-icon"><p>華大 HC32F460 的 systick 嘀嗒定時器使用內核時鐘（HCLK）</p>
+</div>
+
+<figure class="highlight c"><figcaption><span>HC32F460.h</span></figcaption><table><tr><td class="code"><pre><span class="line">********************************************************************************</span><br><span class="line">* @file  HC32F460.h</span><br><span class="line">* @brief Headerfile <span class="keyword">for</span> HC32F460 series MCU</span><br><span class="line">********************************************************************************</span><br><span class="line"></span><br><span class="line">********************************************************************************</span><br><span class="line">Configuration of the Cortex-M4 Processor and Core Peripherals</span><br><span class="line">********************************************************************************</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __CM4_REV                 1     <span class="comment">// !&lt; Core revision r0p1</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __FPU_PRESENT             1     <span class="comment">// !&lt; FPU present</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __MPU_PRESENT             1     <span class="comment">// !&lt; HC32F460 provides an MPU</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __NVIC_PRIO_BITS          4     <span class="comment">// !&lt; HC32F460 uses 4 Bits for the Priority Levels</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __Vendor_SysTickConfig    0     <span class="comment">// !&lt; Set to 1 if different SysTick Config is used</span></span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><figcaption><span>core_cm4.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">if</span> defined (__Vendor_SysTickConfig) &amp;&amp; (__Vendor_SysTickConfig == 0U)</span></span><br><span class="line"><span class="type">uint32_t</span> <span class="title function_">SysTick_Config</span><span class="params">(<span class="type">uint32_t</span> ticks)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+
+<div class="note danger no-icon"><p>華大 HC32F460 的 systick 嘀嗒定時器使用 cmsis(core_cm4.h) 中默認的配置函數</p>
+</div>
+
+<h2 id="外設時鐘源（URT）"><a href="#外設時鐘源（URT）" class="headerlink" title="外設時鐘源（URT）"></a>外設時鐘源（URT）</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK1-URT.png"></p>
+<center>÷2 表示開啓過採樣功能</center>
+
+<p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK1-URT-example.png"></p>
+<p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK1-URT-baudrate-manual.jpg"></p>
+<!--
+公式使用工具 https://latexlive.com/ 生成
+\begin{align}
+& Baudrate = \frac{串口頻率}{08\ \times\ (1\ +整數分頻寄存器)} \ \ \ \ (關閉過採樣) \\
+& Baudrate = \frac{串口頻率}{16\ \times\ (1\ +整數分頻寄存器)} \ \ \ \ (開啓過採樣) \\
+\end{align}
+-->
+</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt" displaystyle="true"><mtr><mtd></mtd><mtd><mi>B</mi><mi>a</mi><mi>u</mi><mi>d</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>e</mi><mo>=</mo><mfrac><mrow><mo>串口頻率</mo></mrow><mrow><mn>08</mn><mtext>&nbsp;</mtext><mo>×</mo><mtext>&nbsp;</mtext><mo stretchy="false">(</mo><mn>1</mn><mtext>&nbsp;</mtext><mo>+</mo><mo>整數分頻寄存器</mo><mo stretchy="false">)</mo></mrow></mfrac><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mo stretchy="false">(</mo><mo>關閉過採樣</mo><mo stretchy="false">)</mo></mtd></mtr></mtable></math>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt" displaystyle="true"><mtr><mtd></mtd><mtd><mi>B</mi><mi>a</mi><mi>u</mi><mi>d</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>e</mi><mo>=</mo><mfrac><mrow><mo>串口頻率</mo></mrow><mrow><mn>16</mn><mtext>&nbsp;</mtext><mo>×</mo><mtext>&nbsp;</mtext><mo stretchy="false">(</mo><mn>1</mn><mtext>&nbsp;</mtext><mo>+</mo><mo>整數分頻寄存器</mo><mo stretchy="false">)</mo></mrow></mfrac><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mo stretchy="false">(</mo><mo>開啓過採樣</mo><mo stretchy="false">)</mo></mtd></mtr></mtable></math>
+<br>
+
+<div class="note info no-icon"><p>公式中整數分頻寄存器的取值範圍爲 0x00 ~ 0xFF（USART_BRR[b15~b08]）</p>
+</div>
+
+<h2 id="外設時鐘源（SPI）"><a href="#外設時鐘源（SPI）" class="headerlink" title="外設時鐘源（SPI）"></a>外設時鐘源（SPI）</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK1-SPI.png"></p>
+<h2 id="外設時鐘源（I2C）"><a href="#外設時鐘源（I2C）" class="headerlink" title="外設時鐘源（I2C）"></a>外設時鐘源（I2C）</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK3-I2C.png"></p>
+<h2 id="外設時鐘源（CMP）"><a href="#外設時鐘源（CMP）" class="headerlink" title="外設時鐘源（CMP）"></a>外設時鐘源（CMP）</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK3-CMP.png"></p>
+<div class="note danger no-icon"><p>比較濾波器的採樣頻率越低→濾波效果越好！</p>
+</div>
+]]></content>
+      <categories>
+        <category>開發指南</category>
+      </categories>
+      <tags>
+        <tag>華大半導體</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>問題記錄：華大 HC32F460 切換運行模式導致宕機</title>
+    <url>/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4.html</url>
+    <content><![CDATA[<h2 id="現象描述"><a href="#現象描述" class="headerlink" title="現象描述"></a>現象描述</h2><ul>
+<li>從高速&#x2F;超高速模式向超低速模式切換時 mcu 異常死機</li>
+</ul>
+<h2 id="基礎信息"><a href="#基礎信息" class="headerlink" title="基礎信息"></a>基礎信息</h2><ul>
+<li>當前使用華大 2.2.0 版驅動程序</li>
+<li>當前使用華大 1.2.1 版參考手冊</li>
+</ul>
+<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>通過調試發現每次運行至 <code>M4_SYSREG-&gt;PWR_PWRC2</code> 賦值時程序就會跑飛😶</p>
+<p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2-Register.png" alt="電源模式控制寄存器 2"></p>
+<figure class="highlight c"><figcaption><span>hc32f460_pwc.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HS2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xE1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HP2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xD1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>瞅了一眼《參考手冊 Rev1.2.1》好像也沒啥問題，又看了《參考手冊 Rev1.3》後，我得發…🙄！</p>
+<p>兩版手冊竟然不一樣！</p>
+<span id="more"></span>
+
+<h3 id="Rev1-2-1"><a href="#Rev1-2-1" class="headerlink" title="Rev1.2.1"></a>Rev1.2.1</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2.png" alt="運行模式的切換流程（Rev1.2）"></p>
+<h3 id="Rev1-3-0"><a href="#Rev1-3-0" class="headerlink" title="Rev1.3.0"></a>Rev1.3.0</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.3.png" alt="運行模式的切換流程（Rev1.3）"></p>
+<p>這妥妥的是華大的鍋了…</p>
+]]></content>
+      <categories>
+        <category>問題記錄</category>
+      </categories>
+      <tags>
+        <tag>華大半導體</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>問題記錄：華大 HC32F460 濾波電路失效</title>
+    <url>/sulfurandcu.io/clorxokmu004nmgrq9tl4hiss.html</url>
+    <content><![CDATA[<p>最近在使用電壓比較器時發現硬件濾波電路會出現失效的情況，經分析是其採樣頻率過高所致。</p>
+<p><img src="/sulfurandcu.io/clorxokmu004nmgrq9tl4hiss/manual.png"></p>
+<p>參考手冊中繪製的是理想條件下的波形，真實情況並非如此，INP 在逼近 INM 時會伴隨着噪聲&#x2F;抖動。我們可以使用硬件濾波電路來消除這種抖動，圖中綠色線段表示各採樣點，其頻率即爲採樣頻率。</p>
+<iframe src="https://www.desmos.com/calculator/7r0bi5urxv?embed" width="800" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<p>採樣頻率較低時，濾波電路可以正常工作，但是隨着採樣頻率的升高，其可靠性反而會降低。</p>
+<span id="more"></span>
+
+<iframe src="https://www.desmos.com/calculator/2kz1rewo6h?embed" width="800" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<iframe src="https://www.desmos.com/calculator/2py3qizn5x?embed" width="800" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+]]></content>
+      <categories>
+        <category>問題記錄</category>
+      </categories>
+      <tags>
+        <tag>華大半導體</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>問題記錄：華大 HC32F460 內存邊界禁止非對齊訪問</title>
     <url>/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1.html</url>
     <content><![CDATA[<h2 id="現象描述"><a href="#現象描述" class="headerlink" title="現象描述"></a>現象描述</h2><ul>
@@ -2542,12 +2830,12 @@ AppIsRecvDone--是--&gt;AppSetAppInvalid[修改應用程序有效標識：無效
 
 <h3 id="分散加載"><a href="#分散加載" class="headerlink" title="分散加載"></a>分散加載</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LR_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line"></span><br><span class="line">	; 中斷向量</span><br><span class="line">	ER_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line">		*.o (RESET, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序信息</span><br><span class="line">	ER_IROM2 + 0 &#123;</span><br><span class="line">		*.o (SECTION_INFO_APP, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序代碼</span><br><span class="line">	ER_IROM3 + 0 &#123;</span><br><span class="line">		*(InRoot$$Sections)</span><br><span class="line">		.ANY (+RO)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 內存空間</span><br><span class="line">	RW_IRAM1 0x1FFF8000 0x00030000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>由於代碼量比較臨界，起初我以爲是 flash 的問題。但是 map 文件中顯示 ROM 只佔用了 411.19kB 的空間，並沒有超過 416KB 的總量。那 RAM 呢？RAM 只用了 160.11KB 也沒有超過 192KB 的總量，邪了門兒了真是！哎，等等！這款芯片的 RAM 我記得好像是分成了兩塊，怎麼說的來着，瞅一眼《用戶手冊》：</p>
+<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>由於代碼量比較臨界，起初我以爲是 flash 的問題。但是 map 文件中顯示 ROM 只佔用了 411.19kB 的空間，並沒有超過 416KB 的總量。那 RAM 呢？RAM 只用了 160.11KB 也沒有超過 192KB 的總量，邪了門兒了真是！哎，等等！這款芯片的 RAM 我記得好像是分成了兩塊，怎麼說的來着，瞅一眼《參考手冊》：</p>
 <p><img src="/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1/HC32F460_manual.png"></p>
 <p>果然，兩塊 RAM 間不支持非對齊訪問，再一看 SRAMH 的大小：32KB！破案了！現在 RAM 的用量不正好到達 160KB（192KB - 32KB &#x3D; 160KB）這個臨界點了麼！</p>
 <p>按照現有分散加載文件的寫法，兩塊內存會被認爲是一個整體，那麼就必然存在「在內存邊界處進行非對齊訪問」的可能。而且這種非法訪問最早會發生在 scatterload 階段，進而導致程序無法啓動。</p>
-<h2 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h2><p>既然是分散加載文件的鍋，那就得拿它開刀了：<strong>將兩塊內存分開對待</strong>。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LR_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line"></span><br><span class="line">	; 中斷向量</span><br><span class="line">	ER_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line">		*.o (RESET, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序信息</span><br><span class="line">	ER_IROM2 + 0 &#123;</span><br><span class="line">		*.o (SECTION_INFO_APP, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序代碼</span><br><span class="line">	ER_IROM3 + 0 &#123;</span><br><span class="line">		*(InRoot$$Sections)</span><br><span class="line">		.ANY (+RO)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 內存空間</span><br><span class="line">	RW_IRAM1 0x1FFF8000 0x00008000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 內存空間</span><br><span class="line">	RW_IRAM2 0x20000000 0x00028000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h2><p>既然是分散加載文件的鍋，那就得拿它開刀了：<strong>將兩塊內存断开</strong>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LR_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line"></span><br><span class="line">	; 中斷向量</span><br><span class="line">	ER_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line">		*.o (RESET, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序信息</span><br><span class="line">	ER_IROM2 + 0 &#123;</span><br><span class="line">		*.o (SECTION_INFO_APP, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序代碼</span><br><span class="line">	ER_IROM3 + 0 &#123;</span><br><span class="line">		*(InRoot$$Sections)</span><br><span class="line">		.ANY (+RO)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 內存空間</span><br><span class="line">	RW_IRAM1 0x1FFF8000 0x00007FF0 &#123; ; 空出一塊內存不用，以避免在 scatterload 階段發生非對齊訪問。</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 內存空間</span><br><span class="line">	RW_IRAM2 0x20000000 0x00028000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>問題記錄</category>
