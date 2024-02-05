@@ -26,10 +26,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/cloqsamml003qg4rqax6x02nz.html","path":"cloqsamml003qg4rqax6x02nz.html","title":"問題記錄：華大 HC32F460 程序燒錄異常"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/cloqsamml003qg4rqax6x02nz.html","path":"cloqsamml003qg4rqax6x02nz.html","title":"问题记录：华大 HC32F460 程序烧录异常"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>問題記錄：華大 HC32F460 程序燒錄異常 | ㄅㄆㄇㄈ</title>
+<title>问题记录：华大 HC32F460 程序烧录异常 | ㄅㄆㄇㄈ</title>
   
 
 
@@ -150,12 +150,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-count">36</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -210,12 +210,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="問題記錄：華大 HC32F460 程序燒錄異常 | ㄅㄆㄇㄈ">
+      <meta itemprop="name" content="问题记录：华大 HC32F460 程序烧录异常 | ㄅㄆㄇㄈ">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          問題記錄：華大 HC32F460 程序燒錄異常
+          问题记录：华大 HC32F460 程序烧录异常
         </h1>
 
         <div class="post-meta-container">
@@ -234,7 +234,7 @@
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E5%95%8F%E9%A1%8C%E8%A8%98%E9%8C%84/" itemprop="url" rel="index"><span itemprop="name">問題記錄</span></a>
+          <a href="/sulfurandcu.io/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">问题记录</span></a>
         </span>
     </span>
 
@@ -247,46 +247,46 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>最近給 HC32F460 燒程序時，出現了燒錄失敗的現象。</p>
+    <div class="post-body" itemprop="articleBody"><p>最近给 HC32F460 烧程序时，出现了烧录失败的现象。</p>
 <p>操作流程：</p>
 <ul>
-<li>在引導程序的 icg.h 文件中配置開啓 SWDT 看門狗</li>
-<li>燒錄引導程序</li>
-<li>燒錄應用程序</li>
-<li>讀取整個芯片的鏡像</li>
-<li>把讀取出來的鏡像再燒回去</li>
+<li>在引导程序的 icg.h 文件中配置开启 SWDT 看门狗</li>
+<li>烧录引导程序</li>
+<li>烧录应用程序</li>
+<li>读取整个芯片的镜像</li>
+<li>把读取出来的镜像再烧回去</li>
 </ul>
-<p>詭異的是，最後一步總是失敗。</p>
-<p>後面又進行了詳細的測試：</p>
+<p>诡异的是，最后一步总是失败。</p>
+<p>后面又进行了详细的测试：</p>
 <table>
 <thead>
 <tr>
-<th align="center">測試記錄</th>
-<th align="center">編程算法</th>
+<th align="center">测试记录</th>
+<th align="center">编程算法</th>
 <th align="center">SWDT</th>
-<th align="center">燒錄結果</th>
+<th align="center">烧录结果</th>
 </tr>
 </thead>
 <tbody><tr>
 <td align="center">1</td>
-<td align="center">舊版</td>
-<td align="center">關閉<br>或者延長狗叫時間</td>
-<td align="center">燒錄成功</td>
+<td align="center">旧版</td>
+<td align="center">关闭<br>或者延长狗叫时间</td>
+<td align="center">烧录成功</td>
 </tr>
 <tr>
 <td align="center">2</td>
-<td align="center">舊版</td>
-<td align="center">開啓</td>
-<td align="center">在燒錄回去之前，做一次整片擦除，但是不斷電：燒錄失敗<br>在燒錄回去之前，做一次整片擦除，斷電再上電：燒錄成功</td>
+<td align="center">旧版</td>
+<td align="center">开启</td>
+<td align="center">在烧录回去之前，做一次整片擦除，但是不断电：烧录失败<br>在烧录回去之前，做一次整片擦除，断电再上电：烧录成功</td>
 </tr>
 <tr>
 <td align="center">3</td>
 <td align="center">新版</td>
 <td align="center">X</td>
-<td align="center">均可燒錄成功</td>
+<td align="center">均可烧录成功</td>
 </tr>
 </tbody></table>
-<p>猜測應該是編程算法在燒錄過程中沒有屏蔽 SWDT 所致，更換新版編程算法即可解決。</p>
+<p>猜测应该是编程算法在烧录过程中没有屏蔽 SWDT 所致，更换新版编程算法即可解决。</p>
 
     </div>
 
@@ -304,7 +304,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>鏈接：</strong>
-      <a href="https://sulfurandcu.github.io/sulfurandcu.io/cloqsamml003qg4rqax6x02nz.html" title="問題記錄：華大 HC32F460 程序燒錄異常">https://sulfurandcu.github.io/sulfurandcu.io/cloqsamml003qg4rqax6x02nz.html</a>
+      <a href="https://sulfurandcu.github.io/sulfurandcu.io/cloqsamml003qg4rqax6x02nz.html" title="问题记录：华大 HC32F460 程序烧录异常">https://sulfurandcu.github.io/sulfurandcu.io/cloqsamml003qg4rqax6x02nz.html</a>
   </li>
   <li class="post-copyright-license">
       <strong>聲明： </strong>請遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議｜姓名標示｜相同方式分享
@@ -313,7 +313,7 @@
 </div>
 
           <div class="post-tags">
-              <a href="/sulfurandcu.io/tags/%E8%8F%AF%E5%A4%A7%E5%8D%8A%E5%B0%8E%E9%AB%94/" rel="tag"># 華大半導體</a>
+              <a href="/sulfurandcu.io/tags/%E5%8D%8E%E5%A4%A7%E5%8D%8A%E5%AF%BC%E4%BD%93/" rel="tag"># 华大半导体</a>
               <a href="/sulfurandcu.io/tags/HC32F460/" rel="tag"># HC32F460</a>
           </div>
 
@@ -321,8 +321,8 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/cloqyh9rx0027mgrq1e9f3vv2.html" rel="prev" title="問題記錄：華大 HC32F460 程序燒錄異常">
-                  <i class="fa fa-angle-left"></i> 問題記錄：華大 HC32F460 程序燒錄異常
+                <a href="/sulfurandcu.io/cloqyh9rx0027mgrq1e9f3vv2.html" rel="prev" title="问题记录：华大 HC32F460 程序烧录异常">
+                  <i class="fa fa-angle-left"></i> 问题记录：华大 HC32F460 程序烧录异常
                 </a>
             </div>
             <div class="post-nav-item">
@@ -348,7 +348,7 @@
 
   <div class="copyright">
     &copy; 2018 – 
-    <span itemprop="copyrightYear">2023</span>
+    <span itemprop="copyrightYear">2024</span>
     <span class="with-love">
       <i class="fa fa-fingerprint"></i>
     </span>

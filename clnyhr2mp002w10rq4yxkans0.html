@@ -26,10 +26,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html","path":"clnyhr2mp002w10rq4yxkans0.html","title":"編寫一個根據 svn 提交記錄自動生成日報的腳本"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html","path":"clnyhr2mp002w10rq4yxkans0.html","title":"DailyGenerator"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>編寫一個根據 svn 提交記錄自動生成日報的腳本 | ㄅㄆㄇㄈ</title>
+<title>DailyGenerator | ㄅㄆㄇㄈ</title>
   
 
 
@@ -150,12 +150,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-count">36</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -210,12 +210,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="編寫一個根據 svn 提交記錄自動生成日報的腳本 | ㄅㄆㄇㄈ">
+      <meta itemprop="name" content="DailyGenerator | ㄅㄆㄇㄈ">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          編寫一個根據 svn 提交記錄自動生成日報的腳本
+          DailyGenerator
         </h1>
 
         <div class="post-meta-container">
@@ -247,13 +247,13 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><center>beep...領導要求每天寫日報，但是我不太想寫，於是就有了本段代碼。</center><br>
+    <div class="post-body" itemprop="articleBody"><center>beep...领导要求每天写日报，但是我不太想写，于是就有了本段代码。</center><br>
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一键生成日报 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
 
 <span id="more"></span>
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任務名稱</span><br><span class="line">taskname = &quot;編碼工作&quot;</span><br><span class="line"># 基準日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 過去幾天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查詢深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用戶名稱</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用戶路徑</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任務名稱：&quot; + taskname + &quot;\n工作內容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（計劃&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一键生成日报 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任务名称</span><br><span class="line">taskname = &quot;编码工作&quot;</span><br><span class="line"># 基准日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 过去几天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查询深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用户名称</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用户路径</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任务名称：&quot; + taskname + &quot;\n工作内容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任务名称：&quot; + taskname + &quot;\n工作内容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（计划&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -271,7 +271,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>鏈接：</strong>
-      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html" title="編寫一個根據 svn 提交記錄自動生成日報的腳本">https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</a>
+      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html" title="DailyGenerator">https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</a>
   </li>
   <li class="post-copyright-license">
       <strong>聲明： </strong>請遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議｜姓名標示｜相同方式分享
@@ -288,13 +288,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html" rel="prev" title="拓撲分析算法">
-                  <i class="fa fa-angle-left"></i> 拓撲分析算法
+                <a href="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html" rel="prev" title="拓扑结构分析算法">
+                  <i class="fa fa-angle-left"></i> 拓扑结构分析算法
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html" rel="next" title="crc-libc">
-                  crc-libc <i class="fa fa-angle-right"></i>
+                <a href="/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html" rel="next" title="crc-lib">
+                  crc-lib <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -315,7 +315,7 @@
 
   <div class="copyright">
     &copy; 2018 – 
-    <span itemprop="copyrightYear">2023</span>
+    <span itemprop="copyrightYear">2024</span>
     <span class="with-love">
       <i class="fa fa-fingerprint"></i>
     </span>

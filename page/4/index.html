@@ -150,12 +150,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-count">36</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -196,6 +196,261 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cloqzaza3003fmgrqdpkl8c5j.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/sulfurandcu.io/cloqzaza3003fmgrqdpkl8c5j.html" class="post-title-link" itemprop="url">问题记录：华大 HC32F460 避坑指南之 ICG 寄存器</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-04-30 00:00:00" itemprop="dateCreated datePublished" datetime="2023-04-30T00:00:00+08:00">2023-04-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">问题记录</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>在《参考手册》第六章〈初始化配置〉中，八个初始化配置寄存器的复位值是不定的，华大对此的处理方式很巧妙（但是也给移植埋下了一个大坑）：</p>
+<figure class="highlight c"><figcaption><span>hc32f460_icg.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">/*!&lt; ICG0 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG0_REGISTER_CONSTANT                  (((uint32_t)ICG0_WDT_REG_CONFIG &lt;&lt; 16)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG0_SWDT_REG_CONFIG)       | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0xE000E000ul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG1 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG1_REGISTER_CONSTANT                  (((uint32_t)ICG1_NMI_REG_CONFIG &lt;&lt; 24)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_VDU0_REG_CONFIG &lt;&lt; 16) | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_HRC_REG_CONFIG)        | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0x03F8FEFEul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG2~7 register reserved value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG2_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG3_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG4_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG5_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG6_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG7_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><figcaption><span>hc32f460_icg.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">if</span> defined ( __GNUC__ ) &amp;&amp; !defined (__CC_ARM) <span class="comment">/* GNU Compiler */</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((section(<span class="string">&quot;.icg_sec&quot;</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__CC_ARM)</span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((at(<span class="number">0x400</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__ICCARM__)</span></span><br><span class="line">__root <span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] @ <span class="number">0x400</span> =</span><br><span class="line"><span class="meta">#<span class="keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">error</span> <span class="string">&quot;unsupported compiler!!&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">/* ICG 0~ 3 */</span></span><br><span class="line">    ICG0_REGISTER_CONSTANT,</span><br><span class="line">    ICG1_REGISTER_CONSTANT,</span><br><span class="line">    ICG2_REGISTER_CONSTANT,</span><br><span class="line">    ICG3_REGISTER_CONSTANT,</span><br><span class="line">    <span class="comment">/* ICG 4~ 7 */</span></span><br><span class="line">    ICG4_REGISTER_CONSTANT,</span><br><span class="line">    ICG5_REGISTER_CONSTANT,</span><br><span class="line">    ICG6_REGISTER_CONSTANT,</span><br><span class="line">    ICG7_REGISTER_CONSTANT,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>通过定义常量的方式，在程序加载阶段，将数据 load 至指定的寄存器。</p>
+<h2 id="避坑指北"><a href="#避坑指北" class="headerlink" title="避坑指北"></a>避坑指北</h2><p>如果项目由 bootloader 和 app 两部分组成，那么只能在 bootloader 中添加上述源文件，在 app 中不能添加该文件，否则会出现异常。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html" class="post-title-link" itemprop="url">问题记录：华大 HC32L19x 时钟初始化函数存在缺陷</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-04-28 00:00:00" itemprop="dateCreated datePublished" datetime="2023-04-28T00:00:00+08:00">2023-04-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">问题记录</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>hc32l19x_reference_manaul</p>
+<p><img src="/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp/clock-tree.png"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html#more" rel="contents">
+                « 閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html" class="post-title-link" itemprop="url">crc-lib</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-03-29 11:29:54" itemprop="dateCreated datePublished" datetime="2023-03-29T11:29:54+08:00">2023-03-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E9%94%99%E8%AF%AF%E6%8E%A7%E5%88%B6/" itemprop="url" rel="index"><span itemprop="name">错误控制</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <center><a target="_blank" rel="noopener" href="https://github.com/sulfurandcu/crc-lib">https://github.com/sulfurandcu/crc-lib</a></center><br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html#more" rel="contents">
+                « 閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -214,7 +469,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html" class="post-title-link" itemprop="url">編寫一個根據 svn 提交記錄自動生成日報的腳本</a>
+          <a href="/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html" class="post-title-link" itemprop="url">DailyGenerator</a>
         </h2>
 
         <div class="post-meta-container">
@@ -247,9 +502,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <center>beep...領導要求每天寫日報，但是我不太想寫，於是就有了本段代碼。</center><br>
+          <center>beep...领导要求每天写日报，但是我不太想写，于是就有了本段代码。</center><br>
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一鍵生成日報 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一键生成日报 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html#more" rel="contents">
@@ -301,7 +556,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html" class="post-title-link" itemprop="url">拓撲分析算法</a>
+          <a href="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html" class="post-title-link" itemprop="url">拓扑结构分析算法</a>
         </h2>
 
         <div class="post-meta-container">
@@ -320,7 +575,7 @@
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">開發筆記</span></a>
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
         </span>
     </span>
 
@@ -334,31 +589,31 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>2022年09月01日於武漢</p>
+          <p>2022年09月01日于武汉</p>
 <pre class="mermaid">
 flowchart TB
 %%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-R0[智能融合終端&lt;br&gt;SCU]
-R0---&gt;N1[斷路器&lt;br&gt;9]
-R0---&gt;N2[斷路器&lt;br&gt;16]
-N1---&gt;N1.1[斷路器&lt;br&gt;7]
-N1---&gt;N1.2[斷路器&lt;br&gt;6]
-N1---&gt;N1.3[斷路器&lt;br&gt;10]
-N1---&gt;N1.4[斷路器&lt;br&gt;12]
-N2---&gt;N2.1[斷路器&lt;br&gt;18]
-N2---&gt;N2.2[斷路器&lt;br&gt;19]
-N2---&gt;N2.3[斷路器&lt;br&gt;14]
-N1.1---&gt;N1.1.1[斷路器&lt;br&gt;3]
-N1.1---&gt;N1.1.2[斷路器&lt;br&gt;4]
-N1.1---&gt;N1.1.3[斷路器&lt;br&gt;5]
-N1.2---&gt;N1.2.1[斷路器&lt;br&gt;8]
-N1.2---&gt;N1.2.2[斷路器&lt;br&gt;11]
-N1.3---&gt;N1.3.1[斷路器&lt;br&gt;2]
-N2.2---&gt;N2.2.1[斷路器&lt;br&gt;13]
-N2.2---&gt;N2.2.2[斷路器&lt;br&gt;17]
-N1.1.1---&gt;N1.1.1.1[斷路器&lt;br&gt;0]
-N1.2.2---&gt;N1.2.2.1[斷路器&lt;br&gt;1]
-N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
+R0[智能融合终端&lt;br&gt;SCU]
+R0---&gt;N1[断路器&lt;br&gt;9]
+R0---&gt;N2[断路器&lt;br&gt;16]
+N1---&gt;N1.1[断路器&lt;br&gt;7]
+N1---&gt;N1.2[断路器&lt;br&gt;6]
+N1---&gt;N1.3[断路器&lt;br&gt;10]
+N1---&gt;N1.4[断路器&lt;br&gt;12]
+N2---&gt;N2.1[断路器&lt;br&gt;18]
+N2---&gt;N2.2[断路器&lt;br&gt;19]
+N2---&gt;N2.3[断路器&lt;br&gt;14]
+N1.1---&gt;N1.1.1[断路器&lt;br&gt;3]
+N1.1---&gt;N1.1.2[断路器&lt;br&gt;4]
+N1.1---&gt;N1.1.3[断路器&lt;br&gt;5]
+N1.2---&gt;N1.2.1[断路器&lt;br&gt;8]
+N1.2---&gt;N1.2.2[断路器&lt;br&gt;11]
+N1.3---&gt;N1.3.1[断路器&lt;br&gt;2]
+N2.2---&gt;N2.2.1[断路器&lt;br&gt;13]
+N2.2---&gt;N2.2.2[断路器&lt;br&gt;17]
+N1.1.1---&gt;N1.1.1.1[断路器&lt;br&gt;0]
+N1.2.2---&gt;N1.2.2.1[断路器&lt;br&gt;1]
+N2.2.2---&gt;N2.2.2.1[断路器&lt;br&gt;15]
 </pre>
           <!--noindex-->
             <div class="post-button">
@@ -411,7 +666,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clnyhr2mo002m10rq48l66wah.html" class="post-title-link" itemprop="url">沒事兒也來做做題</a>
+          <a href="/sulfurandcu.io/clnyhr2mo002m10rq48l66wah.html" class="post-title-link" itemprop="url">没事儿也来做做题</a>
         </h2>
 
         <div class="post-meta-container">
@@ -430,7 +685,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">開發筆記</span></a>
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
         </span>
     </span>
 
@@ -478,86 +733,6 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mn002j10rqbhpkhcgy.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
-      <meta itemprop="name" content="刘汲桐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clnyhr2mn002j10rqbhpkhcgy.html" class="post-title-link" itemprop="url">別鬧了！費曼先生</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2022-06-08 08:28:37" itemprop="dateCreated datePublished" datetime="2022-06-08T08:28:37+08:00">2022-06-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E8%B2%BB%E6%9B%BC%E5%85%88%E7%94%9F/" itemprop="url" rel="index"><span itemprop="name">費曼先生</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <center>Knowing the name of something is not the same as knowing something.</center>
-
-<br>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mm002g10rqgzfk3qms.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -576,7 +751,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clnyhr2mm002g10rqgzfk3qms.html" class="post-title-link" itemprop="url">億枝紅杏兒出牆來</a>
+          <a href="/sulfurandcu.io/clnyhr2mm002g10rqgzfk3qms.html" class="post-title-link" itemprop="url">亿枝红杏儿出墙来</a>
         </h2>
 
         <div class="post-meta-container">
@@ -595,7 +770,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E7%A7%91%E5%AD%B8%E4%B8%8A%E7%B6%B2/" itemprop="url" rel="index"><span itemprop="name">科學上網</span></a>
+          <a href="/sulfurandcu.io/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" itemprop="url" rel="index"><span itemprop="name">科学上网</span></a>
         </span>
     </span>
 
@@ -609,7 +784,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
     
     
     <div class="post-body" itemprop="articleBody">
-          <center><a target="_blank" rel="noopener" href="https://www.v2ray.com/awesome/tools.html">神一樣的工具們</a></center>
+          <center><a target="_blank" rel="noopener" href="https://www.v2ray.com/awesome/tools.html">神一样的工具们</a></center>
 <center><a target="_blank" rel="noopener" href="https://shadowsocks.org/en/index.html">https://shadowsocks.org/en/index.html</a></center>
           <!--noindex-->
             <div class="post-button">
@@ -619,165 +794,6 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
             </div>
           <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2ml002c10rq648736uf.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
-      <meta itemprop="name" content="刘汲桐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clnyhr2ml002c10rq648736uf.html" class="post-title-link" itemprop="url">極樂迪斯科歐序篇</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2022-04-05 10:16:36" itemprop="dateCreated datePublished" datetime="2022-04-05T10:16:36+08:00">2022-04-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E9%81%8A%E6%88%B2%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">遊戲筆記</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>- There’s this giant ball there. And evil apes. And the evil apes are dukin’ it out on the ball. You’re one of them. It’s basically all just evil apes dukin’ it out on a giant ball.</p>
-<p>- How big is the ball?<br>- You can’t even make out it’s a ball, when you’re dukin’it out. It’s that large.</p>
-<p>- How small are the apes?<br>- Infinitesimally small.</p>
-<p>- And this “dukin’ it out” I keep hearing about - what’s that?<br>- Vying for resources? It’s just a stupid expression you picked up somewhere. The part of the presentation you want to take home with you is this: you have to beat the other evil apes in the face or you lose.</p>
-<p>- That sounds like something I would like to do.</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2ml002810rq6pxn7cmn.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
-      <meta itemprop="name" content="刘汲桐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clnyhr2ml002810rq6pxn7cmn.html" class="post-title-link" itemprop="url">DLT645</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2022-03-29 22:48:52" itemprop="dateCreated datePublished" datetime="2022-03-29T22:48:52+08:00">2022-03-29</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">開發筆記</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
       
     </div>
 
@@ -840,7 +856,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E8%BC%B8%E5%85%A5%E6%96%B9%E6%A1%88/" itemprop="url" rel="index"><span itemprop="name">輸入方案</span></a>
+          <a href="/sulfurandcu.io/categories/%E8%BE%93%E5%85%A5%E6%96%B9%E6%A1%88/" itemprop="url" rel="index"><span itemprop="name">输入方案</span></a>
         </span>
     </span>
 
@@ -914,7 +930,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html" class="post-title-link" itemprop="url">網頁字體使用指南</a>
+          <a href="/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html" class="post-title-link" itemprop="url">网页字体使用指南</a>
         </h2>
 
         <div class="post-meta-container">
@@ -933,7 +949,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E8%AA%9E%E8%A8%80%E6%96%87%E5%AD%97/" itemprop="url" rel="index"><span itemprop="name">語言文字</span></a>
+          <a href="/sulfurandcu.io/categories/%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97/" itemprop="url" rel="index"><span itemprop="name">语言文字</span></a>
         </span>
     </span>
 
@@ -947,7 +963,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>在被 fontmin 和 font-spider 這倆貨虐得體無完膚之後，我決定試試<a target="_blank" rel="noopener" href="https://hsingko.github.io/post/compress_webfont/">這篇文章</a>中提到的另一個字體壓縮工具</p>
+          <p>在被 fontmin 和 font-spider 虐得体无完肤后，我决定试试<a target="_blank" rel="noopener" href="https://hsingko.github.io/post/compress_webfont/">这篇文章</a>中提到的另一个字体压缩工具：</p>
 <p><strong><center>“<a target="_blank" rel="noopener" href="https://github.com/fonttools/fonttools">fonttools</a>”</center></strong></p>
           <!--noindex-->
             <div class="post-button">
@@ -1000,7 +1016,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clnyhr2mj002010rq1hzhgzb2.html" class="post-title-link" itemprop="url">思源字體使用指南</a>
+          <a href="/sulfurandcu.io/clnyhr2mj002010rq1hzhgzb2.html" class="post-title-link" itemprop="url">思源字体使用指南</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1019,7 +1035,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E8%AA%9E%E8%A8%80%E6%96%87%E5%AD%97/" itemprop="url" rel="index"><span itemprop="name">語言文字</span></a>
+          <a href="/sulfurandcu.io/categories/%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97/" itemprop="url" rel="index"><span itemprop="name">语言文字</span></a>
         </span>
     </span>
 
@@ -1033,7 +1049,35 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
     
     
     <div class="post-body" itemprop="articleBody">
-          <p><img src="/sulfurandcu.io/clnyhr2mj002010rq1hzhgzb2/cover.png"></p>
+          <p>思源字体是 adobe 的开源字体项目，属于泛中日韩字体，即支持中文、日文、韩文三种文字，其中中文又分为大陆字形、香港字形和台湾字形。</p>
+<table>
+<thead>
+<tr>
+<th align="center">语言</th>
+<th align="center">文字</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">中文（大陆）</td>
+<td align="center">大陆独占的汉字－简体<br>大陆特色的汉字－繁体</td>
+</tr>
+<tr>
+<td align="center">中文（香港）</td>
+<td align="center">香港特色的汉字－繁体</td>
+</tr>
+<tr>
+<td align="center">中文（台湾）</td>
+<td align="center">台湾特色的汉字－繁体</td>
+</tr>
+<tr>
+<td align="center">日文（日本）</td>
+<td align="center">日本特色的汉字＋假名</td>
+</tr>
+<tr>
+<td align="center">韩文（朝韩）</td>
+<td align="center">朝韩特色的汉字＋谚文</td>
+</tr>
+</tbody></table>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/sulfurandcu.io/clnyhr2mj002010rq1hzhgzb2.html#more" rel="contents">
@@ -1071,7 +1115,7 @@ N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
 
   <div class="copyright">
     &copy; 2018 – 
-    <span itemprop="copyrightYear">2023</span>
+    <span itemprop="copyrightYear">2024</span>
     <span class="with-love">
       <i class="fa fa-fingerprint"></i>
     </span>

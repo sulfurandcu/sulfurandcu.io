@@ -130,7 +130,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BB%9F%E4%BB%B6%E4%B8%8B%E8%BC%89"><span class="nav-text">軟件下載</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BB%9F%E4%BB%B6%E5%AE%89%E8%A3%9D"><span class="nav-text">軟件安裝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B7%9A%E8%AD%9C%E8%A3%BD%E4%BD%9C"><span class="nav-text">線譜製作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E8%AD%9C%E8%A3%BD%E4%BD%9C"><span class="nav-text">簡譜製作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E8%AD%9C%E8%A6%8F%E5%89%87"><span class="nav-text">簡譜規則</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD"><span class="nav-text">软件下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="nav-text">软件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E8%B0%B1%E5%88%B6%E4%BD%9C"><span class="nav-text">线谱制作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E8%B0%B1%E5%88%B6%E4%BD%9C"><span class="nav-text">简谱制作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E8%B0%B1%E8%A7%84%E5%88%99"><span class="nav-text">简谱规则</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -151,12 +151,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-count">36</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -235,7 +235,7 @@
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E5%AD%B8%E9%BB%9E%E9%9F%B3%E6%A8%82/" itemprop="url" rel="index"><span itemprop="name">學點音樂</span></a>
+          <a href="/sulfurandcu.io/categories/%E5%AD%A6%E7%82%B9%E9%9F%B3%E4%B9%90/" itemprop="url" rel="index"><span itemprop="name">学点音乐</span></a>
         </span>
     </span>
 
@@ -248,84 +248,84 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>LilyPond 是什麼？(<strong><a target="_blank" rel="noopener" href="https://lilypond.org/">https://lilypond.org/</a></strong>)</p>
+    <div class="post-body" itemprop="articleBody"><p>LilyPond 是什么？(<strong><a target="_blank" rel="noopener" href="https://lilypond.org/">https://lilypond.org/</a></strong>)</p>
 <blockquote>
-<p>LilyPond (荷花池) 是一個音樂雕版軟件，致力產生最高質量的樂譜。它把傳統音樂雕版印刷的美學，呈現在計算機打印的樂譜上。LilyPond 是自由軟件，也是 GNU Project 的一部分。</p>
+<p>LilyPond (荷花池) 是一个音乐雕版软件，致力产生最高质量的乐谱。它把传统音乐雕版印刷的美学，呈现在计算机打印的乐谱上。LilyPond 是自由软件，也是 GNU Project 的一部分。</p>
 </blockquote>
-<p>計算機軟件的內核是將接收到的數據進行計算並輸出，LilyPond 也不例外。我們需要按照 LilyPond 開發者制定的規則編寫樂譜源碼，然後使用 LilyPond 程序將源代碼轉換爲 PNG、PDF、SVG、MIDI 等格式的文件。</p>
-<p><strong>荷花池（線譜）的運作流程如下：</strong></p>
-<ol>
-<li>按照 lilypond 開發者制定的規則編寫「LilyPond 樂譜源碼」。</li>
-<li>使用 lilypond 程序將「LilyPond 樂譜源碼」轉換爲我們期望的「樂譜」文件。</li>
-</ol>
-<div class="note info no-icon"><p>這裏的 lilypond.exe 程序與我們日常使用的軟件有所不同，需要通過命令行的方式來調用執行。</p>
-</div>
-
-<p>不過 LilyPond 主要用於生成五線譜，若想生成簡譜我們還需要藉助另外一個工具：</p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly.png"></p>
-<p>與上面不同，我們不再按照 LilyPond 的規則編寫「LilyPond 樂譜源碼」而是按照 jianpuly 開發者制定的規則編寫「Jianpuly 簡譜源碼」。</p>
-<p><strong>荷花池（簡譜）的運作流程如下：</strong></p>
-<ol>
-<li>按照 jianpuly 開發者制定的規則編寫「Jianpuly 簡譜源碼」。</li>
-<li>使用 jianpuly 腳本將「Jianpuly 簡譜源碼」轉換爲「LilyPond 樂譜源碼」。</li>
-<li>使用 lilypond 程序將「LilyPond 樂譜源碼」轉換爲我們期望的「樂譜」文件。</li>
-</ol>
-<div class="note info no-icon"><p>與 lilypond 類似，jianpu-ly.py 需要通過命令行的方式經 python 調用執行。</p>
-</div>
-
+<p>计算机软件的内核是将接收到的数据进行计算并输出，LilyPond 也不例外。我们需要按照 LilyPond 开发者制定的规则编写乐谱源码，然后使用 LilyPond 将源代码转换为 PNG、PDF、SVG、MIDI 等格式的文件。</p>
 <span id="more"></span>
 
-<h2 id="軟件下載"><a href="#軟件下載" class="headerlink" title="軟件下載"></a>軟件下載</h2><p><strong>1. 下載 lilypond 壓縮包</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-download.png"></p>
-<center><a target="_blank" rel="noopener" href="https://lilypond.org/download.html">下載鏈接</a></center><br>
-
-<p><strong>2. 下載 jianpu-ly.py 腳本文件</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly-download.png"></p>
-<center><a target="_blank" rel="noopener" href="http://ssb22.user.srcf.net/mwrhome/jianpu-ly.html">下載鏈接</a></center><br>
-
-<h2 id="軟件安裝"><a href="#軟件安裝" class="headerlink" title="軟件安裝"></a>軟件安裝</h2><p><strong>1. 將下載好的 lilypond 壓縮包解壓至任意位置</strong></p>
-<p><strong>2. 將下載好的 jianpu-ly.py 剪切至 lilypond 解壓目錄下的 bin 文件夾中</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-unpack.png"></p>
-<p><strong>3. 將 lilypond 安裝目錄下的 bin 文件夾添加至系統環境變量 PATH 中</strong></p>
-<p><strong>第一步：搜索「環境變量」然後點擊「編輯系統環境變量」</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath1.png"></p>
-<p><strong>第二步：點擊「環境變量」按鈕</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath2.png"></p>
-<p><strong>第三步：選中系統變量中的「PATH」然後點擊下方的「編輯」按鈕</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath3.png"></p>
-<p><strong>第四步：點擊「新建」按鈕然後輸入之前解壓的 lilypond 的完整路徑</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-systempath4.png"></p>
-<p><strong>4. 驗證 lilypond 是否正常安裝</strong></p>
-<p><strong>第一步：按下「Win+R」鍵打開運行對話框然後輸入 cmd 並運行</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-install-verify-cmd.png"></p>
-<p><strong>第二步：輸入「lilypond –help」然後按下回車鍵</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond-help.png"></p>
-<p>如果你能看到上圖中的信息，那麼恭喜，安裝完成！下面可以嘗試製作一個簡單的樂譜了！</p>
-<br>
-
-<h2 id="線譜製作"><a href="#線譜製作" class="headerlink" title="線譜製作"></a>線譜製作</h2><p>寫到這裏時發現了一篇非常不錯的 lilypond 中文入門教程，既然如此，那我索性就偷個懶，各位看官請移步這裏：</p>
-<center><a target="_blank" rel="noopener" href="https://www.yuque.com/qqbunny/lilypond">《LilyPond 入門教程》 by 兔子不咬人</a></center><br>
-
-<h2 id="簡譜製作"><a href="#簡譜製作" class="headerlink" title="簡譜製作"></a>簡譜製作</h2><p><strong>1. 新建一個文件夾作爲工作空間</strong></p>
-<p><strong>2. 將 jianpu-ly.py 腳本文件拷貝至工作空間</strong></p>
-<p><strong>3. 在工作空間中創建一個文本文檔（例如：簡譜代碼.txt）然後寫入以下內容</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%% tempo: 4=60</span><br><span class="line">title=標題</span><br><span class="line">1=C</span><br><span class="line">2/4</span><br><span class="line"></span><br><span class="line">1 2 3 4 5 6 7 1&#x27;</span><br></pre></td></tr></table></figure>
-
-<p><strong>4. 在工作空間中單擊右鍵選擇「在終端中打開」然後會彈出一個黑框框</strong></p>
-<p><strong>5. 輸入以下命令並然後按回車鍵執行</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python jianpu-ly.py 簡譜代碼.txt &gt; 樂譜代碼.ly</span><br></pre></td></tr></table></figure>
-
-<p><strong>6. 輸入以下命令並然後按回車鍵執行</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lilypond -o 樂譜文件 --format=pdf,png 樂譜代碼.ly</span><br></pre></td></tr></table></figure>
-
-<p><strong>7. 嫌麻煩的話也可以在工作空間中新建一個「自動腳本.bat」批處理文件並填入以下內容</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chcp 65001</span><br><span class="line"></span><br><span class="line">set jianpuly=&quot;D:\develop.r.1\lilypond-2.24.1\bin\jianpu-ly.py&quot;</span><br><span class="line"></span><br><span class="line">set source=&quot;簡譜&quot;</span><br><span class="line">set output=&quot;曲譜&quot;</span><br><span class="line"></span><br><span class="line">set middle=&quot;荷花&quot;</span><br><span class="line"></span><br><span class="line">python %jianpuly% %source%.txt &gt; %middle%.ly</span><br><span class="line">lilypond -o %output% --format=pdf,png %middle%.ly</span><br><span class="line">lilypond -o %output% --format=svg %middle%.ly</span><br><span class="line"></span><br><span class="line">md %source%</span><br><span class="line"></span><br><span class="line">move .\%output%.* .\%source%</span><br><span class="line">move .\%middle%.* .\%source%</span><br></pre></td></tr></table></figure>
-
-<p><strong>8. 以後只要雙擊該腳本即可自動生成</strong></p>
-<div class="note info no-icon"><p>使用這種方式時，文件名就不能隨便起了，必須與「source」字段保持一致。</p>
+<p><strong>荷花池（线谱）的运作流程如下：</strong></p>
+<ol>
+<li>按照 lilypond 开发者制定的规则编写「LilyPond 乐谱源码」。</li>
+<li>使用 lilypond 程序将「LilyPond 乐谱源码」转换为我们期望的「乐谱」文件。</li>
+</ol>
+<div class="note info no-icon"><p>这里的 lilypond.exe 程序与我们日常使用的软件有所不同，需要通过命令行的方式来调用执行。</p>
 </div>
 
-<h2 id="簡譜規則"><a href="#簡譜規則" class="headerlink" title="簡譜規則"></a>簡譜規則</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Scale going up                                              1 2 3 4 5 6 7 1&#x27;</span><br><span class="line">Accidentals                                                 1 #1 2 b2 1</span><br><span class="line">Octaves                                                     1,, 1, 1 1&#x27; 1&#x27;&#x27;</span><br><span class="line">Shortcuts for 1’ and 2’                                     8 9</span><br><span class="line">Semiquaver, quaver, crotchet (16/8/4th notes)               s1 q1 1</span><br><span class="line">Dotted versions of the above (50% longer)                   s1. q1. 1.</span><br><span class="line">Demisemiquaver, hemidemisemiquaver (32/64th notes)          d1 h1</span><br><span class="line">Minims (half notes) use dashes                              1 -</span><br><span class="line">Dotted minim                                                1 - -</span><br><span class="line">Semibreve (whole note)                                      1 - - -</span><br><span class="line">Time signature                                              4/4</span><br><span class="line">Time signature with quaver anacrusis (8th-note pickup)      4/4,8</span><br><span class="line">Key signature (major)                                       1=Bb</span><br><span class="line">Key signature (minor)                                       6=F#</span><br><span class="line">Tempo                                                       4=85</span><br><span class="line">Lyrics                                                      L: here are the syl- la- bles (all on one line)</span><br><span class="line">Lyrics (verse 1)                                            L: 1. Here is verse one</span><br><span class="line">Lyrics (verse 2)                                            L: 2. Here is verse two</span><br><span class="line">Hanzi lyrics (auto space)                                   H: hanzi (with or without spaces)</span><br><span class="line">Lilypond headers                                            title=the title (on a line of its own)</span><br><span class="line">Multiple parts                                              NextPart</span><br><span class="line">Instrument of current part                                  instrument=Flute (on a line of its own)</span><br><span class="line">Multiple movements                                          NextScore</span><br><span class="line">Prohibit page breaks until end of this movement             OnePage</span><br><span class="line">Suppress bar numbers                                        NoBarNums</span><br><span class="line">Old-style time signature                                    SeparateTimesig 1=C 4/4</span><br><span class="line">Indonesian ‘not angka’ style                                angka</span><br><span class="line">Add a Western staff doubling the tune                       WithStaff</span><br><span class="line">Tuplets                                                     3[ q1 q1 q1 ]</span><br><span class="line">Grace notes before                                          g[#45] 1</span><br><span class="line">Grace notes after                                           1 [&#x27;1]g</span><br><span class="line">Simple chords                                               135 1 13 1</span><br><span class="line">Da capo                                                     1 1 Fine 1 1 1 1 1 1 DC</span><br><span class="line">Repeat (with alternate endings)                             R&#123; 1 1 1 &#125; A&#123; 2 | 3 &#125;</span><br><span class="line">Short repeats (percent)                                     R4&#123; 1 2 &#125;</span><br><span class="line">Ties (like Lilypond’s, if you don’t want dashes)            1 ~ 1</span><br><span class="line">Slurs (like Lilypond’s)                                     1 ( 2 )</span><br><span class="line">Erhu fingering (applies to previous note)                   Fr=0 Fr=4</span><br><span class="line">Erhu symbol (applies to previous note)                      souyin harmonic up down bend tilde</span><br><span class="line">Tremolo                                                     1/// - 1///5 -</span><br><span class="line">Rehearsal letters                                           letterA letterB</span><br><span class="line">Multibar rest                                               R*8</span><br><span class="line">Dynamics (applies to previous note)                         \p \mp \f</span><br><span class="line">Other 1-word Lilypond \ commands                            \fermata \&gt; \! \( \) etc</span><br><span class="line">Text                                                        ^&quot;above note&quot; _&quot;below note&quot;</span><br><span class="line">Other Lilypond code                                         LP: (block of code) :LP (each delimeter at start of its line)</span><br><span class="line">Ignored                                                     % a comment</span><br></pre></td></tr></table></figure>
+<p>不过 LilyPond 主要用于生成五线谱，若想生成简谱我们还需要借助另外一个工具：</p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly.png"></p>
+<p>与上面不同，我们不再按照 LilyPond 的规则编写「LilyPond 乐谱源码」而是按照 jianpuly 开发者制定的规则编写「Jianpuly 简谱源码」。</p>
+<p><strong>荷花池（简谱）的运作流程如下：</strong></p>
+<ol>
+<li>按照 jianpuly 开发者制定的规则编写「Jianpuly 简谱源码」。</li>
+<li>使用 jianpuly 脚本将「Jianpuly 简谱源码」转换为「LilyPond 乐谱源码」。</li>
+<li>使用 lilypond 程序将「LilyPond 乐谱源码」转换为我们期望的「乐谱」文件。</li>
+</ol>
+<div class="note info no-icon"><p>与 lilypond 类似，jianpu-ly.py 需要通过命令行的方式经 python 调用执行。</p>
+</div>
+
+<h2 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h2><p><strong>1. 下载 lilypond 压缩包</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.download.png"></p>
+<center><a target="_blank" rel="noopener" href="https://lilypond.org/download.html">下载链接</a></center><br>
+
+<p><strong>2. 下载 jianpu-ly.py 脚本文件</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly.download.png"></p>
+<center><a target="_blank" rel="noopener" href="http://ssb22.user.srcf.net/mwrhome/jianpu-ly.html">下载链接</a></center><br>
+
+<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p><strong>1. 将下载好的 lilypond 压缩包解压至任意位置</strong></p>
+<p><strong>2. 将下载好的 jianpu-ly.py 剪切至 lilypond 解压目录下的 bin 文件夹中</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.unpack.png"></p>
+<p><strong>3. 将 lilypond 安装目录下的 bin 文件夹添加至系统环境变量 PATH 中</strong></p>
+<p><strong>第一步：搜索「环境变量」然后点击「编辑系统环境变量」</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath1.png"></p>
+<p><strong>第二步：点击「环境变量」按钮</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath2.png"></p>
+<p><strong>第三步：选中系统变量中的「PATH」然后点击下方的「编辑」按钮</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath3.png"></p>
+<p><strong>第四步：点击「新建」按钮然后输入之前解压的 lilypond 的完整路径</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath4.png"></p>
+<p><strong>4. 验证 lilypond 是否正常安装</strong></p>
+<p><strong>第一步：按下「Win+R」键打开运行对话框然后输入 cmd 并运行</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.verify.cmd.png"></p>
+<p><strong>第二步：输入「lilypond –help」然后按下回车键</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.help.png"></p>
+<p>如果你能看到上图中的信息，那么恭喜，安装完成！下面可以尝试制作一个简单的乐谱了！</p>
+<br>
+
+<h2 id="线谱制作"><a href="#线谱制作" class="headerlink" title="线谱制作"></a>线谱制作</h2><p>写到这里时发现了一篇非常不错的 lilypond 中文入门教程，既然如此，那我索性就偷个懒，各位看官请移步这里：</p>
+<center><a target="_blank" rel="noopener" href="https://www.yuque.com/qqbunny/lilypond">《LilyPond 入门教程》 by 兔子不咬人</a></center><br>
+
+<h2 id="简谱制作"><a href="#简谱制作" class="headerlink" title="简谱制作"></a>简谱制作</h2><p><strong>1. 新建一个文件夹作为工作空间</strong></p>
+<p><strong>2. 将 jianpu-ly.py 脚本文件拷贝至工作空间</strong></p>
+<p><strong>3. 在工作空间中创建一个文本文档（例如：简谱代码.txt）然后写入以下内容</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%% tempo: 4=60</span><br><span class="line">title=标题</span><br><span class="line">1=C</span><br><span class="line">2/4</span><br><span class="line"></span><br><span class="line">1 2 3 4 5 6 7 1&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><strong>4. 在工作空间中单击右键选择「在终端中打开」然后会弹出一个黑框框</strong></p>
+<p><strong>5. 输入以下命令并然后按回车键执行</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python jianpu-ly.py 简谱代码.txt &gt; 乐谱代码.ly</span><br></pre></td></tr></table></figure>
+
+<p><strong>6. 输入以下命令并然后按回车键执行</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lilypond -o 乐谱文件 --format=pdf,png 乐谱代码.ly</span><br></pre></td></tr></table></figure>
+
+<p><strong>7. 嫌麻烦的话也可以在工作空间中新建一个「自动脚本.bat」批处理文件并填入以下内容</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chcp 65001</span><br><span class="line"></span><br><span class="line">set jianpuly=&quot;D:\develop.r.1\lilypond-2.24.1\bin\jianpu-ly.py&quot;</span><br><span class="line"></span><br><span class="line">set source=&quot;简谱&quot;</span><br><span class="line">set output=&quot;曲谱&quot;</span><br><span class="line"></span><br><span class="line">set middle=&quot;荷花&quot;</span><br><span class="line"></span><br><span class="line">python %jianpuly% %source%.txt &gt; %middle%.ly</span><br><span class="line">lilypond -o %output% --format=pdf,png %middle%.ly</span><br><span class="line">lilypond -o %output% --format=svg %middle%.ly</span><br><span class="line"></span><br><span class="line">md %source%</span><br><span class="line"></span><br><span class="line">move .\%output%.* .\%source%</span><br><span class="line">move .\%middle%.* .\%source%</span><br></pre></td></tr></table></figure>
+
+<p><strong>8. 以后只要双击该脚本即可自动生成</strong></p>
+<div class="note info no-icon"><p>使用这种方式时，文件名就不能随便起了，必须与「source」字段保持一致。</p>
+</div>
+
+<h2 id="简谱规则"><a href="#简谱规则" class="headerlink" title="简谱规则"></a>简谱规则</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Scale going up                                              1 2 3 4 5 6 7 1&#x27;</span><br><span class="line">Accidentals                                                 1 #1 2 b2 1</span><br><span class="line">Octaves                                                     1,, 1, 1 1&#x27; 1&#x27;&#x27;</span><br><span class="line">Shortcuts for 1’ and 2’                                     8 9</span><br><span class="line">Semiquaver, quaver, crotchet (16/8/4th notes)               s1 q1 1</span><br><span class="line">Dotted versions of the above (50% longer)                   s1. q1. 1.</span><br><span class="line">Demisemiquaver, hemidemisemiquaver (32/64th notes)          d1 h1</span><br><span class="line">Minims (half notes) use dashes                              1 -</span><br><span class="line">Dotted minim                                                1 - -</span><br><span class="line">Semibreve (whole note)                                      1 - - -</span><br><span class="line">Time signature                                              4/4</span><br><span class="line">Time signature with quaver anacrusis (8th-note pickup)      4/4,8</span><br><span class="line">Key signature (major)                                       1=Bb</span><br><span class="line">Key signature (minor)                                       6=F#</span><br><span class="line">Tempo                                                       4=85</span><br><span class="line">Lyrics                                                      L: here are the syl- la- bles (all on one line)</span><br><span class="line">Lyrics (verse 1)                                            L: 1. Here is verse one</span><br><span class="line">Lyrics (verse 2)                                            L: 2. Here is verse two</span><br><span class="line">Hanzi lyrics (auto space)                                   H: hanzi (with or without spaces)</span><br><span class="line">Lilypond headers                                            title=the title (on a line of its own)</span><br><span class="line">Multiple parts                                              NextPart</span><br><span class="line">Instrument of current part                                  instrument=Flute (on a line of its own)</span><br><span class="line">Multiple movements                                          NextScore</span><br><span class="line">Prohibit page breaks until end of this movement             OnePage</span><br><span class="line">Suppress bar numbers                                        NoBarNums</span><br><span class="line">Old-style time signature                                    SeparateTimesig 1=C 4/4</span><br><span class="line">Indonesian ‘not angka’ style                                angka</span><br><span class="line">Add a Western staff doubling the tune                       WithStaff</span><br><span class="line">Tuplets                                                     3[ q1 q1 q1 ]</span><br><span class="line">Grace notes before                                          g[#45] 1</span><br><span class="line">Grace notes after                                           1 [&#x27;1]g</span><br><span class="line">Simple chords                                               135 1 13 1</span><br><span class="line">Da capo                                                     1 1 Fine 1 1 1 1 1 1 DC</span><br><span class="line">Repeat (with alternate endings)                             R&#123; 1 1 1 &#125; A&#123; 2 | 3 &#125;</span><br><span class="line">Short repeats (percent)                                     R4&#123; 1 2 &#125;</span><br><span class="line">Ties (like Lilypond’s, if you don’t want dashes)            1 ~ 1</span><br><span class="line">Slurs (like Lilypond’s)                                     1 ( 2 )</span><br><span class="line">Erhu fingering (applies to previous note)                   Fr=0 Fr=4</span><br><span class="line">Erhu symbol (applies to previous note)                      souyin harmonic up down bend tilde</span><br><span class="line">Tremolo                                                     1/// - 1///5 -</span><br><span class="line">Rehearsal letters                                           letterA letterB</span><br><span class="line">Multibar rest                                               R*8</span><br><span class="line">Dynamics (applies to previous note)                         \p \mp \f</span><br><span class="line">Other 1-word Lilypond \ commands                            \fermata \&gt; \! \( \) etc</span><br><span class="line">Text                                                        ^&quot;above note&quot; _&quot;below note&quot;</span><br><span class="line">Other Lilypond code                                         LP: (block of code) :LP (each delimeter at start of its line)</span><br><span class="line">Ignored                                                     % a comment</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -352,8 +352,8 @@
 </div>
 
           <div class="post-tags">
-              <a href="/sulfurandcu.io/tags/%E4%BA%94%E7%B7%9A%E8%AD%9C/" rel="tag"># 五線譜</a>
-              <a href="/sulfurandcu.io/tags/%E7%B0%A1%E8%AD%9C/" rel="tag"># 簡譜</a>
+              <a href="/sulfurandcu.io/tags/%E4%BA%94%E7%BA%BF%E8%B0%B1/" rel="tag"># 五线谱</a>
+              <a href="/sulfurandcu.io/tags/%E7%AE%80%E8%B0%B1/" rel="tag"># 简谱</a>
               <a href="/sulfurandcu.io/tags/lilypond/" rel="tag"># lilypond</a>
           </div>
 
@@ -361,13 +361,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/cloqsamml003qg4rqax6x02nz.html" rel="prev" title="問題記錄：華大 HC32F460 程序燒錄異常">
-                  <i class="fa fa-angle-left"></i> 問題記錄：華大 HC32F460 程序燒錄異常
+                <a href="/sulfurandcu.io/cloqsamml003qg4rqax6x02nz.html" rel="prev" title="问题记录：华大 HC32F460 程序烧录异常">
+                  <i class="fa fa-angle-left"></i> 问题记录：华大 HC32F460 程序烧录异常
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html" rel="next" title="集成開發環境－GCC.ARM（#00）目錄索引">
-                  集成開發環境－GCC.ARM（#00）目錄索引 <i class="fa fa-angle-right"></i>
+                <a href="/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html" rel="next" title="集成开发环境－GCC.ARM（#00）目录索引">
+                  集成开发环境－GCC.ARM（#00）目录索引 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -388,7 +388,7 @@
 
   <div class="copyright">
     &copy; 2018 – 
-    <span itemprop="copyrightYear">2023</span>
+    <span itemprop="copyrightYear">2024</span>
     <span class="with-love">
       <i class="fa fa-fingerprint"></i>
     </span>

@@ -26,10 +26,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html","path":"clnyhr2mp002t10rqf5z089pu.html","title":"拓撲分析算法"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html","path":"clnyhr2mp002t10rqf5z089pu.html","title":"拓扑结构分析算法"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>拓撲分析算法 | ㄅㄆㄇㄈ</title>
+<title>拓扑结构分析算法 | ㄅㄆㄇㄈ</title>
   
 
 
@@ -130,7 +130,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%93%E6%92%B2%E8%AD%98%E5%88%A5"><span class="nav-text">拓撲識別</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%93%E6%92%B2%E6%B5%81%E7%A8%8B"><span class="nav-text">拓撲流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0"><span class="nav-text">算法概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E8%A9%B3%E8%A7%A3"><span class="nav-text">算法詳解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%8D%E6%AD%B7%E4%B9%8B%E5%89%8D%E7%9A%84%E6%8B%93%E6%92%B2%E7%B5%90%E6%A7%8B%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%89"><span class="nav-text">遍歷之前的拓撲結構（示例）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%8D%E6%AD%B7%E4%B9%8B%E5%89%8D%E7%9A%84%E6%95%B8%E6%93%9A%E7%B5%90%E6%A7%8B%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%89"><span class="nav-text">遍歷之前的數據結構（示例）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%8B%93%E6%92%B2%E7%B5%90%E6%A7%8B"><span class="nav-text">第一次遍歷後的拓撲結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%95%B8%E6%93%9A%E7%B5%90%E6%A7%8B"><span class="nav-text">第一次遍歷後的數據結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%8B%93%E6%92%B2%E7%B5%90%E6%A7%8B"><span class="nav-text">第二次遍歷後的拓撲結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%95%B8%E6%93%9A%E7%B5%90%E6%A7%8B"><span class="nav-text">第二次遍歷後的數據結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%8B%93%E6%92%B2%E7%B5%90%E6%A7%8B"><span class="nav-text">第三次遍歷後的拓撲結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AC%A1%E9%81%8D%E6%AD%B7%E5%BE%8C%E7%9A%84%E6%95%B8%E6%93%9A%E7%B5%90%E6%A7%8B"><span class="nav-text">第三次遍歷後的數據結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%8D%E6%AD%B7%E5%AE%8C%E6%88%90%E4%B9%8B%E5%BE%8C%E5%BE%97%E5%88%B0%E7%9A%84%E6%95%B8%E6%93%9A"><span class="nav-text">遍歷完成之後得到的數據</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A2%BC"><span class="nav-text">核心代碼</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%9E%E6%AD%B8%E6%89%93%E5%8D%B0"><span class="nav-text">遞歸打印</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%93%E6%89%91%E8%AF%86%E5%88%AB"><span class="nav-text">拓扑识别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%93%E6%89%91%E6%B5%81%E7%A8%8B"><span class="nav-text">拓扑流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0"><span class="nav-text">算法概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3"><span class="nav-text">算法详解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%8D%E5%8E%86%E4%B9%8B%E5%89%8D%E7%9A%84%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%89"><span class="nav-text">遍历之前的拓扑结构（示例）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%8D%E5%8E%86%E4%B9%8B%E5%89%8D%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%89"><span class="nav-text">遍历之前的数据结构（示例）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%81%8D%E5%8E%86%E5%90%8E%E7%9A%84%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84"><span class="nav-text">第一次遍历后的拓扑结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%81%8D%E5%8E%86%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-text">第一次遍历后的数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%81%8D%E5%8E%86%E5%90%8E%E7%9A%84%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84"><span class="nav-text">第二次遍历后的拓扑结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%81%8D%E5%8E%86%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-text">第二次遍历后的数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AC%A1%E9%81%8D%E5%8E%86%E5%90%8E%E7%9A%84%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84"><span class="nav-text">第三次遍历后的拓扑结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AC%A1%E9%81%8D%E5%8E%86%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-text">第三次遍历后的数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%8D%E5%8E%86%E5%AE%8C%E6%88%90%E4%B9%8B%E5%90%8E%E5%BE%97%E5%88%B0%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="nav-text">遍历完成之后得到的数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A0%81"><span class="nav-text">核心代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%92%E5%BD%92%E6%89%93%E5%8D%B0"><span class="nav-text">递归打印</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -151,12 +151,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-count">36</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -211,12 +211,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="拓撲分析算法 | ㄅㄆㄇㄈ">
+      <meta itemprop="name" content="拓扑结构分析算法 | ㄅㄆㄇㄈ">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          拓撲分析算法
+          拓扑结构分析算法
         </h1>
 
         <div class="post-meta-container">
@@ -235,7 +235,7 @@
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">開發筆記</span></a>
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
         </span>
     </span>
 
@@ -248,144 +248,144 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>2022年09月01日於武漢</p>
+    <div class="post-body" itemprop="articleBody"><p>2022年09月01日于武汉</p>
 <pre class="mermaid">
 flowchart TB
 %%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-R0[智能融合終端&lt;br&gt;SCU]
-R0---&gt;N1[斷路器&lt;br&gt;9]
-R0---&gt;N2[斷路器&lt;br&gt;16]
-N1---&gt;N1.1[斷路器&lt;br&gt;7]
-N1---&gt;N1.2[斷路器&lt;br&gt;6]
-N1---&gt;N1.3[斷路器&lt;br&gt;10]
-N1---&gt;N1.4[斷路器&lt;br&gt;12]
-N2---&gt;N2.1[斷路器&lt;br&gt;18]
-N2---&gt;N2.2[斷路器&lt;br&gt;19]
-N2---&gt;N2.3[斷路器&lt;br&gt;14]
-N1.1---&gt;N1.1.1[斷路器&lt;br&gt;3]
-N1.1---&gt;N1.1.2[斷路器&lt;br&gt;4]
-N1.1---&gt;N1.1.3[斷路器&lt;br&gt;5]
-N1.2---&gt;N1.2.1[斷路器&lt;br&gt;8]
-N1.2---&gt;N1.2.2[斷路器&lt;br&gt;11]
-N1.3---&gt;N1.3.1[斷路器&lt;br&gt;2]
-N2.2---&gt;N2.2.1[斷路器&lt;br&gt;13]
-N2.2---&gt;N2.2.2[斷路器&lt;br&gt;17]
-N1.1.1---&gt;N1.1.1.1[斷路器&lt;br&gt;0]
-N1.2.2---&gt;N1.2.2.1[斷路器&lt;br&gt;1]
-N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
+R0[智能融合终端&lt;br&gt;SCU]
+R0---&gt;N1[断路器&lt;br&gt;9]
+R0---&gt;N2[断路器&lt;br&gt;16]
+N1---&gt;N1.1[断路器&lt;br&gt;7]
+N1---&gt;N1.2[断路器&lt;br&gt;6]
+N1---&gt;N1.3[断路器&lt;br&gt;10]
+N1---&gt;N1.4[断路器&lt;br&gt;12]
+N2---&gt;N2.1[断路器&lt;br&gt;18]
+N2---&gt;N2.2[断路器&lt;br&gt;19]
+N2---&gt;N2.3[断路器&lt;br&gt;14]
+N1.1---&gt;N1.1.1[断路器&lt;br&gt;3]
+N1.1---&gt;N1.1.2[断路器&lt;br&gt;4]
+N1.1---&gt;N1.1.3[断路器&lt;br&gt;5]
+N1.2---&gt;N1.2.1[断路器&lt;br&gt;8]
+N1.2---&gt;N1.2.2[断路器&lt;br&gt;11]
+N1.3---&gt;N1.3.1[断路器&lt;br&gt;2]
+N2.2---&gt;N2.2.1[断路器&lt;br&gt;13]
+N2.2---&gt;N2.2.2[断路器&lt;br&gt;17]
+N1.1.1---&gt;N1.1.1.1[断路器&lt;br&gt;0]
+N1.2.2---&gt;N1.2.2.1[断路器&lt;br&gt;1]
+N2.2.2---&gt;N2.2.2.1[断路器&lt;br&gt;15]
 </pre>
 
 <span id="more"></span>
 
-<h2 id="拓撲識別"><a href="#拓撲識別" class="headerlink" title="拓撲識別"></a>拓撲識別</h2><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.standard.1.png"></p>
+<h2 id="拓扑识别"><a href="#拓扑识别" class="headerlink" title="拓扑识别"></a>拓扑识别</h2><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.standard.1.png"></p>
 <p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.standard.2.png"></p>
 <p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.standard.3.png"></p>
-<div class="note danger no-icon"><p>本文所述的拓撲分析算法針對的是有時間戳的拓撲識別</p>
+<div class="note danger no-icon"><p>本文所述的拓扑分析算法针对的是有时间戳的拓扑识别</p>
 </div>
 
-<h2 id="拓撲流程"><a href="#拓撲流程" class="headerlink" title="拓撲流程"></a>拓撲流程</h2><pre class="mermaid">
+<h2 id="拓扑流程"><a href="#拓扑流程" class="headerlink" title="拓扑流程"></a>拓扑流程</h2><pre class="mermaid">
 flowchart TB
 %%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-R0[智能融合終端&lt;br&gt;SCU]--&gt;A2[&quot; &quot;]
-R0--&gt;A1[斷路器&lt;br&gt;1]
+R0[智能融合终端&lt;br&gt;SCU]--&gt;A2[&quot; &quot;]
+R0--&gt;A1[断路器&lt;br&gt;1]
 A1--&gt;B2[&quot; &quot;]
-A1--&gt;B1[斷路器&lt;br&gt;2]
+A1--&gt;B1[断路器&lt;br&gt;2]
 B1--&gt;C2[&quot; &quot;]
-B1--&gt;C1[斷路器&lt;br&gt;3]
+B1--&gt;C1[断路器&lt;br&gt;3]
 </pre>
 
-<p>以上面這個簡單的拓撲結構爲例：</p>
-<p>當 SCU 給一號斷路器發送拓撲信號發生指令後一號斷路器會存儲一條發生記錄。</p>
-<p>當 SCU 給二號斷路器發送拓撲信號發生指令後二號斷路器會存儲一條發生記錄，此時一號斷路器會識別到拓撲信號並存儲一條識別記錄，並且這兩條記錄中的時間基本一致。</p>
-<p>當 SCU 給三號斷路器發送拓撲信號發生指令後三號斷路器會存儲一條發生記錄，此時一號斷路器和二號斷路器均會識別到拓撲信號並存儲一條識別記錄，並且這三條記錄中的時間基本一致。</p>
-<p>最終：</p>
+<p>以上面这个简单的拓扑结构为例：</p>
+<p>当 SCU 给一号断路器发送拓扑信号发生指令后一号断路器会存储一条发生记录。</p>
+<p>当 SCU 给二号断路器发送拓扑信号发生指令后二号断路器会存储一条发生记录，此时一号断路器会识别到拓扑信号并存储一条识别记录，并且这两条记录中的时间基本一致。</p>
+<p>当 SCU 给三号断路器发送拓扑信号发生指令后三号断路器会存储一条发生记录，此时一号断路器和二号断路器均会识别到拓扑信号并存储一条识别记录，并且这三条记录中的时间基本一致。</p>
+<p>最终：</p>
 <ul>
-<li>一號斷路器總計存儲 3 條拓撲記錄；</li>
-<li>二號斷路器總計存儲 2 條拓撲記錄；</li>
-<li>三號斷路器總計存儲 1 條拓撲記錄；</li>
+<li>一号断路器总计存储 3 条拓扑记录；</li>
+<li>二号断路器总计存储 2 条拓扑记录；</li>
+<li>三号断路器总计存储 1 条拓扑记录；</li>
 </ul>
-<p>拓撲信號發生流程結束後，智能融合終端會讀取每臺斷路器中的拓撲記錄，並將數據整理爲以下格式：</p>
+<p>拓扑信号发生流程结束后，智能融合终端会读取每台断路器中的拓扑记录，并将数据整理为以下格式：</p>
 <p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.record.png"></p>
-<p>然後智能融合終端便可通過本算法以及上述數據計算出所有斷路器之間的拓撲關係。</p>
-<div class="note info no-icon"><p>記錄數量：每臺斷路器中拓撲記錄的數量<br>記錄內容：每條拓撲記錄產生時的時間戳</p>
+<p>然后智能融合终端便可通过本算法以及上述数据计算出所有断路器之间的拓扑关系。</p>
+<div class="note info no-icon"><p>记录数量：每台断路器中拓扑记录的数量<br>记录内容：每条拓扑记录产生时的时间戳</p>
 </div>
 
-<h2 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h2><p><strong>核心思想：從末端節點開始，依次尋找每個節點的父節點，最終找到根節點。最後遞歸打印出拓撲關係。</strong></p>
-<p>1. 遍歷只有一條記錄的節點（末端節點）遍歷完之後將末端節點的記錄數量置爲零。</p>
-<p>2. 遍歷其他大於一條記錄的節點</p>
-<p>3. 判斷該節點是否存在與末端節點時間相同的記錄｜如果存在則表示該節點爲末端節點的潛在父節點（並將該節點的記錄數量減一）</p>
-<p>4. 拓撲記錄數量最少的那個節點即爲當前末端節點的父節點</p>
-<p>5. 更新拓撲網絡（記錄父節點）</p>
-<p>6. 更新修改過的記錄數量｜然後開始下一循環｜直至所有記錄數量爲零爲止</p>
-<p>7. 最後可以得到每個節點的父節點是誰（父節點爲自身的即爲根節點，可以存在多個根節點）</p>
-<p>8. 將上述數據遞歸打印即可得到期望結果</p>
-<h2 id="算法詳解"><a href="#算法詳解" class="headerlink" title="算法詳解"></a>算法詳解</h2><p>這裏通過一個示例來描述該算法的邏輯。</p>
-<h3 id="遍歷之前的拓撲結構（示例）"><a href="#遍歷之前的拓撲結構（示例）" class="headerlink" title="遍歷之前的拓撲結構（示例）"></a>遍歷之前的拓撲結構（示例）</h3><pre class="mermaid">
+<h2 id="算法概述"><a href="#算法概述" class="headerlink" title="算法概述"></a>算法概述</h2><p><strong>核心思想：从末端节点开始，依次寻找每个节点的父节点，最终找到根节点。最后递归打印出拓扑关系。</strong></p>
+<p>1. 遍历只有一条记录的节点（末端节点）遍历完之后将末端节点的记录数量置为零。</p>
+<p>2. 遍历其他大于一条记录的节点</p>
+<p>3. 判断该节点是否存在与末端节点时间相同的记录｜如果存在则表示该节点为末端节点的潜在父节点（并将该节点的记录数量减一）</p>
+<p>4. 拓扑记录数量最少的那个节点即为当前末端节点的父节点</p>
+<p>5. 更新拓扑网络（记录父节点）</p>
+<p>6. 更新修改过的记录数量｜然后开始下一循环｜直至所有记录数量为零为止</p>
+<p>7. 最后可以得到每个节点的父节点是谁（父节点为自身的即为根节点，可以存在多个根节点）</p>
+<p>8. 将上述数据递归打印即可得到期望结果</p>
+<h2 id="算法详解"><a href="#算法详解" class="headerlink" title="算法详解"></a>算法详解</h2><p>这里通过一个示例来描述该算法的逻辑。</p>
+<h3 id="遍历之前的拓扑结构（示例）"><a href="#遍历之前的拓扑结构（示例）" class="headerlink" title="遍历之前的拓扑结构（示例）"></a>遍历之前的拓扑结构（示例）</h3><pre class="mermaid">
 flowchart TB
 %%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-R0[智能融合終端&lt;br&gt;SCU]
-R0---&gt;N1[斷路器&lt;br&gt;9]
-R0---&gt;N2[斷路器&lt;br&gt;16]
-N1---&gt;N1.1[斷路器&lt;br&gt;7]
-N1---&gt;N1.2[斷路器&lt;br&gt;6]
-N1---&gt;N1.3[斷路器&lt;br&gt;10]
-N1---&gt;N1.4[斷路器&lt;br&gt;12]
-N2---&gt;N2.1[斷路器&lt;br&gt;18]
-N2---&gt;N2.2[斷路器&lt;br&gt;19]
-N2---&gt;N2.3[斷路器&lt;br&gt;14]
-N1.1---&gt;N1.1.1[斷路器&lt;br&gt;3]
-N1.1---&gt;N1.1.2[斷路器&lt;br&gt;4]
-N1.1---&gt;N1.1.3[斷路器&lt;br&gt;5]
-N1.2---&gt;N1.2.1[斷路器&lt;br&gt;8]
-N1.2---&gt;N1.2.2[斷路器&lt;br&gt;11]
-N1.3---&gt;N1.3.1[斷路器&lt;br&gt;2]
-N2.2---&gt;N2.2.1[斷路器&lt;br&gt;13]
-N2.2---&gt;N2.2.2[斷路器&lt;br&gt;17]
-N1.1.1---&gt;N1.1.1.1[斷路器&lt;br&gt;0]
-N1.2.2---&gt;N1.2.2.1[斷路器&lt;br&gt;1]
-N2.2.2---&gt;N2.2.2.1[斷路器&lt;br&gt;15]
+R0[智能融合终端&lt;br&gt;SCU]
+R0---&gt;N1[断路器&lt;br&gt;9]
+R0---&gt;N2[断路器&lt;br&gt;16]
+N1---&gt;N1.1[断路器&lt;br&gt;7]
+N1---&gt;N1.2[断路器&lt;br&gt;6]
+N1---&gt;N1.3[断路器&lt;br&gt;10]
+N1---&gt;N1.4[断路器&lt;br&gt;12]
+N2---&gt;N2.1[断路器&lt;br&gt;18]
+N2---&gt;N2.2[断路器&lt;br&gt;19]
+N2---&gt;N2.3[断路器&lt;br&gt;14]
+N1.1---&gt;N1.1.1[断路器&lt;br&gt;3]
+N1.1---&gt;N1.1.2[断路器&lt;br&gt;4]
+N1.1---&gt;N1.1.3[断路器&lt;br&gt;5]
+N1.2---&gt;N1.2.1[断路器&lt;br&gt;8]
+N1.2---&gt;N1.2.2[断路器&lt;br&gt;11]
+N1.3---&gt;N1.3.1[断路器&lt;br&gt;2]
+N2.2---&gt;N2.2.1[断路器&lt;br&gt;13]
+N2.2---&gt;N2.2.2[断路器&lt;br&gt;17]
+N1.1.1---&gt;N1.1.1.1[断路器&lt;br&gt;0]
+N1.2.2---&gt;N1.2.2.1[断路器&lt;br&gt;1]
+N2.2.2---&gt;N2.2.2.1[断路器&lt;br&gt;15]
 </pre>
 
-<h3 id="遍歷之前的數據結構（示例）"><a href="#遍歷之前的數據結構（示例）" class="headerlink" title="遍歷之前的數據結構（示例）"></a>遍歷之前的數據結構（示例）</h3><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.result.0.svg"></p>
-<h3 id="第一次遍歷後的拓撲結構"><a href="#第一次遍歷後的拓撲結構" class="headerlink" title="第一次遍歷後的拓撲結構"></a>第一次遍歷後的拓撲結構</h3><pre class="mermaid">
+<h3 id="遍历之前的数据结构（示例）"><a href="#遍历之前的数据结构（示例）" class="headerlink" title="遍历之前的数据结构（示例）"></a>遍历之前的数据结构（示例）</h3><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.result.0.svg"></p>
+<h3 id="第一次遍历后的拓扑结构"><a href="#第一次遍历后的拓扑结构" class="headerlink" title="第一次遍历后的拓扑结构"></a>第一次遍历后的拓扑结构</h3><pre class="mermaid">
 flowchart TB
 %%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-R0[智能融合終端&lt;br&gt;SCU]
-R0---&gt;N1[斷路器&lt;br&gt;9]
-R0---&gt;N2[斷路器&lt;br&gt;16]
-N1---&gt;N1.1[斷路器&lt;br&gt;7]
-N1---&gt;N1.2[斷路器&lt;br&gt;6]
-N1---&gt;N1.3[斷路器&lt;br&gt;10]
+R0[智能融合终端&lt;br&gt;SCU]
+R0---&gt;N1[断路器&lt;br&gt;9]
+R0---&gt;N2[断路器&lt;br&gt;16]
+N1---&gt;N1.1[断路器&lt;br&gt;7]
+N1---&gt;N1.2[断路器&lt;br&gt;6]
+N1---&gt;N1.3[断路器&lt;br&gt;10]
 N1---&gt;N1.4[&quot; &quot;]
 N2---&gt;N2.1[&quot; &quot;]
-N2---&gt;N2.2[斷路器&lt;br&gt;19]
+N2---&gt;N2.2[断路器&lt;br&gt;19]
 N2---&gt;N2.3[&quot; &quot;]
-N1.1---&gt;N1.1.1[斷路器&lt;br&gt;3]
+N1.1---&gt;N1.1.1[断路器&lt;br&gt;3]
 N1.1---&gt;N1.1.2[&quot; &quot;]
 N1.1---&gt;N1.1.3[&quot; &quot;]
 N1.2---&gt;N1.2.1[&quot; &quot;]
-N1.2---&gt;N1.2.2[斷路器&lt;br&gt;11]
+N1.2---&gt;N1.2.2[断路器&lt;br&gt;11]
 N1.3---&gt;N1.3.1[&quot; &quot;]
 N2.2---&gt;N2.2.1[&quot; &quot;]
-N2.2---&gt;N2.2.2[斷路器&lt;br&gt;17]
+N2.2---&gt;N2.2.2[断路器&lt;br&gt;17]
 N1.1.1---&gt;N1.1.1.1[&quot; &quot;]
 N1.2.2---&gt;N1.2.2.1[&quot; &quot;]
 N2.2.2---&gt;N2.2.2.1[&quot; &quot;]
 </pre>
 
-<h3 id="第一次遍歷後的數據結構"><a href="#第一次遍歷後的數據結構" class="headerlink" title="第一次遍歷後的數據結構"></a>第一次遍歷後的數據結構</h3><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.result.1.svg"></p>
-<h3 id="第二次遍歷後的拓撲結構"><a href="#第二次遍歷後的拓撲結構" class="headerlink" title="第二次遍歷後的拓撲結構"></a>第二次遍歷後的拓撲結構</h3><pre class="mermaid">
+<h3 id="第一次遍历后的数据结构"><a href="#第一次遍历后的数据结构" class="headerlink" title="第一次遍历后的数据结构"></a>第一次遍历后的数据结构</h3><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.result.1.svg"></p>
+<h3 id="第二次遍历后的拓扑结构"><a href="#第二次遍历后的拓扑结构" class="headerlink" title="第二次遍历后的拓扑结构"></a>第二次遍历后的拓扑结构</h3><pre class="mermaid">
 flowchart TB
 %%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-R0[智能融合終端&lt;br&gt;SCU]
-R0---&gt;N1[斷路器&lt;br&gt;9]
-R0---&gt;N2[斷路器&lt;br&gt;16]
-N1---&gt;N1.1[斷路器&lt;br&gt;7]
-N1---&gt;N1.2[斷路器&lt;br&gt;6]
+R0[智能融合终端&lt;br&gt;SCU]
+R0---&gt;N1[断路器&lt;br&gt;9]
+R0---&gt;N2[断路器&lt;br&gt;16]
+N1---&gt;N1.1[断路器&lt;br&gt;7]
+N1---&gt;N1.2[断路器&lt;br&gt;6]
 N1---&gt;N1.3[&quot; &quot;]
 N1---&gt;N1.4[&quot; &quot;]
 N2---&gt;N2.1[&quot; &quot;]
-N2---&gt;N2.2[斷路器&lt;br&gt;19]
+N2---&gt;N2.2[断路器&lt;br&gt;19]
 N2---&gt;N2.3[&quot; &quot;]
 N1.1---&gt;N1.1.1[&quot; &quot;]
 N1.1---&gt;N1.1.2[&quot; &quot;]
@@ -396,13 +396,13 @@ N2.2---&gt;N2.2.1[&quot; &quot;]
 N2.2---&gt;N2.2.2[&quot; &quot;]
 </pre>
 
-<h3 id="第二次遍歷後的數據結構"><a href="#第二次遍歷後的數據結構" class="headerlink" title="第二次遍歷後的數據結構"></a>第二次遍歷後的數據結構</h3><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.result.2.svg"></p>
-<h3 id="第三次遍歷後的拓撲結構"><a href="#第三次遍歷後的拓撲結構" class="headerlink" title="第三次遍歷後的拓撲結構"></a>第三次遍歷後的拓撲結構</h3><pre class="mermaid">
+<h3 id="第二次遍历后的数据结构"><a href="#第二次遍历后的数据结构" class="headerlink" title="第二次遍历后的数据结构"></a>第二次遍历后的数据结构</h3><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.result.2.svg"></p>
+<h3 id="第三次遍历后的拓扑结构"><a href="#第三次遍历后的拓扑结构" class="headerlink" title="第三次遍历后的拓扑结构"></a>第三次遍历后的拓扑结构</h3><pre class="mermaid">
 flowchart TB
 %%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-R0[智能融合終端&lt;br&gt;SCU]
-R0---&gt;N1[斷路器&lt;br&gt;9]
-R0---&gt;N2[斷路器&lt;br&gt;16]
+R0[智能融合终端&lt;br&gt;SCU]
+R0---&gt;N1[断路器&lt;br&gt;9]
+R0---&gt;N2[断路器&lt;br&gt;16]
 N1---&gt;N1.1[&quot; &quot;]
 N1---&gt;N1.2[&quot; &quot;]
 N1---&gt;N1.3[&quot; &quot;]
@@ -412,11 +412,11 @@ N2---&gt;N2.2[&quot; &quot;]
 N2---&gt;N2.3[&quot; &quot;]
 </pre>
 
-<h3 id="第三次遍歷後的數據結構"><a href="#第三次遍歷後的數據結構" class="headerlink" title="第三次遍歷後的數據結構"></a>第三次遍歷後的數據結構</h3><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.result.3.svg"></p>
-<h3 id="遍歷完成之後得到的數據"><a href="#遍歷完成之後得到的數據" class="headerlink" title="遍歷完成之後得到的數據"></a>遍歷完成之後得到的數據</h3><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.result.x.png"></p>
-<h2 id="核心代碼"><a href="#核心代碼" class="headerlink" title="核心代碼"></a>核心代碼</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 計算拓撲關係</span><br><span class="line">while (HaveData &amp;&amp; HaveDataOneRecord)</span><br><span class="line">&#123;</span><br><span class="line">    HaveData = false;</span><br><span class="line">    HaveDataOneRecord = false;</span><br><span class="line"></span><br><span class="line">    for (int idx = 0; idx &lt; TOPO_NODE_NUM; ++idx)</span><br><span class="line">    &#123;</span><br><span class="line">        unsigned int MinNum = 0xFFFFFFFF;</span><br><span class="line">        unsigned int MinIdx = idx;</span><br><span class="line"></span><br><span class="line">        if (TopoNum[idx] &gt; 0)</span><br><span class="line">        &#123;</span><br><span class="line">            HaveData = true;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (TopoNum[idx] == 1) // 遍歷只有一條記錄的節點（末端節點）</span><br><span class="line">        &#123;</span><br><span class="line">            HaveDataOneRecord = true;</span><br><span class="line"></span><br><span class="line">            TopoNumMod[idx]--;</span><br><span class="line"></span><br><span class="line">            for (int i = 0; i &lt; TOPO_NODE_NUM; ++i)</span><br><span class="line">            &#123;</span><br><span class="line">                if (TopoNum[i] &lt;= 1) // 遍歷其他大於一條記錄的節點</span><br><span class="line">                &#123;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                for (int n = 1; n &lt;= TopoSrc[i][0]; ++n) // 判斷該節點是否存在與末端節點時間相同的記錄</span><br><span class="line">                &#123;</span><br><span class="line">                    if (TimeCompare(TopoSrc[idx][1], TopoSrc[i][n], TOPO_TIME_BIAS)) // 4example bias==3 (±3s)</span><br><span class="line">                    &#123;</span><br><span class="line">                        // 如果存在則表示該節點爲末端節點的潛在父節點（並將該節點的記錄數量減一）</span><br><span class="line">                        TopoNumMod[i]--;</span><br><span class="line">                        if (TopoSrc[i][0] &lt; MinNum)</span><br><span class="line">                        &#123;</span><br><span class="line">                            MinNum = TopoSrc[i][0];</span><br><span class="line">                            MinIdx = i; // 查找拓撲記錄數量最少的節點</span><br><span class="line">                            break;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            TopoNet[idx] = MinIdx; // 拓撲記錄數量最少的那個節點即爲當前末端節點的父節點</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 經過上述步驟，拓撲記錄數量爲一的節點的記錄數量被清零，同時又重新生成了一批新的拓撲記錄數量爲一的節點。</span><br><span class="line">    // 這裏更新中間變量，然後繼續上述步驟：遍歷新的只有一條記錄的節點（新的末端節點），直至遍歷完畢。</span><br><span class="line">    memcpy(TopoNum, TopoNumMod, sizeof(TopoNum));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="第三次遍历后的数据结构"><a href="#第三次遍历后的数据结构" class="headerlink" title="第三次遍历后的数据结构"></a>第三次遍历后的数据结构</h3><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.result.3.svg"></p>
+<h3 id="遍历完成之后得到的数据"><a href="#遍历完成之后得到的数据" class="headerlink" title="遍历完成之后得到的数据"></a>遍历完成之后得到的数据</h3><p><img src="/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu/topology.result.x.png"></p>
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 计算拓扑关系</span><br><span class="line">while (HaveData &amp;&amp; HaveDataOneRecord)</span><br><span class="line">&#123;</span><br><span class="line">    HaveData = false;</span><br><span class="line">    HaveDataOneRecord = false;</span><br><span class="line"></span><br><span class="line">    for (int idx = 0; idx &lt; TOPO_NODE_NUM; ++idx)</span><br><span class="line">    &#123;</span><br><span class="line">        unsigned int MinNum = 0xFFFFFFFF;</span><br><span class="line">        unsigned int MinIdx = idx;</span><br><span class="line"></span><br><span class="line">        if (TopoNum[idx] &gt; 0)</span><br><span class="line">        &#123;</span><br><span class="line">            HaveData = true;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (TopoNum[idx] == 1) // 遍历只有一条记录的节点（末端节点）</span><br><span class="line">        &#123;</span><br><span class="line">            HaveDataOneRecord = true;</span><br><span class="line"></span><br><span class="line">            TopoNumMod[idx]--;</span><br><span class="line"></span><br><span class="line">            for (int i = 0; i &lt; TOPO_NODE_NUM; ++i)</span><br><span class="line">            &#123;</span><br><span class="line">                if (TopoNum[i] &lt;= 1) // 遍历其他大于一条记录的节点</span><br><span class="line">                &#123;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                for (int n = 1; n &lt;= TopoSrc[i][0]; ++n) // 判断该节点是否存在与末端节点时间相同的记录</span><br><span class="line">                &#123;</span><br><span class="line">                    if (TimeCompare(TopoSrc[idx][1], TopoSrc[i][n], TOPO_TIME_BIAS)) // 4example bias==3 (±3s)</span><br><span class="line">                    &#123;</span><br><span class="line">                        // 如果存在则表示该节点为末端节点的潜在父节点（并将该节点的记录数量减一）</span><br><span class="line">                        TopoNumMod[i]--;</span><br><span class="line">                        if (TopoSrc[i][0] &lt; MinNum)</span><br><span class="line">                        &#123;</span><br><span class="line">                            MinNum = TopoSrc[i][0];</span><br><span class="line">                            MinIdx = i; // 查找拓扑记录数量最少的节点</span><br><span class="line">                            break;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            TopoNet[idx] = MinIdx; // 拓扑记录数量最少的那个节点即为当前末端节点的父节点</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 经过上述步骤，拓扑记录数量为一的节点的记录数量被清零，同时又重新生成了一批新的拓扑记录数量为一的节点。</span><br><span class="line">    // 这里更新中间变量，然后继续上述步骤：遍历新的只有一条记录的节点（新的末端节点），直至遍历完毕。</span><br><span class="line">    memcpy(TopoNum, TopoNumMod, sizeof(TopoNum));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="遞歸打印"><a href="#遞歸打印" class="headerlink" title="遞歸打印"></a>遞歸打印</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">void TopoPrint(unsigned int root, unsigned int *node, int node_num) // *node : 節點關係（所有節點的父節點信息）</span><br><span class="line">&#123;</span><br><span class="line">    static int depth = 1;</span><br><span class="line"></span><br><span class="line">    FILE * fp;</span><br><span class="line"></span><br><span class="line">    for (int i = 0; i &lt; node_num; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        if (node[i] == root)</span><br><span class="line">        &#123;</span><br><span class="line">            fp = fopen(TOPO_FILE_PATH, &quot;a+&quot;);</span><br><span class="line"></span><br><span class="line">            // 根節點禁止遞歸</span><br><span class="line">            if (i == root)</span><br><span class="line">            &#123;</span><br><span class="line">                fclose(fp);</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            printf(&quot;|---&quot;);</span><br><span class="line"></span><br><span class="line">            for (int d = 0; d &lt; depth; ++d)</span><br><span class="line">            &#123;</span><br><span class="line">                #if (ENABLE_PRINT)</span><br><span class="line">                printf(&quot;|---&quot;);</span><br><span class="line">                #endif</span><br><span class="line">                #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">                fprintf(fp, &quot;|---&quot;);</span><br><span class="line">                #endif</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            // 打印序號</span><br><span class="line">            #if (ENABLE_PRINT)</span><br><span class="line">            printf(&quot;%-8d&quot;, i);</span><br><span class="line">            printf(TOPO_ALIGN_STR);</span><br><span class="line">            #endif</span><br><span class="line">            #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">            fprintf(fp, &quot;%-8d&quot;, i);</span><br><span class="line">            fprintf(fp, TOPO_ALIGN_STR);</span><br><span class="line">            #endif</span><br><span class="line"></span><br><span class="line">            // 打印地址</span><br><span class="line">            for (int len = 0; len &lt; 6; ++len)</span><br><span class="line">            &#123;</span><br><span class="line">                #if (ENABLE_PRINT)</span><br><span class="line">                printf(&quot;%02X&quot;, TopoDev[i][len]);</span><br><span class="line">                #endif</span><br><span class="line">                #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">                fprintf(fp, &quot;%02X&quot;, TopoDev[i][len]);</span><br><span class="line">                #endif</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            // 打印換行</span><br><span class="line">            #if (ENABLE_PRINT)</span><br><span class="line">            printf(&quot;\r\n&quot;);</span><br><span class="line">            #endif</span><br><span class="line">            #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">            fprintf(fp, &quot;\n&quot;);</span><br><span class="line">            #endif</span><br><span class="line"></span><br><span class="line">            fclose(fp);</span><br><span class="line"></span><br><span class="line">            // 遞歸調用</span><br><span class="line">            depth++;</span><br><span class="line">            TopoPrint(i, node, node_num);</span><br><span class="line">            depth--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="递归打印"><a href="#递归打印" class="headerlink" title="递归打印"></a>递归打印</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">void TopoPrint(unsigned int root, unsigned int *node, int node_num) // *node : 节点关系（所有节点的父节点信息）</span><br><span class="line">&#123;</span><br><span class="line">    static int depth = 1;</span><br><span class="line"></span><br><span class="line">    FILE * fp;</span><br><span class="line"></span><br><span class="line">    for (int i = 0; i &lt; node_num; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        if (node[i] == root)</span><br><span class="line">        &#123;</span><br><span class="line">            fp = fopen(TOPO_FILE_PATH, &quot;a+&quot;);</span><br><span class="line"></span><br><span class="line">            // 根节点禁止递归</span><br><span class="line">            if (i == root)</span><br><span class="line">            &#123;</span><br><span class="line">                fclose(fp);</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            printf(&quot;|---&quot;);</span><br><span class="line"></span><br><span class="line">            for (int d = 0; d &lt; depth; ++d)</span><br><span class="line">            &#123;</span><br><span class="line">                #if (ENABLE_PRINT)</span><br><span class="line">                printf(&quot;|---&quot;);</span><br><span class="line">                #endif</span><br><span class="line">                #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">                fprintf(fp, &quot;|---&quot;);</span><br><span class="line">                #endif</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            // 打印序号</span><br><span class="line">            #if (ENABLE_PRINT)</span><br><span class="line">            printf(&quot;%-8d&quot;, i);</span><br><span class="line">            printf(TOPO_ALIGN_STR);</span><br><span class="line">            #endif</span><br><span class="line">            #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">            fprintf(fp, &quot;%-8d&quot;, i);</span><br><span class="line">            fprintf(fp, TOPO_ALIGN_STR);</span><br><span class="line">            #endif</span><br><span class="line"></span><br><span class="line">            // 打印地址</span><br><span class="line">            for (int len = 0; len &lt; 6; ++len)</span><br><span class="line">            &#123;</span><br><span class="line">                #if (ENABLE_PRINT)</span><br><span class="line">                printf(&quot;%02X&quot;, TopoDev[i][len]);</span><br><span class="line">                #endif</span><br><span class="line">                #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">                fprintf(fp, &quot;%02X&quot;, TopoDev[i][len]);</span><br><span class="line">                #endif</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            // 打印换行</span><br><span class="line">            #if (ENABLE_PRINT)</span><br><span class="line">            printf(&quot;\r\n&quot;);</span><br><span class="line">            #endif</span><br><span class="line">            #if (ENABLE_PRINT_TO_FILE)</span><br><span class="line">            fprintf(fp, &quot;\n&quot;);</span><br><span class="line">            #endif</span><br><span class="line"></span><br><span class="line">            fclose(fp);</span><br><span class="line"></span><br><span class="line">            // 递归调用</span><br><span class="line">            depth++;</span><br><span class="line">            TopoPrint(i, node, node_num);</span><br><span class="line">            depth--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -434,7 +434,7 @@ N2---&gt;N2.3[&quot; &quot;]
   </li>
   <li class="post-copyright-link">
       <strong>鏈接：</strong>
-      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html" title="拓撲分析算法">https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html</a>
+      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html" title="拓扑结构分析算法">https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html</a>
   </li>
   <li class="post-copyright-license">
       <strong>聲明： </strong>請遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議｜姓名標示｜相同方式分享
@@ -443,21 +443,21 @@ N2---&gt;N2.3[&quot; &quot;]
 </div>
 
           <div class="post-tags">
-              <a href="/sulfurandcu.io/tags/%E6%8B%93%E6%92%B2%E8%AD%98%E5%88%A5/" rel="tag"># 拓撲識別</a>
-              <a href="/sulfurandcu.io/tags/%E6%8B%93%E6%92%B2%E5%88%86%E6%9E%90/" rel="tag"># 拓撲分析</a>
+              <a href="/sulfurandcu.io/tags/%E6%8B%93%E6%89%91%E8%AF%86%E5%88%AB/" rel="tag"># 拓扑识别</a>
+              <a href="/sulfurandcu.io/tags/%E6%8B%93%E6%89%91%E5%88%86%E6%9E%90/" rel="tag"># 拓扑分析</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clnyhr2mo002m10rq48l66wah.html" rel="prev" title="沒事兒也來做做題">
-                  <i class="fa fa-angle-left"></i> 沒事兒也來做做題
+                <a href="/sulfurandcu.io/clnyhr2mo002m10rq48l66wah.html" rel="prev" title="没事儿也来做做题">
+                  <i class="fa fa-angle-left"></i> 没事儿也来做做题
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html" rel="next" title="編寫一個根據 svn 提交記錄自動生成日報的腳本">
-                  編寫一個根據 svn 提交記錄自動生成日報的腳本 <i class="fa fa-angle-right"></i>
+                <a href="/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html" rel="next" title="DailyGenerator">
+                  DailyGenerator <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -478,7 +478,7 @@ N2---&gt;N2.3[&quot; &quot;]
 
   <div class="copyright">
     &copy; 2018 – 
-    <span itemprop="copyrightYear">2023</span>
+    <span itemprop="copyrightYear">2024</span>
     <span class="with-love">
       <i class="fa fa-fingerprint"></i>
     </span>

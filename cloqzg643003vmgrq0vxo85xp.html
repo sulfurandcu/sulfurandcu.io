@@ -26,10 +26,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html","path":"cloqzg643003vmgrq0vxo85xp.html","title":"問題記錄：華大 HC32L19x 時鐘初始化函數存在缺陷"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html","path":"cloqzg643003vmgrq0vxo85xp.html","title":"问题记录：华大 HC32L19x 时钟初始化函数存在缺陷"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>問題記錄：華大 HC32L19x 時鐘初始化函數存在缺陷 | ㄅㄆㄇㄈ</title>
+<title>问题记录：华大 HC32L19x 时钟初始化函数存在缺陷 | ㄅㄆㄇㄈ</title>
   
 
 
@@ -150,12 +150,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-count">36</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -210,12 +210,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="問題記錄：華大 HC32L19x 時鐘初始化函數存在缺陷 | ㄅㄆㄇㄈ">
+      <meta itemprop="name" content="问题记录：华大 HC32L19x 时钟初始化函数存在缺陷 | ㄅㄆㄇㄈ">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          問題記錄：華大 HC32L19x 時鐘初始化函數存在缺陷
+          问题记录：华大 HC32L19x 时钟初始化函数存在缺陷
         </h1>
 
         <div class="post-meta-container">
@@ -234,7 +234,7 @@
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E5%95%8F%E9%A1%8C%E8%A8%98%E9%8C%84/" itemprop="url" rel="index"><span itemprop="name">問題記錄</span></a>
+          <a href="/sulfurandcu.io/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">问题记录</span></a>
         </span>
     </span>
 
@@ -252,10 +252,10 @@
 <span id="more"></span>
 
 <p>hc32l19x_ddl_rev1.0.3</p>
-<figure class="highlight c"><figcaption><span>sysctrl.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="type">en_result_t</span> <span class="title function_">Sysctrl_SysClkSwitch</span><span class="params">(<span class="type">en_sysctrl_clk_source_t</span> enSource)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">en_result_t</span> enRet = Ok;</span><br><span class="line"></span><br><span class="line">    <span class="type">en_sysctrl_clk_source_t</span> ClkNew = enSource;</span><br><span class="line"></span><br><span class="line">    _SysctrlUnlock();</span><br><span class="line">    M0P_SYSCTRL-&gt;SYSCTRL0_f.CLKSW = ClkNew;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//更新Core時鐘（HCLK）</span></span><br><span class="line">    SystemCoreClockUpdate();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> enRet;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">en_result_t</span> <span class="title function_">Sysctrl_ClkInit</span><span class="params">(<span class="type">stc_sysctrl_clk_cfg_t</span> *pstcCfg)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">en_result_t</span> enRet = Ok;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//系統時鐘參數配置</span></span><br><span class="line">    <span class="keyword">switch</span>(pstcCfg-&gt;enClkSrc)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkRCH:</span><br><span class="line"></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkXTH:</span><br><span class="line">            Sysctrl_XTHDriverCfg(SysctrlXtalDriver3);</span><br><span class="line">            Sysctrl_SetXTHStableTime(SysctrlXthStableCycle16384);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkRCL:</span><br><span class="line">            Sysctrl_SetRCLStableTime(SysctrlRclStableCycle256);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkXTL:</span><br><span class="line">            Sysctrl_XTLDriverCfg(SysctrlXtlAmp3, SysctrlXtalDriver3);</span><br><span class="line">            Sysctrl_SetXTLStableTime(SysctrlXtlStableCycle16384);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkPLL:</span><br><span class="line">            Sysctrl_SetPLLStableTime(SysctrlPllStableCycle16384);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            enRet = ErrorInvalidParameter;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//時鐘源使能</span></span><br><span class="line">    Sysctrl_ClkSourceEnable(pstcCfg-&gt;enClkSrc, TRUE);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//時鐘源切換</span></span><br><span class="line">    Sysctrl_SysClkSwitch(pstcCfg-&gt;enClkSrc);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//時鐘分頻設置</span></span><br><span class="line">    Sysctrl_SetHCLKDiv(pstcCfg-&gt;enHClkDiv);</span><br><span class="line">    Sysctrl_SetPCLKDiv(pstcCfg-&gt;enPClkDiv);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> enRet;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><figcaption><span>sysctrl.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="type">en_result_t</span> <span class="title function_">Sysctrl_SysClkSwitch</span><span class="params">(<span class="type">en_sysctrl_clk_source_t</span> enSource)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">en_result_t</span> enRet = Ok;</span><br><span class="line"></span><br><span class="line">    <span class="type">en_sysctrl_clk_source_t</span> ClkNew = enSource;</span><br><span class="line"></span><br><span class="line">    _SysctrlUnlock();</span><br><span class="line">    M0P_SYSCTRL-&gt;SYSCTRL0_f.CLKSW = ClkNew;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//更新Core时钟（HCLK）</span></span><br><span class="line">    SystemCoreClockUpdate();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> enRet;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">en_result_t</span> <span class="title function_">Sysctrl_ClkInit</span><span class="params">(<span class="type">stc_sysctrl_clk_cfg_t</span> *pstcCfg)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">en_result_t</span> enRet = Ok;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//系统时钟参数配置</span></span><br><span class="line">    <span class="keyword">switch</span>(pstcCfg-&gt;enClkSrc)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkRCH:</span><br><span class="line"></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkXTH:</span><br><span class="line">            Sysctrl_XTHDriverCfg(SysctrlXtalDriver3);</span><br><span class="line">            Sysctrl_SetXTHStableTime(SysctrlXthStableCycle16384);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkRCL:</span><br><span class="line">            Sysctrl_SetRCLStableTime(SysctrlRclStableCycle256);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkXTL:</span><br><span class="line">            Sysctrl_XTLDriverCfg(SysctrlXtlAmp3, SysctrlXtalDriver3);</span><br><span class="line">            Sysctrl_SetXTLStableTime(SysctrlXtlStableCycle16384);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> SysctrlClkPLL:</span><br><span class="line">            Sysctrl_SetPLLStableTime(SysctrlPllStableCycle16384);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            enRet = ErrorInvalidParameter;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//时钟源使能</span></span><br><span class="line">    Sysctrl_ClkSourceEnable(pstcCfg-&gt;enClkSrc, TRUE);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//时钟源切换</span></span><br><span class="line">    Sysctrl_SysClkSwitch(pstcCfg-&gt;enClkSrc);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//时钟分频设置</span></span><br><span class="line">    Sysctrl_SetHCLKDiv(pstcCfg-&gt;enHClkDiv);</span><br><span class="line">    Sysctrl_SetPCLKDiv(pstcCfg-&gt;enPClkDiv);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> enRet;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>Sysctrl_SysClkSwitch() 調用了 SystemCoreClockUpdate() 來更新 SystemCoreClock。這沒問題，問題是在這之後又去設置了 HCLK 的值，這就會導致 SystemCoreClock 與實際的 HCLK 不一致。</p>
-<p>通過修改驅動庫，將「時鐘源切換」和「時鐘分頻設置」的執行順序對調即可解決該問題，若不想直接修改驅動庫，可以在調用 Sysctrl_ClkInit() 之後再調用一遍 SystemCoreClockUpdate()。</p>
+<p>Sysctrl_SysClkSwitch() 调用了 SystemCoreClockUpdate() 来更新 SystemCoreClock。这没问题，问题是在这之后又去设置了 HCLK 的值，这就会导致 SystemCoreClock 与实际的 HCLK 不一致。</p>
+<p>通过修改驱动库，将「时钟源切换」和「时钟分频设置」的执行顺序对调即可解决该问题，若不想直接修改驱动库，可以在调用 Sysctrl_ClkInit() 之后再调用一遍 SystemCoreClockUpdate()。</p>
 
     </div>
 
@@ -273,7 +273,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>鏈接：</strong>
-      <a href="https://sulfurandcu.github.io/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html" title="問題記錄：華大 HC32L19x 時鐘初始化函數存在缺陷">https://sulfurandcu.github.io/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html</a>
+      <a href="https://sulfurandcu.github.io/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html" title="问题记录：华大 HC32L19x 时钟初始化函数存在缺陷">https://sulfurandcu.github.io/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html</a>
   </li>
   <li class="post-copyright-license">
       <strong>聲明： </strong>請遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議｜姓名標示｜相同方式分享
@@ -282,7 +282,7 @@
 </div>
 
           <div class="post-tags">
-              <a href="/sulfurandcu.io/tags/%E8%8F%AF%E5%A4%A7%E5%8D%8A%E5%B0%8E%E9%AB%94/" rel="tag"># 華大半導體</a>
+              <a href="/sulfurandcu.io/tags/%E5%8D%8E%E5%A4%A7%E5%8D%8A%E5%AF%BC%E4%BD%93/" rel="tag"># 华大半导体</a>
               <a href="/sulfurandcu.io/tags/HC32L19X/" rel="tag"># HC32L19X</a>
           </div>
 
@@ -290,13 +290,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html" rel="prev" title="crc-libc">
-                  <i class="fa fa-angle-left"></i> crc-libc
+                <a href="/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html" rel="prev" title="crc-lib">
+                  <i class="fa fa-angle-left"></i> crc-lib
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/cloqzaza3003fmgrqdpkl8c5j.html" rel="next" title="問題記錄：華大 HC32F460 避坑指南之 ICG 寄存器">
-                  問題記錄：華大 HC32F460 避坑指南之 ICG 寄存器 <i class="fa fa-angle-right"></i>
+                <a href="/sulfurandcu.io/cloqzaza3003fmgrqdpkl8c5j.html" rel="next" title="问题记录：华大 HC32F460 避坑指南之 ICG 寄存器">
+                  问题记录：华大 HC32F460 避坑指南之 ICG 寄存器 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -317,7 +317,7 @@
 
   <div class="copyright">
     &copy; 2018 – 
-    <span itemprop="copyrightYear">2023</span>
+    <span itemprop="copyrightYear">2024</span>
     <span class="with-love">
       <i class="fa fa-fingerprint"></i>
     </span>

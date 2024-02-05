@@ -26,10 +26,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html","path":"clo2c1l6700cd1wrqgjn53mgz.html","title":"集成開發環境－GCC.ARM（#04）快捷任務"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html","path":"clo2c1l6700cd1wrqgjn53mgz.html","title":"集成开发环境－GCC.ARM（#04）快捷任务"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>集成開發環境－GCC.ARM（#04）快捷任務 | ㄅㄆㄇㄈ</title>
+<title>集成开发环境－GCC.ARM（#04）快捷任务 | ㄅㄆㄇㄈ</title>
   
 
 
@@ -150,12 +150,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-count">36</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -210,12 +210,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="集成開發環境－GCC.ARM（#04）快捷任務 | ㄅㄆㄇㄈ">
+      <meta itemprop="name" content="集成开发环境－GCC.ARM（#04）快捷任务 | ㄅㄆㄇㄈ">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          集成開發環境－GCC.ARM（#04）快捷任務
+          集成开发环境－GCC.ARM（#04）快捷任务
         </h1>
 
         <div class="post-meta-container">
@@ -234,7 +234,7 @@
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">開發筆記</span></a>
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
         </span>
     </span>
 
@@ -254,19 +254,19 @@
 <hr>
 <span id="more"></span>
 
-<p>通過 makefile 我們將海量的指令精簡至一條 make+ 指令，但是我比較懶，一條指令都不想敲。😎</p>
-<p>1. 在工程目錄下的 .vscode 目錄中新建 tasks.json 文件並填入以下內容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">    &quot;tasks&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;編譯（build）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;清除（clean）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make clean&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;燒錄（write）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make write&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;燒錄（write.openocd）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make write.openocd&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>通过 makefile 我们将海量的指令精简至一条 make+ 指令，但是我比较懒，一条指令都不想敲。😎</p>
+<p>1. 在工程目录下的 .vscode 目录中新建 tasks.json 文件并填入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">    &quot;tasks&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;编译（build）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;清除（clean）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make clean&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;烧录（write）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make write&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;烧录（write.openocd）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make write.openocd&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<div class="note info no-icon"><p>在 cmd 中使用 “|” 連接兩條指令，在 powershell 中使用 “;” 連接兩條指令。</p>
+<div class="note info no-icon"><p>在 cmd 中使用 “|” 连接两条指令，在 powershell 中使用 “;” 连接两条指令。</p>
 </div>
 
-<p>2. 找到菜單欄依次點擊 Terminal -&gt; RunTask 然後選擇：</p>
+<p>2. 找到菜单栏依次点击 Terminal -&gt; RunTask 然后选择：</p>
 <ul>
-<li>編譯（build）</li>
+<li>编译（build）</li>
 <li>清除（clean）</li>
-<li>燒錄（write）</li>
-<li>燒錄（write.openocd）</li>
+<li>烧录（write）</li>
+<li>烧录（write.openocd）</li>
 </ul>
 <p><img src="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz/task.json.png"></p>
 
@@ -286,7 +286,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>鏈接：</strong>
-      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html" title="集成開發環境－GCC.ARM（#04）快捷任務">https://sulfurandcu.github.io/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html</a>
+      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html" title="集成开发环境－GCC.ARM（#04）快捷任务">https://sulfurandcu.github.io/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html</a>
   </li>
   <li class="post-copyright-license">
       <strong>聲明： </strong>請遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議｜姓名標示｜相同方式分享
@@ -295,8 +295,8 @@
 </div>
 
           <div class="post-tags">
-              <a href="/sulfurandcu.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BB%9F%E4%BB%B6%E9%96%8B%E7%99%BC/" rel="tag"># 嵌入式軟件開發</a>
-              <a href="/sulfurandcu.io/tags/%E9%9B%86%E6%88%90%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/" rel="tag"># 集成開發環境</a>
+              <a href="/sulfurandcu.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/" rel="tag"># 嵌入式软件开发</a>
+              <a href="/sulfurandcu.io/tags/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" rel="tag"># 集成开发环境</a>
               <a href="/sulfurandcu.io/tags/IDE/" rel="tag"># IDE</a>
           </div>
 
@@ -304,13 +304,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html" rel="prev" title="集成開發環境－GCC.ARM（#03）程序燒錄">
-                  <i class="fa fa-angle-left"></i> 集成開發環境－GCC.ARM（#03）程序燒錄
+                <a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html" rel="prev" title="集成开发环境－GCC.ARM（#03）程序烧录">
+                  <i class="fa fa-angle-left"></i> 集成开发环境－GCC.ARM（#03）程序烧录
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html" rel="next" title="集成開發環境－GCC.ARM（#05）程序調試">
-                  集成開發環境－GCC.ARM（#05）程序調試 <i class="fa fa-angle-right"></i>
+                <a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html" rel="next" title="集成开发环境－GCC.ARM（#05）程序调试">
+                  集成开发环境－GCC.ARM（#05）程序调试 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -331,7 +331,7 @@
 
   <div class="copyright">
     &copy; 2018 – 
-    <span itemprop="copyrightYear">2023</span>
+    <span itemprop="copyrightYear">2024</span>
     <span class="with-love">
       <i class="fa fa-fingerprint"></i>
     </span>
