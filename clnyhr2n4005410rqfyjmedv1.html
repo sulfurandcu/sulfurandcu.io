@@ -130,7 +130,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B0%83%E6%95%B4%E5%A4%A7%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%97%B6%E8%A6%81%E4%BF%AE%E6%94%B9%E5%93%AA%E4%BA%9B%E9%85%8D%E7%BD%AE%EF%BC%9F"><span class="nav-text">调整大小程序时要修改哪些配置？</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B0%83%E6%95%B4%E5%A4%A7%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%97%B6%E8%A6%81%E4%BF%AE%E6%94%B9%E5%93%AA%E4%BA%9B%E9%85%8D%E7%BD%AE%EF%BC%9F"><span class="nav-text">调整大小程序时要修改哪些配置？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%95%A3%E5%8A%A0%E8%BD%BD"><span class="nav-text">分散加载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#module-select-pattern-input-section-selector-input-section-selector-%E2%80%A6-input-section-attr-RO-CODE-RO-DATA-RO-RW-DATA-RW-CODE-RW-XO-ZI-ENTRY"><span class="nav-text">module_select_pattern (input_section_selector, input_section_selector, …)- +input_section_attr  - * (+RO-CODE)  - * (+RO-DATA)  - * (+RO)  - * (+RW-DATA)  - * (+RW-CODE)  - * (+RW)  - * (+XO)  - * (+ZI)  - * (+ENTRY)</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -145,13 +145,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-count">47</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -253,6 +253,61 @@
 <p>➁ 修改 ConfigMCU 中大小程序的起始地址及空间大小。</p>
 <p>➂ 修改 iap: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于小程序的起始地址）。</p>
 <p>➃ 修改 app: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于大程序的起始地址）。</p>
+<h2 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h2><ul>
+<li><p>module_select_pattern</p>
+<ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+<li>*.o</li>
+<li>.ANY</li>
+</ul>
+</li>
+<li><p>module_select_pattern (input_section_selector)</p>
+</li>
+<li><h2 id="module-select-pattern-input-section-selector-input-section-selector-…-input-section-attr-RO-CODE-RO-DATA-RO-RW-DATA-RW-CODE-RW-XO-ZI-ENTRY"><a href="#module-select-pattern-input-section-selector-input-section-selector-…-input-section-attr-RO-CODE-RO-DATA-RO-RW-DATA-RW-CODE-RW-XO-ZI-ENTRY" class="headerlink" title="module_select_pattern (input_section_selector, input_section_selector, …)- +input_section_attr  - * (+RO-CODE)  - * (+RO-DATA)  - * (+RO)  - * (+RW-DATA)  - * (+RW-CODE)  - * (+RW)  - * (+XO)  - * (+ZI)  - * (+ENTRY)"></a>module_select_pattern (input_section_selector, input_section_selector, …)<br>- +input_section_attr<br>  - * (+RO-CODE)<br>  - * (+RO-DATA)<br>  - * (+RO)<br>  - * (+RW-DATA)<br>  - * (+RW-CODE)<br>  - * (+RW)<br>  - * (+XO)<br>  - * (+ZI)<br>  - * (+ENTRY)</h2><ul>
+<li><ul>
+<li>(+CODE)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+CONST)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+TEXT)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+DATA)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+BSS)</li>
+</ul>
+</li>
+<li></li>
+<li><ul>
+<li>(+FIRST)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+LAST)</li>
+</ul>
+</li>
+<li>input_section_pattern<ul>
+<li><ul>
+<li>(*app_info)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>input_symbol_pattern</li>
+<li>section_properties</li>
+</ul>
+</li>
+</ul>
 
     </div>
 

@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>二〇二一拼音漫游</title>
-    <url>/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7.html</url>
-    <content><![CDATA[<p><img src="/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7/2021.A.bopomofo.Odyssey.png"></p>
-]]></content>
-      <categories>
-        <category>语言文字</category>
-      </categories>
-      <tags>
-        <tag>汉语拼音</tag>
-        <tag>注音符号</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>黄金时代随风而逝</title>
     <url>/sulfurandcu.io/clnyhr2mh001p10rq8w62htd4.html</url>
     <content><![CDATA[<p><img src="/sulfurandcu.io/clnyhr2mh001p10rq8w62htd4/cast.away.illusions.jpg"></p>
@@ -73,6 +60,26 @@
       </categories>
   </entry>
   <entry>
+    <title>囗－囗</title>
+    <url>/sulfurandcu.io/clnyhr2mt003b10rq5snfeg6t.html</url>
+    <content><![CDATA[<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center><br></center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+
+<br>
+
+<span id="more"></span>
+
+<br>
+]]></content>
+  </entry>
+  <entry>
     <title>搭建一个文档系统</title>
     <url>/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo.html</url>
     <content><![CDATA[<p><img src="/sulfurandcu.io/clnybw9vu001xbkrq6tmo3euo/architecture.png"></p>
@@ -85,7 +92,7 @@
 <div class="note info"><p><code>#web</code> <a href="http://127.0.0.1:3000/">http://127.0.0.1:3000</a></p>
 </div>
 
-<div class="note info"><p><code>#ssh</code> <a href="mailto:&#x6c;&#x6f;&#x63;&#x61;&#108;&#x68;&#x6f;&#115;&#116;&#64;&#x31;&#50;&#x37;&#x2e;&#x30;&#46;&#48;&#x2e;&#x31;">&#x6c;&#x6f;&#x63;&#x61;&#108;&#x68;&#x6f;&#115;&#116;&#64;&#x31;&#50;&#x37;&#x2e;&#x30;&#46;&#48;&#x2e;&#x31;</a> 📢 Password:password</p>
+<div class="note info"><p><code>#ssh</code> <a href="mailto:&#x6c;&#x6f;&#x63;&#97;&#108;&#x68;&#x6f;&#115;&#116;&#64;&#x31;&#x32;&#x37;&#46;&#x30;&#46;&#48;&#46;&#49;">&#x6c;&#x6f;&#x63;&#97;&#108;&#x68;&#x6f;&#115;&#116;&#64;&#x31;&#x32;&#x37;&#46;&#x30;&#46;&#48;&#46;&#49;</a> 📢 Password:password</p>
 </div>
 
 <div class="note info"><p><code>#svn</code> <a href="http://svn.sulfurandcu.com/doc">http://svn.sulfurandcu.com/doc</a></p>
@@ -145,6 +152,19 @@ docsify s
       </categories>
       <tags>
         <tag>docsify</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>二〇二一拼音漫游</title>
+    <url>/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7.html</url>
+    <content><![CDATA[<p><img src="/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7/2021.A.bopomofo.Odyssey.png"></p>
+]]></content>
+      <categories>
+        <category>语言文字</category>
+      </categories>
+      <tags>
+        <tag>汉语拼音</tag>
+        <tag>注音符号</tag>
       </tags>
   </entry>
   <entry>
@@ -451,6 +471,162 @@ docsify s
       <tags>
         <tag>C/C++</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>常用通信协议总结</title>
+    <url>/sulfurandcu.io/cls9pzmt800gg5srq5pxrhjvk.html</url>
+    <content><![CDATA[<h3 id="URT"><a href="#URT" class="headerlink" title="URT"></a>URT</h3><p>通用收发设备可分为通用异步收发（UART）和通用同步收发（USRT）两种。</p>
+<h4 id="UART"><a href="#UART" class="headerlink" title="UART"></a>UART</h4><p>使用中断实现</p>
+<ol>
+<li>配置引脚</li>
+<li>配置串口</li>
+</ol>
+<ul>
+<li>基本配置：时钟、分频、波特率、数据位、停止位、校验位</li>
+<li>发送中断：串口发送中断、串口传输完成中断</li>
+<li>接收中断：串口接收中断</li>
+<li>公共中断：串口异常中断</li>
+</ul>
+<p>发送流程：</p>
+<ul>
+<li>调用发送接口（使能发送中断、发送一字节）</li>
+</ul>
+<p>错误中断</p>
+<p>超时中断</p>
+<p>接收中断</p>
+<p>发送中断（发送数据寄存器空中断）<br>发送完成中断</p>
+<p>使用DMAC实现</p>
+<ol>
+<li>配置引脚</li>
+<li>配置DMAC</li>
+</ol>
+<ul>
+<li>基本配置：通道配置</li>
+<li>发送 DMA：初始化时不使能发送DMA通道｜配置传输完成中断</li>
+<li>接收 DMA：初始化时要使能接收DMA通道</li>
+<li>使能 DMA：</li>
+</ul>
+<ol start="3">
+<li>配置串口</li>
+</ol>
+<ul>
+<li>基本配置：时钟、分频、波特率、数据位、停止位、校验位</li>
+<li>发送中断：串口传输完成中断</li>
+<li>接收中断：</li>
+<li>公共中断：串口异常中断</li>
+</ul>
+<h3 id="SPI"><a href="#SPI" class="headerlink" title="SPI"></a>SPI</h3><p><img src="/sulfurandcu.io/cls9pzmt800gg5srq5pxrhjvk/spi.svg"></p>
+<blockquote>
+<p>there is no spec for spi, so some of this definition is a little bit loose.</p>
+<p>quote from <a href="https://www.youtube.com/watch?v=MCi7dCBhVpQ">spi: the serial peripheral interface</a> by <a href="https://eater.net/">ben eater</a></p>
+</blockquote>
+<p><img src="/sulfurandcu.io/cls9pzmt800gg5srq5pxrhjvk/spi_cpol=n_cpha=n.svg"></p>
+<center>↑　cpol = x　cpha = x</center><br>
+
+<p><img src="/sulfurandcu.io/cls9pzmt800gg5srq5pxrhjvk/spi_cpol=0_cpha=0.svg"></p>
+<center>↑　cpol = 0　cpha = 0</center><br>
+
+<p><img src="/sulfurandcu.io/cls9pzmt800gg5srq5pxrhjvk/spi_cpol=0_cpha=1.svg"></p>
+<center>↑　cpol = 0　cpha = 1</center><br>
+
+<p><img src="/sulfurandcu.io/cls9pzmt800gg5srq5pxrhjvk/spi_cpol=1_cpha=0.svg"></p>
+<center>↑　cpol = 1　cpha = 0</center><br>
+
+<p><img src="/sulfurandcu.io/cls9pzmt800gg5srq5pxrhjvk/spi_cpol=1_cpha=1.svg"></p>
+<center>↑　cpol = 1　cpha = 1</center><br>
+
+<!--
+cpol = 0
+cpha = 0
+
+{ signal:
+  [
+    {name: 'csb',  wave: '10................1'},
+    {},
+    {name: 'sck',  wave: 'l.HlHlHlHlHlHlHlHl.'},
+    {},
+    {name: 'mosi', wave: 'x2.2.2.2.2.2.2.2.x.'},
+    {},
+    {name: 'miso', wave: 'x2.2.2.2.2.2.2.2.x.'},
+  ],
+}
+
+cpol = 0
+cpha = 1
+
+{ signal:
+  [
+    {name: 'csb',  wave: '10................1'},
+    {},
+    {name: 'sck',  wave: 'l.hLhLhLhLhLhLhLhL.'},
+    {},
+    {name: 'mosi', wave: 'xx2.2.2.2.2.2.2.2.x'},
+    {},
+    {name: 'miso', wave: 'xx2.2.2.2.2.2.2.2.x'},
+  ],
+}
+
+cpol = 1
+cpha = 0
+
+{ signal:
+  [
+    {name: 'csb',  wave: '10................1'},
+    {},
+    {name: 'sck',  wave: 'h.LhLhLhLhLhLhLhLh.'},
+    {},
+    {name: 'mosi', wave: 'x2.2.2.2.2.2.2.2.x.'},
+    {},
+    {name: 'miso', wave: 'x2.2.2.2.2.2.2.2.x.'},
+  ],
+}
+
+cpol = 1
+cpha = 1
+
+{ signal:
+  [
+    {name: 'csb',  wave: '10................1'},
+    {},
+    {name: 'sck',  wave: 'h.lHlHlHlHlHlHlHlH.'},
+    {},
+    {name: 'mosi', wave: 'x.2.2.2.2.2.2.2.2.x'},
+    {},
+    {name: 'miso', wave: 'x.2.2.2.2.2.2.2.2.x'},
+  ],
+}
+
+cpol = x
+cpha = x
+
+{ signal:
+  [
+    {name: 'csb', wave: '10................1'},
+
+    {name: '', wave: '2.', data: 'cpol=0'},
+    {name: 'sck', wave: 'l.hlhlhlhlhlhlhlhl.'},
+    {name: 'sck', wave: 'h.lhlhlhlhlhlhlhlh.'},
+    {name: '', wave: '2.', data: 'cpol=1'},
+
+    {name: '', wave: 'x2...............x.', data: ['cpha=0']},
+
+    {name: 'mosi', wave: 'x2.2.2.2.2.2.2.2.x.'},
+    {name: 'miso', wave: 'x2.2.2.2.2.2.2.2.x.'},
+
+    {},
+
+    {name: '', wave: 'x.2...............x', data: ['cpha=1']},
+
+    {name: 'mosi', wave: 'x.2.2.2.2.2.2.2.2.x'},
+    {name: 'miso', wave: 'x.2.2.2.2.2.2.2.2.x'},
+  ]
+}
+-->
+
+<h3 id="I²C"><a href="#I²C" class="headerlink" title="I²C"></a>I²C</h3><h3 id="TTL-RS232-RS485-RS422"><a href="#TTL-RS232-RS485-RS422" class="headerlink" title="TTL | RS232 | RS485 | RS422"></a>TTL | RS232 | RS485 | RS422</h3><h3 id="CAN"><a href="#CAN" class="headerlink" title="CAN"></a>CAN</h3><h3 id="USB"><a href="#USB" class="headerlink" title="USB"></a>USB</h3><h3 id="ETH"><a href="#ETH" class="headerlink" title="ETH"></a>ETH</h3><hr>
+<p>注：本页面中的时序图均使用 <a href="https://wavedrom.com/">wavedrom</a> 绘制</p>
+<hr>
+]]></content>
   </entry>
   <entry>
     <title>拓扑结构分析算法</title>
@@ -928,8 +1104,20 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
+    <title>中断向量表偏移寄存器配置方式</title>
+    <url>/sulfurandcu.io/clpga8j0y00i3dcrq5x5t1gkd.html</url>
+    <content><![CDATA[<p>对于「引导程序＋应用程序」之类的方案，我们通常是在系统初始化函数（SystemInit()）中配置中断向量表偏移寄存器来实现中断向量表的重定向。但是这种直接修改官方库的方式往往会给后期的版本管理带来诸多不便。基于此，本文给出一个替代方案，供诸位参考。</p>
+<figure class="highlight c"><figcaption><span>vtor.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;xxx32xxxx.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> VECTOR_TABLE_OFFSET             ((uint32_t)0x00018000) <span class="comment">/* % 0x200 == 0 */</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ROM_BASE                        ((uint32_t)0x08000000)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> RAM_BASE                        ((uint32_t)0x20000000)</span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">SystemVTOR</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> EXECUTE_IN_RAM</span></span><br><span class="line">    SCB-&gt;VTOR = RAM_BASE | VECTOR_TABLE_OFFSET;</span><br><span class="line">    <span class="meta">#<span class="keyword">else</span></span></span><br><span class="line">    SCB-&gt;VTOR = ROM_BASE | VECTOR_TABLE_OFFSET;</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><figcaption><span>startup_xxx32xxxx.s</span></figcaption><table><tr><td class="code"><pre><span class="line">Reset_Handler   PROC</span><br><span class="line">                EXPORT  Reset_Handler   [WEAK]</span><br><span class="line">                IMPORT  SystemVTOR</span><br><span class="line">                IMPORT  SystemInit</span><br><span class="line">                IMPORT  __main</span><br><span class="line"></span><br><span class="line">                LDR     R0, =SystemVTOR</span><br><span class="line">                BLX     R0</span><br><span class="line">                LDR     R0, =SystemInit</span><br><span class="line">                BLX     R0</span><br><span class="line">                LDR     R0, =__main</span><br><span class="line">                BX      R0</span><br><span class="line">                ENDP</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>开发指北</category>
+      </categories>
+  </entry>
+  <entry>
     <title>freertos or rtthread ?</title>
-    <url>/sulfurandcu.io/cls8s6ai4009jd0rq9bxg3n9g.html</url>
+    <url>/sulfurandcu.io/cls9qlqnt009ed8rqc033ajky.html</url>
     <content><![CDATA[<table>
 <thead>
 <tr>
@@ -1152,6 +1340,16 @@ N2---&gt;N2.3[&quot; &quot;]
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">点击 StartDebugging 按钮启动调试</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">左侧 VARIABLES 窗口查看本地变量数据</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">左侧 WATCH 窗口查看变量数据</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">左侧 XPERIPHERALS 窗口查看寄存器数据</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">打开 MEMORY 窗口查看内存数据</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">打开 DEBUG CONSOLE 窗口键入 x/nfu addr 查看内存数据</span><br><span class="line">https://sourceware.org/gdb/current/onlinedocs/gdb.html/Memory.html</span><br></pre></td></tr></table></figure>
+
 <h2 id="5-跳转"><a href="#5-跳转" class="headerlink" title="5. 跳转"></a>5. 跳转</h2><h3 id="5-1-安装-mingw-环境"><a href="#5-1-安装-mingw-环境" class="headerlink" title="5.1 安装 mingw 环境"></a>5.1 安装 mingw 环境</h3><p><img src="/sulfurandcu.io/clrznawwf0001a4rq8nfh1qw2/download.mingw.png"></p>
 <center><a href="https://www.mingw-w64.org/downloads/">MingW-W64: x86_64-x.x.x-release-win32-seh-ucrt-xxx.7z</a></center><br>
 
@@ -1170,26 +1368,6 @@ N2---&gt;N2.3[&quot; &quot;]
 <h3 id="6-2-新建-shell-会话"><a href="#6-2-新建-shell-会话" class="headerlink" title="6.2 新建 shell 会话"></a>6.2 新建 shell 会话</h3><figure class="highlight txt"><figcaption><span>serial</span></figcaption><table><tr><td class="code"><pre><span class="line">- 会话</span><br><span class="line">  - 串口：COM3</span><br><span class="line">  - 数据：text</span><br><span class="line">- 串口</span><br><span class="line">  - 协议</span><br><span class="line">    - 波特率：115200</span><br><span class="line">    - 数据位：8</span><br><span class="line">    - 校验位：N</span><br><span class="line">    - 停止位：1</span><br><span class="line">    - 流控制：N</span><br></pre></td></tr></table></figure>
 
 <h3 id="6-3-测试-shell-交互"><a href="#6-3-测试-shell-交互" class="headerlink" title="6.3 测试 shell 交互"></a>6.3 测试 shell 交互</h3><figure class="highlight txt"><figcaption><span>serial COM3</span></figcaption><table><tr><td class="code"><pre><span class="line">msh &gt;</span><br><span class="line">msh &gt;</span><br><span class="line">msh &gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>囗－囗</title>
-    <url>/sulfurandcu.io/clnyhr2mt003b10rq5snfeg6t.html</url>
-    <content><![CDATA[<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center><br></center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-
-<br>
-
-<span id="more"></span>
-
-<br>
 ]]></content>
   </entry>
   <entry>
@@ -1514,70 +1692,6 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
-    <title>集成开发环境－GCC.ARM（#02）程序构建</title>
-    <url>/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html</url>
-    <content><![CDATA[<p>倘若只有 main.h 和 main.c 两个文件，那么只需要执行少量的指令即可完成编译工作。但是实际上一个工程通常包含几十上百个文件，意味着要执行大量的编译指令才能得到目标文件，这是我们所无法接受的。因此需要借助 make、cmake、ninja、scons 等构建工具来提高开发效率。</p>
-<span id="more"></span>
-
-<h2 id="make"><a href="#make" class="headerlink" title="make"></a>make</h2><p>在 windows 系统中推荐使用 MSYS2 提供的 mingw32-make 程序。</p>
-<h3 id="生成脚本（makefile）"><a href="#生成脚本（makefile）" class="headerlink" title="生成脚本（makefile）"></a>生成脚本（makefile）</h3><p>相较于头开始写 makefile 脚本，先通过 STM32CubeMX 生成然后加以改造则要容易得多。</p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.0.png"></p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.1.png"></p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.2.png"></p>
-<h3 id="修改脚本（makefile）"><a href="#修改脚本（makefile）" class="headerlink" title="修改脚本（makefile）"></a>修改脚本（makefile）</h3><ol>
-<li>修改文件列表（*.c &amp; *.s）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_SOURCES = \</span><br><span class="line">../../../code/Application/src/main.c \</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ASM_SOURCES = \</span><br><span class="line">startup_stm32f103xb.s \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
-<li>修改包含路径（*.h）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_INCLUDES = \</span><br><span class="line">-I../../../code/Application \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
-<li>修改全局定义（#define）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_DEFS = \</span><br><span class="line">-DUSE_HAL_DRIVER \</span><br><span class="line">-DSTM32F103xB \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
-<li>修改链接脚本（.ld）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LDSCRIPT = STM32F103C8Tx_FLASH.ld</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="执行编译"><a href="#执行编译" class="headerlink" title="执行编译"></a>执行编译</h3><p>在 makefile 所在的路径下执行 make 指令开始编译</p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.build.png"></p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.where.png"></p>
-<div class="note danger no-icon"><p>在 windows 系统中请使用 .&#x2F;mingw32-make 命令而非 .&#x2F;make 命令！</p>
-</div>
-
-<h3 id="清除编译"><a href="#清除编译" class="headerlink" title="清除编译"></a>清除编译</h3><p>若要清除刚才编译的中间文件，则需要修改 makefile 文件，然后执行 mingw32-make clean 指令。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">clean:</span><br><span class="line">#   -rm -fR $(BUILD_DIR)</span><br><span class="line">    -del /q $(BUILD_DIR)</span><br></pre></td></tr></table></figure>
-
-<p>这时你大概率会遇到以下问题：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.fail1.png"></p>
-<p>有人说将 clean 下的 -rm -fR $(BUILD_DIR) 改成 -del &#x2F;q $(BUILD_DIR) 就好了，实测并不管用。</p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.fail2.png"></p>
-<p>只有显式地将 SHELL 指定为 cmd 才行（在 makefile 中添加一条语句）：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.shell.png"></p>
-<h2 id="scons"><a href="#scons" class="headerlink" title="scons"></a>scons</h2><ul>
-<li>install <a href="https://www.python.org/downloads/">python</a></li>
-<li>install pip (python get-pip.py)</li>
-<li>install scons (python -m pip install scons&#x3D;&#x3D;3.1.2)</li>
-<li>install pywin32 (support scons -j16) (python -m pip install pywin32)</li>
-</ul>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">python/Scripts/scons.bat <span class="comment"># scons.bat is not necessary, just run scons directly.</span></span><br><span class="line">    python/Scripts/scons <span class="comment"># start</span></span><br><span class="line">        prepare</span><br><span class="line">        call SCons.Script.main() <span class="comment"># this does all the work, and calls sys.exit with the proper exit status when done.</span></span><br><span class="line">            scons: reading SConscript files.</span><br><span class="line">                &lt;rtconfig.py&gt;</span><br><span class="line">                &lt;rtconfig.py&gt;</span><br><span class="line">                &lt;sconstruct&gt;</span><br><span class="line">                    &lt;PrepareBuilding()&gt;</span><br><span class="line">                        <span class="comment"># bsp</span></span><br><span class="line">                        &lt;bsp.SConscript&gt; <span class="comment"># 逐级遍历当前路径下所有子目录中的 SConscript 脚本</span></span><br><span class="line">                            &lt;application.SConscript&gt;</span><br><span class="line">                            &lt;application.SConscript&gt;</span><br><span class="line">                            &lt;board.SConscript&gt;</span><br><span class="line">                            &lt;board.SConscript&gt;</span><br><span class="line">                            &lt;package.SConscript&gt;</span><br><span class="line">                            &lt;package.SConscript&gt;</span><br><span class="line">                            &lt;underlayer.SConscript&gt;</span><br><span class="line">                            &lt;underlayer.SConscript&gt;</span><br><span class="line">                        &lt;bsp.SConscript&gt;</span><br><span class="line">                        <span class="comment"># kernel</span></span><br><span class="line">                        &lt;rtt.src.SConscript&gt;</span><br><span class="line">                        &lt;rtt.src.SConscript&gt;</span><br><span class="line">                        <span class="comment"># libcpu</span></span><br><span class="line">                        &lt;rtt.libcpu.SConscript&gt;</span><br><span class="line">                        &lt;rtt.libcpu.SConscript&gt;</span><br><span class="line">                        <span class="comment"># components</span></span><br><span class="line">                        &lt;rtt.components.SConscript&gt;</span><br><span class="line">                        &lt;rtt.components.SConscript&gt;</span><br><span class="line">                    &lt;PrepareBuilding()&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/chip_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/chip_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/hal_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/hal_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/components)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/components)&gt;</span><br><span class="line">                    &lt;DoBuilding()&gt;</span><br><span class="line">                &lt;sconstruct&gt;</span><br><span class="line">            scons: done reading SConscript files.</span><br><span class="line"></span><br><span class="line">            scons: Building targets</span><br><span class="line">            scons: building associated VariantDir targets: build/gcc/obj</span><br><span class="line">                LINK rtthread.elf</span><br><span class="line">                arm-none-eabi-objcopy -O ihex rtthread.elf ./build/gcc/<span class="built_in">bin</span>/rtthread.<span class="built_in">hex</span></span><br><span class="line">            scons: done building targets. call exit() somewhere.</span><br><span class="line">    python/Scripts/scons <span class="comment"># exit</span></span><br></pre></td></tr></table></figure>
-
-<p>$ scons.bat<br>scons: Reading SConscript files …###############################<br>SConstruct enter !!!.#######################################<br>SDK_ROOT: E:\codespace\SPL1050\SPL1050V240112_vendor-Release_1.0.0.1_modified</p>
-<p>SConstruct building start !!!</p>
-<p>SConstruct exit !!!.#######################################<br>scons: done reading SConscript files.#######################################</p>
-<p>scons: Building targets …<br>scons: building associated VariantDir targets: build\gcc\obj<br>LINK rtthread.elf<br>Memory region         Used Size  Region Size  %age Used<br>      FalPartRAM:        1504 B         4 KB     36.72%<br>             ROM:      384448 B       380 KB     98.80%<br>             RAM:      200456 B       256 KB     76.47%<br>        Heap_RAM:          0 GB       127 KB      0.00%<br>FalPartTableInFlash:        1504 B         4 KB     36.72%<br>       CopyTable:          20 B         1 KB      1.95%<br>     CodeInFlash:      492096 B       768 KB     62.57%<br>          phycfg:          0 GB         4 KB      0.00%<br>arm-none-eabi-size rtthread.elf<br>   text    data     bss     dec     hex filename<br> 878048    8540  191936 1078524  1074fc rtthread.elf<br>arm-none-eabi-objcopy -O ihex rtthread.elf .&#x2F;build&#x2F;gcc&#x2F;bin&#x2F;rtthread.hex<br>scons: done building targets.</p>
-<h3 id="env-中突然不能编译的问题"><a href="#env-中突然不能编译的问题" class="headerlink" title="env 中突然不能编译的问题"></a>env 中突然不能编译的问题</h3><p>使用自己安装的 scons.bat 编译后，再用 env 中的 scons 编译有可能会报错，删除 <code>.sconsign.dblite</code> 后再编即可。</p>
-<h3 id="交叉编译工具链的路径问题"><a href="#交叉编译工具链的路径问题" class="headerlink" title="交叉编译工具链的路径问题"></a>交叉编译工具链的路径问题</h3><p>多人开发时，每个人的交叉编译工具链的安装位置都不同，这样就不能把绝对路径写入到 rtconfig.py 中并提交至代码仓库。既然绝对路径不行，那相对路径可以吗？也行不通，使用相对路径意味着交叉编译工具链也要同步提交至代码仓库，而 arm-none-eabi 的体积是比较大的，所以说我们通常不会这么做，那应该怎样优雅地解决这个问题呢？请继续往下看：</p>
-<p>只需要在 rtconfig.py 中添加以下代码即可解决！</p>
-<figure class="highlight py"><figcaption><span>rtconfig.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> configparser</span><br><span class="line"></span><br><span class="line"><span class="comment"># toolchains path</span></span><br><span class="line">cfg_path = <span class="string">r&#x27;rtconfig.ini&#x27;</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(cfg_path):</span><br><span class="line">    file = <span class="built_in">open</span>(cfg_path, <span class="string">&quot;w&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;# do not commit this file to the repository.\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;[COMPILER] # gcc, iar, mdk\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;COMPILER = gcc\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;GCC_PATH = do not commit this file to svn. replace with your arm-none-eabi-gcc path here in \&#x27;rtconfig.ini\&#x27;. (i.e. d:\\arm-none-eabi-10.3-2021.10\\bin)\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;IAR_PATH =\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;MDK_PATH =\n&quot;</span>)</span><br><span class="line">    file.close()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;rtconfig.ini not exists! but now it should have been generated automatically, you need to fill in some informations. greetings from liujitong.&#x27;</span>)</span><br><span class="line">    exit()</span><br><span class="line">cfg = configparser.ConfigParser()</span><br><span class="line">cfg.read(cfg_path)</span><br><span class="line">CROSS_TOOL = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;COMPILER&quot;</span>]</span><br><span class="line">gcc_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;GCC_PATH&quot;</span>]</span><br><span class="line">iar_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;IAR_PATH&quot;</span>]</span><br><span class="line">mdk_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;MDK_PATH&quot;</span>]</span><br></pre></td></tr></table></figure>
-
-<p>其逻辑为：</p>
-<p>1. 检查 rtconfig.ini 是否存在。<br>2. 如果不存在则自动创建一个 rtconfig.ini 模板文件，并提醒开发人员进行修改。<br>3. 如果存在则从中提取交叉编译工具链的路径信息。</p>
-<p>下面是自动生成的 rtconfig.ini 模板</p>
-<figure class="highlight ini"><figcaption><span>rtconfig.ini</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># do not commit this file to the repository.</span></span><br><span class="line"><span class="section">[COMPILER]</span> <span class="comment"># gcc, iar, mdk</span></span><br><span class="line"><span class="attr">COMPILER</span> = gcc</span><br><span class="line"><span class="attr">GCC_PATH</span> = do not commit this file to svn. replace with your arm-none-eabi-gcc path here in <span class="string">&#x27;rtconfig.ini&#x27;</span>. (i.e. d:\\arm-none-eabi-<span class="number">10.3</span>-<span class="number">2021.10</span>\\bin)</span><br><span class="line"><span class="attr">IAR_PATH</span> =</span><br><span class="line">MDK_PATH =</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>集成开发环境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>集成开发环境－GCC.ARM（#01）环境搭建</title>
     <url>/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html</url>
     <content><![CDATA[<p><img src="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc/Download.VSC.png"></p>
@@ -1641,6 +1755,70 @@ N2---&gt;N2.3[&quot; &quot;]
 <li><strong>*.ld</strong><br>链接文件：在 makefile 中引用进行链接</li>
 <li><strong>*.svd</strong><br>描述文件：在 launch.json 中配置用于调试</li>
 </ul>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>集成开发环境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成开发环境－GCC.ARM（#02）程序构建</title>
+    <url>/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html</url>
+    <content><![CDATA[<p>倘若只有 main.h 和 main.c 两个文件，那么只需要执行少量的指令即可完成编译工作。但是实际上一个工程通常包含几十上百个文件，意味着要执行大量的编译指令才能得到目标文件，这是我们所无法接受的。因此需要借助 make、cmake、ninja、scons 等构建工具来提高开发效率。</p>
+<span id="more"></span>
+
+<h2 id="make"><a href="#make" class="headerlink" title="make"></a>make</h2><p>在 windows 系统中推荐使用 MSYS2 提供的 mingw32-make 程序。</p>
+<h3 id="生成脚本（makefile）"><a href="#生成脚本（makefile）" class="headerlink" title="生成脚本（makefile）"></a>生成脚本（makefile）</h3><p>相较于头开始写 makefile 脚本，先通过 STM32CubeMX 生成然后加以改造则要容易得多。</p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.0.png"></p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.1.png"></p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.2.png"></p>
+<h3 id="修改脚本（makefile）"><a href="#修改脚本（makefile）" class="headerlink" title="修改脚本（makefile）"></a>修改脚本（makefile）</h3><ol>
+<li>修改文件列表（*.c &amp; *.s）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_SOURCES = \</span><br><span class="line">../../../code/Application/src/main.c \</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ASM_SOURCES = \</span><br><span class="line">startup_stm32f103xb.s \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+<li>修改包含路径（*.h）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_INCLUDES = \</span><br><span class="line">-I../../../code/Application \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+<li>修改全局定义（#define）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_DEFS = \</span><br><span class="line">-DUSE_HAL_DRIVER \</span><br><span class="line">-DSTM32F103xB \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+<li>修改链接脚本（.ld）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LDSCRIPT = STM32F103C8Tx_FLASH.ld</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="执行编译"><a href="#执行编译" class="headerlink" title="执行编译"></a>执行编译</h3><p>在 makefile 所在的路径下执行 make 指令开始编译</p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.build.png"></p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.where.png"></p>
+<div class="note danger no-icon"><p>在 windows 系统中请使用 .&#x2F;mingw32-make 命令而非 .&#x2F;make 命令！</p>
+</div>
+
+<h3 id="清除编译"><a href="#清除编译" class="headerlink" title="清除编译"></a>清除编译</h3><p>若要清除刚才编译的中间文件，则需要修改 makefile 文件，然后执行 mingw32-make clean 指令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">clean:</span><br><span class="line">#   -rm -fR $(BUILD_DIR)</span><br><span class="line">    -del /q $(BUILD_DIR)</span><br></pre></td></tr></table></figure>
+
+<p>这时你大概率会遇到以下问题：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.fail1.png"></p>
+<p>有人说将 clean 下的 -rm -fR $(BUILD_DIR) 改成 -del &#x2F;q $(BUILD_DIR) 就好了，实测并不管用。</p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.fail2.png"></p>
+<p>只有显式地将 SHELL 指定为 cmd 才行（在 makefile 中添加一条语句）：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.shell.png"></p>
+<h2 id="scons"><a href="#scons" class="headerlink" title="scons"></a>scons</h2><ul>
+<li>install <a href="https://www.python.org/downloads/">python</a></li>
+<li>install pip (python get-pip.py)</li>
+<li>install scons (python -m pip install scons&#x3D;&#x3D;3.1.2)</li>
+<li>install pywin32 (support scons -j16) (python -m pip install pywin32)</li>
+</ul>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">python/Scripts/scons.bat <span class="comment"># scons.bat is not necessary, just run scons directly.</span></span><br><span class="line">    python/Scripts/scons <span class="comment"># start</span></span><br><span class="line">        prepare</span><br><span class="line">        call SCons.Script.main() <span class="comment"># this does all the work, and calls sys.exit with the proper exit status when done.</span></span><br><span class="line">            scons: reading SConscript files.</span><br><span class="line">                &lt;rtconfig.py&gt;</span><br><span class="line">                &lt;rtconfig.py&gt;</span><br><span class="line">                &lt;sconstruct&gt;</span><br><span class="line">                    &lt;PrepareBuilding()&gt;</span><br><span class="line">                        <span class="comment"># bsp</span></span><br><span class="line">                        &lt;bsp.SConscript&gt; <span class="comment"># 逐级遍历当前路径下所有子目录中的 SConscript 脚本</span></span><br><span class="line">                            &lt;application.SConscript&gt;</span><br><span class="line">                            &lt;application.SConscript&gt;</span><br><span class="line">                            &lt;board.SConscript&gt;</span><br><span class="line">                            &lt;board.SConscript&gt;</span><br><span class="line">                            &lt;package.SConscript&gt;</span><br><span class="line">                            &lt;package.SConscript&gt;</span><br><span class="line">                            &lt;underlayer.SConscript&gt;</span><br><span class="line">                            &lt;underlayer.SConscript&gt;</span><br><span class="line">                        &lt;bsp.SConscript&gt;</span><br><span class="line">                        <span class="comment"># kernel</span></span><br><span class="line">                        &lt;rtt.src.SConscript&gt;</span><br><span class="line">                        &lt;rtt.src.SConscript&gt;</span><br><span class="line">                        <span class="comment"># libcpu</span></span><br><span class="line">                        &lt;rtt.libcpu.SConscript&gt;</span><br><span class="line">                        &lt;rtt.libcpu.SConscript&gt;</span><br><span class="line">                        <span class="comment"># components</span></span><br><span class="line">                        &lt;rtt.components.SConscript&gt;</span><br><span class="line">                        &lt;rtt.components.SConscript&gt;</span><br><span class="line">                    &lt;PrepareBuilding()&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/chip_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/chip_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/hal_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/hal_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/components)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/components)&gt;</span><br><span class="line">                    &lt;DoBuilding()&gt;</span><br><span class="line">                &lt;sconstruct&gt;</span><br><span class="line">            scons: done reading SConscript files.</span><br><span class="line"></span><br><span class="line">            scons: Building targets</span><br><span class="line">            scons: building associated VariantDir targets: build/gcc/obj</span><br><span class="line">                LINK rtthread.elf</span><br><span class="line">                arm-none-eabi-objcopy -O ihex rtthread.elf ./build/gcc/<span class="built_in">bin</span>/rtthread.<span class="built_in">hex</span></span><br><span class="line">            scons: done building targets. call exit() somewhere.</span><br><span class="line">    python/Scripts/scons <span class="comment"># exit</span></span><br></pre></td></tr></table></figure>
+
+<p>$ scons.bat<br>scons: Reading SConscript files …###############################<br>SConstruct enter !!!.#######################################<br>SDK_ROOT: E:\codespace\SPL1050\SPL1050V240112_vendor-Release_1.0.0.1_modified</p>
+<p>SConstruct building start !!!</p>
+<p>SConstruct exit !!!.#######################################<br>scons: done reading SConscript files.#######################################</p>
+<p>scons: Building targets …<br>scons: building associated VariantDir targets: build\gcc\obj<br>LINK rtthread.elf<br>Memory region         Used Size  Region Size  %age Used<br>      FalPartRAM:        1504 B         4 KB     36.72%<br>             ROM:      384448 B       380 KB     98.80%<br>             RAM:      200456 B       256 KB     76.47%<br>        Heap_RAM:          0 GB       127 KB      0.00%<br>FalPartTableInFlash:        1504 B         4 KB     36.72%<br>       CopyTable:          20 B         1 KB      1.95%<br>     CodeInFlash:      492096 B       768 KB     62.57%<br>          phycfg:          0 GB         4 KB      0.00%<br>arm-none-eabi-size rtthread.elf<br>   text    data     bss     dec     hex filename<br> 878048    8540  191936 1078524  1074fc rtthread.elf<br>arm-none-eabi-objcopy -O ihex rtthread.elf .&#x2F;build&#x2F;gcc&#x2F;bin&#x2F;rtthread.hex<br>scons: done building targets.</p>
+<h3 id="env-中突然不能编译的问题"><a href="#env-中突然不能编译的问题" class="headerlink" title="env 中突然不能编译的问题"></a>env 中突然不能编译的问题</h3><p>使用自己安装的 scons.bat 编译后，再用 env 中的 scons 编译有可能会报错，删除 <code>.sconsign.dblite</code> 后再编即可。</p>
+<h3 id="交叉编译工具链的路径问题"><a href="#交叉编译工具链的路径问题" class="headerlink" title="交叉编译工具链的路径问题"></a>交叉编译工具链的路径问题</h3><p>多人开发时，每个人的交叉编译工具链的安装位置都不同，这样就不能把绝对路径写入到 rtconfig.py 中并提交至代码仓库。既然绝对路径不行，那相对路径可以吗？也行不通，使用相对路径意味着交叉编译工具链也要同步提交至代码仓库，而 arm-none-eabi 的体积是比较大的，所以说我们通常不会这么做，那应该怎样优雅地解决这个问题呢？请继续往下看：</p>
+<p>只需要在 rtconfig.py 中添加以下代码即可解决！</p>
+<figure class="highlight py"><figcaption><span>rtconfig.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> configparser</span><br><span class="line"></span><br><span class="line"><span class="comment"># toolchains path</span></span><br><span class="line">cfg_path = <span class="string">r&#x27;rtconfig.ini&#x27;</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(cfg_path):</span><br><span class="line">    file = <span class="built_in">open</span>(cfg_path, <span class="string">&quot;w&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;# do not commit this file to the repository.\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;[COMPILER] # gcc, iar, mdk\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;COMPILER = gcc\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;GCC_PATH = do not commit this file to svn. replace with your arm-none-eabi-gcc path here in \&#x27;rtconfig.ini\&#x27;. (i.e. d:\\arm-none-eabi-10.3-2021.10\\bin)\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;IAR_PATH =\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;MDK_PATH =\n&quot;</span>)</span><br><span class="line">    file.close()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;rtconfig.ini not exists! but now it should have been generated automatically, you need to fill in some informations. greetings from liujitong.&#x27;</span>)</span><br><span class="line">    exit()</span><br><span class="line">cfg = configparser.ConfigParser()</span><br><span class="line">cfg.read(cfg_path)</span><br><span class="line">CROSS_TOOL = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;COMPILER&quot;</span>]</span><br><span class="line">gcc_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;GCC_PATH&quot;</span>]</span><br><span class="line">iar_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;IAR_PATH&quot;</span>]</span><br><span class="line">mdk_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;MDK_PATH&quot;</span>]</span><br></pre></td></tr></table></figure>
+
+<p>其逻辑为：</p>
+<p>1. 检查 rtconfig.ini 是否存在。<br>2. 如果不存在则自动创建一个 rtconfig.ini 模板文件，并提醒开发人员进行修改。<br>3. 如果存在则从中提取交叉编译工具链的路径信息。</p>
+<p>下面是自动生成的 rtconfig.ini 模板</p>
+<figure class="highlight ini"><figcaption><span>rtconfig.ini</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># do not commit this file to the repository.</span></span><br><span class="line"><span class="section">[COMPILER]</span> <span class="comment"># gcc, iar, mdk</span></span><br><span class="line"><span class="attr">COMPILER</span> = gcc</span><br><span class="line"><span class="attr">GCC_PATH</span> = do not commit this file to svn. replace with your arm-none-eabi-gcc path here in <span class="string">&#x27;rtconfig.ini&#x27;</span>. (i.e. d:\\arm-none-eabi-<span class="number">10.3</span>-<span class="number">2021.10</span>\\bin)</span><br><span class="line"><span class="attr">IAR_PATH</span> =</span><br><span class="line">MDK_PATH =</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>开发笔记</category>
@@ -1777,7 +1955,7 @@ N2---&gt;N2.3[&quot; &quot;]
     <title>嵌入式 IAP 升级功能（#00）目录索引</title>
     <url>/sulfurandcu.io/clnyhr2n2004t10rq7rdi2ftx.html</url>
     <content><![CDATA[<hr>
-<p><a href="/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html">嵌入式 IAP 升级功能（#01）基础概念</a><br><a href="/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html">嵌入式 IAP 升级功能（#02）升级方案</a><br><a href="/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html">嵌入式 IAP 升级功能（#03）流程设计</a><br><a href="/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html">嵌入式 IAP 升级功能（#04）技术细节</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#05）增量升级</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#06）差分还原 haptchlite 移植</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#07）压缩解压 tinyuztool 移植</a><br><a href="/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html">嵌入式 IAP 升级功能（#08）引导程序 bootloader 升级</a></p>
+<p><a href="/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html">嵌入式 IAP 升级功能（#01）基础概念</a><br><a href="/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html">嵌入式 IAP 升级功能（#02）升级方案</a><br><a href="/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html">嵌入式 IAP 升级功能（#03）流程设计</a><br><a href="/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html">嵌入式 IAP 升级功能（#04）技术细节</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#05）增量升级</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#06）差分还原 hpatchlite 移植</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#07）压缩解压 tinyuztool 移植</a><br><a href="/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html">嵌入式 IAP 升级功能（#08）引导程序 bootloader 升级</a></p>
 <hr>
 <span id="more"></span>
 
@@ -2408,6 +2586,61 @@ AppIsRecvDone--是--&gt;AppSetAppInvalid[修改应用程序有效标识：无效
 <p>➁ 修改 ConfigMCU 中大小程序的起始地址及空间大小。</p>
 <p>➂ 修改 iap: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于小程序的起始地址）。</p>
 <p>➃ 修改 app: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于大程序的起始地址）。</p>
+<h2 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h2><ul>
+<li><p>module_select_pattern</p>
+<ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+<li>*.o</li>
+<li>.ANY</li>
+</ul>
+</li>
+<li><p>module_select_pattern (input_section_selector)</p>
+</li>
+<li><h2 id="module-select-pattern-input-section-selector-input-section-selector-…-input-section-attr-RO-CODE-RO-DATA-RO-RW-DATA-RW-CODE-RW-XO-ZI-ENTRY"><a href="#module-select-pattern-input-section-selector-input-section-selector-…-input-section-attr-RO-CODE-RO-DATA-RO-RW-DATA-RW-CODE-RW-XO-ZI-ENTRY" class="headerlink" title="module_select_pattern (input_section_selector, input_section_selector, …)- +input_section_attr  - * (+RO-CODE)  - * (+RO-DATA)  - * (+RO)  - * (+RW-DATA)  - * (+RW-CODE)  - * (+RW)  - * (+XO)  - * (+ZI)  - * (+ENTRY)"></a>module_select_pattern (input_section_selector, input_section_selector, …)<br>- +input_section_attr<br>  - * (+RO-CODE)<br>  - * (+RO-DATA)<br>  - * (+RO)<br>  - * (+RW-DATA)<br>  - * (+RW-CODE)<br>  - * (+RW)<br>  - * (+XO)<br>  - * (+ZI)<br>  - * (+ENTRY)</h2><ul>
+<li><ul>
+<li>(+CODE)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+CONST)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+TEXT)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+DATA)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+BSS)</li>
+</ul>
+</li>
+<li></li>
+<li><ul>
+<li>(+FIRST)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+LAST)</li>
+</ul>
+</li>
+<li>input_section_pattern<ul>
+<li><ul>
+<li>(*app_info)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>input_symbol_pattern</li>
+<li>section_properties</li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>开发笔记</category>
@@ -2602,75 +2835,6 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[将内部flash中的0xAAB
       <tags>
         <tag>嵌入式软件开发</tag>
         <tag>在线升级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>嵌入式 IAP 升级功能（#06）差分还原 haptchlite 移植</title>
-    <url>/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html</url>
-    <content><![CDATA[<p>最近发现了一个优秀的差分还原算法：hdiff &amp; hpatch，它通过数据流的思想把 O(n) 的空间复杂度转嫁给了硬盘，使得内存的开销极低，非常适合应用于嵌入式领域。</p>
-<p><img src="/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r/diff.tools.compare.png"></p>
-<span id="more"></span>
-
-<h2 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h2><h3 id="hpatchlite"><a href="#hpatchlite" class="headerlink" title="hpatchlite"></a>hpatchlite</h3><p>时间复杂度：O(oldSize+newSize)<br>空间复杂度：O(1)<br>　　还原代码开销｜ROM &#x3D; 876 字节 (compiled by armcc v5.06 update4 build 422)<br>　　还原内存开销｜RAM &#x3D; 还原缓冲大小 + 解压内存开销</p>
-<p>注：还原缓冲大小在还原时指定，至少3个字节，还原缓冲越小还原得越慢。</p>
-<h3 id="tinyuz"><a href="#tinyuz" class="headerlink" title="tinyuz"></a>tinyuz</h3><p>时间复杂度：O(oldSize+newSize)<br>空间复杂度：O(1)<br>　　解压代码开销｜流模式｜ROM &#x3D; 1142 字节 (compiled by armcc v5.06 update4 build 422)<br>　　解压内存开销｜流模式｜RAM &#x3D; 压缩字典大小 + 解压缓冲大小</p>
-<p>注：压缩字典大小在压缩时指定，至少1个字节，压缩字典越小压缩率越低。<br>注：解压缓冲大小在解压时指定，至少2个字节，解压缓冲越小解压缩越慢。</p>
-<h3 id="appendix"><a href="#appendix" class="headerlink" title="appendix"></a>appendix</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name</span><br><span class="line"></span><br><span class="line"> 876          0          0          0          0      10783   hpatch_lite.o</span><br><span class="line">1142          0          0          0          0      13541   tuz_dec.o</span><br><span class="line"></span><br><span class="line"> 626         80          0         12          0      12256   hpatch_user.o</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">244           0          0          0          0       2146   bspatch.o</span><br><span class="line">586           6         64          0          0       6749   quicklz.o</span><br><span class="line"></span><br><span class="line">102           4          8          0          0       2821   bspatch_user.o</span><br><span class="line"> 52           0          0          0          0       2096   quicklz_user.o</span><br></pre></td></tr></table></figure>
-
-<h2 id="移植说明"><a href="#移植说明" class="headerlink" title="移植说明"></a>移植说明</h2><p>将 hdiffpatch.hpatchlite &amp; tinyuz 移植至单片机 bare metal 裸机系统（based on hdiffpatch v4）</p>
-<h3 id="拿来"><a href="#拿来" class="headerlink" title="拿来"></a>拿来</h3><p>将 tinyuz&#x2F;decompress 目录拷贝至目标工程中。</p>
-<p>将 HDiffPatch&#x2F;libHDiffPatch&#x2F;HPatch 目录拷贝至目标工程中。</p>
-<p>将 HDiffPatch&#x2F;libHDiffPatch&#x2F;HPatchLite 目录拷贝至目标工程中。</p>
-<p>将 HPatchLite&#x2F;decompresser_demo.h 文件拷贝至目标工程中。</p>
-<h3 id="画瓢"><a href="#画瓢" class="headerlink" title="画瓢"></a>画瓢</h3><p>依 HPatchLite&#x2F;hpatchi.c&#x2F;hpatchi() 函数画瓢：移植还原功能</p>
-<p>依 tinyuz&#x2F;tinyuz_demo.cpp&#x2F;_tuz_decompress_stream() 函数画瓢：移植解压功能</p>
-<p>done!</p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>拿来依葫芦画瓢，说得简单，做起来着实还是费了点功夫，这几年搞嵌入式搞得有些局限了，面对句(gōu)柄这种用法竟感觉无从下手。😅</p>
-<p>作者提供了以下两个接口函数：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">hpatch_lite_open()</span><br><span class="line"></span><br><span class="line">hpatch_lite_patch()</span><br></pre></td></tr></table></figure>
-
-<p>看着挺简单的吧，然而他实际上是这样的：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// hpatch_lite by stream: hpatch_lite_open()+hpatch_lite_patch() compiled by Mbed Studio is 662 bytes</span></span><br><span class="line"><span class="comment">//   hdiffpatch v4.2.3, other patcher compiled by Mbed Studio:</span></span><br><span class="line"><span class="comment">//      patch_single_stream() 2356 bytes (hpatch_StreamPos_t=hpatch_uint32_t)</span></span><br><span class="line"><span class="comment">//      patch_decompress_with_cache() 2846 bytes (_IS_NEED_CACHE_OLD_BY_COVERS=0,hpatch_StreamPos_t=hpatch_uint32_t)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//diff_data must created by create_lite_diff()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">hpatchi_listener_t</span>&#123;</span></span><br><span class="line">    hpi_TInputStreamHandle  diff_data;</span><br><span class="line">    hpi_TInputStream_read   read_diff;</span><br><span class="line">    <span class="comment">//must read data_size data to out_data, from read_from_pos of stream; if read error return hpi_FALSE;</span></span><br><span class="line">    hpi_BOOL (*read_old)(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span>* listener,<span class="type">hpi_pos_t</span> read_from_pos,hpi_byte* out_data,<span class="type">hpi_size_t</span> data_size);</span><br><span class="line">    <span class="comment">//must write data_size data to sequence stream; if write error return hpi_FALSE;</span></span><br><span class="line">    hpi_BOOL (*write_new)(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span>* listener,<span class="type">const</span> hpi_byte* data,<span class="type">hpi_size_t</span> data_size);</span><br><span class="line">&#125; <span class="type">hpatchi_listener_t</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//hpatch_lite open</span></span><br><span class="line"><span class="comment">// read lite headinfo from diff_data</span></span><br><span class="line"><span class="comment">// if diff_data uncompress(*out_compress_type==hpi_compressType_no), *out_uncompressSize==0;</span></span><br><span class="line"><span class="comment">// if (*out_compress_type!=hpi_compressType_no), you need open compressed data by decompresser</span></span><br><span class="line"><span class="comment">//      (see https://github.com/sisong/HPatchLite/decompresser_demo.h &amp; https://github.com/sisong/HPatchLite/hpatchi.c)</span></span><br><span class="line">hpi_BOOL <span class="title function_">hpatch_lite_open</span><span class="params">(hpi_TInputStreamHandle diff_data,hpi_TInputStream_read read_diff,</span></span><br><span class="line"><span class="params">                          hpi_compressType* out_compress_type,<span class="type">hpi_pos_t</span>* out_newSize,<span class="type">hpi_pos_t</span>* out_uncompressSize)</span>;</span><br><span class="line"><span class="comment">//hpatch_lite patch</span></span><br><span class="line"><span class="comment">//	used temp_cache_size memory + &#123;decompress buffer*1&#125;</span></span><br><span class="line"><span class="comment">//  note: temp_cache_size&gt;=hpi_kMinCacheSize</span></span><br><span class="line">hpi_BOOL <span class="title function_">hpatch_lite_patch</span><span class="params">(<span class="type">hpatchi_listener_t</span>* listener,<span class="type">hpi_pos_t</span> newSize,</span></span><br><span class="line"><span class="params">                           hpi_byte* temp_cache,<span class="type">hpi_size_t</span> temp_cache_size)</span>;</span><br></pre></td></tr></table></figure>
-
-<p>试着分析一下：</p>
-<p><strong>差分包头信息读取接口</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/** 差分包头信息读取接口</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * @param hpi_TInputStreamHandle        diff_data           注意此处入参：差分数据流句柄（个人理解：如果不需要该句柄的话可以将其定义为空指针）</span></span><br><span class="line"><span class="comment"> * @param hpi_TInputStream_read         read_diff           注意此处入参：差分数据流读取函数（用户实现：以数据流的方式读取外部存储中差分数据分区的数据）</span></span><br><span class="line"><span class="comment"> * @param hpi_compressType             *out_compress_type   差分包头信息：差分包压缩类型</span></span><br><span class="line"><span class="comment"> * @param hpi_pos_t                    *out_newSize         差分包头信息：还原数据的长度</span></span><br><span class="line"><span class="comment"> * @param hpi_pos_t                    *out_uncompressSize  差分包头信息：解压之后的长度（如果差分包未被压缩则*out_uncompressSize输出0）</span></span><br><span class="line"><span class="comment">**/</span></span><br><span class="line">hpi_BOOL <span class="title function_">hpatch_lite_open</span><span class="params">(hpi_TInputStreamHandle diff_data,hpi_TInputStream_read read_diff,hpi_compressType* out_compress_type,<span class="type">hpi_pos_t</span>* out_newSize,<span class="type">hpi_pos_t</span>* out_uncompressSize)</span>;</span><br></pre></td></tr></table></figure>
-
-<p><strong>差分包头定义</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> hpi_kHeadSize (2+1+1) <span class="comment">//&quot;hI&quot; + hpi_compressType + (versionCode + newSize_Bytes + uncompressSize_Bytes) &#123; + newSize + uncompressSize&#125; &#123; + dictSize&#125;</span></span></span><br><span class="line">差分包头[<span class="number">0</span>] : 魔术数字 <span class="number">68</span> <span class="string">&#x27;h&#x27;</span></span><br><span class="line">差分包头[<span class="number">1</span>] : 魔术数字 <span class="number">49</span> <span class="string">&#x27;I&#x27;</span></span><br><span class="line">差分包头[<span class="number">2</span>] : 压缩类型</span><br><span class="line">差分包头[<span class="number">3</span>] : 版本代码[<span class="number">7</span>:<span class="number">6</span>]+解压数据长度所占的字节数u[<span class="number">5</span>:<span class="number">3</span>]+还原数据长度所占的字节数n[<span class="number">2</span>:<span class="number">0</span>]</span><br><span class="line">差分包头[<span class="number">4</span> ~ <span class="number">4</span>+n] : 还原数据长度</span><br><span class="line">差分包头[? ~ ?+u] : 解压数据长度</span><br><span class="line"></span><br><span class="line">压缩包头[? ~ ?+<span class="number">4</span>] : 压缩字典大小</span><br></pre></td></tr></table></figure>
-
-<p><strong>差分还原接口</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/** 差分还原接口</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * @param hpatchi_listener_t            listener            详见 hpatchi_listener_t 分析</span></span><br><span class="line"><span class="comment"> * @param hpi_pos_t                     newSize             还原数据的长度</span></span><br><span class="line"><span class="comment"> * @param hpi_byte                     *temp_cache          还原缓冲的地址</span></span><br><span class="line"><span class="comment"> * @param hpi_size_t                    temp_cache_size     还原缓冲的大小（&gt;=2）</span></span><br><span class="line"><span class="comment">**/</span></span><br><span class="line">hpi_BOOL <span class="title function_">hpatch_lite_patch</span><span class="params">(<span class="type">hpatchi_listener_t</span>* listener,<span class="type">hpi_pos_t</span> newSize,hpi_byte* temp_cache,<span class="type">hpi_size_t</span> temp_cache_size)</span>;</span><br></pre></td></tr></table></figure>
-
-<p><strong>hpatchi_listener_t</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">hpatchi_listener_t</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    hpi_TInputStreamHandle  diff_data;</span><br><span class="line">    hpi_TInputStream_read   read_diff;</span><br><span class="line">    hpi_BOOL (*read_old)(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span>* listener,<span class="type">hpi_pos_t</span> read_from_pos,hpi_byte* out_data,<span class="type">hpi_size_t</span> data_size);</span><br><span class="line">    hpi_BOOL (*write_new)(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span>* listener,<span class="type">const</span> hpi_byte* data,<span class="type">hpi_size_t</span> data_size);</span><br><span class="line">&#125; <span class="type">hpatchi_listener_t</span>;</span><br></pre></td></tr></table></figure>
-
-<p><strong>hpatchi_listener_t 实例（差分包未经压缩）</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">hpatchi_listener_t</span> listener =</span><br><span class="line">&#123;</span><br><span class="line">    .diff_data = 差分数据流句柄,</span><br><span class="line">    .read_diff = 差分数据流读取函数,    由用户去实现（从外部存储的差分数据分区读取）（函数一）</span><br><span class="line"></span><br><span class="line">    .read_old  = 旧版数据流读取函数,    由用户去实现（从内部存储的旧版程序分区读取）（函数二）</span><br><span class="line">    .write_new = 还原数据流写入函数,    由用户去实现（写入到外部存储的还原程序分区）（函数三）</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p><strong>hpatchi_listener_t 实例（差分包经过压缩）</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">tuz_TStream _tuz_stream = <span class="comment">/* 压缩数据流句柄 */</span></span><br><span class="line">&#123;</span><br><span class="line">    .in_Stream = 差分数据流句柄,</span><br><span class="line">    .read_code = 差分数据流读取函数,    由用户去实现（从外部存储的差分数据分区读取）（函数一）</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">hpatchi_listener_t</span> listener =</span><br><span class="line">&#123;</span><br><span class="line">    .diff_data = 压缩数据流句柄,        _tuz_stream</span><br><span class="line">    .read_diff = 压缩数据流解压函数,    _tuz_TStream_decompress() <span class="comment">// decompresser_demo.h</span></span><br><span class="line"></span><br><span class="line">    .read_old  = 旧版数据流读取函数,    由用户去实现（从内部存储的旧版程序分区读取）（函数二）</span><br><span class="line">    .write_new = 还原数据流写入函数,    由用户去实现（写入到外部存储的还原程序分区）（函数三）</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>最后需要特别注意的一点是：差分包必须由 create_lite_diff() 函数创建。宏观上来说就是差分包必须要通过 hdiffi.exe 程序生成，不能使用 hdiffz.exe 生成。</p>
-<h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">hpi_BOOL 差分数据流读取函数()</span><br><span class="line">&#123;</span><br><span class="line">    由用户实现</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">hpi_BOOL 旧版数据流读取函数()</span><br><span class="line">&#123;</span><br><span class="line">    由用户实现</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">hpi_BOOL 还原数据流写入函数()</span><br><span class="line">&#123;</span><br><span class="line">    由用户实现</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 根据 hpatch_lite_open() + hpatch_lite_patch() 编写的还原程序</span></span><br><span class="line"><span class="type">hpi_patch_result_t</span> <span class="title function_">hpi_patch</span><span class="params">(接收到的差分包大小, “还原缓冲大小”, “解压缓冲大小”)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 差分数据流句柄：如果不需要该句柄的话可以将其定义为空指针</span></span><br><span class="line">    hpatch_lite_open(“差分数据流句柄”, “差分数据流读取函数”, 输出“差分包信息”);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    解压缓冲地址 = <span class="built_in">malloc</span>();</span><br><span class="line">    解压字典大小 = _tuz_TStream_getReservedMemSize(“差分数据流句柄”, “差分数据流读取函数”);</span><br><span class="line">    tuz_TStream_open(_tuz_stream, “差分数据流句柄”, “差分数据流读取函数”, “解压缓冲地址”, “解压字典大小”, “解压缓冲大小”);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    patch_listener</span><br><span class="line">        .diff_data = _tuz_stream</span><br><span class="line">        .read_diff = _tuz_TStream_decompress() <span class="comment">// decompresser_demo.h</span></span><br><span class="line">        .read_old  = 旧版数据流读取函数()</span><br><span class="line">        .write_new = 还原数据流写入函数()</span><br><span class="line"></span><br><span class="line">    还原缓冲地址 = <span class="built_in">malloc</span>();</span><br><span class="line"></span><br><span class="line">    hpatch_lite_patch(“patch_listener”, “还原数据期望长度”, “还原缓冲地址”, “还原缓冲大小”);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><figure class="highlight c"><figcaption><span>hpatch_port.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> __hpatch_port_h__</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __hpatch_port_h__</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stddef.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;malloc.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> hpi_malloc(x)                   mymalloc(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> hpi_free(x)                     myfree(x)</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">hpi_patch</span><span class="params">(<span class="type">size_t</span> diff_file_size, <span class="type">size_t</span> patch_cache_size, <span class="type">size_t</span> decompress_cache_size)</span>; <span class="comment">// (差分文件的大小, 差分缓冲大小, 解压缓冲大小)</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span> <span class="comment">/* __hpatch_port_h__ */</span></span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><figcaption><span>hpatch_port.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;hpatch_port.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;fal.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;hpatch_lite.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;patch_types.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;decompresser_demo.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">static</span> <span class="type">size_t</span> patch_file_len = <span class="number">0</span>;</span><br><span class="line"><span class="type">static</span> <span class="type">size_t</span> patch_file_rxd_pos = <span class="number">0</span>;</span><br><span class="line"><span class="type">static</span> <span class="type">size_t</span> newer_file_txd_pos = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 从外部flash中以数据流的形式读取差分数据（由用户记录数据流的位置：读到哪儿了）（数据流结束时需要将 *data_size 置为当前所读数据的实际长度）（*data_size == decompress_cache_size）</span></span><br><span class="line"><span class="type">static</span> hpi_BOOL _do_read_diff(hpi_TInputStreamHandle input_stream, hpi_byte *data, <span class="type">hpi_size_t</span> *data_size)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">unsigned</span> <span class="type">int</span> offset = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// TODO 由用户实现</span></span><br><span class="line">    <span class="keyword">if</span> ((patch_file_rxd_pos + *data_size) &gt; patch_file_len)</span><br><span class="line">    &#123;</span><br><span class="line">        *data_size = patch_file_len - patch_file_rxd_pos;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_ziped&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_read(partition, offset+patch_file_rxd_pos, data, *data_size);</span><br><span class="line">    patch_file_rxd_pos += *data_size;</span><br><span class="line">    <span class="keyword">return</span> hpi_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 从内部flash中以数据流的形式读取旧版程序</span></span><br><span class="line"><span class="type">static</span> hpi_BOOL _do_read_old(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span> *listener, <span class="type">hpi_pos_t</span> read_pos, hpi_byte *data, <span class="type">hpi_size_t</span> data_size)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// TODO 由用户实现</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_older&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_read(partition, read_pos, data, data_size);</span><br><span class="line">    <span class="keyword">return</span> hpi_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将还原数据以数据流的形式写入外部flash中（由用户记录数据流的位置：写到哪儿了）</span></span><br><span class="line"><span class="type">static</span> hpi_BOOL _do_write_new(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span> *listener, <span class="type">const</span> hpi_byte *data, <span class="type">hpi_size_t</span> data_size)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// TODO 由用户实现</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_newer&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_write(partition, newer_file_txd_pos, data, data_size);</span><br><span class="line">    newer_file_txd_pos += data_size;</span><br><span class="line">    <span class="keyword">return</span> hpi_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">hpi_patch</span><span class="params">(<span class="type">size_t</span> diff_file_size, <span class="type">size_t</span> patch_cache_size, <span class="type">size_t</span> decompress_cache_size)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">    hpi_byte* pmem = <span class="number">0</span>;</span><br><span class="line">    hpi_byte* patch_cache;</span><br><span class="line"></span><br><span class="line">    patch_file_len = diff_file_size;</span><br><span class="line">    patch_file_rxd_pos = <span class="number">0</span>;</span><br><span class="line">    newer_file_txd_pos = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    hpi_TInputStreamHandle  void_stream_handle = <span class="literal">NULL</span>;</span><br><span class="line">    hpi_TInputStream_read   diff_stream_read = _do_read_diff;</span><br><span class="line">    hpi_compressType        compress_type;</span><br><span class="line">    <span class="type">hpi_pos_t</span>               new_size;</span><br><span class="line">    <span class="type">hpi_pos_t</span>               uncompress_size;</span><br><span class="line"></span><br><span class="line">    hpatch_lite_open(void_stream_handle, diff_stream_read, &amp;compress_type, &amp;new_size, &amp;uncompress_size);</span><br><span class="line"></span><br><span class="line">    <span class="type">hpatchi_listener_t</span> listener;</span><br><span class="line">    listener.read_old  = _do_read_old;</span><br><span class="line">    listener.write_new = _do_write_new;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">switch</span> (compress_type)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> hpi_compressType_no:  <span class="comment">// memory size: patch_cache_size</span></span><br><span class="line">        &#123;</span><br><span class="line">            pmem = (hpi_byte*)hpi_malloc(patch_cache_size);</span><br><span class="line">            patch_cache = pmem;</span><br><span class="line"></span><br><span class="line">            listener.diff_data = void_stream_handle;</span><br><span class="line">            listener.read_diff = diff_stream_read;</span><br><span class="line">        &#125; <span class="keyword">break</span>;</span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> _CompressPlugin_tuz</span></span><br><span class="line">        <span class="keyword">case</span> hpi_compressType_tuz:  <span class="comment">// requirements memory size: patch_cache_size + decompress_cache_size + decompress_dict_size</span></span><br><span class="line">        &#123;</span><br><span class="line">            tuz_TStream tuz_stream_handle;</span><br><span class="line"></span><br><span class="line">            <span class="type">size_t</span> decompress_dict_size  = _tuz_TStream_getReservedMemSize(void_stream_handle, diff_stream_read);</span><br><span class="line"></span><br><span class="line">            pmem = (hpi_byte*)hpi_malloc(decompress_dict_size + decompress_cache_size + patch_cache_size);</span><br><span class="line"></span><br><span class="line">            tuz_TStream_open(&amp;tuz_stream_handle, void_stream_handle, diff_stream_read, pmem, (<span class="type">tuz_size_t</span>)decompress_dict_size, (<span class="type">tuz_size_t</span>)decompress_cache_size);</span><br><span class="line"></span><br><span class="line">            patch_cache = pmem + decompress_dict_size + decompress_cache_size;</span><br><span class="line"></span><br><span class="line">            listener.diff_data = &amp;tuz_stream_handle;</span><br><span class="line">            listener.read_diff = _tuz_TStream_decompress;</span><br><span class="line">        &#125; <span class="keyword">break</span>;</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">goto</span> clear;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    hpatch_lite_patch(&amp;listener, new_size, patch_cache, (<span class="type">hpi_size_t</span>)patch_cache_size);</span><br><span class="line"></span><br><span class="line">clear:</span><br><span class="line">    <span class="keyword">if</span> (pmem) &#123; hpi_free(pmem); pmem=<span class="number">0</span>; &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<div class="note info no-icon"><p>为了使代码看起来更加简洁，因此例程中没有进行任何异常处理。</p>
-</div>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>在线升级</tag>
-        <tag>差分还原算法</tag>
-        <tag>增量升级</tag>
       </tags>
   </entry>
   <entry>
@@ -3035,7 +3199,7 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[将内部flash中的0xAAB
   </entry>
   <entry>
     <title>开发指南：华大 HC32F460 &amp; HC32F4A0 比较</title>
-    <url>/sulfurandcu.io/cls8s6aiz00g0d0rqgfz49yjj.html</url>
+    <url>/sulfurandcu.io/cls9qlqoq00g5d8rq8c9canh8.html</url>
     <content><![CDATA[<table>
 <thead>
 <tr>
@@ -3158,6 +3322,75 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[将内部flash中的0xAAB
         <tag>华大半导体</tag>
         <tag>HC32F460</tag>
         <tag>HC32F4A0</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>嵌入式 IAP 升级功能（#06）差分还原 hpatchlite 移植</title>
+    <url>/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html</url>
+    <content><![CDATA[<p>最近发现了一个优秀的差分还原算法：hdiff &amp; hpatch，它通过数据流的思想把 O(n) 的空间复杂度转嫁给了硬盘，使得内存的开销极低，非常适合应用于嵌入式领域。</p>
+<p><img src="/sulfurandcu.io/diff.tools.compare.png"></p>
+<span id="more"></span>
+
+<h2 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h2><h3 id="hpatchlite"><a href="#hpatchlite" class="headerlink" title="hpatchlite"></a>hpatchlite</h3><p>时间复杂度：O(oldSize+newSize)<br>空间复杂度：O(1)<br>　　还原代码开销｜ROM &#x3D; 876 字节 (compiled by armcc v5.06 update4 build 422)<br>　　还原内存开销｜RAM &#x3D; 还原缓冲大小 + 解压内存开销</p>
+<p>注：还原缓冲大小在还原时指定，至少3个字节，还原缓冲越小还原得越慢。</p>
+<h3 id="tinyuz"><a href="#tinyuz" class="headerlink" title="tinyuz"></a>tinyuz</h3><p>时间复杂度：O(oldSize+newSize)<br>空间复杂度：O(1)<br>　　解压代码开销｜流模式｜ROM &#x3D; 1142 字节 (compiled by armcc v5.06 update4 build 422)<br>　　解压内存开销｜流模式｜RAM &#x3D; 压缩字典大小 + 解压缓冲大小</p>
+<p>注：压缩字典大小在压缩时指定，至少1个字节，压缩字典越小压缩率越低。<br>注：解压缓冲大小在解压时指定，至少2个字节，解压缓冲越小解压缩越慢。</p>
+<h3 id="appendix"><a href="#appendix" class="headerlink" title="appendix"></a>appendix</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name</span><br><span class="line"></span><br><span class="line"> 876          0          0          0          0      10783   hpatch_lite.o</span><br><span class="line">1142          0          0          0          0      13541   tuz_dec.o</span><br><span class="line"></span><br><span class="line"> 626         80          0         12          0      12256   hpatch_user.o</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">244           0          0          0          0       2146   bspatch.o</span><br><span class="line">586           6         64          0          0       6749   quicklz.o</span><br><span class="line"></span><br><span class="line">102           4          8          0          0       2821   bspatch_user.o</span><br><span class="line"> 52           0          0          0          0       2096   quicklz_user.o</span><br></pre></td></tr></table></figure>
+
+<h2 id="移植说明"><a href="#移植说明" class="headerlink" title="移植说明"></a>移植说明</h2><p>将 hdiffpatch.hpatchlite &amp; tinyuz 移植至单片机 bare metal 裸机系统（based on hdiffpatch v4）</p>
+<h3 id="拿来"><a href="#拿来" class="headerlink" title="拿来"></a>拿来</h3><p>将 tinyuz&#x2F;decompress 目录拷贝至目标工程中。</p>
+<p>将 HDiffPatch&#x2F;libHDiffPatch&#x2F;HPatch 目录拷贝至目标工程中。</p>
+<p>将 HDiffPatch&#x2F;libHDiffPatch&#x2F;HPatchLite 目录拷贝至目标工程中。</p>
+<p>将 HPatchLite&#x2F;decompresser_demo.h 文件拷贝至目标工程中。</p>
+<h3 id="画瓢"><a href="#画瓢" class="headerlink" title="画瓢"></a>画瓢</h3><p>依 HPatchLite&#x2F;hpatchi.c&#x2F;hpatchi() 函数画瓢：移植还原功能</p>
+<p>依 tinyuz&#x2F;tinyuz_demo.cpp&#x2F;_tuz_decompress_stream() 函数画瓢：移植解压功能</p>
+<p>done!</p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>拿来依葫芦画瓢，说得简单，做起来着实还是费了点功夫，这几年搞嵌入式搞得有些局限了，面对句(gōu)柄这种用法竟感觉无从下手。😅</p>
+<p>作者提供了以下两个接口函数：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">hpatch_lite_open()</span><br><span class="line"></span><br><span class="line">hpatch_lite_patch()</span><br></pre></td></tr></table></figure>
+
+<p>看着挺简单的吧，然而他实际上是这样的：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// hpatch_lite by stream: hpatch_lite_open()+hpatch_lite_patch() compiled by Mbed Studio is 662 bytes</span></span><br><span class="line"><span class="comment">//   hdiffpatch v4.2.3, other patcher compiled by Mbed Studio:</span></span><br><span class="line"><span class="comment">//      patch_single_stream() 2356 bytes (hpatch_StreamPos_t=hpatch_uint32_t)</span></span><br><span class="line"><span class="comment">//      patch_decompress_with_cache() 2846 bytes (_IS_NEED_CACHE_OLD_BY_COVERS=0,hpatch_StreamPos_t=hpatch_uint32_t)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//diff_data must created by create_lite_diff()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">hpatchi_listener_t</span>&#123;</span></span><br><span class="line">    hpi_TInputStreamHandle  diff_data;</span><br><span class="line">    hpi_TInputStream_read   read_diff;</span><br><span class="line">    <span class="comment">//must read data_size data to out_data, from read_from_pos of stream; if read error return hpi_FALSE;</span></span><br><span class="line">    hpi_BOOL (*read_old)(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span>* listener,<span class="type">hpi_pos_t</span> read_from_pos,hpi_byte* out_data,<span class="type">hpi_size_t</span> data_size);</span><br><span class="line">    <span class="comment">//must write data_size data to sequence stream; if write error return hpi_FALSE;</span></span><br><span class="line">    hpi_BOOL (*write_new)(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span>* listener,<span class="type">const</span> hpi_byte* data,<span class="type">hpi_size_t</span> data_size);</span><br><span class="line">&#125; <span class="type">hpatchi_listener_t</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//hpatch_lite open</span></span><br><span class="line"><span class="comment">// read lite headinfo from diff_data</span></span><br><span class="line"><span class="comment">// if diff_data uncompress(*out_compress_type==hpi_compressType_no), *out_uncompressSize==0;</span></span><br><span class="line"><span class="comment">// if (*out_compress_type!=hpi_compressType_no), you need open compressed data by decompresser</span></span><br><span class="line"><span class="comment">//      (see https://github.com/sisong/HPatchLite/decompresser_demo.h &amp; https://github.com/sisong/HPatchLite/hpatchi.c)</span></span><br><span class="line">hpi_BOOL <span class="title function_">hpatch_lite_open</span><span class="params">(hpi_TInputStreamHandle diff_data,hpi_TInputStream_read read_diff,</span></span><br><span class="line"><span class="params">                          hpi_compressType* out_compress_type,<span class="type">hpi_pos_t</span>* out_newSize,<span class="type">hpi_pos_t</span>* out_uncompressSize)</span>;</span><br><span class="line"><span class="comment">//hpatch_lite patch</span></span><br><span class="line"><span class="comment">//	used temp_cache_size memory + &#123;decompress buffer*1&#125;</span></span><br><span class="line"><span class="comment">//  note: temp_cache_size&gt;=hpi_kMinCacheSize</span></span><br><span class="line">hpi_BOOL <span class="title function_">hpatch_lite_patch</span><span class="params">(<span class="type">hpatchi_listener_t</span>* listener,<span class="type">hpi_pos_t</span> newSize,</span></span><br><span class="line"><span class="params">                           hpi_byte* temp_cache,<span class="type">hpi_size_t</span> temp_cache_size)</span>;</span><br></pre></td></tr></table></figure>
+
+<p>试着分析一下：</p>
+<p><strong>差分包头信息读取接口</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/** 差分包头信息读取接口</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * @param hpi_TInputStreamHandle        diff_data           注意此处入参：差分数据流句柄（个人理解：如果不需要该句柄的话可以将其定义为空指针）</span></span><br><span class="line"><span class="comment"> * @param hpi_TInputStream_read         read_diff           注意此处入参：差分数据流读取函数（用户实现：以数据流的方式读取外部存储中差分数据分区的数据）</span></span><br><span class="line"><span class="comment"> * @param hpi_compressType             *out_compress_type   差分包头信息：差分包压缩类型</span></span><br><span class="line"><span class="comment"> * @param hpi_pos_t                    *out_newSize         差分包头信息：还原数据的长度</span></span><br><span class="line"><span class="comment"> * @param hpi_pos_t                    *out_uncompressSize  差分包头信息：解压之后的长度（如果差分包未被压缩则*out_uncompressSize输出0）</span></span><br><span class="line"><span class="comment">**/</span></span><br><span class="line">hpi_BOOL <span class="title function_">hpatch_lite_open</span><span class="params">(hpi_TInputStreamHandle diff_data,hpi_TInputStream_read read_diff,hpi_compressType* out_compress_type,<span class="type">hpi_pos_t</span>* out_newSize,<span class="type">hpi_pos_t</span>* out_uncompressSize)</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>差分包头定义</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> hpi_kHeadSize (2+1+1) <span class="comment">//&quot;hI&quot; + hpi_compressType + (versionCode + newSize_Bytes + uncompressSize_Bytes) &#123; + newSize + uncompressSize&#125; &#123; + dictSize&#125;</span></span></span><br><span class="line">差分包头[<span class="number">0</span>] : 魔术数字 <span class="number">68</span> <span class="string">&#x27;h&#x27;</span></span><br><span class="line">差分包头[<span class="number">1</span>] : 魔术数字 <span class="number">49</span> <span class="string">&#x27;I&#x27;</span></span><br><span class="line">差分包头[<span class="number">2</span>] : 压缩类型</span><br><span class="line">差分包头[<span class="number">3</span>] : 版本代码[<span class="number">7</span>:<span class="number">6</span>]+解压数据长度所占的字节数u[<span class="number">5</span>:<span class="number">3</span>]+还原数据长度所占的字节数n[<span class="number">2</span>:<span class="number">0</span>]</span><br><span class="line">差分包头[<span class="number">4</span> ~ <span class="number">4</span>+n] : 还原数据长度</span><br><span class="line">差分包头[? ~ ?+u] : 解压数据长度</span><br><span class="line"></span><br><span class="line">压缩包头[? ~ ?+<span class="number">4</span>] : 压缩字典大小</span><br></pre></td></tr></table></figure>
+
+<p><strong>差分还原接口</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/** 差分还原接口</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * @param hpatchi_listener_t            listener            详见 hpatchi_listener_t 分析</span></span><br><span class="line"><span class="comment"> * @param hpi_pos_t                     newSize             还原数据的长度</span></span><br><span class="line"><span class="comment"> * @param hpi_byte                     *temp_cache          还原缓冲的地址</span></span><br><span class="line"><span class="comment"> * @param hpi_size_t                    temp_cache_size     还原缓冲的大小（&gt;=2）</span></span><br><span class="line"><span class="comment">**/</span></span><br><span class="line">hpi_BOOL <span class="title function_">hpatch_lite_patch</span><span class="params">(<span class="type">hpatchi_listener_t</span>* listener,<span class="type">hpi_pos_t</span> newSize,hpi_byte* temp_cache,<span class="type">hpi_size_t</span> temp_cache_size)</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>hpatchi_listener_t</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">hpatchi_listener_t</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    hpi_TInputStreamHandle  diff_data;</span><br><span class="line">    hpi_TInputStream_read   read_diff;</span><br><span class="line">    hpi_BOOL (*read_old)(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span>* listener,<span class="type">hpi_pos_t</span> read_from_pos,hpi_byte* out_data,<span class="type">hpi_size_t</span> data_size);</span><br><span class="line">    hpi_BOOL (*write_new)(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span>* listener,<span class="type">const</span> hpi_byte* data,<span class="type">hpi_size_t</span> data_size);</span><br><span class="line">&#125; <span class="type">hpatchi_listener_t</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>hpatchi_listener_t 实例（差分包未经压缩）</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">hpatchi_listener_t</span> listener =</span><br><span class="line">&#123;</span><br><span class="line">    .diff_data = 差分数据流句柄,</span><br><span class="line">    .read_diff = 差分数据流读取函数,    由用户去实现（从外部存储的差分数据分区读取）（函数一）</span><br><span class="line"></span><br><span class="line">    .read_old  = 旧版数据流读取函数,    由用户去实现（从内部存储的旧版程序分区读取）（函数二）</span><br><span class="line">    .write_new = 还原数据流写入函数,    由用户去实现（写入到外部存储的还原程序分区）（函数三）</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>hpatchi_listener_t 实例（差分包经过压缩）</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">tuz_TStream _tuz_stream = <span class="comment">/* 压缩数据流句柄 */</span></span><br><span class="line">&#123;</span><br><span class="line">    .in_Stream = 差分数据流句柄,</span><br><span class="line">    .read_code = 差分数据流读取函数,    由用户去实现（从外部存储的差分数据分区读取）（函数一）</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">hpatchi_listener_t</span> listener =</span><br><span class="line">&#123;</span><br><span class="line">    .diff_data = 压缩数据流句柄,        _tuz_stream</span><br><span class="line">    .read_diff = 压缩数据流解压函数,    _tuz_TStream_decompress() <span class="comment">// decompresser_demo.h</span></span><br><span class="line"></span><br><span class="line">    .read_old  = 旧版数据流读取函数,    由用户去实现（从内部存储的旧版程序分区读取）（函数二）</span><br><span class="line">    .write_new = 还原数据流写入函数,    由用户去实现（写入到外部存储的还原程序分区）（函数三）</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>最后需要特别注意的一点是：差分包必须由 create_lite_diff() 函数创建。宏观上来说就是差分包必须要通过 hdiffi.exe 程序生成，不能使用 hdiffz.exe 生成。</p>
+<h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">hpi_BOOL 差分数据流读取函数()</span><br><span class="line">&#123;</span><br><span class="line">    由用户实现</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">hpi_BOOL 旧版数据流读取函数()</span><br><span class="line">&#123;</span><br><span class="line">    由用户实现</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">hpi_BOOL 还原数据流写入函数()</span><br><span class="line">&#123;</span><br><span class="line">    由用户实现</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 根据 hpatch_lite_open() + hpatch_lite_patch() 编写的还原程序</span></span><br><span class="line"><span class="type">hpi_patch_result_t</span> <span class="title function_">hpi_patch</span><span class="params">(接收到的差分包大小, “还原缓冲大小”, “解压缓冲大小”)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 差分数据流句柄：如果不需要该句柄的话可以将其定义为空指针</span></span><br><span class="line">    hpatch_lite_open(“差分数据流句柄”, “差分数据流读取函数”, 输出“差分包信息”);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    解压缓冲地址 = <span class="built_in">malloc</span>();</span><br><span class="line">    解压字典大小 = _tuz_TStream_getReservedMemSize(“差分数据流句柄”, “差分数据流读取函数”);</span><br><span class="line">    tuz_TStream_open(_tuz_stream, “差分数据流句柄”, “差分数据流读取函数”, “解压缓冲地址”, “解压字典大小”, “解压缓冲大小”);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    patch_listener</span><br><span class="line">        .diff_data = _tuz_stream</span><br><span class="line">        .read_diff = _tuz_TStream_decompress() <span class="comment">// decompresser_demo.h</span></span><br><span class="line">        .read_old  = 旧版数据流读取函数()</span><br><span class="line">        .write_new = 还原数据流写入函数()</span><br><span class="line"></span><br><span class="line">    还原缓冲地址 = <span class="built_in">malloc</span>();</span><br><span class="line"></span><br><span class="line">    hpatch_lite_patch(“patch_listener”, “还原数据期望长度”, “还原缓冲地址”, “还原缓冲大小”);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><figure class="highlight c"><figcaption><span>hpatch_port.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> __hpatch_port_h__</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __hpatch_port_h__</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stddef.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;malloc.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> hpi_malloc(x)                   mymalloc(x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> hpi_free(x)                     myfree(x)</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">hpi_patch</span><span class="params">(<span class="type">size_t</span> diff_file_size, <span class="type">size_t</span> patch_cache_size, <span class="type">size_t</span> decompress_cache_size)</span>; <span class="comment">// (差分文件的大小, 差分缓冲大小, 解压缓冲大小)</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span> <span class="comment">/* __hpatch_port_h__ */</span></span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><figcaption><span>hpatch_port.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;hpatch_port.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;fal.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;hpatch_lite.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;patch_types.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;decompresser_demo.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">static</span> <span class="type">size_t</span> patch_file_len = <span class="number">0</span>;</span><br><span class="line"><span class="type">static</span> <span class="type">size_t</span> patch_file_rxd_pos = <span class="number">0</span>;</span><br><span class="line"><span class="type">static</span> <span class="type">size_t</span> newer_file_txd_pos = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 从外部flash中以数据流的形式读取差分数据（由用户记录数据流的位置：读到哪儿了）（数据流结束时需要将 *data_size 置为当前所读数据的实际长度）（*data_size == decompress_cache_size）</span></span><br><span class="line"><span class="type">static</span> hpi_BOOL _do_read_diff(hpi_TInputStreamHandle input_stream, hpi_byte *data, <span class="type">hpi_size_t</span> *data_size)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">unsigned</span> <span class="type">int</span> offset = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// TODO 由用户实现</span></span><br><span class="line">    <span class="keyword">if</span> ((patch_file_rxd_pos + *data_size) &gt; patch_file_len)</span><br><span class="line">    &#123;</span><br><span class="line">        *data_size = patch_file_len - patch_file_rxd_pos;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_ziped&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_read(partition, offset+patch_file_rxd_pos, data, *data_size);</span><br><span class="line">    patch_file_rxd_pos += *data_size;</span><br><span class="line">    <span class="keyword">return</span> hpi_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 从内部flash中以数据流的形式读取旧版程序</span></span><br><span class="line"><span class="type">static</span> hpi_BOOL _do_read_old(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span> *listener, <span class="type">hpi_pos_t</span> read_pos, hpi_byte *data, <span class="type">hpi_size_t</span> data_size)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// TODO 由用户实现</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_older&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_read(partition, read_pos, data, data_size);</span><br><span class="line">    <span class="keyword">return</span> hpi_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将还原数据以数据流的形式写入外部flash中（由用户记录数据流的位置：写到哪儿了）</span></span><br><span class="line"><span class="type">static</span> hpi_BOOL _do_write_new(<span class="keyword">struct</span> <span class="type">hpatchi_listener_t</span> *listener, <span class="type">const</span> hpi_byte *data, <span class="type">hpi_size_t</span> data_size)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// TODO 由用户实现</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">fal_partition</span> *<span class="title">partition</span> =</span> fal_partition_find(<span class="string">&quot;app_newer&quot;</span>);</span><br><span class="line">    <span class="type">int</span> result = fal_partition_write(partition, newer_file_txd_pos, data, data_size);</span><br><span class="line">    newer_file_txd_pos += data_size;</span><br><span class="line">    <span class="keyword">return</span> hpi_TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">hpi_patch</span><span class="params">(<span class="type">size_t</span> diff_file_size, <span class="type">size_t</span> patch_cache_size, <span class="type">size_t</span> decompress_cache_size)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">    hpi_byte* pmem = <span class="number">0</span>;</span><br><span class="line">    hpi_byte* patch_cache;</span><br><span class="line"></span><br><span class="line">    patch_file_len = diff_file_size;</span><br><span class="line">    patch_file_rxd_pos = <span class="number">0</span>;</span><br><span class="line">    newer_file_txd_pos = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    hpi_TInputStreamHandle  void_stream_handle = <span class="literal">NULL</span>;</span><br><span class="line">    hpi_TInputStream_read   diff_stream_read = _do_read_diff;</span><br><span class="line">    hpi_compressType        compress_type;</span><br><span class="line">    <span class="type">hpi_pos_t</span>               new_size;</span><br><span class="line">    <span class="type">hpi_pos_t</span>               uncompress_size;</span><br><span class="line"></span><br><span class="line">    hpatch_lite_open(void_stream_handle, diff_stream_read, &amp;compress_type, &amp;new_size, &amp;uncompress_size);</span><br><span class="line"></span><br><span class="line">    <span class="type">hpatchi_listener_t</span> listener;</span><br><span class="line">    listener.read_old  = _do_read_old;</span><br><span class="line">    listener.write_new = _do_write_new;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">switch</span> (compress_type)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> hpi_compressType_no:  <span class="comment">// memory size: patch_cache_size</span></span><br><span class="line">        &#123;</span><br><span class="line">            pmem = (hpi_byte*)hpi_malloc(patch_cache_size);</span><br><span class="line">            patch_cache = pmem;</span><br><span class="line"></span><br><span class="line">            listener.diff_data = void_stream_handle;</span><br><span class="line">            listener.read_diff = diff_stream_read;</span><br><span class="line">        &#125; <span class="keyword">break</span>;</span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> _CompressPlugin_tuz</span></span><br><span class="line">        <span class="keyword">case</span> hpi_compressType_tuz:  <span class="comment">// requirements memory size: patch_cache_size + decompress_cache_size + decompress_dict_size</span></span><br><span class="line">        &#123;</span><br><span class="line">            tuz_TStream tuz_stream_handle;</span><br><span class="line"></span><br><span class="line">            <span class="type">size_t</span> decompress_dict_size  = _tuz_TStream_getReservedMemSize(void_stream_handle, diff_stream_read);</span><br><span class="line"></span><br><span class="line">            pmem = (hpi_byte*)hpi_malloc(decompress_dict_size + decompress_cache_size + patch_cache_size);</span><br><span class="line"></span><br><span class="line">            tuz_TStream_open(&amp;tuz_stream_handle, void_stream_handle, diff_stream_read, pmem, (<span class="type">tuz_size_t</span>)decompress_dict_size, (<span class="type">tuz_size_t</span>)decompress_cache_size);</span><br><span class="line"></span><br><span class="line">            patch_cache = pmem + decompress_dict_size + decompress_cache_size;</span><br><span class="line"></span><br><span class="line">            listener.diff_data = &amp;tuz_stream_handle;</span><br><span class="line">            listener.read_diff = _tuz_TStream_decompress;</span><br><span class="line">        &#125; <span class="keyword">break</span>;</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">goto</span> clear;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    hpatch_lite_patch(&amp;listener, new_size, patch_cache, (<span class="type">hpi_size_t</span>)patch_cache_size);</span><br><span class="line"></span><br><span class="line">clear:</span><br><span class="line">    <span class="keyword">if</span> (pmem) &#123; hpi_free(pmem); pmem=<span class="number">0</span>; &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note info no-icon"><p>为了使代码看起来更加简洁，因此例程中没有进行任何异常处理。</p>
+</div>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>在线升级</tag>
+        <tag>差分还原算法</tag>
+        <tag>增量升级</tag>
       </tags>
   </entry>
 </search>

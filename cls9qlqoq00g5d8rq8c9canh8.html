@@ -22,14 +22,14 @@
 
 
 
-<link rel="canonical" href="https://sulfurandcu.github.io/sulfurandcu.io/archives/2021/12/">
+<link rel="canonical" href="https://sulfurandcu.github.io/sulfurandcu.io/cls9qlqoq00g5d8rq8c9canh8.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2021/12/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/cls9qlqoq00g5d8rq8c9canh8.html","path":"cls9qlqoq00g5d8rq8c9canh8.html","title":"开发指南：华大 HC32F460 & HC32F4A0 比较"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>檔案 | ㄅㄆㄇㄈ</title>
+<title>开发指南：华大 HC32F460 & HC32F4A0 比较 | ㄅㄆㄇㄈ</title>
   
 
 
@@ -63,7 +63,7 @@
 
     <a href="/sulfurandcu.io/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">ㄅㄆㄇㄈ</h1>
+      <p class="site-title">ㄅㄆㄇㄈ</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">bopomofo</p>
@@ -144,13 +144,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-count">47</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -186,50 +186,234 @@
 
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cls9qlqoq00g5d8rq8c9canh8.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="开发指南：华大 HC32F460 & HC32F4A0 比较 | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          开发指南：华大 HC32F460 & HC32F4A0 比较
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-11-21 10:35:29" itemprop="dateCreated datePublished" datetime="2023-11-21T10:35:29+08:00">2023-11-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/" itemprop="url" rel="index"><span itemprop="name">开发指南</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><table>
+<thead>
+<tr>
+<th align="center">对比条目</th>
+<th align="center">HC32F460</th>
+<th align="center">HC32F4A0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">工作频率</td>
+<td align="center">200MHz</td>
+<td align="center">240MHz</td>
+</tr>
+<tr>
+<td align="center">内核架构</td>
+<td align="center">Cortex-M4 + FPU + DSP + MPU</td>
+<td align="center">Cortex-M4 + FPU + DSP + MPU</td>
+</tr>
+<tr>
+<td align="center">芯片封装</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ROM</td>
+<td align="center">512KB | 256KB</td>
+<td align="center">1024KB | 2048KB</td>
+</tr>
+<tr>
+<td align="center">RAM</td>
+<td align="center">192KB</td>
+<td align="center">516KB</td>
+</tr>
+<tr>
+<td align="center">PGA</td>
+<td align="center">×1</td>
+<td align="center">×4</td>
+</tr>
+<tr>
+<td align="center">CMP</td>
+<td align="center">×3</td>
+<td align="center">×4</td>
+</tr>
+<tr>
+<td align="center">ADC</td>
+<td align="center">×2</td>
+<td align="center">×3</td>
+</tr>
+<tr>
+<td align="center">DAC</td>
+<td align="center">×2</td>
+<td align="center">×4</td>
+</tr>
+<tr>
+<td align="center">TMR</td>
+<td align="center">Timer6 ×3 (16bit 高级 PWM Timer)<br>Timer4 ×3 (16bit 电机 PWM Timer)<br>TimerA ×6 (16bit 通用 PWM Timer)<br><br>Timer0 ×2 (16bit 通用 ___ Timer)</td>
+<td align="center">Timer6  ×8 (16bit 高级 PWM Timer)<br>Timer4  ×3 (16bit 电机 PWM Timer)<br>TimerA ×C (16bit 通用 PWM Timer)<br>Timer2  ×4 (16bit 通用 ___ Timer)<br>Timer0  ×2 (16bit 通用 ___ Timer)</td>
+</tr>
+<tr>
+<td align="center">RTC</td>
+<td align="center">×1</td>
+<td align="center">×1</td>
+</tr>
+<tr>
+<td align="center">WDT</td>
+<td align="center">WDT &amp; SWDT</td>
+<td align="center">WDT &amp; SWDT</td>
+</tr>
+<tr>
+<td align="center">URT</td>
+<td align="center">×4</td>
+<td align="center">×10</td>
+</tr>
+<tr>
+<td align="center">SPI</td>
+<td align="center">×4</td>
+<td align="center">×6</td>
+</tr>
+<tr>
+<td align="center">QSPI</td>
+<td align="center">×1</td>
+<td align="center">×1</td>
+</tr>
+<tr>
+<td align="center">I2C</td>
+<td align="center">×3</td>
+<td align="center">×6</td>
+</tr>
+<tr>
+<td align="center">I2S</td>
+<td align="center">×4</td>
+<td align="center">×4</td>
+</tr>
+<tr>
+<td align="center">CAN</td>
+<td align="center">×1</td>
+<td align="center">×2</td>
+</tr>
+<tr>
+<td align="center">USB</td>
+<td align="center">×1</td>
+<td align="center">×1</td>
+</tr>
+<tr>
+<td align="center">ETH</td>
+<td align="center">-</td>
+<td align="center">×1</td>
+</tr>
+<tr>
+<td align="center">SDIO</td>
+<td align="center">×2</td>
+<td align="center">×2</td>
+</tr>
+</tbody></table>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>作者： </strong>刘汲桐
+  </li>
+  <li class="post-copyright-link">
+      <strong>鏈接：</strong>
+      <a href="https://sulfurandcu.github.io/sulfurandcu.io/cls9qlqoq00g5d8rq8c9canh8.html" title="开发指南：华大 HC32F460 &amp; HC32F4A0 比较">https://sulfurandcu.github.io/sulfurandcu.io/cls9qlqoq00g5d8rq8c9canh8.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>聲明： </strong>請遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議｜姓名標示｜相同方式分享
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/sulfurandcu.io/tags/%E5%8D%8E%E5%A4%A7%E5%8D%8A%E5%AF%BC%E4%BD%93/" rel="tag"># 华大半导体</a>
+              <a href="/sulfurandcu.io/tags/HC32F460/" rel="tag"># HC32F460</a>
+              <a href="/sulfurandcu.io/tags/HC32F4A0/" rel="tag"># HC32F4A0</a>
+          </div>
+
         
-        <span class="collection-header">嗯..! 目前共有 45 篇文章 加油！</span>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-12-12T11:55:01+08:00"
-              content="2021-12-12">
-          12-12
-        </time>
-      </div>
-
-      <div class="post-title">
-        <a class="post-title-link" href="/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7.html" itemprop="url">
-          <span itemprop="name">二〇二一拼音漫游</span>
-        </a>
-      </div>
-
-      
-    </header>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1.html" rel="prev" title="问题记录：华大 HC32F460 内存边界禁止非对齐访问">
+                  <i class="fa fa-angle-left"></i> 问题记录：华大 HC32F460 内存边界禁止非对齐访问
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/sulfurandcu.io/clpga8j0y00i3dcrq5x5t1gkd.html" rel="next" title="中断向量表偏移寄存器配置方式">
+                  中断向量表偏移寄存器配置方式 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
 
 </div>
   </main>

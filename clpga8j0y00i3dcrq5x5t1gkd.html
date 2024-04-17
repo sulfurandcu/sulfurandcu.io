@@ -22,14 +22,14 @@
 
 
 
-<link rel="canonical" href="https://sulfurandcu.github.io/sulfurandcu.io/cls8s6aiz00g0d0rqgfz49yjj.html">
+<link rel="canonical" href="https://sulfurandcu.github.io/sulfurandcu.io/clpga8j0y00i3dcrq5x5t1gkd.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/cls8s6aiz00g0d0rqgfz49yjj.html","path":"cls8s6aiz00g0d0rqgfz49yjj.html","title":"开发指南：华大 HC32F460 & HC32F4A0 比较"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clpga8j0y00i3dcrq5x5t1gkd.html","path":"clpga8j0y00i3dcrq5x5t1gkd.html","title":"中断向量表偏移寄存器配置方式"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>开发指南：华大 HC32F460 & HC32F4A0 比较 | ㄅㄆㄇㄈ</title>
+<title>中断向量表偏移寄存器配置方式 | ㄅㄆㄇㄈ</title>
   
 
 
@@ -144,13 +144,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-count">47</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -197,7 +197,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cls8s6aiz00g0d0rqgfz49yjj.html">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clpga8j0y00i3dcrq5x5t1gkd.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
@@ -210,12 +210,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="开发指南：华大 HC32F460 & HC32F4A0 比较 | ㄅㄆㄇㄈ">
+      <meta itemprop="name" content="中断向量表偏移寄存器配置方式 | ㄅㄆㄇㄈ">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          开发指南：华大 HC32F460 & HC32F4A0 比较
+          中断向量表偏移寄存器配置方式
         </h1>
 
         <div class="post-meta-container">
@@ -226,7 +226,7 @@
       </span>
       <span class="post-meta-item-text">發表於</span>
 
-      <time title="創建時間：2023-11-21 10:35:29" itemprop="dateCreated datePublished" datetime="2023-11-21T10:35:29+08:00">2023-11-21</time>
+      <time title="創建時間：2023-11-27 10:19:53" itemprop="dateCreated datePublished" datetime="2023-11-27T10:19:53+08:00">2023-11-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/" itemprop="url" rel="index"><span itemprop="name">开发指南</span></a>
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E6%8C%87%E5%8C%97/" itemprop="url" rel="index"><span itemprop="name">开发指北</span></a>
         </span>
     </span>
 
@@ -247,120 +247,10 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><table>
-<thead>
-<tr>
-<th align="center">对比条目</th>
-<th align="center">HC32F460</th>
-<th align="center">HC32F4A0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">工作频率</td>
-<td align="center">200MHz</td>
-<td align="center">240MHz</td>
-</tr>
-<tr>
-<td align="center">内核架构</td>
-<td align="center">Cortex-M4 + FPU + DSP + MPU</td>
-<td align="center">Cortex-M4 + FPU + DSP + MPU</td>
-</tr>
-<tr>
-<td align="center">芯片封装</td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">ROM</td>
-<td align="center">512KB | 256KB</td>
-<td align="center">1024KB | 2048KB</td>
-</tr>
-<tr>
-<td align="center">RAM</td>
-<td align="center">192KB</td>
-<td align="center">516KB</td>
-</tr>
-<tr>
-<td align="center">PGA</td>
-<td align="center">×1</td>
-<td align="center">×4</td>
-</tr>
-<tr>
-<td align="center">CMP</td>
-<td align="center">×3</td>
-<td align="center">×4</td>
-</tr>
-<tr>
-<td align="center">ADC</td>
-<td align="center">×2</td>
-<td align="center">×3</td>
-</tr>
-<tr>
-<td align="center">DAC</td>
-<td align="center">×2</td>
-<td align="center">×4</td>
-</tr>
-<tr>
-<td align="center">TMR</td>
-<td align="center">Timer6 ×3 (16bit 高级 PWM Timer)<br>Timer4 ×3 (16bit 电机 PWM Timer)<br>TimerA ×6 (16bit 通用 PWM Timer)<br><br>Timer0 ×2 (16bit 通用 ___ Timer)</td>
-<td align="center">Timer6  ×8 (16bit 高级 PWM Timer)<br>Timer4  ×3 (16bit 电机 PWM Timer)<br>TimerA ×C (16bit 通用 PWM Timer)<br>Timer2  ×4 (16bit 通用 ___ Timer)<br>Timer0  ×2 (16bit 通用 ___ Timer)</td>
-</tr>
-<tr>
-<td align="center">RTC</td>
-<td align="center">×1</td>
-<td align="center">×1</td>
-</tr>
-<tr>
-<td align="center">WDT</td>
-<td align="center">WDT &amp; SWDT</td>
-<td align="center">WDT &amp; SWDT</td>
-</tr>
-<tr>
-<td align="center">URT</td>
-<td align="center">×4</td>
-<td align="center">×10</td>
-</tr>
-<tr>
-<td align="center">SPI</td>
-<td align="center">×4</td>
-<td align="center">×6</td>
-</tr>
-<tr>
-<td align="center">QSPI</td>
-<td align="center">×1</td>
-<td align="center">×1</td>
-</tr>
-<tr>
-<td align="center">I2C</td>
-<td align="center">×3</td>
-<td align="center">×6</td>
-</tr>
-<tr>
-<td align="center">I2S</td>
-<td align="center">×4</td>
-<td align="center">×4</td>
-</tr>
-<tr>
-<td align="center">CAN</td>
-<td align="center">×1</td>
-<td align="center">×2</td>
-</tr>
-<tr>
-<td align="center">USB</td>
-<td align="center">×1</td>
-<td align="center">×1</td>
-</tr>
-<tr>
-<td align="center">ETH</td>
-<td align="center">-</td>
-<td align="center">×1</td>
-</tr>
-<tr>
-<td align="center">SDIO</td>
-<td align="center">×2</td>
-<td align="center">×2</td>
-</tr>
-</tbody></table>
+    <div class="post-body" itemprop="articleBody"><p>对于「引导程序＋应用程序」之类的方案，我们通常是在系统初始化函数（SystemInit()）中配置中断向量表偏移寄存器来实现中断向量表的重定向。但是这种直接修改官方库的方式往往会给后期的版本管理带来诸多不便。基于此，本文给出一个替代方案，供诸位参考。</p>
+<figure class="highlight c"><figcaption><span>vtor.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;xxx32xxxx.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> VECTOR_TABLE_OFFSET             ((uint32_t)0x00018000) <span class="comment">/* % 0x200 == 0 */</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ROM_BASE                        ((uint32_t)0x08000000)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> RAM_BASE                        ((uint32_t)0x20000000)</span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">SystemVTOR</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> EXECUTE_IN_RAM</span></span><br><span class="line">    SCB-&gt;VTOR = RAM_BASE | VECTOR_TABLE_OFFSET;</span><br><span class="line">    <span class="meta">#<span class="keyword">else</span></span></span><br><span class="line">    SCB-&gt;VTOR = ROM_BASE | VECTOR_TABLE_OFFSET;</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><figcaption><span>startup_xxx32xxxx.s</span></figcaption><table><tr><td class="code"><pre><span class="line">Reset_Handler   PROC</span><br><span class="line">                EXPORT  Reset_Handler   [WEAK]</span><br><span class="line">                IMPORT  SystemVTOR</span><br><span class="line">                IMPORT  SystemInit</span><br><span class="line">                IMPORT  __main</span><br><span class="line"></span><br><span class="line">                LDR     R0, =SystemVTOR</span><br><span class="line">                BLX     R0</span><br><span class="line">                LDR     R0, =SystemInit</span><br><span class="line">                BLX     R0</span><br><span class="line">                LDR     R0, =__main</span><br><span class="line">                BX      R0</span><br><span class="line">                ENDP</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -378,7 +268,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>鏈接：</strong>
-      <a href="https://sulfurandcu.github.io/sulfurandcu.io/cls8s6aiz00g0d0rqgfz49yjj.html" title="开发指南：华大 HC32F460 &amp; HC32F4A0 比较">https://sulfurandcu.github.io/sulfurandcu.io/cls8s6aiz00g0d0rqgfz49yjj.html</a>
+      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clpga8j0y00i3dcrq5x5t1gkd.html" title="中断向量表偏移寄存器配置方式">https://sulfurandcu.github.io/sulfurandcu.io/clpga8j0y00i3dcrq5x5t1gkd.html</a>
   </li>
   <li class="post-copyright-license">
       <strong>聲明： </strong>請遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議｜姓名標示｜相同方式分享
@@ -386,22 +276,17 @@
 </ul>
 </div>
 
-          <div class="post-tags">
-              <a href="/sulfurandcu.io/tags/%E5%8D%8E%E5%A4%A7%E5%8D%8A%E5%AF%BC%E4%BD%93/" rel="tag"># 华大半导体</a>
-              <a href="/sulfurandcu.io/tags/HC32F460/" rel="tag"># HC32F460</a>
-              <a href="/sulfurandcu.io/tags/HC32F4A0/" rel="tag"># HC32F4A0</a>
-          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1.html" rel="prev" title="问题记录：华大 HC32F460 内存边界禁止非对齐访问">
-                  <i class="fa fa-angle-left"></i> 问题记录：华大 HC32F460 内存边界禁止非对齐访问
+                <a href="/sulfurandcu.io/cls9qlqoq00g5d8rq8c9canh8.html" rel="prev" title="开发指南：华大 HC32F460 & HC32F4A0 比较">
+                  <i class="fa fa-angle-left"></i> 开发指南：华大 HC32F460 & HC32F4A0 比较
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/cls8s6ai4009jd0rq9bxg3n9g.html" rel="next" title="freertos or rtthread ?">
+                <a href="/sulfurandcu.io/cls9qlqnt009ed8rqc033ajky.html" rel="next" title="freertos or rtthread ?">
                   freertos or rtthread ? <i class="fa fa-angle-right"></i>
                 </a>
             </div>

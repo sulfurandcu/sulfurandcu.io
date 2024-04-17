@@ -144,13 +144,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-count">47</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -187,6 +187,143 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html" class="post-title-link" itemprop="url">嵌入式 IAP 升级功能（#04）技术细节</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-10-01 00:00:04" itemprop="dateCreated datePublished" datetime="2023-10-01T00:00:04+08:00">2023-10-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>分散加载、中断向量表重定向</p>
+<h2 id="调整大小程序时要修改哪些配置？"><a href="#调整大小程序时要修改哪些配置？" class="headerlink" title="调整大小程序时要修改哪些配置？"></a>调整大小程序时要修改哪些配置？</h2><p>➀ 修改 main.sct 分散加载文件。</p>
+<p>➁ 修改 ConfigMCU 中大小程序的起始地址及空间大小。</p>
+<p>➂ 修改 iap: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于小程序的起始地址）。</p>
+<p>➃ 修改 app: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于大程序的起始地址）。</p>
+<h2 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h2><ul>
+<li><p>module_select_pattern</p>
+<ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+<li>*.o</li>
+<li>.ANY</li>
+</ul>
+</li>
+<li><p>module_select_pattern (input_section_selector)</p>
+</li>
+<li><h2 id="module-select-pattern-input-section-selector-input-section-selector-…-input-section-attr-RO-CODE-RO-DATA-RO-RW-DATA-RW-CODE-RW-XO-ZI-ENTRY"><a href="#module-select-pattern-input-section-selector-input-section-selector-…-input-section-attr-RO-CODE-RO-DATA-RO-RW-DATA-RW-CODE-RW-XO-ZI-ENTRY" class="headerlink" title="module_select_pattern (input_section_selector, input_section_selector, …)- +input_section_attr  - * (+RO-CODE)  - * (+RO-DATA)  - * (+RO)  - * (+RW-DATA)  - * (+RW-CODE)  - * (+RW)  - * (+XO)  - * (+ZI)  - * (+ENTRY)"></a>module_select_pattern (input_section_selector, input_section_selector, …)<br>- +input_section_attr<br>  - * (+RO-CODE)<br>  - * (+RO-DATA)<br>  - * (+RO)<br>  - * (+RW-DATA)<br>  - * (+RW-CODE)<br>  - * (+RW)<br>  - * (+XO)<br>  - * (+ZI)<br>  - * (+ENTRY)</h2><ul>
+<li><ul>
+<li>(+CODE)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+CONST)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+TEXT)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+DATA)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+BSS)</li>
+</ul>
+</li>
+<li></li>
+<li><ul>
+<li>(+FIRST)</li>
+</ul>
+</li>
+<li><ul>
+<li>(+LAST)</li>
+</ul>
+</li>
+<li>input_section_pattern<ul>
+<li><ul>
+<li>(*app_info)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>input_symbol_pattern</li>
+<li>section_properties</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -529,7 +666,7 @@ A(&quot;在电路编程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系统编�
     
     <div class="post-body" itemprop="articleBody">
           <hr>
-<p><a href="/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html">嵌入式 IAP 升级功能（#01）基础概念</a><br><a href="/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html">嵌入式 IAP 升级功能（#02）升级方案</a><br><a href="/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html">嵌入式 IAP 升级功能（#03）流程设计</a><br><a href="/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html">嵌入式 IAP 升级功能（#04）技术细节</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#05）增量升级</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#06）差分还原 haptchlite 移植</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#07）压缩解压 tinyuztool 移植</a><br><a href="/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html">嵌入式 IAP 升级功能（#08）引导程序 bootloader 升级</a></p>
+<p><a href="/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html">嵌入式 IAP 升级功能（#01）基础概念</a><br><a href="/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html">嵌入式 IAP 升级功能（#02）升级方案</a><br><a href="/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html">嵌入式 IAP 升级功能（#03）流程设计</a><br><a href="/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html">嵌入式 IAP 升级功能（#04）技术细节</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#05）增量升级</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#06）差分还原 hpatchlite 移植</a><br><a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html">嵌入式 IAP 升级功能（#07）压缩解压 tinyuztool 移植</a><br><a href="/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html">嵌入式 IAP 升级功能（#08）引导程序 bootloader 升级</a></p>
 <hr>
           <!--noindex-->
             <div class="post-button">
@@ -998,100 +1135,6 @@ A(&quot;在电路编程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系统编�
             </div>
           <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cloqxdq0v001nmgrq2um386nw.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
-      <meta itemprop="name" content="刘汲桐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/cloqxdq0v001nmgrq2um386nw.html" class="post-title-link" itemprop="url">问题记录：华大 HC32F460 超频过猛导致 MCU 宕机</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2023-07-01 00:00:00" itemprop="dateCreated datePublished" datetime="2023-07-01T00:00:00+08:00">2023-07-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">问题记录</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>最近又把 MCU 给干废了，现象如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Load &quot;main.axf&quot;</span><br><span class="line">* JLink Info: Device &quot;CORTEX-M4&quot; selected.</span><br><span class="line">Set JLink Project File to &quot;JLinkSettings.ini&quot;</span><br><span class="line">* JLink Info: Device &quot;CORTEX-M4&quot; selected.</span><br><span class="line"></span><br><span class="line">JLink info:</span><br><span class="line">------------</span><br><span class="line">DLL: V7.22b, compiled Jun 17 2021 17:22:49</span><br><span class="line">Firmware: J-Link V9 compiled May  7 2021 16:26:12</span><br><span class="line">Hardware: V9.60</span><br><span class="line">S/N : 69667602</span><br><span class="line">Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash</span><br><span class="line"></span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Skipped. Invalid implementer code read from CPUIDVal[31:24] = 0x00</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Skipped. Invalid implementer code read from CPUIDVal[31:24] = 0x00</span><br><span class="line"></span><br><span class="line">***JLink Error: Could not find core in Coresight setup</span><br><span class="line"></span><br><span class="line">Error: Flash Download failed  -  Target DLL has been cancelled</span><br><span class="line">Flash Load finished at 10:35:22</span><br></pre></td></tr></table></figure>
-
-<p>事情经过是这样的，某款产品第一版硬件的时钟源选用的是 6MHz 的外部晶振，内部倍频至 128MHz 作为系统主频，而第二版则改成了 24MHz 的外部晶振，第二版硬件出来后，将第一版程序直接烧录进第二版硬件后 MCU 无法正常启动且无法被识别。</p>
-<p>初步推测，应该是外部晶振频率提高，但是程序没有进行适当地分频，导致系统主频远远超过数据手册中规定的频率上限（200MHz）。</p>
-<!--
-公式使用工具 https://latexlive.com/ 生成
-\begin{align}
-& 128MHz × (24MHz / 6MHz) = 512MHz \ \ \ > \ \ \ MAX(200MHz) \\
-\end{align}
--->
-</p>
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable displaystyle="true" columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt"><mtr><mtd></mtd><mtd><mn>128</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo>×</mo><mo stretchy="false">(</mo><mn>24</mn><mi>M</mi><mi>H</mi><mi>z</mi><mrow><mo>/</mo></mrow><mn>6</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><mn>512</mn><mi>M</mi><mi>H</mi><mi>z</mi><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mo>&gt;</mo><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mi>M</mi><mi>A</mi><mi>X</mi><mo stretchy="false">(</mo><mn>200</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo stretchy="false">)</mo></mtd></mtr></mtable></math>
-<br>
-
-<p>后面通过调试，证实程序的确是在 <code>M4_SYSREG-&gt;CMU_CKSWR_f.CKSW = enTargetSysSrc;</code> 处出现异常。</p>
-<p>上述操作其实就是「超频」，只是超得有点猛，导致芯片直接宕机。这种情况借助华大的离线下载器重新烧录程序即可恢复正常。</p>
-
       
     </div>
 
