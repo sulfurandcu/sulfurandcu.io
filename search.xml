@@ -155,61 +155,6 @@ docsify s
       </tags>
   </entry>
   <entry>
-    <title>网页字体使用指南</title>
-    <url>/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html</url>
-    <content><![CDATA[<p>在被 fontmin 和 font-spider 虐得体无完肤后，我决定试试<a href="https://hsingko.github.io/post/compress_webfont/">这篇文章</a>中提到的另一个字体压缩工具：</p>
-<p><strong><center>“<a href="https://github.com/fonttools/fonttools">fonttools</a>”</center></strong></p>
-<span id="more"></span>
-
-<h3 id="常用方案"><a href="#常用方案" class="headerlink" title="常用方案"></a>常用方案</h3><ol start="0">
-<li>使用安全字体</li>
-<li>使用压缩字体</li>
-<li>谷歌字体接口（google fonts api）</li>
-</ol>
-<p>大多数网站的中文字体使用的都是安全字体，也就是机器中原生携带的字体，这样的好处是无需通过网络传输字体文件，也就不存在加载过慢的问题。安全字体好用是好用，但是架不住它丑啊，否则我也不会捯饬字体压缩了不是！置于谷歌字体接口嘛，你懂的。</p>
-<h3 id="为啥压缩"><a href="#为啥压缩" class="headerlink" title="为啥压缩"></a>为啥压缩</h3><p>这里的字体指的是汉字（泛中日韩）字体，拉丁字符或者西里尔字符这种字符数量较少的字体的体积通常比较小，没有压缩的必要。汉字字体通常收录几千上万个字符，大小能达到几十兆字节，而常用的汉字不过两三千，聚焦至单篇文章中可能连一千都不到。倘若每次加载网页时都要将完整的字体文件下载下来，其加载时间是往往是难以忍受的，这样我们就要想法子缩减字体文件的体积。巧的是，字体压缩就是干这个的。</p>
-<h3 id="静态压缩"><a href="#静态压缩" class="headerlink" title="静态压缩"></a>静态压缩</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pyftsubset font.ttf --text=$(cat hanzi.txt) --no-hinting</span><br></pre></td></tr></table></figure>
-
-<p>静态压缩：无法保证文章中不会用到常用字表以外的字。</p>
-<h3 id="动态压缩"><a href="#动态压缩" class="headerlink" title="动态压缩"></a>动态压缩</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pyftsubset ../font/SourceHanSerifSC-Regular.otf --text=$(rg -e &#x27;[\u&#123;0100&#125;-\u&#123;10ffff&#125;]&#x27; -oN --no-filename|sort|uniq|tr -d &#x27;\n&#x27;) --no-hinting</span><br></pre></td></tr></table></figure>
-
-<p>动态压缩：每次更新文章后都要执行一次字体压缩流程。</p>
-]]></content>
-      <categories>
-        <category>语言文字</category>
-      </categories>
-      <tags>
-        <tag>网页字体</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>dƷvorak</title>
-    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
-    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
-<br>
-
-<p style="font-family:courier new">
-　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
-　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
-　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
-　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
-</p>
-
-<span id="more"></span>
-
-<br>
-]]></content>
-      <categories>
-        <category>输入方案</category>
-      </categories>
-      <tags>
-        <tag>键位布局</tag>
-        <tag>qwerty</tag>
-        <tag>dvorak</tag>
-        <tag>dƷvorak</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>二〇二一拼音漫游</title>
     <url>/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7.html</url>
     <content><![CDATA[<p><img src="/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7/2021.A.bopomofo.Odyssey.png"></p>
@@ -352,6 +297,61 @@ docsify s
       </categories>
       <tags>
         <tag>思源字体</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网页字体使用指南</title>
+    <url>/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html</url>
+    <content><![CDATA[<p>在被 fontmin 和 font-spider 虐得体无完肤后，我决定试试<a href="https://hsingko.github.io/post/compress_webfont/">这篇文章</a>中提到的另一个字体压缩工具：</p>
+<p><strong><center>“<a href="https://github.com/fonttools/fonttools">fonttools</a>”</center></strong></p>
+<span id="more"></span>
+
+<h3 id="常用方案"><a href="#常用方案" class="headerlink" title="常用方案"></a>常用方案</h3><ol start="0">
+<li>使用安全字体</li>
+<li>使用压缩字体</li>
+<li>谷歌字体接口（google fonts api）</li>
+</ol>
+<p>大多数网站的中文字体使用的都是安全字体，也就是机器中原生携带的字体，这样的好处是无需通过网络传输字体文件，也就不存在加载过慢的问题。安全字体好用是好用，但是架不住它丑啊，否则我也不会捯饬字体压缩了不是！置于谷歌字体接口嘛，你懂的。</p>
+<h3 id="为啥压缩"><a href="#为啥压缩" class="headerlink" title="为啥压缩"></a>为啥压缩</h3><p>这里的字体指的是汉字（泛中日韩）字体，拉丁字符或者西里尔字符这种字符数量较少的字体的体积通常比较小，没有压缩的必要。汉字字体通常收录几千上万个字符，大小能达到几十兆字节，而常用的汉字不过两三千，聚焦至单篇文章中可能连一千都不到。倘若每次加载网页时都要将完整的字体文件下载下来，其加载时间是往往是难以忍受的，这样我们就要想法子缩减字体文件的体积。巧的是，字体压缩就是干这个的。</p>
+<h3 id="静态压缩"><a href="#静态压缩" class="headerlink" title="静态压缩"></a>静态压缩</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pyftsubset font.ttf --text=$(cat hanzi.txt) --no-hinting</span><br></pre></td></tr></table></figure>
+
+<p>静态压缩：无法保证文章中不会用到常用字表以外的字。</p>
+<h3 id="动态压缩"><a href="#动态压缩" class="headerlink" title="动态压缩"></a>动态压缩</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pyftsubset ../font/SourceHanSerifSC-Regular.otf --text=$(rg -e &#x27;[\u&#123;0100&#125;-\u&#123;10ffff&#125;]&#x27; -oN --no-filename|sort|uniq|tr -d &#x27;\n&#x27;) --no-hinting</span><br></pre></td></tr></table></figure>
+
+<p>动态压缩：每次更新文章后都要执行一次字体压缩流程。</p>
+]]></content>
+      <categories>
+        <category>语言文字</category>
+      </categories>
+      <tags>
+        <tag>网页字体</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>dƷvorak</title>
+    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
+    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
+<br>
+
+<p style="font-family:courier new">
+　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
+　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
+　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
+　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
+</p>
+
+<span id="more"></span>
+
+<br>
+]]></content>
+      <categories>
+        <category>输入方案</category>
+      </categories>
+      <tags>
+        <tag>键位布局</tag>
+        <tag>qwerty</tag>
+        <tag>dvorak</tag>
+        <tag>dƷvorak</tag>
       </tags>
   </entry>
   <entry>
@@ -843,6 +843,97 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
+    <title>LilyPond</title>
+    <url>/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj.html</url>
+    <content><![CDATA[<p>LilyPond 是什么？(<strong><a href="https://lilypond.org/">https://lilypond.org/</a></strong>)</p>
+<blockquote>
+<p>LilyPond (荷花池) 是一个音乐雕版软件，致力产生最高质量的乐谱。它把传统音乐雕版印刷的美学，呈现在计算机打印的乐谱上。LilyPond 是自由软件，也是 GNU Project 的一部分。</p>
+</blockquote>
+<p>计算机软件的内核是将接收到的数据进行计算并输出，LilyPond 也不例外。我们需要按照 LilyPond 开发者制定的规则编写乐谱源码，然后使用 LilyPond 将源代码转换为 PNG、PDF、SVG、MIDI 等格式的文件。</p>
+<span id="more"></span>
+
+<p><strong>荷花池（线谱）的运作流程如下：</strong></p>
+<ol>
+<li>按照 lilypond 开发者制定的规则编写「LilyPond 乐谱源码」。</li>
+<li>使用 lilypond 程序将「LilyPond 乐谱源码」转换为我们期望的「乐谱」文件。</li>
+</ol>
+<div class="note info no-icon"><p>这里的 lilypond.exe 程序与我们日常使用的软件有所不同，需要通过命令行的方式来调用执行。</p>
+</div>
+
+<p>不过 LilyPond 主要用于生成五线谱，若想生成简谱我们还需要借助另外一个工具：</p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly.png"></p>
+<p>与上面不同，我们不再按照 LilyPond 的规则编写「LilyPond 乐谱源码」而是按照 jianpuly 开发者制定的规则编写「Jianpuly 简谱源码」。</p>
+<p><strong>荷花池（简谱）的运作流程如下：</strong></p>
+<ol>
+<li>按照 jianpuly 开发者制定的规则编写「Jianpuly 简谱源码」。</li>
+<li>使用 jianpuly 脚本将「Jianpuly 简谱源码」转换为「LilyPond 乐谱源码」。</li>
+<li>使用 lilypond 程序将「LilyPond 乐谱源码」转换为我们期望的「乐谱」文件。</li>
+</ol>
+<div class="note info no-icon"><p>与 lilypond 类似，jianpu-ly.py 需要通过命令行的方式经 python 调用执行。</p>
+</div>
+
+<h2 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h2><p><strong>1. 下载 lilypond 压缩包</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.download.png"></p>
+<center><a href="https://lilypond.org/download.html">下载链接</a></center><br>
+
+<p><strong>2. 下载 jianpu-ly.py 脚本文件</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly.download.png"></p>
+<center><a href="http://ssb22.user.srcf.net/mwrhome/jianpu-ly.html">下载链接</a></center><br>
+
+<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p><strong>1. 将下载好的 lilypond 压缩包解压至任意位置</strong></p>
+<p><strong>2. 将下载好的 jianpu-ly.py 剪切至 lilypond 解压目录下的 bin 文件夹中</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.unpack.png"></p>
+<p><strong>3. 将 lilypond 安装目录下的 bin 文件夹添加至系统环境变量 PATH 中</strong></p>
+<p><strong>第一步：搜索「环境变量」然后点击「编辑系统环境变量」</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath1.png"></p>
+<p><strong>第二步：点击「环境变量」按钮</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath2.png"></p>
+<p><strong>第三步：选中系统变量中的「PATH」然后点击下方的「编辑」按钮</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath3.png"></p>
+<p><strong>第四步：点击「新建」按钮然后输入之前解压的 lilypond 的完整路径</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath4.png"></p>
+<p><strong>4. 验证 lilypond 是否正常安装</strong></p>
+<p><strong>第一步：按下「Win+R」键打开运行对话框然后输入 cmd 并运行</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.verify.cmd.png"></p>
+<p><strong>第二步：输入「lilypond –help」然后按下回车键</strong></p>
+<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.help.png"></p>
+<p>如果你能看到上图中的信息，那么恭喜，安装完成！下面可以尝试制作一个简单的乐谱了！</p>
+<br>
+
+<h2 id="线谱制作"><a href="#线谱制作" class="headerlink" title="线谱制作"></a>线谱制作</h2><p>写到这里时发现了一篇非常不错的 lilypond 中文入门教程，既然如此，那我索性就偷个懒，各位看官请移步这里：</p>
+<center><a href="https://www.yuque.com/qqbunny/lilypond">《LilyPond 入门教程》 by 兔子不咬人</a></center><br>
+
+<h2 id="简谱制作"><a href="#简谱制作" class="headerlink" title="简谱制作"></a>简谱制作</h2><p><strong>1. 新建一个文件夹作为工作空间</strong></p>
+<p><strong>2. 将 jianpu-ly.py 脚本文件拷贝至工作空间</strong></p>
+<p><strong>3. 在工作空间中创建一个文本文档（例如：简谱代码.txt）然后写入以下内容</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%% tempo: 4=60</span><br><span class="line">title=标题</span><br><span class="line">1=C</span><br><span class="line">2/4</span><br><span class="line"></span><br><span class="line">1 2 3 4 5 6 7 1&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><strong>4. 在工作空间中单击右键选择「在终端中打开」然后会弹出一个黑框框</strong></p>
+<p><strong>5. 输入以下命令并然后按回车键执行</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python jianpu-ly.py 简谱代码.txt &gt; 乐谱代码.ly</span><br></pre></td></tr></table></figure>
+
+<p><strong>6. 输入以下命令并然后按回车键执行</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lilypond -o 乐谱文件 --format=pdf,png 乐谱代码.ly</span><br></pre></td></tr></table></figure>
+
+<p><strong>7. 嫌麻烦的话也可以在工作空间中新建一个「自动脚本.bat」批处理文件并填入以下内容</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chcp 65001</span><br><span class="line"></span><br><span class="line">set jianpuly=&quot;D:\develop.r.1\lilypond-2.24.1\bin\jianpu-ly.py&quot;</span><br><span class="line"></span><br><span class="line">set source=&quot;简谱&quot;</span><br><span class="line">set output=&quot;曲谱&quot;</span><br><span class="line"></span><br><span class="line">set middle=&quot;荷花&quot;</span><br><span class="line"></span><br><span class="line">python %jianpuly% %source%.txt &gt; %middle%.ly</span><br><span class="line">lilypond -o %output% --format=pdf,png %middle%.ly</span><br><span class="line">lilypond -o %output% --format=svg %middle%.ly</span><br><span class="line"></span><br><span class="line">md %source%</span><br><span class="line"></span><br><span class="line">move .\%output%.* .\%source%</span><br><span class="line">move .\%middle%.* .\%source%</span><br></pre></td></tr></table></figure>
+
+<p><strong>8. 以后只要双击该脚本即可自动生成</strong></p>
+<div class="note info no-icon"><p>使用这种方式时，文件名就不能随便起了，必须与「source」字段保持一致。</p>
+</div>
+
+<h2 id="简谱规则"><a href="#简谱规则" class="headerlink" title="简谱规则"></a>简谱规则</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Scale going up                                              1 2 3 4 5 6 7 1&#x27;</span><br><span class="line">Accidentals                                                 1 #1 2 b2 1</span><br><span class="line">Octaves                                                     1,, 1, 1 1&#x27; 1&#x27;&#x27;</span><br><span class="line">Shortcuts for 1’ and 2’                                     8 9</span><br><span class="line">Semiquaver, quaver, crotchet (16/8/4th notes)               s1 q1 1</span><br><span class="line">Dotted versions of the above (50% longer)                   s1. q1. 1.</span><br><span class="line">Demisemiquaver, hemidemisemiquaver (32/64th notes)          d1 h1</span><br><span class="line">Minims (half notes) use dashes                              1 -</span><br><span class="line">Dotted minim                                                1 - -</span><br><span class="line">Semibreve (whole note)                                      1 - - -</span><br><span class="line">Time signature                                              4/4</span><br><span class="line">Time signature with quaver anacrusis (8th-note pickup)      4/4,8</span><br><span class="line">Key signature (major)                                       1=Bb</span><br><span class="line">Key signature (minor)                                       6=F#</span><br><span class="line">Tempo                                                       4=85</span><br><span class="line">Lyrics                                                      L: here are the syl- la- bles (all on one line)</span><br><span class="line">Lyrics (verse 1)                                            L: 1. Here is verse one</span><br><span class="line">Lyrics (verse 2)                                            L: 2. Here is verse two</span><br><span class="line">Hanzi lyrics (auto space)                                   H: hanzi (with or without spaces)</span><br><span class="line">Lilypond headers                                            title=the title (on a line of its own)</span><br><span class="line">Multiple parts                                              NextPart</span><br><span class="line">Instrument of current part                                  instrument=Flute (on a line of its own)</span><br><span class="line">Multiple movements                                          NextScore</span><br><span class="line">Prohibit page breaks until end of this movement             OnePage</span><br><span class="line">Suppress bar numbers                                        NoBarNums</span><br><span class="line">Old-style time signature                                    SeparateTimesig 1=C 4/4</span><br><span class="line">Indonesian ‘not angka’ style                                angka</span><br><span class="line">Add a Western staff doubling the tune                       WithStaff</span><br><span class="line">Tuplets                                                     3[ q1 q1 q1 ]</span><br><span class="line">Grace notes before                                          g[#45] 1</span><br><span class="line">Grace notes after                                           1 [&#x27;1]g</span><br><span class="line">Simple chords                                               135 1 13 1</span><br><span class="line">Da capo                                                     1 1 Fine 1 1 1 1 1 1 DC</span><br><span class="line">Repeat (with alternate endings)                             R&#123; 1 1 1 &#125; A&#123; 2 | 3 &#125;</span><br><span class="line">Short repeats (percent)                                     R4&#123; 1 2 &#125;</span><br><span class="line">Ties (like Lilypond’s, if you don’t want dashes)            1 ~ 1</span><br><span class="line">Slurs (like Lilypond’s)                                     1 ( 2 )</span><br><span class="line">Erhu fingering (applies to previous note)                   Fr=0 Fr=4</span><br><span class="line">Erhu symbol (applies to previous note)                      souyin harmonic up down bend tilde</span><br><span class="line">Tremolo                                                     1/// - 1///5 -</span><br><span class="line">Rehearsal letters                                           letterA letterB</span><br><span class="line">Multibar rest                                               R*8</span><br><span class="line">Dynamics (applies to previous note)                         \p \mp \f</span><br><span class="line">Other 1-word Lilypond \ commands                            \fermata \&gt; \! \( \) etc</span><br><span class="line">Text                                                        ^&quot;above note&quot; _&quot;below note&quot;</span><br><span class="line">Other Lilypond code                                         LP: (block of code) :LP (each delimeter at start of its line)</span><br><span class="line">Ignored                                                     % a comment</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学点音乐</category>
+      </categories>
+      <tags>
+        <tag>五线谱</tag>
+        <tag>简谱</tag>
+        <tag>lilypond</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的一套生产工具</title>
     <url>/sulfurandcu.io/clnyhr2mr003710rqgjtuhj11.html</url>
     <content><![CDATA[<p>分享一些提高工作效率的工具</p>
@@ -1020,97 +1111,6 @@ N2---&gt;N2.3[&quot; &quot;]
       <categories>
         <category>开发指北</category>
       </categories>
-  </entry>
-  <entry>
-    <title>LilyPond</title>
-    <url>/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj.html</url>
-    <content><![CDATA[<p>LilyPond 是什么？(<strong><a href="https://lilypond.org/">https://lilypond.org/</a></strong>)</p>
-<blockquote>
-<p>LilyPond (荷花池) 是一个音乐雕版软件，致力产生最高质量的乐谱。它把传统音乐雕版印刷的美学，呈现在计算机打印的乐谱上。LilyPond 是自由软件，也是 GNU Project 的一部分。</p>
-</blockquote>
-<p>计算机软件的内核是将接收到的数据进行计算并输出，LilyPond 也不例外。我们需要按照 LilyPond 开发者制定的规则编写乐谱源码，然后使用 LilyPond 将源代码转换为 PNG、PDF、SVG、MIDI 等格式的文件。</p>
-<span id="more"></span>
-
-<p><strong>荷花池（线谱）的运作流程如下：</strong></p>
-<ol>
-<li>按照 lilypond 开发者制定的规则编写「LilyPond 乐谱源码」。</li>
-<li>使用 lilypond 程序将「LilyPond 乐谱源码」转换为我们期望的「乐谱」文件。</li>
-</ol>
-<div class="note info no-icon"><p>这里的 lilypond.exe 程序与我们日常使用的软件有所不同，需要通过命令行的方式来调用执行。</p>
-</div>
-
-<p>不过 LilyPond 主要用于生成五线谱，若想生成简谱我们还需要借助另外一个工具：</p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly.png"></p>
-<p>与上面不同，我们不再按照 LilyPond 的规则编写「LilyPond 乐谱源码」而是按照 jianpuly 开发者制定的规则编写「Jianpuly 简谱源码」。</p>
-<p><strong>荷花池（简谱）的运作流程如下：</strong></p>
-<ol>
-<li>按照 jianpuly 开发者制定的规则编写「Jianpuly 简谱源码」。</li>
-<li>使用 jianpuly 脚本将「Jianpuly 简谱源码」转换为「LilyPond 乐谱源码」。</li>
-<li>使用 lilypond 程序将「LilyPond 乐谱源码」转换为我们期望的「乐谱」文件。</li>
-</ol>
-<div class="note info no-icon"><p>与 lilypond 类似，jianpu-ly.py 需要通过命令行的方式经 python 调用执行。</p>
-</div>
-
-<h2 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h2><p><strong>1. 下载 lilypond 压缩包</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.download.png"></p>
-<center><a href="https://lilypond.org/download.html">下载链接</a></center><br>
-
-<p><strong>2. 下载 jianpu-ly.py 脚本文件</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/jianpuly.download.png"></p>
-<center><a href="http://ssb22.user.srcf.net/mwrhome/jianpu-ly.html">下载链接</a></center><br>
-
-<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p><strong>1. 将下载好的 lilypond 压缩包解压至任意位置</strong></p>
-<p><strong>2. 将下载好的 jianpu-ly.py 剪切至 lilypond 解压目录下的 bin 文件夹中</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.unpack.png"></p>
-<p><strong>3. 将 lilypond 安装目录下的 bin 文件夹添加至系统环境变量 PATH 中</strong></p>
-<p><strong>第一步：搜索「环境变量」然后点击「编辑系统环境变量」</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath1.png"></p>
-<p><strong>第二步：点击「环境变量」按钮</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath2.png"></p>
-<p><strong>第三步：选中系统变量中的「PATH」然后点击下方的「编辑」按钮</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath3.png"></p>
-<p><strong>第四步：点击「新建」按钮然后输入之前解压的 lilypond 的完整路径</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.systempath4.png"></p>
-<p><strong>4. 验证 lilypond 是否正常安装</strong></p>
-<p><strong>第一步：按下「Win+R」键打开运行对话框然后输入 cmd 并运行</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.install.verify.cmd.png"></p>
-<p><strong>第二步：输入「lilypond –help」然后按下回车键</strong></p>
-<p><img src="/sulfurandcu.io/clnyhr2mr003410rq5kcs69uj/lilypond.help.png"></p>
-<p>如果你能看到上图中的信息，那么恭喜，安装完成！下面可以尝试制作一个简单的乐谱了！</p>
-<br>
-
-<h2 id="线谱制作"><a href="#线谱制作" class="headerlink" title="线谱制作"></a>线谱制作</h2><p>写到这里时发现了一篇非常不错的 lilypond 中文入门教程，既然如此，那我索性就偷个懒，各位看官请移步这里：</p>
-<center><a href="https://www.yuque.com/qqbunny/lilypond">《LilyPond 入门教程》 by 兔子不咬人</a></center><br>
-
-<h2 id="简谱制作"><a href="#简谱制作" class="headerlink" title="简谱制作"></a>简谱制作</h2><p><strong>1. 新建一个文件夹作为工作空间</strong></p>
-<p><strong>2. 将 jianpu-ly.py 脚本文件拷贝至工作空间</strong></p>
-<p><strong>3. 在工作空间中创建一个文本文档（例如：简谱代码.txt）然后写入以下内容</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%% tempo: 4=60</span><br><span class="line">title=标题</span><br><span class="line">1=C</span><br><span class="line">2/4</span><br><span class="line"></span><br><span class="line">1 2 3 4 5 6 7 1&#x27;</span><br></pre></td></tr></table></figure>
-
-<p><strong>4. 在工作空间中单击右键选择「在终端中打开」然后会弹出一个黑框框</strong></p>
-<p><strong>5. 输入以下命令并然后按回车键执行</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python jianpu-ly.py 简谱代码.txt &gt; 乐谱代码.ly</span><br></pre></td></tr></table></figure>
-
-<p><strong>6. 输入以下命令并然后按回车键执行</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lilypond -o 乐谱文件 --format=pdf,png 乐谱代码.ly</span><br></pre></td></tr></table></figure>
-
-<p><strong>7. 嫌麻烦的话也可以在工作空间中新建一个「自动脚本.bat」批处理文件并填入以下内容</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chcp 65001</span><br><span class="line"></span><br><span class="line">set jianpuly=&quot;D:\develop.r.1\lilypond-2.24.1\bin\jianpu-ly.py&quot;</span><br><span class="line"></span><br><span class="line">set source=&quot;简谱&quot;</span><br><span class="line">set output=&quot;曲谱&quot;</span><br><span class="line"></span><br><span class="line">set middle=&quot;荷花&quot;</span><br><span class="line"></span><br><span class="line">python %jianpuly% %source%.txt &gt; %middle%.ly</span><br><span class="line">lilypond -o %output% --format=pdf,png %middle%.ly</span><br><span class="line">lilypond -o %output% --format=svg %middle%.ly</span><br><span class="line"></span><br><span class="line">md %source%</span><br><span class="line"></span><br><span class="line">move .\%output%.* .\%source%</span><br><span class="line">move .\%middle%.* .\%source%</span><br></pre></td></tr></table></figure>
-
-<p><strong>8. 以后只要双击该脚本即可自动生成</strong></p>
-<div class="note info no-icon"><p>使用这种方式时，文件名就不能随便起了，必须与「source」字段保持一致。</p>
-</div>
-
-<h2 id="简谱规则"><a href="#简谱规则" class="headerlink" title="简谱规则"></a>简谱规则</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Scale going up                                              1 2 3 4 5 6 7 1&#x27;</span><br><span class="line">Accidentals                                                 1 #1 2 b2 1</span><br><span class="line">Octaves                                                     1,, 1, 1 1&#x27; 1&#x27;&#x27;</span><br><span class="line">Shortcuts for 1’ and 2’                                     8 9</span><br><span class="line">Semiquaver, quaver, crotchet (16/8/4th notes)               s1 q1 1</span><br><span class="line">Dotted versions of the above (50% longer)                   s1. q1. 1.</span><br><span class="line">Demisemiquaver, hemidemisemiquaver (32/64th notes)          d1 h1</span><br><span class="line">Minims (half notes) use dashes                              1 -</span><br><span class="line">Dotted minim                                                1 - -</span><br><span class="line">Semibreve (whole note)                                      1 - - -</span><br><span class="line">Time signature                                              4/4</span><br><span class="line">Time signature with quaver anacrusis (8th-note pickup)      4/4,8</span><br><span class="line">Key signature (major)                                       1=Bb</span><br><span class="line">Key signature (minor)                                       6=F#</span><br><span class="line">Tempo                                                       4=85</span><br><span class="line">Lyrics                                                      L: here are the syl- la- bles (all on one line)</span><br><span class="line">Lyrics (verse 1)                                            L: 1. Here is verse one</span><br><span class="line">Lyrics (verse 2)                                            L: 2. Here is verse two</span><br><span class="line">Hanzi lyrics (auto space)                                   H: hanzi (with or without spaces)</span><br><span class="line">Lilypond headers                                            title=the title (on a line of its own)</span><br><span class="line">Multiple parts                                              NextPart</span><br><span class="line">Instrument of current part                                  instrument=Flute (on a line of its own)</span><br><span class="line">Multiple movements                                          NextScore</span><br><span class="line">Prohibit page breaks until end of this movement             OnePage</span><br><span class="line">Suppress bar numbers                                        NoBarNums</span><br><span class="line">Old-style time signature                                    SeparateTimesig 1=C 4/4</span><br><span class="line">Indonesian ‘not angka’ style                                angka</span><br><span class="line">Add a Western staff doubling the tune                       WithStaff</span><br><span class="line">Tuplets                                                     3[ q1 q1 q1 ]</span><br><span class="line">Grace notes before                                          g[#45] 1</span><br><span class="line">Grace notes after                                           1 [&#x27;1]g</span><br><span class="line">Simple chords                                               135 1 13 1</span><br><span class="line">Da capo                                                     1 1 Fine 1 1 1 1 1 1 DC</span><br><span class="line">Repeat (with alternate endings)                             R&#123; 1 1 1 &#125; A&#123; 2 | 3 &#125;</span><br><span class="line">Short repeats (percent)                                     R4&#123; 1 2 &#125;</span><br><span class="line">Ties (like Lilypond’s, if you don’t want dashes)            1 ~ 1</span><br><span class="line">Slurs (like Lilypond’s)                                     1 ( 2 )</span><br><span class="line">Erhu fingering (applies to previous note)                   Fr=0 Fr=4</span><br><span class="line">Erhu symbol (applies to previous note)                      souyin harmonic up down bend tilde</span><br><span class="line">Tremolo                                                     1/// - 1///5 -</span><br><span class="line">Rehearsal letters                                           letterA letterB</span><br><span class="line">Multibar rest                                               R*8</span><br><span class="line">Dynamics (applies to previous note)                         \p \mp \f</span><br><span class="line">Other 1-word Lilypond \ commands                            \fermata \&gt; \! \( \) etc</span><br><span class="line">Text                                                        ^&quot;above note&quot; _&quot;below note&quot;</span><br><span class="line">Other Lilypond code                                         LP: (block of code) :LP (each delimeter at start of its line)</span><br><span class="line">Ignored                                                     % a comment</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>学点音乐</category>
-      </categories>
-      <tags>
-        <tag>五线谱</tag>
-        <tag>简谱</tag>
-        <tag>lilypond</tag>
-      </tags>
   </entry>
   <entry>
     <title>freertos or rtthread ?</title>
@@ -1368,6 +1368,63 @@ N2---&gt;N2.3[&quot; &quot;]
 ]]></content>
   </entry>
   <entry>
+    <title>调试精灵使用说明</title>
+    <url>/sulfurandcu.io/cly6m4gfj002qscrq77a5a7cn.html</url>
+    <content><![CDATA[<center><a href="https://code.visualstudio.com/Download">「这是一个内置 DLT645 规则解析引擎的协议测试工具」</a></center>
+
+<br>
+
+<p><img src="/sulfurandcu.io/cly6m4gfj002qscrq77a5a7cn/toolkit.dlt645.png"></p>
+<span id="more"></span>
+
+<h2 id="配置规则"><a href="#配置规则" class="headerlink" title="配置规则"></a>配置规则</h2><p>按照数据类型可分为：</p>
+<ul>
+<li>time</li>
+<li>bcd</li>
+<li>hex</li>
+<li>bit</li>
+<li>string</li>
+<li>block</li>
+</ul>
+<h3 id="time"><a href="#time" class="headerlink" title="time"></a>time</h3><p>数据格式为 YY、MM、DD、WW、hh、mm、ss 的自由组合。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;日期时间&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;time&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;YYMMDDWWhhmmss&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<h3 id="bcd"><a href="#bcd" class="headerlink" title="bcd"></a>bcd</h3><p>第一种：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;当前电压（Ａ相）（XXX.X）&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;XXX.X&quot;,</span><br><span class="line">    &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>第二种（数据块）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;当前电压（整块）（XXX.X）　&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">    &quot;data&quot;: [</span><br><span class="line">        &quot;XXX.X&quot;,</span><br><span class="line">        &quot;XXX.X&quot;,</span><br><span class="line">        &quot;XXX.X&quot;</span><br><span class="line">    ],</span><br><span class="line">    &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如果数据块中的数据单位不一样，则建议使用 block 类型。</p>
+</blockquote>
+<h3 id="hex"><a href="#hex" class="headerlink" title="hex"></a>hex</h3><p>需要显示原数据的要使用 hex 类型：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;通信地址&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;hex&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;XXXXXXXXXXXX&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>一些没有数据域的控制指令也可以使用 hex 类型：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;设备重启&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;hex&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<h3 id="bit"><a href="#bit" class="headerlink" title="bit"></a>bit</h3><p>位解析配置如下：</p>
+<ul>
+<li>lsb：表示该位段的最低位</li>
+<li>msb：表示该位段的最高位</li>
+<li>XX.：表示该位段的枚举值（00 ~ FF）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;有功组合方式特征字&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;bit&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;XX&quot;,</span><br><span class="line">    &quot;bits&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;正向有功&quot;,</span><br><span class="line">            &quot;lsb&quot;: 0,</span><br><span class="line">            &quot;msb&quot;: 1,</span><br><span class="line">            &quot;00&quot;: &quot;不加不减&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;加&quot;,</span><br><span class="line">            &quot;02&quot;: &quot;减&quot;,</span><br><span class="line">            &quot;03&quot;: &quot;又加又减&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;反向有功&quot;,</span><br><span class="line">            &quot;lsb&quot;: 2,</span><br><span class="line">            &quot;msb&quot;: 3,</span><br><span class="line">            &quot;00&quot;: &quot;不加不减&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;加&quot;,</span><br><span class="line">            &quot;02&quot;: &quot;减&quot;,</span><br><span class="line">            &quot;03&quot;: &quot;又加又减&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>支持多字节的位解析：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;主动上报模式字&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;bit&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;XXXXXXXXXXXXXXXX&quot;,</span><br><span class="line">    &quot;bits&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;bit-14: 分闸&quot;,</span><br><span class="line">            &quot;lsb&quot;: 14,</span><br><span class="line">            &quot;msb&quot;: 14,</span><br><span class="line">            &quot;00&quot;: &quot;&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;✔&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;bit-15: 合闸&quot;,</span><br><span class="line">            &quot;lsb&quot;: 15,</span><br><span class="line">            &quot;msb&quot;: 15,</span><br><span class="line">            &quot;00&quot;: &quot;&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;✔&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;bit-16: 失压&quot;,</span><br><span class="line">            &quot;lsb&quot;: 16,</span><br><span class="line">            &quot;msb&quot;: 16,</span><br><span class="line">            &quot;00&quot;: &quot;&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;✔&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;bit-17: 欠压&quot;,</span><br><span class="line">            &quot;lsb&quot;: 17,</span><br><span class="line">            &quot;msb&quot;: 17,</span><br><span class="line">            &quot;00&quot;: &quot;&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;✔&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;bit-18: 过压&quot;,</span><br><span class="line">            &quot;lsb&quot;: 18,</span><br><span class="line">            &quot;msb&quot;: 18,</span><br><span class="line">            &quot;00&quot;: &quot;&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;✔&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<h3 id="string"><a href="#string" class="headerlink" title="string"></a>string</h3><p>目前「fillin」「fillat」「endian」暂不支持。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;资产编码（ASCII）&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;string&quot;,</span><br><span class="line">    &quot;len&quot;: 32,</span><br><span class="line">    &quot;fillin&quot;: 0,</span><br><span class="line">    &quot;fillat&quot;: &quot;front&quot;,</span><br><span class="line">    &quot;endian&quot;: &quot;LE&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<h3 id="block"><a href="#block" class="headerlink" title="block"></a>block</h3><p>block 类型中可以放置上述任意类型，支持在 block 中嵌套 block 类型。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;电压整定参数块&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;block&quot;,</span><br><span class="line">    &quot;data&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;过压整定值&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;XXX.X&quot;,</span><br><span class="line">            &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;欠压整定值&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;XXX.X&quot;,</span><br><span class="line">            &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;断相整定值&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;XXX.X&quot;,</span><br><span class="line">            &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;瞬时冻结（数据块）&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;block&quot;,</span><br><span class="line">    &quot;data&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;冻结时间&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;time&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;YYMMDDhhmm&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;正向有功电能（总）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kWh&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;反向有功电能（总）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kWh&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;组合无功电能（c1）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kvarh&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;组合无功电能（c2）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kvarh&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>通信模块设计说明</title>
     <url>/sulfurandcu.io/clz2cld8l000q1orq40fzah1z.html</url>
     <content><![CDATA[<p><img src="/sulfurandcu.io/clz2cld8l000q1orq40fzah1z/cover.png"></p>
@@ -1445,6 +1502,587 @@ N2---&gt;N2.3[&quot; &quot;]
 ]]></content>
   </entry>
   <entry>
+    <title>集成开发环境－DBG</title>
+    <url>/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html</url>
+    <content><![CDATA[<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
+<span id="more"></span>
+
+<h2 id="专用的调试模块"><a href="#专用的调试模块" class="headerlink" title="专用的调试模块"></a>专用的调试模块</h2><p>常见的 IDE 内部都集成了一个专用的 GUI 调试器，且不能拎出来单独使用。</p>
+<ul>
+<li>ADS</li>
+<li>IAR</li>
+<li>MDK</li>
+<li>Visual Studio</li>
+</ul>
+<h2 id="独立的调试工具"><a href="#独立的调试工具" class="headerlink" title="独立的调试工具"></a>独立的调试工具</h2><p>当然也有一些可以独立使用的调试器，例如：</p>
+<ul>
+<li>CLI: GDB, LLDB</li>
+<li>GUI: x64dbg, WinDBG, OllyDBG</li>
+</ul>
+<h2 id="图形调试器"><a href="#图形调试器" class="headerlink" title="图形调试器"></a>图形调试器</h2><h2 id="适配器协议（DebugAdapterProtocol）"><a href="#适配器协议（DebugAdapterProtocol）" class="headerlink" title="适配器协议（DebugAdapterProtocol）"></a>适配器协议（DebugAdapterProtocol）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapterProtocol.png"></p>
+<p>不论是专用的调试模块还是独立的调试工具，如果想支持调试多种语言，就必须要为每一种语言开发一套对应的调试程序，并且每个工具厂商都要独自去完成这些工作。为了减少不必要的重复劳动，微软制定了一套通用的调试协议，借助该协议各工具厂商只需要开发一套调试程序，向下再借助各种调试适配工具即可具备调试所有语言的能力。</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
+<center><a href="https://microsoft.github.io/debug-adapter-protocol/">Debug Adapter Protocol (DAP)</a></center><br>
+
+<p>目前实现该调试协议的开发工具有（常用的）：</p>
+<ul>
+<li>VSC</li>
+<li>VS</li>
+<li>vim</li>
+<li>emacs</li>
+<li>EclipseIDE</li>
+</ul>
+<p>btw, 微软还制定了一套通用的语言服务器协议 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/LanguageServerProtocol(LSP).png"></p>
+<center><a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></center>
+
+<h2 id="调试适配器（DebugAdapter）"><a href="#调试适配器（DebugAdapter）" class="headerlink" title="调试适配器（DebugAdapter）"></a>调试适配器（DebugAdapter）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapter.png"></p>
+<p>调试适配器是对各类调试器的封装，遵循 DAP 协议对上提供统一的接口，以简化上层开发工具。常用的调试适配器有：</p>
+<ul>
+<li><a href="https://github.com/Microsoft/vscode-cpptools">cpptools (C&#x2F;C++ Debug Adapter)</a></li>
+<li><a href="https://github.com/Marus/cortex-debug">cortex-debug (Embedded C&#x2F;C++ Debug Adapter)</a></li>
+</ul>
+<h2 id="命令调试器（Debugger）"><a href="#命令调试器（Debugger）" class="headerlink" title="命令调试器（Debugger）"></a>命令调试器（Debugger）</h2><ul>
+<li><a href="https://sourceware.org/gdb/">GDB: The GNU Project Debugger</a><ul>
+<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/Remote-Protocol.html">↑ GDB&#x2F;MI</a></li>
+<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/GDB_002fMI.html">↓ GDB Remote Serial Protocol</a></li>
+</ul>
+</li>
+<li><a href="https://developer.arm.com/downloads/-/gnu-rm">arm-none-eabi-gdb: GNU Arm Embedded GDB</a></li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Debugger.png"></p>
+<h2 id="调试服务器（DebugServer）"><a href="#调试服务器（DebugServer）" class="headerlink" title="调试服务器（DebugServer）"></a>调试服务器（DebugServer）</h2><ul>
+<li>OpenOCD</li>
+<li>PyOCD</li>
+<li>JLinkGDBServer</li>
+<li>……</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugServer.png"></p>
+<h2 id="仿真器驱动（DongleDriver）"><a href="#仿真器驱动（DongleDriver）" class="headerlink" title="仿真器驱动（DongleDriver）"></a>仿真器驱动（DongleDriver）</h2><ul>
+<li>SEGGER JLink USB Driver</li>
+<li>SEGGER WinUSB USB Device Driver</li>
+</ul>
+<h2 id="仿真器设备（Dongle）"><a href="#仿真器设备（Dongle）" class="headerlink" title="仿真器设备（Dongle）"></a>仿真器设备（Dongle）</h2><ul>
+<li>CMSIS-DAP</li>
+<li>SEGGER JLink</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Dongle.png"></p>
+<h2 id="仿真器协议（DongleTransportProtocol）"><a href="#仿真器协议（DongleTransportProtocol）" class="headerlink" title="仿真器协议（DongleTransportProtocol）"></a>仿真器协议（DongleTransportProtocol）</h2><ul>
+<li>JTAG <a href="https://www.corelis.com/education/tutorials/jtag-tutorial/">https://www.corelis.com/education/tutorials/jtag-tutorial/</a></li>
+<li>SWD</li>
+</ul>
+<h2 id="目标板芯片（TargetBoard）"><a href="#目标板芯片（TargetBoard）" class="headerlink" title="目标板芯片（TargetBoard）"></a>目标板芯片（TargetBoard）</h2><ul>
+<li>STM32F103CB</li>
+<li>STM32F407VE</li>
+</ul>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Target.png"></p>
+<h2 id="本地与远程调试"><a href="#本地与远程调试" class="headerlink" title="本地与远程调试"></a>本地与远程调试</h2><p>远程调试方案也有很多，这里只对以下几种方式作一简要介绍：</p>
+<ul>
+<li>OpenOCD</li>
+<li>VSCode + JLinkGDBServer</li>
+<li>JLink + JLinkRemoteServer</li>
+<li>KeilMDK + JLinkRemoteServer</li>
+</ul>
+<h3 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h3><p>略.</p>
+<h3 id="VSCode-JLinkGDBServer"><a href="#VSCode-JLinkGDBServer" class="headerlink" title="VSCode + JLinkGDBServer"></a>VSCode + JLinkGDBServer</h3><p>1. 在服务主机上配置开启 JLink 调试服务器（该服务器会监听 2331 端口）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.0.png"></p>
+<div class="note danger no-icon"><p>不要勾选 Localhost Only 选项！</p>
+</div>
+
+<p>2. 等待连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.1.png"></p>
+<p>3. 在本地主机上配置 launch.json 文件并启动调试</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">    &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">    &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">    &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;&quot;,</span><br><span class="line">    &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://github.com/Marus/cortex-debug/issues/244">cortex-debug-issues#244 : remote debugging</a><br><a href="https://github.com/Marus/cortex-debug/wiki/External-gdb-server-configuration">cortex-debug-wiki : external gdb server configuration</a></p>
+<div class="note info no-icon"><p>点击启动调试后 cortex-debug 便会帮助我们通过本地 xGDB 客户端连接远程 GDB 服务器。</p>
+</div>
+
+<p>4. 建立连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.2.png"></p>
+<p>5. 远程调试</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此处省略一张在 vscode 中调试的图片</span><br></pre></td></tr></table></figure>
+
+<p>6. 断开连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.3.png"></p>
+<h3 id="JLink-JLinkRemoteServer"><a href="#JLink-JLinkRemoteServer" class="headerlink" title="JLink + JLinkRemoteServer"></a>JLink + JLinkRemoteServer</h3><h4 id="内网连接"><a href="#内网连接" class="headerlink" title="内网连接"></a>内网连接</h4><p>1. 在服务主机上配置开启 JLink 远程服务器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
+<p>2. 等待连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
+<p>3. 在本地主机上配置连接 JLink 远程服务器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.png"></p>
+<p>4. 建立连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
+<p>5. 远程调试</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.1.png"></p>
+<p>6. 断开连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
+<h4 id="隧道连接"><a href="#隧道连接" class="headerlink" title="隧道连接"></a>隧道连接</h4><p>1. 在服务主机上配置开启 JLink 远程服务器（隧道方式）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.0.png"></p>
+<p>2. 等待连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.1.png"></p>
+<p>3. 在本地主机上配置连接 JLink 远程服务器（隧道方式）</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.0.png"></p>
+<p>4. 建立连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.2.png"></p>
+<p>5. 远程调试</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.1.png"></p>
+<p>6. 断开连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.3.png"></p>
+<h3 id="KeilMDK-JLinkRemoteServer"><a href="#KeilMDK-JLinkRemoteServer" class="headerlink" title="KeilMDK + JLinkRemoteServer"></a>KeilMDK + JLinkRemoteServer</h3><h4 id="内网连接-1"><a href="#内网连接-1" class="headerlink" title="内网连接"></a>内网连接</h4><p>1. 在服务主机上配置开启 JLink 远程服务器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
+<p>2. 等待连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
+<p>3. 在本地主机上配置连接 JLink 远程服务器</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.Keil.MDK.png"></p>
+<p>4. 建立连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
+<p>5. 远程调试</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此处省略一张在 Keil MDK 中调试的图片</span><br></pre></td></tr></table></figure>
+
+<p>6. 断开连接</p>
+<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>集成开发环境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成开发环境－合集</title>
+    <url>/sulfurandcu.io/clo3okqut006mi0rq9ecvb34e.html</url>
+    <content><![CDATA[<hr>
+<p>各个平台下的开发环境搭建教程</p>
+<ul>
+<li><a href="/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html">ARM.GCC</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">ARM.MDK (TODO)</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">ARM.IAR (TODO)</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">ARM.SES (TODO)</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">ARM.ADS (TODO)</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">RV5.GCC (TODO)</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">RV5.IAR (TODO)</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">RV5.SES (TODO)</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">C51.MDK (TODO)</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">C51.IAR (TODO)</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">MSP.IAR (TODO)</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">AVR.IAR (TODO)</a></li>
+<li><a href="/sulfurandcu.io/404/index.html">PIC.XXX (TODO)</a></li>
+</ul>
+<hr>
+<span id="more"></span>
+
+<h2 id="搭建方案"><a href="#搭建方案" class="headerlink" title="搭建方案"></a>搭建方案</h2><ul>
+<li><strong>VSC</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
+<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
+<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
+<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
+</ul>
+</li>
+<li><strong>VS</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
+<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
+</ul>
+</li>
+<li><strong>Eclipse</strong></li>
+<li><strong>Eclipse Based</strong><ul>
+<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a></li>
+<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a></li>
+<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="通用方案"><a href="#通用方案" class="headerlink" title="通用方案"></a>通用方案</h2><ul>
+<li><a href="https://www.keil.arm.com/">KeilStudioCloud</a></li>
+<li><a href="https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio">ADS</a><ul>
+<li>ARM</li>
+</ul>
+</li>
+<li><a href="https://www.keil.com/">MDK</a><ul>
+<li>ARM <a href="https://www.keil.com/pr/article/1302.htm">(ARM 6 Will start shipping towards The End of 2023)</a></li>
+<li>C51</li>
+</ul>
+</li>
+<li><a href="https://www.iar.com/products/architectures/">IAR</a><ul>
+<li>RV5</li>
+<li>ARM</li>
+<li>AVR</li>
+<li>MSP</li>
+<li>STM</li>
+<li>C51</li>
+</ul>
+</li>
+<li><a href="https://www.segger.com/products/development-tools/embedded-studio/">SES</a><ul>
+<li>ARM</li>
+<li>RV5</li>
+</ul>
+</li>
+<li><a href="https://embeetle.com/#">EmbeetleIDE</a></li>
+</ul>
+<h2 id="专用方案"><a href="#专用方案" class="headerlink" title="专用方案"></a>专用方案</h2><ul>
+<li><strong>Eclipse Based</strong><ul>
+<li><a href="https://www.st.com/en/development-tools/sw4stm32.html">ST: SW4STM32 System Workbench for STM32</a></li>
+<li><a href="https://www.st.com/en/development-tools/truestudio.html">ST: TrueStudio by Atollic before 2017</a></li>
+<li><a href="">ST: STM32CubeIDE release in 2019 &#x3D; TrueStudio+STM32CubeMX</a></li>
+<li><a href="https://www.renesas.com/us/en/software-tool/e-studio">Renesas: E2Studio</a></li>
+</ul>
+</li>
+<li><strong>NetBeans Based</strong><ul>
+<li><a href="https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide">Microchip: MPLAB X IDE</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://elmagnifico.tech/2022/03/14/Embeded-IDE/">https://elmagnifico.tech/2022/03/14/Embeded-IDE/</a><br><a href="https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/">https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/</a></p>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>集成开发环境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成开发环境－GCC.ARM（#00）目录索引</title>
+    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
+    <content><![CDATA[<hr>
+<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成开发环境－GCC.ARM（#01）环境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成开发环境－GCC.ARM（#02）程序构建</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成开发环境－GCC.ARM（#03）程序烧录</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成开发环境－GCC.ARM（#04）快捷任务</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成开发环境－GCC.ARM（#05）程序调试</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成开发环境－DBG</a></p>
+<hr>
+<p>传统的集成开发环境（MDK、IAR）通常会提供包括编辑、编译、烧录、调试在内的一整套工具，开发者无需配置，简单易用，但 license 也不是一般的贵。</p>
+<p>替代方案：</p>
+<ul>
+<li><strong>VSC</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
+<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
+<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
+<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
+</ul>
+</li>
+<li><strong>VS</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
+<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
+</ul>
+</li>
+<li><strong>Eclipse</strong></li>
+<li><strong>Eclipse Based</strong><ul>
+<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
+<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
+<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol>
+<li>编辑（vscode）</li>
+<li>编译（arm-none-eabi-xxx）</li>
+<li>烧录（JLink）</li>
+<li>调试（vscode-debug + cortex-debug + arm-none-eabi-gdb + JLinkGDBServerCL + JLinkDevice）</li>
+</ol>
+<ul>
+<li><p><strong>vscode (task.json)</strong><br>文本编辑器，其实是一个伪装成文本编辑器的开发框架。</p>
+</li>
+<li><p><strong>arm-none-eabi-xxx</strong><br>交叉编译器，可以编译出在 Cortex-R&amp;M 平台上运行的可执行程序。</p>
+</li>
+<li><p><strong>JLink&#x2F;OpenOCD</strong><br>程序烧录器，负责将编译好的程序烧录到目标芯片中。</p>
+</li>
+<li><p><strong>vscode-debug (launch.json)</strong><br>图形调试器，内部集成的图形调试组件，提供一套图形调试界面，与调试适配器打交道。</p>
+</li>
+<li><p><strong>cortex-debug</strong><br>调试适配器，将图形调试器的操作翻译成命令调试器能够看得懂的命令。</p>
+</li>
+<li><p><strong>arm-none-eabi-gdb</strong><br>命令调试器，支持通过命令行的方式进行调试。</p>
+</li>
+<li><p><strong>JLinkGDBServerCL&#x2F;OpenOCD</strong><br>调试服务器，负责协助调试器识别并管理各种仿真设备和目标芯片。</p>
+</li>
+<li><p><strong>JLinkDriver</strong><br>仿真器驱动，负责驱动仿真器设备。</p>
+</li>
+<li><p><strong>JLinkDongle</strong><br>仿真器设备，通过 JTAG 或 SWD 协议与芯片打交道。</p>
+</li>
+</ul>
+<blockquote>
+<p>倘若宿主机使用 Windows 操作系统并且购买了 JLinkDongle 仿真器，则推荐使用 JLink 方案！</p>
+</blockquote>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方设备支持:HT32F52352 Cortex-M0+</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code开发STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code开发STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code开发STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code开发STM32（四）</a></p>
+<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作总结记录</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 开发环境—— 详细版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 开发stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32开发调试环境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 开发环境（详细）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32开发调试环境（转）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32开发环境（极简自我搭建&amp;懒人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 调试器使用介绍</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>集成开发环境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成开发环境－GCC.ARM（#01）环境搭建</title>
+    <url>/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html</url>
+    <content><![CDATA[<p><img src="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc/Download.VSC.png"></p>
+<span id="more"></span>
+
+<hr>
+<h2 id="编辑器安装"><a href="#编辑器安装" class="headerlink" title="编辑器安装"></a>编辑器安装</h2><ul>
+<li><strong>VSC</strong></li>
+</ul>
+<p><img src="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc/Download.VSC.png"></p>
+<center><a href="https://code.visualstudio.com/Download">https://code.visualstudio.com/Download</a></center>
+
+<ul>
+<li><strong>VS</strong></li>
+</ul>
+<p><img src="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc/Download.VS.png"></p>
+<center><a href="https://visualstudio.microsoft.com/downloads/">https://visualstudio.microsoft.com/downloads/</a></center>
+
+<ul>
+<li><strong>Eclipse.Embedded</strong></li>
+</ul>
+<p><img src="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc/Download.EclipseEmbedded.png"></p>
+<center><a href="https://www.eclipse.org/downloads/packages/">https://www.eclipse.org/downloads/packages/</a></center>
+
+<h2 id="编辑器插件"><a href="#编辑器插件" class="headerlink" title="编辑器插件"></a>编辑器插件</h2><ul>
+<li><strong><a href="https://github.com/Marus/cortex-debug/wiki">vscode :: cortex-debug</a></strong></li>
+<li><strong><a href="https://em-ide.com/zh-cn/">vscode :: eide</a></strong></li>
+</ul>
+<h2 id="编译器安装"><a href="#编译器安装" class="headerlink" title="编译器安装"></a>编译器安装</h2><ul>
+<li><strong><a href="https://packages.msys2.org/base/mingw-w64-arm-none-eabi-gcc">Arm GNU Toolchain on MSYS2</a> (pacman -S mingw-w64-x86_64-arm-none-eabi-gcc)</strong></li>
+<li><strong><a href="https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads">Arm GNU Toolchain (12.2.Rel1 based on GCC 12.2)</a></strong></li>
+<li><strong><a href="https://developer.arm.com/downloads/-/gnu-a">Arm GNU Toolchain for the Cortex-A (10.3-2021.07 based on GCC 10.3)</a></strong></li>
+<li><strong><a href="https://developer.arm.com/downloads/-/gnu-rm">Arm GNU Toolchain for the Cortex-R &amp; Cortex-M (10.3-2021.10 based on GCC 10.3)</a></strong></li>
+<li><strong><a href="https://xpack.github.io/dev-tools/arm-none-eabi-gcc/releases/">xPack GNU Arm Embedded GCC toolchain</a></strong></li>
+</ul>
+<div class="note danger no-icon"><p>记得将安装目录添加至系统环境变量</p>
+</div>
+
+<h2 id="调试器安装"><a href="#调试器安装" class="headerlink" title="调试器安装"></a>调试器安装</h2><ul>
+<li><strong><a href="https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack">JLink Installer</a></strong></li>
+<li><strong><a href="https://packages.msys2.org/base/mingw-w64-openocd">OpenOCD on MSYS2</a> (pacman -S mingw-w64-x86_64-openocd)</strong></li>
+<li><strong><a href="https://github.com/openocd-org/openocd/releases">OpenOCD prebuilt by OpenOCD.org</a></strong></li>
+<li><strong><a href="https://gnutoolchains.com/arm-eabi/openocd/">OpenOCD prebuilt by Sysprogs</a></strong></li>
+<li><strong><a href="https://xpack.github.io/dev-tools/openocd/releases/">OpenOCD prebuilt by xPackProject</a></strong></li>
+</ul>
+<div class="note danger no-icon"><p>记得将安装目录添加至系统环境变量</p>
+</div>
+
+<h2 id="构建器安装"><a href="#构建器安装" class="headerlink" title="构建器安装"></a>构建器安装</h2><ul>
+<li><strong><a href="https://www.msys2.org/">mingw-make in msys2</a></strong></li>
+<li><strong>cmake <a href="https://cmake.org/">download</a> (python -m pip install cmake) (winget install cmake)</strong></li>
+<li><strong>ninja <a href="https://ninja-build.org/">download</a> (python -m pip install ninja) (winget install ninja)</strong></li>
+<li><strong>scons <a href="https://scons.org/">download</a> (python -m pip install scons&#x3D;&#x3D;3.1.2)</strong></li>
+</ul>
+<div class="note info no-icon"><p>理论上安装完编辑器、编译器和调试器之后就能够进行开发了，安装上述工具是为了提高开发效率。</p>
+</div>
+
+<h2 id="必要的文件"><a href="#必要的文件" class="headerlink" title="必要的文件"></a>必要的文件</h2><ul>
+<li><strong>*.h, *.c</strong><br>代码文件：在 makefile 中引用进行编译</li>
+<li><strong>*.s</strong><br>启动文件：在 makefile 中引用进行编译</li>
+<li><strong>*.ld</strong><br>链接文件：在 makefile 中引用进行链接</li>
+<li><strong>*.svd</strong><br>描述文件：在 launch.json 中配置用于调试</li>
+</ul>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>集成开发环境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成开发环境－GCC.ARM（#02）程序构建</title>
+    <url>/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html</url>
+    <content><![CDATA[<p>倘若只有 main.h 和 main.c 两个文件，那么只需要执行少量的指令即可完成编译工作。但是实际上一个工程通常包含几十上百个文件，意味着要执行大量的编译指令才能得到目标文件，这是我们所无法接受的。因此需要借助 make、cmake、ninja、scons 等构建工具来提高开发效率。</p>
+<span id="more"></span>
+
+<h2 id="make"><a href="#make" class="headerlink" title="make"></a>make</h2><p>在 windows 系统中推荐使用 MSYS2 提供的 mingw32-make 程序。</p>
+<h3 id="生成脚本（makefile）"><a href="#生成脚本（makefile）" class="headerlink" title="生成脚本（makefile）"></a>生成脚本（makefile）</h3><p>相较于头开始写 makefile 脚本，先通过 STM32CubeMX 生成然后加以改造则要容易得多。</p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.0.png"></p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.1.png"></p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.2.png"></p>
+<h3 id="修改脚本（makefile）"><a href="#修改脚本（makefile）" class="headerlink" title="修改脚本（makefile）"></a>修改脚本（makefile）</h3><ol>
+<li>修改文件列表（*.c &amp; *.s）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_SOURCES = \</span><br><span class="line">../../../code/Application/src/main.c \</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ASM_SOURCES = \</span><br><span class="line">startup_stm32f103xb.s \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+<li>修改包含路径（*.h）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_INCLUDES = \</span><br><span class="line">-I../../../code/Application \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+<li>修改全局定义（#define）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_DEFS = \</span><br><span class="line">-DUSE_HAL_DRIVER \</span><br><span class="line">-DSTM32F103xB \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+<li>修改链接脚本（.ld）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LDSCRIPT = STM32F103C8Tx_FLASH.ld</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="执行编译"><a href="#执行编译" class="headerlink" title="执行编译"></a>执行编译</h3><p>在 makefile 所在的路径下执行 make 指令开始编译</p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.build.png"></p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.where.png"></p>
+<div class="note danger no-icon"><p>在 windows 系统中请使用 .&#x2F;mingw32-make 命令而非 .&#x2F;make 命令！</p>
+</div>
+
+<h3 id="清除编译"><a href="#清除编译" class="headerlink" title="清除编译"></a>清除编译</h3><p>若要清除刚才编译的中间文件，则需要修改 makefile 文件，然后执行 mingw32-make clean 指令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">clean:</span><br><span class="line">#   -rm -fR $(BUILD_DIR)</span><br><span class="line">    -del /q $(BUILD_DIR)</span><br></pre></td></tr></table></figure>
+
+<p>这时你大概率会遇到以下问题：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.fail1.png"></p>
+<p>有人说将 clean 下的 -rm -fR $(BUILD_DIR) 改成 -del &#x2F;q $(BUILD_DIR) 就好了，实测并不管用。</p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.fail2.png"></p>
+<p>只有显式地将 SHELL 指定为 cmd 才行（在 makefile 中添加一条语句）：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.shell.png"></p>
+<h2 id="scons"><a href="#scons" class="headerlink" title="scons"></a>scons</h2><ul>
+<li>install <a href="https://www.python.org/downloads/">python</a></li>
+<li>install pip (python get-pip.py)</li>
+<li>install scons (python -m pip install scons&#x3D;&#x3D;3.1.2)</li>
+<li>install pywin32 (support scons -j16) (python -m pip install pywin32)</li>
+</ul>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">python/Scripts/scons.bat <span class="comment"># scons.bat is not necessary, just run scons directly.</span></span><br><span class="line">    python/Scripts/scons <span class="comment"># start</span></span><br><span class="line">        prepare</span><br><span class="line">        call SCons.Script.main() <span class="comment"># this does all the work, and calls sys.exit with the proper exit status when done.</span></span><br><span class="line">            scons: reading SConscript files.</span><br><span class="line">                &lt;rtconfig.py&gt;</span><br><span class="line">                &lt;rtconfig.py&gt;</span><br><span class="line">                &lt;sconstruct&gt;</span><br><span class="line">                    &lt;PrepareBuilding()&gt;</span><br><span class="line">                        <span class="comment"># bsp</span></span><br><span class="line">                        &lt;bsp.SConscript&gt; <span class="comment"># 逐级遍历当前路径下所有子目录中的 SConscript 脚本</span></span><br><span class="line">                            &lt;application.SConscript&gt;</span><br><span class="line">                            &lt;application.SConscript&gt;</span><br><span class="line">                            &lt;board.SConscript&gt;</span><br><span class="line">                            &lt;board.SConscript&gt;</span><br><span class="line">                            &lt;package.SConscript&gt;</span><br><span class="line">                            &lt;package.SConscript&gt;</span><br><span class="line">                            &lt;underlayer.SConscript&gt;</span><br><span class="line">                            &lt;underlayer.SConscript&gt;</span><br><span class="line">                        &lt;bsp.SConscript&gt;</span><br><span class="line">                        <span class="comment"># kernel</span></span><br><span class="line">                        &lt;rtt.src.SConscript&gt;</span><br><span class="line">                        &lt;rtt.src.SConscript&gt;</span><br><span class="line">                        <span class="comment"># libcpu</span></span><br><span class="line">                        &lt;rtt.libcpu.SConscript&gt;</span><br><span class="line">                        &lt;rtt.libcpu.SConscript&gt;</span><br><span class="line">                        <span class="comment"># components</span></span><br><span class="line">                        &lt;rtt.components.SConscript&gt;</span><br><span class="line">                        &lt;rtt.components.SConscript&gt;</span><br><span class="line">                    &lt;PrepareBuilding()&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/chip_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/chip_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/hal_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/hal_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/components)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/components)&gt;</span><br><span class="line">                    &lt;DoBuilding()&gt;</span><br><span class="line">                &lt;sconstruct&gt;</span><br><span class="line">            scons: done reading SConscript files.</span><br><span class="line"></span><br><span class="line">            scons: Building targets</span><br><span class="line">            scons: building associated VariantDir targets: build/gcc/obj</span><br><span class="line">                LINK rtthread.elf</span><br><span class="line">                arm-none-eabi-objcopy -O ihex rtthread.elf ./build/gcc/<span class="built_in">bin</span>/rtthread.<span class="built_in">hex</span></span><br><span class="line">            scons: done building targets. call exit() somewhere.</span><br><span class="line">    python/Scripts/scons <span class="comment"># exit</span></span><br></pre></td></tr></table></figure>
+
+<p>$ scons.bat<br>scons: Reading SConscript files …###############################<br>SConstruct enter !!!.#######################################<br>SDK_ROOT: E:\codespace\SPL1050\SPL1050V240112_vendor-Release_1.0.0.1_modified</p>
+<p>SConstruct building start !!!</p>
+<p>SConstruct exit !!!.#######################################<br>scons: done reading SConscript files.#######################################</p>
+<p>scons: Building targets …<br>scons: building associated VariantDir targets: build\gcc\obj<br>LINK rtthread.elf<br>Memory region         Used Size  Region Size  %age Used<br>      FalPartRAM:        1504 B         4 KB     36.72%<br>             ROM:      384448 B       380 KB     98.80%<br>             RAM:      200456 B       256 KB     76.47%<br>        Heap_RAM:          0 GB       127 KB      0.00%<br>FalPartTableInFlash:        1504 B         4 KB     36.72%<br>       CopyTable:          20 B         1 KB      1.95%<br>     CodeInFlash:      492096 B       768 KB     62.57%<br>          phycfg:          0 GB         4 KB      0.00%<br>arm-none-eabi-size rtthread.elf<br>   text    data     bss     dec     hex filename<br> 878048    8540  191936 1078524  1074fc rtthread.elf<br>arm-none-eabi-objcopy -O ihex rtthread.elf .&#x2F;build&#x2F;gcc&#x2F;bin&#x2F;rtthread.hex<br>scons: done building targets.</p>
+<h3 id="env-中突然不能编译的问题"><a href="#env-中突然不能编译的问题" class="headerlink" title="env 中突然不能编译的问题"></a>env 中突然不能编译的问题</h3><p>使用自己安装的 scons.bat 编译后，再用 env 中的 scons 编译有可能会报错，删除 <code>.sconsign.dblite</code> 后再编即可。</p>
+<h3 id="交叉编译工具链的路径问题"><a href="#交叉编译工具链的路径问题" class="headerlink" title="交叉编译工具链的路径问题"></a>交叉编译工具链的路径问题</h3><p>多人开发时，每个人的交叉编译工具链的安装位置都不同，这样就不能把绝对路径写入到 rtconfig.py 中并提交至代码仓库。既然绝对路径不行，那相对路径可以吗？也行不通，使用相对路径意味着交叉编译工具链也要同步提交至代码仓库，而 arm-none-eabi 的体积是比较大的，所以说我们通常不会这么做，那应该怎样优雅地解决这个问题呢？请继续往下看：</p>
+<p>只需要在 rtconfig.py 中添加以下代码即可解决！</p>
+<figure class="highlight py"><figcaption><span>rtconfig.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> configparser</span><br><span class="line"></span><br><span class="line"><span class="comment"># toolchains path</span></span><br><span class="line">cfg_path = <span class="string">r&#x27;rtconfig.ini&#x27;</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(cfg_path):</span><br><span class="line">    file = <span class="built_in">open</span>(cfg_path, <span class="string">&quot;w&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;# do not commit this file to the repository.\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;[COMPILER] # gcc, iar, mdk\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;COMPILER = gcc\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;GCC_PATH = do not commit this file to svn. replace with your arm-none-eabi-gcc path here in \&#x27;rtconfig.ini\&#x27;. (i.e. d:\\arm-none-eabi-10.3-2021.10\\bin)\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;IAR_PATH =\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;MDK_PATH =\n&quot;</span>)</span><br><span class="line">    file.close()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;rtconfig.ini not exists! but now it should have been generated automatically, you need to fill in some informations. greetings from liujitong.&#x27;</span>)</span><br><span class="line">    exit()</span><br><span class="line">cfg = configparser.ConfigParser()</span><br><span class="line">cfg.read(cfg_path)</span><br><span class="line">CROSS_TOOL = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;COMPILER&quot;</span>]</span><br><span class="line">gcc_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;GCC_PATH&quot;</span>]</span><br><span class="line">iar_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;IAR_PATH&quot;</span>]</span><br><span class="line">mdk_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;MDK_PATH&quot;</span>]</span><br></pre></td></tr></table></figure>
+
+<p>其逻辑为：</p>
+<p>1. 检查 rtconfig.ini 是否存在。<br>2. 如果不存在则自动创建一个 rtconfig.ini 模板文件，并提醒开发人员进行修改。<br>3. 如果存在则从中提取交叉编译工具链的路径信息。</p>
+<p>下面是自动生成的 rtconfig.ini 模板</p>
+<figure class="highlight ini"><figcaption><span>rtconfig.ini</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># do not commit this file to the repository.</span></span><br><span class="line"><span class="section">[COMPILER]</span> <span class="comment"># gcc, iar, mdk</span></span><br><span class="line"><span class="attr">COMPILER</span> = gcc</span><br><span class="line"><span class="attr">GCC_PATH</span> = do not commit this file to svn. replace with your arm-none-eabi-gcc path here in <span class="string">&#x27;rtconfig.ini&#x27;</span>. (i.e. d:\\arm-none-eabi-<span class="number">10.3</span>-<span class="number">2021.10</span>\\bin)</span><br><span class="line"><span class="attr">IAR_PATH</span> =</span><br><span class="line">MDK_PATH =</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>集成开发环境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成开发环境－GCC.ARM（#03）程序烧录</title>
+    <url>/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html</url>
+    <content><![CDATA[<p>编程&#x2F;下载&#x2F;烧录的方式有多种，本文重点介绍以下两种烧录方式：</p>
+<ul>
+<li>JLink</li>
+<li>OpenOCD + JLink 仿真器</li>
+</ul>
+<p>其中 OpenOCD 可以搭配多种仿真器使用，这里以 JLink 仿真器为例进行说明。</p>
+<span id="more"></span>
+
+<h2 id="JLink"><a href="#JLink" class="headerlink" title="JLink"></a>JLink</h2><p>1. 确认是否购买了 JLink 仿真器并且已经安装了 JLink 程序。</p>
+<p>2. 在 makefile 中添加 write 选项：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.JLinkLoad.png"></p>
+<p>3. 在工程目录下新建 JLinkLoad.txt 文件并写入以下内容：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.JLinkLoad.code.png"></p>
+<p>4. 执行 mingw32-make write 指令：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.JLinkLoad.succ.png"></p>
+<div class="note danger no-icon"><p>再次提醒：需要使用 JLink 仿真器以及<strong>默认驱动</strong></p>
+</div>
+
+<div class="note danger no-icon"><p>如果你的电脑中有不止一个 “JLink” 程序，确保在 makefile 中通过绝对路径使用 JLink 命令。</p>
+</div>
+
+<p>下图是我安装了 JavaJDK 后系统中存在的 jlink 程序，只不过此 “jlink” 非彼 “JLink”！</p>
+<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.JLink.JavaJDK.png"></p>
+<h2 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h2><p>1. 确认是否购买了 JLink 仿真器并且已经安装了 OpenOCD 程序。</p>
+<p>2. 在 makefile 中添加 write 选项：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.OpenOCD.JLink.png"></p>
+<p>3. 在工程目录下新建 openocd.cfg 文件并写入以下内容：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.OpenOCD.JLink.code.png"></p>
+<blockquote>
+<p><a href="https://openocd.org/doc-release/html/OpenOCD-Project-Setup.html#Configuration-Basics">https://openocd.org/doc-release/html/OpenOCD-Project-Setup.html#Configuration-Basics</a></p>
+</blockquote>
+<p>4. 将 jlink.cfg 和 stm32f1x.cfg 拷贝至工程目录下。</p>
+<p>5. 使用 zadig 或 USBDriverTool 将仿真器的驱动从 WinUSB 改为 libusb 驱动。</p>
+<p>6. 执行 mingw32-make write 指令：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.OpenOCD.JLink.succ.png"></p>
+<h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><h3 id="问题一：未找到-JLink-仿真器"><a href="#问题一：未找到-JLink-仿真器" class="headerlink" title="问题一：未找到 JLink 仿真器"></a>问题一：未找到 JLink 仿真器</h3><p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/QA1.1.png"></p>
+<p>OpenOCD 对仿真器的支持是通过底层的访问控制实现的，不依赖仿真器自身的驱动，但是需要 libusb 驱动，因此我们需要使用 zadig 或 USBDriverTool 等工具将仿真器的默认驱动改为 libusb 驱动。</p>
+<p>需要注意的是，将驱动改成 libusb 之后，原有的调试软件例如 JLink&#x2F;Keil 将无法再识别到仿真器。</p>
+<p>如果你还想继续使用这些调试软件，则需要卸载掉当前的驱动程序并插拔一下仿真器：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/QA1.2.png"></p>
+<h3 id="问题二：SWD-amp-JTAG"><a href="#问题二：SWD-amp-JTAG" class="headerlink" title="问题二：SWD &amp; JTAG"></a>问题二：SWD &amp; JTAG</h3><p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/QA2.1.png"></p>
+<p>OpenOCD 提供的 jlink.cfg 脚本默认使用 JTAG 模式，而我们实际使用的是 SWD 模式。</p>
+<p>解决方法：在 openocd.cfg 文件中添加一条语句：</p>
+<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/QA2.2.png"></p>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>集成开发环境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成开发环境－GCC.ARM（#04）快捷任务</title>
+    <url>/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html</url>
+    <content><![CDATA[<hr>
+<ul>
+<li>tasks.json</li>
+</ul>
+<hr>
+<span id="more"></span>
+
+<p>通过 makefile 我们将海量的指令精简至一条 make+ 指令，但是我比较懒，一条指令都不想敲。😎</p>
+<p>1. 在工程目录下的 .vscode 目录中新建 tasks.json 文件并填入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">    &quot;tasks&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;编译（build）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;清除（clean）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make clean&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;烧录（write）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make write&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;烧录（write.openocd）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make write.openocd&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note info no-icon"><p>在 cmd 中使用 “|” 连接两条指令，在 powershell 中使用 “;” 连接两条指令。</p>
+</div>
+
+<p>2. 找到菜单栏依次点击 Terminal -&gt; RunTask 然后选择：</p>
+<ul>
+<li>编译（build）</li>
+<li>清除（clean）</li>
+<li>烧录（write）</li>
+<li>烧录（write.openocd）</li>
+</ul>
+<p><img src="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz/task.json.png"></p>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>集成开发环境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成开发环境－GCC.ARM（#05）程序调试</title>
+    <url>/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html</url>
+    <content><![CDATA[<hr>
+<ul>
+<li>laugch.json</li>
+</ul>
+<hr>
+<span id="more"></span>
+
+<p>1. 在工程目录下的 .vscode 目录中新建 laugch.json 文件并填入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@JLinkGDBServerCL.exe&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;jlink&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;: &quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;device&quot;: &quot;STM32F103CB&quot;,</span><br><span class="line">            &quot;interface&quot;: &quot;swd&quot;,</span><br><span class="line">            &quot;serverArgs&quot;: [</span><br><span class="line">                // &quot;-gui&quot;,</span><br><span class="line">            ],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@OpenOCD.exe&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;openocd&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;showDevDebugOutput&quot;: &quot;none&quot;,</span><br><span class="line">            &quot;configFiles&quot;: [</span><br><span class="line">                &quot;openocd/jlink-swd.cfg&quot;,</span><br><span class="line">                &quot;openocd/stm32f1x.cfg&quot;,</span><br><span class="line">            ],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;gdbPath&quot;: &quot;D:/develop.r.0/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gdb.exe&quot;,</span><br><span class="line">            &quot;armToolchainPath&quot;: &quot;D:/develop.r.0/gcc-arm-none-eabi-10.3-2021.10/bin&quot;,</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2. 进入侧边栏中的 RunAndDebug 然后选择</p>
+<ul>
+<li>Debug@JLinkGDBServerCL.exe</li>
+<li>Debug@OpenOCD.exe</li>
+<li>Debug@RemoteServer(GDBServer&#x2F;JLinkGDBServer)</li>
+</ul>
+<p><img src="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey/launch.json.png"></p>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>集成开发环境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>嵌入式 IAP 升级功能（#00）目录索引</title>
     <url>/sulfurandcu.io/clnyhr2n2004t10rq7rdi2ftx.html</url>
     <content><![CDATA[<hr>
@@ -1464,63 +2102,6 @@ N2---&gt;N2.3[&quot; &quot;]
         <tag>iap</tag>
         <tag>bootloader</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>调试精灵使用说明</title>
-    <url>/sulfurandcu.io/cly6m4gfj002qscrq77a5a7cn.html</url>
-    <content><![CDATA[<center><a href="https://code.visualstudio.com/Download">「这是一个内置 DLT645 规则解析引擎的协议测试工具」</a></center>
-
-<br>
-
-<p><img src="/sulfurandcu.io/cly6m4gfj002qscrq77a5a7cn/toolkit.dlt645.png"></p>
-<span id="more"></span>
-
-<h2 id="配置规则"><a href="#配置规则" class="headerlink" title="配置规则"></a>配置规则</h2><p>按照数据类型可分为：</p>
-<ul>
-<li>time</li>
-<li>bcd</li>
-<li>hex</li>
-<li>bit</li>
-<li>string</li>
-<li>block</li>
-</ul>
-<h3 id="time"><a href="#time" class="headerlink" title="time"></a>time</h3><p>数据格式为 YY、MM、DD、WW、hh、mm、ss 的自由组合。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;日期时间&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;time&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;YYMMDDWWhhmmss&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<h3 id="bcd"><a href="#bcd" class="headerlink" title="bcd"></a>bcd</h3><p>第一种：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;当前电压（Ａ相）（XXX.X）&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;XXX.X&quot;,</span><br><span class="line">    &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<p>第二种（数据块）：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;当前电压（整块）（XXX.X）　&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">    &quot;data&quot;: [</span><br><span class="line">        &quot;XXX.X&quot;,</span><br><span class="line">        &quot;XXX.X&quot;,</span><br><span class="line">        &quot;XXX.X&quot;</span><br><span class="line">    ],</span><br><span class="line">    &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>如果数据块中的数据单位不一样，则建议使用 block 类型。</p>
-</blockquote>
-<h3 id="hex"><a href="#hex" class="headerlink" title="hex"></a>hex</h3><p>需要显示原数据的要使用 hex 类型：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;通信地址&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;hex&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;XXXXXXXXXXXX&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<p>一些没有数据域的控制指令也可以使用 hex 类型：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;设备重启&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;hex&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<h3 id="bit"><a href="#bit" class="headerlink" title="bit"></a>bit</h3><p>位解析配置如下：</p>
-<ul>
-<li>lsb：表示该位段的最低位</li>
-<li>msb：表示该位段的最高位</li>
-<li>XX.：表示该位段的枚举值（00 ~ FF）</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;有功组合方式特征字&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;bit&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;XX&quot;,</span><br><span class="line">    &quot;bits&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;正向有功&quot;,</span><br><span class="line">            &quot;lsb&quot;: 0,</span><br><span class="line">            &quot;msb&quot;: 1,</span><br><span class="line">            &quot;00&quot;: &quot;不加不减&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;加&quot;,</span><br><span class="line">            &quot;02&quot;: &quot;减&quot;,</span><br><span class="line">            &quot;03&quot;: &quot;又加又减&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;反向有功&quot;,</span><br><span class="line">            &quot;lsb&quot;: 2,</span><br><span class="line">            &quot;msb&quot;: 3,</span><br><span class="line">            &quot;00&quot;: &quot;不加不减&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;加&quot;,</span><br><span class="line">            &quot;02&quot;: &quot;减&quot;,</span><br><span class="line">            &quot;03&quot;: &quot;又加又减&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<p>支持多字节的位解析：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;主动上报模式字&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;bit&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;XXXXXXXXXXXXXXXX&quot;,</span><br><span class="line">    &quot;bits&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;bit-14: 分闸&quot;,</span><br><span class="line">            &quot;lsb&quot;: 14,</span><br><span class="line">            &quot;msb&quot;: 14,</span><br><span class="line">            &quot;00&quot;: &quot;&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;✔&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;bit-15: 合闸&quot;,</span><br><span class="line">            &quot;lsb&quot;: 15,</span><br><span class="line">            &quot;msb&quot;: 15,</span><br><span class="line">            &quot;00&quot;: &quot;&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;✔&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;bit-16: 失压&quot;,</span><br><span class="line">            &quot;lsb&quot;: 16,</span><br><span class="line">            &quot;msb&quot;: 16,</span><br><span class="line">            &quot;00&quot;: &quot;&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;✔&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;bit-17: 欠压&quot;,</span><br><span class="line">            &quot;lsb&quot;: 17,</span><br><span class="line">            &quot;msb&quot;: 17,</span><br><span class="line">            &quot;00&quot;: &quot;&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;✔&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;bit-18: 过压&quot;,</span><br><span class="line">            &quot;lsb&quot;: 18,</span><br><span class="line">            &quot;msb&quot;: 18,</span><br><span class="line">            &quot;00&quot;: &quot;&quot;,</span><br><span class="line">            &quot;01&quot;: &quot;✔&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<h3 id="string"><a href="#string" class="headerlink" title="string"></a>string</h3><p>目前「fillin」「fillat」「endian」暂不支持。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;资产编码（ASCII）&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;string&quot;,</span><br><span class="line">    &quot;len&quot;: 32,</span><br><span class="line">    &quot;fillin&quot;: 0,</span><br><span class="line">    &quot;fillat&quot;: &quot;front&quot;,</span><br><span class="line">    &quot;endian&quot;: &quot;LE&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<h3 id="block"><a href="#block" class="headerlink" title="block"></a>block</h3><p>block 类型中可以放置上述任意类型，支持在 block 中嵌套 block 类型。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;电压整定参数块&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;block&quot;,</span><br><span class="line">    &quot;data&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;过压整定值&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;XXX.X&quot;,</span><br><span class="line">            &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;欠压整定值&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;XXX.X&quot;,</span><br><span class="line">            &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;断相整定值&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;XXX.X&quot;,</span><br><span class="line">            &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;瞬时冻结（数据块）&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;block&quot;,</span><br><span class="line">    &quot;data&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;冻结时间&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;time&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;YYMMDDhhmm&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;正向有功电能（总）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kWh&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;反向有功电能（总）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kWh&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;组合无功电能（c1）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kvarh&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;组合无功电能（c2）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kvarh&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-]]></content>
   </entry>
   <entry>
     <title>嵌入式 IAP 升级功能（#01）基础概念</title>
@@ -2403,18 +2984,6 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[将内部flash中的0xAAB
       </tags>
   </entry>
   <entry>
-    <title>嵌入式 IAP 升级功能（#08）引导程序 bootloader 升级</title>
-    <url>/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>在线升级</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>嵌入式 IAP 升级功能（#07）压缩解压 tinyuz 移植</title>
     <url>/sulfurandcu.io/cloidh8k000ijv0rq8b5hbdpe.html</url>
     <content><![CDATA[<p>与上文类似，对 tinyuz 也进行二次封装以便上层调用：</p>
@@ -2434,584 +3003,15 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[将内部flash中的0xAAB
       </tags>
   </entry>
   <entry>
-    <title>集成开发环境－合集</title>
-    <url>/sulfurandcu.io/clo3okqut006mi0rq9ecvb34e.html</url>
-    <content><![CDATA[<hr>
-<p>各个平台下的开发环境搭建教程</p>
-<ul>
-<li><a href="/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html">ARM.GCC</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">ARM.MDK (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">ARM.IAR (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">ARM.SES (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">ARM.ADS (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">RV5.GCC (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">RV5.IAR (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">RV5.SES (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">C51.MDK (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">C51.IAR (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">MSP.IAR (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">AVR.IAR (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">PIC.XXX (TODO)</a></li>
-</ul>
-<hr>
-<span id="more"></span>
-
-<h2 id="搭建方案"><a href="#搭建方案" class="headerlink" title="搭建方案"></a>搭建方案</h2><ul>
-<li><strong>VSC</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
-<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
-<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
-<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
-<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
-</ul>
-</li>
-<li><strong>VS</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
-<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
-</ul>
-</li>
-<li><strong>Eclipse</strong></li>
-<li><strong>Eclipse Based</strong><ul>
-<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a></li>
-<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a></li>
-<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="通用方案"><a href="#通用方案" class="headerlink" title="通用方案"></a>通用方案</h2><ul>
-<li><a href="https://www.keil.arm.com/">KeilStudioCloud</a></li>
-<li><a href="https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio">ADS</a><ul>
-<li>ARM</li>
-</ul>
-</li>
-<li><a href="https://www.keil.com/">MDK</a><ul>
-<li>ARM <a href="https://www.keil.com/pr/article/1302.htm">(ARM 6 Will start shipping towards The End of 2023)</a></li>
-<li>C51</li>
-</ul>
-</li>
-<li><a href="https://www.iar.com/products/architectures/">IAR</a><ul>
-<li>RV5</li>
-<li>ARM</li>
-<li>AVR</li>
-<li>MSP</li>
-<li>STM</li>
-<li>C51</li>
-</ul>
-</li>
-<li><a href="https://www.segger.com/products/development-tools/embedded-studio/">SES</a><ul>
-<li>ARM</li>
-<li>RV5</li>
-</ul>
-</li>
-<li><a href="https://embeetle.com/#">EmbeetleIDE</a></li>
-</ul>
-<h2 id="专用方案"><a href="#专用方案" class="headerlink" title="专用方案"></a>专用方案</h2><ul>
-<li><strong>Eclipse Based</strong><ul>
-<li><a href="https://www.st.com/en/development-tools/sw4stm32.html">ST: SW4STM32 System Workbench for STM32</a></li>
-<li><a href="https://www.st.com/en/development-tools/truestudio.html">ST: TrueStudio by Atollic before 2017</a></li>
-<li><a href="">ST: STM32CubeIDE release in 2019 &#x3D; TrueStudio+STM32CubeMX</a></li>
-<li><a href="https://www.renesas.com/us/en/software-tool/e-studio">Renesas: E2Studio</a></li>
-</ul>
-</li>
-<li><strong>NetBeans Based</strong><ul>
-<li><a href="https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide">Microchip: MPLAB X IDE</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://elmagnifico.tech/2022/03/14/Embeded-IDE/">https://elmagnifico.tech/2022/03/14/Embeded-IDE/</a><br><a href="https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/">https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/</a></p>
-]]></content>
+    <title>嵌入式 IAP 升级功能（#08）引导程序 bootloader 升级</title>
+    <url>/sulfurandcu.io/clnyhr2n5005a10rq54px6ho5.html</url>
+    <content><![CDATA[]]></content>
       <categories>
         <category>开发笔记</category>
       </categories>
       <tags>
         <tag>嵌入式软件开发</tag>
-        <tag>集成开发环境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成开发环境－GCC.ARM（#00）目录索引</title>
-    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
-    <content><![CDATA[<hr>
-<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成开发环境－GCC.ARM（#01）环境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成开发环境－GCC.ARM（#02）程序构建</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成开发环境－GCC.ARM（#03）程序烧录</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成开发环境－GCC.ARM（#04）快捷任务</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成开发环境－GCC.ARM（#05）程序调试</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成开发环境－DBG</a></p>
-<hr>
-<p>传统的集成开发环境（MDK、IAR）通常会提供包括编辑、编译、烧录、调试在内的一整套工具，开发者无需配置，简单易用，但 license 也不是一般的贵。</p>
-<p>替代方案：</p>
-<ul>
-<li><strong>VSC</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
-<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
-<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
-<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
-<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
-</ul>
-</li>
-<li><strong>VS</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
-<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
-</ul>
-</li>
-<li><strong>Eclipse</strong></li>
-<li><strong>Eclipse Based</strong><ul>
-<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
-<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
-<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
-</ul>
-</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol>
-<li>编辑（vscode）</li>
-<li>编译（arm-none-eabi-xxx）</li>
-<li>烧录（JLink）</li>
-<li>调试（vscode-debug + cortex-debug + arm-none-eabi-gdb + JLinkGDBServerCL + JLinkDevice）</li>
-</ol>
-<ul>
-<li><p><strong>vscode (task.json)</strong><br>文本编辑器，其实是一个伪装成文本编辑器的开发框架。</p>
-</li>
-<li><p><strong>arm-none-eabi-xxx</strong><br>交叉编译器，可以编译出在 Cortex-R&amp;M 平台上运行的可执行程序。</p>
-</li>
-<li><p><strong>JLink&#x2F;OpenOCD</strong><br>程序烧录器，负责将编译好的程序烧录到目标芯片中。</p>
-</li>
-<li><p><strong>vscode-debug (launch.json)</strong><br>图形调试器，内部集成的图形调试组件，提供一套图形调试界面，与调试适配器打交道。</p>
-</li>
-<li><p><strong>cortex-debug</strong><br>调试适配器，将图形调试器的操作翻译成命令调试器能够看得懂的命令。</p>
-</li>
-<li><p><strong>arm-none-eabi-gdb</strong><br>命令调试器，支持通过命令行的方式进行调试。</p>
-</li>
-<li><p><strong>JLinkGDBServerCL&#x2F;OpenOCD</strong><br>调试服务器，负责协助调试器识别并管理各种仿真设备和目标芯片。</p>
-</li>
-<li><p><strong>JLinkDriver</strong><br>仿真器驱动，负责驱动仿真器设备。</p>
-</li>
-<li><p><strong>JLinkDongle</strong><br>仿真器设备，通过 JTAG 或 SWD 协议与芯片打交道。</p>
-</li>
-</ul>
-<blockquote>
-<p>倘若宿主机使用 Windows 操作系统并且购买了 JLinkDongle 仿真器，则推荐使用 JLink 方案！</p>
-</blockquote>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方设备支持:HT32F52352 Cortex-M0+</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code开发STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code开发STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code开发STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code开发STM32（四）</a></p>
-<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作总结记录</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 开发环境—— 详细版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 开发stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32开发调试环境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 开发环境（详细）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32开发调试环境（转）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32开发环境（极简自我搭建&amp;懒人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 调试器使用介绍</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>集成开发环境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成开发环境－DBG</title>
-    <url>/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html</url>
-    <content><![CDATA[<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
-<span id="more"></span>
-
-<h2 id="专用的调试模块"><a href="#专用的调试模块" class="headerlink" title="专用的调试模块"></a>专用的调试模块</h2><p>常见的 IDE 内部都集成了一个专用的 GUI 调试器，且不能拎出来单独使用。</p>
-<ul>
-<li>ADS</li>
-<li>IAR</li>
-<li>MDK</li>
-<li>Visual Studio</li>
-</ul>
-<h2 id="独立的调试工具"><a href="#独立的调试工具" class="headerlink" title="独立的调试工具"></a>独立的调试工具</h2><p>当然也有一些可以独立使用的调试器，例如：</p>
-<ul>
-<li>CLI: GDB, LLDB</li>
-<li>GUI: x64dbg, WinDBG, OllyDBG</li>
-</ul>
-<h2 id="图形调试器"><a href="#图形调试器" class="headerlink" title="图形调试器"></a>图形调试器</h2><h2 id="适配器协议（DebugAdapterProtocol）"><a href="#适配器协议（DebugAdapterProtocol）" class="headerlink" title="适配器协议（DebugAdapterProtocol）"></a>适配器协议（DebugAdapterProtocol）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapterProtocol.png"></p>
-<p>不论是专用的调试模块还是独立的调试工具，如果想支持调试多种语言，就必须要为每一种语言开发一套对应的调试程序，并且每个工具厂商都要独自去完成这些工作。为了减少不必要的重复劳动，微软制定了一套通用的调试协议，借助该协议各工具厂商只需要开发一套调试程序，向下再借助各种调试适配工具即可具备调试所有语言的能力。</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p>
-<center><a href="https://microsoft.github.io/debug-adapter-protocol/">Debug Adapter Protocol (DAP)</a></center><br>
-
-<p>目前实现该调试协议的开发工具有（常用的）：</p>
-<ul>
-<li>VSC</li>
-<li>VS</li>
-<li>vim</li>
-<li>emacs</li>
-<li>EclipseIDE</li>
-</ul>
-<p>btw, 微软还制定了一套通用的语言服务器协议 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/LanguageServerProtocol(LSP).png"></p>
-<center><a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></center>
-
-<h2 id="调试适配器（DebugAdapter）"><a href="#调试适配器（DebugAdapter）" class="headerlink" title="调试适配器（DebugAdapter）"></a>调试适配器（DebugAdapter）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapter.png"></p>
-<p>调试适配器是对各类调试器的封装，遵循 DAP 协议对上提供统一的接口，以简化上层开发工具。常用的调试适配器有：</p>
-<ul>
-<li><a href="https://github.com/Microsoft/vscode-cpptools">cpptools (C&#x2F;C++ Debug Adapter)</a></li>
-<li><a href="https://github.com/Marus/cortex-debug">cortex-debug (Embedded C&#x2F;C++ Debug Adapter)</a></li>
-</ul>
-<h2 id="命令调试器（Debugger）"><a href="#命令调试器（Debugger）" class="headerlink" title="命令调试器（Debugger）"></a>命令调试器（Debugger）</h2><ul>
-<li><a href="https://sourceware.org/gdb/">GDB: The GNU Project Debugger</a><ul>
-<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/Remote-Protocol.html">↑ GDB&#x2F;MI</a></li>
-<li><a href="https://sourceware.org/gdb/onlinedocs/gdb/GDB_002fMI.html">↓ GDB Remote Serial Protocol</a></li>
-</ul>
-</li>
-<li><a href="https://developer.arm.com/downloads/-/gnu-rm">arm-none-eabi-gdb: GNU Arm Embedded GDB</a></li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Debugger.png"></p>
-<h2 id="调试服务器（DebugServer）"><a href="#调试服务器（DebugServer）" class="headerlink" title="调试服务器（DebugServer）"></a>调试服务器（DebugServer）</h2><ul>
-<li>OpenOCD</li>
-<li>PyOCD</li>
-<li>JLinkGDBServer</li>
-<li>……</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugServer.png"></p>
-<h2 id="仿真器驱动（DongleDriver）"><a href="#仿真器驱动（DongleDriver）" class="headerlink" title="仿真器驱动（DongleDriver）"></a>仿真器驱动（DongleDriver）</h2><ul>
-<li>SEGGER JLink USB Driver</li>
-<li>SEGGER WinUSB USB Device Driver</li>
-</ul>
-<h2 id="仿真器设备（Dongle）"><a href="#仿真器设备（Dongle）" class="headerlink" title="仿真器设备（Dongle）"></a>仿真器设备（Dongle）</h2><ul>
-<li>CMSIS-DAP</li>
-<li>SEGGER JLink</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Dongle.png"></p>
-<h2 id="仿真器协议（DongleTransportProtocol）"><a href="#仿真器协议（DongleTransportProtocol）" class="headerlink" title="仿真器协议（DongleTransportProtocol）"></a>仿真器协议（DongleTransportProtocol）</h2><ul>
-<li>JTAG <a href="https://www.corelis.com/education/tutorials/jtag-tutorial/">https://www.corelis.com/education/tutorials/jtag-tutorial/</a></li>
-<li>SWD</li>
-</ul>
-<h2 id="目标板芯片（TargetBoard）"><a href="#目标板芯片（TargetBoard）" class="headerlink" title="目标板芯片（TargetBoard）"></a>目标板芯片（TargetBoard）</h2><ul>
-<li>STM32F103CB</li>
-<li>STM32F407VE</li>
-</ul>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Target.png"></p>
-<h2 id="本地与远程调试"><a href="#本地与远程调试" class="headerlink" title="本地与远程调试"></a>本地与远程调试</h2><p>远程调试方案也有很多，这里只对以下几种方式作一简要介绍：</p>
-<ul>
-<li>OpenOCD</li>
-<li>VSCode + JLinkGDBServer</li>
-<li>JLink + JLinkRemoteServer</li>
-<li>KeilMDK + JLinkRemoteServer</li>
-</ul>
-<h3 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h3><p>略.</p>
-<h3 id="VSCode-JLinkGDBServer"><a href="#VSCode-JLinkGDBServer" class="headerlink" title="VSCode + JLinkGDBServer"></a>VSCode + JLinkGDBServer</h3><p>1. 在服务主机上配置开启 JLink 调试服务器（该服务器会监听 2331 端口）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.0.png"></p>
-<div class="note danger no-icon"><p>不要勾选 Localhost Only 选项！</p>
-</div>
-
-<p>2. 等待连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.1.png"></p>
-<p>3. 在本地主机上配置 launch.json 文件并启动调试</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">    &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">    &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">    &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;&quot;,</span><br><span class="line">    &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://github.com/Marus/cortex-debug/issues/244">cortex-debug-issues#244 : remote debugging</a><br><a href="https://github.com/Marus/cortex-debug/wiki/External-gdb-server-configuration">cortex-debug-wiki : external gdb server configuration</a></p>
-<div class="note info no-icon"><p>点击启动调试后 cortex-debug 便会帮助我们通过本地 xGDB 客户端连接远程 GDB 服务器。</p>
-</div>
-
-<p>4. 建立连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.2.png"></p>
-<p>5. 远程调试</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此处省略一张在 vscode 中调试的图片</span><br></pre></td></tr></table></figure>
-
-<p>6. 断开连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.3.png"></p>
-<h3 id="JLink-JLinkRemoteServer"><a href="#JLink-JLinkRemoteServer" class="headerlink" title="JLink + JLinkRemoteServer"></a>JLink + JLinkRemoteServer</h3><h4 id="内网连接"><a href="#内网连接" class="headerlink" title="内网连接"></a>内网连接</h4><p>1. 在服务主机上配置开启 JLink 远程服务器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
-<p>2. 等待连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
-<p>3. 在本地主机上配置连接 JLink 远程服务器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.png"></p>
-<p>4. 建立连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
-<p>5. 远程调试</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.1.png"></p>
-<p>6. 断开连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
-<h4 id="隧道连接"><a href="#隧道连接" class="headerlink" title="隧道连接"></a>隧道连接</h4><p>1. 在服务主机上配置开启 JLink 远程服务器（隧道方式）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.0.png"></p>
-<p>2. 等待连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.1.png"></p>
-<p>3. 在本地主机上配置连接 JLink 远程服务器（隧道方式）</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.0.png"></p>
-<p>4. 建立连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.2.png"></p>
-<p>5. 远程调试</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.1.png"></p>
-<p>6. 断开连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.3.png"></p>
-<h3 id="KeilMDK-JLinkRemoteServer"><a href="#KeilMDK-JLinkRemoteServer" class="headerlink" title="KeilMDK + JLinkRemoteServer"></a>KeilMDK + JLinkRemoteServer</h3><h4 id="内网连接-1"><a href="#内网连接-1" class="headerlink" title="内网连接"></a>内网连接</h4><p>1. 在服务主机上配置开启 JLink 远程服务器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p>
-<p>2. 等待连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p>
-<p>3. 在本地主机上配置连接 JLink 远程服务器</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.Keil.MDK.png"></p>
-<p>4. 建立连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p>
-<p>5. 远程调试</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此处省略一张在 Keil MDK 中调试的图片</span><br></pre></td></tr></table></figure>
-
-<p>6. 断开连接</p>
-<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>集成开发环境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成开发环境－GCC.ARM（#01）环境搭建</title>
-    <url>/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html</url>
-    <content><![CDATA[<p><img src="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc/Download.VSC.png"></p>
-<span id="more"></span>
-
-<hr>
-<h2 id="编辑器安装"><a href="#编辑器安装" class="headerlink" title="编辑器安装"></a>编辑器安装</h2><ul>
-<li><strong>VSC</strong></li>
-</ul>
-<p><img src="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc/Download.VSC.png"></p>
-<center><a href="https://code.visualstudio.com/Download">https://code.visualstudio.com/Download</a></center>
-
-<ul>
-<li><strong>VS</strong></li>
-</ul>
-<p><img src="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc/Download.VS.png"></p>
-<center><a href="https://visualstudio.microsoft.com/downloads/">https://visualstudio.microsoft.com/downloads/</a></center>
-
-<ul>
-<li><strong>Eclipse.Embedded</strong></li>
-</ul>
-<p><img src="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc/Download.EclipseEmbedded.png"></p>
-<center><a href="https://www.eclipse.org/downloads/packages/">https://www.eclipse.org/downloads/packages/</a></center>
-
-<h2 id="编辑器插件"><a href="#编辑器插件" class="headerlink" title="编辑器插件"></a>编辑器插件</h2><ul>
-<li><strong><a href="https://github.com/Marus/cortex-debug/wiki">vscode :: cortex-debug</a></strong></li>
-<li><strong><a href="https://em-ide.com/zh-cn/">vscode :: eide</a></strong></li>
-</ul>
-<h2 id="编译器安装"><a href="#编译器安装" class="headerlink" title="编译器安装"></a>编译器安装</h2><ul>
-<li><strong><a href="https://packages.msys2.org/base/mingw-w64-arm-none-eabi-gcc">Arm GNU Toolchain on MSYS2</a> (pacman -S mingw-w64-x86_64-arm-none-eabi-gcc)</strong></li>
-<li><strong><a href="https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads">Arm GNU Toolchain (12.2.Rel1 based on GCC 12.2)</a></strong></li>
-<li><strong><a href="https://developer.arm.com/downloads/-/gnu-a">Arm GNU Toolchain for the Cortex-A (10.3-2021.07 based on GCC 10.3)</a></strong></li>
-<li><strong><a href="https://developer.arm.com/downloads/-/gnu-rm">Arm GNU Toolchain for the Cortex-R &amp; Cortex-M (10.3-2021.10 based on GCC 10.3)</a></strong></li>
-<li><strong><a href="https://xpack.github.io/dev-tools/arm-none-eabi-gcc/releases/">xPack GNU Arm Embedded GCC toolchain</a></strong></li>
-</ul>
-<div class="note danger no-icon"><p>记得将安装目录添加至系统环境变量</p>
-</div>
-
-<h2 id="调试器安装"><a href="#调试器安装" class="headerlink" title="调试器安装"></a>调试器安装</h2><ul>
-<li><strong><a href="https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack">JLink Installer</a></strong></li>
-<li><strong><a href="https://packages.msys2.org/base/mingw-w64-openocd">OpenOCD on MSYS2</a> (pacman -S mingw-w64-x86_64-openocd)</strong></li>
-<li><strong><a href="https://github.com/openocd-org/openocd/releases">OpenOCD prebuilt by OpenOCD.org</a></strong></li>
-<li><strong><a href="https://gnutoolchains.com/arm-eabi/openocd/">OpenOCD prebuilt by Sysprogs</a></strong></li>
-<li><strong><a href="https://xpack.github.io/dev-tools/openocd/releases/">OpenOCD prebuilt by xPackProject</a></strong></li>
-</ul>
-<div class="note danger no-icon"><p>记得将安装目录添加至系统环境变量</p>
-</div>
-
-<h2 id="构建器安装"><a href="#构建器安装" class="headerlink" title="构建器安装"></a>构建器安装</h2><ul>
-<li><strong><a href="https://www.msys2.org/">mingw-make in msys2</a></strong></li>
-<li><strong>cmake <a href="https://cmake.org/">download</a> (python -m pip install cmake) (winget install cmake)</strong></li>
-<li><strong>ninja <a href="https://ninja-build.org/">download</a> (python -m pip install ninja) (winget install ninja)</strong></li>
-<li><strong>scons <a href="https://scons.org/">download</a> (python -m pip install scons&#x3D;&#x3D;3.1.2)</strong></li>
-</ul>
-<div class="note info no-icon"><p>理论上安装完编辑器、编译器和调试器之后就能够进行开发了，安装上述工具是为了提高开发效率。</p>
-</div>
-
-<h2 id="必要的文件"><a href="#必要的文件" class="headerlink" title="必要的文件"></a>必要的文件</h2><ul>
-<li><strong>*.h, *.c</strong><br>代码文件：在 makefile 中引用进行编译</li>
-<li><strong>*.s</strong><br>启动文件：在 makefile 中引用进行编译</li>
-<li><strong>*.ld</strong><br>链接文件：在 makefile 中引用进行链接</li>
-<li><strong>*.svd</strong><br>描述文件：在 launch.json 中配置用于调试</li>
-</ul>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>集成开发环境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成开发环境－GCC.ARM（#02）程序构建</title>
-    <url>/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html</url>
-    <content><![CDATA[<p>倘若只有 main.h 和 main.c 两个文件，那么只需要执行少量的指令即可完成编译工作。但是实际上一个工程通常包含几十上百个文件，意味着要执行大量的编译指令才能得到目标文件，这是我们所无法接受的。因此需要借助 make、cmake、ninja、scons 等构建工具来提高开发效率。</p>
-<span id="more"></span>
-
-<h2 id="make"><a href="#make" class="headerlink" title="make"></a>make</h2><p>在 windows 系统中推荐使用 MSYS2 提供的 mingw32-make 程序。</p>
-<h3 id="生成脚本（makefile）"><a href="#生成脚本（makefile）" class="headerlink" title="生成脚本（makefile）"></a>生成脚本（makefile）</h3><p>相较于头开始写 makefile 脚本，先通过 STM32CubeMX 生成然后加以改造则要容易得多。</p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.0.png"></p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.1.png"></p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/GenerateMakefileByCubeMX.2.png"></p>
-<h3 id="修改脚本（makefile）"><a href="#修改脚本（makefile）" class="headerlink" title="修改脚本（makefile）"></a>修改脚本（makefile）</h3><ol>
-<li>修改文件列表（*.c &amp; *.s）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_SOURCES = \</span><br><span class="line">../../../code/Application/src/main.c \</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ASM_SOURCES = \</span><br><span class="line">startup_stm32f103xb.s \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
-<li>修改包含路径（*.h）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_INCLUDES = \</span><br><span class="line">-I../../../code/Application \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
-<li>修改全局定义（#define）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C_DEFS = \</span><br><span class="line">-DUSE_HAL_DRIVER \</span><br><span class="line">-DSTM32F103xB \</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
-<li>修改链接脚本（.ld）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LDSCRIPT = STM32F103C8Tx_FLASH.ld</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="执行编译"><a href="#执行编译" class="headerlink" title="执行编译"></a>执行编译</h3><p>在 makefile 所在的路径下执行 make 指令开始编译</p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.build.png"></p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.where.png"></p>
-<div class="note danger no-icon"><p>在 windows 系统中请使用 .&#x2F;mingw32-make 命令而非 .&#x2F;make 命令！</p>
-</div>
-
-<h3 id="清除编译"><a href="#清除编译" class="headerlink" title="清除编译"></a>清除编译</h3><p>若要清除刚才编译的中间文件，则需要修改 makefile 文件，然后执行 mingw32-make clean 指令。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">clean:</span><br><span class="line">#   -rm -fR $(BUILD_DIR)</span><br><span class="line">    -del /q $(BUILD_DIR)</span><br></pre></td></tr></table></figure>
-
-<p>这时你大概率会遇到以下问题：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.fail1.png"></p>
-<p>有人说将 clean 下的 -rm -fR $(BUILD_DIR) 改成 -del &#x2F;q $(BUILD_DIR) 就好了，实测并不管用。</p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.fail2.png"></p>
-<p>只有显式地将 SHELL 指定为 cmd 才行（在 makefile 中添加一条语句）：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq/make.clean.shell.png"></p>
-<h2 id="scons"><a href="#scons" class="headerlink" title="scons"></a>scons</h2><ul>
-<li>install <a href="https://www.python.org/downloads/">python</a></li>
-<li>install pip (python get-pip.py)</li>
-<li>install scons (python -m pip install scons&#x3D;&#x3D;3.1.2)</li>
-<li>install pywin32 (support scons -j16) (python -m pip install pywin32)</li>
-</ul>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">python/Scripts/scons.bat <span class="comment"># scons.bat is not necessary, just run scons directly.</span></span><br><span class="line">    python/Scripts/scons <span class="comment"># start</span></span><br><span class="line">        prepare</span><br><span class="line">        call SCons.Script.main() <span class="comment"># this does all the work, and calls sys.exit with the proper exit status when done.</span></span><br><span class="line">            scons: reading SConscript files.</span><br><span class="line">                &lt;rtconfig.py&gt;</span><br><span class="line">                &lt;rtconfig.py&gt;</span><br><span class="line">                &lt;sconstruct&gt;</span><br><span class="line">                    &lt;PrepareBuilding()&gt;</span><br><span class="line">                        <span class="comment"># bsp</span></span><br><span class="line">                        &lt;bsp.SConscript&gt; <span class="comment"># 逐级遍历当前路径下所有子目录中的 SConscript 脚本</span></span><br><span class="line">                            &lt;application.SConscript&gt;</span><br><span class="line">                            &lt;application.SConscript&gt;</span><br><span class="line">                            &lt;board.SConscript&gt;</span><br><span class="line">                            &lt;board.SConscript&gt;</span><br><span class="line">                            &lt;package.SConscript&gt;</span><br><span class="line">                            &lt;package.SConscript&gt;</span><br><span class="line">                            &lt;underlayer.SConscript&gt;</span><br><span class="line">                            &lt;underlayer.SConscript&gt;</span><br><span class="line">                        &lt;bsp.SConscript&gt;</span><br><span class="line">                        <span class="comment"># kernel</span></span><br><span class="line">                        &lt;rtt.src.SConscript&gt;</span><br><span class="line">                        &lt;rtt.src.SConscript&gt;</span><br><span class="line">                        <span class="comment"># libcpu</span></span><br><span class="line">                        &lt;rtt.libcpu.SConscript&gt;</span><br><span class="line">                        &lt;rtt.libcpu.SConscript&gt;</span><br><span class="line">                        <span class="comment"># components</span></span><br><span class="line">                        &lt;rtt.components.SConscript&gt;</span><br><span class="line">                        &lt;rtt.components.SConscript&gt;</span><br><span class="line">                    &lt;PrepareBuilding()&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/chip_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/chip_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/hal_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/hal_drv)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/components)&gt;</span><br><span class="line">                    &lt;SConscript(underlayer/chips/components)&gt;</span><br><span class="line">                    &lt;DoBuilding()&gt;</span><br><span class="line">                &lt;sconstruct&gt;</span><br><span class="line">            scons: done reading SConscript files.</span><br><span class="line"></span><br><span class="line">            scons: Building targets</span><br><span class="line">            scons: building associated VariantDir targets: build/gcc/obj</span><br><span class="line">                LINK rtthread.elf</span><br><span class="line">                arm-none-eabi-objcopy -O ihex rtthread.elf ./build/gcc/<span class="built_in">bin</span>/rtthread.<span class="built_in">hex</span></span><br><span class="line">            scons: done building targets. call exit() somewhere.</span><br><span class="line">    python/Scripts/scons <span class="comment"># exit</span></span><br></pre></td></tr></table></figure>
-
-<p>$ scons.bat<br>scons: Reading SConscript files …###############################<br>SConstruct enter !!!.#######################################<br>SDK_ROOT: E:\codespace\SPL1050\SPL1050V240112_vendor-Release_1.0.0.1_modified</p>
-<p>SConstruct building start !!!</p>
-<p>SConstruct exit !!!.#######################################<br>scons: done reading SConscript files.#######################################</p>
-<p>scons: Building targets …<br>scons: building associated VariantDir targets: build\gcc\obj<br>LINK rtthread.elf<br>Memory region         Used Size  Region Size  %age Used<br>      FalPartRAM:        1504 B         4 KB     36.72%<br>             ROM:      384448 B       380 KB     98.80%<br>             RAM:      200456 B       256 KB     76.47%<br>        Heap_RAM:          0 GB       127 KB      0.00%<br>FalPartTableInFlash:        1504 B         4 KB     36.72%<br>       CopyTable:          20 B         1 KB      1.95%<br>     CodeInFlash:      492096 B       768 KB     62.57%<br>          phycfg:          0 GB         4 KB      0.00%<br>arm-none-eabi-size rtthread.elf<br>   text    data     bss     dec     hex filename<br> 878048    8540  191936 1078524  1074fc rtthread.elf<br>arm-none-eabi-objcopy -O ihex rtthread.elf .&#x2F;build&#x2F;gcc&#x2F;bin&#x2F;rtthread.hex<br>scons: done building targets.</p>
-<h3 id="env-中突然不能编译的问题"><a href="#env-中突然不能编译的问题" class="headerlink" title="env 中突然不能编译的问题"></a>env 中突然不能编译的问题</h3><p>使用自己安装的 scons.bat 编译后，再用 env 中的 scons 编译有可能会报错，删除 <code>.sconsign.dblite</code> 后再编即可。</p>
-<h3 id="交叉编译工具链的路径问题"><a href="#交叉编译工具链的路径问题" class="headerlink" title="交叉编译工具链的路径问题"></a>交叉编译工具链的路径问题</h3><p>多人开发时，每个人的交叉编译工具链的安装位置都不同，这样就不能把绝对路径写入到 rtconfig.py 中并提交至代码仓库。既然绝对路径不行，那相对路径可以吗？也行不通，使用相对路径意味着交叉编译工具链也要同步提交至代码仓库，而 arm-none-eabi 的体积是比较大的，所以说我们通常不会这么做，那应该怎样优雅地解决这个问题呢？请继续往下看：</p>
-<p>只需要在 rtconfig.py 中添加以下代码即可解决！</p>
-<figure class="highlight py"><figcaption><span>rtconfig.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> configparser</span><br><span class="line"></span><br><span class="line"><span class="comment"># toolchains path</span></span><br><span class="line">cfg_path = <span class="string">r&#x27;rtconfig.ini&#x27;</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(cfg_path):</span><br><span class="line">    file = <span class="built_in">open</span>(cfg_path, <span class="string">&quot;w&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;# do not commit this file to the repository.\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;[COMPILER] # gcc, iar, mdk\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;COMPILER = gcc\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;GCC_PATH = do not commit this file to svn. replace with your arm-none-eabi-gcc path here in \&#x27;rtconfig.ini\&#x27;. (i.e. d:\\arm-none-eabi-10.3-2021.10\\bin)\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;IAR_PATH =\n&quot;</span>)</span><br><span class="line">    file.write(<span class="string">&quot;MDK_PATH =\n&quot;</span>)</span><br><span class="line">    file.close()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;rtconfig.ini not exists! but now it should have been generated automatically, you need to fill in some informations. greetings from liujitong.&#x27;</span>)</span><br><span class="line">    exit()</span><br><span class="line">cfg = configparser.ConfigParser()</span><br><span class="line">cfg.read(cfg_path)</span><br><span class="line">CROSS_TOOL = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;COMPILER&quot;</span>]</span><br><span class="line">gcc_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;GCC_PATH&quot;</span>]</span><br><span class="line">iar_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;IAR_PATH&quot;</span>]</span><br><span class="line">mdk_path = cfg[<span class="string">&quot;COMPILER&quot;</span>][<span class="string">&quot;MDK_PATH&quot;</span>]</span><br></pre></td></tr></table></figure>
-
-<p>其逻辑为：</p>
-<p>1. 检查 rtconfig.ini 是否存在。<br>2. 如果不存在则自动创建一个 rtconfig.ini 模板文件，并提醒开发人员进行修改。<br>3. 如果存在则从中提取交叉编译工具链的路径信息。</p>
-<p>下面是自动生成的 rtconfig.ini 模板</p>
-<figure class="highlight ini"><figcaption><span>rtconfig.ini</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># do not commit this file to the repository.</span></span><br><span class="line"><span class="section">[COMPILER]</span> <span class="comment"># gcc, iar, mdk</span></span><br><span class="line"><span class="attr">COMPILER</span> = gcc</span><br><span class="line"><span class="attr">GCC_PATH</span> = do not commit this file to svn. replace with your arm-none-eabi-gcc path here in <span class="string">&#x27;rtconfig.ini&#x27;</span>. (i.e. d:\\arm-none-eabi-<span class="number">10.3</span>-<span class="number">2021.10</span>\\bin)</span><br><span class="line"><span class="attr">IAR_PATH</span> =</span><br><span class="line">MDK_PATH =</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>集成开发环境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成开发环境－GCC.ARM（#03）程序烧录</title>
-    <url>/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html</url>
-    <content><![CDATA[<p>编程&#x2F;下载&#x2F;烧录的方式有多种，本文重点介绍以下两种烧录方式：</p>
-<ul>
-<li>JLink</li>
-<li>OpenOCD + JLink 仿真器</li>
-</ul>
-<p>其中 OpenOCD 可以搭配多种仿真器使用，这里以 JLink 仿真器为例进行说明。</p>
-<span id="more"></span>
-
-<h2 id="JLink"><a href="#JLink" class="headerlink" title="JLink"></a>JLink</h2><p>1. 确认是否购买了 JLink 仿真器并且已经安装了 JLink 程序。</p>
-<p>2. 在 makefile 中添加 write 选项：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.JLinkLoad.png"></p>
-<p>3. 在工程目录下新建 JLinkLoad.txt 文件并写入以下内容：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.JLinkLoad.code.png"></p>
-<p>4. 执行 mingw32-make write 指令：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.JLinkLoad.succ.png"></p>
-<div class="note danger no-icon"><p>再次提醒：需要使用 JLink 仿真器以及<strong>默认驱动</strong></p>
-</div>
-
-<div class="note danger no-icon"><p>如果你的电脑中有不止一个 “JLink” 程序，确保在 makefile 中通过绝对路径使用 JLink 命令。</p>
-</div>
-
-<p>下图是我安装了 JavaJDK 后系统中存在的 jlink 程序，只不过此 “jlink” 非彼 “JLink”！</p>
-<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.JLink.JavaJDK.png"></p>
-<h2 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h2><p>1. 确认是否购买了 JLink 仿真器并且已经安装了 OpenOCD 程序。</p>
-<p>2. 在 makefile 中添加 write 选项：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.OpenOCD.JLink.png"></p>
-<p>3. 在工程目录下新建 openocd.cfg 文件并写入以下内容：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.OpenOCD.JLink.code.png"></p>
-<blockquote>
-<p><a href="https://openocd.org/doc-release/html/OpenOCD-Project-Setup.html#Configuration-Basics">https://openocd.org/doc-release/html/OpenOCD-Project-Setup.html#Configuration-Basics</a></p>
-</blockquote>
-<p>4. 将 jlink.cfg 和 stm32f1x.cfg 拷贝至工程目录下。</p>
-<p>5. 使用 zadig 或 USBDriverTool 将仿真器的驱动从 WinUSB 改为 libusb 驱动。</p>
-<p>6. 执行 mingw32-make write 指令：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/make.write.OpenOCD.JLink.succ.png"></p>
-<h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><h3 id="问题一：未找到-JLink-仿真器"><a href="#问题一：未找到-JLink-仿真器" class="headerlink" title="问题一：未找到 JLink 仿真器"></a>问题一：未找到 JLink 仿真器</h3><p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/QA1.1.png"></p>
-<p>OpenOCD 对仿真器的支持是通过底层的访问控制实现的，不依赖仿真器自身的驱动，但是需要 libusb 驱动，因此我们需要使用 zadig 或 USBDriverTool 等工具将仿真器的默认驱动改为 libusb 驱动。</p>
-<p>需要注意的是，将驱动改成 libusb 之后，原有的调试软件例如 JLink&#x2F;Keil 将无法再识别到仿真器。</p>
-<p>如果你还想继续使用这些调试软件，则需要卸载掉当前的驱动程序并插拔一下仿真器：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/QA1.2.png"></p>
-<h3 id="问题二：SWD-amp-JTAG"><a href="#问题二：SWD-amp-JTAG" class="headerlink" title="问题二：SWD &amp; JTAG"></a>问题二：SWD &amp; JTAG</h3><p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/QA2.1.png"></p>
-<p>OpenOCD 提供的 jlink.cfg 脚本默认使用 JTAG 模式，而我们实际使用的是 SWD 模式。</p>
-<p>解决方法：在 openocd.cfg 文件中添加一条语句：</p>
-<p><img src="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b/QA2.2.png"></p>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>集成开发环境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成开发环境－GCC.ARM（#04）快捷任务</title>
-    <url>/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html</url>
-    <content><![CDATA[<hr>
-<ul>
-<li>tasks.json</li>
-</ul>
-<hr>
-<span id="more"></span>
-
-<p>通过 makefile 我们将海量的指令精简至一条 make+ 指令，但是我比较懒，一条指令都不想敲。😎</p>
-<p>1. 在工程目录下的 .vscode 目录中新建 tasks.json 文件并填入以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">    &quot;tasks&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;编译（build）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;清除（clean）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make clean&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;烧录（write）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make write&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;label&quot;: &quot;烧录（write.openocd）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">            &quot;command&quot;: &quot;cd project/GCC | mingw32-make write.openocd&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line"></span><br><span class="line">            ],</span><br><span class="line">            &quot;problemMatcher&quot;: [],</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<div class="note info no-icon"><p>在 cmd 中使用 “|” 连接两条指令，在 powershell 中使用 “;” 连接两条指令。</p>
-</div>
-
-<p>2. 找到菜单栏依次点击 Terminal -&gt; RunTask 然后选择：</p>
-<ul>
-<li>编译（build）</li>
-<li>清除（clean）</li>
-<li>烧录（write）</li>
-<li>烧录（write.openocd）</li>
-</ul>
-<p><img src="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz/task.json.png"></p>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>集成开发环境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成开发环境－GCC.ARM（#05）程序调试</title>
-    <url>/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html</url>
-    <content><![CDATA[<hr>
-<ul>
-<li>laugch.json</li>
-</ul>
-<hr>
-<span id="more"></span>
-
-<p>1. 在工程目录下的 .vscode 目录中新建 laugch.json 文件并填入以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@JLinkGDBServerCL.exe&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;jlink&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;: &quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;device&quot;: &quot;STM32F103CB&quot;,</span><br><span class="line">            &quot;interface&quot;: &quot;swd&quot;,</span><br><span class="line">            &quot;serverArgs&quot;: [</span><br><span class="line">                // &quot;-gui&quot;,</span><br><span class="line">            ],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@OpenOCD.exe&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;openocd&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;showDevDebugOutput&quot;: &quot;none&quot;,</span><br><span class="line">            &quot;configFiles&quot;: [</span><br><span class="line">                &quot;openocd/jlink-swd.cfg&quot;,</span><br><span class="line">                &quot;openocd/stm32f1x.cfg&quot;,</span><br><span class="line">            ],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">            &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">            &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;/project/GCC&quot;,</span><br><span class="line">            &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line"></span><br><span class="line">            &quot;gdbPath&quot;: &quot;D:/develop.r.0/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gdb.exe&quot;,</span><br><span class="line">            &quot;armToolchainPath&quot;: &quot;D:/develop.r.0/gcc-arm-none-eabi-10.3-2021.10/bin&quot;,</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>2. 进入侧边栏中的 RunAndDebug 然后选择</p>
-<ul>
-<li>Debug@JLinkGDBServerCL.exe</li>
-<li>Debug@OpenOCD.exe</li>
-<li>Debug@RemoteServer(GDBServer&#x2F;JLinkGDBServer)</li>
-</ul>
-<p><img src="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey/launch.json.png"></p>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>集成开发环境</tag>
-        <tag>IDE</tag>
+        <tag>在线升级</tag>
       </tags>
   </entry>
   <entry>
@@ -3096,6 +3096,58 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[将内部flash中的0xAAB
 
 <p>* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</p>
 <p>很可能是外部复位电路失效，导致复位引脚被拉低，进而导致内核一直处于复位状态。</p>
+]]></content>
+      <categories>
+        <category>问题记录</category>
+      </categories>
+      <tags>
+        <tag>华大半导体</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>问题记录：华大 HC32F460 程序烧录异常</title>
+    <url>/sulfurandcu.io/cloqsamml003qg4rqax6x02nz.html</url>
+    <content><![CDATA[<p>最近给 HC32F460 烧程序时，出现了烧录失败的现象。</p>
+<p>操作流程：</p>
+<ul>
+<li>在引导程序的 icg.h 文件中配置开启 SWDT 看门狗</li>
+<li>烧录引导程序</li>
+<li>烧录应用程序</li>
+<li>读取整个芯片的镜像</li>
+<li>把读取出来的镜像再烧回去</li>
+</ul>
+<p>诡异的是，最后一步总是失败。</p>
+<p>后面又进行了详细的测试：</p>
+<table>
+<thead>
+<tr>
+<th align="center">测试记录</th>
+<th align="center">编程算法</th>
+<th align="center">SWDT</th>
+<th align="center">烧录结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">旧版</td>
+<td align="center">关闭<br>或者延长狗叫时间</td>
+<td align="center">烧录成功</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">旧版</td>
+<td align="center">开启</td>
+<td align="center">在烧录回去之前，做一次整片擦除，但是不断电：烧录失败<br>在烧录回去之前，做一次整片擦除，断电再上电：烧录成功</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">新版</td>
+<td align="center">X</td>
+<td align="center">均可烧录成功</td>
+</tr>
+</tbody></table>
+<p>猜测应该是编程算法在烧录过程中没有屏蔽 SWDT 所致，更换新版编程算法即可解决。</p>
 ]]></content>
       <categories>
         <category>问题记录</category>
@@ -3198,48 +3250,26 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[将内部flash中的0xAAB
       </tags>
   </entry>
   <entry>
-    <title>问题记录：华大 HC32F460 程序烧录异常</title>
-    <url>/sulfurandcu.io/cloqsamml003qg4rqax6x02nz.html</url>
-    <content><![CDATA[<p>最近给 HC32F460 烧程序时，出现了烧录失败的现象。</p>
-<p>操作流程：</p>
-<ul>
-<li>在引导程序的 icg.h 文件中配置开启 SWDT 看门狗</li>
-<li>烧录引导程序</li>
-<li>烧录应用程序</li>
-<li>读取整个芯片的镜像</li>
-<li>把读取出来的镜像再烧回去</li>
+    <title>问题记录：华大 HC32F460 切换运行模式导致宕机</title>
+    <url>/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4.html</url>
+    <content><![CDATA[<h2 id="现象描述"><a href="#现象描述" class="headerlink" title="现象描述"></a>现象描述</h2><ul>
+<li>从高速&#x2F;超高速模式向超低速模式切换时 mcu 异常死机</li>
 </ul>
-<p>诡异的是，最后一步总是失败。</p>
-<p>后面又进行了详细的测试：</p>
-<table>
-<thead>
-<tr>
-<th align="center">测试记录</th>
-<th align="center">编程算法</th>
-<th align="center">SWDT</th>
-<th align="center">烧录结果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">旧版</td>
-<td align="center">关闭<br>或者延长狗叫时间</td>
-<td align="center">烧录成功</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">旧版</td>
-<td align="center">开启</td>
-<td align="center">在烧录回去之前，做一次整片擦除，但是不断电：烧录失败<br>在烧录回去之前，做一次整片擦除，断电再上电：烧录成功</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">新版</td>
-<td align="center">X</td>
-<td align="center">均可烧录成功</td>
-</tr>
-</tbody></table>
-<p>猜测应该是编程算法在烧录过程中没有屏蔽 SWDT 所致，更换新版编程算法即可解决。</p>
+<h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><ul>
+<li>当前使用华大 2.2.0 版驱动程序</li>
+<li>当前使用华大 1.2.1 版参考手册</li>
+</ul>
+<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>通过调试发现每次运行至 <code>M4_SYSREG-&gt;PWR_PWRC2</code> 赋值时程序就会跑飞😶</p>
+<p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2-Register.png" alt="电源模式控制寄存器 2"></p>
+<figure class="highlight c"><figcaption><span>hc32f460_pwc.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HS2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xE1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HP2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xD1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>瞅了一眼《参考手册 Rev1.2.1》好像也没啥问题，又看了《参考手册 Rev1.3》后，我得发…🙄！</p>
+<p>两版手册竟然不一样！</p>
+<span id="more"></span>
+
+<h3 id="Rev1-2-1"><a href="#Rev1-2-1" class="headerlink" title="Rev1.2.1"></a>Rev1.2.1</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2.png" alt="运行模式的切换流程（Rev1.2）"></p>
+<h3 id="Rev1-3-0"><a href="#Rev1-3-0" class="headerlink" title="Rev1.3.0"></a>Rev1.3.0</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.3.png" alt="运行模式的切换流程（Rev1.3）"></p>
+<p>这妥妥的是华大的锅了…</p>
 ]]></content>
       <categories>
         <category>问题记录</category>
@@ -3263,36 +3293,6 @@ IsChangeSucc--是--&gt;DoChangeInternalFlashUpdateFlag[将内部flash中的0xAAB
 <iframe src="https://www.desmos.com/calculator/2kz1rewo6h?embed" width="800" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 <iframe src="https://www.desmos.com/calculator/2py3qizn5x?embed" width="800" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-]]></content>
-      <categories>
-        <category>问题记录</category>
-      </categories>
-      <tags>
-        <tag>华大半导体</tag>
-        <tag>HC32F460</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>问题记录：华大 HC32F460 切换运行模式导致宕机</title>
-    <url>/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4.html</url>
-    <content><![CDATA[<h2 id="现象描述"><a href="#现象描述" class="headerlink" title="现象描述"></a>现象描述</h2><ul>
-<li>从高速&#x2F;超高速模式向超低速模式切换时 mcu 异常死机</li>
-</ul>
-<h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><ul>
-<li>当前使用华大 2.2.0 版驱动程序</li>
-<li>当前使用华大 1.2.1 版参考手册</li>
-</ul>
-<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>通过调试发现每次运行至 <code>M4_SYSREG-&gt;PWR_PWRC2</code> 赋值时程序就会跑飞😶</p>
-<p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2-Register.png" alt="电源模式控制寄存器 2"></p>
-<figure class="highlight c"><figcaption><span>hc32f460_pwc.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HS2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xE1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HP2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xD1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>瞅了一眼《参考手册 Rev1.2.1》好像也没啥问题，又看了《参考手册 Rev1.3》后，我得发…🙄！</p>
-<p>两版手册竟然不一样！</p>
-<span id="more"></span>
-
-<h3 id="Rev1-2-1"><a href="#Rev1-2-1" class="headerlink" title="Rev1.2.1"></a>Rev1.2.1</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2.png" alt="运行模式的切换流程（Rev1.2）"></p>
-<h3 id="Rev1-3-0"><a href="#Rev1-3-0" class="headerlink" title="Rev1.3.0"></a>Rev1.3.0</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.3.png" alt="运行模式的切换流程（Rev1.3）"></p>
-<p>这妥妥的是华大的锅了…</p>
 ]]></content>
       <categories>
         <category>问题记录</category>
