@@ -6,7 +6,7 @@
   <link href="https://sulfurandcu.github.io/sulfurandcu.io/atom.xml" rel="self"/>
   
   <link href="https://sulfurandcu.github.io/sulfurandcu.io/"/>
-  <updated>2024-06-30T01:51:48.000Z</updated>
+  <updated>2024-07-21T07:02:38.000Z</updated>
   <id>https://sulfurandcu.github.io/sulfurandcu.io/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通信模块设计说明</title>
+    <link href="https://sulfurandcu.github.io/sulfurandcu.io/clz2cld8l000q1orq40fzah1z.html"/>
+    <id>https://sulfurandcu.github.io/sulfurandcu.io/clz2cld8l000q1orq40fzah1z.html</id>
+    <published>2024-07-21T07:02:38.000Z</published>
+    <updated>2024-07-21T07:02:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/sulfurandcu.io/clz2cld8l000q1orq40fzah1z/cover.png"></p><br><table><thead><tr><th align="center">特性概述</th><th align="center">详细说明</th></tr></thead><tbody><tr><td align="center">较强的接收容错能力</td><td align="center">自动从下一个起始符继续匹配</td></tr><tr><td align="center">丰富的协议解析能力</td><td align="center">同一个端口支持解析多种协议</td></tr><tr><td align="center">灵活的端口转发能力</td><td align="center">支持在任意端口之间相互转发（转发时支持协议转换）</td></tr><tr><td align="center">良好的协议扩展能力</td><td align="center">采用星形拓扑｜方便后期扩展</td></tr></tbody></table><span id="more"></span><h2 id="较强的接收容错能力"><a href="#较强的接收容错能力" class="headerlink" title="较强的接收容错能力"></a>较强的接收容错能力</h2><p><img src="/sulfurandcu.io/clz2cld8l000q1orq40fzah1z/receive.png"></p><p>接收并解析一个正常的数据帧是比较容易实现的，但是有时候我们往往会碰到一些变态的场景或者变态的用户需求，比如说在一堆乱码中混入一个正常帧，又或者是在一个半帧后面接一个正常帧，在这种情况下程序能否正常解析，就很考验程序设计的功力了。目前的方案是，从第一个起始符开始尝试与指定的协议进行匹配，如果匹配成功，则正常返回；如果匹配失败，则自动从下一个字节或者下一个起始符开始继续匹配，直到匹配成功。</p><h2 id="丰富的协议解析能力"><a href="#丰富的协议解析能力" class="headerlink" title="丰富的协议解析能力"></a>丰富的协议解析能力</h2><p><img src="/sulfurandcu.io/clz2cld8l000q1orq40fzah1z/protocol.png"></p><p>我个人认为一个端口只支持解析一种协议的设计是很鸡肋的，无法满足一些变态的用户需求。为此，本人设计了一套全新的通信系统，支持在同一个端口上解析多种协议。其原理为，从底层数据缓冲区中一个字节一个字节地读取数据，每拿取一个字节，就与协议库中的若干协议比对一次，直到比对成功。</p><h2 id="灵活的端口转发能力"><a href="#灵活的端口转发能力" class="headerlink" title="灵活的端口转发能力"></a>灵活的端口转发能力</h2><p><img src="/sulfurandcu.io/clz2cld8l000q1orq40fzah1z/transforward.png"></p><p>数据帧在单个端口内完成接收、解析、处理、响应的设计是比较简单的，而一旦涉及到转发，事情就变得复杂了。首先，要想在任意端口之间转发，就不能把端口分成上行、下行，左行、右行也不行，所有端口都应该是平等的，且遵循同一套规则。其次，两个端口所用的协议有很大可能是不同的，所以还需要支持协议转换。协议转换详见下一章节。</p><h2 id="良好的协议扩展能力"><a href="#良好的协议扩展能力" class="headerlink" title="良好的协议扩展能力"></a>良好的协议扩展能力</h2><p><img src="/sulfurandcu.io/clz2cld8l000q1orq40fzah1z/topology.png"></p><p>协议转换最容易想到的就是两两转换，不过两两转换在协议少的时候还好说，干就完了，但是后期若是要扩展第三个、第Ｎ个协议，两两转换的弊端就显现出来了，其工作量可是呈C₂ⁿ级增长的。而星形拓扑的设计则可以很好地解决这个问题。</p><table><thead><tr><th align="center">协议数量</th><th align="center">网状拓扑 O(C₂ⁿ)</th><th align="center">星形拓扑 O(n)</th></tr></thead><tbody><tr><td align="center">2</td><td align="center">1</td><td align="center">2</td></tr><tr><td align="center">3</td><td align="center">3</td><td align="center">3</td></tr><tr><td align="center">4</td><td align="center">6</td><td align="center">4</td></tr><tr><td align="center">5</td><td align="center">10</td><td align="center">5</td></tr><tr><td align="center">6</td><td align="center">15</td><td align="center">6</td></tr></tbody></table><h2 id="通信模块的转发原理"><a href="#通信模块的转发原理" class="headerlink" title="通信模块的转发原理"></a>通信模块的转发原理</h2><p><img src="/sulfurandcu.io/clz2cld8l000q1orq40fzah1z/implementation.png"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/sulfurandcu.io/clz2cld8l000q1orq40fzah1z/cover.png&quot;&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;特性概述&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;详细说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;较强的接收容错能力&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;自动从下一个起始符继续匹配&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;丰富的协议解析能力&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;同一个端口支持解析多种协议&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;灵活的端口转发能力&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;支持在任意端口之间相互转发（转发时支持协议转换）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;良好的协议扩展能力&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;采用星形拓扑｜方便后期扩展&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>调试精灵使用说明</title>
@@ -62,8 +105,8 @@
   
   <entry>
     <title>freertos or rtthread ?</title>
-    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cly6rujeg009fe0rq4vw182x0.html"/>
-    <id>https://sulfurandcu.github.io/sulfurandcu.io/cly6rujeg009fe0rq4vw182x0.html</id>
+    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cm03lc8n5007fdgrqhk1m06ee.html"/>
+    <id>https://sulfurandcu.github.io/sulfurandcu.io/cm03lc8n5007fdgrqhk1m06ee.html</id>
     <published>2023-11-30T06:53:09.000Z</published>
     <updated>2023-11-30T06:53:09.000Z</updated>
     
@@ -232,8 +275,8 @@
   
   <entry>
     <title>开发指南：华大 HC32F460 &amp; HC32F4A0 比较</title>
-    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cly6rujf800g4e0rqfvbnc7mk.html"/>
-    <id>https://sulfurandcu.github.io/sulfurandcu.io/cly6rujf800g4e0rqfvbnc7mk.html</id>
+    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cm04j8glx00f9x8rq8j0j7d3e.html"/>
+    <id>https://sulfurandcu.github.io/sulfurandcu.io/cm04j8glx00f9x8rq8j0j7d3e.html</id>
     <published>2023-11-21T02:35:29.000Z</published>
     <updated>2023-11-21T02:35:29.000Z</updated>
     
@@ -350,9 +393,9 @@
     
     <category term="嵌入式软件开发" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
     
-    <category term="压缩解压算法" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%8E%8B%E7%AE%97%E6%B3%95/"/>
-    
     <category term="在线升级" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%9C%A8%E7%BA%BF%E5%8D%87%E7%BA%A7/"/>
+    
+    <category term="压缩解压算法" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%8E%8B%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -446,7 +489,7 @@
     <published>2023-09-30T16:00:04.000Z</published>
     <updated>2023-09-30T16:00:04.000Z</updated>
     
-    <content type="html"><![CDATA[<p>分散加载、中断向量表重定向</p><h2 id="调整大小程序时要修改哪些配置？"><a href="#调整大小程序时要修改哪些配置？" class="headerlink" title="调整大小程序时要修改哪些配置？"></a>调整大小程序时要修改哪些配置？</h2><p>➀ 修改 main.sct 分散加载文件。</p><p>➁ 修改 ConfigMCU 中大小程序的起始地址及空间大小。</p><p>➂ 修改 iap: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于小程序的起始地址）。</p><p>➃ 修改 app: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于大程序的起始地址）。</p><h2 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h2><ul><li><p>module_select_pattern</p><ul><li><ul><li></li></ul></li><li>*.o</li><li>.ANY</li></ul></li><li><p>module_select_pattern (input_section_selector)</p></li><li><h2 id="module-select-pattern-input-section-selector-input-section-selector-…-input-section-attr-RO-CODE-RO-DATA-RO-RW-DATA-RW-CODE-RW-XO-ZI-ENTRY"><a href="#module-select-pattern-input-section-selector-input-section-selector-…-input-section-attr-RO-CODE-RO-DATA-RO-RW-DATA-RW-CODE-RW-XO-ZI-ENTRY" class="headerlink" title="module_select_pattern (input_section_selector, input_section_selector, …)- +input_section_attr  - * (+RO-CODE)  - * (+RO-DATA)  - * (+RO)  - * (+RW-DATA)  - * (+RW-CODE)  - * (+RW)  - * (+XO)  - * (+ZI)  - * (+ENTRY)"></a>module_select_pattern (input_section_selector, input_section_selector, …)<br>- +input_section_attr<br>  - * (+RO-CODE)<br>  - * (+RO-DATA)<br>  - * (+RO)<br>  - * (+RW-DATA)<br>  - * (+RW-CODE)<br>  - * (+RW)<br>  - * (+XO)<br>  - * (+ZI)<br>  - * (+ENTRY)</h2><ul><li><ul><li>(+CODE)</li></ul></li><li><ul><li>(+CONST)</li></ul></li><li><ul><li>(+TEXT)</li></ul></li><li><ul><li>(+DATA)</li></ul></li><li><ul><li>(+BSS)</li></ul></li><li></li><li><ul><li>(+FIRST)</li></ul></li><li><ul><li>(+LAST)</li></ul></li><li>input_section_pattern<ul><li><ul><li>(*app_info)</li></ul></li></ul></li><li>input_symbol_pattern</li><li>section_properties</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>分散加载、中断向量表重定向</p><h2 id="调整大小程序时要修改哪些配置？"><a href="#调整大小程序时要修改哪些配置？" class="headerlink" title="调整大小程序时要修改哪些配置？"></a>调整大小程序时要修改哪些配置？</h2><p>➀ 修改 main.sct 分散加载文件。</p><p>➁ 修改 ConfigMCU 中大小程序的起始地址及空间大小。</p><p>➂ 修改 iap: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于小程序的起始地址）。</p><p>➃ 修改 app: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于大程序的起始地址）。</p><h2 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- module_select_pattern</span><br><span class="line">  - *</span><br><span class="line">  - *.o</span><br><span class="line">  - .ANY</span><br><span class="line"></span><br><span class="line">- module_select_pattern (input_section_selector)</span><br><span class="line">- module_select_pattern (input_section_selector, input_section_selector, ...)</span><br><span class="line">  - +input_section_attr</span><br><span class="line">    - * (+RO-CODE)</span><br><span class="line">    - * (+RO-DATA)</span><br><span class="line">    - * (+RO)</span><br><span class="line">    - * (+RW-DATA)</span><br><span class="line">    - * (+RW-CODE)</span><br><span class="line">    - * (+RW)</span><br><span class="line">    - * (+XO)</span><br><span class="line">    - * (+ZI)</span><br><span class="line">    - * (+ENTRY)</span><br><span class="line">    -</span><br><span class="line">    - * (+CODE)</span><br><span class="line">    - * (+CONST)</span><br><span class="line">    - * (+TEXT)</span><br><span class="line">    - * (+DATA)</span><br><span class="line">    - * (+BSS)</span><br><span class="line">    -</span><br><span class="line">    - * (+FIRST)</span><br><span class="line">    - * (+LAST)</span><br><span class="line">  - input_section_pattern</span><br><span class="line">    - * (*app_info)</span><br><span class="line">  - input_symbol_pattern</span><br><span class="line">  - section_properties</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
@@ -675,48 +718,6 @@ A(&amp;quot;在电路编程&amp;lt;br&amp;gt;(ＩＣＰ)&amp;quot;)---&amp;gt;B(
     <category term="华大半导体" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%8D%8E%E5%A4%A7%E5%8D%8A%E5%AF%BC%E4%BD%93/"/>
     
     <category term="HC32F460" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/HC32F460/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>集成开发环境－合集</title>
-    <link href="https://sulfurandcu.github.io/sulfurandcu.io/clo3okqut006mi0rq9ecvb34e.html"/>
-    <id>https://sulfurandcu.github.io/sulfurandcu.io/clo3okqut006mi0rq9ecvb34e.html</id>
-    <published>2023-07-04T16:00:00.000Z</published>
-    <updated>2023-07-04T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><p>各个平台下的开发环境搭建教程</p><ul><li><a href="/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html">ARM.GCC</a></li><li><a href="/sulfurandcu.io/404/index.html">ARM.MDK (TODO)</a></li><li><a href="/sulfurandcu.io/404/index.html">ARM.IAR (TODO)</a></li><li><a href="/sulfurandcu.io/404/index.html">ARM.SES (TODO)</a></li><li><a href="/sulfurandcu.io/404/index.html">ARM.ADS (TODO)</a></li><li><a href="/sulfurandcu.io/404/index.html">RV5.GCC (TODO)</a></li><li><a href="/sulfurandcu.io/404/index.html">RV5.IAR (TODO)</a></li><li><a href="/sulfurandcu.io/404/index.html">RV5.SES (TODO)</a></li><li><a href="/sulfurandcu.io/404/index.html">C51.MDK (TODO)</a></li><li><a href="/sulfurandcu.io/404/index.html">C51.IAR (TODO)</a></li><li><a href="/sulfurandcu.io/404/index.html">MSP.IAR (TODO)</a></li><li><a href="/sulfurandcu.io/404/index.html">AVR.IAR (TODO)</a></li><li><a href="/sulfurandcu.io/404/index.html">PIC.XXX (TODO)</a></li></ul><hr><span id="more"></span><h2 id="搭建方案"><a href="#搭建方案" class="headerlink" title="搭建方案"></a>搭建方案</h2><ul><li><strong>VSC</strong><ul><li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li><li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li><li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li><li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li><li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li></ul></li><li><strong>VS</strong><ul><li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li><li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li></ul></li><li><strong>Eclipse</strong></li><li><strong>Eclipse Based</strong><ul><li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a></li><li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a></li><li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a></li></ul></li></ul><h2 id="通用方案"><a href="#通用方案" class="headerlink" title="通用方案"></a>通用方案</h2><ul><li><a href="https://www.keil.arm.com/">KeilStudioCloud</a></li><li><a href="https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio">ADS</a><ul><li>ARM</li></ul></li><li><a href="https://www.keil.com/">MDK</a><ul><li>ARM <a href="https://www.keil.com/pr/article/1302.htm">(ARM 6 Will start shipping towards The End of 2023)</a></li><li>C51</li></ul></li><li><a href="https://www.iar.com/products/architectures/">IAR</a><ul><li>RV5</li><li>ARM</li><li>AVR</li><li>MSP</li><li>STM</li><li>C51</li></ul></li><li><a href="https://www.segger.com/products/development-tools/embedded-studio/">SES</a><ul><li>ARM</li><li>RV5</li></ul></li><li><a href="https://embeetle.com/#">EmbeetleIDE</a></li></ul><h2 id="专用方案"><a href="#专用方案" class="headerlink" title="专用方案"></a>专用方案</h2><ul><li><strong>Eclipse Based</strong><ul><li><a href="https://www.st.com/en/development-tools/sw4stm32.html">ST: SW4STM32 System Workbench for STM32</a></li><li><a href="https://www.st.com/en/development-tools/truestudio.html">ST: TrueStudio by Atollic before 2017</a></li><li><a href="">ST: STM32CubeIDE release in 2019 &#x3D; TrueStudio+STM32CubeMX</a></li><li><a href="https://www.renesas.com/us/en/software-tool/e-studio">Renesas: E2Studio</a></li></ul></li><li><strong>NetBeans Based</strong><ul><li><a href="https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide">Microchip: MPLAB X IDE</a></li></ul></li></ul><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://elmagnifico.tech/2022/03/14/Embeded-IDE/">https://elmagnifico.tech/2022/03/14/Embeded-IDE/</a><br><a href="https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/">https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;hr&gt;
-&lt;p&gt;各个平台下的开发环境搭建教程&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html&quot;&gt;ARM.GCC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;ARM.MDK (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;ARM.IAR (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;ARM.SES (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;ARM.ADS (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;RV5.GCC (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;RV5.IAR (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;RV5.SES (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;C51.MDK (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;C51.IAR (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;MSP.IAR (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;AVR.IAR (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/sulfurandcu.io/404/index.html&quot;&gt;PIC.XXX (TODO)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;</summary>
-    
-    
-    
-    <category term="开发笔记" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="嵌入式软件开发" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="集成开发环境" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
-    
-    <category term="IDE" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/IDE/"/>
     
   </entry>
   

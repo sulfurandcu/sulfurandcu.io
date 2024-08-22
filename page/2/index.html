@@ -144,7 +144,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">48</span>
+          <span class="site-state-item-count">50</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -155,7 +155,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">36</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -187,6 +187,92 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html" class="post-title-link" itemprop="url">嵌入式 IAP 升级功能（#06）差分还原 hpatchlite 移植</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-10-01 00:00:06" itemprop="dateCreated datePublished" datetime="2023-10-01T00:00:06+08:00">2023-10-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>最近发现了一个优秀的差分还原算法：hdiff &amp; hpatch，它通过数据流的思想把 O(n) 的空间复杂度转嫁给了硬盘，使得内存的开销极低，非常适合应用于嵌入式领域。</p>
+<p><img src="/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r/diff.tools.compare.png"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html#more" rel="contents">
+                « 閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -369,61 +455,7 @@
 <p>➁ 修改 ConfigMCU 中大小程序的起始地址及空间大小。</p>
 <p>➂ 修改 iap: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于小程序的起始地址）。</p>
 <p>➃ 修改 app: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于大程序的起始地址）。</p>
-<h2 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h2><ul>
-<li><p>module_select_pattern</p>
-<ul>
-<li><ul>
-<li></li>
-</ul>
-</li>
-<li>*.o</li>
-<li>.ANY</li>
-</ul>
-</li>
-<li><p>module_select_pattern (input_section_selector)</p>
-</li>
-<li><h2 id="module-select-pattern-input-section-selector-input-section-selector-…-input-section-attr-RO-CODE-RO-DATA-RO-RW-DATA-RW-CODE-RW-XO-ZI-ENTRY"><a href="#module-select-pattern-input-section-selector-input-section-selector-…-input-section-attr-RO-CODE-RO-DATA-RO-RW-DATA-RW-CODE-RW-XO-ZI-ENTRY" class="headerlink" title="module_select_pattern (input_section_selector, input_section_selector, …)- +input_section_attr  - * (+RO-CODE)  - * (+RO-DATA)  - * (+RO)  - * (+RW-DATA)  - * (+RW-CODE)  - * (+RW)  - * (+XO)  - * (+ZI)  - * (+ENTRY)"></a>module_select_pattern (input_section_selector, input_section_selector, …)<br>- +input_section_attr<br>  - * (+RO-CODE)<br>  - * (+RO-DATA)<br>  - * (+RO)<br>  - * (+RW-DATA)<br>  - * (+RW-CODE)<br>  - * (+RW)<br>  - * (+XO)<br>  - * (+ZI)<br>  - * (+ENTRY)</h2><ul>
-<li><ul>
-<li>(+CODE)</li>
-</ul>
-</li>
-<li><ul>
-<li>(+CONST)</li>
-</ul>
-</li>
-<li><ul>
-<li>(+TEXT)</li>
-</ul>
-</li>
-<li><ul>
-<li>(+DATA)</li>
-</ul>
-</li>
-<li><ul>
-<li>(+BSS)</li>
-</ul>
-</li>
-<li></li>
-<li><ul>
-<li>(+FIRST)</li>
-</ul>
-</li>
-<li><ul>
-<li>(+LAST)</li>
-</ul>
-</li>
-<li>input_section_pattern<ul>
-<li><ul>
-<li>(*app_info)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>input_symbol_pattern</li>
-<li>section_properties</li>
-</ul>
-</li>
-</ul>
+<h2 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- module_select_pattern</span><br><span class="line">  - *</span><br><span class="line">  - *.o</span><br><span class="line">  - .ANY</span><br><span class="line"></span><br><span class="line">- module_select_pattern (input_section_selector)</span><br><span class="line">- module_select_pattern (input_section_selector, input_section_selector, ...)</span><br><span class="line">  - +input_section_attr</span><br><span class="line">    - * (+RO-CODE)</span><br><span class="line">    - * (+RO-DATA)</span><br><span class="line">    - * (+RO)</span><br><span class="line">    - * (+RW-DATA)</span><br><span class="line">    - * (+RW-CODE)</span><br><span class="line">    - * (+RW)</span><br><span class="line">    - * (+XO)</span><br><span class="line">    - * (+ZI)</span><br><span class="line">    - * (+ENTRY)</span><br><span class="line">    -</span><br><span class="line">    - * (+CODE)</span><br><span class="line">    - * (+CONST)</span><br><span class="line">    - * (+TEXT)</span><br><span class="line">    - * (+DATA)</span><br><span class="line">    - * (+BSS)</span><br><span class="line">    -</span><br><span class="line">    - * (+FIRST)</span><br><span class="line">    - * (+LAST)</span><br><span class="line">  - input_section_pattern</span><br><span class="line">    - * (*app_info)</span><br><span class="line">  - input_symbol_pattern</span><br><span class="line">  - section_properties</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -1060,108 +1092,6 @@ A(&quot;在电路编程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系统编�
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup.html#more" rel="contents">
-                « 閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clo3okqut006mi0rq9ecvb34e.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
-      <meta itemprop="name" content="刘汲桐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clo3okqut006mi0rq9ecvb34e.html" class="post-title-link" itemprop="url">集成开发环境－合集</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2023-07-05 00:00:00" itemprop="dateCreated datePublished" datetime="2023-07-05T00:00:00+08:00">2023-07-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <hr>
-<p>各个平台下的开发环境搭建教程</p>
-<ul>
-<li><a href="/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html">ARM.GCC</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">ARM.MDK (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">ARM.IAR (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">ARM.SES (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">ARM.ADS (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">RV5.GCC (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">RV5.IAR (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">RV5.SES (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">C51.MDK (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">C51.IAR (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">MSP.IAR (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">AVR.IAR (TODO)</a></li>
-<li><a href="/sulfurandcu.io/404/index.html">PIC.XXX (TODO)</a></li>
-</ul>
-<hr>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/sulfurandcu.io/clo3okqut006mi0rq9ecvb34e.html#more" rel="contents">
                 « 閱讀全文 &raquo;
               </a>
             </div>
