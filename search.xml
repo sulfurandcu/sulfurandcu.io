@@ -155,19 +155,6 @@ docsify s
       </tags>
   </entry>
   <entry>
-    <title>二〇二一拼音漫游</title>
-    <url>/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7.html</url>
-    <content><![CDATA[<p><img src="/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7/2021.A.bopomofo.Odyssey.png"></p>
-]]></content>
-      <categories>
-        <category>语言文字</category>
-      </categories>
-      <tags>
-        <tag>汉语拼音</tag>
-        <tag>注音符号</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>思源字体使用指南</title>
     <url>/sulfurandcu.io/clnyhr2mj002010rq1hzhgzb2.html</url>
     <content><![CDATA[<p>思源字体是 adobe 的开源字体项目，属于泛中日韩字体，即支持中文、日文、韩文三种文字，其中中文又分为大陆字形、香港字形和台湾字形。</p>
@@ -328,6 +315,46 @@ docsify s
       </tags>
   </entry>
   <entry>
+    <title>二〇二一拼音漫游</title>
+    <url>/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7.html</url>
+    <content><![CDATA[<p><img src="/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7/2021.A.bopomofo.Odyssey.png"></p>
+]]></content>
+      <categories>
+        <category>语言文字</category>
+      </categories>
+      <tags>
+        <tag>汉语拼音</tag>
+        <tag>注音符号</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>dƷvorak</title>
+    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
+    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
+<br>
+
+<p style="font-family:courier new">
+　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
+　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
+　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
+　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
+</p>
+
+<span id="more"></span>
+
+<br>
+]]></content>
+      <categories>
+        <category>输入方案</category>
+      </categories>
+      <tags>
+        <tag>键位布局</tag>
+        <tag>qwerty</tag>
+        <tag>dvorak</tag>
+        <tag>dƷvorak</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>dƷvorak&#39;s impl.</title>
     <url>/sulfurandcu.io/cm03lc8mx006fdgrq688r2y8i.html</url>
     <content><![CDATA[<p style="font-family:courier new">
@@ -363,37 +390,10 @@ docsify s
       </categories>
       <tags>
         <tag>键位布局</tag>
+        <tag>qwerty</tag>
+        <tag>dvorak</tag>
+        <tag>dƷvorak</tag>
         <tag>机械键盘</tag>
-        <tag>qwerty</tag>
-        <tag>dvorak</tag>
-        <tag>dƷvorak</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>dƷvorak</title>
-    <url>/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html</url>
-    <content><![CDATA[<p><strong><center>The <a href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
-<br>
-
-<p style="font-family:courier new">
-　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
-　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
-　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
-　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
-</p>
-
-<span id="more"></span>
-
-<br>
-]]></content>
-      <categories>
-        <category>输入方案</category>
-      </categories>
-      <tags>
-        <tag>键位布局</tag>
-        <tag>qwerty</tag>
-        <tag>dvorak</tag>
-        <tag>dƷvorak</tag>
       </tags>
   </entry>
   <entry>
@@ -626,6 +626,25 @@ cpha = x
 ]]></content>
   </entry>
   <entry>
+    <title>DailyGenerator</title>
+    <url>/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</url>
+    <content><![CDATA[<center>beep...领导要求每天写日报，但是我不太想写，于是就有了本段代码。</center><br>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一键生成日报 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一键生成日报 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任务名称</span><br><span class="line">taskname = &quot;编码工作&quot;</span><br><span class="line"># 基准日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 过去几天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查询深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用户名称</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用户路径</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任务名称：&quot; + taskname + &quot;\n工作内容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任务名称：&quot; + taskname + &quot;\n工作内容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（计划&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>效率提升</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>svn</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>拓扑结构分析算法</title>
     <url>/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html</url>
     <content><![CDATA[<p>2022年09月01日于武汉</p>
@@ -804,25 +823,6 @@ N2---&gt;N2.3[&quot; &quot;]
       <tags>
         <tag>拓扑识别</tag>
         <tag>拓扑分析</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DailyGenerator</title>
-    <url>/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</url>
-    <content><![CDATA[<center>beep...领导要求每天写日报，但是我不太想写，于是就有了本段代码。</center><br>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一键生成日报 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一键生成日报 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任务名称</span><br><span class="line">taskname = &quot;编码工作&quot;</span><br><span class="line"># 基准日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 过去几天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查询深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用户名称</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用户路径</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任务名称：&quot; + taskname + &quot;\n工作内容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任务名称：&quot; + taskname + &quot;\n工作内容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（计划&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>效率提升</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>svn</tag>
       </tags>
   </entry>
   <entry>
