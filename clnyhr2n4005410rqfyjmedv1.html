@@ -26,10 +26,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html","path":"clnyhr2n4005410rqfyjmedv1.html","title":"嵌入式 IAP 升级功能（#04）技术细节"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html","path":"clnyhr2n4005410rqfyjmedv1.html","title":"嵌入式 IAP 在线升级－程序设计"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>嵌入式 IAP 升级功能（#04）技术细节 | ㄅㄆㄇㄈ</title>
+<title>嵌入式 IAP 在线升级－程序设计 | ㄅㄆㄇㄈ</title>
   
 
 
@@ -130,7 +130,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B0%83%E6%95%B4%E5%A4%A7%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%97%B6%E8%A6%81%E4%BF%AE%E6%94%B9%E5%93%AA%E4%BA%9B%E9%85%8D%E7%BD%AE%EF%BC%9F"><span class="nav-text">调整大小程序时要修改哪些配置？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%95%A3%E5%8A%A0%E8%BD%BD"><span class="nav-text">分散加载</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E5%AF%BC%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B"><span class="nav-text">引导程序流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B"><span class="nav-text">应用程序流程</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -145,7 +145,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">50</span>
+          <span class="site-state-item-count">46</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -156,7 +156,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">37</span>
+        <span class="site-state-item-count">36</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -211,12 +211,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="嵌入式 IAP 升级功能（#04）技术细节 | ㄅㄆㄇㄈ">
+      <meta itemprop="name" content="嵌入式 IAP 在线升级－程序设计 | ㄅㄆㄇㄈ">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          嵌入式 IAP 升级功能（#04）技术细节
+          嵌入式 IAP 在线升级－程序设计
         </h1>
 
         <div class="post-meta-container">
@@ -227,7 +227,7 @@
       </span>
       <span class="post-meta-item-text">發表於</span>
 
-      <time title="創建時間：2023-10-01 00:00:04" itemprop="dateCreated datePublished" datetime="2023-10-01T00:00:04+08:00">2023-10-01</time>
+      <time title="創建時間：2023-10-01 00:00:03" itemprop="dateCreated datePublished" datetime="2023-10-01T00:00:03+08:00">2023-10-01</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -248,12 +248,45 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>分散加载、中断向量表重定向</p>
-<h2 id="调整大小程序时要修改哪些配置？"><a href="#调整大小程序时要修改哪些配置？" class="headerlink" title="调整大小程序时要修改哪些配置？"></a>调整大小程序时要修改哪些配置？</h2><p>➀ 修改 main.sct 分散加载文件。</p>
-<p>➁ 修改 ConfigMCU 中大小程序的起始地址及空间大小。</p>
-<p>➂ 修改 iap: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于小程序的起始地址）。</p>
-<p>➃ 修改 app: system_mcumodel.c 中 VECT_TAB_OFFSET 的值（等于大程序的起始地址）。</p>
-<h2 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- module_select_pattern</span><br><span class="line">  - *</span><br><span class="line">  - *.o</span><br><span class="line">  - .ANY</span><br><span class="line"></span><br><span class="line">- module_select_pattern (input_section_selector)</span><br><span class="line">- module_select_pattern (input_section_selector, input_section_selector, ...)</span><br><span class="line">  - +input_section_attr</span><br><span class="line">    - * (+RO-CODE)</span><br><span class="line">    - * (+RO-DATA)</span><br><span class="line">    - * (+RO)</span><br><span class="line">    - * (+RW-DATA)</span><br><span class="line">    - * (+RW-CODE)</span><br><span class="line">    - * (+RW)</span><br><span class="line">    - * (+XO)</span><br><span class="line">    - * (+ZI)</span><br><span class="line">    - * (+ENTRY)</span><br><span class="line">    -</span><br><span class="line">    - * (+CODE)</span><br><span class="line">    - * (+CONST)</span><br><span class="line">    - * (+TEXT)</span><br><span class="line">    - * (+DATA)</span><br><span class="line">    - * (+BSS)</span><br><span class="line">    -</span><br><span class="line">    - * (+FIRST)</span><br><span class="line">    - * (+LAST)</span><br><span class="line">  - input_section_pattern</span><br><span class="line">    - * (*app_info)</span><br><span class="line">  - input_symbol_pattern</span><br><span class="line">  - section_properties</span><br></pre></td></tr></table></figure>
+    <div class="post-body" itemprop="articleBody"><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+A1(引导程序之流程)--&gt;B1(......)--&gt;C1(跳转至应用程序)
+A2(应用程序之流程)--&gt;B2(......)--&gt;C2(跳转至引导程序)
+</pre>
+
+<span id="more"></span>
+
+<h2 id="引导程序流程"><a href="#引导程序流程" class="headerlink" title="引导程序流程"></a>引导程序流程</h2><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+PowerReset(设备上电复位)--&gt;IapStart(引导程序开始)--&gt;IapCheckApp[检查应用程序&lt;br&gt;检查升级标识&lt;br&gt;检查停留标识]--&gt;IapIsAppValid{程序有效&lt;br&gt;无需升级&lt;br&gt;无需停留}
+IapIsAppValid--是--&gt;IapJumpToApp[跳转进入应用程序]--&gt;IapOver(引导程序结束)
+IapIsAppValid--否--&gt;IapInit[配置相关外设]--&gt;IapCatchKeyboardInput{检测按键}
+IapCatchKeyboardInput--持续一秒--&gt;IapCatchKeyboardInput
+IapCatchKeyboardInput--有回车键按下&lt;br&gt;或&lt;br&gt;升级控制区中的停留标识立起---&gt;IapSetStayFlag[置位停留标识]--&gt;IapIsHaveUpdateData{是否存在&lt;br&gt;升级数据}
+IapCatchKeyboardInput--超时--&gt;IapIsHaveUpdateData
+IapIsHaveUpdateData--否---&gt;IapIsNeedWait{是否停留}
+IapIsNeedWait--否--&gt;IapBeforeJump
+IapIsNeedWait--是--&gt;IapWait{延时计数}
+IapWait--持续一分钟--&gt;IapWait
+IapWait--超时--------&gt;IapBeforeJump
+IapIsHaveUpdateData--是--&gt;IapDoUpdate[执行升级操作]---&gt;IapIsUpdateSucc{升级成功}
+IapIsUpdateSucc--是---&gt;IapBeforeJump[关闭外设和中断]--&gt;IapJumpToApp
+IapIsUpdateSucc--否--&gt;IapIsAppExist{程序完好}
+IapIsAppExist--是--&gt;IapBeforeJump
+IapIsAppExist--否--&gt;IapComm[留在引导程序&lt;br&gt;执行交互任务]--&gt;IapIsRecvDone{收到升级包}
+IapIsRecvDone--否--&gt;IapComm
+IapIsRecvDone--是--&gt;IapDoUpdate
+</pre>
+
+<h2 id="应用程序流程"><a href="#应用程序流程" class="headerlink" title="应用程序流程"></a>应用程序流程</h2><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+AppStart(应用程序开始)--&gt;AppRemap[重定向中断向量表]--&gt;AppInit[配置相关外设]--&gt;AppTask[执行应用功能&lt;br&gt;执行通信任务]--&gt;AppIsRecvDone{收到升级包}
+AppIsRecvDone--否--&gt;AppTask
+AppIsRecvDone--是--&gt;AppSetAppInvalid[设置升级标识]--&gt;AppBeforeJump[关闭外设和中断]--&gt;AppJumpToIap[重启进入引导程序｜跳转进入引导程序]--&gt;AppOver(应用程序结束)
+</pre>
 
     </div>
 
@@ -271,7 +304,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>鏈接：</strong>
-      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html" title="嵌入式 IAP 升级功能（#04）技术细节">https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html</a>
+      <a href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html" title="嵌入式 IAP 在线升级－程序设计">https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html</a>
   </li>
   <li class="post-copyright-license">
       <strong>聲明： </strong>請遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議｜姓名標示｜相同方式分享
@@ -288,13 +321,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clnyhr2n3005010rqf3gcgp39.html" rel="prev" title="嵌入式 IAP 升级功能（#03）流程设计">
-                  <i class="fa fa-angle-left"></i> 嵌入式 IAP 升级功能（#03）流程设计
+                <a href="/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html" rel="prev" title="嵌入式 IAP 在线升级－整体方案">
+                  <i class="fa fa-angle-left"></i> 嵌入式 IAP 在线升级－整体方案
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/sulfurandcu.io/clnyhr2n4005710rqfv00ckub.html" rel="next" title="嵌入式 IAP 升级功能（#05）增量升级">
-                  嵌入式 IAP 升级功能（#05）增量升级 <i class="fa fa-angle-right"></i>
+                <a href="/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html" rel="next" title="嵌入式 IAP 在线升级－差分还原 hpatchlite 移植">
+                  嵌入式 IAP 在线升级－差分还原 hpatchlite 移植 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
