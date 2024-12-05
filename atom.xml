@@ -6,7 +6,7 @@
   <link href="https://sulfurandcu.github.io/sulfurandcu.io/atom.xml" rel="self"/>
   
   <link href="https://sulfurandcu.github.io/sulfurandcu.io/"/>
-  <updated>2024-09-04T09:17:34.000Z</updated>
+  <updated>2024-12-05T10:45:59.000Z</updated>
   <id>https://sulfurandcu.github.io/sulfurandcu.io/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>把 RT-THREAD 设备框架移植到裸机平台</title>
+    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cm4aw35rg000270rq43hj5g6x.html"/>
+    <id>https://sulfurandcu.github.io/sulfurandcu.io/cm4aw35rg000270rq43hj5g6x.html</id>
+    <published>2024-12-05T10:45:59.000Z</published>
+    <updated>2024-12-05T10:45:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这 RT-THREAD 的设备框架确实是个好东西，能不能移植到裸机工程上，为我 bootloader 所用呢😏？</p><p>事实证明可以😎！</p><p><img src="/sulfurandcu.io/cm4aw35rg000270rq43hj5g6x/architecture.png"></p><span id="more"></span><h2 id="移植前（向下调用机制）"><a href="#移植前（向下调用机制）" class="headerlink" title="移植前（向下调用机制）"></a>移植前（向下调用机制）</h2><p><img src="/sulfurandcu.io/cm4aw35rg000270rq43hj5g6x/now.png"></p><h2 id="移植后（向上注册机制）"><a href="#移植后（向上注册机制）" class="headerlink" title="移植后（向上注册机制）"></a>移植后（向上注册机制）</h2><p><img src="/sulfurandcu.io/cm4aw35rg000270rq43hj5g6x/redesign.png"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这 RT-THREAD 的设备框架确实是个好东西，能不能移植到裸机工程上，为我 bootloader 所用呢😏？&lt;/p&gt;
+&lt;p&gt;事实证明可以😎！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/sulfurandcu.io/cm4aw35rg000270rq43hj5g6x/architecture.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>项目代码管理方案</title>
+    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cm4azoo32001n70rqdt923mqq.html"/>
+    <id>https://sulfurandcu.github.io/sulfurandcu.io/cm4azoo32001n70rqdt923mqq.html</id>
+    <published>2024-11-22T12:12:46.000Z</published>
+    <updated>2024-11-22T12:12:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/sulfurandcu.io/cm4azoo32001n70rqdt923mqq/solution.png"></p><center><b>“项目化交付”模式下的“基线产品化”方案</b></center><br><span id="more"></span><h2 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h2><p><img src="/sulfurandcu.io/cm4azoo32001n70rqdt923mqq/current_situation.png"></p><ul><li>模块、创新、成果分散在各个项目中，难以维护、继承、复用、持续优化。</li><li>修复的缺陷无法继承，重复的问题一而再，再而三出现，项目质量难以保证。</li><li>重复的工作，开发体验差。</li></ul><h2 id="可行的方案"><a href="#可行的方案" class="headerlink" title="可行的方案"></a>可行的方案</h2><p><img src="/sulfurandcu.io/cm4azoo32001n70rqdt923mqq/solution_dir.png"></p><ol><li>建立组件库和基线库：</li></ol><ul><li>组件库<ul><li>软件复用模块</li><li>实时操作系统</li><li>硬件标准接口</li><li>硬件平台驱动</li><li>硬件设备驱动</li></ul></li><li>基线库<ul><li>升级引导程序基线工程（bootloader）</li><li>裸机循环系统基线工程（NoOS）</li><li>实时操作系统基线工程（RTOS）</li><li>通用操作系统基线工程（Linux *optional）</li></ul></li></ul><ol start="2"><li>现有的项目经过整合、汇总，形成项目库：</li></ol><ul><li>项目库<ul><li>项目Ａ</li><li>项目Ｂ</li><li>项目Ｃ</li></ul></li></ul><ol start="3"><li>后期新的项目在基线工程的基础上创建</li><li>在各个项目上所做的优化、创新，要及时回馈到「基线工程」和「组件库」中。</li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/sulfurandcu.io/cm4azoo32001n70rqdt923mqq/solution.png&quot;&gt;&lt;/p&gt;
+&lt;center&gt;&lt;b&gt;“项目化交付”模式下的“基线产品化”方案&lt;/b&gt;&lt;/center&gt;&lt;br&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Kconfig</title>
@@ -307,7 +344,7 @@
     
     
     
-    <category term="开发指北" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E6%8C%87%E5%8C%97/"/>
+    <category term="开发笔记" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -332,7 +369,7 @@
     
     
     
-    <category term="开发指南" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/"/>
+    <category term="开发笔记" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="华大半导体" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%8D%8E%E5%A4%A7%E5%8D%8A%E5%AF%BC%E4%BD%93/"/>
@@ -641,7 +678,7 @@ A(&amp;quot;在电路编程&amp;lt;br&amp;gt;(ＩＣＰ)&amp;quot;)---&amp;gt;B(
     
     
     
-    <category term="开发指南" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/"/>
+    <category term="开发笔记" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="华大半导体" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%8D%8E%E5%A4%A7%E5%8D%8A%E5%AF%BC%E4%BD%93/"/>
@@ -689,60 +726,6 @@ A(&amp;quot;在电路编程&amp;lt;br&amp;gt;(ＩＣＰ)&amp;quot;)---&amp;gt;B(
     <category term="集成开发环境" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
     
     <category term="IDE" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/IDE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>集成开发环境－DBG</title>
-    <link href="https://sulfurandcu.github.io/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html"/>
-    <id>https://sulfurandcu.github.io/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html</id>
-    <published>2023-07-04T09:23:25.000Z</published>
-    <updated>2023-07-04T09:23:25.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p><span id="more"></span><h2 id="专用的调试模块"><a href="#专用的调试模块" class="headerlink" title="专用的调试模块"></a>专用的调试模块</h2><p>常见的 IDE 内部都集成了一个专用的 GUI 调试器，且不能拎出来单独使用。</p><ul><li>ADS</li><li>IAR</li><li>MDK</li><li>Visual Studio</li></ul><h2 id="独立的调试工具"><a href="#独立的调试工具" class="headerlink" title="独立的调试工具"></a>独立的调试工具</h2><p>当然也有一些可以独立使用的调试器，例如：</p><ul><li>CLI: GDB, LLDB</li><li>GUI: x64dbg, WinDBG, OllyDBG</li></ul><h2 id="图形调试器"><a href="#图形调试器" class="headerlink" title="图形调试器"></a>图形调试器</h2><h2 id="适配器协议（DebugAdapterProtocol）"><a href="#适配器协议（DebugAdapterProtocol）" class="headerlink" title="适配器协议（DebugAdapterProtocol）"></a>适配器协议（DebugAdapterProtocol）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapterProtocol.png"></p><p>不论是专用的调试模块还是独立的调试工具，如果想支持调试多种语言，就必须要为每一种语言开发一套对应的调试程序，并且每个工具厂商都要独自去完成这些工作。为了减少不必要的重复劳动，微软制定了一套通用的调试协议，借助该协议各工具厂商只需要开发一套调试程序，向下再借助各种调试适配工具即可具备调试所有语言的能力。</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png"></p><center><a href="https://microsoft.github.io/debug-adapter-protocol/">Debug Adapter Protocol (DAP)</a></center><br><p>目前实现该调试协议的开发工具有（常用的）：</p><ul><li>VSC</li><li>VS</li><li>vim</li><li>emacs</li><li>EclipseIDE</li></ul><p>btw, 微软还制定了一套通用的语言服务器协议 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/LanguageServerProtocol(LSP).png"></p><center><a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a></center><h2 id="调试适配器（DebugAdapter）"><a href="#调试适配器（DebugAdapter）" class="headerlink" title="调试适配器（DebugAdapter）"></a>调试适配器（DebugAdapter）</h2><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugAdapter.png"></p><p>调试适配器是对各类调试器的封装，遵循 DAP 协议对上提供统一的接口，以简化上层开发工具。常用的调试适配器有：</p><ul><li><a href="https://github.com/Microsoft/vscode-cpptools">cpptools (C&#x2F;C++ Debug Adapter)</a></li><li><a href="https://github.com/Marus/cortex-debug">cortex-debug (Embedded C&#x2F;C++ Debug Adapter)</a></li></ul><h2 id="命令调试器（Debugger）"><a href="#命令调试器（Debugger）" class="headerlink" title="命令调试器（Debugger）"></a>命令调试器（Debugger）</h2><ul><li><a href="https://sourceware.org/gdb/">GDB: The GNU Project Debugger</a><ul><li><a href="https://sourceware.org/gdb/onlinedocs/gdb/Remote-Protocol.html">↑ GDB&#x2F;MI</a></li><li><a href="https://sourceware.org/gdb/onlinedocs/gdb/GDB_002fMI.html">↓ GDB Remote Serial Protocol</a></li></ul></li><li><a href="https://developer.arm.com/downloads/-/gnu-rm">arm-none-eabi-gdb: GNU Arm Embedded GDB</a></li></ul><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Debugger.png"></p><h2 id="调试服务器（DebugServer）"><a href="#调试服务器（DebugServer）" class="headerlink" title="调试服务器（DebugServer）"></a>调试服务器（DebugServer）</h2><ul><li>OpenOCD</li><li>PyOCD</li><li>JLinkGDBServer</li><li>……</li></ul><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.DebugServer.png"></p><h2 id="仿真器驱动（DongleDriver）"><a href="#仿真器驱动（DongleDriver）" class="headerlink" title="仿真器驱动（DongleDriver）"></a>仿真器驱动（DongleDriver）</h2><ul><li>SEGGER JLink USB Driver</li><li>SEGGER WinUSB USB Device Driver</li></ul><h2 id="仿真器设备（Dongle）"><a href="#仿真器设备（Dongle）" class="headerlink" title="仿真器设备（Dongle）"></a>仿真器设备（Dongle）</h2><ul><li>CMSIS-DAP</li><li>SEGGER JLink</li></ul><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Dongle.png"></p><h2 id="仿真器协议（DongleTransportProtocol）"><a href="#仿真器协议（DongleTransportProtocol）" class="headerlink" title="仿真器协议（DongleTransportProtocol）"></a>仿真器协议（DongleTransportProtocol）</h2><ul><li>JTAG <a href="https://www.corelis.com/education/tutorials/jtag-tutorial/">https://www.corelis.com/education/tutorials/jtag-tutorial/</a></li><li>SWD</li></ul><h2 id="目标板芯片（TargetBoard）"><a href="#目标板芯片（TargetBoard）" class="headerlink" title="目标板芯片（TargetBoard）"></a>目标板芯片（TargetBoard）</h2><ul><li>STM32F103CB</li><li>STM32F407VE</li></ul><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/Arch.Target.png"></p><h2 id="本地与远程调试"><a href="#本地与远程调试" class="headerlink" title="本地与远程调试"></a>本地与远程调试</h2><p>远程调试方案也有很多，这里只对以下几种方式作一简要介绍：</p><ul><li>OpenOCD</li><li>VSCode + JLinkGDBServer</li><li>JLink + JLinkRemoteServer</li><li>KeilMDK + JLinkRemoteServer</li></ul><h3 id="OpenOCD"><a href="#OpenOCD" class="headerlink" title="OpenOCD"></a>OpenOCD</h3><p>略.</p><h3 id="VSCode-JLinkGDBServer"><a href="#VSCode-JLinkGDBServer" class="headerlink" title="VSCode + JLinkGDBServer"></a>VSCode + JLinkGDBServer</h3><p>1. 在服务主机上配置开启 JLink 调试服务器（该服务器会监听 2331 端口）</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.0.png"></p><div class="note danger no-icon"><p>不要勾选 Localhost Only 选项！</p></div><p>2. 等待连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.1.png"></p><p>3. 在本地主机上配置 launch.json 文件并启动调试</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot;: &quot;Debug@RemoteServer(GDBServer/JLinkGDBServer)&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;cortex-debug&quot;,</span><br><span class="line">    &quot;servertype&quot;: &quot;external&quot;,</span><br><span class="line">    &quot;request&quot;: &quot;attach&quot;,</span><br><span class="line">    &quot;cwd&quot;:&quot;$&#123;workspaceRoot&#125;&quot;,</span><br><span class="line">    &quot;executable&quot;: &quot;./build/main.elf&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;gdbTarget&quot;: &quot;192.168.1.1:2331&quot;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure><p><a href="https://github.com/Marus/cortex-debug/issues/244">cortex-debug-issues#244 : remote debugging</a><br><a href="https://github.com/Marus/cortex-debug/wiki/External-gdb-server-configuration">cortex-debug-wiki : external gdb server configuration</a></p><div class="note info no-icon"><p>点击启动调试后 cortex-debug 便会帮助我们通过本地 xGDB 客户端连接远程 GDB 服务器。</p></div><p>4. 建立连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.2.png"></p><p>5. 远程调试</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此处省略一张在 vscode 中调试的图片</span><br></pre></td></tr></table></figure><p>6. 断开连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkGDBServer.LAN.Server.3.png"></p><h3 id="JLink-JLinkRemoteServer"><a href="#JLink-JLinkRemoteServer" class="headerlink" title="JLink + JLinkRemoteServer"></a>JLink + JLinkRemoteServer</h3><h4 id="内网连接"><a href="#内网连接" class="headerlink" title="内网连接"></a>内网连接</h4><p>1. 在服务主机上配置开启 JLink 远程服务器</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p><p>2. 等待连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p><p>3. 在本地主机上配置连接 JLink 远程服务器</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.png"></p><p>4. 建立连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p><p>5. 远程调试</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.1.png"></p><p>6. 断开连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p><h4 id="隧道连接"><a href="#隧道连接" class="headerlink" title="隧道连接"></a>隧道连接</h4><p>1. 在服务主机上配置开启 JLink 远程服务器（隧道方式）</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.0.png"></p><p>2. 等待连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.1.png"></p><p>3. 在本地主机上配置连接 JLink 远程服务器（隧道方式）</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.0.png"></p><p>4. 建立连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.2.png"></p><p>5. 远程调试</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Client.1.png"></p><p>6. 断开连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.Tunnel.Server.3.png"></p><h3 id="KeilMDK-JLinkRemoteServer"><a href="#KeilMDK-JLinkRemoteServer" class="headerlink" title="KeilMDK + JLinkRemoteServer"></a>KeilMDK + JLinkRemoteServer</h3><h4 id="内网连接-1"><a href="#内网连接-1" class="headerlink" title="内网连接"></a>内网连接</h4><p>1. 在服务主机上配置开启 JLink 远程服务器</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.0.png"></p><p>2. 等待连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.1.png"></p><p>3. 在本地主机上配置连接 JLink 远程服务器</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Client.0.Keil.MDK.png"></p><p>4. 建立连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.2.png"></p><p>5. 远程调试</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">此处省略一张在 Keil MDK 中调试的图片</span><br></pre></td></tr></table></figure><p>6. 断开连接</p><p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/sulfurandcu.io/clockxig7001dj4rqc2n6542r/DebugAdapterProtocol(DAP).png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="开发笔记" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="嵌入式软件开发" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="集成开发环境" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
-    
-    <category term="IDE" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/IDE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>问题记录：华大 HC32F460 超频过猛导致 MCU 宕机</title>
-    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cloqxdq0v001nmgrq2um386nw.html"/>
-    <id>https://sulfurandcu.github.io/sulfurandcu.io/cloqxdq0v001nmgrq2um386nw.html</id>
-    <published>2023-06-30T16:00:00.000Z</published>
-    <updated>2023-06-30T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近又把 MCU 给干废了，现象如下：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Load &quot;main.axf&quot;</span><br><span class="line">* JLink Info: Device &quot;CORTEX-M4&quot; selected.</span><br><span class="line">Set JLink Project File to &quot;JLinkSettings.ini&quot;</span><br><span class="line">* JLink Info: Device &quot;CORTEX-M4&quot; selected.</span><br><span class="line"></span><br><span class="line">JLink info:</span><br><span class="line">------------</span><br><span class="line">DLL: V7.22b, compiled Jun 17 2021 17:22:49</span><br><span class="line">Firmware: J-Link V9 compiled May  7 2021 16:26:12</span><br><span class="line">Hardware: V9.60</span><br><span class="line">S/N : 69667602</span><br><span class="line">Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash</span><br><span class="line"></span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Skipped. Invalid implementer code read from CPUIDVal[31:24] = 0x00</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Skipped. Invalid implementer code read from CPUIDVal[31:24] = 0x00</span><br><span class="line"></span><br><span class="line">***JLink Error: Could not find core in Coresight setup</span><br><span class="line"></span><br><span class="line">Error: Flash Download failed  -  Target DLL has been cancelled</span><br><span class="line">Flash Load finished at 10:35:22</span><br></pre></td></tr></table></figure><p>事情经过是这样的，某款产品第一版硬件的时钟源选用的是 6MHz 的外部晶振，内部倍频至 128MHz 作为系统主频，而第二版则改成了 24MHz 的外部晶振，第二版硬件出来后，将第一版程序直接烧录进第二版硬件后 MCU 无法正常启动且无法被识别。</p><p>初步推测，应该是外部晶振频率提高，但是程序没有进行适当地分频，导致系统主频远远超过数据手册中规定的频率上限（200MHz）。</p><!--公式使用工具 https://latexlive.com/ 生成\begin{align}& 128MHz × (24MHz / 6MHz) = 512MHz \ \ \ > \ \ \ MAX(200MHz) \\\end{align}--></p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable displaystyle="true" columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt"><mtr><mtd></mtd><mtd><mn>128</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo>×</mo><mo stretchy="false">(</mo><mn>24</mn><mi>M</mi><mi>H</mi><mi>z</mi><mrow><mo>/</mo></mrow><mn>6</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><mn>512</mn><mi>M</mi><mi>H</mi><mi>z</mi><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mo>&gt;</mo><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mi>M</mi><mi>A</mi><mi>X</mi><mo stretchy="false">(</mo><mn>200</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo stretchy="false">)</mo></mtd></mtr></mtable></math><br><p>后面通过调试，证实程序的确是在 <code>M4_SYSREG-&gt;CMU_CKSWR_f.CKSW = enTargetSysSrc;</code> 处出现异常。</p><p>上述操作其实就是「超频」，只是超得有点猛，导致芯片直接宕机。这种情况借助华大的离线下载器重新烧录程序即可恢复正常。</p>]]></content>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="问题记录" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="华大半导体" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%8D%8E%E5%A4%A7%E5%8D%8A%E5%AF%BC%E4%BD%93/"/>
-    
-    <category term="HC32F460" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/HC32F460/"/>
     
   </entry>
   

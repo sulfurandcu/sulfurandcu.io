@@ -144,18 +144,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-count">49</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/sulfurandcu.io/categories/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">36</span>
+        <span class="site-state-item-count">38</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -187,6 +187,177 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cloqyh9rx0027mgrq1e9f3vv2.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/sulfurandcu.io/cloqyh9rx0027mgrq1e9f3vv2.html" class="post-title-link" itemprop="url">问题记录：华大 HC32F460 程序烧录异常</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-06-03 00:00:00" itemprop="dateCreated datePublished" datetime="2023-06-03T00:00:00+08:00">2023-06-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">问题记录</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">JLink info:</span><br><span class="line">------------</span><br><span class="line">DLL: V7.50 , compiled Jul  1 2021 17:37:28</span><br><span class="line">Firmware: J-Link V9 compiled May  7 2021 16:26:12</span><br><span class="line">Hardware: V9.60</span><br><span class="line">S/N : 69667985</span><br><span class="line">Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash</span><br><span class="line"></span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots</span><br><span class="line">* JLink Info: CoreSight components:</span><br><span class="line">* JLink Info: ROMTbl[0] @ E00FF000</span><br><span class="line">* JLink Info: ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7</span><br><span class="line">* JLink Info: ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT</span><br><span class="line">* JLink Info: ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB</span><br><span class="line">* JLink Info: ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM</span><br><span class="line">* JLink Info: ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BB9A1 TPIU</span><br><span class="line">ROMTableAddr = 0xE00FF000</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via AIRCR.SYSRESETREQ.</span><br><span class="line">* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</span><br><span class="line">* JLink Info: Reset: Using fallback: Reset pin.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Core did not halt after reset, trying to disable WDT.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Failed. Toggling reset pin and trying reset strategy again.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via AIRCR.SYSRESETREQ.</span><br><span class="line">* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</span><br><span class="line">* JLink Info: Reset: Using fallback: Reset pin.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Core did not halt after reset, trying to disable WDT.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">***JLink Error: Failed to halt CPU.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">Error: Flash Download failed  -  Target DLL has been cancelled</span><br><span class="line">Flash Load finished at 09:01:53</span><br></pre></td></tr></table></figure>
+
+<p>* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</p>
+<p>很可能是外部复位电路失效，导致复位引脚被拉低，进而导致内核一直处于复位状态。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cloqsamml003og4rq88xkh2ls.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/sulfurandcu.io/cloqsamml003og4rq88xkh2ls.html" class="post-title-link" itemprop="url">开发指南：华大 HC32F460 图解复用引脚</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-05-06 00:00:00" itemprop="dateCreated datePublished" datetime="2023-05-06T00:00:00+08:00">2023-05-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="HC32F460-LQFP64"><a href="#HC32F460-LQFP64" class="headerlink" title="HC32F460-LQFP64"></a>HC32F460-LQFP64</h2><br>
+
+<p><img src="/sulfurandcu.io/cloqsamml003og4rq88xkh2ls/HC32F460.png"></p>
+<center>
+功能分组
+</center><br><br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/sulfurandcu.io/cloqsamml003og4rq88xkh2ls.html#more" rel="contents">
+                « 閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -366,6 +537,93 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz.html" class="post-title-link" itemprop="url">错误检测与纠正</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-04-23 15:57:14" itemprop="dateCreated datePublished" datetime="2023-04-23T15:57:14+08:00">2023-04-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>错误检测与纠正，又称错误控制，分为错误检测与错误纠正两部分。</p>
+<h2 id="错误类型"><a href="#错误类型" class="headerlink" title="错误类型"></a>错误类型</h2><p><img src="/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz/error-type.png"></p>
+<p>reference: <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Burst_error">burst error</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz.html#more" rel="contents">
+                « 閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -403,7 +661,7 @@
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E9%94%99%E8%AF%AF%E6%8E%A7%E5%88%B6/" itemprop="url" rel="index"><span itemprop="name">错误控制</span></a>
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
         </span>
     </span>
 
@@ -789,275 +1047,6 @@ N2.2.2---&gt;N2.2.2.1[断路器&lt;br&gt;15]
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/sulfurandcu.io/clnyhr2mm002g10rqgzfk3qms.html#more" rel="contents">
-                « 閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cm03lc8mx006fdgrq688r2y8i.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
-      <meta itemprop="name" content="刘汲桐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/cm03lc8mx006fdgrq688r2y8i.html" class="post-title-link" itemprop="url">dƷvorak's impl.</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2022-03-15 12:50:54" itemprop="dateCreated datePublished" datetime="2022-03-15T12:50:54+08:00">2022-03-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E8%BE%93%E5%85%A5%E6%96%B9%E6%A1%88/" itemprop="url" rel="index"><span itemprop="name">输入方案</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p style="font-family:courier new">
-　　　　　　　　!　　@　　#　　$　　%　　^　　&　　*　　(　　)　　{　　}　　 　　　　　　　<br>
-　　　　　　　　:　　<　　>　　W　　Y　　K　　R　　D　　L　　C　　?　　+　　|　　　　　　　<br>
-　　　　　　　　A　　O　　E　　I　　U　　G　　H　　T　　N　　S　　_　　 　　 　　　　　　　<br>
-　　　　　　　　"　　Q　　X　　J　　B　　F　　M　　P　　V　　Z　　 　　 　　 　　　　　　　<br>
-</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/sulfurandcu.io/cm03lc8mx006fdgrq688r2y8i.html#more" rel="contents">
-                « 閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
-      <meta itemprop="name" content="刘汲桐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html" class="post-title-link" itemprop="url">dƷvorak</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2022-03-15 10:13:58" itemprop="dateCreated datePublished" datetime="2022-03-15T10:13:58+08:00">2022-03-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E8%BE%93%E5%85%A5%E6%96%B9%E6%A1%88/" itemprop="url" rel="index"><span itemprop="name">输入方案</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><strong><center>The <a target="_blank" rel="noopener" href="https://github.com/sulfurandcu/d3vorak">dƷvorak</a> keyboard layout has been released !</center></strong></p>
-<br>
-
-<p style="font-family:courier new">
-　　　　　　　　1　　2　　3　　4　　5　　6　　7　　8　　9　　0　　[　　]　　 　　　　　　　<br>
-　　　　　　　　;　　,　　.　　y　　w　　r　　k　　d　　l　　c　　/　　=　　\　　　　　　　<br>
-　　　　　　　　a　　o　　e　　i　　u　　g　　h　　t　　n　　s　　-　　 　　 　　　　　　　<br>
-　　　　　　　　'　　q　　x　　j　　v　　b　　f　　m　　p　　z　　 　　 　　 　　　　　　　<br>
-</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/sulfurandcu.io/clnyhr2mk002410rq6z6893sz.html#more" rel="contents">
-                « 閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
-      <meta itemprop="name" content="刘汲桐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html" class="post-title-link" itemprop="url">网页字体使用指南</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2022-03-05 15:09:25" itemprop="dateCreated datePublished" datetime="2022-03-05T15:09:25+08:00">2022-03-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97/" itemprop="url" rel="index"><span itemprop="name">语言文字</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>在被 fontmin 和 font-spider 虐得体无完肤后，我决定试试<a target="_blank" rel="noopener" href="https://hsingko.github.io/post/compress_webfont/">这篇文章</a>中提到的另一个字体压缩工具：</p>
-<p><strong><center>“<a target="_blank" rel="noopener" href="https://github.com/fonttools/fonttools">fonttools</a>”</center></strong></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html#more" rel="contents">
                 « 閱讀全文 &raquo;
               </a>
             </div>

@@ -168,6 +168,138 @@ docsify s
       </tags>
   </entry>
   <entry>
+    <title>思源字体使用指南</title>
+    <url>/sulfurandcu.io/clnyhr2mj002010rq1hzhgzb2.html</url>
+    <content><![CDATA[<p>思源字体是 adobe 的开源字体项目，属于泛中日韩字体，即支持中文、日文、韩文三种文字，其中中文又分为大陆字形、香港字形和台湾字形。</p>
+<table>
+<thead>
+<tr>
+<th align="center">语言</th>
+<th align="center">文字</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">中文（大陆）</td>
+<td align="center">大陆独占的汉字－简体<br>大陆特色的汉字－繁体</td>
+</tr>
+<tr>
+<td align="center">中文（香港）</td>
+<td align="center">香港特色的汉字－繁体</td>
+</tr>
+<tr>
+<td align="center">中文（台湾）</td>
+<td align="center">台湾特色的汉字－繁体</td>
+</tr>
+<tr>
+<td align="center">日文（日本）</td>
+<td align="center">日本特色的汉字＋假名</td>
+</tr>
+<tr>
+<td align="center">韩文（朝韩）</td>
+<td align="center">朝韩特色的汉字＋谚文</td>
+</tr>
+</tbody></table>
+<span id="more"></span>
+
+<h1 id="思源宋体"><a href="#思源宋体" class="headerlink" title="思源宋体"></a>思源宋体</h1><p><strong>OTF 语言</strong><br>ZIP : 日语・七个 otf 文件对应七个字重・Language Specific OTFs J・Source Han Serif<br>ZIP : 韩语・七个 otf 文件对应七个字重・Language Specific OTFs K・Source Han Serif K<br>ZIP : 简中・七个 otf 文件对应七个字重・Language Specific OTFs S・Source Han Serif SC<br>ZIP : 台中・七个 otf 文件对应七个字重・Language Specific OTFs T・Source Han Serif TC<br>ZIP : 港中・七个 otf 文件对应七个字重・Language Specific OTFs T・Source Han Serif HC</p>
+<p><strong>OTF 地区</strong><br>ZIP : 日本・七个 otf 文件对应七个字重・Region Specific Subset OTFs JP・Source Han Serif JP<br>ZIP : 韩国・七个 otf 文件对应七个字重・Region Specific Subset OTFs KR・Source Han Serif KR<br>ZIP : 大陆・七个 otf 文件对应七个字重・Region Specific Subset OTFs CN・Source Han Serif CN<br>ZIP : 台湾・七个 otf 文件对应七个字重・Region Specific Subset OTFs TW・Source Han Serif TW<br>ZIP : 香港・七个 otf 文件对应七个字重・Region Specific Subset OTFs HK・Source Han Serif HK</p>
+<p><strong>OTF 语言</strong>（上述文件的归档包）<br>ZIP : All Static Language Specific OTFs</p>
+<p><strong>OTF 地区</strong>（上述文件的归档包）<br>ZIP : All Static Region Specific Subset OTFs</p>
+<p><strong>OTC 版本</strong><br>ZIP : 全部・七个 ttc 文件对应七个字重・All Static Language Specific OTCs・Source Han Serif</p>
+<p><strong>SuperOTC 版本</strong><br>ZIP : 全部・一个 ttc 文件包含所有字重・Static Super OTC・Source Han Serif</p>
+<p><strong>All Variable Fonts</strong> (OTF, TTF, OTC, WOFF2)</p>
+<ul>
+<li>OTF<ul>
+<li>OTF 语言（五个 otf 文件对应五种字形）</li>
+<li>OTF 地区（五个 otf 文件对应五种字形）</li>
+</ul>
+</li>
+<li>TTF<ul>
+<li>TTF 语言（五个 ttf 文件对应五种字形）</li>
+<li>TTF 地区（五个 ttf 文件对应五种字形）</li>
+</ul>
+</li>
+<li>OTC<ul>
+<li>一个 otf.ttc 文件（上面 OTF 语言的合集）</li>
+<li>一个 ttf.ttc 文件（上面 TTF 语言的合集）</li>
+</ul>
+</li>
+<li>WOFF2<ul>
+<li>OTF<ul>
+<li>OTF 语言（五个 otf.woff2 文件对应五种字形）</li>
+<li>OTF 地区（五个 otf.woff2 文件对应五种字形）</li>
+</ul>
+</li>
+<li>TTF<ul>
+<li>TTF 语言（五个 ttf.woff2 文件对应五种字形）</li>
+<li>TTF 地区（五个 ttf.woff2 文件对应五种字形）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>思源宋体的七个字重：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">200 - extralight</span><br><span class="line">300 - light</span><br><span class="line">400 - regular</span><br><span class="line">500 - medium</span><br><span class="line">600 - semibold</span><br><span class="line">700 - bold</span><br><span class="line">900 - heavy</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="思源黑体"><a href="#思源黑体" class="headerlink" title="思源黑体"></a>思源黑体</h1><p><strong>OTF 语言</strong><br>ZIP : 日语・七个 otf 文件对应七个字重・Language Specific OTFs J・Source Han Sans<br>ZIP : 韩语・七个 otf 文件对应七个字重・Language Specific OTFs K・Source Han Sans K<br>ZIP : 简中・七个 otf 文件对应七个字重・Language Specific OTFs S・Source Han Sans SC<br>ZIP : 台中・七个 otf 文件对应七个字重・Language Specific OTFs T・Source Han Sans TC<br>ZIP : 港中・七个 otf 文件对应七个字重・Language Specific OTFs T・Source Han Sans HC</p>
+<p><strong>OTF 语言</strong>（HW）<br>ZIP : 日语・七个 otf 文件对应七个字重・Language Specific OTFs J HW・Source Han Sans HW<br>ZIP : 韩语・七个 otf 文件对应七个字重・Language Specific OTFs K HW・Source Han Sans K HW<br>ZIP : 简中・七个 otf 文件对应七个字重・Language Specific OTFs S HW・Source Han Sans SC HW<br>ZIP : 台中・七个 otf 文件对应七个字重・Language Specific OTFs T HW・Source Han Sans TC HW<br>ZIP : 港中・七个 otf 文件对应七个字重・Language Specific OTFs T HW・Source Han Sans HC HW</p>
+<p><strong>OTF 地区</strong><br>ZIP : 日本・七个 otf 文件对应七个字重・Region Specific Subset OTFs JP・Source Han Sans JP<br>ZIP : 韩国・七个 otf 文件对应七个字重・Region Specific Subset OTFs KR・Source Han Sans KR<br>ZIP : 大陆・七个 otf 文件对应七个字重・Region Specific Subset OTFs CN・Source Han Sans CN<br>ZIP : 台湾・七个 otf 文件对应七个字重・Region Specific Subset OTFs TW・Source Han Sans TW<br>ZIP : 香港・七个 otf 文件对应七个字重・Region Specific Subset OTFs HK・Source Han Sans HK</p>
+<p><strong>OTF 语言</strong>（上述文件的归档包）<br>ZIP : All Static Language Specific OTFs</p>
+<p><strong>OTF 地区</strong>（上述文件的归档包）<br>ZIP : All Static Region Specific Subset OTFs</p>
+<p><strong>OTC 版本</strong><br>ZIP : 全部・七个 ttc 文件对应七个字重・All Static Language Specific OTCs・Source Han Sans</p>
+<p><strong>SuperOTC 版本</strong><br>ZIP : 全部・一个 ttc 文件包含所有字重・Static Super OTC・Source Han Sans</p>
+<p><strong>All Variable Fonts</strong> (OTF, TTF, OTC, WOFF2)</p>
+<ul>
+<li>OTF<ul>
+<li>OTF 语言（五个 otf 文件对应五种字形）</li>
+<li>OTF 地区（五个 otf 文件对应五种字形）</li>
+<li>OTF 等宽（五个 otf 文件对应五种字形）</li>
+</ul>
+</li>
+<li>TTF<ul>
+<li>TTF 语言（五个 ttf 文件对应五种字形）</li>
+<li>TTF 地区（五个 ttf 文件对应五种字形）</li>
+<li>TTF 等宽（五个 ttf 文件对应五种字形）</li>
+</ul>
+</li>
+<li>OTC<ul>
+<li>一个 otf.ttc 文件（上面 OTF 语言的合集）</li>
+<li>一个 ttf.ttc 文件（上面 TTF 语言的合集）</li>
+<li>一个 otf.ttc 文件（上面 OTF 等宽的合集）</li>
+<li>一个 ttf.ttc 文件（上面 TTF 等宽的合集）</li>
+</ul>
+</li>
+<li>WOFF2<ul>
+<li>OTF<ul>
+<li>OTF 语言（五个 otf.woff2 文件对应五种字形）</li>
+<li>OTF 地区（五个 otf.woff2 文件对应五种字形）</li>
+<li>OTF 等宽（五个 otf.woff2 文件对应五种字形）</li>
+</ul>
+</li>
+<li>TTF<ul>
+<li>TTF 语言（五个 ttf.woff2 文件对应五种字形）</li>
+<li>TTF 地区（五个 ttf.woff2 文件对应五种字形）</li>
+<li>TTF 等宽（五个 ttf.woff2 文件对应五种字形）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>思源黑体的七个字重：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">200 - extralight</span><br><span class="line">300 - light</span><br><span class="line">    - normal</span><br><span class="line">400 - regular</span><br><span class="line">500 - medium</span><br><span class="line">700 - bold</span><br><span class="line">900 - heavy</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="标准字重"><a href="#标准字重" class="headerlink" title="标准字重"></a>标准字重</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">100 - Thin</span><br><span class="line">200 - Extra Light</span><br><span class="line">300 - Light</span><br><span class="line">400 - Semi Light (Normal)</span><br><span class="line">500 - Medium</span><br><span class="line">600 - Semi Bold</span><br><span class="line">700 - Bold</span><br><span class="line">800 - Extra Bold</span><br><span class="line">900 - Heavy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>语言文字</category>
+      </categories>
+      <tags>
+        <tag>思源字体</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网页字体使用指南</title>
     <url>/sulfurandcu.io/clnyhr2mj002210rq74hmcdni.html</url>
     <content><![CDATA[<p>在被 fontmin 和 font-spider 虐得体无完肤后，我决定试试<a href="https://hsingko.github.io/post/compress_webfont/">这篇文章</a>中提到的另一个字体压缩工具：</p>
@@ -383,138 +515,6 @@ docsify s
       </tags>
   </entry>
   <entry>
-    <title>思源字体使用指南</title>
-    <url>/sulfurandcu.io/clnyhr2mj002010rq1hzhgzb2.html</url>
-    <content><![CDATA[<p>思源字体是 adobe 的开源字体项目，属于泛中日韩字体，即支持中文、日文、韩文三种文字，其中中文又分为大陆字形、香港字形和台湾字形。</p>
-<table>
-<thead>
-<tr>
-<th align="center">语言</th>
-<th align="center">文字</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">中文（大陆）</td>
-<td align="center">大陆独占的汉字－简体<br>大陆特色的汉字－繁体</td>
-</tr>
-<tr>
-<td align="center">中文（香港）</td>
-<td align="center">香港特色的汉字－繁体</td>
-</tr>
-<tr>
-<td align="center">中文（台湾）</td>
-<td align="center">台湾特色的汉字－繁体</td>
-</tr>
-<tr>
-<td align="center">日文（日本）</td>
-<td align="center">日本特色的汉字＋假名</td>
-</tr>
-<tr>
-<td align="center">韩文（朝韩）</td>
-<td align="center">朝韩特色的汉字＋谚文</td>
-</tr>
-</tbody></table>
-<span id="more"></span>
-
-<h1 id="思源宋体"><a href="#思源宋体" class="headerlink" title="思源宋体"></a>思源宋体</h1><p><strong>OTF 语言</strong><br>ZIP : 日语・七个 otf 文件对应七个字重・Language Specific OTFs J・Source Han Serif<br>ZIP : 韩语・七个 otf 文件对应七个字重・Language Specific OTFs K・Source Han Serif K<br>ZIP : 简中・七个 otf 文件对应七个字重・Language Specific OTFs S・Source Han Serif SC<br>ZIP : 台中・七个 otf 文件对应七个字重・Language Specific OTFs T・Source Han Serif TC<br>ZIP : 港中・七个 otf 文件对应七个字重・Language Specific OTFs T・Source Han Serif HC</p>
-<p><strong>OTF 地区</strong><br>ZIP : 日本・七个 otf 文件对应七个字重・Region Specific Subset OTFs JP・Source Han Serif JP<br>ZIP : 韩国・七个 otf 文件对应七个字重・Region Specific Subset OTFs KR・Source Han Serif KR<br>ZIP : 大陆・七个 otf 文件对应七个字重・Region Specific Subset OTFs CN・Source Han Serif CN<br>ZIP : 台湾・七个 otf 文件对应七个字重・Region Specific Subset OTFs TW・Source Han Serif TW<br>ZIP : 香港・七个 otf 文件对应七个字重・Region Specific Subset OTFs HK・Source Han Serif HK</p>
-<p><strong>OTF 语言</strong>（上述文件的归档包）<br>ZIP : All Static Language Specific OTFs</p>
-<p><strong>OTF 地区</strong>（上述文件的归档包）<br>ZIP : All Static Region Specific Subset OTFs</p>
-<p><strong>OTC 版本</strong><br>ZIP : 全部・七个 ttc 文件对应七个字重・All Static Language Specific OTCs・Source Han Serif</p>
-<p><strong>SuperOTC 版本</strong><br>ZIP : 全部・一个 ttc 文件包含所有字重・Static Super OTC・Source Han Serif</p>
-<p><strong>All Variable Fonts</strong> (OTF, TTF, OTC, WOFF2)</p>
-<ul>
-<li>OTF<ul>
-<li>OTF 语言（五个 otf 文件对应五种字形）</li>
-<li>OTF 地区（五个 otf 文件对应五种字形）</li>
-</ul>
-</li>
-<li>TTF<ul>
-<li>TTF 语言（五个 ttf 文件对应五种字形）</li>
-<li>TTF 地区（五个 ttf 文件对应五种字形）</li>
-</ul>
-</li>
-<li>OTC<ul>
-<li>一个 otf.ttc 文件（上面 OTF 语言的合集）</li>
-<li>一个 ttf.ttc 文件（上面 TTF 语言的合集）</li>
-</ul>
-</li>
-<li>WOFF2<ul>
-<li>OTF<ul>
-<li>OTF 语言（五个 otf.woff2 文件对应五种字形）</li>
-<li>OTF 地区（五个 otf.woff2 文件对应五种字形）</li>
-</ul>
-</li>
-<li>TTF<ul>
-<li>TTF 语言（五个 ttf.woff2 文件对应五种字形）</li>
-<li>TTF 地区（五个 ttf.woff2 文件对应五种字形）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>思源宋体的七个字重：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">200 - extralight</span><br><span class="line">300 - light</span><br><span class="line">400 - regular</span><br><span class="line">500 - medium</span><br><span class="line">600 - semibold</span><br><span class="line">700 - bold</span><br><span class="line">900 - heavy</span><br></pre></td></tr></table></figure>
-
-
-<h1 id="思源黑体"><a href="#思源黑体" class="headerlink" title="思源黑体"></a>思源黑体</h1><p><strong>OTF 语言</strong><br>ZIP : 日语・七个 otf 文件对应七个字重・Language Specific OTFs J・Source Han Sans<br>ZIP : 韩语・七个 otf 文件对应七个字重・Language Specific OTFs K・Source Han Sans K<br>ZIP : 简中・七个 otf 文件对应七个字重・Language Specific OTFs S・Source Han Sans SC<br>ZIP : 台中・七个 otf 文件对应七个字重・Language Specific OTFs T・Source Han Sans TC<br>ZIP : 港中・七个 otf 文件对应七个字重・Language Specific OTFs T・Source Han Sans HC</p>
-<p><strong>OTF 语言</strong>（HW）<br>ZIP : 日语・七个 otf 文件对应七个字重・Language Specific OTFs J HW・Source Han Sans HW<br>ZIP : 韩语・七个 otf 文件对应七个字重・Language Specific OTFs K HW・Source Han Sans K HW<br>ZIP : 简中・七个 otf 文件对应七个字重・Language Specific OTFs S HW・Source Han Sans SC HW<br>ZIP : 台中・七个 otf 文件对应七个字重・Language Specific OTFs T HW・Source Han Sans TC HW<br>ZIP : 港中・七个 otf 文件对应七个字重・Language Specific OTFs T HW・Source Han Sans HC HW</p>
-<p><strong>OTF 地区</strong><br>ZIP : 日本・七个 otf 文件对应七个字重・Region Specific Subset OTFs JP・Source Han Sans JP<br>ZIP : 韩国・七个 otf 文件对应七个字重・Region Specific Subset OTFs KR・Source Han Sans KR<br>ZIP : 大陆・七个 otf 文件对应七个字重・Region Specific Subset OTFs CN・Source Han Sans CN<br>ZIP : 台湾・七个 otf 文件对应七个字重・Region Specific Subset OTFs TW・Source Han Sans TW<br>ZIP : 香港・七个 otf 文件对应七个字重・Region Specific Subset OTFs HK・Source Han Sans HK</p>
-<p><strong>OTF 语言</strong>（上述文件的归档包）<br>ZIP : All Static Language Specific OTFs</p>
-<p><strong>OTF 地区</strong>（上述文件的归档包）<br>ZIP : All Static Region Specific Subset OTFs</p>
-<p><strong>OTC 版本</strong><br>ZIP : 全部・七个 ttc 文件对应七个字重・All Static Language Specific OTCs・Source Han Sans</p>
-<p><strong>SuperOTC 版本</strong><br>ZIP : 全部・一个 ttc 文件包含所有字重・Static Super OTC・Source Han Sans</p>
-<p><strong>All Variable Fonts</strong> (OTF, TTF, OTC, WOFF2)</p>
-<ul>
-<li>OTF<ul>
-<li>OTF 语言（五个 otf 文件对应五种字形）</li>
-<li>OTF 地区（五个 otf 文件对应五种字形）</li>
-<li>OTF 等宽（五个 otf 文件对应五种字形）</li>
-</ul>
-</li>
-<li>TTF<ul>
-<li>TTF 语言（五个 ttf 文件对应五种字形）</li>
-<li>TTF 地区（五个 ttf 文件对应五种字形）</li>
-<li>TTF 等宽（五个 ttf 文件对应五种字形）</li>
-</ul>
-</li>
-<li>OTC<ul>
-<li>一个 otf.ttc 文件（上面 OTF 语言的合集）</li>
-<li>一个 ttf.ttc 文件（上面 TTF 语言的合集）</li>
-<li>一个 otf.ttc 文件（上面 OTF 等宽的合集）</li>
-<li>一个 ttf.ttc 文件（上面 TTF 等宽的合集）</li>
-</ul>
-</li>
-<li>WOFF2<ul>
-<li>OTF<ul>
-<li>OTF 语言（五个 otf.woff2 文件对应五种字形）</li>
-<li>OTF 地区（五个 otf.woff2 文件对应五种字形）</li>
-<li>OTF 等宽（五个 otf.woff2 文件对应五种字形）</li>
-</ul>
-</li>
-<li>TTF<ul>
-<li>TTF 语言（五个 ttf.woff2 文件对应五种字形）</li>
-<li>TTF 地区（五个 ttf.woff2 文件对应五种字形）</li>
-<li>TTF 等宽（五个 ttf.woff2 文件对应五种字形）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>思源黑体的七个字重：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">200 - extralight</span><br><span class="line">300 - light</span><br><span class="line">    - normal</span><br><span class="line">400 - regular</span><br><span class="line">500 - medium</span><br><span class="line">700 - bold</span><br><span class="line">900 - heavy</span><br></pre></td></tr></table></figure>
-
-
-<h1 id="标准字重"><a href="#标准字重" class="headerlink" title="标准字重"></a>标准字重</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">100 - Thin</span><br><span class="line">200 - Extra Light</span><br><span class="line">300 - Light</span><br><span class="line">400 - Semi Light (Normal)</span><br><span class="line">500 - Medium</span><br><span class="line">600 - Semi Bold</span><br><span class="line">700 - Bold</span><br><span class="line">800 - Extra Bold</span><br><span class="line">900 - Heavy</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>语言文字</category>
-      </categories>
-      <tags>
-        <tag>思源字体</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>拓扑结构分析算法</title>
     <url>/sulfurandcu.io/clnyhr2mp002t10rqf5z089pu.html</url>
     <content><![CDATA[<p>2022年09月01日于武汉</p>
@@ -696,19 +696,72 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
-    <title>crc-lib</title>
-    <url>/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html</url>
-    <content><![CDATA[<center><a href="https://github.com/sulfurandcu/crc-lib">https://github.com/sulfurandcu/crc-lib</a></center><br>
+    <title>DailyGenerator</title>
+    <url>/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</url>
+    <content><![CDATA[<center>beep...领导要求每天写日报，但是我不太想写，于是就有了本段代码。</center><br>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一键生成日报 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
 
 <span id="more"></span>
 
-<p><strong>目前支持的 crc 种类有：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">typedef enum crc_16_type_t</span><br><span class="line">&#123;</span><br><span class="line">    #if crc_16_poly_8005_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0xbb3d residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16, CRC-16/ARC, CRC-16/IBM, CRC-16/LHA</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_0000, // check=0xbb3d</span><br><span class="line">    CRC_16_ARC,</span><br><span class="line">    CRC_16_IBM,</span><br><span class="line">    CRC_16_LHA,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xfee8 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/UMTS, CRC-16/BUYPASS, CRC-16/VERIFONE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_0_0_0000, // check=0xfee8</span><br><span class="line">    CRC_16_UMTS,</span><br><span class="line">    CRC_16_BUYPASS,</span><br><span class="line">    CRC_16_VERIFONE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0x44c2 residue=0xb001</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MAXIM, CRC-16/MAXIM-DOW</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_FFFF, // check=0x44c2</span><br><span class="line">    CRC_16_MAXIM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x4b37 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MODBUS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_0000, // check=0x4b37</span><br><span class="line">    CRC_16_MODBUS,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x800D refin=0 refout=0 xorout=0x0000 check=0x9ecf residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DDS-110</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_800D_0_0_0000, // check=0x9ecf</span><br><span class="line">    CRC_16_DDS110,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0xb4c8 residue=0xb001</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/USB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_FFFF, // check=0xb4c8</span><br><span class="line">    CRC_16_USB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0xaee7 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/CMS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_0_0_0000, // check=0xaee7</span><br><span class="line">    CRC_16_CMS,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_1021_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0xFFFF check=0xd64e residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GENIBUS, CRC-16/DARC, CRC-16/EPC, CRC-16/EPC-C1G2, CRC-16/I-CODE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_FFFF, // check=0xd64e</span><br><span class="line">    CRC_16_GENIBUS,</span><br><span class="line">    CRC_16_DARC,</span><br><span class="line">    CRC_16_EPC,</span><br><span class="line">    CRC_16_EPC_C1G2,</span><br><span class="line">    CRC_16_ICODE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xce3c residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GSM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_FFFF, // check=0xce3c</span><br><span class="line">    CRC_16_GSM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x29b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT-FALSE, CRC-16/IBM-3740, CRC-16/AUTOSAR</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_0000, // check=0x29b1</span><br><span class="line">    CRC_16_CCITT_FALSE,</span><br><span class="line">    CRC_16_IBM_3740,</span><br><span class="line">    CRC_16_AUTOSAR,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0x906e residue=0xf0b8</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/X-25, CRC-16/IBM-SDLC, CRC-16/ISO-HDLC, CRC-16/ISO-IEC-14443-3-B, CRC-B</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_FFFF, // check=0x906e</span><br><span class="line">    CRC_16_X25,</span><br><span class="line">    CRC_16_IBM_SDLC,</span><br><span class="line">    CRC_16_ISO_HDLC,</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_B,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xC6C6 refin=1 refout=1 xorout=0x0000 check=0xbf05 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/ISO-IEC-14443-3-A, CRC-A</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_C6C6_1_1_0000, // check=0xbf05</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_A,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0x2189 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT, CRC-16/CCITT-TRUE, CRC-16/KERMIT, CRC-16/BLUETOOTH, CRC-16/V-41-LSB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_1_1_0000, // check=0x2189</span><br><span class="line">    CRC_16_CCITT,</span><br><span class="line">    CRC_16_CCITT_TRUE,</span><br><span class="line">    CRC_16_KERMIT,</span><br><span class="line">    CRC_16_BLUETOOTH,</span><br><span class="line">    CRC_16_V_41_LSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x6f91 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MCRF4XX</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_0000, // check=0x6f91</span><br><span class="line">    CRC_16_MCRF4XX,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xB2AA refin=1 refout=1 xorout=0x0000 check=0x63d0 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/RIELLO</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_B2AA_1_1_0000, // check=0x63d0</span><br><span class="line">    CRC_16_RIELLO,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x1D0F refin=0 refout=0 xorout=0x0000 check=0xe5cc residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/AUG-CCITT, CRC-16/SPI-FUJITSU</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_1D0F_0_0_0000, // check=0xe5cc</span><br><span class="line">    CRC_16_AUG_CCITT,</span><br><span class="line">    CRC_16_SPI_FUJITSU,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x31c3 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/XMODEM, CRC-16/ACORN, CRC-16/LTE, CRC-16/V-41-MSB, XMODEM, YMODEM, ZMODEM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_0000, // check=0x31c3</span><br><span class="line">    CRC_16_XMODEM,</span><br><span class="line">    CRC_16_YMODEM,</span><br><span class="line">    CRC_16_ZMODEM,</span><br><span class="line">    CRC_16_ACORN,</span><br><span class="line">    CRC_16_LTE,</span><br><span class="line">    CRC_16_V_41_MSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x89EC refin=1 refout=1 xorout=0x0000 check=0x26b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/TMS37157</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_89EC_1_1_0000, // check=0x26b1</span><br><span class="line">    CRC_16_TMS37157,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_xxxx_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0001 check=0x007e residue=0x0589</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-R, R-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0001, // check=0x007e</span><br><span class="line">    CRC_16_DECT_R,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x007f residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-X, X-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0000, // check=0x007f</span><br><span class="line">    CRC_16_DECT_X,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8bb7 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xd0db residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/T10-DIF</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8BB7_0000_0_0_0000, // check=0xd0db</span><br><span class="line">    CRC_16_T10_DIF,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3D65 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0xea82 residue=0x66c5</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/DNP</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_1_1_FFFF, // check=0xea82</span><br><span class="line">    CRC_16_DNP,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3d65 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xc2b7 residue=0xa366</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/EN-13757</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_0_0_FFFF, // check=0xc2b7</span><br><span class="line">    CRC_16_EN_13757,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xa097 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x0fb3 residue=0x0000</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/TELEDISK</span><br><span class="line">     */</span><br><span class="line">    CRC_16_A097_0000_0_0_0000, // check=0x0fb3</span><br><span class="line">    CRC_16_TELEDISK,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xc867 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x4c06 residue=0x0000</span><br><span class="line">     * class: academic</span><br><span class="line">     * alias: CRC-16/CDMA2000</span><br><span class="line">     */</span><br><span class="line">    CRC_16_C867_FFFF_0_0_0000, // check=0x4c06</span><br><span class="line">    CRC_16_CDMA2000,</span><br><span class="line">    #endif</span><br><span class="line">&#125; crc_16_type_t;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一键生成日报 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任务名称</span><br><span class="line">taskname = &quot;编码工作&quot;</span><br><span class="line"># 基准日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 过去几天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查询深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用户名称</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用户路径</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任务名称：&quot; + taskname + &quot;\n工作内容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任务名称：&quot; + taskname + &quot;\n工作内容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（计划&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>错误控制</category>
+        <category>效率提升</category>
       </categories>
       <tags>
+        <tag>python</tag>
+        <tag>svn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>错误检测与纠正</title>
+    <url>/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz.html</url>
+    <content><![CDATA[<p>错误检测与纠正，又称错误控制，分为错误检测与错误纠正两部分。</p>
+<h2 id="错误类型"><a href="#错误类型" class="headerlink" title="错误类型"></a>错误类型</h2><p><img src="/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz/error-type.png"></p>
+<p>reference: <a href="https://en.wikipedia.org/wiki/Burst_error">burst error</a></p>
+<span id="more"></span>
+
+<h2 id="错误检测"><a href="#错误检测" class="headerlink" title="错误检测"></a>错误检测</h2><p>错误检测是为了验证数据在信道传输过程中是否出现错误，常用的算法有：</p>
+<ul>
+<li>横向冗余校验（based on parity）</li>
+<li>纵向冗余校验（based on parity）</li>
+<li>纵横冗余校验（based on parity）</li>
+<li>校验和</li>
+<li>循环冗余校验</li>
+</ul>
+<h3 id="横向冗余校验"><a href="#横向冗余校验" class="headerlink" title="横向冗余校验"></a>横向冗余校验</h3><p><img src="/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz/parity-TRC.png"></p>
+<h3 id="纵向冗余校验（Xor8-x2F-16-x2F-32）"><a href="#纵向冗余校验（Xor8-x2F-16-x2F-32）" class="headerlink" title="纵向冗余校验（Xor8&#x2F;16&#x2F;32）"></a>纵向冗余校验（Xor8&#x2F;16&#x2F;32）</h3><p><img src="/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz/parity-LRC.png"></p>
+<h3 id="纵横冗余校验"><a href="#纵横冗余校验" class="headerlink" title="纵横冗余校验"></a>纵横冗余校验</h3><p>横向冗余校验能够检出错误发生在哪一个字节，但无法确定发生在哪一位；而纵向冗余校验则能够检出错误发生在哪一列，但无法确定发生在哪一个字节。因此，当同时使用横向冗余校验和纵向冗余校验时，在部分情况下是能够定位错误并予以纠正的。</p>
+<p><img src="/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz/parity-TRC-&-LRC.png"></p>
+<h3 id="校验和"><a href="#校验和" class="headerlink" title="校验和"></a>校验和</h3><h4 id="整数加法校验和"><a href="#整数加法校验和" class="headerlink" title="整数加法校验和"></a>整数加法校验和</h4><p><img src="/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz/checksum-normal.png"></p>
+<h4 id="整数加法校验和（with-ones’-complement）"><a href="#整数加法校验和（with-ones’-complement）" class="headerlink" title="整数加法校验和（with ones’ complement）"></a>整数加法校验和（with ones’ complement）</h4><p><img src="/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz/checksum-ones-complement.png"></p>
+<h4 id="弗莱彻－校验和（Fletcher’s-checksum）"><a href="#弗莱彻－校验和（Fletcher’s-checksum）" class="headerlink" title="弗莱彻－校验和（Fletcher’s checksum）"></a>弗莱彻－校验和（Fletcher’s checksum）</h4><p>略.</p>
+<h4 id="阿德勒－校验和（Adler-32）"><a href="#阿德勒－校验和（Adler-32）" class="headerlink" title="阿德勒－校验和（Adler-32）"></a>阿德勒－校验和（Adler-32）</h4><p>略.</p>
+<h4 id="Luhn-algorithm"><a href="#Luhn-algorithm" class="headerlink" title="Luhn algorithm"></a>Luhn algorithm</h4><p>略.</p>
+<h4 id="Damm-algorithm"><a href="#Damm-algorithm" class="headerlink" title="Damm algorithm"></a>Damm algorithm</h4><p>略.</p>
+<h4 id="Verhoeff-algorithm"><a href="#Verhoeff-algorithm" class="headerlink" title="Verhoeff algorithm"></a>Verhoeff algorithm</h4><p>略.</p>
+<h3 id="循环冗余校验（CRC）"><a href="#循环冗余校验（CRC）" class="headerlink" title="循环冗余校验（CRC）"></a>循环冗余校验（CRC）</h3><p>略.</p>
+<h2 id="错误纠正"><a href="#错误纠正" class="headerlink" title="错误纠正"></a>错误纠正</h2><p>错误纠正是为了在检测到错误后能够自动纠正，常见的纠错类型有：</p>
+<ul>
+<li>前向纠错</li>
+<li>后向纠错</li>
+<li>混合方案</li>
+</ul>
+<h3 id="前向纠错（纠错码）"><a href="#前向纠错（纠错码）" class="headerlink" title="前向纠错（纠错码）"></a>前向纠错（纠错码）</h3><p>略.</p>
+<h3 id="后向纠错（重发机制）"><a href="#后向纠错（重发机制）" class="headerlink" title="后向纠错（重发机制）"></a>后向纠错（重发机制）</h3><p>略.</p>
+<h3 id="混合方案"><a href="#混合方案" class="headerlink" title="混合方案"></a>混合方案</h3><p>略.</p>
+<br>
+
+<p><strong>参考链接：</strong></p>
+<p><a href="https://users.ece.cmu.edu/~koopman/pubs/KoopmanCRCWebinar9May2012.pdf">https://users.ece.cmu.edu/~koopman/pubs/KoopmanCRCWebinar9May2012.pdf</a><br><a href="https://www.csus.edu/indiv/p/pangj/166/f/d8/5_Modulo%202%20Arithmetic.pdf">https://www.csus.edu/indiv/p/pangj/166/f/d8/5_Modulo%202%20Arithmetic.pdf</a><br><a href="https://crccalc.com/">https://crccalc.com/</a><br><a href="https://reveng.sourceforge.io/crc-catalogue/16.htm#crc.cat-bits.16">https://reveng.sourceforge.io/crc-catalogue/16.htm#crc.cat-bits.16</a><br><a href="https://srecord.sourceforge.net/crc16-ccitt.html">https://srecord.sourceforge.net/crc16-ccitt.html</a><br><a href="http://www.sunshine2k.de/articles/coding/crc/understanding_crc.html">www.sunshine2k.de/articles/coding/crc/understanding_crc.html</a><br><a href="http://www.ross.net/crc/download/crc_v3.txt">http://www.ross.net/crc/download/crc_v3.txt</a><br><a href="https://segmentfault.com/a/1190000018094567">https://segmentfault.com/a/1190000018094567</a><br><a href="https://www.jianshu.com/p/654891ade9d5">https://www.jianshu.com/p/654891ade9d5</a><br><a href="https://gitee.com/anyangchina/crc_all/blob/master/C%23/crc/Program.cs">https://gitee.com/anyangchina/crc_all/blob/master/C%23/crc/Program.cs</a><br><a href="https://gitee.com/anyangchina/crc_all/blob/master/C%23/crc_table/Program.cs">https://gitee.com/anyangchina/crc_all/blob/master/C%23/crc_table/Program.cs</a></p>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>parity</tag>
+        <tag>checksum</tag>
         <tag>crc</tag>
       </tags>
   </entry>
@@ -801,6 +854,23 @@ N2---&gt;N2.3[&quot; &quot;]
         <tag>五线谱</tag>
         <tag>简谱</tag>
         <tag>lilypond</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>crc-lib</title>
+    <url>/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html</url>
+    <content><![CDATA[<center><a href="https://github.com/sulfurandcu/crc-lib">https://github.com/sulfurandcu/crc-lib</a></center><br>
+
+<span id="more"></span>
+
+<p><strong>目前支持的 crc 种类有：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">typedef enum crc_16_type_t</span><br><span class="line">&#123;</span><br><span class="line">    #if crc_16_poly_8005_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0xbb3d residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16, CRC-16/ARC, CRC-16/IBM, CRC-16/LHA</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_0000, // check=0xbb3d</span><br><span class="line">    CRC_16_ARC,</span><br><span class="line">    CRC_16_IBM,</span><br><span class="line">    CRC_16_LHA,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xfee8 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/UMTS, CRC-16/BUYPASS, CRC-16/VERIFONE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_0_0_0000, // check=0xfee8</span><br><span class="line">    CRC_16_UMTS,</span><br><span class="line">    CRC_16_BUYPASS,</span><br><span class="line">    CRC_16_VERIFONE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0x44c2 residue=0xb001</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MAXIM, CRC-16/MAXIM-DOW</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_FFFF, // check=0x44c2</span><br><span class="line">    CRC_16_MAXIM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x4b37 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MODBUS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_0000, // check=0x4b37</span><br><span class="line">    CRC_16_MODBUS,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x800D refin=0 refout=0 xorout=0x0000 check=0x9ecf residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DDS-110</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_800D_0_0_0000, // check=0x9ecf</span><br><span class="line">    CRC_16_DDS110,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0xb4c8 residue=0xb001</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/USB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_FFFF, // check=0xb4c8</span><br><span class="line">    CRC_16_USB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0xaee7 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/CMS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_0_0_0000, // check=0xaee7</span><br><span class="line">    CRC_16_CMS,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_1021_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0xFFFF check=0xd64e residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GENIBUS, CRC-16/DARC, CRC-16/EPC, CRC-16/EPC-C1G2, CRC-16/I-CODE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_FFFF, // check=0xd64e</span><br><span class="line">    CRC_16_GENIBUS,</span><br><span class="line">    CRC_16_DARC,</span><br><span class="line">    CRC_16_EPC,</span><br><span class="line">    CRC_16_EPC_C1G2,</span><br><span class="line">    CRC_16_ICODE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xce3c residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GSM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_FFFF, // check=0xce3c</span><br><span class="line">    CRC_16_GSM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x29b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT-FALSE, CRC-16/IBM-3740, CRC-16/AUTOSAR</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_0000, // check=0x29b1</span><br><span class="line">    CRC_16_CCITT_FALSE,</span><br><span class="line">    CRC_16_IBM_3740,</span><br><span class="line">    CRC_16_AUTOSAR,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0x906e residue=0xf0b8</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/X-25, CRC-16/IBM-SDLC, CRC-16/ISO-HDLC, CRC-16/ISO-IEC-14443-3-B, CRC-B</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_FFFF, // check=0x906e</span><br><span class="line">    CRC_16_X25,</span><br><span class="line">    CRC_16_IBM_SDLC,</span><br><span class="line">    CRC_16_ISO_HDLC,</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_B,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xC6C6 refin=1 refout=1 xorout=0x0000 check=0xbf05 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/ISO-IEC-14443-3-A, CRC-A</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_C6C6_1_1_0000, // check=0xbf05</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_A,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0x2189 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT, CRC-16/CCITT-TRUE, CRC-16/KERMIT, CRC-16/BLUETOOTH, CRC-16/V-41-LSB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_1_1_0000, // check=0x2189</span><br><span class="line">    CRC_16_CCITT,</span><br><span class="line">    CRC_16_CCITT_TRUE,</span><br><span class="line">    CRC_16_KERMIT,</span><br><span class="line">    CRC_16_BLUETOOTH,</span><br><span class="line">    CRC_16_V_41_LSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x6f91 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MCRF4XX</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_0000, // check=0x6f91</span><br><span class="line">    CRC_16_MCRF4XX,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xB2AA refin=1 refout=1 xorout=0x0000 check=0x63d0 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/RIELLO</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_B2AA_1_1_0000, // check=0x63d0</span><br><span class="line">    CRC_16_RIELLO,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x1D0F refin=0 refout=0 xorout=0x0000 check=0xe5cc residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/AUG-CCITT, CRC-16/SPI-FUJITSU</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_1D0F_0_0_0000, // check=0xe5cc</span><br><span class="line">    CRC_16_AUG_CCITT,</span><br><span class="line">    CRC_16_SPI_FUJITSU,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x31c3 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/XMODEM, CRC-16/ACORN, CRC-16/LTE, CRC-16/V-41-MSB, XMODEM, YMODEM, ZMODEM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_0000, // check=0x31c3</span><br><span class="line">    CRC_16_XMODEM,</span><br><span class="line">    CRC_16_YMODEM,</span><br><span class="line">    CRC_16_ZMODEM,</span><br><span class="line">    CRC_16_ACORN,</span><br><span class="line">    CRC_16_LTE,</span><br><span class="line">    CRC_16_V_41_MSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x89EC refin=1 refout=1 xorout=0x0000 check=0x26b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/TMS37157</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_89EC_1_1_0000, // check=0x26b1</span><br><span class="line">    CRC_16_TMS37157,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_xxxx_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0001 check=0x007e residue=0x0589</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-R, R-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0001, // check=0x007e</span><br><span class="line">    CRC_16_DECT_R,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x007f residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-X, X-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0000, // check=0x007f</span><br><span class="line">    CRC_16_DECT_X,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8bb7 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xd0db residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/T10-DIF</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8BB7_0000_0_0_0000, // check=0xd0db</span><br><span class="line">    CRC_16_T10_DIF,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3D65 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0xea82 residue=0x66c5</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/DNP</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_1_1_FFFF, // check=0xea82</span><br><span class="line">    CRC_16_DNP,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3d65 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xc2b7 residue=0xa366</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/EN-13757</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_0_0_FFFF, // check=0xc2b7</span><br><span class="line">    CRC_16_EN_13757,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xa097 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x0fb3 residue=0x0000</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/TELEDISK</span><br><span class="line">     */</span><br><span class="line">    CRC_16_A097_0000_0_0_0000, // check=0x0fb3</span><br><span class="line">    CRC_16_TELEDISK,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xc867 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x4c06 residue=0x0000</span><br><span class="line">     * class: academic</span><br><span class="line">     * alias: CRC-16/CDMA2000</span><br><span class="line">     */</span><br><span class="line">    CRC_16_C867_FFFF_0_0_0000, // check=0x4c06</span><br><span class="line">    CRC_16_CDMA2000,</span><br><span class="line">    #endif</span><br><span class="line">&#125; crc_16_type_t;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>crc</tag>
       </tags>
   </entry>
   <entry>
@@ -979,27 +1049,8 @@ N2---&gt;N2.3[&quot; &quot;]
 <figure class="highlight plaintext"><figcaption><span>startup_xxx32xxxx.s</span></figcaption><table><tr><td class="code"><pre><span class="line">Reset_Handler   PROC</span><br><span class="line">                EXPORT  Reset_Handler   [WEAK]</span><br><span class="line">                IMPORT  SystemVTOR</span><br><span class="line">                IMPORT  SystemInit</span><br><span class="line">                IMPORT  __main</span><br><span class="line"></span><br><span class="line">                LDR     R0, =SystemVTOR</span><br><span class="line">                BLX     R0</span><br><span class="line">                LDR     R0, =SystemInit</span><br><span class="line">                BLX     R0</span><br><span class="line">                LDR     R0, =__main</span><br><span class="line">                BX      R0</span><br><span class="line">                ENDP</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>开发指北</category>
+        <category>开发笔记</category>
       </categories>
-  </entry>
-  <entry>
-    <title>DailyGenerator</title>
-    <url>/sulfurandcu.io/clnyhr2mp002w10rq4yxkans0.html</url>
-    <content><![CDATA[<center>beep...领导要求每天写日报，但是我不太想写，于是就有了本段代码。</center><br>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一键生成日报 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一键生成日报 V2.0.0</span><br><span class="line">import os</span><br><span class="line">import re</span><br><span class="line">import datetime</span><br><span class="line">from datetime import timedelta</span><br><span class="line"></span><br><span class="line"># 是否完成</span><br><span class="line">funccode = 0</span><br><span class="line"></span><br><span class="line"># 任务名称</span><br><span class="line">taskname = &quot;编码工作&quot;</span><br><span class="line"># 基准日期</span><br><span class="line">basedate = datetime.datetime.now() - timedelta(days=0)</span><br><span class="line"># 过去几天</span><br><span class="line">lastnday = 1</span><br><span class="line"># 查询深度</span><br><span class="line">userdeep = &quot;100&quot;</span><br><span class="line"># 用户名称</span><br><span class="line">username = &quot;liujitong&quot;</span><br><span class="line"># 用户路径</span><br><span class="line">userpath = &quot;http://svn.sulfurandcu.com&quot;</span><br><span class="line"></span><br><span class="line">TEXT = &quot;&quot;</span><br><span class="line">for i in range(0, lastnday):</span><br><span class="line">    svn_find = &quot;--search-and &quot; + username + &quot; --search-and &quot; + (basedate - timedelta(days=i)).strftime(&quot;%Y-%m-%d&quot;)</span><br><span class="line">    svn_deep = &quot;--limit &quot; + userdeep</span><br><span class="line">    cmd = &quot;svn log &quot; + svn_deep + &quot; &quot; + svn_find + &quot; &quot; + userpath + &quot; --non-interactive&quot;</span><br><span class="line">    with os.popen(cmd) as f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n------------------------------------------------------------------------&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;r.* \| &quot; + username + &quot; \| &quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*line\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\) \| .*lines\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;)&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n　　　　　&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;------------------------------------------------------------------------\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        text = text + &quot;EOF&quot;</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;　　　　　EOF&quot;)</span><br><span class="line">        text = rere.sub(&quot;&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot;\n　　　　　\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        rere = re.compile(&quot; \+0800.*\)\n&quot;)</span><br><span class="line">        text = rere.sub(&quot;\n&quot;, text)</span><br><span class="line"></span><br><span class="line">        if funccode == 1:</span><br><span class="line">            text = &quot;任务名称：&quot; + taskname + &quot;\n工作内容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：是&quot;</span><br><span class="line"></span><br><span class="line">        if funccode == 0:</span><br><span class="line">            if (basedate.weekday() == 0):</span><br><span class="line">                deadline = basedate + timedelta(days=4)</span><br><span class="line">            if (basedate.weekday() == 1):</span><br><span class="line">                deadline = basedate + timedelta(days=3)</span><br><span class="line">            if (basedate.weekday() == 2):</span><br><span class="line">                deadline = basedate + timedelta(days=2)</span><br><span class="line">            if (basedate.weekday() == 3):</span><br><span class="line">                deadline = basedate + timedelta(days=1)</span><br><span class="line">            if (basedate.weekday() == 4):</span><br><span class="line">                deadline = basedate + timedelta(days=7)</span><br><span class="line">            if (basedate.weekday() == 5):</span><br><span class="line">                deadline = basedate + timedelta(days=6)</span><br><span class="line">            if (basedate.weekday() == 6):</span><br><span class="line">                deadline = basedate + timedelta(days=5)</span><br><span class="line"></span><br><span class="line">            deadline = deadline.strftime(&quot;%Y年%m月%d日&quot;)</span><br><span class="line"></span><br><span class="line">            text = &quot;任务名称：&quot; + taskname + &quot;\n工作内容：\n&quot; + text</span><br><span class="line">            text = text + &quot;是否完成：否（计划&quot; + deadline + &quot;完成）&quot;</span><br><span class="line"></span><br><span class="line">        TEXT = TEXT + text</span><br><span class="line"></span><br><span class="line">        if i &lt; lastnday-1:</span><br><span class="line">            TEXT = TEXT + &quot;\n\n&quot;</span><br><span class="line"></span><br><span class="line">filename = &quot;ooooooDailyGenerator.py.&quot; + username + &quot;.txt&quot;</span><br><span class="line">with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    f.write(TEXT)</span><br><span class="line"></span><br><span class="line"># input()</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>效率提升</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>svn</tag>
-      </tags>
   </entry>
   <entry>
     <title>freertos or rtthread ?</title>
@@ -1314,61 +1365,6 @@ N2---&gt;N2.3[&quot; &quot;]
 ]]></content>
   </entry>
   <entry>
-    <title>Kconfig</title>
-    <url>/sulfurandcu.io/cm0n3u4b4000mo4rqa9febgd1.html</url>
-    <content><![CDATA[<p><img src="/sulfurandcu.io/cm0n3u4b4000mo4rqa9febgd1/Kconfig.png"></p>
-<table>
-<thead>
-<tr>
-<th align="center">开发平台</th>
-<th align="center">Embedded-RTOS</th>
-<th align="center">Embedded-NoOS</th>
-<th align="center">Embedded-Linux</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">linux</td>
-<td align="center"><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript</td>
-<td align="center"><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript</td>
-<td align="center"><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript</td>
-</tr>
-<tr>
-<td align="center">windows</td>
-<td align="center"><strong>windows-curses</strong><br><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript<br>or<br><strong>env-windows</strong><br>Kconfig<br>makefile&#x2F;sconscript</td>
-<td align="center"><strong>windows-curses</strong><br><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript<br><br><br><br><br></td>
-<td align="center"><strong>windows-curses</strong><br><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript<br><br><br><br><br></td>
-</tr>
-</tbody></table>
-<span id="more"></span>
-
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><strong>Linux</strong></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">python -m pip install kconfiglib</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight sh"><figcaption><span>/usr/local/bin</span></figcaption><table><tr><td class="code"><pre><span class="line">alldefconfig</span><br><span class="line">allmodconfig</span><br><span class="line">allnoconfig</span><br><span class="line">allyesconfig</span><br><span class="line">defconfig</span><br><span class="line">genconfig</span><br><span class="line">guiconfig</span><br><span class="line">listnewconfig</span><br><span class="line">menuconfig</span><br><span class="line">oldconfig</span><br><span class="line">olddefconfig</span><br><span class="line">savedefconfig</span><br><span class="line">setconfig</span><br></pre></td></tr></table></figure>
-
-<p><strong>Windows</strong></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">python -m pip install kconfiglib</span><br><span class="line">python -m pip install windows-curses</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight sh"><figcaption><span>..\python\Scripts\</span></figcaption><table><tr><td class="code"><pre><span class="line">alldefconfig.exe</span><br><span class="line">allmodconfig.exe</span><br><span class="line">allnoconfig.exe</span><br><span class="line">allyesconfig.exe</span><br><span class="line">defconfig.exe</span><br><span class="line">genconfig.exe</span><br><span class="line">guiconfig.exe</span><br><span class="line">listnewconfig.exe</span><br><span class="line">menuconfig.exe</span><br><span class="line">oldconfig.exe</span><br><span class="line">olddefconfig.exe</span><br><span class="line">savedefconfig.exe</span><br><span class="line">setconfig.exe</span><br></pre></td></tr></table></figure>
-
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">menuconfig -h</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">genconfig -h</span><br></pre></td></tr></table></figure>
-
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><figure class="highlight txt"><figcaption><span>1. 新建 demo 工程</span></figcaption><table><tr><td class="code"><pre><span class="line">main.c</span><br><span class="line">Kconfig</span><br><span class="line">Makefile</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight txt"><figcaption><span>2. 使用 make 编译</span></figcaption><table><tr><td class="code"><pre><span class="line">make</span><br><span class="line">make clean</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight txt"><figcaption><span>3. 手动打开配置界面</span></figcaption><table><tr><td class="code"><pre><span class="line">make menuconfig</span><br></pre></td></tr></table></figure>
-
-<h2 id="例程"><a href="#例程" class="headerlink" title="例程"></a>例程</h2><figure class="highlight c"><figcaption><span>example: main.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;config.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;hello, world\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_1_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_1_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_1_1_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_1_1_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_1_2_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_1_2_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_1_3_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_1_3_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_2_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_2_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_2_1_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_2_1_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_2_2_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_2_2_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_2_3_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_2_3_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;USERNAME: %s\n&quot;</span>, CONFIG_USERNAME);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;PASSWORD: %d\n&quot;</span>, CONFIG_PASSWORD);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><figcaption><span>example: Kconfig</span></figcaption><table><tr><td class="code"><pre><span class="line">mainmenu <span class="string">&quot;Kconfig&quot;</span></span><br><span class="line"></span><br><span class="line">menu <span class="string">&quot;example&quot;</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_1_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 1&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">1</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_1_1_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 1.1&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_1_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">1.1</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_1_2_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 1.2&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_1_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">1.2</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_1_3_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 1.3&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_1_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">1.3</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_2_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 2&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">2</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_2_1_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 2.1&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_2_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">2.1</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_2_2_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 2.2&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_2_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">2.2</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_2_3_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 2.3&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_2_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">2.3</span></span><br><span class="line"></span><br><span class="line">config USERNAME</span><br><span class="line">    <span class="built_in">string</span> <span class="string">&quot;username&quot;</span></span><br><span class="line">    <span class="keyword">default</span> <span class="string">&quot;abc&quot;</span></span><br><span class="line">    help</span><br><span class="line">        Input a <span class="built_in">string</span> value.</span><br><span class="line"></span><br><span class="line">config PASSWORD</span><br><span class="line">    <span class="type">int</span> <span class="string">&quot;password&quot;</span></span><br><span class="line">    range <span class="number">0</span> <span class="number">255</span></span><br><span class="line">    <span class="keyword">default</span> <span class="number">123</span></span><br><span class="line">    help</span><br><span class="line">        Input a <span class="type">int</span> value. Range from <span class="number">0</span> to <span class="number">255.</span></span><br><span class="line"></span><br><span class="line">endmenu</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight makefile"><figcaption><span>example: Makefile</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="section">all: main.o</span></span><br><span class="line">	gcc main.o -o main</span><br><span class="line"><span class="section">main.o: main.c config.h</span></span><br><span class="line">	gcc main.c -c -o main.o</span><br><span class="line"><span class="section">clean:</span></span><br><span class="line">	rm  main.o main</span><br><span class="line"></span><br><span class="line"><span class="section">config.h:.config</span></span><br><span class="line">	genconfig --header-path config.h</span><br><span class="line"><span class="section">.config:</span></span><br><span class="line">	menuconfig</span><br><span class="line"><span class="section">menuconfig:</span></span><br><span class="line">	menuconfig</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>通信模块设计说明</title>
     <url>/sulfurandcu.io/clz2cld8l000q1orq40fzah1z.html</url>
     <content><![CDATA[<p><img src="/sulfurandcu.io/clz2cld8l000q1orq40fzah1z/cover.png"></p>
@@ -1443,6 +1439,125 @@ N2---&gt;N2.3[&quot; &quot;]
 </tr>
 </tbody></table>
 <h2 id="通信模块的转发原理"><a href="#通信模块的转发原理" class="headerlink" title="通信模块的转发原理"></a>通信模块的转发原理</h2><p><img src="/sulfurandcu.io/clz2cld8l000q1orq40fzah1z/implementation.png"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Kconfig</title>
+    <url>/sulfurandcu.io/cm0n3u4b4000mo4rqa9febgd1.html</url>
+    <content><![CDATA[<p><img src="/sulfurandcu.io/cm0n3u4b4000mo4rqa9febgd1/Kconfig.png"></p>
+<table>
+<thead>
+<tr>
+<th align="center">开发平台</th>
+<th align="center">Embedded-RTOS</th>
+<th align="center">Embedded-NoOS</th>
+<th align="center">Embedded-Linux</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">linux</td>
+<td align="center"><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript</td>
+<td align="center"><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript</td>
+<td align="center"><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript</td>
+</tr>
+<tr>
+<td align="center">windows</td>
+<td align="center"><strong>windows-curses</strong><br><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript<br>or<br><strong>env-windows</strong><br>Kconfig<br>makefile&#x2F;sconscript</td>
+<td align="center"><strong>windows-curses</strong><br><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript<br><br><br><br><br></td>
+<td align="center"><strong>windows-curses</strong><br><strong>kconfiglib.menuconfig</strong><br>Kconfig<br>makefile&#x2F;sconscript<br><br><br><br><br></td>
+</tr>
+</tbody></table>
+<span id="more"></span>
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><strong>Linux</strong></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">python -m pip install kconfiglib</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sh"><figcaption><span>/usr/local/bin</span></figcaption><table><tr><td class="code"><pre><span class="line">alldefconfig</span><br><span class="line">allmodconfig</span><br><span class="line">allnoconfig</span><br><span class="line">allyesconfig</span><br><span class="line">defconfig</span><br><span class="line">genconfig</span><br><span class="line">guiconfig</span><br><span class="line">listnewconfig</span><br><span class="line">menuconfig</span><br><span class="line">oldconfig</span><br><span class="line">olddefconfig</span><br><span class="line">savedefconfig</span><br><span class="line">setconfig</span><br></pre></td></tr></table></figure>
+
+<p><strong>Windows</strong></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">python -m pip install kconfiglib</span><br><span class="line">python -m pip install windows-curses</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sh"><figcaption><span>..\python\Scripts\</span></figcaption><table><tr><td class="code"><pre><span class="line">alldefconfig.exe</span><br><span class="line">allmodconfig.exe</span><br><span class="line">allnoconfig.exe</span><br><span class="line">allyesconfig.exe</span><br><span class="line">defconfig.exe</span><br><span class="line">genconfig.exe</span><br><span class="line">guiconfig.exe</span><br><span class="line">listnewconfig.exe</span><br><span class="line">menuconfig.exe</span><br><span class="line">oldconfig.exe</span><br><span class="line">olddefconfig.exe</span><br><span class="line">savedefconfig.exe</span><br><span class="line">setconfig.exe</span><br></pre></td></tr></table></figure>
+
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">menuconfig -h</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">genconfig -h</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><figure class="highlight txt"><figcaption><span>1. 新建 demo 工程</span></figcaption><table><tr><td class="code"><pre><span class="line">main.c</span><br><span class="line">Kconfig</span><br><span class="line">Makefile</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight txt"><figcaption><span>2. 使用 make 编译</span></figcaption><table><tr><td class="code"><pre><span class="line">make</span><br><span class="line">make clean</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight txt"><figcaption><span>3. 手动打开配置界面</span></figcaption><table><tr><td class="code"><pre><span class="line">make menuconfig</span><br></pre></td></tr></table></figure>
+
+<h2 id="例程"><a href="#例程" class="headerlink" title="例程"></a>例程</h2><figure class="highlight c"><figcaption><span>example: main.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;config.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;hello, world\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_1_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_1_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_1_1_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_1_1_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_1_2_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_1_2_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_1_3_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_1_3_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_2_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_2_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_2_1_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_2_1_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_2_2_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_2_2_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> CONFIG_FUNCTION_2_3_ENABLE</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;CONFIG_FUNCTION_2_3_ENABLE\n&quot;</span>);</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;USERNAME: %s\n&quot;</span>, CONFIG_USERNAME);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;PASSWORD: %d\n&quot;</span>, CONFIG_PASSWORD);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><figcaption><span>example: Kconfig</span></figcaption><table><tr><td class="code"><pre><span class="line">mainmenu <span class="string">&quot;Kconfig&quot;</span></span><br><span class="line"></span><br><span class="line">menu <span class="string">&quot;example&quot;</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_1_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 1&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">1</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_1_1_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 1.1&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_1_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">1.1</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_1_2_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 1.2&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_1_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">1.2</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_1_3_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 1.3&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_1_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">1.3</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_2_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 2&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">2</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_2_1_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 2.1&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_2_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">2.1</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_2_2_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 2.2&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_2_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">2.2</span></span><br><span class="line"></span><br><span class="line">config FUNCTION_2_3_ENABLE</span><br><span class="line">    <span class="type">bool</span> <span class="string">&quot;Function 2.3&quot;</span></span><br><span class="line">    <span class="keyword">default</span> n</span><br><span class="line">    depends on FUNCTION_2_ENABLE</span><br><span class="line">    help</span><br><span class="line">        Function <span class="number">2.3</span></span><br><span class="line"></span><br><span class="line">config USERNAME</span><br><span class="line">    <span class="built_in">string</span> <span class="string">&quot;username&quot;</span></span><br><span class="line">    <span class="keyword">default</span> <span class="string">&quot;abc&quot;</span></span><br><span class="line">    help</span><br><span class="line">        Input a <span class="built_in">string</span> value.</span><br><span class="line"></span><br><span class="line">config PASSWORD</span><br><span class="line">    <span class="type">int</span> <span class="string">&quot;password&quot;</span></span><br><span class="line">    range <span class="number">0</span> <span class="number">255</span></span><br><span class="line">    <span class="keyword">default</span> <span class="number">123</span></span><br><span class="line">    help</span><br><span class="line">        Input a <span class="type">int</span> value. Range from <span class="number">0</span> to <span class="number">255.</span></span><br><span class="line"></span><br><span class="line">endmenu</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight makefile"><figcaption><span>example: Makefile</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="section">all: main.o</span></span><br><span class="line">	gcc main.o -o main</span><br><span class="line"><span class="section">main.o: main.c config.h</span></span><br><span class="line">	gcc main.c -c -o main.o</span><br><span class="line"><span class="section">clean:</span></span><br><span class="line">	rm  main.o main</span><br><span class="line"></span><br><span class="line"><span class="section">config.h:.config</span></span><br><span class="line">	genconfig --header-path config.h</span><br><span class="line"><span class="section">.config:</span></span><br><span class="line">	menuconfig</span><br><span class="line"><span class="section">menuconfig:</span></span><br><span class="line">	menuconfig</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>项目代码管理方案</title>
+    <url>/sulfurandcu.io/cm4azoo32001n70rqdt923mqq.html</url>
+    <content><![CDATA[<p><img src="/sulfurandcu.io/cm4azoo32001n70rqdt923mqq/solution.png"></p>
+<center><b>“项目化交付”模式下的“基线产品化”方案</b></center><br>
+
+<span id="more"></span>
+
+<h2 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h2><p><img src="/sulfurandcu.io/cm4azoo32001n70rqdt923mqq/current_situation.png"></p>
+<ul>
+<li>模块、创新、成果分散在各个项目中，难以维护、继承、复用、持续优化。</li>
+<li>修复的缺陷无法继承，重复的问题一而再，再而三出现，项目质量难以保证。</li>
+<li>重复的工作，开发体验差。</li>
+</ul>
+<h2 id="可行的方案"><a href="#可行的方案" class="headerlink" title="可行的方案"></a>可行的方案</h2><p><img src="/sulfurandcu.io/cm4azoo32001n70rqdt923mqq/solution_dir.png"></p>
+<ol>
+<li>建立组件库和基线库：</li>
+</ol>
+<ul>
+<li>组件库<ul>
+<li>软件复用模块</li>
+<li>实时操作系统</li>
+<li>硬件标准接口</li>
+<li>硬件平台驱动</li>
+<li>硬件设备驱动</li>
+</ul>
+</li>
+<li>基线库<ul>
+<li>升级引导程序基线工程（bootloader）</li>
+<li>裸机循环系统基线工程（NoOS）</li>
+<li>实时操作系统基线工程（RTOS）</li>
+<li>通用操作系统基线工程（Linux *optional）</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>现有的项目经过整合、汇总，形成项目库：</li>
+</ol>
+<ul>
+<li>项目库<ul>
+<li>项目Ａ</li>
+<li>项目Ｂ</li>
+<li>项目Ｃ</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>后期新的项目在基线工程的基础上创建</li>
+<li>在各个项目上所做的优化、创新，要及时回馈到「基线工程」和「组件库」中。</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>把 RT-THREAD 设备框架移植到裸机平台</title>
+    <url>/sulfurandcu.io/cm4aw35rg000270rq43hj5g6x.html</url>
+    <content><![CDATA[<p>这 RT-THREAD 的设备框架确实是个好东西，能不能移植到裸机工程上，为我 bootloader 所用呢😏？</p>
+<p>事实证明可以😎！</p>
+<p><img src="/sulfurandcu.io/cm4aw35rg000270rq43hj5g6x/architecture.png"></p>
+<span id="more"></span>
+
+<h2 id="移植前（向下调用机制）"><a href="#移植前（向下调用机制）" class="headerlink" title="移植前（向下调用机制）"></a>移植前（向下调用机制）</h2><p><img src="/sulfurandcu.io/cm4aw35rg000270rq43hj5g6x/now.png"></p>
+<h2 id="移植后（向上注册机制）"><a href="#移植后（向上注册机制）" class="headerlink" title="移植后（向上注册机制）"></a>移植后（向上注册机制）</h2><p><img src="/sulfurandcu.io/cm4aw35rg000270rq43hj5g6x/redesign.png"></p>
 ]]></content>
   </entry>
   <entry>
@@ -1531,6 +1646,80 @@ N2---&gt;N2.3[&quot; &quot;]
 </li>
 </ul>
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://elmagnifico.tech/2022/03/14/Embeded-IDE/">https://elmagnifico.tech/2022/03/14/Embeded-IDE/</a><br><a href="https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/">https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/</a></p>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>集成开发环境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成开发环境－GCC.ARM（#00）目录索引</title>
+    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
+    <content><![CDATA[<hr>
+<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成开发环境－GCC.ARM（#01）环境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成开发环境－GCC.ARM（#02）程序构建</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成开发环境－GCC.ARM（#03）程序烧录</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成开发环境－GCC.ARM（#04）快捷任务</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成开发环境－GCC.ARM（#05）程序调试</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成开发环境－DBG</a></p>
+<hr>
+<p>传统的集成开发环境（MDK、IAR）通常会提供包括编辑、编译、烧录、调试在内的一整套工具，开发者无需配置，简单易用，但 license 也不是一般的贵。</p>
+<p>替代方案：</p>
+<ul>
+<li><strong>VSC</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
+<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
+<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
+<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
+</ul>
+</li>
+<li><strong>VS</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
+<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
+</ul>
+</li>
+<li><strong>Eclipse</strong></li>
+<li><strong>Eclipse Based</strong><ul>
+<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
+<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
+<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol>
+<li>编辑（vscode）</li>
+<li>编译（arm-none-eabi-xxx）</li>
+<li>烧录（JLink）</li>
+<li>调试（vscode-debug + cortex-debug + arm-none-eabi-gdb + JLinkGDBServerCL + JLinkDevice）</li>
+</ol>
+<ul>
+<li><p><strong>vscode (task.json)</strong><br>文本编辑器，其实是一个伪装成文本编辑器的开发框架。</p>
+</li>
+<li><p><strong>arm-none-eabi-xxx</strong><br>交叉编译器，可以编译出在 Cortex-R&amp;M 平台上运行的可执行程序。</p>
+</li>
+<li><p><strong>JLink&#x2F;OpenOCD</strong><br>程序烧录器，负责将编译好的程序烧录到目标芯片中。</p>
+</li>
+<li><p><strong>vscode-debug (launch.json)</strong><br>图形调试器，内部集成的图形调试组件，提供一套图形调试界面，与调试适配器打交道。</p>
+</li>
+<li><p><strong>cortex-debug</strong><br>调试适配器，将图形调试器的操作翻译成命令调试器能够看得懂的命令。</p>
+</li>
+<li><p><strong>arm-none-eabi-gdb</strong><br>命令调试器，支持通过命令行的方式进行调试。</p>
+</li>
+<li><p><strong>JLinkGDBServerCL&#x2F;OpenOCD</strong><br>调试服务器，负责协助调试器识别并管理各种仿真设备和目标芯片。</p>
+</li>
+<li><p><strong>JLinkDriver</strong><br>仿真器驱动，负责驱动仿真器设备。</p>
+</li>
+<li><p><strong>JLinkDongle</strong><br>仿真器设备，通过 JTAG 或 SWD 协议与芯片打交道。</p>
+</li>
+</ul>
+<blockquote>
+<p>倘若宿主机使用 Windows 操作系统并且购买了 JLinkDongle 仿真器，则推荐使用 JLink 方案！</p>
+</blockquote>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方设备支持:HT32F52352 Cortex-M0+</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code开发STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code开发STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code开发STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code开发STM32（四）</a></p>
+<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作总结记录</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 开发环境—— 详细版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 开发stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32开发调试环境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 开发环境（详细）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32开发调试环境（转）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32开发环境（极简自我搭建&amp;懒人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 调试器使用介绍</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
 ]]></content>
       <categories>
         <category>开发笔记</category>
@@ -1682,80 +1871,6 @@ N2---&gt;N2.3[&quot; &quot;]
 
 <p>6. 断开连接</p>
 <p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>集成开发环境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成开发环境－GCC.ARM（#00）目录索引</title>
-    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
-    <content><![CDATA[<hr>
-<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成开发环境－GCC.ARM（#01）环境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成开发环境－GCC.ARM（#02）程序构建</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成开发环境－GCC.ARM（#03）程序烧录</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成开发环境－GCC.ARM（#04）快捷任务</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成开发环境－GCC.ARM（#05）程序调试</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成开发环境－DBG</a></p>
-<hr>
-<p>传统的集成开发环境（MDK、IAR）通常会提供包括编辑、编译、烧录、调试在内的一整套工具，开发者无需配置，简单易用，但 license 也不是一般的贵。</p>
-<p>替代方案：</p>
-<ul>
-<li><strong>VSC</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
-<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
-<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
-<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
-<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
-</ul>
-</li>
-<li><strong>VS</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
-<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
-</ul>
-</li>
-<li><strong>Eclipse</strong></li>
-<li><strong>Eclipse Based</strong><ul>
-<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
-<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
-<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
-</ul>
-</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol>
-<li>编辑（vscode）</li>
-<li>编译（arm-none-eabi-xxx）</li>
-<li>烧录（JLink）</li>
-<li>调试（vscode-debug + cortex-debug + arm-none-eabi-gdb + JLinkGDBServerCL + JLinkDevice）</li>
-</ol>
-<ul>
-<li><p><strong>vscode (task.json)</strong><br>文本编辑器，其实是一个伪装成文本编辑器的开发框架。</p>
-</li>
-<li><p><strong>arm-none-eabi-xxx</strong><br>交叉编译器，可以编译出在 Cortex-R&amp;M 平台上运行的可执行程序。</p>
-</li>
-<li><p><strong>JLink&#x2F;OpenOCD</strong><br>程序烧录器，负责将编译好的程序烧录到目标芯片中。</p>
-</li>
-<li><p><strong>vscode-debug (launch.json)</strong><br>图形调试器，内部集成的图形调试组件，提供一套图形调试界面，与调试适配器打交道。</p>
-</li>
-<li><p><strong>cortex-debug</strong><br>调试适配器，将图形调试器的操作翻译成命令调试器能够看得懂的命令。</p>
-</li>
-<li><p><strong>arm-none-eabi-gdb</strong><br>命令调试器，支持通过命令行的方式进行调试。</p>
-</li>
-<li><p><strong>JLinkGDBServerCL&#x2F;OpenOCD</strong><br>调试服务器，负责协助调试器识别并管理各种仿真设备和目标芯片。</p>
-</li>
-<li><p><strong>JLinkDriver</strong><br>仿真器驱动，负责驱动仿真器设备。</p>
-</li>
-<li><p><strong>JLinkDongle</strong><br>仿真器设备，通过 JTAG 或 SWD 协议与芯片打交道。</p>
-</li>
-</ul>
-<blockquote>
-<p>倘若宿主机使用 Windows 操作系统并且购买了 JLinkDongle 仿真器，则推荐使用 JLink 方案！</p>
-</blockquote>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方设备支持:HT32F52352 Cortex-M0+</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code开发STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code开发STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code开发STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code开发STM32（四）</a></p>
-<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作总结记录</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 开发环境—— 详细版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 开发stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32开发调试环境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 开发环境（详细）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32开发调试环境（转）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32开发环境（极简自我搭建&amp;懒人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 调试器使用介绍</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
 ]]></content>
       <categories>
         <category>开发笔记</category>
@@ -2793,25 +2908,6 @@ flowchart LR
       </tags>
   </entry>
   <entry>
-    <title>问题记录：华大 HC32F460 避坑指南之 ICG 寄存器</title>
-    <url>/sulfurandcu.io/cloqzaza3003fmgrqdpkl8c5j.html</url>
-    <content><![CDATA[<p>在《参考手册》第六章〈初始化配置〉中，八个初始化配置寄存器的复位值是不定的，华大对此的处理方式很巧妙（但是也给移植埋下了一个大坑）：</p>
-<figure class="highlight c"><figcaption><span>hc32f460_icg.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">/*!&lt; ICG0 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG0_REGISTER_CONSTANT                  (((uint32_t)ICG0_WDT_REG_CONFIG &lt;&lt; 16)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG0_SWDT_REG_CONFIG)       | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0xE000E000ul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG1 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG1_REGISTER_CONSTANT                  (((uint32_t)ICG1_NMI_REG_CONFIG &lt;&lt; 24)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_VDU0_REG_CONFIG &lt;&lt; 16) | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_HRC_REG_CONFIG)        | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0x03F8FEFEul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG2~7 register reserved value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG2_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG3_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG4_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG5_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG6_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG7_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><figcaption><span>hc32f460_icg.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">if</span> defined ( __GNUC__ ) &amp;&amp; !defined (__CC_ARM) <span class="comment">/* GNU Compiler */</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((section(<span class="string">&quot;.icg_sec&quot;</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__CC_ARM)</span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((at(<span class="number">0x400</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__ICCARM__)</span></span><br><span class="line">__root <span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] @ <span class="number">0x400</span> =</span><br><span class="line"><span class="meta">#<span class="keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">error</span> <span class="string">&quot;unsupported compiler!!&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">/* ICG 0~ 3 */</span></span><br><span class="line">    ICG0_REGISTER_CONSTANT,</span><br><span class="line">    ICG1_REGISTER_CONSTANT,</span><br><span class="line">    ICG2_REGISTER_CONSTANT,</span><br><span class="line">    ICG3_REGISTER_CONSTANT,</span><br><span class="line">    <span class="comment">/* ICG 4~ 7 */</span></span><br><span class="line">    ICG4_REGISTER_CONSTANT,</span><br><span class="line">    ICG5_REGISTER_CONSTANT,</span><br><span class="line">    ICG6_REGISTER_CONSTANT,</span><br><span class="line">    ICG7_REGISTER_CONSTANT,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>通过定义常量的方式，在程序加载阶段，将数据 load 至指定的寄存器。</p>
-<h2 id="避坑指北"><a href="#避坑指北" class="headerlink" title="避坑指北"></a>避坑指北</h2><p>如果项目由 bootloader 和 app 两部分组成，那么只能在 bootloader 中添加上述源文件，在 app 中不能添加该文件，否则会出现异常。</p>
-]]></content>
-      <categories>
-        <category>问题记录</category>
-      </categories>
-      <tags>
-        <tag>华大半导体</tag>
-        <tag>HC32F460</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>问题记录：华大 HC32L19x 时钟初始化函数存在缺陷</title>
     <url>/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html</url>
     <content><![CDATA[<p>hc32l19x_reference_manaul</p>
@@ -2830,6 +2926,25 @@ flowchart LR
       <tags>
         <tag>华大半导体</tag>
         <tag>HC32L19X</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>问题记录：华大 HC32F460 避坑指南之 ICG 寄存器</title>
+    <url>/sulfurandcu.io/cloqzaza3003fmgrqdpkl8c5j.html</url>
+    <content><![CDATA[<p>在《参考手册》第六章〈初始化配置〉中，八个初始化配置寄存器的复位值是不定的，华大对此的处理方式很巧妙（但是也给移植埋下了一个大坑）：</p>
+<figure class="highlight c"><figcaption><span>hc32f460_icg.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">/*!&lt; ICG0 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG0_REGISTER_CONSTANT                  (((uint32_t)ICG0_WDT_REG_CONFIG &lt;&lt; 16)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG0_SWDT_REG_CONFIG)       | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0xE000E000ul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG1 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG1_REGISTER_CONSTANT                  (((uint32_t)ICG1_NMI_REG_CONFIG &lt;&lt; 24)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_VDU0_REG_CONFIG &lt;&lt; 16) | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_HRC_REG_CONFIG)        | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0x03F8FEFEul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG2~7 register reserved value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG2_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG3_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG4_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG5_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG6_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG7_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><figcaption><span>hc32f460_icg.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">if</span> defined ( __GNUC__ ) &amp;&amp; !defined (__CC_ARM) <span class="comment">/* GNU Compiler */</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((section(<span class="string">&quot;.icg_sec&quot;</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__CC_ARM)</span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((at(<span class="number">0x400</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__ICCARM__)</span></span><br><span class="line">__root <span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] @ <span class="number">0x400</span> =</span><br><span class="line"><span class="meta">#<span class="keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">error</span> <span class="string">&quot;unsupported compiler!!&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">/* ICG 0~ 3 */</span></span><br><span class="line">    ICG0_REGISTER_CONSTANT,</span><br><span class="line">    ICG1_REGISTER_CONSTANT,</span><br><span class="line">    ICG2_REGISTER_CONSTANT,</span><br><span class="line">    ICG3_REGISTER_CONSTANT,</span><br><span class="line">    <span class="comment">/* ICG 4~ 7 */</span></span><br><span class="line">    ICG4_REGISTER_CONSTANT,</span><br><span class="line">    ICG5_REGISTER_CONSTANT,</span><br><span class="line">    ICG6_REGISTER_CONSTANT,</span><br><span class="line">    ICG7_REGISTER_CONSTANT,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>通过定义常量的方式，在程序加载阶段，将数据 load 至指定的寄存器。</p>
+<h2 id="避坑指北"><a href="#避坑指北" class="headerlink" title="避坑指北"></a>避坑指北</h2><p>如果项目由 bootloader 和 app 两部分组成，那么只能在 bootloader 中添加上述源文件，在 app 中不能添加该文件，否则会出现异常。</p>
+]]></content>
+      <categories>
+        <category>问题记录</category>
+      </categories>
+      <tags>
+        <tag>华大半导体</tag>
+        <tag>HC32F460</tag>
       </tags>
   </entry>
   <entry>
@@ -2860,7 +2975,7 @@ flowchart LR
 </center><br><br>
 ]]></content>
       <categories>
-        <category>开发指南</category>
+        <category>开发笔记</category>
       </categories>
       <tags>
         <tag>华大半导体</tag>
@@ -2936,6 +3051,35 @@ flowchart LR
       </tags>
   </entry>
   <entry>
+    <title>问题记录：华大 HC32F460 超频过猛导致 MCU 宕机</title>
+    <url>/sulfurandcu.io/cloqxdq0v001nmgrq2um386nw.html</url>
+    <content><![CDATA[<p>最近又把 MCU 给干废了，现象如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Load &quot;main.axf&quot;</span><br><span class="line">* JLink Info: Device &quot;CORTEX-M4&quot; selected.</span><br><span class="line">Set JLink Project File to &quot;JLinkSettings.ini&quot;</span><br><span class="line">* JLink Info: Device &quot;CORTEX-M4&quot; selected.</span><br><span class="line"></span><br><span class="line">JLink info:</span><br><span class="line">------------</span><br><span class="line">DLL: V7.22b, compiled Jun 17 2021 17:22:49</span><br><span class="line">Firmware: J-Link V9 compiled May  7 2021 16:26:12</span><br><span class="line">Hardware: V9.60</span><br><span class="line">S/N : 69667602</span><br><span class="line">Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash</span><br><span class="line"></span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Skipped. Invalid implementer code read from CPUIDVal[31:24] = 0x00</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Skipped. Invalid implementer code read from CPUIDVal[31:24] = 0x00</span><br><span class="line"></span><br><span class="line">***JLink Error: Could not find core in Coresight setup</span><br><span class="line"></span><br><span class="line">Error: Flash Download failed  -  Target DLL has been cancelled</span><br><span class="line">Flash Load finished at 10:35:22</span><br></pre></td></tr></table></figure>
+
+<p>事情经过是这样的，某款产品第一版硬件的时钟源选用的是 6MHz 的外部晶振，内部倍频至 128MHz 作为系统主频，而第二版则改成了 24MHz 的外部晶振，第二版硬件出来后，将第一版程序直接烧录进第二版硬件后 MCU 无法正常启动且无法被识别。</p>
+<p>初步推测，应该是外部晶振频率提高，但是程序没有进行适当地分频，导致系统主频远远超过数据手册中规定的频率上限（200MHz）。</p>
+<!--
+公式使用工具 https://latexlive.com/ 生成
+\begin{align}
+& 128MHz × (24MHz / 6MHz) = 512MHz \ \ \ > \ \ \ MAX(200MHz) \\
+\end{align}
+-->
+</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable displaystyle="true" columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt"><mtr><mtd></mtd><mtd><mn>128</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo>×</mo><mo stretchy="false">(</mo><mn>24</mn><mi>M</mi><mi>H</mi><mi>z</mi><mrow><mo>/</mo></mrow><mn>6</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><mn>512</mn><mi>M</mi><mi>H</mi><mi>z</mi><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mo>&gt;</mo><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mi>M</mi><mi>A</mi><mi>X</mi><mo stretchy="false">(</mo><mn>200</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo stretchy="false">)</mo></mtd></mtr></mtable></math>
+<br>
+
+<p>后面通过调试，证实程序的确是在 <code>M4_SYSREG-&gt;CMU_CKSWR_f.CKSW = enTargetSysSrc;</code> 处出现异常。</p>
+<p>上述操作其实就是「超频」，只是超得有点猛，导致芯片直接宕机。这种情况借助华大的离线下载器重新烧录程序即可恢复正常。</p>
+]]></content>
+      <categories>
+        <category>问题记录</category>
+      </categories>
+      <tags>
+        <tag>华大半导体</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>开发指南：华大 HC32F460 时钟控制单元</title>
     <url>/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup.html</url>
     <content><![CDATA[<h2 id="clock"><a href="#clock" class="headerlink" title="clock"></a>clock</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-tree-sketch.png"></p>
@@ -2991,7 +3135,7 @@ flowchart LR
 </div>
 ]]></content>
       <categories>
-        <category>开发指南</category>
+        <category>开发笔记</category>
       </categories>
       <tags>
         <tag>华大半导体</tag>
@@ -2999,25 +3143,26 @@ flowchart LR
       </tags>
   </entry>
   <entry>
-    <title>问题记录：华大 HC32F460 超频过猛导致 MCU 宕机</title>
-    <url>/sulfurandcu.io/cloqxdq0v001nmgrq2um386nw.html</url>
-    <content><![CDATA[<p>最近又把 MCU 给干废了，现象如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Load &quot;main.axf&quot;</span><br><span class="line">* JLink Info: Device &quot;CORTEX-M4&quot; selected.</span><br><span class="line">Set JLink Project File to &quot;JLinkSettings.ini&quot;</span><br><span class="line">* JLink Info: Device &quot;CORTEX-M4&quot; selected.</span><br><span class="line"></span><br><span class="line">JLink info:</span><br><span class="line">------------</span><br><span class="line">DLL: V7.22b, compiled Jun 17 2021 17:22:49</span><br><span class="line">Firmware: J-Link V9 compiled May  7 2021 16:26:12</span><br><span class="line">Hardware: V9.60</span><br><span class="line">S/N : 69667602</span><br><span class="line">Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash</span><br><span class="line"></span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Skipped. Invalid implementer code read from CPUIDVal[31:24] = 0x00</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Skipped. Invalid implementer code read from CPUIDVal[31:24] = 0x00</span><br><span class="line"></span><br><span class="line">***JLink Error: Could not find core in Coresight setup</span><br><span class="line"></span><br><span class="line">Error: Flash Download failed  -  Target DLL has been cancelled</span><br><span class="line">Flash Load finished at 10:35:22</span><br></pre></td></tr></table></figure>
+    <title>问题记录：华大 HC32F460 切换运行模式导致宕机</title>
+    <url>/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4.html</url>
+    <content><![CDATA[<h2 id="现象描述"><a href="#现象描述" class="headerlink" title="现象描述"></a>现象描述</h2><ul>
+<li>从高速&#x2F;超高速模式向超低速模式切换时 mcu 异常死机</li>
+</ul>
+<h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><ul>
+<li>当前使用华大 2.2.0 版驱动程序</li>
+<li>当前使用华大 1.2.1 版参考手册</li>
+</ul>
+<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>通过调试发现每次运行至 <code>M4_SYSREG-&gt;PWR_PWRC2</code> 赋值时程序就会跑飞😶</p>
+<p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2-Register.png" alt="电源模式控制寄存器 2"></p>
+<figure class="highlight c"><figcaption><span>hc32f460_pwc.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HS2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xE1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HP2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xD1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>事情经过是这样的，某款产品第一版硬件的时钟源选用的是 6MHz 的外部晶振，内部倍频至 128MHz 作为系统主频，而第二版则改成了 24MHz 的外部晶振，第二版硬件出来后，将第一版程序直接烧录进第二版硬件后 MCU 无法正常启动且无法被识别。</p>
-<p>初步推测，应该是外部晶振频率提高，但是程序没有进行适当地分频，导致系统主频远远超过数据手册中规定的频率上限（200MHz）。</p>
-<!--
-公式使用工具 https://latexlive.com/ 生成
-\begin{align}
-& 128MHz × (24MHz / 6MHz) = 512MHz \ \ \ > \ \ \ MAX(200MHz) \\
-\end{align}
--->
-</p>
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable displaystyle="true" columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt"><mtr><mtd></mtd><mtd><mn>128</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo>×</mo><mo stretchy="false">(</mo><mn>24</mn><mi>M</mi><mi>H</mi><mi>z</mi><mrow><mo>/</mo></mrow><mn>6</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><mn>512</mn><mi>M</mi><mi>H</mi><mi>z</mi><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mo>&gt;</mo><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mi>M</mi><mi>A</mi><mi>X</mi><mo stretchy="false">(</mo><mn>200</mn><mi>M</mi><mi>H</mi><mi>z</mi><mo stretchy="false">)</mo></mtd></mtr></mtable></math>
-<br>
+<p>瞅了一眼《参考手册 Rev1.2.1》好像也没啥问题，又看了《参考手册 Rev1.3》后，我得发…🙄！</p>
+<p>两版手册竟然不一样！</p>
+<span id="more"></span>
 
-<p>后面通过调试，证实程序的确是在 <code>M4_SYSREG-&gt;CMU_CKSWR_f.CKSW = enTargetSysSrc;</code> 处出现异常。</p>
-<p>上述操作其实就是「超频」，只是超得有点猛，导致芯片直接宕机。这种情况借助华大的离线下载器重新烧录程序即可恢复正常。</p>
+<h3 id="Rev1-2-1"><a href="#Rev1-2-1" class="headerlink" title="Rev1.2.1"></a>Rev1.2.1</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2.png" alt="运行模式的切换流程（Rev1.2）"></p>
+<h3 id="Rev1-3-0"><a href="#Rev1-3-0" class="headerlink" title="Rev1.3.0"></a>Rev1.3.0</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.3.png" alt="运行模式的切换流程（Rev1.3）"></p>
+<p>这妥妥的是华大的锅了…</p>
 ]]></content>
       <categories>
         <category>问题记录</category>
@@ -3051,26 +3196,37 @@ flowchart LR
       </tags>
   </entry>
   <entry>
-    <title>问题记录：华大 HC32F460 切换运行模式导致宕机</title>
-    <url>/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4.html</url>
-    <content><![CDATA[<h2 id="现象描述"><a href="#现象描述" class="headerlink" title="现象描述"></a>现象描述</h2><ul>
-<li>从高速&#x2F;超高速模式向超低速模式切换时 mcu 异常死机</li>
+    <title>问题记录：华大 HC32F460 内存边界禁止非对齐访问</title>
+    <url>/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1.html</url>
+    <content><![CDATA[<h2 id="文章更新（2023-11-14）"><a href="#文章更新（2023-11-14）" class="headerlink" title="文章更新（2023-11-14）"></a>文章更新（2023-11-14）</h2><p>经过排查，本文所述异常现象并非由「非对齐访问」所致，而是因为 SRAM3 开启 ECC 校验时仅支持以字为单位进行访问。</p>
+<h2 id="现象描述"><a href="#现象描述" class="headerlink" title="现象描述"></a>现象描述</h2><ul>
+<li>程序无法正常启动</li>
+<li>有时会进入 hard fault 中断</li>
+<li>有时候会出现以下异常：</li>
 </ul>
-<h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><ul>
-<li>当前使用华大 2.2.0 版驱动程序</li>
-<li>当前使用华大 1.2.1 版参考手册</li>
-</ul>
-<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>通过调试发现每次运行至 <code>M4_SYSREG-&gt;PWR_PWRC2</code> 赋值时程序就会跑飞😶</p>
-<p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2-Register.png" alt="电源模式控制寄存器 2"></p>
-<figure class="highlight c"><figcaption><span>hc32f460_pwc.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HS2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xE1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HP2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xD1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Call Stack + Locals                                                                    ✘</span><br><span class="line">    Name                                Location/Value                          Type</span><br><span class="line">    __scatterload_zeroinit              0x00074C56                              function</span><br><span class="line">    __scatterload                       0x00018DFE                              function</span><br></pre></td></tr></table></figure>
 
-<p>瞅了一眼《参考手册 Rev1.2.1》好像也没啥问题，又看了《参考手册 Rev1.3》后，我得发…🙄！</p>
-<p>两版手册竟然不一样！</p>
 <span id="more"></span>
 
-<h3 id="Rev1-2-1"><a href="#Rev1-2-1" class="headerlink" title="Rev1.2.1"></a>Rev1.2.1</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2.png" alt="运行模式的切换流程（Rev1.2）"></p>
-<h3 id="Rev1-3-0"><a href="#Rev1-3-0" class="headerlink" title="Rev1.3.0"></a>Rev1.3.0</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.3.png" alt="运行模式的切换流程（Rev1.3）"></p>
-<p>这妥妥的是华大的锅了…</p>
+<h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><h3 id="芯片资源"><a href="#芯片资源" class="headerlink" title="芯片资源"></a>芯片资源</h3><ul>
+<li>RAM 192KB&#x2F;0x30000</li>
+<li>ROM 512KB&#x2F;0x80000（其中通过分散加载给应用程序分配的空间为 416KB&#x2F;0x68000）</li>
+</ul>
+<h3 id="链接数据"><a href="#链接数据" class="headerlink" title="链接数据"></a>链接数据</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">==============================================================================</span><br><span class="line"></span><br><span class="line">    Total RO  Size (Code + RO Data)               419844 ( 410.00kB)</span><br><span class="line">    Total RW  Size (RW Data + ZI Data)            163952 ( 160.11kB)</span><br><span class="line">    Total ROM Size (Code + RO Data + RW Data)     421056 ( 411.19kB)</span><br><span class="line"></span><br><span class="line">==============================================================================</span><br></pre></td></tr></table></figure>
+
+<h3 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LR_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line"></span><br><span class="line">	; 中断向量</span><br><span class="line">	ER_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line">		*.o (RESET, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序信息</span><br><span class="line">	ER_IROM2 + 0 &#123;</span><br><span class="line">		*.o (SECTION_INFO_APP, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序代码</span><br><span class="line">	ER_IROM3 + 0 &#123;</span><br><span class="line">		*(InRoot$$Sections)</span><br><span class="line">		.ANY (+RO)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM1 0x1FFF8000 0x00030000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>由于代码量比较临界，起初我以为是 flash 的问题。但是 map 文件中显示 ROM 只占用了 411.19kB 的空间，并没有超过 416KB 的总量。那 RAM 呢？RAM 只用了 160.11KB 也没有超过 192KB 的总量，邪了门儿了真是！哎，等等！这款芯片的 RAM 我记得好像是分成了两块，怎么说的来着，瞅一眼《参考手册》：</p>
+<p><img src="/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1/HC32F460-manual.png"></p>
+<p>果然，两块 RAM 间不支持非对齐访问，再一看 SRAMH 的大小：32KB！<del>破案了！现在 RAM 的用量不正好到达 160KB（192KB - 32KB &#x3D; 160KB）这个临界点了么！</del></p>
+<blockquote>
+<p>超过 160KB 确实会出现异常，但不是因达到 SRAMH 所致（SRAMH 地址最小，始终会用到）而是因达到 SRAM3 且使能 ECC 校验所致。注意看红线上面的那句话：「在允许 RAM ECC 校验错误产生 NMI 中断和复位的情况下，必须对所用 RAM 空间以字（16bit）为单位进行访问」。</p>
+</blockquote>
+<p>按照现有分散加载文件的写法，两块内存会被认为是一个整体，那么就必然存在「在内存边界处进行非对齐访问」的可能。</p>
+<h2 id="规避方法"><a href="#规避方法" class="headerlink" title="规避方法"></a>规避方法</h2><p>非对齐访问的风险可以在分散加载文件中将两块内存断开：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LR_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line"></span><br><span class="line">	; 中断向量</span><br><span class="line">	ER_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line">		*.o (RESET, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序信息</span><br><span class="line">	ER_IROM2 + 0 &#123;</span><br><span class="line">		*.o (SECTION_INFO_APP, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序代码</span><br><span class="line">	ER_IROM3 + 0 &#123;</span><br><span class="line">		*(InRoot$$Sections)</span><br><span class="line">		.ANY (+RO)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM1 0x1FFF8000 0x00007FF0 &#123; ; 空出若干字节不用，以避免非对齐访问。</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM2 0x20000000 0x00028000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>SRAM3 开启 ECC 后仅支持以字为单位进行访问的问题可以通过禁用 ECC 功能来解决。当然如果你一定要用 ECC 的话，那这块空间肯定不能用来让编译器自动分配内存，而是要自己来手动管理。</p>
 ]]></content>
       <categories>
         <category>问题记录</category>
@@ -3199,53 +3355,12 @@ flowchart LR
 </tbody></table>
 ]]></content>
       <categories>
-        <category>开发指南</category>
+        <category>开发笔记</category>
       </categories>
       <tags>
         <tag>华大半导体</tag>
         <tag>HC32F460</tag>
         <tag>HC32F4A0</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>问题记录：华大 HC32F460 内存边界禁止非对齐访问</title>
-    <url>/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1.html</url>
-    <content><![CDATA[<h2 id="文章更新（2023-11-14）"><a href="#文章更新（2023-11-14）" class="headerlink" title="文章更新（2023-11-14）"></a>文章更新（2023-11-14）</h2><p>经过排查，本文所述异常现象并非由「非对齐访问」所致，而是因为 SRAM3 开启 ECC 校验时仅支持以字为单位进行访问。</p>
-<h2 id="现象描述"><a href="#现象描述" class="headerlink" title="现象描述"></a>现象描述</h2><ul>
-<li>程序无法正常启动</li>
-<li>有时会进入 hard fault 中断</li>
-<li>有时候会出现以下异常：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Call Stack + Locals                                                                    ✘</span><br><span class="line">    Name                                Location/Value                          Type</span><br><span class="line">    __scatterload_zeroinit              0x00074C56                              function</span><br><span class="line">    __scatterload                       0x00018DFE                              function</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><h3 id="芯片资源"><a href="#芯片资源" class="headerlink" title="芯片资源"></a>芯片资源</h3><ul>
-<li>RAM 192KB&#x2F;0x30000</li>
-<li>ROM 512KB&#x2F;0x80000（其中通过分散加载给应用程序分配的空间为 416KB&#x2F;0x68000）</li>
-</ul>
-<h3 id="链接数据"><a href="#链接数据" class="headerlink" title="链接数据"></a>链接数据</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">==============================================================================</span><br><span class="line"></span><br><span class="line">    Total RO  Size (Code + RO Data)               419844 ( 410.00kB)</span><br><span class="line">    Total RW  Size (RW Data + ZI Data)            163952 ( 160.11kB)</span><br><span class="line">    Total ROM Size (Code + RO Data + RW Data)     421056 ( 411.19kB)</span><br><span class="line"></span><br><span class="line">==============================================================================</span><br></pre></td></tr></table></figure>
-
-<h3 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LR_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line"></span><br><span class="line">	; 中断向量</span><br><span class="line">	ER_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line">		*.o (RESET, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序信息</span><br><span class="line">	ER_IROM2 + 0 &#123;</span><br><span class="line">		*.o (SECTION_INFO_APP, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序代码</span><br><span class="line">	ER_IROM3 + 0 &#123;</span><br><span class="line">		*(InRoot$$Sections)</span><br><span class="line">		.ANY (+RO)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM1 0x1FFF8000 0x00030000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>由于代码量比较临界，起初我以为是 flash 的问题。但是 map 文件中显示 ROM 只占用了 411.19kB 的空间，并没有超过 416KB 的总量。那 RAM 呢？RAM 只用了 160.11KB 也没有超过 192KB 的总量，邪了门儿了真是！哎，等等！这款芯片的 RAM 我记得好像是分成了两块，怎么说的来着，瞅一眼《参考手册》：</p>
-<p><img src="/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1/HC32F460-manual.png"></p>
-<p>果然，两块 RAM 间不支持非对齐访问，再一看 SRAMH 的大小：32KB！<del>破案了！现在 RAM 的用量不正好到达 160KB（192KB - 32KB &#x3D; 160KB）这个临界点了么！</del></p>
-<blockquote>
-<p>超过 160KB 确实会出现异常，但不是因达到 SRAMH 所致（SRAMH 地址最小，始终会用到）而是因达到 SRAM3 且使能 ECC 校验所致。注意看红线上面的那句话：「在允许 RAM ECC 校验错误产生 NMI 中断和复位的情况下，必须对所用 RAM 空间以字（16bit）为单位进行访问」。</p>
-</blockquote>
-<p>按照现有分散加载文件的写法，两块内存会被认为是一个整体，那么就必然存在「在内存边界处进行非对齐访问」的可能。</p>
-<h2 id="规避方法"><a href="#规避方法" class="headerlink" title="规避方法"></a>规避方法</h2><p>非对齐访问的风险可以在分散加载文件中将两块内存断开：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LR_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line"></span><br><span class="line">	; 中断向量</span><br><span class="line">	ER_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line">		*.o (RESET, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序信息</span><br><span class="line">	ER_IROM2 + 0 &#123;</span><br><span class="line">		*.o (SECTION_INFO_APP, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序代码</span><br><span class="line">	ER_IROM3 + 0 &#123;</span><br><span class="line">		*(InRoot$$Sections)</span><br><span class="line">		.ANY (+RO)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM1 0x1FFF8000 0x00007FF0 &#123; ; 空出若干字节不用，以避免非对齐访问。</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM2 0x20000000 0x00028000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>SRAM3 开启 ECC 后仅支持以字为单位进行访问的问题可以通过禁用 ECC 功能来解决。当然如果你一定要用 ECC 的话，那这块空间肯定不能用来让编译器自动分配内存，而是要自己来手动管理。</p>
-]]></content>
-      <categories>
-        <category>问题记录</category>
-      </categories>
-      <tags>
-        <tag>华大半导体</tag>
-        <tag>HC32F460</tag>
       </tags>
   </entry>
 </search>
