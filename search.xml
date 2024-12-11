@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>囗－囗</title>
-    <url>/sulfurandcu.io/clnyhr2mt003b10rq5snfeg6t.html</url>
-    <content><![CDATA[<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center><br></center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
-
-<br>
-
-<span id="more"></span>
-
-<br>
-]]></content>
-  </entry>
-  <entry>
     <title>黄金时代随风而逝</title>
     <url>/sulfurandcu.io/clnyhr2mh001p10rq8w62htd4.html</url>
     <content><![CDATA[<p><img src="/sulfurandcu.io/clnyhr2mh001p10rq8w62htd4/cast.away.illusions.jpg"></p>
@@ -78,6 +58,39 @@
       <categories>
         <category>白银时代</category>
       </categories>
+  </entry>
+  <entry>
+    <title>囗－囗</title>
+    <url>/sulfurandcu.io/clnyhr2mt003b10rq5snfeg6t.html</url>
+    <content><![CDATA[<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center><br></center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+<center>囗囗囗囗囗囗囗　囗囗囗囗囗囗囗</center>
+
+<br>
+
+<span id="more"></span>
+
+<br>
+]]></content>
+  </entry>
+  <entry>
+    <title>二〇二一拼音漫游</title>
+    <url>/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7.html</url>
+    <content><![CDATA[<p><img src="/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7/2021.A.bopomofo.Odyssey.png"></p>
+]]></content>
+      <categories>
+        <category>语言文字</category>
+      </categories>
+      <tags>
+        <tag>汉语拼音</tag>
+        <tag>注音符号</tag>
+      </tags>
   </entry>
   <entry>
     <title>搭建一个文档系统</title>
@@ -152,19 +165,6 @@ docsify s
       </categories>
       <tags>
         <tag>docsify</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>二〇二一拼音漫游</title>
-    <url>/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7.html</url>
-    <content><![CDATA[<p><img src="/sulfurandcu.io/clnyhr2mh001m10rq3qr434d7/2021.A.bopomofo.Odyssey.png"></p>
-]]></content>
-      <categories>
-        <category>语言文字</category>
-      </categories>
-      <tags>
-        <tag>汉语拼音</tag>
-        <tag>注音符号</tag>
       </tags>
   </entry>
   <entry>
@@ -715,6 +715,23 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
+    <title>crc-lib</title>
+    <url>/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html</url>
+    <content><![CDATA[<center><a href="https://github.com/sulfurandcu/crc-lib">https://github.com/sulfurandcu/crc-lib</a></center><br>
+
+<span id="more"></span>
+
+<p><strong>目前支持的 crc 种类有：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">typedef enum crc_16_type_t</span><br><span class="line">&#123;</span><br><span class="line">    #if crc_16_poly_8005_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0xbb3d residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16, CRC-16/ARC, CRC-16/IBM, CRC-16/LHA</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_0000, // check=0xbb3d</span><br><span class="line">    CRC_16_ARC,</span><br><span class="line">    CRC_16_IBM,</span><br><span class="line">    CRC_16_LHA,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xfee8 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/UMTS, CRC-16/BUYPASS, CRC-16/VERIFONE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_0_0_0000, // check=0xfee8</span><br><span class="line">    CRC_16_UMTS,</span><br><span class="line">    CRC_16_BUYPASS,</span><br><span class="line">    CRC_16_VERIFONE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0x44c2 residue=0xb001</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MAXIM, CRC-16/MAXIM-DOW</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_FFFF, // check=0x44c2</span><br><span class="line">    CRC_16_MAXIM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x4b37 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MODBUS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_0000, // check=0x4b37</span><br><span class="line">    CRC_16_MODBUS,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x800D refin=0 refout=0 xorout=0x0000 check=0x9ecf residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DDS-110</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_800D_0_0_0000, // check=0x9ecf</span><br><span class="line">    CRC_16_DDS110,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0xb4c8 residue=0xb001</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/USB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_FFFF, // check=0xb4c8</span><br><span class="line">    CRC_16_USB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0xaee7 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/CMS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_0_0_0000, // check=0xaee7</span><br><span class="line">    CRC_16_CMS,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_1021_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0xFFFF check=0xd64e residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GENIBUS, CRC-16/DARC, CRC-16/EPC, CRC-16/EPC-C1G2, CRC-16/I-CODE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_FFFF, // check=0xd64e</span><br><span class="line">    CRC_16_GENIBUS,</span><br><span class="line">    CRC_16_DARC,</span><br><span class="line">    CRC_16_EPC,</span><br><span class="line">    CRC_16_EPC_C1G2,</span><br><span class="line">    CRC_16_ICODE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xce3c residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GSM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_FFFF, // check=0xce3c</span><br><span class="line">    CRC_16_GSM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x29b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT-FALSE, CRC-16/IBM-3740, CRC-16/AUTOSAR</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_0000, // check=0x29b1</span><br><span class="line">    CRC_16_CCITT_FALSE,</span><br><span class="line">    CRC_16_IBM_3740,</span><br><span class="line">    CRC_16_AUTOSAR,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0x906e residue=0xf0b8</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/X-25, CRC-16/IBM-SDLC, CRC-16/ISO-HDLC, CRC-16/ISO-IEC-14443-3-B, CRC-B</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_FFFF, // check=0x906e</span><br><span class="line">    CRC_16_X25,</span><br><span class="line">    CRC_16_IBM_SDLC,</span><br><span class="line">    CRC_16_ISO_HDLC,</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_B,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xC6C6 refin=1 refout=1 xorout=0x0000 check=0xbf05 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/ISO-IEC-14443-3-A, CRC-A</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_C6C6_1_1_0000, // check=0xbf05</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_A,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0x2189 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT, CRC-16/CCITT-TRUE, CRC-16/KERMIT, CRC-16/BLUETOOTH, CRC-16/V-41-LSB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_1_1_0000, // check=0x2189</span><br><span class="line">    CRC_16_CCITT,</span><br><span class="line">    CRC_16_CCITT_TRUE,</span><br><span class="line">    CRC_16_KERMIT,</span><br><span class="line">    CRC_16_BLUETOOTH,</span><br><span class="line">    CRC_16_V_41_LSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x6f91 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MCRF4XX</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_0000, // check=0x6f91</span><br><span class="line">    CRC_16_MCRF4XX,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xB2AA refin=1 refout=1 xorout=0x0000 check=0x63d0 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/RIELLO</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_B2AA_1_1_0000, // check=0x63d0</span><br><span class="line">    CRC_16_RIELLO,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x1D0F refin=0 refout=0 xorout=0x0000 check=0xe5cc residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/AUG-CCITT, CRC-16/SPI-FUJITSU</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_1D0F_0_0_0000, // check=0xe5cc</span><br><span class="line">    CRC_16_AUG_CCITT,</span><br><span class="line">    CRC_16_SPI_FUJITSU,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x31c3 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/XMODEM, CRC-16/ACORN, CRC-16/LTE, CRC-16/V-41-MSB, XMODEM, YMODEM, ZMODEM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_0000, // check=0x31c3</span><br><span class="line">    CRC_16_XMODEM,</span><br><span class="line">    CRC_16_YMODEM,</span><br><span class="line">    CRC_16_ZMODEM,</span><br><span class="line">    CRC_16_ACORN,</span><br><span class="line">    CRC_16_LTE,</span><br><span class="line">    CRC_16_V_41_MSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x89EC refin=1 refout=1 xorout=0x0000 check=0x26b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/TMS37157</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_89EC_1_1_0000, // check=0x26b1</span><br><span class="line">    CRC_16_TMS37157,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_xxxx_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0001 check=0x007e residue=0x0589</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-R, R-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0001, // check=0x007e</span><br><span class="line">    CRC_16_DECT_R,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x007f residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-X, X-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0000, // check=0x007f</span><br><span class="line">    CRC_16_DECT_X,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8bb7 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xd0db residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/T10-DIF</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8BB7_0000_0_0_0000, // check=0xd0db</span><br><span class="line">    CRC_16_T10_DIF,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3D65 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0xea82 residue=0x66c5</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/DNP</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_1_1_FFFF, // check=0xea82</span><br><span class="line">    CRC_16_DNP,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3d65 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xc2b7 residue=0xa366</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/EN-13757</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_0_0_FFFF, // check=0xc2b7</span><br><span class="line">    CRC_16_EN_13757,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xa097 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x0fb3 residue=0x0000</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/TELEDISK</span><br><span class="line">     */</span><br><span class="line">    CRC_16_A097_0000_0_0_0000, // check=0x0fb3</span><br><span class="line">    CRC_16_TELEDISK,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xc867 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x4c06 residue=0x0000</span><br><span class="line">     * class: academic</span><br><span class="line">     * alias: CRC-16/CDMA2000</span><br><span class="line">     */</span><br><span class="line">    CRC_16_C867_FFFF_0_0_0000, // check=0x4c06</span><br><span class="line">    CRC_16_CDMA2000,</span><br><span class="line">    #endif</span><br><span class="line">&#125; crc_16_type_t;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>crc</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>错误检测与纠正</title>
     <url>/sulfurandcu.io/clp0w5wzt00heigrq95tn05sz.html</url>
     <content><![CDATA[<p>错误检测与纠正，又称错误控制，分为错误检测与错误纠正两部分。</p>
@@ -760,9 +777,9 @@ N2---&gt;N2.3[&quot; &quot;]
         <category>开发笔记</category>
       </categories>
       <tags>
+        <tag>crc</tag>
         <tag>parity</tag>
         <tag>checksum</tag>
-        <tag>crc</tag>
       </tags>
   </entry>
   <entry>
@@ -854,23 +871,6 @@ N2---&gt;N2.3[&quot; &quot;]
         <tag>五线谱</tag>
         <tag>简谱</tag>
         <tag>lilypond</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>crc-lib</title>
-    <url>/sulfurandcu.io/clnyhr2mq002z10rqddw83ul7.html</url>
-    <content><![CDATA[<center><a href="https://github.com/sulfurandcu/crc-lib">https://github.com/sulfurandcu/crc-lib</a></center><br>
-
-<span id="more"></span>
-
-<p><strong>目前支持的 crc 种类有：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">typedef enum crc_16_type_t</span><br><span class="line">&#123;</span><br><span class="line">    #if crc_16_poly_8005_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0xbb3d residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16, CRC-16/ARC, CRC-16/IBM, CRC-16/LHA</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_0000, // check=0xbb3d</span><br><span class="line">    CRC_16_ARC,</span><br><span class="line">    CRC_16_IBM,</span><br><span class="line">    CRC_16_LHA,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xfee8 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/UMTS, CRC-16/BUYPASS, CRC-16/VERIFONE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_0_0_0000, // check=0xfee8</span><br><span class="line">    CRC_16_UMTS,</span><br><span class="line">    CRC_16_BUYPASS,</span><br><span class="line">    CRC_16_VERIFONE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0x44c2 residue=0xb001</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MAXIM, CRC-16/MAXIM-DOW</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_0000_1_1_FFFF, // check=0x44c2</span><br><span class="line">    CRC_16_MAXIM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x4b37 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MODBUS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_0000, // check=0x4b37</span><br><span class="line">    CRC_16_MODBUS,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0x800D refin=0 refout=0 xorout=0x0000 check=0x9ecf residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DDS-110</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_800D_0_0_0000, // check=0x9ecf</span><br><span class="line">    CRC_16_DDS110,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0xb4c8 residue=0xb001</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/USB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_1_1_FFFF, // check=0xb4c8</span><br><span class="line">    CRC_16_USB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8005 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0xaee7 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/CMS</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8005_FFFF_0_0_0000, // check=0xaee7</span><br><span class="line">    CRC_16_CMS,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_1021_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0xFFFF check=0xd64e residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GENIBUS, CRC-16/DARC, CRC-16/EPC, CRC-16/EPC-C1G2, CRC-16/I-CODE</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_FFFF, // check=0xd64e</span><br><span class="line">    CRC_16_GENIBUS,</span><br><span class="line">    CRC_16_DARC,</span><br><span class="line">    CRC_16_EPC,</span><br><span class="line">    CRC_16_EPC_C1G2,</span><br><span class="line">    CRC_16_ICODE,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xce3c residue=0x1d0f</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/GSM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_FFFF, // check=0xce3c</span><br><span class="line">    CRC_16_GSM,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x29b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT-FALSE, CRC-16/IBM-3740, CRC-16/AUTOSAR</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_0_0_0000, // check=0x29b1</span><br><span class="line">    CRC_16_CCITT_FALSE,</span><br><span class="line">    CRC_16_IBM_3740,</span><br><span class="line">    CRC_16_AUTOSAR,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0xFFFF check=0x906e residue=0xf0b8</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/X-25, CRC-16/IBM-SDLC, CRC-16/ISO-HDLC, CRC-16/ISO-IEC-14443-3-B, CRC-B</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_FFFF, // check=0x906e</span><br><span class="line">    CRC_16_X25,</span><br><span class="line">    CRC_16_IBM_SDLC,</span><br><span class="line">    CRC_16_ISO_HDLC,</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_B,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xC6C6 refin=1 refout=1 xorout=0x0000 check=0xbf05 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/ISO-IEC-14443-3-A, CRC-A</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_C6C6_1_1_0000, // check=0xbf05</span><br><span class="line">    CRC_16_ISO_IEC_14443_3_A,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=1 refout=1 xorout=0x0000 check=0x2189 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/CCITT, CRC-16/CCITT-TRUE, CRC-16/KERMIT, CRC-16/BLUETOOTH, CRC-16/V-41-LSB</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_1_1_0000, // check=0x2189</span><br><span class="line">    CRC_16_CCITT,</span><br><span class="line">    CRC_16_CCITT_TRUE,</span><br><span class="line">    CRC_16_KERMIT,</span><br><span class="line">    CRC_16_BLUETOOTH,</span><br><span class="line">    CRC_16_V_41_LSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xFFFF refin=1 refout=1 xorout=0x0000 check=0x6f91 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/MCRF4XX</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_FFFF_1_1_0000, // check=0x6f91</span><br><span class="line">    CRC_16_MCRF4XX,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0xB2AA refin=1 refout=1 xorout=0x0000 check=0x63d0 residue=0x0000</span><br><span class="line">     * class: third-party</span><br><span class="line">     * alias: CRC-16/RIELLO</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_B2AA_1_1_0000, // check=0x63d0</span><br><span class="line">    CRC_16_RIELLO,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x1D0F refin=0 refout=0 xorout=0x0000 check=0xe5cc residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/AUG-CCITT, CRC-16/SPI-FUJITSU</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_1D0F_0_0_0000, // check=0xe5cc</span><br><span class="line">    CRC_16_AUG_CCITT,</span><br><span class="line">    CRC_16_SPI_FUJITSU,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x31c3 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/XMODEM, CRC-16/ACORN, CRC-16/LTE, CRC-16/V-41-MSB, XMODEM, YMODEM, ZMODEM</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_0000_0_0_0000, // check=0x31c3</span><br><span class="line">    CRC_16_XMODEM,</span><br><span class="line">    CRC_16_YMODEM,</span><br><span class="line">    CRC_16_ZMODEM,</span><br><span class="line">    CRC_16_ACORN,</span><br><span class="line">    CRC_16_LTE,</span><br><span class="line">    CRC_16_V_41_MSB,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x1021 init=0x89EC refin=1 refout=1 xorout=0x0000 check=0x26b1 residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/TMS37157</span><br><span class="line">     */</span><br><span class="line">    CRC_16_1021_89EC_1_1_0000, // check=0x26b1</span><br><span class="line">    CRC_16_TMS37157,</span><br><span class="line">    #endif</span><br><span class="line">    #if crc_16_poly_xxxx_enable</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0001 check=0x007e residue=0x0589</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-R, R-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0001, // check=0x007e</span><br><span class="line">    CRC_16_DECT_R,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x0589 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x007f residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/DECT-X, X-CRC-16</span><br><span class="line">     */</span><br><span class="line">    CRC_16_0589_0000_0_0_0000, // check=0x007f</span><br><span class="line">    CRC_16_DECT_X,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x8bb7 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0xd0db residue=0x0000</span><br><span class="line">     * class: attested</span><br><span class="line">     * alias: CRC-16/T10-DIF</span><br><span class="line">     */</span><br><span class="line">    CRC_16_8BB7_0000_0_0_0000, // check=0xd0db</span><br><span class="line">    CRC_16_T10_DIF,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3D65 init=0x0000 refin=1 refout=1 xorout=0xFFFF check=0xea82 residue=0x66c5</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/DNP</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_1_1_FFFF, // check=0xea82</span><br><span class="line">    CRC_16_DNP,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0x3d65 init=0x0000 refin=0 refout=0 xorout=0xFFFF check=0xc2b7 residue=0xa366</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/EN-13757</span><br><span class="line">     */</span><br><span class="line">    CRC_16_3D65_0000_0_0_FFFF, // check=0xc2b7</span><br><span class="line">    CRC_16_EN_13757,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xa097 init=0x0000 refin=0 refout=0 xorout=0x0000 check=0x0fb3 residue=0x0000</span><br><span class="line">     * class: confirmed</span><br><span class="line">     * alias: CRC-16/TELEDISK</span><br><span class="line">     */</span><br><span class="line">    CRC_16_A097_0000_0_0_0000, // check=0x0fb3</span><br><span class="line">    CRC_16_TELEDISK,</span><br><span class="line">    /**</span><br><span class="line">     * brief: width=16 poly=0xc867 init=0xFFFF refin=0 refout=0 xorout=0x0000 check=0x4c06 residue=0x0000</span><br><span class="line">     * class: academic</span><br><span class="line">     * alias: CRC-16/CDMA2000</span><br><span class="line">     */</span><br><span class="line">    CRC_16_C867_FFFF_0_0_0000, // check=0x4c06</span><br><span class="line">    CRC_16_CDMA2000,</span><br><span class="line">    #endif</span><br><span class="line">&#125; crc_16_type_t;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>crc</tag>
       </tags>
   </entry>
   <entry>
@@ -1053,144 +1053,6 @@ N2---&gt;N2.3[&quot; &quot;]
       </categories>
   </entry>
   <entry>
-    <title>freertos or rtthread ?</title>
-    <url>/sulfurandcu.io/cm03lc8n5007fdgrqhk1m06ee.html</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">对比条目</th>
-<th align="center">FreeRTOS</th>
-<th align="center">RT-Thread</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">许可协议</td>
-<td align="center">MIT</td>
-<td align="center">Apache License 2.0</td>
-</tr>
-<tr>
-<td align="center">内核开销</td>
-<td align="center">ROM: 5KB<br>RAM: 2KB</td>
-<td align="center">ROM: 3KB<br>RAM: 1KB</td>
-</tr>
-<tr>
-<td align="center">实测开销</td>
-<td align="center"></td>
-<td align="center">ROM: 11KB<br>RAM: 1KB</td>
-</tr>
-<tr>
-<td align="center">抢占调度</td>
-<td align="center">支持</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">轮转调度</td>
-<td align="center">支持</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">多任务</td>
-<td align="center">支持</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">优先级</td>
-<td align="center">32</td>
-<td align="center">8&#x2F;32&#x2F;256</td>
-</tr>
-<tr>
-<td align="center">信号量</td>
-<td align="center">支持</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">互斥量</td>
-<td align="center">支持</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">事件集</td>
-<td align="center">×</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">邮箱</td>
-<td align="center">×</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">信号</td>
-<td align="center">×</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">消息队列</td>
-<td align="center">支持</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">内存管理</td>
-<td align="center">heap1 - heap5</td>
-<td align="center">内存堆管理 | 内存池管理</td>
-</tr>
-<tr>
-<td align="center"><br></td>
-<td align="center"><br></td>
-<td align="center"><br></td>
-</tr>
-<tr>
-<td align="center">系统兼容</td>
-<td align="center">×</td>
-<td align="center">提供 FreeRTOS_Wrapper 兼容层</td>
-</tr>
-<tr>
-<td align="center">posix</td>
-<td align="center">×</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">shell</td>
-<td align="center">×</td>
-<td align="center">MSH, FINSH</td>
-</tr>
-<tr>
-<td align="center">网络系统</td>
-<td align="center">×</td>
-<td align="center">SAL + AT &#x2F; LwIP</td>
-</tr>
-<tr>
-<td align="center">文件系统</td>
-<td align="center">FATFS</td>
-<td align="center">DFS + FATFS &#x2F; RomFS &#x2F; Yaffs2 &#x2F; Uffs2 &#x2F; DevFS</td>
-</tr>
-<tr>
-<td align="center">spiflash</td>
-<td align="center">×</td>
-<td align="center">FlashDB + FAL + SFUD</td>
-</tr>
-<tr>
-<td align="center">设备框架</td>
-<td align="center">×</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">电源管理</td>
-<td align="center">×</td>
-<td align="center">支持</td>
-</tr>
-<tr>
-<td align="center">图形界面</td>
-<td align="center">×</td>
-<td align="center">支持</td>
-</tr>
-</tbody></table>
-<span id="more"></span>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name</span><br><span class="line"></span><br><span class="line"> 656         58          0         28       1024       8091   heap_4.o</span><br><span class="line"> 124          0          0          0          0       6561   list.o</span><br><span class="line"> 894         78          0         12          0      11256   port.o</span><br><span class="line">2212        270          0         64        240      31123   tasks.o</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name</span><br><span class="line"></span><br><span class="line"> 168         16          0          8          0       2064   clock.o</span><br><span class="line"> 186         30         16          0          0       5388   components.o</span><br><span class="line"> 252         28          0          0          0        780   context_rvds.o</span><br><span class="line"> 640        342          0         16          0       3954   cpuport.o</span><br><span class="line">  24          0          0          0          0        609   cstdlib.o</span><br><span class="line"> 270          0          0          0          0       2774   device.o</span><br><span class="line"> 300         34          0          8        416       6238   idle.o</span><br><span class="line">1680         24          0          0          0      16384   ipc.o</span><br><span class="line"> 132         26          0          9          0       2282   irq.o</span><br><span class="line">2316        240        154        140        172      14344   kservice.o</span><br><span class="line"> 676         68          0          0          0       4430   mem.o</span><br><span class="line"> 486         26          0        196          0      10134   object.o</span><br><span class="line">  56         12          0          0         68       1341   pin.o</span><br><span class="line"> 976        178          0         24        256       9528   scheduler_up.o</span><br><span class="line">  12          0          0          0          0        540   syscalls.o</span><br><span class="line">1170         28          0         12          0      14517   thread.o</span><br><span class="line"> 948         44          0         20          0       9237   timer.o</span><br><span class="line"> 346         28          4          4          0       6717   workqueue.o</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>开发环境配置指南</title>
     <url>/sulfurandcu.io/clrznawwf0001a4rq8nfh1qw2.html</url>
     <content><![CDATA[<p>vscode + scons + arm-none-eabi-gcc + cortex-debug + jlink</p>
@@ -1362,6 +1224,144 @@ N2---&gt;N2.3[&quot; &quot;]
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;电压整定参数块&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;block&quot;,</span><br><span class="line">    &quot;data&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;过压整定值&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;XXX.X&quot;,</span><br><span class="line">            &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;欠压整定值&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;XXX.X&quot;,</span><br><span class="line">            &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;断相整定值&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;XXX.X&quot;,</span><br><span class="line">            &quot;unit&quot;: &quot;V&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: &quot;00000000&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;瞬时冻结（数据块）&quot;,</span><br><span class="line">    &quot;type&quot;: &quot;block&quot;,</span><br><span class="line">    &quot;data&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;冻结时间&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;time&quot;,</span><br><span class="line">            &quot;data&quot;: &quot;YYMMDDhhmm&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;正向有功电能（总）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kWh&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;反向有功电能（总）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kWh&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;组合无功电能（c1）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kvarh&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;组合无功电能（c2）&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;bcd&quot;,</span><br><span class="line">            &quot;data&quot;: [</span><br><span class="line">                &quot;XXXXXX.XX&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;unit&quot;: &quot;kvarh&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>freertos or rtthread ?</title>
+    <url>/sulfurandcu.io/cm03lc8n5007fdgrqhk1m06ee.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">对比条目</th>
+<th align="center">FreeRTOS</th>
+<th align="center">RT-Thread</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">许可协议</td>
+<td align="center">MIT</td>
+<td align="center">Apache License 2.0</td>
+</tr>
+<tr>
+<td align="center">内核开销</td>
+<td align="center">ROM: 5KB<br>RAM: 2KB</td>
+<td align="center">ROM: 3KB<br>RAM: 1KB</td>
+</tr>
+<tr>
+<td align="center">实测开销</td>
+<td align="center"></td>
+<td align="center">ROM: 11KB<br>RAM: 1KB</td>
+</tr>
+<tr>
+<td align="center">抢占调度</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">轮转调度</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">多任务</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">优先级</td>
+<td align="center">32</td>
+<td align="center">8&#x2F;32&#x2F;256</td>
+</tr>
+<tr>
+<td align="center">信号量</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">互斥量</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">事件集</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">邮箱</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">信号</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">消息队列</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">内存管理</td>
+<td align="center">heap1 - heap5</td>
+<td align="center">内存堆管理 | 内存池管理</td>
+</tr>
+<tr>
+<td align="center"><br></td>
+<td align="center"><br></td>
+<td align="center"><br></td>
+</tr>
+<tr>
+<td align="center">系统兼容</td>
+<td align="center">×</td>
+<td align="center">提供 FreeRTOS_Wrapper 兼容层</td>
+</tr>
+<tr>
+<td align="center">posix</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">shell</td>
+<td align="center">×</td>
+<td align="center">MSH, FINSH</td>
+</tr>
+<tr>
+<td align="center">网络系统</td>
+<td align="center">×</td>
+<td align="center">SAL + AT &#x2F; LwIP</td>
+</tr>
+<tr>
+<td align="center">文件系统</td>
+<td align="center">FATFS</td>
+<td align="center">DFS + FATFS &#x2F; RomFS &#x2F; Yaffs2 &#x2F; Uffs2 &#x2F; DevFS</td>
+</tr>
+<tr>
+<td align="center">spiflash</td>
+<td align="center">×</td>
+<td align="center">FlashDB + FAL + SFUD</td>
+</tr>
+<tr>
+<td align="center">设备框架</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">电源管理</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">图形界面</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+</tbody></table>
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name</span><br><span class="line"></span><br><span class="line"> 656         58          0         28       1024       8091   heap_4.o</span><br><span class="line"> 124          0          0          0          0       6561   list.o</span><br><span class="line"> 894         78          0         12          0      11256   port.o</span><br><span class="line">2212        270          0         64        240      31123   tasks.o</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name</span><br><span class="line"></span><br><span class="line"> 168         16          0          8          0       2064   clock.o</span><br><span class="line"> 186         30         16          0          0       5388   components.o</span><br><span class="line"> 252         28          0          0          0        780   context_rvds.o</span><br><span class="line"> 640        342          0         16          0       3954   cpuport.o</span><br><span class="line">  24          0          0          0          0        609   cstdlib.o</span><br><span class="line"> 270          0          0          0          0       2774   device.o</span><br><span class="line"> 300         34          0          8        416       6238   idle.o</span><br><span class="line">1680         24          0          0          0      16384   ipc.o</span><br><span class="line"> 132         26          0          9          0       2282   irq.o</span><br><span class="line">2316        240        154        140        172      14344   kservice.o</span><br><span class="line"> 676         68          0          0          0       4430   mem.o</span><br><span class="line"> 486         26          0        196          0      10134   object.o</span><br><span class="line">  56         12          0          0         68       1341   pin.o</span><br><span class="line"> 976        178          0         24        256       9528   scheduler_up.o</span><br><span class="line">  12          0          0          0          0        540   syscalls.o</span><br><span class="line">1170         28          0         12          0      14517   thread.o</span><br><span class="line"> 948         44          0         20          0       9237   timer.o</span><br><span class="line"> 346         28          4          4          0       6717   workqueue.o</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1561,6 +1561,26 @@ N2---&gt;N2.3[&quot; &quot;]
 ]]></content>
   </entry>
   <entry>
+    <title>基于 RT-THREAD 的 RS485 软件包</title>
+    <url>/sulfurandcu.io/cm4j9pri20000lgrqhg8kf0uv.html</url>
+    <content><![CDATA[<p>Q: 怎么使用 rtthread 的控制台？</p>
+<p>A: 众所周知，像下面这样指定一个串口就可以了，非常简单！</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#define RT_CONSOLE_DEVICE_NAME &quot;uart1&quot;</span><br></pre></td></tr></table></figure>
+
+<p>Q: 怎么使用 rs485 作为 rtthread 的控制台？</p>
+<p>A: 不妨瞧瞧 ikun-485 软件包！😎 (<a href="https://github.com/sulfurandcu/ikun-485">https://github.com/sulfurandcu/ikun-485</a>)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#define RT_CONSOLE_DEVICE_NAME &quot;rs485&quot;</span><br><span class="line"></span><br><span class="line">#define PKG_USING_IK485</span><br><span class="line">#define PKG_USING_IK485_CONSOLE</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>rtthread</tag>
+        <tag>ikun-pkg</tag>
+        <tag>RS485</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>集成开发环境－合集</title>
     <url>/sulfurandcu.io/clo3okqut006mi0rq9ecvb34e.html</url>
     <content><![CDATA[<hr>
@@ -1646,80 +1666,6 @@ N2---&gt;N2.3[&quot; &quot;]
 </li>
 </ul>
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://elmagnifico.tech/2022/03/14/Embeded-IDE/">https://elmagnifico.tech/2022/03/14/Embeded-IDE/</a><br><a href="https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/">https://elmagnifico.tech/2022/03/15/Embedded-Software-Development-VS-VSC/</a></p>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>集成开发环境</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集成开发环境－GCC.ARM（#00）目录索引</title>
-    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
-    <content><![CDATA[<hr>
-<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成开发环境－GCC.ARM（#01）环境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成开发环境－GCC.ARM（#02）程序构建</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成开发环境－GCC.ARM（#03）程序烧录</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成开发环境－GCC.ARM（#04）快捷任务</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成开发环境－GCC.ARM（#05）程序调试</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成开发环境－DBG</a></p>
-<hr>
-<p>传统的集成开发环境（MDK、IAR）通常会提供包括编辑、编译、烧录、调试在内的一整套工具，开发者无需配置，简单易用，但 license 也不是一般的贵。</p>
-<p>替代方案：</p>
-<ul>
-<li><strong>VSC</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
-<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
-<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
-<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
-<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
-</ul>
-</li>
-<li><strong>VS</strong><ul>
-<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
-<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
-</ul>
-</li>
-<li><strong>Eclipse</strong></li>
-<li><strong>Eclipse Based</strong><ul>
-<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
-<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
-<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
-</ul>
-</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol>
-<li>编辑（vscode）</li>
-<li>编译（arm-none-eabi-xxx）</li>
-<li>烧录（JLink）</li>
-<li>调试（vscode-debug + cortex-debug + arm-none-eabi-gdb + JLinkGDBServerCL + JLinkDevice）</li>
-</ol>
-<ul>
-<li><p><strong>vscode (task.json)</strong><br>文本编辑器，其实是一个伪装成文本编辑器的开发框架。</p>
-</li>
-<li><p><strong>arm-none-eabi-xxx</strong><br>交叉编译器，可以编译出在 Cortex-R&amp;M 平台上运行的可执行程序。</p>
-</li>
-<li><p><strong>JLink&#x2F;OpenOCD</strong><br>程序烧录器，负责将编译好的程序烧录到目标芯片中。</p>
-</li>
-<li><p><strong>vscode-debug (launch.json)</strong><br>图形调试器，内部集成的图形调试组件，提供一套图形调试界面，与调试适配器打交道。</p>
-</li>
-<li><p><strong>cortex-debug</strong><br>调试适配器，将图形调试器的操作翻译成命令调试器能够看得懂的命令。</p>
-</li>
-<li><p><strong>arm-none-eabi-gdb</strong><br>命令调试器，支持通过命令行的方式进行调试。</p>
-</li>
-<li><p><strong>JLinkGDBServerCL&#x2F;OpenOCD</strong><br>调试服务器，负责协助调试器识别并管理各种仿真设备和目标芯片。</p>
-</li>
-<li><p><strong>JLinkDriver</strong><br>仿真器驱动，负责驱动仿真器设备。</p>
-</li>
-<li><p><strong>JLinkDongle</strong><br>仿真器设备，通过 JTAG 或 SWD 协议与芯片打交道。</p>
-</li>
-</ul>
-<blockquote>
-<p>倘若宿主机使用 Windows 操作系统并且购买了 JLinkDongle 仿真器，则推荐使用 JLink 方案！</p>
-</blockquote>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方设备支持:HT32F52352 Cortex-M0+</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code开发STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code开发STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code开发STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code开发STM32（四）</a></p>
-<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作总结记录</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 开发环境—— 详细版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 开发stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32开发调试环境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 开发环境（详细）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32开发调试环境（转）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32开发环境（极简自我搭建&amp;懒人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 调试器使用介绍</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
 ]]></content>
       <categories>
         <category>开发笔记</category>
@@ -1871,6 +1817,80 @@ N2---&gt;N2.3[&quot; &quot;]
 
 <p>6. 断开连接</p>
 <p><img src="/sulfurandcu.io/clockxig7001dj4rqc2n6542r/JLinkRMTServer.LAN.Server.3.png"></p>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>集成开发环境</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集成开发环境－GCC.ARM（#00）目录索引</title>
+    <url>/sulfurandcu.io/clo2c1l6m00de1wrqg1jcfbqd.html</url>
+    <content><![CDATA[<hr>
+<p><a href="/sulfurandcu.io/clo2c1l6o00dh1wrqd2o379jc.html">集成开发环境－GCC.ARM（#01）环境搭建</a><br><a href="/sulfurandcu.io/clo2c1l6400c71wrq3816hypq.html">集成开发环境－GCC.ARM（#02）程序构建</a><br><a href="/sulfurandcu.io/clo2c1l6600ca1wrqbvuabt0b.html">集成开发环境－GCC.ARM（#03）程序烧录</a><br><a href="/sulfurandcu.io/clo2c1l6700cd1wrqgjn53mgz.html">集成开发环境－GCC.ARM（#04）快捷任务</a><br><a href="/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html">集成开发环境－GCC.ARM（#05）程序调试</a><br><a href="/sulfurandcu.io/clockxig7001dj4rqc2n6542r.html">集成开发环境－DBG</a></p>
+<hr>
+<p>传统的集成开发环境（MDK、IAR）通常会提供包括编辑、编译、烧录、调试在内的一整套工具，开发者无需配置，简单易用，但 license 也不是一般的贵。</p>
+<p>替代方案：</p>
+<ul>
+<li><strong>VSC</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/vscode-embedded-development/">Microsoft Embedded Tools</a></li>
+<li><a href="https://github.com/Marus/cortex-debug/wiki">Cortex Debug</a></li>
+<li><a href="https://em-ide.com/zh-cn/">Embedded IDE</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/zh_CN/v4.3.1/esp32/index.html">vscode for espidf</a></li>
+<li><a href="https://www.essemi.com/index/article/plist?cid=141">vscode for essemi</a></li>
+</ul>
+</li>
+<li><strong>VS</strong><ul>
+<li><a href="https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/">Microsoft Embedded Software Development in Visual Studio</a></li>
+<li><a href="https://visualgdb.com/">VisualGDB by SysPROGS</a></li>
+</ul>
+</li>
+<li><strong>Eclipse</strong></li>
+<li><strong>Eclipse Based</strong><ul>
+<li><a href="https://www.rt-thread.io/studio.html">EclipseBased: RT-Thread Studio</a> (RV5 ARM JLink STLink DAP-Link QEMU)</li>
+<li><a href="http://www.mounriver.com/">EclipseBased: MounRiver Studio</a> (RV5 ARM)</li>
+<li><a href="https://www.rvmcu.com/nucleistudio.html">EclipseBased: NucleiIDE Studio</a> (RV5)</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol>
+<li>编辑（vscode）</li>
+<li>编译（arm-none-eabi-xxx）</li>
+<li>烧录（JLink）</li>
+<li>调试（vscode-debug + cortex-debug + arm-none-eabi-gdb + JLinkGDBServerCL + JLinkDevice）</li>
+</ol>
+<ul>
+<li><p><strong>vscode (task.json)</strong><br>文本编辑器，其实是一个伪装成文本编辑器的开发框架。</p>
+</li>
+<li><p><strong>arm-none-eabi-xxx</strong><br>交叉编译器，可以编译出在 Cortex-R&amp;M 平台上运行的可执行程序。</p>
+</li>
+<li><p><strong>JLink&#x2F;OpenOCD</strong><br>程序烧录器，负责将编译好的程序烧录到目标芯片中。</p>
+</li>
+<li><p><strong>vscode-debug (launch.json)</strong><br>图形调试器，内部集成的图形调试组件，提供一套图形调试界面，与调试适配器打交道。</p>
+</li>
+<li><p><strong>cortex-debug</strong><br>调试适配器，将图形调试器的操作翻译成命令调试器能够看得懂的命令。</p>
+</li>
+<li><p><strong>arm-none-eabi-gdb</strong><br>命令调试器，支持通过命令行的方式进行调试。</p>
+</li>
+<li><p><strong>JLinkGDBServerCL&#x2F;OpenOCD</strong><br>调试服务器，负责协助调试器识别并管理各种仿真设备和目标芯片。</p>
+</li>
+<li><p><strong>JLinkDriver</strong><br>仿真器驱动，负责驱动仿真器设备。</p>
+</li>
+<li><p><strong>JLinkDongle</strong><br>仿真器设备，通过 JTAG 或 SWD 协议与芯片打交道。</p>
+</li>
+</ul>
+<blockquote>
+<p>倘若宿主机使用 Windows 操作系统并且购买了 JLinkDongle 仿真器，则推荐使用 JLink 方案！</p>
+</blockquote>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://blog.csdn.net/weixin_41328027/article/details/122969985">OpenOCD添加第三方设备支持:HT32F52352 Cortex-M0+</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/61519415">用VS Code开发STM32（一）</a><br><a href="https://zhuanlan.zhihu.com/p/61538230">用VS Code开发STM32（二）</a><br><a href="https://zhuanlan.zhihu.com/p/61541590">用VS Code开发STM32（三）</a><br><a href="https://zhuanlan.zhihu.com/p/163771273">用VS Code开发STM32（四）</a></p>
+<p><a href="https://blog.csdn.net/weixin_42328389/article/details/128511370">矜辰所致 OpenOCD 不同仿真器使用操作总结记录</a><br><a href="https://blog.csdn.net/weixin_42328389/article/details/119823834">矜辰所致 在window下使用 VScode 搭建 ARM 开发环境—— 详细版</a><br><a href="https://blog.csdn.net/pyt1234567890/article/details/122522700">VsCode+OpenOCD 开发stm32系列</a><br><a href="https://blog.csdn.net/qq_49295302/article/details/124628016">vscode-armgcc-openocd搭建STM32开发调试环境</a><br><a href="https://blog.csdn.net/qq_45701067/article/details/121652228">用 vscode 搭建stm32 开发环境（详细）</a><br><a href="http://eda88.com/essay/firmware/vscode%E6%90%AD%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%EF%BC%88%E8%BD%AC%EF%BC%89/">VSCode搭建STM32开发调试环境（转）</a><br><a href="https://blog.csdn.net/ben_black/article/details/109906781">VSCode搭建STM32开发环境（极简自我搭建&amp;懒人直接使用插件）</a><br><a href="https://blog.csdn.net/qq_40833810/article/details/106713462">Cortex-debug 调试器使用介绍</a><br><a href="https://mcuoneclipse.com/2021/05/01/visual-studio-code-for-c-c-with-arm-cortex-m-part-1/">Visual Studio Code for C&#x2F;C++ with ARM Cortex-M: Part 1 </a></p>
 ]]></content>
       <categories>
         <category>开发笔记</category>
@@ -2112,27 +2132,6 @@ N2---&gt;N2.3[&quot; &quot;]
       </tags>
   </entry>
   <entry>
-    <title>嵌入式 IAP 在线升级－目录索引</title>
-    <url>/sulfurandcu.io/clnyhr2n2004t10rq7rdi2ftx.html</url>
-    <content><![CDATA[<hr>
-<p><a href="/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html">在线升级（#01）基础概念</a><br><a href="/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html">在线升级（#02）整体方案</a><br><a href="/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html">在线升级（#03）程序设计</a><br><a href="/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html">在线升级（#04）差分还原 hpatchlite 移植</a></p>
-<hr>
-<span id="more"></span>
-
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://itexp.blog.csdn.net/article/details/83793309">https://itexp.blog.csdn.net/article/details/83793309</a></p>
-<p><a href="https://blog.csdn.net/qq_24130227/article/details/123752964">https://blog.csdn.net/qq_24130227/article/details/123752964</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/108379324">https://blog.csdn.net/qq_24130227/article/details/108379324</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/113003329">https://blog.csdn.net/qq_24130227/article/details/113003329</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/120061873">https://blog.csdn.net/qq_24130227/article/details/120061873</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/108427842">https://blog.csdn.net/qq_24130227/article/details/108427842</a></p>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>单片机</tag>
-        <tag>iap</tag>
-        <tag>bootloader</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>集成开发环境－GCC.ARM（#05）程序调试</title>
     <url>/sulfurandcu.io/clo2c1l6600cb1wrqewhnb8ey.html</url>
     <content><![CDATA[<hr>
@@ -2160,6 +2159,27 @@ N2---&gt;N2.3[&quot; &quot;]
         <tag>嵌入式软件开发</tag>
         <tag>集成开发环境</tag>
         <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>嵌入式 IAP 在线升级－目录索引</title>
+    <url>/sulfurandcu.io/clnyhr2n2004t10rq7rdi2ftx.html</url>
+    <content><![CDATA[<hr>
+<p><a href="/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html">在线升级（#01）基础概念</a><br><a href="/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html">在线升级（#02）整体方案</a><br><a href="/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html">在线升级（#03）程序设计</a><br><a href="/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html">在线升级（#04）差分还原 hpatchlite 移植</a></p>
+<hr>
+<span id="more"></span>
+
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://itexp.blog.csdn.net/article/details/83793309">https://itexp.blog.csdn.net/article/details/83793309</a></p>
+<p><a href="https://blog.csdn.net/qq_24130227/article/details/123752964">https://blog.csdn.net/qq_24130227/article/details/123752964</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/108379324">https://blog.csdn.net/qq_24130227/article/details/108379324</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/113003329">https://blog.csdn.net/qq_24130227/article/details/113003329</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/120061873">https://blog.csdn.net/qq_24130227/article/details/120061873</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/108427842">https://blog.csdn.net/qq_24130227/article/details/108427842</a></p>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>单片机</tag>
+        <tag>iap</tag>
+        <tag>bootloader</tag>
       </tags>
   </entry>
   <entry>
@@ -2300,57 +2320,6 @@ A(&quot;在电路编程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系统编�
 <td align="center">boot from 0x20000000 : sram memory</td>
 </tr>
 </tbody></table>
-]]></content>
-      <categories>
-        <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>嵌入式软件开发</tag>
-        <tag>在线升级</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>嵌入式 IAP 在线升级－程序设计</title>
-    <url>/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html</url>
-    <content><![CDATA[<pre class="mermaid">
-flowchart TB
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-A1(引导程序之流程)--&gt;B1(......)--&gt;C1(跳转至应用程序)
-A2(应用程序之流程)--&gt;B2(......)--&gt;C2(跳转至引导程序)
-</pre>
-
-<span id="more"></span>
-
-<h2 id="引导程序流程"><a href="#引导程序流程" class="headerlink" title="引导程序流程"></a>引导程序流程</h2><pre class="mermaid">
-flowchart TB
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-PowerReset(设备上电复位)--&gt;IapStart(引导程序开始)--&gt;IapCheckApp[检查应用程序&lt;br&gt;检查升级标识&lt;br&gt;检查停留标识]--&gt;IapIsAppValid{程序有效&lt;br&gt;无需升级&lt;br&gt;无需停留}
-IapIsAppValid--是--&gt;IapJumpToApp[跳转进入应用程序]--&gt;IapOver(引导程序结束)
-IapIsAppValid--否--&gt;IapInit[配置相关外设]--&gt;IapCatchKeyboardInput{检测按键}
-IapCatchKeyboardInput--持续一秒--&gt;IapCatchKeyboardInput
-IapCatchKeyboardInput--有回车键按下&lt;br&gt;或&lt;br&gt;升级控制区中的停留标识立起---&gt;IapSetStayFlag[置位停留标识]--&gt;IapIsHaveUpdateData{是否存在&lt;br&gt;升级数据}
-IapCatchKeyboardInput--超时--&gt;IapIsHaveUpdateData
-IapIsHaveUpdateData--否---&gt;IapIsNeedWait{是否停留}
-IapIsNeedWait--否--&gt;IapBeforeJump
-IapIsNeedWait--是--&gt;IapWait{延时计数}
-IapWait--持续一分钟--&gt;IapWait
-IapWait--超时--------&gt;IapBeforeJump
-IapIsHaveUpdateData--是--&gt;IapDoUpdate[执行升级操作]---&gt;IapIsUpdateSucc{升级成功}
-IapIsUpdateSucc--是---&gt;IapBeforeJump[关闭外设和中断]--&gt;IapJumpToApp
-IapIsUpdateSucc--否--&gt;IapIsAppExist{程序完好}
-IapIsAppExist--是--&gt;IapBeforeJump
-IapIsAppExist--否--&gt;IapComm[留在引导程序&lt;br&gt;执行交互任务]--&gt;IapIsRecvDone{收到升级包}
-IapIsRecvDone--否--&gt;IapComm
-IapIsRecvDone--是--&gt;IapDoUpdate
-</pre>
-
-<h2 id="应用程序流程"><a href="#应用程序流程" class="headerlink" title="应用程序流程"></a>应用程序流程</h2><pre class="mermaid">
-flowchart TB
-%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
-AppStart(应用程序开始)--&gt;AppRemap[重定向中断向量表]--&gt;AppInit[配置相关外设]--&gt;AppTask[执行应用功能&lt;br&gt;执行通信任务]--&gt;AppIsRecvDone{收到升级包}
-AppIsRecvDone--否--&gt;AppTask
-AppIsRecvDone--是--&gt;AppSetAppInvalid[设置升级标识]--&gt;AppBeforeJump[关闭外设和中断]--&gt;AppJumpToIap[重启进入引导程序｜跳转进入引导程序]--&gt;AppOver(应用程序结束)
-</pre>
 ]]></content>
       <categories>
         <category>开发笔记</category>
@@ -2838,6 +2807,57 @@ flowchart LR
       </tags>
   </entry>
   <entry>
+    <title>嵌入式 IAP 在线升级－程序设计</title>
+    <url>/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html</url>
+    <content><![CDATA[<pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+A1(引导程序之流程)--&gt;B1(......)--&gt;C1(跳转至应用程序)
+A2(应用程序之流程)--&gt;B2(......)--&gt;C2(跳转至引导程序)
+</pre>
+
+<span id="more"></span>
+
+<h2 id="引导程序流程"><a href="#引导程序流程" class="headerlink" title="引导程序流程"></a>引导程序流程</h2><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+PowerReset(设备上电复位)--&gt;IapStart(引导程序开始)--&gt;IapCheckApp[检查应用程序&lt;br&gt;检查升级标识&lt;br&gt;检查停留标识]--&gt;IapIsAppValid{程序有效&lt;br&gt;无需升级&lt;br&gt;无需停留}
+IapIsAppValid--是--&gt;IapJumpToApp[跳转进入应用程序]--&gt;IapOver(引导程序结束)
+IapIsAppValid--否--&gt;IapInit[配置相关外设]--&gt;IapCatchKeyboardInput{检测按键}
+IapCatchKeyboardInput--持续一秒--&gt;IapCatchKeyboardInput
+IapCatchKeyboardInput--有回车键按下&lt;br&gt;或&lt;br&gt;升级控制区中的停留标识立起---&gt;IapSetStayFlag[置位停留标识]--&gt;IapIsHaveUpdateData{是否存在&lt;br&gt;升级数据}
+IapCatchKeyboardInput--超时--&gt;IapIsHaveUpdateData
+IapIsHaveUpdateData--否---&gt;IapIsNeedWait{是否停留}
+IapIsNeedWait--否--&gt;IapBeforeJump
+IapIsNeedWait--是--&gt;IapWait{延时计数}
+IapWait--持续一分钟--&gt;IapWait
+IapWait--超时--------&gt;IapBeforeJump
+IapIsHaveUpdateData--是--&gt;IapDoUpdate[执行升级操作]---&gt;IapIsUpdateSucc{升级成功}
+IapIsUpdateSucc--是---&gt;IapBeforeJump[关闭外设和中断]--&gt;IapJumpToApp
+IapIsUpdateSucc--否--&gt;IapIsAppExist{程序完好}
+IapIsAppExist--是--&gt;IapBeforeJump
+IapIsAppExist--否--&gt;IapComm[留在引导程序&lt;br&gt;执行交互任务]--&gt;IapIsRecvDone{收到升级包}
+IapIsRecvDone--否--&gt;IapComm
+IapIsRecvDone--是--&gt;IapDoUpdate
+</pre>
+
+<h2 id="应用程序流程"><a href="#应用程序流程" class="headerlink" title="应用程序流程"></a>应用程序流程</h2><pre class="mermaid">
+flowchart TB
+%%{init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;basis&quot; } } }%%
+AppStart(应用程序开始)--&gt;AppRemap[重定向中断向量表]--&gt;AppInit[配置相关外设]--&gt;AppTask[执行应用功能&lt;br&gt;执行通信任务]--&gt;AppIsRecvDone{收到升级包}
+AppIsRecvDone--否--&gt;AppTask
+AppIsRecvDone--是--&gt;AppSetAppInvalid[设置升级标识]--&gt;AppBeforeJump[关闭外设和中断]--&gt;AppJumpToIap[重启进入引导程序｜跳转进入引导程序]--&gt;AppOver(应用程序结束)
+</pre>
+]]></content>
+      <categories>
+        <category>开发笔记</category>
+      </categories>
+      <tags>
+        <tag>嵌入式软件开发</tag>
+        <tag>在线升级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>嵌入式 IAP 在线升级－差分还原 hpatchlite 移植</title>
     <url>/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html</url>
     <content><![CDATA[<p>最近发现了一个优秀的差分还原算法：hdiff &amp; hpatch，它通过数据流的思想把 O(n) 的空间复杂度转嫁给了硬盘，使得内存的开销极低，非常适合应用于嵌入式领域。</p>
@@ -2908,6 +2928,25 @@ flowchart LR
       </tags>
   </entry>
   <entry>
+    <title>问题记录：华大 HC32F460 避坑指南之 ICG 寄存器</title>
+    <url>/sulfurandcu.io/cloqzaza3003fmgrqdpkl8c5j.html</url>
+    <content><![CDATA[<p>在《参考手册》第六章〈初始化配置〉中，八个初始化配置寄存器的复位值是不定的，华大对此的处理方式很巧妙（但是也给移植埋下了一个大坑）：</p>
+<figure class="highlight c"><figcaption><span>hc32f460_icg.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">/*!&lt; ICG0 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG0_REGISTER_CONSTANT                  (((uint32_t)ICG0_WDT_REG_CONFIG &lt;&lt; 16)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG0_SWDT_REG_CONFIG)       | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0xE000E000ul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG1 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG1_REGISTER_CONSTANT                  (((uint32_t)ICG1_NMI_REG_CONFIG &lt;&lt; 24)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_VDU0_REG_CONFIG &lt;&lt; 16) | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_HRC_REG_CONFIG)        | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0x03F8FEFEul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG2~7 register reserved value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG2_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG3_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG4_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG5_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG6_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG7_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><figcaption><span>hc32f460_icg.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">if</span> defined ( __GNUC__ ) &amp;&amp; !defined (__CC_ARM) <span class="comment">/* GNU Compiler */</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((section(<span class="string">&quot;.icg_sec&quot;</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__CC_ARM)</span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((at(<span class="number">0x400</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__ICCARM__)</span></span><br><span class="line">__root <span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] @ <span class="number">0x400</span> =</span><br><span class="line"><span class="meta">#<span class="keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">error</span> <span class="string">&quot;unsupported compiler!!&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">/* ICG 0~ 3 */</span></span><br><span class="line">    ICG0_REGISTER_CONSTANT,</span><br><span class="line">    ICG1_REGISTER_CONSTANT,</span><br><span class="line">    ICG2_REGISTER_CONSTANT,</span><br><span class="line">    ICG3_REGISTER_CONSTANT,</span><br><span class="line">    <span class="comment">/* ICG 4~ 7 */</span></span><br><span class="line">    ICG4_REGISTER_CONSTANT,</span><br><span class="line">    ICG5_REGISTER_CONSTANT,</span><br><span class="line">    ICG6_REGISTER_CONSTANT,</span><br><span class="line">    ICG7_REGISTER_CONSTANT,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>通过定义常量的方式，在程序加载阶段，将数据 load 至指定的寄存器。</p>
+<h2 id="避坑指北"><a href="#避坑指北" class="headerlink" title="避坑指北"></a>避坑指北</h2><p>如果项目由 bootloader 和 app 两部分组成，那么只能在 bootloader 中添加上述源文件，在 app 中不能添加该文件，否则会出现异常。</p>
+]]></content>
+      <categories>
+        <category>问题记录</category>
+      </categories>
+      <tags>
+        <tag>华大半导体</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>问题记录：华大 HC32L19x 时钟初始化函数存在缺陷</title>
     <url>/sulfurandcu.io/cloqzg643003vmgrq0vxo85xp.html</url>
     <content><![CDATA[<p>hc32l19x_reference_manaul</p>
@@ -2926,25 +2965,6 @@ flowchart LR
       <tags>
         <tag>华大半导体</tag>
         <tag>HC32L19X</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>问题记录：华大 HC32F460 避坑指南之 ICG 寄存器</title>
-    <url>/sulfurandcu.io/cloqzaza3003fmgrqdpkl8c5j.html</url>
-    <content><![CDATA[<p>在《参考手册》第六章〈初始化配置〉中，八个初始化配置寄存器的复位值是不定的，华大对此的处理方式很巧妙（但是也给移植埋下了一个大坑）：</p>
-<figure class="highlight c"><figcaption><span>hc32f460_icg.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">/*!&lt; ICG0 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG0_REGISTER_CONSTANT                  (((uint32_t)ICG0_WDT_REG_CONFIG &lt;&lt; 16)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG0_SWDT_REG_CONFIG)       | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0xE000E000ul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG1 register value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG1_REGISTER_CONSTANT                  (((uint32_t)ICG1_NMI_REG_CONFIG &lt;&lt; 24)  | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_VDU0_REG_CONFIG &lt;&lt; 16) | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)ICG1_HRC_REG_CONFIG)        | \</span></span><br><span class="line"><span class="meta">                                                 ((uint32_t)0x03F8FEFEul))</span></span><br><span class="line"><span class="comment">/*!&lt; ICG2~7 register reserved value */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG2_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG3_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG4_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG5_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG6_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ICG7_REGISTER_CONSTANT                  ((uint32_t)0xFFFFFFFFul)</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><figcaption><span>hc32f460_icg.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">if</span> defined ( __GNUC__ ) &amp;&amp; !defined (__CC_ARM) <span class="comment">/* GNU Compiler */</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((section(<span class="string">&quot;.icg_sec&quot;</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__CC_ARM)</span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((at(<span class="number">0x400</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__ICCARM__)</span></span><br><span class="line">__root <span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] @ <span class="number">0x400</span> =</span><br><span class="line"><span class="meta">#<span class="keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">error</span> <span class="string">&quot;unsupported compiler!!&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">/* ICG 0~ 3 */</span></span><br><span class="line">    ICG0_REGISTER_CONSTANT,</span><br><span class="line">    ICG1_REGISTER_CONSTANT,</span><br><span class="line">    ICG2_REGISTER_CONSTANT,</span><br><span class="line">    ICG3_REGISTER_CONSTANT,</span><br><span class="line">    <span class="comment">/* ICG 4~ 7 */</span></span><br><span class="line">    ICG4_REGISTER_CONSTANT,</span><br><span class="line">    ICG5_REGISTER_CONSTANT,</span><br><span class="line">    ICG6_REGISTER_CONSTANT,</span><br><span class="line">    ICG7_REGISTER_CONSTANT,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>通过定义常量的方式，在程序加载阶段，将数据 load 至指定的寄存器。</p>
-<h2 id="避坑指北"><a href="#避坑指北" class="headerlink" title="避坑指北"></a>避坑指北</h2><p>如果项目由 bootloader 和 app 两部分组成，那么只能在 bootloader 中添加上述源文件，在 app 中不能添加该文件，否则会出现异常。</p>
-]]></content>
-      <categories>
-        <category>问题记录</category>
-      </categories>
-      <tags>
-        <tag>华大半导体</tag>
-        <tag>HC32F460</tag>
       </tags>
   </entry>
   <entry>
@@ -2976,22 +2996,6 @@ flowchart LR
 ]]></content>
       <categories>
         <category>开发笔记</category>
-      </categories>
-      <tags>
-        <tag>华大半导体</tag>
-        <tag>HC32F460</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>问题记录：华大 HC32F460 程序烧录异常</title>
-    <url>/sulfurandcu.io/cloqyh9rx0027mgrq1e9f3vv2.html</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">JLink info:</span><br><span class="line">------------</span><br><span class="line">DLL: V7.50 , compiled Jul  1 2021 17:37:28</span><br><span class="line">Firmware: J-Link V9 compiled May  7 2021 16:26:12</span><br><span class="line">Hardware: V9.60</span><br><span class="line">S/N : 69667985</span><br><span class="line">Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash</span><br><span class="line"></span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots</span><br><span class="line">* JLink Info: CoreSight components:</span><br><span class="line">* JLink Info: ROMTbl[0] @ E00FF000</span><br><span class="line">* JLink Info: ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7</span><br><span class="line">* JLink Info: ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT</span><br><span class="line">* JLink Info: ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB</span><br><span class="line">* JLink Info: ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM</span><br><span class="line">* JLink Info: ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BB9A1 TPIU</span><br><span class="line">ROMTableAddr = 0xE00FF000</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via AIRCR.SYSRESETREQ.</span><br><span class="line">* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</span><br><span class="line">* JLink Info: Reset: Using fallback: Reset pin.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Core did not halt after reset, trying to disable WDT.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Failed. Toggling reset pin and trying reset strategy again.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via AIRCR.SYSRESETREQ.</span><br><span class="line">* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</span><br><span class="line">* JLink Info: Reset: Using fallback: Reset pin.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Core did not halt after reset, trying to disable WDT.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">***JLink Error: Failed to halt CPU.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">Error: Flash Download failed  -  Target DLL has been cancelled</span><br><span class="line">Flash Load finished at 09:01:53</span><br></pre></td></tr></table></figure>
-
-<p>* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</p>
-<p>很可能是外部复位电路失效，导致复位引脚被拉低，进而导致内核一直处于复位状态。</p>
-]]></content>
-      <categories>
-        <category>问题记录</category>
       </categories>
       <tags>
         <tag>华大半导体</tag>
@@ -3041,6 +3045,22 @@ flowchart LR
 </tr>
 </tbody></table>
 <p>猜测应该是编程算法在烧录过程中没有屏蔽 SWDT 所致，更换新版编程算法即可解决。</p>
+]]></content>
+      <categories>
+        <category>问题记录</category>
+      </categories>
+      <tags>
+        <tag>华大半导体</tag>
+        <tag>HC32F460</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>问题记录：华大 HC32F460 程序烧录异常</title>
+    <url>/sulfurandcu.io/cloqyh9rx0027mgrq1e9f3vv2.html</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">JLink info:</span><br><span class="line">------------</span><br><span class="line">DLL: V7.50 , compiled Jul  1 2021 17:37:28</span><br><span class="line">Firmware: J-Link V9 compiled May  7 2021 16:26:12</span><br><span class="line">Hardware: V9.60</span><br><span class="line">S/N : 69667985</span><br><span class="line">Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash</span><br><span class="line"></span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: Scanning AP map to find all available APs</span><br><span class="line">* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: 0x24770011)</span><br><span class="line">* JLink Info: Iterating through AP map to find AHB-AP to use</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots</span><br><span class="line">* JLink Info: CoreSight components:</span><br><span class="line">* JLink Info: ROMTbl[0] @ E00FF000</span><br><span class="line">* JLink Info: ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7</span><br><span class="line">* JLink Info: ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT</span><br><span class="line">* JLink Info: ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB</span><br><span class="line">* JLink Info: ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM</span><br><span class="line">* JLink Info: ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BB9A1 TPIU</span><br><span class="line">ROMTableAddr = 0xE00FF000</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via AIRCR.SYSRESETREQ.</span><br><span class="line">* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</span><br><span class="line">* JLink Info: Reset: Using fallback: Reset pin.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Core did not halt after reset, trying to disable WDT.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Failed. Toggling reset pin and trying reset strategy again.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via AIRCR.SYSRESETREQ.</span><br><span class="line">* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</span><br><span class="line">* JLink Info: Reset: Using fallback: Reset pin.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: Reset: Core did not halt after reset, trying to disable WDT.</span><br><span class="line">* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.</span><br><span class="line">* JLink Info: Reset: Reset device via reset pin</span><br><span class="line">* JLink Info: Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).</span><br><span class="line">* JLink Info: Reset: Reconnecting and manually halting CPU.</span><br><span class="line">* JLink Info: Found SW-DP with ID 0x2BA01477</span><br><span class="line">* JLink Info: DPIDR: 0x2BA01477</span><br><span class="line">* JLink Info: AP map detection skipped. Manually configured AP map found.</span><br><span class="line">* JLink Info: AP[0]: AHB-AP (IDR: Not set)</span><br><span class="line">* JLink Info: AP[0]: Core found</span><br><span class="line">* JLink Info: AP[0]: AHB-AP ROM base: 0xE00FF000</span><br><span class="line">* JLink Info: CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)</span><br><span class="line">* JLink Info: Found Cortex-M4 r0p1, Little endian.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">***JLink Error: Failed to halt CPU.</span><br><span class="line">* JLink Info: CPU could not be halted</span><br><span class="line">Error: Flash Download failed  -  Target DLL has been cancelled</span><br><span class="line">Flash Load finished at 09:01:53</span><br></pre></td></tr></table></figure>
+
+<p>* JLink Info: Reset: S_RESET_ST never gets cleared. CPU seems to be kept in reset forever.</p>
+<p>很可能是外部复位电路失效，导致复位引脚被拉低，进而导致内核一直处于复位状态。</p>
 ]]></content>
       <categories>
         <category>问题记录</category>
@@ -3196,47 +3216,6 @@ flowchart LR
       </tags>
   </entry>
   <entry>
-    <title>问题记录：华大 HC32F460 内存边界禁止非对齐访问</title>
-    <url>/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1.html</url>
-    <content><![CDATA[<h2 id="文章更新（2023-11-14）"><a href="#文章更新（2023-11-14）" class="headerlink" title="文章更新（2023-11-14）"></a>文章更新（2023-11-14）</h2><p>经过排查，本文所述异常现象并非由「非对齐访问」所致，而是因为 SRAM3 开启 ECC 校验时仅支持以字为单位进行访问。</p>
-<h2 id="现象描述"><a href="#现象描述" class="headerlink" title="现象描述"></a>现象描述</h2><ul>
-<li>程序无法正常启动</li>
-<li>有时会进入 hard fault 中断</li>
-<li>有时候会出现以下异常：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Call Stack + Locals                                                                    ✘</span><br><span class="line">    Name                                Location/Value                          Type</span><br><span class="line">    __scatterload_zeroinit              0x00074C56                              function</span><br><span class="line">    __scatterload                       0x00018DFE                              function</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><h3 id="芯片资源"><a href="#芯片资源" class="headerlink" title="芯片资源"></a>芯片资源</h3><ul>
-<li>RAM 192KB&#x2F;0x30000</li>
-<li>ROM 512KB&#x2F;0x80000（其中通过分散加载给应用程序分配的空间为 416KB&#x2F;0x68000）</li>
-</ul>
-<h3 id="链接数据"><a href="#链接数据" class="headerlink" title="链接数据"></a>链接数据</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">==============================================================================</span><br><span class="line"></span><br><span class="line">    Total RO  Size (Code + RO Data)               419844 ( 410.00kB)</span><br><span class="line">    Total RW  Size (RW Data + ZI Data)            163952 ( 160.11kB)</span><br><span class="line">    Total ROM Size (Code + RO Data + RW Data)     421056 ( 411.19kB)</span><br><span class="line"></span><br><span class="line">==============================================================================</span><br></pre></td></tr></table></figure>
-
-<h3 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LR_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line"></span><br><span class="line">	; 中断向量</span><br><span class="line">	ER_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line">		*.o (RESET, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序信息</span><br><span class="line">	ER_IROM2 + 0 &#123;</span><br><span class="line">		*.o (SECTION_INFO_APP, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序代码</span><br><span class="line">	ER_IROM3 + 0 &#123;</span><br><span class="line">		*(InRoot$$Sections)</span><br><span class="line">		.ANY (+RO)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM1 0x1FFF8000 0x00030000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>由于代码量比较临界，起初我以为是 flash 的问题。但是 map 文件中显示 ROM 只占用了 411.19kB 的空间，并没有超过 416KB 的总量。那 RAM 呢？RAM 只用了 160.11KB 也没有超过 192KB 的总量，邪了门儿了真是！哎，等等！这款芯片的 RAM 我记得好像是分成了两块，怎么说的来着，瞅一眼《参考手册》：</p>
-<p><img src="/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1/HC32F460-manual.png"></p>
-<p>果然，两块 RAM 间不支持非对齐访问，再一看 SRAMH 的大小：32KB！<del>破案了！现在 RAM 的用量不正好到达 160KB（192KB - 32KB &#x3D; 160KB）这个临界点了么！</del></p>
-<blockquote>
-<p>超过 160KB 确实会出现异常，但不是因达到 SRAMH 所致（SRAMH 地址最小，始终会用到）而是因达到 SRAM3 且使能 ECC 校验所致。注意看红线上面的那句话：「在允许 RAM ECC 校验错误产生 NMI 中断和复位的情况下，必须对所用 RAM 空间以字（16bit）为单位进行访问」。</p>
-</blockquote>
-<p>按照现有分散加载文件的写法，两块内存会被认为是一个整体，那么就必然存在「在内存边界处进行非对齐访问」的可能。</p>
-<h2 id="规避方法"><a href="#规避方法" class="headerlink" title="规避方法"></a>规避方法</h2><p>非对齐访问的风险可以在分散加载文件中将两块内存断开：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LR_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line"></span><br><span class="line">	; 中断向量</span><br><span class="line">	ER_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line">		*.o (RESET, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序信息</span><br><span class="line">	ER_IROM2 + 0 &#123;</span><br><span class="line">		*.o (SECTION_INFO_APP, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序代码</span><br><span class="line">	ER_IROM3 + 0 &#123;</span><br><span class="line">		*(InRoot$$Sections)</span><br><span class="line">		.ANY (+RO)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM1 0x1FFF8000 0x00007FF0 &#123; ; 空出若干字节不用，以避免非对齐访问。</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM2 0x20000000 0x00028000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>SRAM3 开启 ECC 后仅支持以字为单位进行访问的问题可以通过禁用 ECC 功能来解决。当然如果你一定要用 ECC 的话，那这块空间肯定不能用来让编译器自动分配内存，而是要自己来手动管理。</p>
-]]></content>
-      <categories>
-        <category>问题记录</category>
-      </categories>
-      <tags>
-        <tag>华大半导体</tag>
-        <tag>HC32F460</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>开发指南：华大 HC32F460 &amp; HC32F4A0 比较</title>
     <url>/sulfurandcu.io/cm04je64700adckrq3udz79n5.html</url>
     <content><![CDATA[<table>
@@ -3361,6 +3340,47 @@ flowchart LR
         <tag>华大半导体</tag>
         <tag>HC32F460</tag>
         <tag>HC32F4A0</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>问题记录：华大 HC32F460 内存边界禁止非对齐访问</title>
+    <url>/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1.html</url>
+    <content><![CDATA[<h2 id="文章更新（2023-11-14）"><a href="#文章更新（2023-11-14）" class="headerlink" title="文章更新（2023-11-14）"></a>文章更新（2023-11-14）</h2><p>经过排查，本文所述异常现象并非由「非对齐访问」所致，而是因为 SRAM3 开启 ECC 校验时仅支持以字为单位进行访问。</p>
+<h2 id="现象描述"><a href="#现象描述" class="headerlink" title="现象描述"></a>现象描述</h2><ul>
+<li>程序无法正常启动</li>
+<li>有时会进入 hard fault 中断</li>
+<li>有时候会出现以下异常：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Call Stack + Locals                                                                    ✘</span><br><span class="line">    Name                                Location/Value                          Type</span><br><span class="line">    __scatterload_zeroinit              0x00074C56                              function</span><br><span class="line">    __scatterload                       0x00018DFE                              function</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><h3 id="芯片资源"><a href="#芯片资源" class="headerlink" title="芯片资源"></a>芯片资源</h3><ul>
+<li>RAM 192KB&#x2F;0x30000</li>
+<li>ROM 512KB&#x2F;0x80000（其中通过分散加载给应用程序分配的空间为 416KB&#x2F;0x68000）</li>
+</ul>
+<h3 id="链接数据"><a href="#链接数据" class="headerlink" title="链接数据"></a>链接数据</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">==============================================================================</span><br><span class="line"></span><br><span class="line">    Total RO  Size (Code + RO Data)               419844 ( 410.00kB)</span><br><span class="line">    Total RW  Size (RW Data + ZI Data)            163952 ( 160.11kB)</span><br><span class="line">    Total ROM Size (Code + RO Data + RW Data)     421056 ( 411.19kB)</span><br><span class="line"></span><br><span class="line">==============================================================================</span><br></pre></td></tr></table></figure>
+
+<h3 id="分散加载"><a href="#分散加载" class="headerlink" title="分散加载"></a>分散加载</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LR_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line"></span><br><span class="line">	; 中断向量</span><br><span class="line">	ER_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line">		*.o (RESET, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序信息</span><br><span class="line">	ER_IROM2 + 0 &#123;</span><br><span class="line">		*.o (SECTION_INFO_APP, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序代码</span><br><span class="line">	ER_IROM3 + 0 &#123;</span><br><span class="line">		*(InRoot$$Sections)</span><br><span class="line">		.ANY (+RO)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM1 0x1FFF8000 0x00030000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>由于代码量比较临界，起初我以为是 flash 的问题。但是 map 文件中显示 ROM 只占用了 411.19kB 的空间，并没有超过 416KB 的总量。那 RAM 呢？RAM 只用了 160.11KB 也没有超过 192KB 的总量，邪了门儿了真是！哎，等等！这款芯片的 RAM 我记得好像是分成了两块，怎么说的来着，瞅一眼《参考手册》：</p>
+<p><img src="/sulfurandcu.io/cloqi184y000s8wrqg4ga0ei1/HC32F460-manual.png"></p>
+<p>果然，两块 RAM 间不支持非对齐访问，再一看 SRAMH 的大小：32KB！<del>破案了！现在 RAM 的用量不正好到达 160KB（192KB - 32KB &#x3D; 160KB）这个临界点了么！</del></p>
+<blockquote>
+<p>超过 160KB 确实会出现异常，但不是因达到 SRAMH 所致（SRAMH 地址最小，始终会用到）而是因达到 SRAM3 且使能 ECC 校验所致。注意看红线上面的那句话：「在允许 RAM ECC 校验错误产生 NMI 中断和复位的情况下，必须对所用 RAM 空间以字（16bit）为单位进行访问」。</p>
+</blockquote>
+<p>按照现有分散加载文件的写法，两块内存会被认为是一个整体，那么就必然存在「在内存边界处进行非对齐访问」的可能。</p>
+<h2 id="规避方法"><a href="#规避方法" class="headerlink" title="规避方法"></a>规避方法</h2><p>非对齐访问的风险可以在分散加载文件中将两块内存断开：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LR_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line"></span><br><span class="line">	; 中断向量</span><br><span class="line">	ER_IROM1 0x00018000 0x00068000 &#123;</span><br><span class="line">		*.o (RESET, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序信息</span><br><span class="line">	ER_IROM2 + 0 &#123;</span><br><span class="line">		*.o (SECTION_INFO_APP, +First)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 程序代码</span><br><span class="line">	ER_IROM3 + 0 &#123;</span><br><span class="line">		*(InRoot$$Sections)</span><br><span class="line">		.ANY (+RO)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM1 0x1FFF8000 0x00007FF0 &#123; ; 空出若干字节不用，以避免非对齐访问。</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	; 内存空间</span><br><span class="line">	RW_IRAM2 0x20000000 0x00028000 &#123;</span><br><span class="line">		.ANY (+RW +ZI)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>SRAM3 开启 ECC 后仅支持以字为单位进行访问的问题可以通过禁用 ECC 功能来解决。当然如果你一定要用 ECC 的话，那这块空间肯定不能用来让编译器自动分配内存，而是要自己来手动管理。</p>
+]]></content>
+      <categories>
+        <category>问题记录</category>
+      </categories>
+      <tags>
+        <tag>华大半导体</tag>
+        <tag>HC32F460</tag>
       </tags>
   </entry>
 </search>
