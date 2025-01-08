@@ -6,7 +6,7 @@
   <link href="https://sulfurandcu.github.io/sulfurandcu.io/atom.xml" rel="self"/>
   
   <link href="https://sulfurandcu.github.io/sulfurandcu.io/"/>
-  <updated>2024-12-10T12:23:36.000Z</updated>
+  <updated>2025-01-01T01:01:01.000Z</updated>
   <id>https://sulfurandcu.github.io/sulfurandcu.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FAL</title>
+    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cm5n6isto007cdgrqczun29x5.html"/>
+    <id>https://sulfurandcu.github.io/sulfurandcu.io/cm5n6isto007cdgrqczun29x5.html</id>
+    <published>2025-01-01T01:01:01.000Z</published>
+    <updated>2025-01-01T01:01:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/sulfurandcu.io/cm5n6isto007cdgrqczun29x5/fal.png"></p>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="开发笔记" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="rtthread" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/rtthread/"/>
+    
+    <category term="FAL" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/FAL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hpatchlite-wrapper</title>
+    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cm5n6istp007idgrqeiveghpi.html"/>
+    <id>https://sulfurandcu.github.io/sulfurandcu.io/cm5n6istp007idgrqeiveghpi.html</id>
+    <published>2024-12-31T11:12:14.000Z</published>
+    <updated>2024-12-31T11:12:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果你也觉得 hpatchlite 使用起来有点难度，那么不妨试试 hpatchlite-wrapper 软件包。</p><p><a href="https://github.com/sulfurandcu/hpatchlite-wrapper">https://github.com/sulfurandcu/hpatchlite-wrapper</a></p><p><a href="https://packages.rt-thread.org/detail.html?package=hpatchlite-wrapper">https://packages.rt-thread.org/detail.html?package=hpatchlite-wrapper</a></p>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="开发笔记" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="rtthread" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/rtthread/"/>
+    
+    <category term="hpatchlite" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/hpatchlite/"/>
+    
+    <category term="差分升级， 增量升级" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%B7%AE%E5%88%86%E5%8D%87%E7%BA%A7%EF%BC%8C-%E5%A2%9E%E9%87%8F%E5%8D%87%E7%BA%A7/"/>
+    
+  </entry>
   
   <entry>
     <title>基于 RT-THREAD 的 RS485 软件包</title>
@@ -81,6 +141,103 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>通用输入输出 GPIO 的几种工作模式</title>
+    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo.html"/>
+    <id>https://sulfurandcu.github.io/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo.html</id>
+    <published>2024-09-19T12:49:16.000Z</published>
+    <updated>2024-09-19T12:49:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>GPIO 的八种工作模式这种说法是 stdperiph-lib 标准库时代的分类方式，现如今 HAL 库和 LL 库以及最新的参考手册早已摒弃了这种分类方式，取而代之的是四个大类，六个小类。</p><table><thead><tr><th align="center">模式大类</th><th align="center">模式小类</th><th align="center">内部弱拉</th></tr></thead><tbody><tr>    <td align="center">模拟模式</td>    <td align="center">输入输出</td>    <td align="center">　浮空　</td></tr><tr>    <td align="center" rowspan="3">输入模式</td>    <td align="center" rowspan="3">普通输入</td>    <td align="center">　浮空　</td></tr><tr>    <td align="center">　上拉　</td></tr><tr>    <td align="center">　下拉　</td></tr><tr>    <td align="center" rowspan="6">输出模式</td>    <td align="center" rowspan="3">普通输入<br>+<br>推挽输出</td>    <td align="center">　浮空　</td></tr><tr>    <td align="center">　上拉　</td></tr><tr>    <td align="center">　下拉　</td></tr><tr>    <td align="center" rowspan="3">普通输入<br>+<br>开漏输出</td>    <td align="center">　浮空　</td></tr><tr>    <td align="center">　上拉　</td></tr><tr>    <td align="center">　下拉　</td></tr><tr><tr>    <td align="center" rowspan="6">复用模式</td>    <td align="center" rowspan="3">普通输入<br>+<br>推挽输出</td>    <td align="center">　浮空　</td></tr><tr>    <td align="center">　上拉　</td></tr><tr>    <td align="center">　下拉　</td></tr><tr>    <td align="center" rowspan="3">普通输入<br>+<br>开漏输出</td>    <td align="center">　浮空　</td></tr><tr>    <td align="center">　上拉　</td></tr><tr>    <td align="center">　下拉　</td></tr></tbody></table><p><img src="/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo/structure.png"></p><span id="more"></span><p><img src="/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo/table.png"></p><h2 id="模拟模式"><a href="#模拟模式" class="headerlink" title="模拟模式"></a>模拟模式</h2><p><img src="/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo/%E6%A8%A1%E6%8B%9F%E6%A8%A1%E5%BC%8Fstructure.png"></p><p><img src="/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo/%E6%A8%A1%E6%8B%9F%E6%A8%A1%E5%BC%8F.png"></p><table><tbody><tr>    <td align="center">模拟模式</td>    <td align="center">输入输出</td>    <td align="center">　浮空　</td></tr></tbody></table><h2 id="输入模式"><a href="#输入模式" class="headerlink" title="输入模式"></a>输入模式</h2><p><img src="/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo/%E8%BE%93%E5%85%A5%E6%A8%A1%E5%BC%8Fstructure.png"></p><p><img src="/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo/%E8%BE%93%E5%85%A5%E6%A8%A1%E5%BC%8F.png"></p><table><tbody><tr>    <td align="center" rowspan="3">输入模式</td>    <td align="center" rowspan="3">普通输入</td>    <td align="center">　浮空　</td></tr><tr>    <td align="center">　上拉　</td></tr><tr>    <td align="center">　下拉　</td></tr></tbody></table><h2 id="输出模式"><a href="#输出模式" class="headerlink" title="输出模式"></a>输出模式</h2><p><img src="/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo/%E8%BE%93%E5%87%BA%E6%A8%A1%E5%BC%8Fstructure.png"></p><p><img src="/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo/%E8%BE%93%E5%87%BA%E6%A8%A1%E5%BC%8F.png"></p><table><tbody><tr>    <td align="center" rowspan="6">输出模式</td>    <td align="center" rowspan="3">普通输入<br>+<br>推挽输出</td>    <td align="center">　浮空　</td></tr><tr>    <td align="center">　上拉　</td></tr><tr>    <td align="center">　下拉　</td></tr><tr>    <td align="center" rowspan="3">普通输入<br>+<br>开漏输出</td>    <td align="center">　浮空　</td></tr><tr>    <td align="center">　上拉　</td></tr><tr>    <td align="center">　下拉　</td></tr><tr></tbody></table><h2 id="复用模式"><a href="#复用模式" class="headerlink" title="复用模式"></a>复用模式</h2><p><img src="/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo/%E5%A4%8D%E7%94%A8%E6%A8%A1%E5%BC%8Fstructure.png"></p><p><img src="/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo/%E5%A4%8D%E7%94%A8%E6%A8%A1%E5%BC%8F.png"></p><table><tbody><tr>    <td align="center" rowspan="6">复用模式</td>    <td align="center" rowspan="3">普通输入<br>+<br>推挽输出</td>    <td align="center">　浮空　</td></tr><tr>    <td align="center">　上拉　</td></tr><tr>    <td align="center">　下拉　</td></tr><tr>    <td align="center" rowspan="3">普通输入<br>+<br>开漏输出</td>    <td align="center">　浮空　</td></tr><tr>    <td align="center">　上拉　</td></tr><tr>    <td align="center">　下拉　</td></tr></tbody></table><h2 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h2><p>Q: 模拟模式和浮空输入的区别是什么？<br>A: 模拟模式内部接入的是模数转换单元，输入施密特触发器和内部上下拉停用，引脚处于超低功耗状态。浮空输入模式内部接入的是GPIO的输入检测电路，输入施密特触发器和内部上下拉均可正常使用。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;GPIO 的八种工作模式这种说法是 stdperiph-lib 标准库时代的分类方式，现如今 HAL 库和 LL 库以及最新的参考手册早已摒弃了这种分类方式，取而代之的是四个大类，六个小类。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;模式大类&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;模式小类&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;内部弱拉&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot;&gt;模拟模式&lt;/td&gt;
+    &lt;td align=&quot;center&quot;&gt;输入输出&lt;/td&gt;
+    &lt;td align=&quot;center&quot;&gt;　浮空　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot; rowspan=&quot;3&quot;&gt;输入模式&lt;/td&gt;
+    &lt;td align=&quot;center&quot; rowspan=&quot;3&quot;&gt;普通输入&lt;/td&gt;
+    &lt;td align=&quot;center&quot;&gt;　浮空　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot;&gt;　上拉　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot;&gt;　下拉　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot; rowspan=&quot;6&quot;&gt;输出模式&lt;/td&gt;
+    &lt;td align=&quot;center&quot; rowspan=&quot;3&quot;&gt;普通输入&lt;br&gt;+&lt;br&gt;推挽输出&lt;/td&gt;
+    &lt;td align=&quot;center&quot;&gt;　浮空　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot;&gt;　上拉　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot;&gt;　下拉　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot; rowspan=&quot;3&quot;&gt;普通输入&lt;br&gt;+&lt;br&gt;开漏输出&lt;/td&gt;
+    &lt;td align=&quot;center&quot;&gt;　浮空　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot;&gt;　上拉　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot;&gt;　下拉　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot; rowspan=&quot;6&quot;&gt;复用模式&lt;/td&gt;
+    &lt;td align=&quot;center&quot; rowspan=&quot;3&quot;&gt;普通输入&lt;br&gt;+&lt;br&gt;推挽输出&lt;/td&gt;
+    &lt;td align=&quot;center&quot;&gt;　浮空　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot;&gt;　上拉　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot;&gt;　下拉　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot; rowspan=&quot;3&quot;&gt;普通输入&lt;br&gt;+&lt;br&gt;开漏输出&lt;/td&gt;
+    &lt;td align=&quot;center&quot;&gt;　浮空　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot;&gt;　上拉　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td align=&quot;center&quot;&gt;　下拉　&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/sulfurandcu.io/cm5g3judq000vw0rq0g5sf0oo/structure.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="开发笔记" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="ARM" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/ARM/"/>
+    
+    <category term="STM32" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/STM32/"/>
+    
+    <category term="GPIO" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/GPIO/"/>
     
   </entry>
   
@@ -629,92 +786,6 @@ A(&amp;quot;在电路编程&amp;lt;br&amp;gt;(ＩＣＰ)&amp;quot;)---&amp;gt;B(
     <category term="iap" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/iap/"/>
     
     <category term="bootloader" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/bootloader/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>问题记录：华大 HC32F460 滤波电路失效</title>
-    <link href="https://sulfurandcu.github.io/sulfurandcu.io/clorxokmu004nmgrq9tl4hiss.html"/>
-    <id>https://sulfurandcu.github.io/sulfurandcu.io/clorxokmu004nmgrq9tl4hiss.html</id>
-    <published>2023-08-08T16:00:00.000Z</published>
-    <updated>2023-08-08T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近在使用电压比较器时发现硬件滤波电路会出现失效的情况，经分析是其采样频率过高所致。</p><p><img src="/sulfurandcu.io/clorxokmu004nmgrq9tl4hiss/manual.png"></p><p>参考手册中绘制的是理想条件下的波形，真实情况并非如此，INP 在逼近 INM 时会伴随着噪声&#x2F;抖动。我们可以使用硬件滤波电路来消除这种抖动，图中绿色线段表示各采样点，其频率即为采样频率。</p><iframe src="https://www.desmos.com/calculator/7r0bi5urxv?embed" width="800" height="500" style="border: 1px solid #ccc" frameborder=0></iframe><p>采样频率较低时，滤波电路可以正常工作，但是随着采样频率的升高，其可靠性反而会降低。</p><span id="more"></span><iframe src="https://www.desmos.com/calculator/2kz1rewo6h?embed" width="800" height="500" style="border: 1px solid #ccc" frameborder=0></iframe><iframe src="https://www.desmos.com/calculator/2py3qizn5x?embed" width="800" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;最近在使用电压比较器时发现硬件滤波电路会出现失效的情况，经分析是其采样频率过高所致。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/sulfurandcu.io/clorxokmu004nmgrq9tl4hiss/manual.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;参考手册中绘制的是理想条件下的波形，真实情况并非如此，INP 在逼近 INM 时会伴随着噪声&amp;#x2F;抖动。我们可以使用硬件滤波电路来消除这种抖动，图中绿色线段表示各采样点，其频率即为采样频率。&lt;/p&gt;
-&lt;iframe src=&quot;https://www.desmos.com/calculator/7r0bi5urxv?embed&quot; width=&quot;800&quot; height=&quot;500&quot; style=&quot;border: 1px solid #ccc&quot; frameborder=0&gt;&lt;/iframe&gt;
-
-&lt;p&gt;采样频率较低时，滤波电路可以正常工作，但是随着采样频率的升高，其可靠性反而会降低。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="问题记录" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="华大半导体" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%8D%8E%E5%A4%A7%E5%8D%8A%E5%AF%BC%E4%BD%93/"/>
-    
-    <category term="HC32F460" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/HC32F460/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>问题记录：华大 HC32F460 切换运行模式导致宕机</title>
-    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4.html"/>
-    <id>https://sulfurandcu.github.io/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4.html</id>
-    <published>2023-07-26T16:00:00.000Z</published>
-    <updated>2023-07-26T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="现象描述"><a href="#现象描述" class="headerlink" title="现象描述"></a>现象描述</h2><ul><li>从高速&#x2F;超高速模式向超低速模式切换时 mcu 异常死机</li></ul><h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><ul><li>当前使用华大 2.2.0 版驱动程序</li><li>当前使用华大 1.2.1 版参考手册</li></ul><h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>通过调试发现每次运行至 <code>M4_SYSREG-&gt;PWR_PWRC2</code> 赋值时程序就会跑飞😶</p><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2-Register.png" alt="电源模式控制寄存器 2"></p><figure class="highlight c"><figcaption><span>hc32f460_pwc.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HS2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xE1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HP2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xD1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>瞅了一眼《参考手册 Rev1.2.1》好像也没啥问题，又看了《参考手册 Rev1.3》后，我得发…🙄！</p><p>两版手册竟然不一样！</p><span id="more"></span><h3 id="Rev1-2-1"><a href="#Rev1-2-1" class="headerlink" title="Rev1.2.1"></a>Rev1.2.1</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2.png" alt="运行模式的切换流程（Rev1.2）"></p><h3 id="Rev1-3-0"><a href="#Rev1-3-0" class="headerlink" title="Rev1.3.0"></a>Rev1.3.0</h3><p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.3.png" alt="运行模式的切换流程（Rev1.3）"></p><p>这妥妥的是华大的锅了…</p>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;现象描述&quot;&gt;&lt;a href=&quot;#现象描述&quot; class=&quot;headerlink&quot; title=&quot;现象描述&quot;&gt;&lt;/a&gt;现象描述&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;从高速&amp;#x2F;超高速模式向超低速模式切换时 mcu 异常死机&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;基础信息&quot;&gt;&lt;a href=&quot;#基础信息&quot; class=&quot;headerlink&quot; title=&quot;基础信息&quot;&gt;&lt;/a&gt;基础信息&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;当前使用华大 2.2.0 版驱动程序&lt;/li&gt;
-&lt;li&gt;当前使用华大 1.2.1 版参考手册&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;原因分析&quot;&gt;&lt;a href=&quot;#原因分析&quot; class=&quot;headerlink&quot; title=&quot;原因分析&quot;&gt;&lt;/a&gt;原因分析&lt;/h2&gt;&lt;p&gt;通过调试发现每次运行至 &lt;code&gt;M4_SYSREG-&amp;gt;PWR_PWRC2&lt;/code&gt; 赋值时程序就会跑飞😶&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2-Register.png&quot; alt=&quot;电源模式控制寄存器 2&quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight c&quot;&gt;&lt;figcaption&gt;&lt;span&gt;hc32f460_pwc.c&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;type&quot;&gt;en_result_t&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;PWC_HS2LS&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;type&quot;&gt;void&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    M4_SYSREG-&amp;gt;PWR_PWRC2 = &lt;span class=&quot;number&quot;&gt;0xE1&lt;/span&gt;U;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    M4_SYSREG-&amp;gt;PWR_MDSWCR = &lt;span class=&quot;number&quot;&gt;0x10&lt;/span&gt;U;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;type&quot;&gt;en_result_t&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;PWC_HP2LS&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;type&quot;&gt;void&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    M4_SYSREG-&amp;gt;PWR_PWRC2 = &lt;span class=&quot;number&quot;&gt;0xD1&lt;/span&gt;U;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    M4_SYSREG-&amp;gt;PWR_MDSWCR = &lt;span class=&quot;number&quot;&gt;0x10&lt;/span&gt;U;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;瞅了一眼《参考手册 Rev1.2.1》好像也没啥问题，又看了《参考手册 Rev1.3》后，我得发…🙄！&lt;/p&gt;
-&lt;p&gt;两版手册竟然不一样！&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="问题记录" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="华大半导体" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%8D%8E%E5%A4%A7%E5%8D%8A%E5%AF%BC%E4%BD%93/"/>
-    
-    <category term="HC32F460" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/HC32F460/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>开发指南：华大 HC32F460 时钟控制单元</title>
-    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup.html"/>
-    <id>https://sulfurandcu.github.io/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup.html</id>
-    <published>2023-07-16T16:00:00.000Z</published>
-    <updated>2023-07-16T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="clock"><a href="#clock" class="headerlink" title="clock"></a>clock</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-tree-sketch.png"></p><span id="more"></span><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-tree-manual.png"></p><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-work.png"></p><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-work-manual.png"></p><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-work-note.png"></p><h2 id="pll"><a href="#pll" class="headerlink" title="pll"></a>pll</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/pll.png"></p><h2 id="systick"><a href="#systick" class="headerlink" title="systick"></a>systick</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/systick.png"></p><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/systick-manual.jpg"></p><center>《ARM ® CortexM4 Devices Generic User Guide》</center><br><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/systick-register.png"></p><center>hc32f460's systick control and status register</center><br><div class="note danger no-icon"><p>华大 HC32F460 的 systick 嘀嗒定时器使用内核时钟（HCLK）</p></div><figure class="highlight c"><figcaption><span>HC32F460.h</span></figcaption><table><tr><td class="code"><pre><span class="line">********************************************************************************</span><br><span class="line">* @file  HC32F460.h</span><br><span class="line">* @brief Headerfile <span class="keyword">for</span> HC32F460 series MCU</span><br><span class="line">********************************************************************************</span><br><span class="line"></span><br><span class="line">********************************************************************************</span><br><span class="line">Configuration of the Cortex-M4 Processor and Core Peripherals</span><br><span class="line">********************************************************************************</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __CM4_REV                 1     <span class="comment">// !&lt; Core revision r0p1</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __FPU_PRESENT             1     <span class="comment">// !&lt; FPU present</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __MPU_PRESENT             1     <span class="comment">// !&lt; HC32F460 provides an MPU</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __NVIC_PRIO_BITS          4     <span class="comment">// !&lt; HC32F460 uses 4 Bits for the Priority Levels</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __Vendor_SysTickConfig    0     <span class="comment">// !&lt; Set to 1 if different SysTick Config is used</span></span></span><br></pre></td></tr></table></figure><figure class="highlight c"><figcaption><span>core_cm4.h</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">if</span> defined (__Vendor_SysTickConfig) &amp;&amp; (__Vendor_SysTickConfig == 0U)</span></span><br><span class="line"><span class="type">uint32_t</span> <span class="title function_">SysTick_Config</span><span class="params">(<span class="type">uint32_t</span> ticks)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure><div class="note danger no-icon"><p>华大 HC32F460 的 systick 嘀嗒定时器使用 cmsis(core_cm4.h) 中默认的配置函数</p></div><h2 id="外设时钟源（URT）"><a href="#外设时钟源（URT）" class="headerlink" title="外设时钟源（URT）"></a>外设时钟源（URT）</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK1-URT.png"></p><center>÷2 表示开启过采样功能</center><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK1-URT-example.png"></p><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK1-URT-baudrate-manual.jpg"></p><!--公式使用工具 https://latexlive.com/ 生成\begin{align}& Baudrate = \frac{串口频率}{08\ \times\ (1\ +整数分频寄存器)} \ \ \ \ (关闭过采样) \\& Baudrate = \frac{串口频率}{16\ \times\ (1\ +整数分频寄存器)} \ \ \ \ (开启过采样) \\\end{align}--></p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt" displaystyle="true"><mtr><mtd></mtd><mtd><mi>B</mi><mi>a</mi><mi>u</mi><mi>d</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>e</mi><mo>=</mo><mfrac><mrow><mo>串口频率</mo></mrow><mrow><mn>08</mn><mtext>&nbsp;</mtext><mo>×</mo><mtext>&nbsp;</mtext><mo stretchy="false">(</mo><mn>1</mn><mtext>&nbsp;</mtext><mo>+</mo><mo>整数分频寄存器</mo><mo stretchy="false">)</mo></mrow></mfrac><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mo stretchy="false">(</mo><mo>关闭过采样</mo><mo stretchy="false">)</mo></mtd></mtr></mtable></math><br><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt" displaystyle="true"><mtr><mtd></mtd><mtd><mi>B</mi><mi>a</mi><mi>u</mi><mi>d</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>e</mi><mo>=</mo><mfrac><mrow><mo>串口频率</mo></mrow><mrow><mn>16</mn><mtext>&nbsp;</mtext><mo>×</mo><mtext>&nbsp;</mtext><mo stretchy="false">(</mo><mn>1</mn><mtext>&nbsp;</mtext><mo>+</mo><mo>整数分频寄存器</mo><mo stretchy="false">)</mo></mrow></mfrac><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mtext>&nbsp;</mtext><mo stretchy="false">(</mo><mo>开启过采样</mo><mo stretchy="false">)</mo></mtd></mtr></mtable></math><br><div class="note info no-icon"><p>公式中整数分频寄存器的取值范围为 0x00 ~ 0xFF（USART_BRR[b15~b08]）</p></div><h2 id="外设时钟源（SPI）"><a href="#外设时钟源（SPI）" class="headerlink" title="外设时钟源（SPI）"></a>外设时钟源（SPI）</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK1-SPI.png"></p><h2 id="外设时钟源（I2C）"><a href="#外设时钟源（I2C）" class="headerlink" title="外设时钟源（I2C）"></a>外设时钟源（I2C）</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK3-I2C.png"></p><h2 id="外设时钟源（CMP）"><a href="#外设时钟源（CMP）" class="headerlink" title="外设时钟源（CMP）"></a>外设时钟源（CMP）</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/PCLK3-CMP.png"></p><div class="note danger no-icon"><p>比较滤波器的采样频率越低→滤波效果越好！</p></div>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;clock&quot;&gt;&lt;a href=&quot;#clock&quot; class=&quot;headerlink&quot; title=&quot;clock&quot;&gt;&lt;/a&gt;clock&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-tree-sketch.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="开发笔记" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="华大半导体" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%8D%8E%E5%A4%A7%E5%8D%8A%E5%AF%BC%E4%BD%93/"/>
-    
-    <category term="HC32F460" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/HC32F460/"/>
     
   </entry>
   

@@ -144,7 +144,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">50</span>
+          <span class="site-state-item-count">53</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -155,7 +155,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">41</span>
+        <span class="site-state-item-count">47</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -187,6 +187,482 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cm03lc8n5007fdgrqhk1m06ee.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/sulfurandcu.io/cm03lc8n5007fdgrqhk1m06ee.html" class="post-title-link" itemprop="url">freertos or rtthread ?</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-11-30 14:53:09" itemprop="dateCreated datePublished" datetime="2023-11-30T14:53:09+08:00">2023-11-30</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th align="center">对比条目</th>
+<th align="center">FreeRTOS</th>
+<th align="center">RT-Thread</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">许可协议</td>
+<td align="center">MIT</td>
+<td align="center">Apache License 2.0</td>
+</tr>
+<tr>
+<td align="center">内核开销</td>
+<td align="center">ROM: 5KB<br>RAM: 2KB</td>
+<td align="center">ROM: 3KB<br>RAM: 1KB</td>
+</tr>
+<tr>
+<td align="center">实测开销</td>
+<td align="center"></td>
+<td align="center">ROM: 11KB<br>RAM: 1KB</td>
+</tr>
+<tr>
+<td align="center">抢占调度</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">轮转调度</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">多任务</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">优先级</td>
+<td align="center">32</td>
+<td align="center">8&#x2F;32&#x2F;256</td>
+</tr>
+<tr>
+<td align="center">信号量</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">互斥量</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">事件集</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">邮箱</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">信号</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">消息队列</td>
+<td align="center">支持</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">内存管理</td>
+<td align="center">heap1 - heap5</td>
+<td align="center">内存堆管理 | 内存池管理</td>
+</tr>
+<tr>
+<td align="center"><br></td>
+<td align="center"><br></td>
+<td align="center"><br></td>
+</tr>
+<tr>
+<td align="center">系统兼容</td>
+<td align="center">×</td>
+<td align="center">提供 FreeRTOS_Wrapper 兼容层</td>
+</tr>
+<tr>
+<td align="center">posix</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">shell</td>
+<td align="center">×</td>
+<td align="center">MSH, FINSH</td>
+</tr>
+<tr>
+<td align="center">网络系统</td>
+<td align="center">×</td>
+<td align="center">SAL + AT &#x2F; LwIP</td>
+</tr>
+<tr>
+<td align="center">文件系统</td>
+<td align="center">FATFS</td>
+<td align="center">DFS + FATFS &#x2F; RomFS &#x2F; Yaffs2 &#x2F; Uffs2 &#x2F; DevFS</td>
+</tr>
+<tr>
+<td align="center">spiflash</td>
+<td align="center">×</td>
+<td align="center">FlashDB + FAL + SFUD</td>
+</tr>
+<tr>
+<td align="center">设备框架</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">电源管理</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+<tr>
+<td align="center">图形界面</td>
+<td align="center">×</td>
+<td align="center">支持</td>
+</tr>
+</tbody></table>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/sulfurandcu.io/cm03lc8n5007fdgrqhk1m06ee.html#more" rel="contents">
+                « 閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clpga8j0y00i3dcrq5x5t1gkd.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/sulfurandcu.io/clpga8j0y00i3dcrq5x5t1gkd.html" class="post-title-link" itemprop="url">中断向量表偏移寄存器配置方式</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-11-27 10:19:53" itemprop="dateCreated datePublished" datetime="2023-11-27T10:19:53+08:00">2023-11-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>对于「引导程序＋应用程序」之类的方案，我们通常是在系统初始化函数（SystemInit()）中配置中断向量表偏移寄存器来实现中断向量表的重定向。但是这种直接修改官方库的方式往往会给后期的版本管理带来诸多不便。基于此，本文给出一个替代方案，供诸位参考。</p>
+<figure class="highlight c"><figcaption><span>vtor.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;xxx32xxxx.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> VECTOR_TABLE_OFFSET             ((uint32_t)0x00018000) <span class="comment">/* % 0x200 == 0 */</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ROM_BASE                        ((uint32_t)0x08000000)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> RAM_BASE                        ((uint32_t)0x20000000)</span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">SystemVTOR</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="meta">#<span class="keyword">ifdef</span> EXECUTE_IN_RAM</span></span><br><span class="line">    SCB-&gt;VTOR = RAM_BASE | VECTOR_TABLE_OFFSET;</span><br><span class="line">    <span class="meta">#<span class="keyword">else</span></span></span><br><span class="line">    SCB-&gt;VTOR = ROM_BASE | VECTOR_TABLE_OFFSET;</span><br><span class="line">    <span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><figcaption><span>startup_xxx32xxxx.s</span></figcaption><table><tr><td class="code"><pre><span class="line">Reset_Handler   PROC</span><br><span class="line">                EXPORT  Reset_Handler   [WEAK]</span><br><span class="line">                IMPORT  SystemVTOR</span><br><span class="line">                IMPORT  SystemInit</span><br><span class="line">                IMPORT  __main</span><br><span class="line"></span><br><span class="line">                LDR     R0, =SystemVTOR</span><br><span class="line">                BLX     R0</span><br><span class="line">                LDR     R0, =SystemInit</span><br><span class="line">                BLX     R0</span><br><span class="line">                LDR     R0, =__main</span><br><span class="line">                BX      R0</span><br><span class="line">                ENDP</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cm04je64700adckrq3udz79n5.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
+      <meta itemprop="name" content="刘汲桐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/sulfurandcu.io/cm04je64700adckrq3udz79n5.html" class="post-title-link" itemprop="url">开发指南：华大 HC32F460 & HC32F4A0 比较</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-11-21 10:35:29" itemprop="dateCreated datePublished" datetime="2023-11-21T10:35:29+08:00">2023-11-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th align="center">对比条目</th>
+<th align="center">HC32F460</th>
+<th align="center">HC32F4A0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">工作频率</td>
+<td align="center">200MHz</td>
+<td align="center">240MHz</td>
+</tr>
+<tr>
+<td align="center">内核架构</td>
+<td align="center">Cortex-M4 + FPU + DSP + MPU</td>
+<td align="center">Cortex-M4 + FPU + DSP + MPU</td>
+</tr>
+<tr>
+<td align="center">芯片封装</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ROM</td>
+<td align="center">512KB | 256KB</td>
+<td align="center">1024KB | 2048KB</td>
+</tr>
+<tr>
+<td align="center">RAM</td>
+<td align="center">192KB</td>
+<td align="center">516KB</td>
+</tr>
+<tr>
+<td align="center">PGA</td>
+<td align="center">×1</td>
+<td align="center">×4</td>
+</tr>
+<tr>
+<td align="center">CMP</td>
+<td align="center">×3</td>
+<td align="center">×4</td>
+</tr>
+<tr>
+<td align="center">ADC</td>
+<td align="center">×2</td>
+<td align="center">×3</td>
+</tr>
+<tr>
+<td align="center">DAC</td>
+<td align="center">×2</td>
+<td align="center">×4</td>
+</tr>
+<tr>
+<td align="center">TMR</td>
+<td align="center">Timer6 ×3 (16bit 高级 PWM Timer)<br>Timer4 ×3 (16bit 电机 PWM Timer)<br>TimerA ×6 (16bit 通用 PWM Timer)<br><br>Timer0 ×2 (16bit 通用 ___ Timer)</td>
+<td align="center">Timer6  ×8 (16bit 高级 PWM Timer)<br>Timer4  ×3 (16bit 电机 PWM Timer)<br>TimerA ×C (16bit 通用 PWM Timer)<br>Timer2  ×4 (16bit 通用 ___ Timer)<br>Timer0  ×2 (16bit 通用 ___ Timer)</td>
+</tr>
+<tr>
+<td align="center">RTC</td>
+<td align="center">×1</td>
+<td align="center">×1</td>
+</tr>
+<tr>
+<td align="center">WDT</td>
+<td align="center">WDT &amp; SWDT</td>
+<td align="center">WDT &amp; SWDT</td>
+</tr>
+<tr>
+<td align="center">URT</td>
+<td align="center">×4</td>
+<td align="center">×10</td>
+</tr>
+<tr>
+<td align="center">SPI</td>
+<td align="center">×4</td>
+<td align="center">×6</td>
+</tr>
+<tr>
+<td align="center">QSPI</td>
+<td align="center">×1</td>
+<td align="center">×1</td>
+</tr>
+<tr>
+<td align="center">I2C</td>
+<td align="center">×3</td>
+<td align="center">×6</td>
+</tr>
+<tr>
+<td align="center">I2S</td>
+<td align="center">×4</td>
+<td align="center">×4</td>
+</tr>
+<tr>
+<td align="center">CAN</td>
+<td align="center">×1</td>
+<td align="center">×2</td>
+</tr>
+<tr>
+<td align="center">USB</td>
+<td align="center">×1</td>
+<td align="center">×1</td>
+</tr>
+<tr>
+<td align="center">ETH</td>
+<td align="center">-</td>
+<td align="center">×1</td>
+</tr>
+<tr>
+<td align="center">SDIO</td>
+<td align="center">×2</td>
+<td align="center">×2</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -837,280 +1313,8 @@ A(&quot;在电路编程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系统编�
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/clorxokmu004nmgrq9tl4hiss.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
-      <meta itemprop="name" content="刘汲桐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/clorxokmu004nmgrq9tl4hiss.html" class="post-title-link" itemprop="url">问题记录：华大 HC32F460 滤波电路失效</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2023-08-09 00:00:00" itemprop="dateCreated datePublished" datetime="2023-08-09T00:00:00+08:00">2023-08-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">问题记录</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>最近在使用电压比较器时发现硬件滤波电路会出现失效的情况，经分析是其采样频率过高所致。</p>
-<p><img src="/sulfurandcu.io/clorxokmu004nmgrq9tl4hiss/manual.png"></p>
-<p>参考手册中绘制的是理想条件下的波形，真实情况并非如此，INP 在逼近 INM 时会伴随着噪声&#x2F;抖动。我们可以使用硬件滤波电路来消除这种抖动，图中绿色线段表示各采样点，其频率即为采样频率。</p>
-<iframe src="https://www.desmos.com/calculator/7r0bi5urxv?embed" width="800" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-
-<p>采样频率较低时，滤波电路可以正常工作，但是随着采样频率的升高，其可靠性反而会降低。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/sulfurandcu.io/clorxokmu004nmgrq9tl4hiss.html#more" rel="contents">
-                « 閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
-      <meta itemprop="name" content="刘汲桐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4.html" class="post-title-link" itemprop="url">问题记录：华大 HC32F460 切换运行模式导致宕机</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2023-07-27 00:00:00" itemprop="dateCreated datePublished" datetime="2023-07-27T00:00:00+08:00">2023-07-27</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">问题记录</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="现象描述"><a href="#现象描述" class="headerlink" title="现象描述"></a>现象描述</h2><ul>
-<li>从高速&#x2F;超高速模式向超低速模式切换时 mcu 异常死机</li>
-</ul>
-<h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><ul>
-<li>当前使用华大 2.2.0 版驱动程序</li>
-<li>当前使用华大 1.2.1 版参考手册</li>
-</ul>
-<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>通过调试发现每次运行至 <code>M4_SYSREG-&gt;PWR_PWRC2</code> 赋值时程序就会跑飞😶</p>
-<p><img src="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4/HC32F460-RM-Rev1.2-Register.png" alt="电源模式控制寄存器 2"></p>
-<figure class="highlight c"><figcaption><span>hc32f460_pwc.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HS2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xE1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">en_result_t</span> <span class="title function_">PWC_HP2LS</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    M4_SYSREG-&gt;PWR_PWRC2 = <span class="number">0xD1</span>U;</span><br><span class="line">    M4_SYSREG-&gt;PWR_MDSWCR = <span class="number">0x10</span>U;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>瞅了一眼《参考手册 Rev1.2.1》好像也没啥问题，又看了《参考手册 Rev1.3》后，我得发…🙄！</p>
-<p>两版手册竟然不一样！</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/sulfurandcu.io/cloqsamms004qg4rq5jubc4h4.html#more" rel="contents">
-                « 閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://sulfurandcu.github.io/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/sulfurandcu.io/images/avatar.png">
-      <meta itemprop="name" content="刘汲桐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="丟掉幻想  準備鬥爭">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ㄅㄆㄇㄈ">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup.html" class="post-title-link" itemprop="url">开发指南：华大 HC32F460 时钟控制单元</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2023-07-17 00:00:00" itemprop="dateCreated datePublished" datetime="2023-07-17T00:00:00+08:00">2023-07-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">开发笔记</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="clock"><a href="#clock" class="headerlink" title="clock"></a>clock</h2><p><img src="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup/clock-tree-sketch.png"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/sulfurandcu.io/cloqtbfnv000dmgrq0l3acbup.html#more" rel="contents">
-                « 閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="上一頁" aria-label="上一頁" href="/sulfurandcu.io/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/sulfurandcu.io/">1</a><span class="page-number current">2</span><a class="page-number" href="/sulfurandcu.io/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/sulfurandcu.io/page/5/">5</a><a class="extend next" rel="next" title="下一頁" aria-label="下一頁" href="/sulfurandcu.io/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="上一頁" aria-label="上一頁" href="/sulfurandcu.io/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/sulfurandcu.io/">1</a><span class="page-number current">2</span><a class="page-number" href="/sulfurandcu.io/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/sulfurandcu.io/page/6/">6</a><a class="extend next" rel="next" title="下一頁" aria-label="下一頁" href="/sulfurandcu.io/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
@@ -1121,7 +1325,7 @@ A(&quot;在电路编程&lt;br&gt;(ＩＣＰ)&quot;)---&gt;B(&quot;在系统编�
 
   <div class="copyright">
     &copy; 2018 – 
-    <span itemprop="copyrightYear">2024</span>
+    <span itemprop="copyrightYear">2025</span>
     <span class="with-love">
       <i class="fa fa-fingerprint"></i>
     </span>
