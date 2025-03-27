@@ -145,7 +145,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/sulfurandcu.io/archives/">
-          <span class="site-state-item-count">53</span>
+          <span class="site-state-item-count">54</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -156,7 +156,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/sulfurandcu.io/tags/">
-        <span class="site-state-item-count">47</span>
+        <span class="site-state-item-count">48</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -254,7 +254,11 @@
 <figure class="highlight c"><figcaption><span>hc32f460_icg.c</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">if</span> defined ( __GNUC__ ) &amp;&amp; !defined (__CC_ARM) <span class="comment">/* GNU Compiler */</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((section(<span class="string">&quot;.icg_sec&quot;</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__CC_ARM)</span></span><br><span class="line"><span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] __attribute__((at(<span class="number">0x400</span>))) =</span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined (__ICCARM__)</span></span><br><span class="line">__root <span class="type">const</span> <span class="type">uint32_t</span> u32ICG[] @ <span class="number">0x400</span> =</span><br><span class="line"><span class="meta">#<span class="keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">error</span> <span class="string">&quot;unsupported compiler!!&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">/* ICG 0~ 3 */</span></span><br><span class="line">    ICG0_REGISTER_CONSTANT,</span><br><span class="line">    ICG1_REGISTER_CONSTANT,</span><br><span class="line">    ICG2_REGISTER_CONSTANT,</span><br><span class="line">    ICG3_REGISTER_CONSTANT,</span><br><span class="line">    <span class="comment">/* ICG 4~ 7 */</span></span><br><span class="line">    ICG4_REGISTER_CONSTANT,</span><br><span class="line">    ICG5_REGISTER_CONSTANT,</span><br><span class="line">    ICG6_REGISTER_CONSTANT,</span><br><span class="line">    ICG7_REGISTER_CONSTANT,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <p>通过定义常量的方式，在程序加载阶段，将数据 load 至指定的寄存器。</p>
-<h2 id="避坑指北"><a href="#避坑指北" class="headerlink" title="避坑指北"></a>避坑指北</h2><p>如果项目由 bootloader 和 app 两部分组成，那么只能在 bootloader 中添加上述源文件，在 app 中不能添加该文件，否则会出现异常。</p>
+<h2 id="避坑指北"><a href="#避坑指北" class="headerlink" title="避坑指北"></a>避坑指北</h2><p>如果工程由 bootloader 和 app 两部分组成，那么只能在 bootloader 中添加 *_icg.c 文件，在 app 中不能添加该文件，否则会出现异常，原因如下：</p>
+<p>在 App 中也添加 *_icg.c 意味着要将 u32ICG 指定到 0x400 这个地址，所以编译出来的 App 会由两部分组成：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ER$$.ARM. AT Ox00000400                 文件大小为一个扇区（HC32F460=8K）</span><br><span class="line">ER IROM1</span><br></pre></td></tr></table></figure>
+
+<p>而 0x400 所在的扇区通常是 bootloader 所在的区域，所以在烧录 App 时就会导致 bootloader 的中断向量表数据被擦除，进而导致程序无法引导，具体表现就是程序运行不起来。</p>
 
     </div>
 

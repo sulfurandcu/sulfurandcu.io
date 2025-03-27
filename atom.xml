@@ -6,7 +6,7 @@
   <link href="https://sulfurandcu.github.io/sulfurandcu.io/atom.xml" rel="self"/>
   
   <link href="https://sulfurandcu.github.io/sulfurandcu.io/"/>
-  <updated>2025-01-01T01:01:01.000Z</updated>
+  <updated>2025-03-27T10:00:45.000Z</updated>
   <id>https://sulfurandcu.github.io/sulfurandcu.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一种用于 RS485 总线仲裁系统的波特率自适应方法</title>
+    <link href="https://sulfurandcu.github.io/sulfurandcu.io/cm8r6mfgi000040rq3hokho7e.html"/>
+    <id>https://sulfurandcu.github.io/sulfurandcu.io/cm8r6mfgi000040rq3hokho7e.html</id>
+    <published>2025-03-27T10:00:45.000Z</published>
+    <updated>2025-03-27T10:00:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/sulfurandcu.io/cm8r6mfgi000040rq3hokho7e/logic-wave.png"></p>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="开发笔记" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="RS485" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/RS485/"/>
+    
+    <category term="专利" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E4%B8%93%E5%88%A9/"/>
+    
+  </entry>
   
   <entry>
     <title>FAL</title>
@@ -757,35 +786,6 @@ A(&amp;quot;在电路编程&amp;lt;br&amp;gt;(ＩＣＰ)&amp;quot;)---&amp;gt;B(
     <category term="嵌入式软件开发" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
     
     <category term="在线升级" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%9C%A8%E7%BA%BF%E5%8D%87%E7%BA%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>嵌入式 IAP 在线升级－目录索引</title>
-    <link href="https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2n2004t10rq7rdi2ftx.html"/>
-    <id>https://sulfurandcu.github.io/sulfurandcu.io/clnyhr2n2004t10rq7rdi2ftx.html</id>
-    <published>2023-09-30T16:00:00.000Z</published>
-    <updated>2023-09-30T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><p><a href="/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html">在线升级（#01）基础概念</a><br><a href="/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html">在线升级（#02）整体方案</a><br><a href="/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html">在线升级（#03）程序设计</a><br><a href="/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html">在线升级（#04）差分还原 hpatchlite 移植</a></p><hr><span id="more"></span><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://itexp.blog.csdn.net/article/details/83793309">https://itexp.blog.csdn.net/article/details/83793309</a></p><p><a href="https://blog.csdn.net/qq_24130227/article/details/123752964">https://blog.csdn.net/qq_24130227/article/details/123752964</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/108379324">https://blog.csdn.net/qq_24130227/article/details/108379324</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/113003329">https://blog.csdn.net/qq_24130227/article/details/113003329</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/120061873">https://blog.csdn.net/qq_24130227/article/details/120061873</a><br><a href="https://blog.csdn.net/qq_24130227/article/details/108427842">https://blog.csdn.net/qq_24130227/article/details/108427842</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;hr&gt;
-&lt;p&gt;&lt;a href=&quot;/sulfurandcu.io/clnyhr2n2004x10rq71zl3lqj.html&quot;&gt;在线升级（#01）基础概念&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;/sulfurandcu.io/clnyhr2n3004y10rq322c66uu.html&quot;&gt;在线升级（#02）整体方案&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;/sulfurandcu.io/clnyhr2n4005410rqfyjmedv1.html&quot;&gt;在线升级（#03）程序设计&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;/sulfurandcu.io/cloidefbf00hzv0rqa7zg722r.html&quot;&gt;在线升级（#04）差分还原 hpatchlite 移植&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;</summary>
-    
-    
-    
-    <category term="开发笔记" scheme="https://sulfurandcu.github.io/sulfurandcu.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="嵌入式软件开发" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="单片机" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
-    
-    <category term="iap" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/iap/"/>
-    
-    <category term="bootloader" scheme="https://sulfurandcu.github.io/sulfurandcu.io/tags/bootloader/"/>
     
   </entry>
   
